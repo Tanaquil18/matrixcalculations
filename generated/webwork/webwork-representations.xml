@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1">
+      <statement><p>The solution of the linear system</p>
+<p><me>\begin{aligned}
+{2}x+y \amp = {-10}\\
+{5}x-{5}y \amp = {-55}
+\end{aligned}</me></p>
+<p>is</p>
+<p><m>x=</m><fillin name="AnSwEr0001" characters="2"/> and <m>y=</m><fillin name="AnSwEr0002" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-7</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTgsOCwxKSk7CiR5ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTgsOCwxKSk7CiRhPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRiPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjb25zdDE9JGEqJHgrJHk7CiRjb25zdDI9JGIqJHgtJGMqJHk7CgpCRUdJTl9QR01MClRoZSBzb2x1dGlvbiBvZiB0aGUgbGluZWFyIHN5c3RlbQoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGFdeCt5IFxhbXAgPSBbJGNvbnN0MV1cXApbJGJdeC1bJGNdeSBcYW1wID0gWyRjb25zdDJdClxlbmR7YWxpZ25lZH0KYGBgXQoKaXMKCltgeD1gXVtfXXskeH17Mn0gYW5kIFtgeT1gXVtfXXskeX17Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-09T18:04:27Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$x = Compute(non_zero_random(-8,8,1));
+$y = Compute(non_zero_random(-8,8,1));
+$a=Compute(random(2,5,1));
+$b=Compute(random(2,5,1));
+$c=Compute(random(2,5,1));
+$const1=$a*$x+$y;
+$const2=$b*$x-$c*$y;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The solution of the linear system
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$a]x+y \amp = [$const1]\\
+[$b]x-[$c]y \amp = [$const2]
+\end{aligned}
+```]
+
+is
+
+[`x=`][_]{$x}{2} and [`y=`][_]{$y}{2}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2">
+      <statement><p>Suppose a jar contains red, blue and green marbles. You are told that there are a total of <m>{36}</m> marbles in the jar; there are twice as many red marbles as green ones; the number of blue marbles is the same as the sum of the red and green marbles. How many marbles of each color are there?</p>
+<p><m>g=</m><fillin name="AnSwEr0001" characters="2"/></p>
+<p><m>r=</m><fillin name="AnSwEr0002" characters="2"/></p>
+<p><m>b=</m><fillin name="AnSwEr0003" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>12</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>18</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CiAgICAgICAgQ29udGV4dCgiTnVtZXJpYyIpOwogICAgICAgICRnID0gQ29tcHV0ZShyYW5kb20oMywyMCkpOwogICAgICAgICRyPTIqJGc7CiAgICAgICAgJGI9MyokZzsKCiAgICAgICAgJHRvdGFsID0gNiokZzsKCkJFR0lOX1BHTUwKU3VwcG9zZSBhIGphciBjb250YWlucyByZWQsIGJsdWUgYW5kIGdyZWVuIG1hcmJsZXMuIFlvdSBhcmUgdG9sZCB0aGF0IHRoZXJlIGFyZSBhIHRvdGFsIG9mIFtgWyR0b3RhbF1gXSBtYXJibGVzIGluIHRoZSBqYXI7IHRoZXJlIGFyZSB0d2ljZSBhcyBtYW55IHJlZCBtYXJibGVzIGFzIGdyZWVuIG9uZXM7IHRoZSBudW1iZXIgb2YgYmx1ZSBtYXJibGVzIGlzIHRoZSBzYW1lIGFzIHRoZSBzdW0gb2YgdGhlIHJlZCBhbmQgZ3JlZW4gbWFyYmxlcy4gSG93IG1hbnkgbWFyYmxlcyBvZiBlYWNoIGNvbG9yIGFyZSB0aGVyZT8KCltAS2V5Ym9hcmRJbnN0cnVjdGlvbnMoJ1VzZSBbYHJgXSBmb3IgdGhlIG51bWJlciBvZiByZWQgbWFyYmxlcywgW2BiYF0gZm9yIHRoZSBudW1iZXIgb2YgYmx1ZSBtYXJibGVzLCBhbmQgW2BnYF0gZm9yIHRoZSBudW1iZXIgb2YgZ3JlZW4gbWFyYmxlcy4nKUBdKioKCltgZz1gXVtfXXskZ317Mn0KCltgcj1gXVtfXXskcn17Mn0KCltgYj1gXVtfXXskYn17Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-09T18:04:27Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+        Context("Numeric");
+        $g = Compute(random(3,20));
+        $r=2*$g;
+        $b=3*$g;
+
+        $total = 6*$g;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose a jar contains red, blue and green marbles. You are told that there are a total of [`[$total]`] marbles in the jar; there are twice as many red marbles as green ones; the number of blue marbles is the same as the sum of the red and green marbles. How many marbles of each color are there?
+
+[@KeyboardInstructions('Use [`r`] for the number of red marbles, [`b`] for the number of blue marbles, and [`g`] for the number of green marbles.')@]**
+
+[`g=`][_]{$g}{2}
+
+[`r=`][_]{$r}{2}
+
+[`b=`][_]{$b}{2}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+</webwork-representations>
