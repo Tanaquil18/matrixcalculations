@@ -140,12 +140,12 @@ eBookConfig.enable_chatcodes =  false;
 #subsec-matrices-elim-bc-3-3 { counter-set: subsec-matrices-elim-bc-3-3 0; }
 #subsec-matrices-elim-bc-3-3 > li::marker { content: ""counter(subsec-matrices-elim-bc-3-3,decimal)"."; }
 #subsec-matrices-elim-bc-3-3 > li { counter-increment: subsec-matrices-elim-bc-3-3; }
-#rq-matrices-sub-vs-elim-1-1-4 { counter-set: rq-matrices-sub-vs-elim-1-1-4 0; }
-#rq-matrices-sub-vs-elim-1-1-4 > li::marker { content: "("counter(rq-matrices-sub-vs-elim-1-1-4,lower-alpha)")"; }
-#rq-matrices-sub-vs-elim-1-1-4 > li { counter-increment: rq-matrices-sub-vs-elim-1-1-4; }
-#rq-matrices-questions-1-1-1 { counter-set: rq-matrices-questions-1-1-1 0; }
-#rq-matrices-questions-1-1-1 > li::marker { content: "("counter(rq-matrices-questions-1-1-1,lower-alpha)")"; }
-#rq-matrices-questions-1-1-1 > li { counter-increment: rq-matrices-questions-1-1-1; }
+#rq-matrices-sub-vs-elim-2-1-4 { counter-set: rq-matrices-sub-vs-elim-2-1-4 0; }
+#rq-matrices-sub-vs-elim-2-1-4 > li::marker { content: "("counter(rq-matrices-sub-vs-elim-2-1-4,lower-alpha)")"; }
+#rq-matrices-sub-vs-elim-2-1-4 > li { counter-increment: rq-matrices-sub-vs-elim-2-1-4; }
+#rq-matrices-questions-2-1-1 { counter-set: rq-matrices-questions-2-1-1 0; }
+#rq-matrices-questions-2-1-1 > li::marker { content: "("counter(rq-matrices-questions-2-1-1,lower-alpha)")"; }
+#rq-matrices-questions-2-1-1 > li { counter-increment: rq-matrices-questions-2-1-1; }
 </style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -429,19 +429,33 @@ A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 
 </div>
 </div>
 <script type="application/json">[[{"number": [6, 6], "feedback": "<div class=\"para\" id=\"matrix-indices-3-1-1-1-1\">The entry in the second row and third column is 6.<\/div>"}, {"number": [-2, -2], "feedback": "<div class=\"para\" id=\"matrix-indices-3-1-2-1-1\">The row number comes first, then the column number.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"matrix-indices-3-1-3-1-1\">Incorrect.  If you’re stuck, try reviewing the <a href=\"sec-matrices-elimination.html#def_matrix\" class=\"xref\" data-knowl=\".\/knowl\/xref\/def_matrix.html\" data-reveal-label=\"Reveal\" data-close-label=\"Close\" title=\"Definition 1.2.5: Matrix\">definition of matrix 1.2.5<\/a>.<\/div>"}]]</script>
-</div></div></div></article><article class="exercise exercise-like" id="rq-matrices-sub-vs-elim"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
-<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrices-sub-vs-elim" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-sub-vs-elim-1-1">
+</div></div></div></article><article class="exercise exercise-like" id="matrix-indices2"><h5 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">How a matrix is indexed.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone">
+<div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="matrix-indices2"><script type="application/json">{
+"problemHtml": "<div class=\"para logical\" id=\"matrix-indices2-2-1\"><div class=\"para\">In the matrix<\/div><div class=\"displaymath process-math\">\n\\begin{equation*}\nA=\\begin{bmatrix} 2 \\amp -1 \\amp 3 \\amp 5 \\\\ 0 \\amp 3\\amp 6\\amp -3 \\\\ 4 \\amp -2 \\amp 7 \\amp 5   \\end{bmatrix}\n\\end{equation*}\n<\/div><div class=\"para\">what is <span class=\"process-math\">\\(a_{23}\\text{?}\\)<\/span> <input type=\"text\" id=\"matrix-indices2-blank1\" width=\"5\" \/><\/div><\/div>",
+"solutionHtml": "",
+"blankNames": {"blank1": 0},
+"feedbackArray": [[{"number": [6,6], "feedback": "<div class=\"para\" id=\"matrix-indices2-3-1-1-2-1\">The number in the second row and third column is <span class=\"process-math\">\\(6\\text{.}\\)<\/span><\/div>"}, {"number": [-2,-2], "feedback": "<div class=\"para\" id=\"matrix-indices2-3-1-2-2-1\">You gave the entry in the third row and second column, but <span class=\"process-math\">\\(a_{23}\\)<\/span> is the number in the second row and third column.<\/div>"}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "<div class=\"para\" id=\"matrix-indices2-3-1-3-1-1\">Incorrect.  If you’re stuck, try reviewing the <a href=\"\" class=\"internal\" title=\"\">definition of matrix <\/a>.<\/div>"}, {"feedback": "Incorrect."}]]
+}</script></div>
+</div></div></article><article class="exercise exercise-like" id="rq-matrices-sub-vs-elim"><h5 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Elimination vs. substitution.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrices-sub-vs-elim" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-sub-vs-elim-2-1">
 <div class="para">Consider the <em class="emphasis">method of substitution</em> used in <a href="sec-lin-eqn-substitution.html" class="internal" title="Section 1.1: Linear Equations and Substitution">Section 1.1</a> and the <em class="emphasis">method of elimination</em> described in this section.</div>
-<ol class="lower-alpha" id="rq-matrices-sub-vs-elim-1-1-4">
-<li id="rq-matrices-sub-vs-elim-1-1-4-1"><div class="para" id="rq-matrices-sub-vs-elim-1-1-4-1-1">State at least one thing the two methods have in common.</div></li>
-<li id="rq-matrices-sub-vs-elim-1-1-4-2"><div class="para" id="rq-matrices-sub-vs-elim-1-1-4-2-1">State at least one thing that’s different between the two methods.</div></li>
+<ol class="lower-alpha" id="rq-matrices-sub-vs-elim-2-1-4">
+<li id="rq-matrices-sub-vs-elim-2-1-4-1"><div class="para" id="rq-matrices-sub-vs-elim-2-1-4-1-1">State at least one thing the two methods have in common.</div></li>
+<li id="rq-matrices-sub-vs-elim-2-1-4-2"><div class="para" id="rq-matrices-sub-vs-elim-2-1-4-2-1">State at least one thing that’s different between the two methods.</div></li>
 </ol>
-</div></div></div></div></article><article class="exercise exercise-like" id="rq-matrices-questions"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
-<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrices-questions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-questions-1-1">
+</div></div></div></div></article><article class="exercise exercise-like" id="rq-matrices-questions"><h5 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Metacognition.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrices-questions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-questions-2-1">
 <div class="para">Enter a response to both of the following tasks:</div>
-<ol class="lower-alpha" id="rq-matrices-questions-1-1-1">
-<li id="rq-matrices-questions-1-1-1-1"><div class="para" id="rq-matrices-questions-1-1-1-1-1">Ask a question about the material, either about something you’re not sure you fully understand, or a “what if” question.</div></li>
-<li id="rq-matrices-questions-1-1-1-2"><div class="para" id="rq-matrices-questions-1-1-1-2-1">Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way.  0 means you didn’t actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.</div></li>
+<ol class="lower-alpha" id="rq-matrices-questions-2-1-1">
+<li id="rq-matrices-questions-2-1-1-1"><div class="para" id="rq-matrices-questions-2-1-1-1-1">Ask a question about the material, either about something you’re not sure you fully understand, or a “what if” question.</div></li>
+<li id="rq-matrices-questions-2-1-1-2"><div class="para" id="rq-matrices-questions-2-1-1-2-1">Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way.  0 means you didn’t actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.</div></li>
 </ol>
 </div></div></div></div></article></section></section><section class="subsection" id="subsec-matrices-elim-dc"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Participate</span>
@@ -455,7 +469,7 @@ A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 
 <ul class="disc" id="ws-matrices-elim-2-1">
 <li id="ws-matrices-elim-2-1-1"><div class="para" id="ws-matrices-elim-2-1-1-1">Solve systems of linear equations using the method of elimination</div></li>
 <li id="ws-matrices-elim-2-1-2"><div class="para" id="ws-matrices-elim-2-1-2-1">Become more familiar with the terminology and parts of a matrix</div></li>
-<li id="ws-matrices-elim-2-1-3"><div class="para" id="ws-matrices-elim-2-1-3-1">Be able to go back and forth between a linear system and an augmented matrix</div></li>
+<li id="ws-matrices-elim-2-1-3"><div class="para" id="ws-matrices-elim-2-1-3-1">Go back and forth between a linear system and an augmented matrix</div></li>
 </ul></article><section class="onepage" id="ws-matrices-elim-3"><div class="exercisegroup" id="ws-matrices-elim-3-1">
 <h5 class="heading"><span class="title">Elimination.</span></h5>
 <div class="introduction" id="ws-matrices-elim-3-1-2"><div class="para" id="ws-matrices-elim-3-1-2-1">Solve the linear systems below using the method of elimination.</div></div>
