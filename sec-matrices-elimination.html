@@ -146,6 +146,9 @@ eBookConfig.enable_chatcodes =  false;
 #rq-matrices-questions-2-1-1 { counter-set: rq-matrices-questions-2-1-1 0; }
 #rq-matrices-questions-2-1-1 > li::marker { content: "("counter(rq-matrices-questions-2-1-1,lower-alpha)")"; }
 #rq-matrices-questions-2-1-1 > li { counter-increment: rq-matrices-questions-2-1-1; }
+#extracted-webwork-10-1-1-1-1 { counter-set: extracted-webwork-10-1-1-1-1 0; }
+#extracted-webwork-10-1-1-1-1 > li::marker { content: ""counter(extracted-webwork-10-1-1-1-1,lower-alpha)"."; }
+#extracted-webwork-10-1-1-1-1 > li { counter-increment: extracted-webwork-10-1-1-1-1; }
 </style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -198,7 +201,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrices-elimination.html#ws-matrices-elim" class="internal"><span class="title"></span></a></div></li></ul>
 </li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrices-elimination.html#ww-matrices-elim" class="internal"><span class="title">Practice</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrices-elimination.html#sec-matrices-elimination-7" class="internal"><span class="title">Additional Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrices-elimination.html#exer-matrices-elim" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -254,14 +257,14 @@ eBookConfig.enable_chatcodes =  false;
 <article class="exercise exercise-like" id="clickable-coefficients"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Clickable Areas, Coefficients.</span>
 </h4>
-<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;" id="rs-clickable-coefficients">
+<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;" id="clickable-coefficients">
 <span data-question=""><div class="para" id="clickable-coefficients-2-1">Identify (by clicking, or by circling) all of the <em class="emphasis">coefficients</em> in this linear equation.</div></span><span data-feedback=""><div class="para" id="clickable-coefficients-4-1">The coefficients are the numbers that are multiplied by the variables.</div></span><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><div class="para" id="clickable-coefficients-3-1-1">
 <span data-correct=""><span class="process-math">\(5\)</span></span><span data-incorrect=""><span class="process-math">\(x_1\)</span></span> <span class="process-math">\(+\)</span> <span data-correct=""><span class="process-math">\(\pi\)</span></span><span data-incorrect=""><span class="process-math">\(x_2\)</span></span> <span class="process-math">\(-\)</span> <span data-correct=""><span class="process-math">\(\ln(2)\)</span></span><span data-incorrect=""><span class="process-math">\(x_3\)</span></span> <span class="process-math">\(=\)</span> <span data-incorrect=""><span class="process-math">\(27\)</span></span>
 </div></div></div></div>
 </div></div></div></article><article class="exercise exercise-like" id="clickable-constants"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Clickable Areas, Constants.</span>
 </h4>
-<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;" id="rs-clickable-constants">
+<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;" id="clickable-constants">
 <span data-question=""><div class="para" id="clickable-constants-2-1">Identify (by clicking, or by circling) all of the <em class="emphasis">constants</em> in this linear equation.</div></span><span data-feedback=""><div class="para" id="clickable-constants-4-1">The constants are the numbers that aren’t multiplied by any variables.</div></span><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><div class="para" id="clickable-constants-3-1-1">
 <span data-incorrect=""><span class="process-math">\(5\)</span></span><span data-incorrect=""><span class="process-math">\(x_1\)</span></span> <span class="process-math">\(+\)</span> <span data-incorrect=""><span class="process-math">\(\pi\)</span></span><span data-incorrect=""><span class="process-math">\(x_2\)</span></span> <span class="process-math">\(-\)</span> <span data-incorrect=""><span class="process-math">\(\ln(2)\)</span></span><span data-incorrect=""><span class="process-math">\(x_3\)</span></span> <span class="process-math">\(+\)</span> <span data-correct=""><span class="process-math">\(10\)</span></span> <span class="process-math">\(=\)</span> <span data-correct=""><span class="process-math">\(0\)</span></span>
 </div></div></div></div>
@@ -321,7 +324,7 @@ eBookConfig.enable_chatcodes =  false;
 <article class="exercise exercise-like" id="parsons-elim-vs-sub"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Parsons Problem, Elimination vs Substitution.</span>
 </h4>
-<div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="rs-parsons-elim-vs-sub">
+<div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="parsons-elim-vs-sub">
 <div class="parsons_question parsons-text"><div class="para logical" id="parsons-elim-vs-sub-2-1">
 <div class="para">Solve the linear system</div>
 <div class="displaymath process-math" id="parsons-elim-vs-sub-2-1-1">
@@ -417,7 +420,7 @@ A=\begin{bmatrix} a_{11}\amp a_{12}\amp a_{13}\amp \cdots\amp a_{1n}\\ a_{21}\am
 <article class="exercise exercise-like" id="matrix-indices"><h5 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">How a matrix is indexed.</span>
 </h5>
-<div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="rs-matrix-indices">
+<div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="matrix-indices">
 <div class="para logical" id="matrix-indices-2-1">
 <div class="para">In the matrix</div>
 <div class="displaymath process-math">
@@ -442,7 +445,7 @@ A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 
 </div></div></article><article class="exercise exercise-like" id="rq-matrices-sub-vs-elim"><h5 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Elimination vs. substitution.</span>
 </h5>
-<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrices-sub-vs-elim" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-sub-vs-elim-2-1">
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rq-matrices-sub-vs-elim" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-sub-vs-elim-2-1">
 <div class="para">Consider the <em class="emphasis">method of substitution</em> used in <a href="sec-lin-eqn-substitution.html" class="internal" title="Section 1.1: Linear Equations and Substitution">Section 1.1</a> and the <em class="emphasis">method of elimination</em> described in this section.</div>
 <ol class="lower-alpha" id="rq-matrices-sub-vs-elim-2-1-4">
 <li id="rq-matrices-sub-vs-elim-2-1-4-1"><div class="para" id="rq-matrices-sub-vs-elim-2-1-4-1-1">State at least one thing the two methods have in common.</div></li>
@@ -451,7 +454,7 @@ A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 
 </div></div></div></div></article><article class="exercise exercise-like" id="rq-matrices-questions"><h5 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Metacognition.</span>
 </h5>
-<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrices-questions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-questions-2-1">
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rq-matrices-questions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-questions-2-1">
 <div class="para">Enter a response to both of the following tasks:</div>
 <ol class="lower-alpha" id="rq-matrices-questions-2-1-1">
 <li id="rq-matrices-questions-2-1-1-1"><div class="para" id="rq-matrices-questions-2-1-1-1-1">Ask a question about the material, either about something you’re not sure you fully understand, or a “what if” question.</div></li>
@@ -499,89 +502,254 @@ x_2 - x_4\amp = 4
 <article class="exercise exercise-like" id="ws-matrices-elim-4-1-3"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
 <div class="para" id="ws-matrices-elim-4-1-3-1-1">entry <span class="process-math">\(b_{32}\text{.}\)</span>
 </div>
-<div class="workspace" data-space="1in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-1-4"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<div class="workspace" data-space=".7in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-1-4"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
 <div class="para" id="ws-matrices-elim-4-1-4-1-1">third column.</div>
-<div class="workspace" data-space="1in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-1-5"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<div class="workspace" data-space=".7in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-1-5"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
 <div class="para" id="ws-matrices-elim-4-1-5-1-1">second row.</div>
-<div class="workspace" data-space="1in"></div></article>
+<div class="workspace" data-space=".7in"></div></article>
 </div>
 </div>
 <article class="exercise exercise-like" id="ws-matrices-elim-4-2"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
 <div class="para" id="ws-matrices-elim-4-2-1-1">If <span class="process-math">\(A\)</span> is a <span class="process-math">\(3\times 5\)</span> matrix, how many columns does <span class="process-math">\(A\)</span> have?</div>
-<div class="workspace" data-space=".5in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-3"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="workspace" data-space=".2in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-3"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
 <div class="para" id="ws-matrices-elim-4-3-1-1">Using variables <span class="process-math">\(x_1, x_2, \ldots \text{,}\)</span> write the linear system corresponding to the above matrix <span class="process-math">\(B\text{.}\)</span>
 </div>
 <div class="workspace" data-space="1in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-4"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
 <div class="para" id="ws-matrices-elim-4-4-1-1">Give the augmented matrix corresponding to the linear system in <a href="sec-matrices-elimination.html#dc-linsystem4var" class="xref" data-knowl="./knowl/xref/dc-linsystem4var.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2">2</a>.</div>
+<div class="workspace" data-space="1in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-5"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="ws-matrices-elim-4-5-1-1">Create your own augmented matrix, of any size you choose.</div>
+<div class="workspace" data-space="1in"></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-6"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para" id="ws-matrices-elim-4-6-1-1">Create your own linear system, with however many variables and equations you choose.</div>
 <div class="workspace" data-space="1in"></div></article></section></section></section><section class="conclusion" id="subsec-matrices-summary"><h3 class="heading">Summary.<span></span>
 </h3>
 <div class="para logical" id="subsec-matrices-summary-2"><ul class="disc" id="subsec-matrices-summary-2-1">
-<li id="subsec-matrices-summary-2-1-1"><div class="para" id="subsec-matrices-summary-2-1-1-1">The <em class="emphasis">method of elimination</em> is a way to solve systems of linear equations that can be made systematic and algorithmic.</div></li>
+<li id="subsec-matrices-summary-2-1-1"><div class="para" id="subsec-matrices-summary-2-1-1-1">The <em class="emphasis">method of elimination</em> is a way of solving systems of linear equations that can be made systematic and algorithmic.</div></li>
 <li id="subsec-matrices-summary-2-1-2"><div class="para" id="subsec-matrices-summary-2-1-2-1">
 <em class="emphasis">Matrices</em> are arrays of numbers.  Right now, we are most interested in <em class="emphasis">augmented matrices</em>, whose entries correspond to the coefficients and constants of a system of linear equations.</div></li>
 <li id="subsec-matrices-summary-2-1-3"><div class="para" id="subsec-matrices-summary-2-1-3-1">Elimination works better than substitution when there are more than 2 or 3 variables, and it is the foundation of future sections of material.</div></li>
 </ul></div></section><section class="subsection" id="ww-matrices-elim"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice</span>
-</h3></section><section class="exercises" id="sec-matrices-elimination-7"><h3 class="heading hide-type">
+</h3>
+<article class="activity project-like" id="ww-2-var-elimination"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Two variable elimination.</span>
+</h4>
+<div id="webwork-6" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="6" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTUsNSwxKSk7CiR5ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTUsNSwxKSk7CiRhPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRkPTIqJGE7CiRiPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjb25zdDE9JGEqJHgrJGQqJHk7CiRjb25zdDI9JGIqJHgtJGMqJHk7CgpCRUdJTl9QR01MClVzZSB0aGUgbWV0aG9kIG9mIGVsaW1pbmF0aW9uIHRvIHNvbHZlIHRoZSBsaW5lYXIgc3lzdGVtOgoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGFdeCtbJGRdeSBcYW1wID0gWyRjb25zdDFdXFwKWyRiXXgtWyRjXXkgXGFtcCA9IFskY29uc3QyXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKVGhlIHNvbHV0aW9uIGlzIFtgeD1gXVtfXXskeH17Mn0gYW5kIFtgeT1gXVtfXXskeX17Mn0uCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-6')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-6-1-1-1">Use the method of elimination to solve the linear system:</div> <div class="para logical" id="extracted-webwork-6-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+{3}x+{6}y \amp = {-24}\\
+{4}x-{5}y \amp = {33}
+\end{aligned}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-6-1-1-3">The solution is <span class="process-math">\(x=\)</span><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> and <span class="process-math">\(y=\)</span><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>.</div>
+</div>
+</div></article><article class="activity project-like" id="ww-3var-elimination"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Three variable elimination.</span>
+</h4>
+<div id="webwork-7" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="7" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZvcm0ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFyZSh4XzEgPT4gJ1JlYWwnLCB4XzI9PiAnUmVhbCcsIHhfMz0+ICdSZWFsJyk7CkNvbnRleHQoKS0+cmVkdWN0aW9uLT5zZXQoJygteCkreSc9PjAsICcoLXgpLXknPT4wKTsKJHgxID0gQ29tcHV0ZShub25femVyb19yYW5kb20oMiw5LDEpKTsKJHgyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTcsNywxKSk7CiR4MyA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC03LDcsMSkpOwokYTEgPSBub25femVyb19yYW5kb20oLTEsMSwxKSpub25femVyb19yYW5kb20oMiwzLDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMSA9IENvbXB1dGUoIiRhMSokeDErJGIxKiR4MiskYzEqJHgzIik7CiRhMiA9IDA7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtMywzLDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTcsNywxKTsKJGQyID0gQ29tcHV0ZSgiJGEyKiR4MSskYjIqJHgyKyRjMiokeDMiKTsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC03LDcsMSk7CiRiMyA9IG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpOwokYzMgPSByYW5kb20oMiw5LDEpOwokZDMgPSBDb21wdXRlKCIkYTMqJHgxKyRiMyokeDIrJGMzKiR4MyIpOwoKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeF8xKyRiMSp4XzIrJGMxKnhfMyIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKnhfMSskYjIqeF8yKyRjMip4XzMiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4XzErJGIzKnhfMiskYzMqeF8zIiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKVXNlIHRoZSBtZXRob2Qgb2YgZWxpbWluYXRpb24gdG8gc29sdmUgdGhlIGxpbmVhciBzeXN0ZW06CgpbYGBgXGJlZ2lue2FsaWduZWR9ClskY29lZmYxXSBcYW1wID0gWyRkMV1cXApbJGNvZWZmMl0gXGFtcCA9IFskZDJdXFwKWyRjb2VmZjNdIFxhbXAgPSBbJGQzXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKVGhlIHNvbHV0aW9uIGlzIFtgeF8xPWBdW19deyR4fXsyfSwgW2B4XzI9YF1bX117JHl9ezJ9IGFuZCBbYHhfMz1gXVtfXXsken17Mn0uCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-7')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-7-1-1-1">Use the method of elimination to solve the linear system:</div> <div class="para logical" id="extracted-webwork-7-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+{-3x_{1}-2x_{2}-6x_{3}} \amp = {-48}\\
+{-x_{2}-7x_{3}} \amp = {-24}\\
+{-2x_{1}-7x_{2}+2x_{3}} \amp = {-31}
+\end{aligned}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-7-1-1-3">The solution is <span class="process-math">\(x_1=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span>, <span class="process-math">\(x_2=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span> and <span class="process-math">\(x_3=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span>.</div>
+</div>
+</div></article><article class="activity project-like" id="ww-aug-from-2var"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Augmented matrix from 2-variable system.</span>
+</h4>
+<div id="webwork-8" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="8" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpURVhUKE1PREVTKFBUWD0+JycsSFRNTD0+JzxkaXYgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPlwoXG5ld2NvbW1hbmR7XGFtcH17Jn1cKTwvZGl2PicpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHgxID0+ICdSZWFsJywgeDI9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtMSwxLDEpKnJhbmRvbSgyLDIwLDEpOwokYjEgPSByYW5kb20oMiwyNywxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC0yNywyNywxKTsKJGEyID0gbm9uX3plcm9fcmFuZG9tKC0xLDEsMSkqcmFuZG9tKDIsMjAsMSk7CiRiMiA9IHJhbmRvbSgyLDI3LDEpOwokYjJhbnMgPSAtMSokYjI7CiRjMiA9IG5vbl96ZXJvX3JhbmRvbSgtMjcsMjcsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtMSwxLDEpKnJhbmRvbSgyLDIwLDEpOwokYjMgPSByYW5kb20oMiwyNywxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC0yNywyNywxKTsKCkJFR0lOX1BHTUwKV3JpdGUgdGhlIGF1Z21lbnRlZCBtYXRyaXggb2YgdGhlIHN5c3RlbQoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGExXXhfMSsgWyRiMV14XzJcYW1wID0gWyRjMV1cXApbJGEyXXhfMS0gWyRiMl14XzJcYW1wID0gWyRjMl1cXApbJGEzXXhfMSsgWyRiM114XzJcYW1wID0gWyRjM10KXGVuZHthbGlnbmVkfQpgYGBdCgoKCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhMX17Mn0nKSxQR01MKCdbX117JGIxfXsyfScpLFBHTUwoJ1tfXXskYzF9ezJ9JyksXSxbUEdNTCgnW19deyRhMn17Mn0nKSxQR01MKCdbX117JGIyYW5zfXsyfScpLFBHTUwoJ1tfXXskYzJ9ezJ9JyksXSxbUEdNTCgnW19deyRhM317Mn0nKSxQR01MKCdbX117JGIzfXsyfScpLFBHTUwoJ1tfXXskYzN9ezJ9JyksXSxdLGFsaWduPT4nbGwhe1x2cnVsZSB3aWR0aCAwLjA3ZW19bCcsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-8')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-8-1-1-1">Write the augmented matrix of the system</div> <div class="para logical" id="extracted-webwork-8-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+8x_1+ 4x_2\amp = 25\\
+18x_1- 4x_2\amp = 12\\
+-17x_1+ 19x_2\amp = -23
+\end{aligned}
+\end{equation*}
+</div></div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r3 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r3 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r3 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+</table></div>
+</div>
+</div></article><article class="activity project-like" id="ww-aug-from-3var"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Augmented matrix from 3-variable system.</span>
+</h4>
+<div id="webwork-9" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="9" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsImNvbnRleHRGb3JtLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+dmFyaWFibGVzLT5hZGQoeSA9PiAnUmVhbCcsIHo9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokZDEgPSByYW5kb20oLTk5LDk5LDEpOwokYTIgPSAwOwokYjIgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gcmFuZG9tKC05LDksMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtOTksOTksMSk7CiRiMyA9IDA7CiRjMyA9IHJhbmRvbSgyLDk5LDEpOwokZDMgPSByYW5kb20oLTk5LDk5LDEpOwokY29lZmYxPUZvcm11bGEoIiRhMSp4KyRiMSp5KyRjMSp6IiktPnJlZHVjZTsKJGNvZWZmMj1Gb3JtdWxhKCIkYTIqeCskYjIqeSskYzIqeiIpLT5yZWR1Y2U7CiRjb2VmZjM9Rm9ybXVsYSgiJGEzKngrJGIzKnkrJGMzKnoiKS0+cmVkdWNlOwoKQkVHSU5fUEdNTApXcml0ZSB0aGUgYXVnbWVudGVkIG1hdHJpeCBvZiB0aGUgc3lzdGVtCgpbYGBgXGJlZ2lue2FsaWduZWR9ClskY29lZmYxXSBcYW1wID0gWyRkMV1cXApbJGNvZWZmMl0gXGFtcCA9IFskZDJdXFwKWyRjb2VmZjNdIFxhbXAgPSBbJGQzXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbX117JGExfXsyfScpLFBHTUwoJ1tfXXskYjF9ezJ9JyksUEdNTCgnW19deyRjMX17Mn0nKSxQR01MKCdbX117JGQxfXsyfScpLF0sW1BHTUwoJ1tfXXskYTJ9ezJ9JyksUEdNTCgnW19deyRiMn17Mn0nKSxQR01MKCdbX117JGMyfXsyfScpLFBHTUwoJ1tfXXskZDJ9ezJ9JyksXSxbUEdNTCgnW19deyRhM317Mn0nKSxQR01MKCdbX117JGIzfXsyfScpLFBHTUwoJ1tfXXskYzN9ezJ9JyksUEdNTCgnW19deyRkM317Mn0nKSxdLF0sYWxpZ249PidsbGwhe1x2cnVsZSB3aWR0aCAwLjA3ZW19bCcsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-9')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-9-1-1-1">Write the augmented matrix of the system</div> <div class="para logical" id="extracted-webwork-9-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+{9x+96y+3z} \amp = 37\\
+{57y-3z} \amp = -6\\
+{-73x+62z} \amp = -47
+\end{aligned}
+\end{equation*}
+</div></div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r3 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r3 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r3 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+</table></div>
+</div>
+</div></article><article class="activity project-like" id="ww-matrix-properties"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">About matrices and augmented matrices.</span>
+</h4>
+<div id="webwork-10" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="10" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCdOdW1lcmljJyk7JHJhZGlvID0gUmFkaW9CdXR0b25zKFtbCiAgIlRoZSBtYXRyaXggaXMgJHtCTX0zXHRpbWVzIDUke0VNfSwgd2l0aCAzIHJvd3MgYW5kIDUgY29sdW1ucy4iLAogICJUaGUgbWF0cml4IGlzICR7Qk19M1x0aW1lcyA1JHtFTX0sIHdpdGggMyBjb2x1bW5zIGFuZCA1IHJvd3MuIiwKICAiVGhlIG1hdHJpeCBpcyAke0JNfTVcdGltZXMgMyR7RU19LCB3aXRoIDUgcm93cyBhbmQgMyBjb2x1bW5zLiIsCiAgIlRoZSBtYXRyaXggaXMgJHtCTX01XHRpbWVzIDMke0VNfSwgd2l0aCA1IGNvbHVtbnMgYW5kIDMgcm93cy4iLAogIF1dLCAwCik7CgokbiA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDUsMTAsMSkpOwokbSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDEsMywxKSk7CiRudW12YXJzID0gJG4tMTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSByYW5kb20oLTksOSwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRkMSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC05LDksMSkpOwokZTEgPSBDb21wdXRlKHJhbmRvbSgtOSw5LDEpKTsKJGEyID0gcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTksOSwxKSk7CiRlMiA9IENvbXB1dGUocmFuZG9tKC05LDksMSkpOwokYTMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIzID0gcmFuZG9tKC05LDksMSk7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGUzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CgpCRUdJTl9QR01MCmEuICBDb25zaWRlciB0aGUgbWF0cml4LgoKICAgIFtgYGBBPQogICAgICAgICAgICAgICAgXGJlZ2lue2JtYXRyaXh9IFskYTFdIFxhbXAgWyRiMV0gXGFtcCBbJGMxXSBcYW1wIFskZDFdIFxhbXAgWyRlMV0gXFwKICAgICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxhbXAgWyRlMl1cXAogICAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGFtcCBbJGUzXSBcZW5ke2JtYXRyaXh9CiAgICAgICAgICAgICAgYGBgXQoKICAgIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29ycmVjdGx5IGRlc2NyaWJlcyB0aGUgbWF0cml4IGFib3ZlPwoKICAgIFtfXXskcmFkaW99ezV9CgoKYS4gIE5vdyBjb25zaWRlciBhbiBbYFskbV0gXHRpbWVzIFskbl1gXSBtYXRyaXggW2BCXHRleHR7Ln1gXSAgSWYgW2BCYF0gaXMgYW4gYXVnbWVudGVkIG1hdHJpeCwgdGhlIGNvcnJlc3BvbmRpbmcgbGluZWFyIHN5c3RlbSBoYXMgaG93IG1hbnkgdmFyaWFibGVzPyBbX117JG51bXZhcnN9ezJ9ICAgCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-10')">Activate</button></div>
+<div class="problem-contents"><div class="para logical" id="extracted-webwork-10-1-1-1"><ol class="lower-alpha" id="extracted-webwork-10-1-1-1-1">
+<li id="extracted-webwork-10-1-1-1-1-1">
+<div class="para" id="extracted-webwork-10-1-1-1-1-1-1">Consider the matrix.</div>
+<div class="para logical" id="extracted-webwork-10-1-1-1-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+A=
+\begin{bmatrix} -4 \amp 1 \amp 8 \amp {4} \amp {8} \\
+-9 \amp -7 \amp 2 \amp {-6} \amp {-8}\\
+-3 \amp 3 \amp -2 \amp 7 \amp 6 \end{bmatrix}
+\end{equation*}
+</div></div>
+<div class="para" id="extracted-webwork-10-1-1-1-1-1-3">Which of the following correctly describes the matrix above?</div>
+<div class="para logical" id="extracted-webwork-10-1-1-1-1-1-4"><ul class="circle" id="extracted-webwork-10-1-1-1-1-1-4-1">
+<li id="extracted-webwork-10-1-1-1-1-1-4-1-1"><div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-1-1">The matrix is <span class="process-math">\(3\times 5\text{,}\)</span> with 3 rows and 5 columns.</div></li>
+<li id="extracted-webwork-10-1-1-1-1-1-4-1-2"><div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-2-1">The matrix is <span class="process-math">\(5\times 3\text{,}\)</span> with 5 columns and 3 rows.</div></li>
+<li id="extracted-webwork-10-1-1-1-1-1-4-1-3"><div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-3-1">The matrix is <span class="process-math">\(3\times 5\text{,}\)</span> with 3 columns and 5 rows.</div></li>
+<li id="extracted-webwork-10-1-1-1-1-1-4-1-4"><div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-4-1">The matrix is <span class="process-math">\(5\times 3\text{,}\)</span> with 5 rows and 3 columns.</div></li>
+</ul></div>
+</li>
+<li id="extracted-webwork-10-1-1-1-1-2"><div class="para" id="extracted-webwork-10-1-1-1-1-2-1">Now consider an <span class="process-math">\({3} \times {9}\)</span> matrix <span class="process-math">\(B\text{.}\)</span>  If <span class="process-math">\(B\)</span> is an augmented matrix, the corresponding linear system has how many variables? <span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>
+</div></li>
+</ol></div></div>
+</div></article><article class="activity project-like" id="ww-3var-system-from-aug"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Linear system from augmented matrix.</span>
+</h4>
+<div id="webwork-11" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="11" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsImNvbnRleHRGb3JtLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+dmFyaWFibGVzLT5hcmUoeCA9PiAnUmVhbCcsIHk9PiAnUmVhbCcsIHo9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oMiw5LDEpKTsKJHkgPSBDb21wdXRlKG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpKTsKJHogPSBDb21wdXRlKG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpKTsKJGExID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQxID0gQ29tcHV0ZSgiJGExKiR4KyRiMSokeSskYzEqJHoiKTsKJGEyID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZSgiJGEyKiR4KyRiMiokeSskYzIqJHoiKTsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMyA9IDA7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBDb21wdXRlKCIkYTMqJHgrJGIzKiR5KyRjMyokeiIpOwoKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeCskYjEqeSskYzEqeiIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKngrJGIyKnkrJGMyKnoiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4KyRiMyp5KyRjMyp6IiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKQ29udmVydCB0aGUgYXVnbWVudGVkIG1hdHJpeCBiZWxvdyB0byB0aGUgYXNzb2NpYXRlZCBsaW5lYXIgc3lzdGVtLgoKW2BgYAogICAgICAgICAgICAgIFxiZWdpbntibWF0cml4fSBbJGExXSBcYW1wIFskYjFdIFxhbXAgWyRjMV0gXGFtcCBbJGQxXSBcXAogICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxcCiAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGVuZHtibWF0cml4fQogICAgICAgICAgICBgYGBdCgpVc2UgW2B4XHRleHR7LH1gXSBbYHlcdGV4dHssfWBdIGFuZCBbYHpgXSBmb3IgdGhlIHZhcmlhYmxlcy4KClRoZSBhc3NvY2lhdGVkIGxpbmVhciBzeXN0ZW0gaXM6Cgo+PiBbQERhdGFUYWJsZShbW1BHTUwoJ0V4cHJlc3Npb24gY29udGFpbmluZyB0aGUgdmFyaWFibGVzJyksUEdNTCgnW2A9YF0nKSxQR01MKCdDb25zdGFudHMnKSxdLFtQR01MKCdbX117JGNvZWZmMX17OH0nKSxQR01MKCdbYD1gXScpLFBHTUwoJ1tfXXskZDF9ezJ9JyksXSxbUEdNTCgnW19deyRjb2VmZjJ9ezh9JyksUEdNTCgnW2A9YF0nKSxQR01MKCdbX117JGQyfXsyfScpLF0sW1BHTUwoJ1tfXXskY29lZmYzfXs4fScpLFBHTUwoJ1tgPWBdJyksUEdNTCgnW19deyRkM317Mn0nKSxdLF0sYWxpZ249PidycHswLjYyNX1sJyx2YWxpZ249PidtaWRkbGUnLCk7QF0qIDw8CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-11')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-11-1-1-1">Convert the augmented matrix below to the associated linear system.</div> <div class="para logical" id="extracted-webwork-11-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} -7 \amp 5 \amp -3 \amp {-30} \\
+-3 \amp 8 \amp -5 \amp {-23} \\
+-6 \amp 0 \amp 1 \amp {-20} \end{bmatrix}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-11-1-1-3">Use <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> for the variables.</div> <div class="para" id="extracted-webwork-11-1-1-4">The associated linear system is:</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Expression containing the variables</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Constants</td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+</table></div>
+</div>
+</div></article></section><section class="exercises" id="exer-matrices-elim"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Additional Practice</span>
 </h3>
-<div class="exercisegroup" id="sec-matrices-elimination-7-2">
+<div class="exercisegroup" id="exer-matrices-elim-2">
 <h4 class="heading"><span class="title">Method of Elimination.</span></h4>
-<div class="introduction" id="sec-matrices-elimination-7-2-2"><div class="para" id="sec-matrices-elimination-7-2-2-1">In the following exercises, solve the systems of linear equations using the method of elimination.</div></div>
+<div class="introduction" id="exer-matrices-elim-2-2"><div class="para" id="exer-matrices-elim-2-2-1">In the following exercises, solve the systems of linear equations using the method of elimination.</div></div>
 <div class="exercisegroup-exercises cols2">
-<article class="exercise exercise-like" id="sec-matrices-elimination-7-2-3"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
-<div class="para logical" id="sec-matrices-elimination-7-2-3-1-1"><div class="displaymath process-math" id="sec-matrices-elimination-7-2-3-1-1-1">
+<article class="exercise exercise-like" id="exer-matrices-elim-2-3"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-matrices-elim-2-3-1-1"><div class="displaymath process-math" id="exer-matrices-elim-2-3-1-1-1">
 \begin{align*}
 x + y - z \amp = 1 \\
 2x + y \amp = 2\\
 y + 2z\amp = 0 
 \end{align*}
 </div></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-2-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-matrices-elimination-7-2-3-2-1"><span class="process-math">\(x =1,\ y=0,\ z=0\)</span></div></div></details></div></article><article class="exercise exercise-like" id="sec-matrices-elimination-7-2-4"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
-<div class="para logical" id="sec-matrices-elimination-7-2-4-1-1"><div class="displaymath process-math" id="sec-matrices-elimination-7-2-4-1-1-1">
+<div class="solutions"><details id="exer-matrices-elim-2-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-matrices-elim-2-3-2-1"><span class="process-math">\(x =1,\ y=0,\ z=0\)</span></div></div></details></div></article><article class="exercise exercise-like" id="exer-matrices-elim-2-4"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-matrices-elim-2-4-1-1"><div class="displaymath process-math" id="exer-matrices-elim-2-4-1-1-1">
 \begin{align*}
 x - y + z\amp = 1\\
 4x - 5y + 2z\amp = 0 \\
 2x + 6y - z\amp = -4
 \end{align*}
 </div></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-matrices-elimination-7-2-4-2-1"><span class="process-math">\(x = -1, y=0,z=2\)</span></div></div></details></div></article>
+<div class="solutions"><details id="exer-matrices-elim-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-matrices-elim-2-4-2-1"><span class="process-math">\(x = -1, y=0,z=2\)</span></div></div></details></div></article>
 </div>
 </div>
-<div class="exercisegroup" id="sec-matrices-elimination-7-3">
+<div class="exercisegroup" id="exer-matrices-elim-3">
 <h4 class="heading"><span class="title">Linear System to Augmented Matrix.</span></h4>
-<div class="introduction" id="sec-matrices-elimination-7-3-2"><div class="para" id="sec-matrices-elimination-7-3-2-1">In the following exercises, convert the given system of linear equations into an augmented matrix.</div></div>
+<div class="introduction" id="exer-matrices-elim-3-2"><div class="para" id="exer-matrices-elim-3-2-1">In the following exercises, convert the given system of linear equations into an augmented matrix.</div></div>
 <div class="exercisegroup-exercises cols2">
-<article class="exercise exercise-like" id="sec-matrices-elimination-7-3-3"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
-<div class="para logical" id="sec-matrices-elimination-7-3-3-1-1"><div class="displaymath process-math">
+<article class="exercise exercise-like" id="exer-matrices-elim-3-3"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-matrices-elim-3-3-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{ccccccc} 3x\amp +\amp 4y\amp +\amp 5z\amp =\amp 7\\ -x\amp +\amp y\amp -\amp 3z\amp =\amp 1\\ 2x\amp -\amp 2y\amp +\amp 3z\amp =\amp 5 \end{array}
 \end{equation*}
 </div></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-3-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-matrices-elimination-7-3-3-2-1"><div class="displaymath process-math">
+<div class="solutions"><details id="exer-matrices-elim-3-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="exer-matrices-elim-3-3-2-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{cccc} 3\amp 4\amp 5\amp 7\\-1\amp 1\amp -3\amp 1\\2\amp -2\amp 3\amp 5\\ \end{array} \right]
 \end{equation*}
-</div></div></div></details></div></article><article class="exercise exercise-like" id="sec-matrices-elimination-7-3-4"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
-<div class="para logical" id="sec-matrices-elimination-7-3-4-1-1"><div class="displaymath process-math">
+</div></div></div></details></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-4"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-matrices-elim-3-4-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{ccccccc} 2x\amp +\amp 5y\amp -\amp 6z\amp =\amp 2\\ 9x\amp \amp \amp -\amp 8z\amp =\amp 10\\ -2x\amp +\amp 4y\amp +\amp z\amp =\amp -7 \end{array}
 \end{equation*}
 </div></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-3-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-matrices-elimination-7-3-4-2-1"><div class="displaymath process-math">
+<div class="solutions"><details id="exer-matrices-elim-3-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="exer-matrices-elim-3-4-2-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{cccc} 2\amp 5\amp -6\amp 2\\9\amp 0\amp -8\amp 10\\-2\amp 4\amp 1\amp -7\\ \end{array} \right]
 \end{equation*}
-</div></div></div></details></div></article><article class="exercise exercise-like" id="sec-matrices-elimination-7-3-5"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
-<div class="para logical" id="sec-matrices-elimination-7-3-5-1-1"><div class="displaymath process-math" id="sec-matrices-elimination-7-3-5-1-1-1">
+</div></div></div></details></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-5"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-matrices-elim-3-5-1-1"><div class="displaymath process-math" id="exer-matrices-elim-3-5-1-1-1">
 \begin{align*}
 x_1 +3x_2-4x_3 + 5x_4 \amp = 17 \\
 -x_1+4x_3+8x_4 \amp = 1\\
 2x_1+3x_2+4x_3+5x_4\amp = 6 
 \end{align*}
 </div></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-3-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-matrices-elimination-7-3-5-2-1"><span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 3\amp -4\amp 5\amp 17\\-1\amp 0\amp 4\amp 8\amp 1\\ 2\amp 3\amp 4\amp 5\amp 6 \end{array} \right]\)</span></div></div></details></div></article><article class="exercise exercise-like" id="sec-matrices-elimination-7-3-6"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
-<div class="para logical" id="sec-matrices-elimination-7-3-6-1-1"><div class="displaymath process-math" id="sec-matrices-elimination-7-3-6-1-1-1">
+<div class="solutions"><details id="exer-matrices-elim-3-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-matrices-elim-3-5-2-1"><span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 3\amp -4\amp 5\amp 17\\-1\amp 0\amp 4\amp 8\amp 1\\ 2\amp 3\amp 4\amp 5\amp 6 \end{array} \right]\)</span></div></div></details></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-6"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-matrices-elim-3-6-1-1"><div class="displaymath process-math" id="exer-matrices-elim-3-6-1-1-1">
 \begin{align*}
 3x_1 -2x_2\amp = 4 \\
 2x_1 \amp = 3\\
@@ -589,28 +757,28 @@ x_1 +3x_2-4x_3 + 5x_4 \amp = 17 \\
 5x_1-7x_2\amp = 13 
 \end{align*}
 </div></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-3-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-matrices-elimination-7-3-6-2-1"><div class="displaymath process-math">
+<div class="solutions"><details id="exer-matrices-elim-3-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="exer-matrices-elim-3-6-2-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{ccc} 3\amp -2\amp 4\\ 2\amp 0\amp 3\\-1\amp 9\amp 8\\5\amp -7\amp 13\\ \end{array} \right]
 \end{equation*}
 </div></div></div></details></div></article>
 </div>
 </div>
-<div class="exercisegroup" id="sec-matrices-elimination-7-4">
+<div class="exercisegroup" id="exer-matrices-elim-4">
 <h4 class="heading"><span class="title">Augmented Matrix to Linear System.</span></h4>
-<div class="introduction" id="sec-matrices-elimination-7-4-2"><div class="para" id="sec-matrices-elimination-7-4-2-1">In the following exercises, convert the given augmented matrix into a system of linear equations. Use the variables <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> etc.</div></div>
+<div class="introduction" id="exer-matrices-elim-4-2"><div class="para" id="exer-matrices-elim-4-2-1">In the following exercises, convert the given augmented matrix into a system of linear equations. Use the variables <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> etc.</div></div>
 <div class="exercisegroup-exercises cols2">
-<article class="exercise exercise-like" id="sec-matrices-elimination-7-4-3"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
-<div class="para" id="sec-matrices-elimination-7-4-3-1-1"><span class="process-math">\(\left[\begin{array}{ccc} 1\amp 2\amp 3\\ -1\amp 3\amp 9\\ \end{array} \right]\)</span></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-matrices-elimination-7-4-3-2-1"><span class="process-math">\(\begin{array}{rl} x_1+2x_2=\amp 3\\ -x_1+3x_2=\amp 9 \end{array}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="sec-matrices-elimination-7-4-4"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
-<div class="para" id="sec-matrices-elimination-7-4-4-1-1"><span class="process-math">\(\left[\begin{array}{ccc} -3\amp 4\amp 7\\ 0\amp 1\amp -2\\ \end{array} \right]\)</span></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-matrices-elimination-7-4-4-2-1"><span class="process-math">\(\begin{array}{rl} -3x_1+4x_2=\amp 7\\ x_2=\amp -2 \end{array}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="sec-matrices-elimination-7-4-5"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
-<div class="para" id="sec-matrices-elimination-7-4-5-1-1"><span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 1\amp -1\amp -1\amp 2\\ 2\amp 1\amp 3\amp 5\amp 7\\ \end{array} \right]\)</span></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-4-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-matrices-elimination-7-4-5-2-1"><span class="process-math">\(\begin{array}{rl} x_1+x_2-x_3-x_4=\amp 2\\ 2x_1+x_2+3x_3+5x_4=\amp 7 \end{array}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="sec-matrices-elimination-7-4-6"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
-<div class="para" id="sec-matrices-elimination-7-4-6-1-1"><span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 0\amp 0\amp 0\amp 2\\ 0\amp 1\amp 0\amp 0\amp -1\\ 0\amp 0\amp 1\amp 0\amp 5\\ 0\amp 0\amp 0\amp 1\amp 3 \end{array} \right]\)</span></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-4-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-matrices-elimination-7-4-6-2-1"><span class="process-math">\(\begin{array}{rl} x_1=\amp 2\\ x_2=\amp -1\\ x_3=\amp 5\\ x_4=\amp 3 \end{array}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="sec-matrices-elimination-7-4-7"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
-<div class="para" id="sec-matrices-elimination-7-4-7-1-1"><span class="process-math">\(\left[\begin{array}{cccccc} 1\amp 0\amp 1\amp 0\amp 7\amp 2\\ 0\amp 1\amp 3\amp 2\amp 0\amp 5\\ \end{array} \right]\)</span></div>
-<div class="solutions"><details id="sec-matrices-elimination-7-4-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-matrices-elimination-7-4-7-2-1"><span class="process-math">\(\begin{array}{rl} x_1+x_3+7x_5=\amp 2\\ x_2+3x_3+2x_4=\amp 5 \end{array}\)</span></div></div></details></div></article>
+<article class="exercise exercise-like" id="exer-matrices-elim-4-3"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="para" id="exer-matrices-elim-4-3-1-1"><span class="process-math">\(\left[\begin{array}{ccc} 1\amp 2\amp 3\\ -1\amp 3\amp 9\\ \end{array} \right]\)</span></div>
+<div class="solutions"><details id="exer-matrices-elim-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-matrices-elim-4-3-2-1"><span class="process-math">\(\begin{array}{rl} x_1+2x_2=\amp 3\\ -x_1+3x_2=\amp 9 \end{array}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-4"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="para" id="exer-matrices-elim-4-4-1-1"><span class="process-math">\(\left[\begin{array}{ccc} -3\amp 4\amp 7\\ 0\amp 1\amp -2\\ \end{array} \right]\)</span></div>
+<div class="solutions"><details id="exer-matrices-elim-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-matrices-elim-4-4-2-1"><span class="process-math">\(\begin{array}{rl} -3x_1+4x_2=\amp 7\\ x_2=\amp -2 \end{array}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-5"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="exer-matrices-elim-4-5-1-1"><span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 1\amp -1\amp -1\amp 2\\ 2\amp 1\amp 3\amp 5\amp 7\\ \end{array} \right]\)</span></div>
+<div class="solutions"><details id="exer-matrices-elim-4-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-matrices-elim-4-5-2-1"><span class="process-math">\(\begin{array}{rl} x_1+x_2-x_3-x_4=\amp 2\\ 2x_1+x_2+3x_3+5x_4=\amp 7 \end{array}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-6"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para" id="exer-matrices-elim-4-6-1-1"><span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 0\amp 0\amp 0\amp 2\\ 0\amp 1\amp 0\amp 0\amp -1\\ 0\amp 0\amp 1\amp 0\amp 5\\ 0\amp 0\amp 0\amp 1\amp 3 \end{array} \right]\)</span></div>
+<div class="solutions"><details id="exer-matrices-elim-4-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-matrices-elim-4-6-2-1"><span class="process-math">\(\begin{array}{rl} x_1=\amp 2\\ x_2=\amp -1\\ x_3=\amp 5\\ x_4=\amp 3 \end{array}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-7"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<div class="para" id="exer-matrices-elim-4-7-1-1"><span class="process-math">\(\left[\begin{array}{cccccc} 1\amp 0\amp 1\amp 0\amp 7\amp 2\\ 0\amp 1\amp 3\amp 2\amp 0\amp 5\\ \end{array} \right]\)</span></div>
+<div class="solutions"><details id="exer-matrices-elim-4-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-matrices-elim-4-7-2-1"><span class="process-math">\(\begin{array}{rl} x_1+x_3+7x_5=\amp 2\\ x_2+3x_3+2x_4=\amp 5 \end{array}\)</span></div></div></details></div></article>
 </div>
 </div></section></section></div>
 <div class="ptx-content-footer">

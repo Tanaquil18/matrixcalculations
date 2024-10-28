@@ -2,30 +2,27 @@
 <webwork-representations>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-1" ww-id="webwork-1">
     <static seed="1">
-      <statement><p>The solution of the linear system</p>
-<p><me>\begin{aligned}
-{2}x+y \amp = {-10}\\
-{5}x-{5}y \amp = {-55}
-\end{aligned}</me></p>
-<p>is</p>
-<p><m>x=</m><fillin name="AnSwEr0001" characters="2"/> and <m>y=</m><fillin name="AnSwEr0002" characters="2"/></p>
+      <statement><p>Find the point of intersection of the lines <m>y = x + 1</m> and <m>2x+3y=14\text{.}</m></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="50%" pi:generated="webwork/images/webwork-1-image-1.png"><description>a graph with axes depicting two intersecting lines</description></image>
+<p>The point of intersection is <m>(x,y)</m> where <m>x=</m><fillin name="AnSwEr0001" characters="5"/> and <m>y=</m><fillin name="AnSwEr0002" characters="5"/>.</p>
 </statement>
       <answer>
         <p>
-          <m>-7</m>
+          <m>\frac{-11}{-5}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>4</m>
+          <m>\frac{-16}{-5}</m>
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTgsOCwxKSk7CiR5ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTgsOCwxKSk7CiRhPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRiPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjb25zdDE9JGEqJHgrJHk7CiRjb25zdDI9JGIqJHgtJGMqJHk7CgpCRUdJTl9QR01MClRoZSBzb2x1dGlvbiBvZiB0aGUgbGluZWFyIHN5c3RlbQoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGFdeCt5IFxhbXAgPSBbJGNvbnN0MV1cXApbJGJdeC1bJGNdeSBcYW1wID0gWyRjb25zdDJdClxlbmR7YWxpZ25lZH0KYGBgXQoKaXMKCltgeD1gXVtfXXskeH17Mn0gYW5kIFtgeT1gXVtfXXskeX17Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdncmFwaG1hY3Jvcy5wbCIsIlBHY291cnNlLnBsIiwpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzSW5lcnQ9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwokYSA9IC0xOwokYiA9IDE7CiRjID0gMjsKJGQgPSAzOwokZSA9IHJhbmRvbSgxLDMsMSk7CiRmID0gcmFuZG9tKDEwLDE1LDEpOwokeG51bSA9ICRkICogJGUgLSAkYiAqICRmOwokeW51bSA9IC0oJGMpKiRlICsgJGEgKiAkZjsKJGRlbiA9ICRhICogJGQgLSAkYiAqICRjOwokeCA9IENvbXB1dGUoIiR4bnVtIC8gJGRlbiIpOwokeSA9IENvbXB1dGUoIiR5bnVtIC8gJGRlbiIpOwoKJHhtaW4gPSAtMTsKJHhtYXggPSAgOTsKJHltaW4gPSAtMTsKJHltYXggPSAgOTsgCiRncmFwaCA9IGluaXRfZ3JhcGgoJHhtaW4sJHltaW4sJHhtYXgsJHltYXgsJ2F4ZXMnPT5bMCwwXSk7CiRncmFwaC0+bGIoJ3Jlc2V0Jyk7CiRncmFwaC0+bGIobmV3IExhYmVsKCR4bWF4LTAuMSwwLjA1LCJ4IiwnYmxhY2snLCdyaWdodCcsJ2JvdHRvbScpKTsKJGdyYXBoLT5sYihuZXcgTGFiZWwoMC4wNSwkeW1heC0wLjEsInkiLCdibGFjaycsJ2xlZnQnLCd0b3AnKSk7CgokZ3JhcGgtPm1vdmVUbygwLDEpOwokZ3JhcGgtPmxpbmVUbyg4LDksJ3JlZCcsNCk7CgokZ3JhcGgtPm1vdmVUbyg4LDApOwokZ3JhcGgtPmxpbmVUbygwLDUsJ2JsdWUnLDQpOwoKQkVHSU5fUEdNTApGaW5kIHRoZSBwb2ludCBvZiBpbnRlcnNlY3Rpb24gb2YgdGhlIGxpbmVzIFtgeSA9IHggKyBbJGVdYF0gYW5kIFtgMngrM3k9WyRmXVx0ZXh0ey59YF0KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoKSwgd2lkdGg9PjMwMCwgYWx0PT5xcSJhIGdyYXBoIHdpdGggYXhlcyBkZXBpY3RpbmcgdHdvIGludGVyc2VjdGluZyBsaW5lcyIpQF0qICA8PAoKVGhlIHBvaW50IG9mIGludGVyc2VjdGlvbiBpcyBbYCh4LHkpYF0gd2hlcmUgW2B4PWBdW19deyR4fXs1fSBhbmQgW2B5PWBdW19deyR5fXs1fS4KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-09T18:04:27Z       
+###       on 2024-10-28T17:45:16Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -41,7 +38,123 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(1.1.1)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$a = -1;
+$b = 1;
+$c = 2;
+$d = 3;
+$e = random(1,3,1);
+$f = random(10,15,1);
+$xnum = $d * $e - $b * $f;
+$ynum = -($c)*$e + $a * $f;
+$den = $a * $d - $b * $c;
+$x = Compute("$xnum / $den");
+$y = Compute("$ynum / $den");
+
+$xmin = -1;
+$xmax =  9;
+$ymin = -1;
+$ymax =  9; 
+$graph = init_graph($xmin,$ymin,$xmax,$ymax,'axes'=>[0,0]);
+$graph->lb('reset');
+$graph->lb(new Label($xmax-0.1,0.05,"x",'black','right','bottom'));
+$graph->lb(new Label(0.05,$ymax-0.1,"y",'black','left','top'));
+
+$graph->moveTo(0,1);
+$graph->lineTo(8,9,'red',4);
+
+$graph->moveTo(8,0);
+$graph->lineTo(0,5,'blue',4);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the point of intersection of the lines [`y = x + [$e]`] and [`2x+3y=[$f]\text{.}`]
+
+>> [@image(insertGraph($graph), width=>300, alt=>qq"a graph with axes depicting two intersecting lines")@]*  <<
+
+The point of intersection is [`(x,y)`] where [`x=`][_]{$x}{5} and [`y=`][_]{$y}{5}.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2">
+      <statement><p>The solution of the linear system</p>
+<p><me>\begin{aligned}
+{4}x+y \amp = {-21}\\
+{4}x-{5}y \amp = {-15}
+\end{aligned}</me></p>
+<p>is</p>
+<p><m>x=</m><fillin name="AnSwEr0001" characters="2"/> and <m>y=</m><fillin name="AnSwEr0002" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTgsOCwxKSk7CiR5ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTgsOCwxKSk7CiRhPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRiPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjb25zdDE9JGEqJHgrJHk7CiRjb25zdDI9JGIqJHgtJGMqJHk7CgpCRUdJTl9QR01MClRoZSBzb2x1dGlvbiBvZiB0aGUgbGluZWFyIHN5c3RlbQoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGFdeCt5IFxhbXAgPSBbJGNvbnN0MV1cXApbJGJdeC1bJGNdeSBcYW1wID0gWyRjb25zdDJdClxlbmR7YWxpZ25lZH0KYGBgXQoKaXMKCltgeD1gXVtfXXskeH17Mn0gYW5kIFtgeT1gXVtfXXskeX17Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -103,34 +216,34 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-2" ww-id="webwork-2">
-    <static seed="2">
-      <statement><p>Suppose a jar contains red, blue and green marbles. You are told that there are a total of <m>{36}</m> marbles in the jar; there are twice as many red marbles as green ones; the number of blue marbles is the same as the sum of the red and green marbles. How many marbles of each color are there?</p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-3" ww-id="webwork-3">
+    <static seed="3">
+      <statement><p>Suppose a jar contains red, blue and green marbles. You are told that there are a total of <m>{48}</m> marbles in the jar; there are twice as many red marbles as green ones; the number of blue marbles is the same as the sum of the red and green marbles. How many marbles of each color are there?</p>
 <p><m>g=</m><fillin name="AnSwEr0001" characters="2"/></p>
 <p><m>r=</m><fillin name="AnSwEr0002" characters="2"/></p>
 <p><m>b=</m><fillin name="AnSwEr0003" characters="2"/></p>
 </statement>
       <answer>
         <p>
-          <m>6</m>
+          <m>8</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>12</m>
+          <m>16</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>18</m>
+          <m>24</m>
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CiAgICAgICAgQ29udGV4dCgiTnVtZXJpYyIpOwogICAgICAgICRnID0gQ29tcHV0ZShyYW5kb20oMywyMCkpOwogICAgICAgICRyPTIqJGc7CiAgICAgICAgJGI9MyokZzsKCiAgICAgICAgJHRvdGFsID0gNiokZzsKCkJFR0lOX1BHTUwKU3VwcG9zZSBhIGphciBjb250YWlucyByZWQsIGJsdWUgYW5kIGdyZWVuIG1hcmJsZXMuIFlvdSBhcmUgdG9sZCB0aGF0IHRoZXJlIGFyZSBhIHRvdGFsIG9mIFtgWyR0b3RhbF1gXSBtYXJibGVzIGluIHRoZSBqYXI7IHRoZXJlIGFyZSB0d2ljZSBhcyBtYW55IHJlZCBtYXJibGVzIGFzIGdyZWVuIG9uZXM7IHRoZSBudW1iZXIgb2YgYmx1ZSBtYXJibGVzIGlzIHRoZSBzYW1lIGFzIHRoZSBzdW0gb2YgdGhlIHJlZCBhbmQgZ3JlZW4gbWFyYmxlcy4gSG93IG1hbnkgbWFyYmxlcyBvZiBlYWNoIGNvbG9yIGFyZSB0aGVyZT8KCltAS2V5Ym9hcmRJbnN0cnVjdGlvbnMoJ1VzZSBbYHJgXSBmb3IgdGhlIG51bWJlciBvZiByZWQgbWFyYmxlcywgW2BiYF0gZm9yIHRoZSBudW1iZXIgb2YgYmx1ZSBtYXJibGVzLCBhbmQgW2BnYF0gZm9yIHRoZSBudW1iZXIgb2YgZ3JlZW4gbWFyYmxlcy4nKUBdKioKCltgZz1gXVtfXXskZ317Mn0KCltgcj1gXVtfXXskcn17Mn0KCltgYj1gXVtfXXskYn17Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKJGcgPSBDb21wdXRlKHJhbmRvbSgzLDIwKSk7CiRyPTIqJGc7CiRiPTMqJGc7CgokdG90YWwgPSA2KiRnOwoKQkVHSU5fUEdNTApTdXBwb3NlIGEgamFyIGNvbnRhaW5zIHJlZCwgYmx1ZSBhbmQgZ3JlZW4gbWFyYmxlcy4gWW91IGFyZSB0b2xkIHRoYXQgdGhlcmUgYXJlIGEgdG90YWwgb2YgW2BbJHRvdGFsXWBdIG1hcmJsZXMgaW4gdGhlIGphcjsgdGhlcmUgYXJlIHR3aWNlIGFzIG1hbnkgcmVkIG1hcmJsZXMgYXMgZ3JlZW4gb25lczsgdGhlIG51bWJlciBvZiBibHVlIG1hcmJsZXMgaXMgdGhlIHNhbWUgYXMgdGhlIHN1bSBvZiB0aGUgcmVkIGFuZCBncmVlbiBtYXJibGVzLiBIb3cgbWFueSBtYXJibGVzIG9mIGVhY2ggY29sb3IgYXJlIHRoZXJlPwoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVXNlIFtgcmBdIGZvciB0aGUgbnVtYmVyIG9mIHJlZCBtYXJibGVzLCBbYGJgXSBmb3IgdGhlIG51bWJlciBvZiBibHVlIG1hcmJsZXMsIGFuZCBbYGdgXSBmb3IgdGhlIG51bWJlciBvZiBncmVlbiBtYXJibGVzLicpQF0qKgoKW2BnPWBdW19deyRnfXsyfQoKW2ByPWBdW19deyRyfXsyfQoKW2BiPWBdW19deyRifXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-09T18:04:27Z       
+###       on 2024-10-28T17:45:16Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -146,7 +259,7 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(1.1.2)
+## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -173,12 +286,12 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-        Context("Numeric");
-        $g = Compute(random(3,20));
-        $r=2*$g;
-        $b=3*$g;
+Context("Numeric");
+$g = Compute(random(3,20));
+$r=2*$g;
+$b=3*$g;
 
-        $total = 6*$g;
+$total = 6*$g;
 
 ############################################################
 # Body
@@ -194,6 +307,1187 @@ Suppose a jar contains red, blue and green marbles. You are told that there are 
 [`r=`][_]{$r}{2}
 
 [`b=`][_]{$b}{2}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-4" ww-id="webwork-4">
+    <static seed="4">
+      <statement><p>Solve the system:</p>
+<p><me>\begin{aligned}
+{-8x_{1}+7x_{2}+7x_{3}} \amp = 15\\
+{5x_{2}-8x_{3}} \amp = 18\\
+{-4x_{3}} \amp = 4
+\end{aligned}</me></p>
+<p><m>(x_1, x_2, x_3) = \bigg(</m> <fillin name="AnSwEr0001" characters="2"/> , <fillin name="AnSwEr0002" characters="2"/> , <fillin name="AnSwEr0003" characters="2"/> <m>\bigg)</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZvcm0ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZCh4XzEgPT4gJ1JlYWwnLCB4XzI9PiAnUmVhbCcsIHhfMz0+J1JlYWwnKTsKQ29udGV4dCgpLT5yZWR1Y3Rpb24tPnNldCgnKC14KSt5Jz0+MCwgJygteCkteSc9PjApOwokeDEgPSBub25femVyb19yYW5kb20oLTUsNSwxKTsKJHgyID0gbm9uX3plcm9fcmFuZG9tKC01LDUsMSk7CiR4MyA9IG5vbl96ZXJvX3JhbmRvbSgtNSw1LDEpOwokYTEgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRjMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokZDEgPSAkYTEqJHgxKyRiMSokeDIrJGMxKiR4MzsKJGEyID0gMDsKJGIyID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRjMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokZDIgPSAkYTIqJHgxKyRiMiokeDIrJGMyKiR4MzsKJGEzID0gMDsKJGIzID0gMDsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC01LDUsMSk7CiRkMyA9ICRhMyokeDErJGIzKiR4MiskYzMqJHgzOwokY29lZmYxPUZvcm11bGEoIiRhMSp4XzErJGIxKnhfMiskYzEqeF8zIiktPnJlZHVjZTsKJGNvZWZmMj1Gb3JtdWxhKCIkYTIqeF8xKyRiMip4XzIrJGMyKnhfMyIpLT5yZWR1Y2U7CiRjb2VmZjM9Rm9ybXVsYSgiJGEzKnhfMSskYjMqeF8yKyRjMyp4XzMiKS0+cmVkdWNlOwoKQkVHSU5fUEdNTApTb2x2ZSB0aGUgc3lzdGVtOgoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGNvZWZmMV0gXGFtcCA9IFskZDFdXFwKWyRjb2VmZjJdIFxhbXAgPSBbJGQyXVxcClskY29lZmYzXSBcYW1wID0gWyRkM10KXGVuZHthbGlnbmVkfQpgYGBdCgoKCltgKHhfMSwgeF8yLCB4XzMpID0gXGJpZ2coIGBdIFtfXXskeDF9ezJ9ICwgW19deyR4Mn17Mn0gLCBbX117JHgzfXsyfSBbYFxiaWdnKSBgXQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(x_1 => 'Real', x_2=> 'Real', x_3=>'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$x1 = non_zero_random(-5,5,1);
+$x2 = non_zero_random(-5,5,1);
+$x3 = non_zero_random(-5,5,1);
+$a1 = non_zero_random(-9,9,1);
+$b1 = non_zero_random(-9,9,1);
+$c1 = non_zero_random(-9,9,1);
+$d1 = $a1*$x1+$b1*$x2+$c1*$x3;
+$a2 = 0;
+$b2 = non_zero_random(-9,9,1);
+$c2 = non_zero_random(-9,9,1);
+$d2 = $a2*$x1+$b2*$x2+$c2*$x3;
+$a3 = 0;
+$b3 = 0;
+$c3 = non_zero_random(-5,5,1);
+$d3 = $a3*$x1+$b3*$x2+$c3*$x3;
+$coeff1=Formula("$a1*x_1+$b1*x_2+$c1*x_3")->reduce;
+$coeff2=Formula("$a2*x_1+$b2*x_2+$c2*x_3")->reduce;
+$coeff3=Formula("$a3*x_1+$b3*x_2+$c3*x_3")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the system:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$coeff1] \amp = [$d1]\\
+[$coeff2] \amp = [$d2]\\
+[$coeff3] \amp = [$d3]
+\end{aligned}
+```]
+
+[`(x_1, x_2, x_3) = \bigg( `] [_]{$x1}{2} , [_]{$x2}{2} , [_]{$x3}{2} [`\bigg) `]
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-5" ww-id="webwork-5">
+    <static seed="5">
+      <statement><p>Solve the system:</p>
+<p><me>\begin{aligned}
+{6x_{1}+6x_{2}-2x_{3}} \amp = -8\\
+{6x_{2}-2x_{3}} \amp = -14\\
+{-x_{1}+3x_{3}} \amp = 11
+\end{aligned}</me></p>
+<p><m>(x_1, x_2, x_3) = \bigg(</m> <fillin name="AnSwEr0001" characters="2"/> , <fillin name="AnSwEr0002" characters="2"/> , <fillin name="AnSwEr0003" characters="2"/> <m>\bigg)</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZvcm0ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZCh4XzEgPT4gJ1JlYWwnLCB4XzI9PiAnUmVhbCcsIHhfMz0+J1JlYWwnKTsKQ29udGV4dCgpLT5yZWR1Y3Rpb24tPnNldCgnKC14KSt5Jz0+MCwgJygteCkteSc9PjApOwokeDEgPSBub25femVyb19yYW5kb20oLTUsNSwxKTsKJHgyID0gbm9uX3plcm9fcmFuZG9tKC01LDUsMSk7CiR4MyA9IG5vbl96ZXJvX3JhbmRvbSgtNSw1LDEpOwokYTEgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRjMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokZDEgPSAkYTEqJHgxKyRiMSokeDIrJGMxKiR4MzsKJGEyID0gMDsKJGIyID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRjMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokZDIgPSAkYTIqJHgxKyRiMiokeDIrJGMyKiR4MzsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMyA9IDA7CiRjMyA9IG5vbl96ZXJvX3JhbmRvbSgtNSw1LDEpOwokZDMgPSAkYTMqJHgxKyRiMyokeDIrJGMzKiR4MzsKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeF8xKyRiMSp4XzIrJGMxKnhfMyIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKnhfMSskYjIqeF8yKyRjMip4XzMiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4XzErJGIzKnhfMiskYzMqeF8zIiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKU29sdmUgdGhlIHN5c3RlbToKCltgYGBcYmVnaW57YWxpZ25lZH0KWyRjb2VmZjFdIFxhbXAgPSBbJGQxXVxcClskY29lZmYyXSBcYW1wID0gWyRkMl1cXApbJGNvZWZmM10gXGFtcCA9IFskZDNdClxlbmR7YWxpZ25lZH0KYGBgXQoKCgpbYCh4XzEsIHhfMiwgeF8zKSA9IFxiaWdnKCBgXSBbX117JHgxfXsyfSAsIFtfXXskeDJ9ezJ9ICwgW19deyR4M317Mn0gW2BcYmlnZykgYF0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(x_1 => 'Real', x_2=> 'Real', x_3=>'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$x1 = non_zero_random(-5,5,1);
+$x2 = non_zero_random(-5,5,1);
+$x3 = non_zero_random(-5,5,1);
+$a1 = non_zero_random(-9,9,1);
+$b1 = non_zero_random(-9,9,1);
+$c1 = non_zero_random(-9,9,1);
+$d1 = $a1*$x1+$b1*$x2+$c1*$x3;
+$a2 = 0;
+$b2 = non_zero_random(-9,9,1);
+$c2 = non_zero_random(-9,9,1);
+$d2 = $a2*$x1+$b2*$x2+$c2*$x3;
+$a3 = non_zero_random(-9,9,1);
+$b3 = 0;
+$c3 = non_zero_random(-5,5,1);
+$d3 = $a3*$x1+$b3*$x2+$c3*$x3;
+$coeff1=Formula("$a1*x_1+$b1*x_2+$c1*x_3")->reduce;
+$coeff2=Formula("$a2*x_1+$b2*x_2+$c2*x_3")->reduce;
+$coeff3=Formula("$a3*x_1+$b3*x_2+$c3*x_3")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the system:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$coeff1] \amp = [$d1]\\
+[$coeff2] \amp = [$d2]\\
+[$coeff3] \amp = [$d3]
+\end{aligned}
+```]
+
+[`(x_1, x_2, x_3) = \bigg( `] [_]{$x1}{2} , [_]{$x2}{2} , [_]{$x3}{2} [`\bigg) `]
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-6" ww-id="webwork-6">
+    <static seed="6">
+      <statement><p>Use the method of elimination to solve the linear system:</p>
+<p><me>\begin{aligned}
+{3}x+{6}y \amp = {-24}\\
+{4}x-{5}y \amp = {33}
+\end{aligned}</me></p>
+<p>The solution is <m>x=</m><fillin name="AnSwEr0001" characters="2"/> and <m>y=</m><fillin name="AnSwEr0002" characters="2"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-5</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTUsNSwxKSk7CiR5ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTUsNSwxKSk7CiRhPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRkPTIqJGE7CiRiPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjb25zdDE9JGEqJHgrJGQqJHk7CiRjb25zdDI9JGIqJHgtJGMqJHk7CgpCRUdJTl9QR01MClVzZSB0aGUgbWV0aG9kIG9mIGVsaW1pbmF0aW9uIHRvIHNvbHZlIHRoZSBsaW5lYXIgc3lzdGVtOgoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGFdeCtbJGRdeSBcYW1wID0gWyRjb25zdDFdXFwKWyRiXXgtWyRjXXkgXGFtcCA9IFskY29uc3QyXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKVGhlIHNvbHV0aW9uIGlzIFtgeD1gXVtfXXskeH17Mn0gYW5kIFtgeT1gXVtfXXskeX17Mn0uCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$x = Compute(non_zero_random(-5,5,1));
+$y = Compute(non_zero_random(-5,5,1));
+$a=Compute(random(2,5,1));
+$d=2*$a;
+$b=Compute(random(2,5,1));
+$c=Compute(random(2,5,1));
+$const1=$a*$x+$d*$y;
+$const2=$b*$x-$c*$y;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the method of elimination to solve the linear system:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$a]x+[$d]y \amp = [$const1]\\
+[$b]x-[$c]y \amp = [$const2]
+\end{aligned}
+```]
+
+The solution is [`x=`][_]{$x}{2} and [`y=`][_]{$y}{2}.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-7" ww-id="webwork-7">
+    <static seed="7">
+      <statement><p>Use the method of elimination to solve the linear system:</p>
+<p><me>\begin{aligned}
+{-3x_{1}-2x_{2}-6x_{3}} \amp = {-48}\\
+{-x_{2}-7x_{3}} \amp = {-24}\\
+{-2x_{1}-7x_{2}+2x_{3}} \amp = {-31}
+\end{aligned}</me></p>
+<p>The solution is <m>x_1=</m><fillin name="AnSwEr0001" characters="1"/>, <m>x_2=</m><fillin name="AnSwEr0002" characters="1"/> and <m>x_3=</m><fillin name="AnSwEr0003" characters="1"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZvcm0ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFyZSh4XzEgPT4gJ1JlYWwnLCB4XzI9PiAnUmVhbCcsIHhfMz0+ICdSZWFsJyk7CkNvbnRleHQoKS0+cmVkdWN0aW9uLT5zZXQoJygteCkreSc9PjAsICcoLXgpLXknPT4wKTsKJHgxID0gQ29tcHV0ZShub25femVyb19yYW5kb20oMiw5LDEpKTsKJHgyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTcsNywxKSk7CiR4MyA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC03LDcsMSkpOwokYTEgPSBub25femVyb19yYW5kb20oLTEsMSwxKSpub25femVyb19yYW5kb20oMiwzLDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMSA9IENvbXB1dGUoIiRhMSokeDErJGIxKiR4MiskYzEqJHgzIik7CiRhMiA9IDA7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtMywzLDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTcsNywxKTsKJGQyID0gQ29tcHV0ZSgiJGEyKiR4MSskYjIqJHgyKyRjMiokeDMiKTsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC03LDcsMSk7CiRiMyA9IG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpOwokYzMgPSByYW5kb20oMiw5LDEpOwokZDMgPSBDb21wdXRlKCIkYTMqJHgxKyRiMyokeDIrJGMzKiR4MyIpOwoKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeF8xKyRiMSp4XzIrJGMxKnhfMyIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKnhfMSskYjIqeF8yKyRjMip4XzMiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4XzErJGIzKnhfMiskYzMqeF8zIiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKVXNlIHRoZSBtZXRob2Qgb2YgZWxpbWluYXRpb24gdG8gc29sdmUgdGhlIGxpbmVhciBzeXN0ZW06CgpbYGBgXGJlZ2lue2FsaWduZWR9ClskY29lZmYxXSBcYW1wID0gWyRkMV1cXApbJGNvZWZmMl0gXGFtcCA9IFskZDJdXFwKWyRjb2VmZjNdIFxhbXAgPSBbJGQzXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKVGhlIHNvbHV0aW9uIGlzIFtgeF8xPWBdW19deyR4fXsyfSwgW2B4XzI9YF1bX117JHl9ezJ9IGFuZCBbYHhfMz1gXVtfXXsken17Mn0uCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x_1 => 'Real', x_2=> 'Real', x_3=> 'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$x1 = Compute(non_zero_random(2,9,1));
+$x2 = Compute(non_zero_random(-7,7,1));
+$x3 = Compute(non_zero_random(-7,7,1));
+$a1 = non_zero_random(-1,1,1)*non_zero_random(2,3,1);
+$b1 = non_zero_random(-6,6,1);
+$c1 = non_zero_random(-6,6,1);
+$d1 = Compute("$a1*$x1+$b1*$x2+$c1*$x3");
+$a2 = 0;
+$b2 = non_zero_random(-3,3,1);
+$c2 = non_zero_random(-7,7,1);
+$d2 = Compute("$a2*$x1+$b2*$x2+$c2*$x3");
+$a3 = non_zero_random(-7,7,1);
+$b3 = non_zero_random(-7,7,1);
+$c3 = random(2,9,1);
+$d3 = Compute("$a3*$x1+$b3*$x2+$c3*$x3");
+
+$coeff1=Formula("$a1*x_1+$b1*x_2+$c1*x_3")->reduce;
+$coeff2=Formula("$a2*x_1+$b2*x_2+$c2*x_3")->reduce;
+$coeff3=Formula("$a3*x_1+$b3*x_2+$c3*x_3")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the method of elimination to solve the linear system:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$coeff1] \amp = [$d1]\\
+[$coeff2] \amp = [$d2]\\
+[$coeff3] \amp = [$d3]
+\end{aligned}
+```]
+
+The solution is [`x_1=`][_]{$x}{2}, [`x_2=`][_]{$y}{2} and [`x_3=`][_]{$z}{2}.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-8" ww-id="webwork-8">
+    <static seed="8">
+      <statement><p>Write the augmented matrix of the system</p>
+<p><me>\begin{aligned}
+8x_1+ 4x_2\amp = 25\\
+18x_1- 4x_2\amp = 12\\
+-17x_1+ 19x_2\amp = -23
+\end{aligned}</me></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<col/>
+<col right="major"/>
+<col/>
+<row>
+<cell><fillin name="AnSwEr0001" characters="2"/></cell>
+<cell><fillin name="AnSwEr0002" characters="2"/></cell>
+<cell><fillin name="AnSwEr0003" characters="2"/></cell>
+</row>
+<row>
+<cell><fillin name="AnSwEr0004" characters="2"/></cell>
+<cell><fillin name="AnSwEr0005" characters="2"/></cell>
+<cell><fillin name="AnSwEr0006" characters="2"/></cell>
+</row>
+<row>
+<cell><fillin name="AnSwEr0007" characters="2"/></cell>
+<cell><fillin name="AnSwEr0008" characters="2"/></cell>
+<cell><fillin name="AnSwEr0009" characters="2"/></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>8</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>25</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>18</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>12</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-17</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>19</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-23</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpURVhUKE1PREVTKFBUWD0+JycsSFRNTD0+JzxkaXYgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPlwoXG5ld2NvbW1hbmR7XGFtcH17Jn1cKTwvZGl2PicpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHgxID0+ICdSZWFsJywgeDI9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtMSwxLDEpKnJhbmRvbSgyLDIwLDEpOwokYjEgPSByYW5kb20oMiwyNywxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC0yNywyNywxKTsKJGEyID0gbm9uX3plcm9fcmFuZG9tKC0xLDEsMSkqcmFuZG9tKDIsMjAsMSk7CiRiMiA9IHJhbmRvbSgyLDI3LDEpOwokYjJhbnMgPSAtMSokYjI7CiRjMiA9IG5vbl96ZXJvX3JhbmRvbSgtMjcsMjcsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtMSwxLDEpKnJhbmRvbSgyLDIwLDEpOwokYjMgPSByYW5kb20oMiwyNywxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC0yNywyNywxKTsKCkJFR0lOX1BHTUwKV3JpdGUgdGhlIGF1Z21lbnRlZCBtYXRyaXggb2YgdGhlIHN5c3RlbQoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGExXXhfMSsgWyRiMV14XzJcYW1wID0gWyRjMV1cXApbJGEyXXhfMS0gWyRiMl14XzJcYW1wID0gWyRjMl1cXApbJGEzXXhfMSsgWyRiM114XzJcYW1wID0gWyRjM10KXGVuZHthbGlnbmVkfQpgYGBdCgoKCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhMX17Mn0nKSxQR01MKCdbX117JGIxfXsyfScpLFBHTUwoJ1tfXXskYzF9ezJ9JyksXSxbUEdNTCgnW19deyRhMn17Mn0nKSxQR01MKCdbX117JGIyYW5zfXsyfScpLFBHTUwoJ1tfXXskYzJ9ezJ9JyksXSxbUEdNTCgnW19deyRhM317Mn0nKSxQR01MKCdbX117JGIzfXsyfScpLFBHTUwoJ1tfXXskYzN9ezJ9JyksXSxdLGFsaWduPT4nbGwhe1x2cnVsZSB3aWR0aCAwLjA3ZW19bCcsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(x1 => 'Real', x2=> 'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$a1 = non_zero_random(-1,1,1)*random(2,20,1);
+$b1 = random(2,27,1);
+$c1 = non_zero_random(-27,27,1);
+$a2 = non_zero_random(-1,1,1)*random(2,20,1);
+$b2 = random(2,27,1);
+$b2ans = -1*$b2;
+$c2 = non_zero_random(-27,27,1);
+$a3 = non_zero_random(-1,1,1)*random(2,20,1);
+$b3 = random(2,27,1);
+$c3 = non_zero_random(-27,27,1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write the augmented matrix of the system
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$a1]x_1+ [$b1]x_2\amp = [$c1]\\
+[$a2]x_1- [$b2]x_2\amp = [$c2]\\
+[$a3]x_1+ [$b3]x_2\amp = [$c3]
+\end{aligned}
+```]
+
+>> [@DataTable(
+  [
+    [PGML('[_]{$a1}{2}'),
+     PGML('[_]{$b1}{2}'),
+     PGML('[_]{$c1}{2}'),
+    ],
+    [PGML('[_]{$a2}{2}'),
+     PGML('[_]{$b2ans}{2}'),
+     PGML('[_]{$c2}{2}'),
+    ],
+    [PGML('[_]{$a3}{2}'),
+     PGML('[_]{$b3}{2}'),
+     PGML('[_]{$c3}{2}'),
+    ],
+  ],
+      align => 'll!{\vrule width 0.07em}l',
+      valign => 'middle',);@]* <<
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-9" ww-id="webwork-9">
+    <static seed="9">
+      <statement><p>Write the augmented matrix of the system</p>
+<p><me>\begin{aligned}
+{9x+96y+3z} \amp = 37\\
+{57y-3z} \amp = -6\\
+{-73x+62z} \amp = -47
+\end{aligned}</me></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<col/>
+<col/>
+<col right="major"/>
+<col/>
+<row>
+<cell><fillin name="AnSwEr0001" characters="2"/></cell>
+<cell><fillin name="AnSwEr0002" characters="2"/></cell>
+<cell><fillin name="AnSwEr0003" characters="2"/></cell>
+<cell><fillin name="AnSwEr0004" characters="2"/></cell>
+</row>
+<row>
+<cell><fillin name="AnSwEr0005" characters="2"/></cell>
+<cell><fillin name="AnSwEr0006" characters="2"/></cell>
+<cell><fillin name="AnSwEr0007" characters="2"/></cell>
+<cell><fillin name="AnSwEr0008" characters="2"/></cell>
+</row>
+<row>
+<cell><fillin name="AnSwEr0009" characters="2"/></cell>
+<cell><fillin name="AnSwEr0010" characters="2"/></cell>
+<cell><fillin name="AnSwEr0011" characters="2"/></cell>
+<cell><fillin name="AnSwEr0012" characters="2"/></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>96</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>37</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>57</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-73</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>62</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-47</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsImNvbnRleHRGb3JtLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+dmFyaWFibGVzLT5hZGQoeSA9PiAnUmVhbCcsIHo9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokZDEgPSByYW5kb20oLTk5LDk5LDEpOwokYTIgPSAwOwokYjIgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gcmFuZG9tKC05LDksMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtOTksOTksMSk7CiRiMyA9IDA7CiRjMyA9IHJhbmRvbSgyLDk5LDEpOwokZDMgPSByYW5kb20oLTk5LDk5LDEpOwokY29lZmYxPUZvcm11bGEoIiRhMSp4KyRiMSp5KyRjMSp6IiktPnJlZHVjZTsKJGNvZWZmMj1Gb3JtdWxhKCIkYTIqeCskYjIqeSskYzIqeiIpLT5yZWR1Y2U7CiRjb2VmZjM9Rm9ybXVsYSgiJGEzKngrJGIzKnkrJGMzKnoiKS0+cmVkdWNlOwoKQkVHSU5fUEdNTApXcml0ZSB0aGUgYXVnbWVudGVkIG1hdHJpeCBvZiB0aGUgc3lzdGVtCgpbYGBgXGJlZ2lue2FsaWduZWR9ClskY29lZmYxXSBcYW1wID0gWyRkMV1cXApbJGNvZWZmMl0gXGFtcCA9IFskZDJdXFwKWyRjb2VmZjNdIFxhbXAgPSBbJGQzXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbX117JGExfXsyfScpLFBHTUwoJ1tfXXskYjF9ezJ9JyksUEdNTCgnW19deyRjMX17Mn0nKSxQR01MKCdbX117JGQxfXsyfScpLF0sW1BHTUwoJ1tfXXskYTJ9ezJ9JyksUEdNTCgnW19deyRiMn17Mn0nKSxQR01MKCdbX117JGMyfXsyfScpLFBHTUwoJ1tfXXskZDJ9ezJ9JyksXSxbUEdNTCgnW19deyRhM317Mn0nKSxQR01MKCdbX117JGIzfXsyfScpLFBHTUwoJ1tfXXskYzN9ezJ9JyksUEdNTCgnW19deyRkM317Mn0nKSxdLF0sYWxpZ249PidsbGwhe1x2cnVsZSB3aWR0aCAwLjA3ZW19bCcsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(y => 'Real', z=> 'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$a1 = non_zero_random(-9,9,1);
+$b1 = non_zero_random(-99,99,1);
+$c1 = non_zero_random(-99,99,1);
+$d1 = random(-99,99,1);
+$a2 = 0;
+$b2 = non_zero_random(-99,99,1);
+$c2 = non_zero_random(-9,9,1);
+$d2 = random(-9,9,1);
+$a3 = non_zero_random(-99,99,1);
+$b3 = 0;
+$c3 = random(2,99,1);
+$d3 = random(-99,99,1);
+$coeff1=Formula("$a1*x+$b1*y+$c1*z")->reduce;
+$coeff2=Formula("$a2*x+$b2*y+$c2*z")->reduce;
+$coeff3=Formula("$a3*x+$b3*y+$c3*z")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write the augmented matrix of the system
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$coeff1] \amp = [$d1]\\
+[$coeff2] \amp = [$d2]\\
+[$coeff3] \amp = [$d3]
+\end{aligned}
+```]
+
+>> [@DataTable(
+  [
+    [PGML('[_]{$a1}{2}'),
+     PGML('[_]{$b1}{2}'),
+     PGML('[_]{$c1}{2}'),
+     PGML('[_]{$d1}{2}'),
+    ],
+    [PGML('[_]{$a2}{2}'),
+     PGML('[_]{$b2}{2}'),
+     PGML('[_]{$c2}{2}'),
+     PGML('[_]{$d2}{2}'),
+    ],
+    [PGML('[_]{$a3}{2}'),
+     PGML('[_]{$b3}{2}'),
+     PGML('[_]{$c3}{2}'),
+     PGML('[_]{$d3}{2}'),
+    ],
+  ],
+      align => 'lll!{\vrule width 0.07em}l',
+      valign => 'middle',);@]* <<
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-10" ww-id="webwork-10">
+    <static seed="10">
+      <statement><p><ol label="a.">
+<li>
+<p>Consider the matrix.</p>
+<p><me>A=
+                \begin{bmatrix} -4 \amp 1 \amp 8 \amp {4} \amp {8} \\
+                -9 \amp -7 \amp 2 \amp {-6} \amp {-8}\\
+                -3 \amp 3 \amp -2 \amp 7 \amp 6 \end{bmatrix}</me></p>
+<p>Which of the following correctly describes the matrix above?</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>The matrix is <m>3\times 5</m>, with 3 rows and 5 columns.</p>
+</li>
+<li>
+<p>The matrix is <m>5\times 3</m>, with 5 columns and 3 rows.</p>
+</li>
+<li>
+<p>The matrix is <m>3\times 5</m>, with 3 columns and 5 rows.</p>
+</li>
+<li>
+<p>The matrix is <m>5\times 3</m>, with 5 rows and 3 columns.</p>
+</li>
+</var></p>
+</li>
+<li>
+<p>Now consider an <m>{3} \times {9}</m> matrix <m>B\text{.}</m>  If <m>B</m> is an augmented matrix, the corresponding linear system has how many variables? <fillin name="AnSwEr0002" characters="2"/></p>
+</li>
+</ol></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Choice 1}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>8</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCdOdW1lcmljJyk7JHJhZGlvID0gUmFkaW9CdXR0b25zKFtbCiAgIlRoZSBtYXRyaXggaXMgJHtCTX0zXHRpbWVzIDUke0VNfSwgd2l0aCAzIHJvd3MgYW5kIDUgY29sdW1ucy4iLAogICJUaGUgbWF0cml4IGlzICR7Qk19M1x0aW1lcyA1JHtFTX0sIHdpdGggMyBjb2x1bW5zIGFuZCA1IHJvd3MuIiwKICAiVGhlIG1hdHJpeCBpcyAke0JNfTVcdGltZXMgMyR7RU19LCB3aXRoIDUgcm93cyBhbmQgMyBjb2x1bW5zLiIsCiAgIlRoZSBtYXRyaXggaXMgJHtCTX01XHRpbWVzIDMke0VNfSwgd2l0aCA1IGNvbHVtbnMgYW5kIDMgcm93cy4iLAogIF1dLCAwCik7CgokbiA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDUsMTAsMSkpOwokbSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDEsMywxKSk7CiRudW12YXJzID0gJG4tMTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSByYW5kb20oLTksOSwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRkMSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC05LDksMSkpOwokZTEgPSBDb21wdXRlKHJhbmRvbSgtOSw5LDEpKTsKJGEyID0gcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTksOSwxKSk7CiRlMiA9IENvbXB1dGUocmFuZG9tKC05LDksMSkpOwokYTMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIzID0gcmFuZG9tKC05LDksMSk7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGUzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CgpCRUdJTl9QR01MCmEuICBDb25zaWRlciB0aGUgbWF0cml4LgoKICAgIFtgYGBBPQogICAgICAgICAgICAgICAgXGJlZ2lue2JtYXRyaXh9IFskYTFdIFxhbXAgWyRiMV0gXGFtcCBbJGMxXSBcYW1wIFskZDFdIFxhbXAgWyRlMV0gXFwKICAgICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxhbXAgWyRlMl1cXAogICAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGFtcCBbJGUzXSBcZW5ke2JtYXRyaXh9CiAgICAgICAgICAgICAgYGBgXQoKICAgIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29ycmVjdGx5IGRlc2NyaWJlcyB0aGUgbWF0cml4IGFib3ZlPwoKICAgIFtfXXskcmFkaW99ezV9CgoKYS4gIE5vdyBjb25zaWRlciBhbiBbYFskbV0gXHRpbWVzIFskbl1gXSBtYXRyaXggW2BCXHRleHR7Ln1gXSAgSWYgW2BCYF0gaXMgYW4gYXVnbWVudGVkIG1hdHJpeCwgdGhlIGNvcnJlc3BvbmRpbmcgbGluZWFyIHN5c3RlbSBoYXMgaG93IG1hbnkgdmFyaWFibGVzPyBbX117JG51bXZhcnN9ezJ9ICAgCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$radio = RadioButtons([[
+  "The matrix is ${BM}3\times 5${EM}, with 3 rows and 5 columns.",
+  "The matrix is ${BM}3\times 5${EM}, with 3 columns and 5 rows.",
+  "The matrix is ${BM}5\times 3${EM}, with 5 rows and 3 columns.",
+  "The matrix is ${BM}5\times 3${EM}, with 5 columns and 3 rows.",
+  ]], 0
+);
+
+$n = Compute(non_zero_random(5,10,1));
+$m = Compute(non_zero_random(1,3,1));
+$numvars = $n-1;
+
+$a1 = non_zero_random(-9,9,1);
+$b1 = random(-9,9,1);
+$c1 = non_zero_random(-9,9,1);
+$d1 = Compute(non_zero_random(-9,9,1));
+$e1 = Compute(random(-9,9,1));
+$a2 = random(-9,9,1);
+$b2 = non_zero_random(-9,9,1);
+$c2 = non_zero_random(-9,9,1);
+$d2 = Compute(non_zero_random(-9,9,1));
+$e2 = Compute(random(-9,9,1));
+$a3 = non_zero_random(-9,9,1);
+$b3 = random(-9,9,1);
+$c3 = random(-9,9,1);
+$d3 = non_zero_random(-9,9,1);
+$e3 = non_zero_random(-9,9,1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+a.  Consider the matrix.
+
+    [```\newcommand{\amp}{&}A=
+                \begin{bmatrix} [$a1] \amp [$b1] \amp [$c1] \amp [$d1] \amp [$e1] \\
+                [$a2] \amp [$b2] \amp [$c2] \amp [$d2] \amp [$e2]\\
+                [$a3] \amp [$b3] \amp [$c3] \amp [$d3] \amp [$e3] \end{bmatrix}
+              ```]
+
+    Which of the following correctly describes the matrix above?
+
+    [_]{$radio}{5}
+
+a.  Now consider an [`[$m] \times [$n]`] matrix [`B\text{.}`]  If [`B`] is an augmented matrix, the corresponding linear system has how many variables? [_]{$numvars}{2}   
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-11" ww-id="webwork-11">
+    <static seed="11">
+      <statement><p>Convert the augmented matrix below to the associated linear system.</p>
+<p><me>\begin{bmatrix} -7 \amp 5 \amp -3 \amp {-30} \\
+              -3 \amp 8 \amp -5 \amp {-23} \\
+              -6 \amp 0 \amp 1 \amp {-20} \end{bmatrix}</me></p>
+<p>Use <m>x\text{,}</m> <m>y\text{,}</m> and <m>z</m> for the variables.</p>
+<p>The associated linear system is:</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<col halign="right"/>
+<col width="0%"/>
+<col/>
+<row>
+<cell>Expression containing the variables</cell>
+<cell><m>=</m></cell>
+<cell>Constants</cell>
+</row>
+<row>
+<cell><fillin name="AnSwEr0001" characters="8"/></cell>
+<cell><m>=</m></cell>
+<cell><fillin name="AnSwEr0002" characters="2"/></cell>
+</row>
+<row>
+<cell><fillin name="AnSwEr0003" characters="8"/></cell>
+<cell><m>=</m></cell>
+<cell><fillin name="AnSwEr0004" characters="2"/></cell>
+</row>
+<row>
+<cell><fillin name="AnSwEr0005" characters="8"/></cell>
+<cell><m>=</m></cell>
+<cell><fillin name="AnSwEr0006" characters="2"/></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>-7x+5y-3z</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-7\cdot 3+5\cdot \left(-3\right)+-3\cdot \left(-2\right)</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3x+8y-5z</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3\cdot 3+8\cdot \left(-3\right)+-5\cdot \left(-2\right)</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-6x+z</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-6\cdot 3+0\cdot \left(-3\right)+1\cdot \left(-2\right)</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsImNvbnRleHRGb3JtLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+dmFyaWFibGVzLT5hcmUoeCA9PiAnUmVhbCcsIHk9PiAnUmVhbCcsIHo9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oMiw5LDEpKTsKJHkgPSBDb21wdXRlKG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpKTsKJHogPSBDb21wdXRlKG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpKTsKJGExID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQxID0gQ29tcHV0ZSgiJGExKiR4KyRiMSokeSskYzEqJHoiKTsKJGEyID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZSgiJGEyKiR4KyRiMiokeSskYzIqJHoiKTsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMyA9IDA7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBDb21wdXRlKCIkYTMqJHgrJGIzKiR5KyRjMyokeiIpOwoKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeCskYjEqeSskYzEqeiIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKngrJGIyKnkrJGMyKnoiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4KyRiMyp5KyRjMyp6IiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKQ29udmVydCB0aGUgYXVnbWVudGVkIG1hdHJpeCBiZWxvdyB0byB0aGUgYXNzb2NpYXRlZCBsaW5lYXIgc3lzdGVtLgoKW2BgYAogICAgICAgICAgICAgIFxiZWdpbntibWF0cml4fSBbJGExXSBcYW1wIFskYjFdIFxhbXAgWyRjMV0gXGFtcCBbJGQxXSBcXAogICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxcCiAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGVuZHtibWF0cml4fQogICAgICAgICAgICBgYGBdCgpVc2UgW2B4XHRleHR7LH1gXSBbYHlcdGV4dHssfWBdIGFuZCBbYHpgXSBmb3IgdGhlIHZhcmlhYmxlcy4KClRoZSBhc3NvY2lhdGVkIGxpbmVhciBzeXN0ZW0gaXM6Cgo+PiBbQERhdGFUYWJsZShbW1BHTUwoJ0V4cHJlc3Npb24gY29udGFpbmluZyB0aGUgdmFyaWFibGVzJyksUEdNTCgnW2A9YF0nKSxQR01MKCdDb25zdGFudHMnKSxdLFtQR01MKCdbX117JGNvZWZmMX17OH0nKSxQR01MKCdbYD1gXScpLFBHTUwoJ1tfXXskZDF9ezJ9JyksXSxbUEdNTCgnW19deyRjb2VmZjJ9ezh9JyksUEdNTCgnW2A9YF0nKSxQR01MKCdbX117JGQyfXsyfScpLF0sW1BHTUwoJ1tfXXskY29lZmYzfXs4fScpLFBHTUwoJ1tgPWBdJyksUEdNTCgnW19deyRkM317Mn0nKSxdLF0sYWxpZ249PidycHswLjYyNX1sJyx2YWxpZ249PidtaWRkbGUnLCk7QF0qIDw8CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-10-28T17:45:16Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x => 'Real', y=> 'Real', z=> 'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$x = Compute(non_zero_random(2,9,1));
+$y = Compute(non_zero_random(-7,7,1));
+$z = Compute(non_zero_random(-7,7,1));
+$a1 = non_zero_random(-9,9,1);
+$b1 = non_zero_random(-9,9,1);
+$c1 = non_zero_random(-9,9,1);
+$d1 = Compute("$a1*$x+$b1*$y+$c1*$z");
+$a2 = non_zero_random(-9,9,1);
+$b2 = non_zero_random(-9,9,1);
+$c2 = non_zero_random(-9,9,1);
+$d2 = Compute("$a2*$x+$b2*$y+$c2*$z");
+$a3 = non_zero_random(-9,9,1);
+$b3 = 0;
+$c3 = random(-9,9,1);
+$d3 = Compute("$a3*$x+$b3*$y+$c3*$z");
+
+$coeff1=Formula("$a1*x+$b1*y+$c1*z")->reduce;
+$coeff2=Formula("$a2*x+$b2*y+$c2*z")->reduce;
+$coeff3=Formula("$a3*x+$b3*y+$c3*z")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert the augmented matrix below to the associated linear system.
+
+[```\newcommand{\amp}{&}
+              \begin{bmatrix} [$a1] \amp [$b1] \amp [$c1] \amp [$d1] \\
+              [$a2] \amp [$b2] \amp [$c2] \amp [$d2] \\
+              [$a3] \amp [$b3] \amp [$c3] \amp [$d3] \end{bmatrix}
+            ```]
+
+Use [`x\text{,}`] [`y\text{,}`] and [`z`] for the variables.
+
+The associated linear system is:
+
+>> [@DataTable(
+  [
+    [PGML('Expression containing the variables'),
+     PGML('[`=`]'),
+     PGML('Constants'),
+    ],
+    [PGML('[_]{$coeff1}{8}'),
+     PGML('[`=`]'),
+     PGML('[_]{$d1}{2}'),
+    ],
+    [PGML('[_]{$coeff2}{8}'),
+     PGML('[`=`]'),
+     PGML('[_]{$d2}{2}'),
+    ],
+    [PGML('[_]{$coeff3}{8}'),
+     PGML('[`=`]'),
+     PGML('[_]{$d3}{2}'),
+    ],
+  ],
+      align => 'rp{0.625}l',
+      valign => 'middle',);@]* <<
 
 END_PGML
 
