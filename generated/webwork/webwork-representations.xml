@@ -22,7 +22,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -138,7 +138,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -243,7 +243,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -347,7 +347,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -468,7 +468,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -583,7 +583,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -690,7 +690,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -862,7 +862,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1060,7 +1060,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1209,11 +1209,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCdOdW1lcmljJyk7JHJhZGlvID0gUmFkaW9CdXR0b25zKFtbCiAgIlRoZSBtYXRyaXggaXMgJHtCTX0zXHRpbWVzIDUke0VNfSwgd2l0aCAzIHJvd3MgYW5kIDUgY29sdW1ucy4iLAogICJUaGUgbWF0cml4IGlzICR7Qk19M1x0aW1lcyA1JHtFTX0sIHdpdGggMyBjb2x1bW5zIGFuZCA1IHJvd3MuIiwKICAiVGhlIG1hdHJpeCBpcyAke0JNfTVcdGltZXMgMyR7RU19LCB3aXRoIDUgcm93cyBhbmQgMyBjb2x1bW5zLiIsCiAgIlRoZSBtYXRyaXggaXMgJHtCTX01XHRpbWVzIDMke0VNfSwgd2l0aCA1IGNvbHVtbnMgYW5kIDMgcm93cy4iLAogIF1dLCAwCik7CgokbiA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDUsMTAsMSkpOwokbSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDEsMywxKSk7CiRudW12YXJzID0gJG4tMTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSByYW5kb20oLTksOSwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRkMSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC05LDksMSkpOwokZTEgPSBDb21wdXRlKHJhbmRvbSgtOSw5LDEpKTsKJGEyID0gcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTksOSwxKSk7CiRlMiA9IENvbXB1dGUocmFuZG9tKC05LDksMSkpOwokYTMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIzID0gcmFuZG9tKC05LDksMSk7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGUzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CgpCRUdJTl9QR01MCmEuICBDb25zaWRlciB0aGUgbWF0cml4LgoKICAgIFtgYGBBPQogICAgICAgICAgICAgICAgXGJlZ2lue2JtYXRyaXh9IFskYTFdIFxhbXAgWyRiMV0gXGFtcCBbJGMxXSBcYW1wIFskZDFdIFxhbXAgWyRlMV0gXFwKICAgICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxhbXAgWyRlMl1cXAogICAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGFtcCBbJGUzXSBcZW5ke2JtYXRyaXh9CiAgICAgICAgICAgICAgYGBgXQoKICAgIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29ycmVjdGx5IGRlc2NyaWJlcyB0aGUgbWF0cml4IGFib3ZlPwoKICAgIFtfXXskcmFkaW99ezV9CgoKYS4gIE5vdyBjb25zaWRlciBhbiBbYFskbV0gXHRpbWVzIFskbl1gXSBtYXRyaXggW2BCXHRleHR7Ln1gXSAgSWYgW2BCYF0gaXMgYW4gYXVnbWVudGVkIG1hdHJpeCwgdGhlIGNvcnJlc3BvbmRpbmcgbGluZWFyIHN5c3RlbSBoYXMgaG93IG1hbnkgdmFyaWFibGVzPyBbX117JG51bXZhcnN9ezJ9ICAgCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCdOdW1lcmljJyk7JHJhZGlvID0gUmFkaW9CdXR0b25zKFtbCiAgIlRoZSBtYXRyaXggaXMgJHtCTX0zXHRpbWVzIDUke0VNfSwgd2l0aCAzIHJvd3MgYW5kIDUgY29sdW1ucy4iLAogICJUaGUgbWF0cml4IGlzICR7Qk19M1x0aW1lcyA1JHtFTX0sIHdpdGggMyBjb2x1bW5zIGFuZCA1IHJvd3MuIiwKICAiVGhlIG1hdHJpeCBpcyAke0JNfTVcdGltZXMgMyR7RU19LCB3aXRoIDUgcm93cyBhbmQgMyBjb2x1bW5zLiIsCiAgIlRoZSBtYXRyaXggaXMgJHtCTX01XHRpbWVzIDMke0VNfSwgd2l0aCA1IGNvbHVtbnMgYW5kIDMgcm93cy4iLAogIF1dLCAwCik7CgokbiA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDUsMTAsMSkpOwokbSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDEsMywxKSk7CiRudW12YXJzID0gJG4tMTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSByYW5kb20oLTksOSwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRkMSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC05LDksMSkpOwokZTEgPSBDb21wdXRlKHJhbmRvbSgtOSw5LDEpKTsKJGEyID0gcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTksOSwxKSk7CiRlMiA9IENvbXB1dGUocmFuZG9tKC05LDksMSkpOwokYTMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIzID0gcmFuZG9tKC05LDksMSk7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGUzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CgpCRUdJTl9QR01MCmEuICBDb25zaWRlciB0aGUgbWF0cml4LgoKICAgIFtgYGBBPQogICAgICAgICAgICAgICAgXGJlZ2lue2JtYXRyaXh9IFskYTFdIFxhbXAgWyRiMV0gXGFtcCBbJGMxXSBcYW1wIFskZDFdIFxhbXAgWyRlMV0gXFwKICAgICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxhbXAgWyRlMl1cXAogICAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGFtcCBbJGUzXSBcZW5ke2JtYXRyaXh9CiAgICAgICAgICAgICAgYGBgXQoKICAgIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29ycmVjdGx5IGRlc2NyaWJlcyB0aGUgbWF0cml4IGFib3ZlPwoKICAgIFtfXXskcmFkaW99ezV9CgoKYS4gIE5vdyBjb25zaWRlciBhbiBbYFskbV0gXHRpbWVzIFskbl1gXSBtYXRyaXggW2BCXHRleHR7Ln1gXSAgSWYgW2BCYF0gaXMgYW4gYXVnbWVudGVkIG1hdHJpeCwgdGhlIGNvcnJlc3BvbmRpbmcgbGluZWFyIHN5c3RlbSBoYXMgaG93IG1hbnkgdmFyaWFibGVzPyBbX117JG51bXZhcnN9ezJ9CgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1302,7 +1302,7 @@ a.  Consider the matrix.
 
     [_]{$radio}{5}
 
-a.  Now consider an [`[$m] \times [$n]`] matrix [`B\text{.}`]  If [`B`] is an augmented matrix, the corresponding linear system has how many variables? [_]{$numvars}{2}   
+a.  Now consider an [`[$m] \times [$n]`] matrix [`B\text{.}`]  If [`B`] is an augmented matrix, the corresponding linear system has how many variables? [_]{$numvars}{2}
 
 END_PGML
 
@@ -1383,7 +1383,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-10-28T17:45:16Z       
+###       on 2024-11-01T21:17:33-04:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
