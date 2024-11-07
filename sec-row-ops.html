@@ -221,6 +221,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-row-ops.html#subsec-row-ops-dc" class="internal"><span class="title">Participate</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-row-ops.html#ws-row-ops" class="internal"><span class="title"></span></a></div></li></ul>
 </li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-row-ops.html#ww-row-ops" class="internal"><span class="title">Practice</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-row-ops.html#exer-row-ops" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
 </li>
@@ -231,7 +232,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:pf="https://prefigure.org" class="section" id="sec-row-ops"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Row Operations</span>
 </h2>
-<section class="introduction" id="sec-row-ops-2"><div class="para" id="sec-row-ops-2-1">The non-interactive material in this section comes heavily from Greg Hartman’s Fundamentals of Matrix Algebra.</div>
+<section class="introduction" id="sec-row-ops-2"><div class="para" id="sec-row-ops-2-1">The non-interactive Prepare material, and also the Additional Practice, in this section comes heavily from Greg Hartman’s Fundamentals of Matrix Algebra.</div>
 <div class="para" id="sec-row-ops-2-2">We’ve now seen how to solve linear systems using substitution and elimination, and how to create an augmented matrix representing a linear system. In this section, we see how to perform the variable elimination steps directly on the matrix and interpret the results to give the solution to the corresponding linear system.</div></section><section class="subsection" id="subsec-row-ops-bc"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Prepare</span>
 </h3>
@@ -831,21 +832,209 @@ A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \en
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Two truths and a lie?</span>
 </h5>
 <div class="para" id="ws-row-ops-4-2-2-1">Using shorthand row operation notation, write down two elementary row operations and one thing that looks like but isn’t an elementary row operation.</div>
-<div class="workspace" data-space="1in"></div></article><article class="exercise exercise-like" id="ws-row-ops-4-3"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
-<div class="introduction" id="ws-row-ops-4-3-1"><div class="para" id="ws-row-ops-4-3-1-1">Refer back to <a href="sec-row-ops.html#row-op-ws-matrix-sys" class="xref" data-knowl="./knowl/xref/row-op-ws-matrix-sys.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2: Side-by-side Elimination and Matrices">Problem 2</a>.</div></div>
+<div class="workspace" data-space="1in"></div></article><article class="exercise exercise-like" id="ws-row-ops-4-3"><h5 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">Exploring non-elementary row operations.</span>
+</h5>
 <article class="task exercise-like" id="ws-row-ops-4-3-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<div class="para" id="ws-row-ops-4-3-2-1-1">Do something to the matrix in <a href="sec-row-ops.html#row-op-ws-matrix-sys" class="xref" data-knowl="./knowl/xref/row-op-ws-matrix-sys.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2: Side-by-side Elimination and Matrices">Problem 2</a> that is <em class="emphasis">not</em> an elementary row operation, and write down the matrix that results.</div>
+<div class="para" id="ws-row-ops-4-3-2-1-1">Do something to the matrix in <a href="sec-row-ops.html#row-op-ws-matrix-sys" class="xref" data-knowl="./knowl/xref/row-op-ws-matrix-sys.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2: Side-by-side Elimination and Matrices">Problem 2</a> that is <em class="emphasis">not</em> an elementary row operation, and write down the matrix that you get.</div>
 <div class="workspace" data-space=".5in"></div></article><article class="task exercise-like" id="ws-row-ops-4-3-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<div class="para" id="ws-row-ops-4-3-3-1-1">Solve the linear system corresponding to your new matrix.  Does the linear system corresponding to your new matrix have the same solution as the linear system in <a href="sec-row-ops.html#row-op-ws-matrix-sys" class="xref" data-knowl="./knowl/xref/row-op-ws-matrix-sys.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2: Side-by-side Elimination and Matrices">2</a>?</div>
+<div class="para" id="ws-row-ops-4-3-3-1-1">Solve the linear system corresponding to your new matrix.  Does the linear system corresponding to your new matrix have the same solution as the linear system in <a href="sec-row-ops.html#row-op-ws-matrix-sys" class="xref" data-knowl="./knowl/xref/row-op-ws-matrix-sys.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2: Side-by-side Elimination and Matrices">Problem 2</a>?</div>
 <div class="workspace" data-space="2in"></div></article><article class="task exercise-like" id="ws-row-ops-4-3-4"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<div class="para" id="ws-row-ops-4-3-4-1-1">If the linear system has the same solution, can you write down a sequence of elementary row operations that result in your new matrix?</div>
+<div class="para" id="ws-row-ops-4-3-4-1-1">If the linear system has the same solution, can you write down a sequence of elementary row operations that results in your new matrix?</div>
 <div class="workspace" data-space="1in"></div></article></article></section></section></section><section class="conclusion" id="subsec-row-ops-summary"><h3 class="heading">Summary.<span></span>
 </h3>
 <div class="para logical" id="subsec-row-ops-summary-2"><ul class="disc" id="subsec-row-ops-summary-2-1">
 <li id="subsec-row-ops-summary-2-1-1"><div class="para" id="subsec-row-ops-summary-2-1-1-1">Row operations are actions we do to the rows of a matrix that correspond to the elimination steps that we perform on the equations in a linear system.</div></li>
 <li id="subsec-row-ops-summary-2-1-2"><div class="para" id="subsec-row-ops-summary-2-1-2-1">Solving a linear system by performing row operations on an augmented matrix involves the same steps as elimination but with less writing.</div></li>
 <li id="subsec-row-ops-summary-2-1-3"><div class="para" id="subsec-row-ops-summary-2-1-3-1">There are three <em class="emphasis">elementary row operations</em> and shorthand notations for each of the three.</div></li>
-</ul></div></section><section class="exercises" id="exer-row-ops"><h3 class="heading hide-type">
+</ul></div></section><section class="subsection" id="ww-row-ops"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice</span>
+</h3>
+<article class="activity project-like" id="ww-row-op-enter-matrix"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Some row operations.</span>
+</h4>
+<div id="webwork-12" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="12" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJNYXRyaXgiKTsKJGExID0gbm9uX3plcm9fcmFuZG9tKC01LDUsMSk7CiRiMSA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGQxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9ICRhMSsyOwokYjIgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYTMgPSAkYTEtMTsKJGIzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRjMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKCiRBPU1hdHJpeChbWyRhMSwkYjEsJGMxLCRkMV0sWyRhMiwkYjIsJGMyLCRkMl0sWyRhMywkYjMsJGMzLCRkM11dKTsKCiRhbnMxPU1hdHJpeChbWyRhMSwkYjEsJGMxLCRkMV0sWyRhMywkYjMsJGMzLCRkM10sWyRhMiwkYjIsJGMyLCRkMl1dKTsKCiRhbnMyYTEgPSAkYTEvJGExOwokYW5zMmIxID0gJGIxLyRhMTsKJGFuczJjMSA9ICRjMS8kYTE7CiRhbnMyZDEgPSAkZDEvJGExOwoKJGFuczI9TWF0cml4KFtbJGFuczJhMSwkYW5zMmIxLCRhbnMyYzEsJGFuczJkMV0sWyRhMiwkYjIsJGMyLCRkMl0sWyRhMywkYjMsJGMzLCRkM11dKTsKCkJFR0lOX1BHTUwKR2l2ZW4gdGhlIG1hdHJpeAoKW2BgYAogICAgICAgICAgICAgIEE9WyRBXQogICAgICAgICAgICBgYGBdCgpwZXJmb3JtIHRoZSByb3cgb3BlcmF0aW9uIFtgUl8yIFxsZWZ0cmlnaHRhcnJvdyBSXzNgXSBvbiBbYEFgXSBhbmQgZW50ZXIgdGhlIHJlc3VsdC4KCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhMX17Mn0nKSxQR01MKCdbX117JGIxfXsyfScpLFBHTUwoJ1tfXXskYzF9ezJ9JyksUEdNTCgnW19deyRkMX17Mn0nKSxdLFtQR01MKCdbX117JGEzfXsyfScpLFBHTUwoJ1tfXXskYjN9ezJ9JyksUEdNTCgnW19deyRjM317Mn0nKSxQR01MKCdbX117JGQzfXsyfScpLF0sW1BHTUwoJ1tfXXskYTJ9ezJ9JyksUEdNTCgnW19deyRiMn17Mn0nKSxQR01MKCdbX117JGMyfXsyfScpLFBHTUwoJ1tfXXskZDJ9ezJ9JyksXSxdLGFsaWduPT4nKns0fXtsfScsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKUGVyZm9ybSB0aGUgcm93IG9wZXJhdGlvbiBbYFxmcmFjezF9e1skYTFdfVJfMSBccmlnaHRhcnJvdyBSXzFgXSBvbiBbYEFgXSBhbmQgZW50ZXIgdGhlIHJlc3VsdC4KCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhbnMyYTF9ezJ9JyksUEdNTCgnW19deyRhbnMyYjF9ezJ9JyksUEdNTCgnW19deyRhbnMyYzF9ezJ9JyksUEdNTCgnW19deyRhbnMyZDF9ezJ9JyksXSxbUEdNTCgnW19deyRhMn17Mn0nKSxQR01MKCdbX117JGIyfXsyfScpLFBHTUwoJ1tfXXskYzJ9ezJ9JyksUEdNTCgnW19deyRkMn17Mn0nKSxdLFtQR01MKCdbX117JGEzfXsyfScpLFBHTUwoJ1tfXXskYjN9ezJ9JyksUEdNTCgnW19deyRjM317Mn0nKSxQR01MKCdbX117JGQzfXsyfScpLF0sXSxhbGlnbj0+Jyp7NH17bH0nLHZhbGlnbj0+J21pZGRsZScsKTtAXSogPDwKCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-12')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-12-1-1-1">Given the matrix</div> <div class="para logical" id="extracted-webwork-12-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+A={\left[\begin{array}{cccc}
+-2 \amp 6 \amp 3 \amp 5\cr
+0 \amp 3 \amp 5 \amp -1\cr
+-3 \amp -2 \amp 2 \amp -4
+\end{array}\right]}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-12-1-1-3">perform the row operation <span class="process-math">\(R_2 \leftrightarrow R_3\)</span> on <span class="process-math">\(A\)</span> and enter the result.</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+</table></div> <div class="para" id="extracted-webwork-12-1-1-5">Perform the row operation <span class="process-math">\(\frac{1}{-2}R_1 \rightarrow R_1\)</span> on <span class="process-math">\(A\)</span> and enter the result.</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+</table></div>
+</div>
+</div></article><article class="activity project-like" id="ww-row-op-enter-matrix2"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">A sequence of row operations.</span>
+</h4>
+<div id="webwork-13" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="13" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpURVhUKE1PREVTKFBUWD0+JycsSFRNTD0+JzxkaXYgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPlwoXG5ld2NvbW1hbmR7XGFtcH17Jn1cKTwvZGl2PicpKTsKQ29udGV4dCgiTWF0cml4Iik7CiRtID0gcmFuZG9tKDIsNCwxKTsKJG4gPSByYW5kb20oMiw0LDEpOwokcCA9IHJhbmRvbSgyLDQsMSk7CiRhMSA9IDE7CiRiMSA9IG5vbl96ZXJvX3JhbmRvbSgtMywzLDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGQxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9ICRtOwokYjIgPSAxKyRtKiRiMTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYTMgPSAtJG47CiRiMyA9ICgtJHApLSRuKiRiMTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwoKCiRhbnNhMSA9IDE7CiRhbnNiMSA9ICRiMTsKJGFuc2MxID0gJGMxOwokYW5zZDEgPSAkZDE7CiRhbnNhMiA9IDA7CiRhbnNiMiA9IDE7CiRhbnNjMiA9ICgtJG0pKiRjMSskYzI7IAokYW5zZDIgPSAoLSRtKSokZDErJGQyOwokYW5zYTMgPSAwOwokYW5zYjMgPSAwOwokYW5zYzMgPSAoJHAqKC0kbSkrJG4pKiRjMSskcCokYzIrJGMzOwokYW5zZDMgPSAoJHAqKC0kbSkrJG4pKiRkMSskcCokZDIrJGQzOwoKJEEgPSBNYXRyaXgoWwpbJGExLCRiMSwkYzEsJGQxXSwKWyRhMiwkYjIsJGMyLCRkMl0sClskYTMsJGIzLCRjMywkZDNdLApdKTsKCiRhbnN3ZXIgPSBNYXRyaXgoWwpbJGFuc2ExLCRhbnNiMSwkYW5zYzEsJGFuc2QxXSwKWyRhbnNhMiwkYW5zYjIsJGFuc2MyLCRhbnNkMl0sClskYW5zYTMsJGFuc2IzLCRhbnNjMywkYW5zZDNdLApdKTsKCiRtZGlzcGxheSA9IENvbXB1dGUoIi0kbSIpOwoKQkVHSU5fUEdNTApHaXZlbiB0aGUgbWF0cml4CgpbYGBgQT1bJEFdXHRleHR7LH1gYGBdCgpwZXJmb3JtIHRoZSByb3cgb3BlcmF0aW9ucyBiZWxvdyBpbiB0aGUgb3JkZXIgZ2l2ZW4gYW5kIGVudGVyIHRoZSBmaW5hbCByZXN1bHQuCgpbYGBgXGJlZ2lue2FsaWduZWR9ClskbWRpc3BsYXldIFJfMSArUl8yIFxhbXAgXHJpZ2h0YXJyb3cgUl8yXFwKWyRuXSBSXzEgK1JfMyBcYW1wIFxyaWdodGFycm93IFJfM1xcClskcF0gUl8yICtSXzMgXGFtcCBccmlnaHRhcnJvdyBSXzMKXGVuZHthbGlnbmVkfQpgYGBdCgoKCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhbnNhMX17Mn0nKSxQR01MKCdbX117JGFuc2IxfXsyfScpLFBHTUwoJ1tfXXskYW5zYzF9ezJ9JyksUEdNTCgnW19deyRhbnNkMX17Mn0nKSxdLFtQR01MKCdbX117JGFuc2EyfXsyfScpLFBHTUwoJ1tfXXskYW5zYjJ9ezJ9JyksUEdNTCgnW19deyRhbnNjMn17Mn0nKSxQR01MKCdbX117JGFuc2QyfXsyfScpLF0sW1BHTUwoJ1tfXXskYW5zYTN9ezJ9JyksUEdNTCgnW19deyRhbnNiM317Mn0nKSxQR01MKCdbX117JGFuc2MzfXsyfScpLFBHTUwoJ1tfXXskYW5zZDN9ezJ9JyksXSxdLGFsaWduPT4nKns0fXtsfScsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-13')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-13-1-1-1">Given the matrix</div> <div class="para logical" id="extracted-webwork-13-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+A={\left[\begin{array}{cccc}
+1 \amp 1 \amp 3 \amp -2\cr
+3 \amp 4 \amp 1 \amp 3\cr
+-3 \amp -5 \amp 4 \amp -6
+\end{array}\right]}\text{,}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-13-1-1-3">perform the row operations below in the order given and enter the final result.</div> <div class="para logical" id="extracted-webwork-13-1-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+{-3} R_1 +R_2 \amp \rightarrow R_2\\
+3 R_1 +R_3 \amp \rightarrow R_3\\
+2 R_2 +R_3 \amp \rightarrow R_3
+\end{aligned}
+\end{equation*}
+</div></div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+</table></div>
+</div>
+</div></article><article class="activity project-like" id="ww-identify-row-op"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Identify the row operation performed.</span>
+</h4>
+<div id="webwork-14" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="14" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJjb250ZXh0Rm9ybS5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJNYXRyaXgiKTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjIgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjMgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7ICAgICAgICAgICAKCiRBID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sIFskYTIsJGIyLCRjMl0sIFskYTMsJGIzLCRjM11dKTsKJHJvdyA9IHJhbmRvbSgxLDMsMSk7CiRjID0gcmFuZG9tKDIsNCkqcmFuZG9tKC0xLDEsMik7CgppZiAoJHJvdz09MSl7CiAgJGExPSRjKiRhMTsKICAkYjE9JGMqJGIxOwogICRjMT0kYyokYzE7Cn0KZWxzaWYgKCRyb3c9PTIpewogICRhMj0kYyokYTI7CiAgJGIyPSRjKiRiMjsKICAkYzI9JGMqJGMyOwp9CmVsc2UgewogICRhMz0kYyokYTM7CiAgJGIzPSRjKiRiMzsKICAkYzM9JGMqJGMzOwp9CgokQiA9IE1hdHJpeChbWyRhMSwgJGIxLCAkYzFdLCBbJGEyLCRiMiwkYzJdLCBbJGEzLCRiMywkYzNdXSk7CgoKCkNvbnRleHQoKS0+dmFyaWFibGVzLT5hcmUoUjEgPT4gWyJSZWFsIiwgVGVYPT4iUl8xIl0sIFIyID0+IFsiUmVhbCIsIFRlWD0+IlJfMiJdLCBSMyA9PiBbIlJlYWwiLCBUZVg9PiJSXzMiXSk7CiRyZCA9ICJSIi4kcm93OwokcnN0cmxocyA9IG5pY2VzdHJpbmcoWyRjXSxbJHJkXSk7CiRsaHMgPSBGb3JtdWxhKCRyc3RybGhzKTsKJHJocyA9IEZvcm11bGEoJHJkKTsKCiRwb3AgPSBQb3BVcChbInNlbGVjdCIsICItPiIsICI8LS0+Il0sICItPiIpOwoKQkVHSU5fUEdNTApUaGUgbWF0cml4IG9uIHRoZSByaWdodCByZXN1bHRzIGFmdGVyIHBlcmZvcm1pbmcgYSBzaW5nbGUgcm93IG9wZXJhdGlvbiBvbiB0aGUgbWF0cml4IG9uIHRoZSBsZWZ0LgoKW2BgYFskQV0gXHJpZ2h0YXJyb3cgWyRCXWBgYF0KCgoKSWRlbnRpZnkgdGhlIHJvdyBvcGVyYXRpb24uIFVzZSAqUjEqLCAqUjIqLCBhbmQgKlIzKiB0byByZXByZXNlbnQgdGhlIHJvd3MgW2BSXzFcdGV4dHssfWBdIFtgUl8yXHRleHR7LH1gXSBhbmQgW2BSXzNcdGV4dHsufWBdCgpBbnN3ZXI6ICBbX117JGxoc317Mn0gICBbX117JHBvcH17NX0gICBbX117JHJoc317Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-14')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-14-1-1-1">The matrix on the right results after performing a single row operation on the matrix on the left.</div> <div class="para logical" id="extracted-webwork-14-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+{\left[\begin{array}{ccc}
+1 \amp -3 \amp 1\cr
+-3 \amp 3 \amp 5\cr
+2 \amp -4 \amp -5
+\end{array}\right]} \rightarrow {\left[\begin{array}{ccc}
+1 \amp -3 \amp 1\cr
+-9 \amp 9 \amp 15\cr
+2 \amp -4 \amp -5
+\end{array}\right]}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-14-1-1-3">Identify the row operation. Use <em class="alert">R1</em>, <em class="alert">R2</em>, and <em class="alert">R3</em> to represent the rows <span class="process-math">\(R_1\text{,}\)</span> <span class="process-math">\(R_2\text{,}\)</span> and <span class="process-math">\(R_3\text{.}\)</span>
+</div> <div class="para logical" id="extracted-webwork-14-1-1-4">
+<div class="para">Answer:  <span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>
+</div>
+<ul class="square" id="extracted-webwork-14-1-1-4-2">
+<li id="extracted-webwork-14-1-1-4-2-1"><div class="para" id="extracted-webwork-14-1-1-4-2-1-1">select</div></li>
+<li id="extracted-webwork-14-1-1-4-2-2"><div class="para" id="extracted-webwork-14-1-1-4-2-2-1">-&gt;</div></li>
+<li id="extracted-webwork-14-1-1-4-2-3"><div class="para" id="extracted-webwork-14-1-1-4-2-3-1">&lt;--&gt;</div></li>
+</ul>
+</div>
+</div>
+</div></article><article class="activity project-like" id="ww-identify-row-op2"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Identify the row operation performed.</span>
+</h4>
+<div id="webwork-15" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="15" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJjb250ZXh0Rm9ybS5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJNYXRyaXgiKTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjIgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjMgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7ICAgICAgICAgICAKCiRBID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sIFskYTIsJGIyLCRjMl0sIFskYTMsJGIzLCRjM11dKTsKJHJvdzEgPSByYW5kb20oMSwzLDEpOwokcm93MiA9ICRyb3cxOwp3aGlsZSAoJHJvdzE9PSRyb3cyKXsKICAkcm93Mj1yYW5kb20oMSwzLDEpOwp9CiRjID0gcmFuZG9tKDIsNCkqcmFuZG9tKC0xLDEsMik7CgppZiAoJHJvdzE9PTEpewogIGlmICgkcm93Mj09MikgewogICAgJGEyPSRjKiRhMSskYTI7CiAgICAkYjI9JGMqJGIxKyRiMjsKICAgICRjMj0kYyokYzErJGMyOwogIH0KICBlbHNlIHsKICAgICRhMz0kYyokYTErJGEzOwogICAgJGIzPSRjKiRiMSskYjM7CiAgICAkYzM9JGMqJGMxKyRjMzsKICB9Cn0KZWxzaWYgKCRyb3cxPT0yKXsKICBpZiAoJHJvdzI9PTEpIHsKICAgICRhMT0kYyokYTIrJGExOwogICAgJGIxPSRjKiRiMiskYjE7CiAgICAkYzE9JGMqJGMyKyRjMTsKICB9CiAgZWxzZSB7CiAgICAkYTM9JGMqJGEyKyRhMzsKICAgICRiMz0kYyokYjIrJGIzOwogICAgJGMzPSRjKiRjMiskYzM7CiAgfQp9CmVsc2UgewogIGlmICgkcm93Mj09MikgewogICAgJGEyPSRjKiRhMyskYTI7CiAgICAkYjI9JGMqJGIzKyRiMjsKICAgICRjMj0kYyokYzMrJGMyOwogIH0KICBlbHNlIHsKICAgICRhMT0kYyokYTMrJGExOwogICAgJGIxPSRjKiRiMyskYjE7CiAgICAkYzE9JGMqJGMzKyRjMTsKICB9Cn0KCiRCID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sIFskYTIsJGIyLCRjMl0sIFskYTMsJGIzLCRjM11dKTsKCkNvbnRleHQoKS0+dmFyaWFibGVzLT5hcmUoUjEgPT4gWyJSZWFsIiwgVGVYPT4iUl8xIl0sIFIyID0+IFsiUmVhbCIsIFRlWD0+IlJfMiJdLCBSMyA9PiBbIlJlYWwiLCBUZVg9PiJSXzMiXSk7CiRyZDEgPSAiUiIuJHJvdzE7CiRyZDIgPSAiUiIuJHJvdzI7CiRyc3RybGhzID0gbmljZXN0cmluZyhbJGNdLFskcmQxXSk7CiRsaHMgPSBGb3JtdWxhKCIkcnN0cmxocyskcmQyIik7CiRyaHMgPSBGb3JtdWxhKCRyZDIpOwoKJHBvcCA9IFBvcFVwKFsic2VsZWN0IiwgIi0+IiwgIjwtLT4iXSwgIi0+Iik7CgpCRUdJTl9QR01MClRoZSBtYXRyaXggb24gdGhlIHJpZ2h0IHJlc3VsdHMgYWZ0ZXIgcGVyZm9ybWluZyBhIHNpbmdsZSByb3cgb3BlcmF0aW9uIG9uIHRoZSBtYXRyaXggb24gdGhlIGxlZnQuCgpbYGBgWyRBXSBccmlnaHRhcnJvdyBbJEJdYGBgXQoKCgpJZGVudGlmeSB0aGUgcm93IG9wZXJhdGlvbi4gVXNlICpSMSosICpSMiosIGFuZCAqUjMqIHRvIHJlcHJlc2VudCB0aGUgcm93cyBbYFJfMVx0ZXh0eyx9YF0gW2BSXzJcdGV4dHssfWBdIGFuZCBbYFJfM1x0ZXh0ey59YF0KCkFuc3dlcjogIFtfXXskbGhzfXsyfSAgIFtfXXskcG9wfXs1fSAgIFtfXXskcmhzfXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-15')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-15-1-1-1">The matrix on the right results after performing a single row operation on the matrix on the left.</div> <div class="para logical" id="extracted-webwork-15-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+{\left[\begin{array}{ccc}
+2 \amp 5 \amp -6\cr
+-6 \amp 3 \amp -2\cr
+3 \amp 1 \amp -1
+\end{array}\right]} \rightarrow {\left[\begin{array}{ccc}
+14 \amp 9 \amp -10\cr
+-6 \amp 3 \amp -2\cr
+3 \amp 1 \amp -1
+\end{array}\right]}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-15-1-1-3">Identify the row operation. Use <em class="alert">R1</em>, <em class="alert">R2</em>, and <em class="alert">R3</em> to represent the rows <span class="process-math">\(R_1\text{,}\)</span> <span class="process-math">\(R_2\text{,}\)</span> and <span class="process-math">\(R_3\text{.}\)</span>
+</div> <div class="para logical" id="extracted-webwork-15-1-1-4">
+<div class="para">Answer:  <span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>
+</div>
+<ul class="square" id="extracted-webwork-15-1-1-4-2">
+<li id="extracted-webwork-15-1-1-4-2-1"><div class="para" id="extracted-webwork-15-1-1-4-2-1-1">select</div></li>
+<li id="extracted-webwork-15-1-1-4-2-2"><div class="para" id="extracted-webwork-15-1-1-4-2-2-1">-&gt;</div></li>
+<li id="extracted-webwork-15-1-1-4-2-3"><div class="para" id="extracted-webwork-15-1-1-4-2-3-1">&lt;--&gt;</div></li>
+</ul>
+</div>
+</div>
+</div></article><article class="activity project-like" id="ww-identify-row-op3"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Identify the row operation performed.</span>
+</h4>
+<div id="webwork-16" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="16" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJjb250ZXh0Rm9ybS5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJNYXRyaXgiKTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjIgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjMgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7ICAgICAgICAgICAKCiRBID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sIFskYTIsJGIyLCRjMl0sIFskYTMsJGIzLCRjM11dKTsKJHJvdzEgPSByYW5kb20oMSwyLDEpOwokcm93MiA9ICRyb3cxOwp3aGlsZSAoJHJvdzE9PSRyb3cyKXsKICAkcm93Mj1yYW5kb20oMiwzLDEpOwp9CgoKCmlmICgkcm93MT09MSl7CiAgaWYgKCRyb3cyPT0yKSB7CiAgICAkQiA9IE1hdHJpeChbWyRhMiwkYjIsJGMyXSxbJGExLCAkYjEsICRjMV0sWyRhMywkYjMsJGMzXV0pOwogIH0KICBlbHNlIHsKICAgICRCID0gTWF0cml4KFtbJGEzLCRiMywkYzNdLFskYTIsJGIyLCRjMl0sWyRhMSwgJGIxLCAkYzFdXSk7CiAgfQp9CmVsc2lmICgkcm93MT09Mil7CiAgaWYgKCRyb3cyPT0xKSB7CiAgICAkQiA9IE1hdHJpeChbWyRhMiwkYjIsJGMyXSxbJGExLCAkYjEsICRjMV0sWyRhMywkYjMsJGMzXV0pOwogIH0KICBlbHNlIHsKICAgICRCID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sWyRhMywkYjMsJGMzXSxbJGEyLCRiMiwkYzJdXSk7CiAgfQp9CmVsc2UgewogIGlmICgkcm93Mj09MikgewogICAgJEIgPSBNYXRyaXgoW1skYTEsICRiMSwgJGMxXSxbJGEzLCRiMywkYzNdLFskYTIsJGIyLCRjMl1dKTsKICB9CiAgZWxzZSB7CiAgICAkQiA9IE1hdHJpeChbWyRhMywkYjMsJGMzXSxbJGEyLCRiMiwkYzJdLFskYTEsICRiMSwgJGMxXV0pOwogIH0KfQoKCgpDb250ZXh0KCktPnZhcmlhYmxlcy0+YXJlKFIxID0+IFsiUmVhbCIsIFRlWD0+IlJfMSJdLCBSMiA9PiBbIlJlYWwiLCBUZVg9PiJSXzIiXSwgUjMgPT4gWyJSZWFsIiwgVGVYPT4iUl8zIl0pOwokcmQxID0gIlIiLiRyb3cxOwokcmQyID0gIlIiLiRyb3cyOwokcnN0cmxocyA9IG5pY2VzdHJpbmcoWyRjXSxbJHJkMV0pOwokbGhzID0gRm9ybXVsYSgiJHJkMSIpOwokcmhzID0gRm9ybXVsYSgkcmQyKTsKCiRwb3AgPSBQb3BVcChbInNlbGVjdCIsICItPiIsICI8LS0+Il0sICI8LS0+Iik7CgpCRUdJTl9QR01MClRoZSBtYXRyaXggb24gdGhlIHJpZ2h0IHJlc3VsdHMgYWZ0ZXIgcGVyZm9ybWluZyBhIHNpbmdsZSByb3cgb3BlcmF0aW9uIG9uIHRoZSBtYXRyaXggb24gdGhlIGxlZnQuCgpbYGBgWyRBXSBccmlnaHRhcnJvdyBbJEJdYGBgXQoKCgpJZGVudGlmeSB0aGUgcm93IG9wZXJhdGlvbi4gVXNlICpSMSosICpSMiosIGFuZCAqUjMqIHRvIHJlcHJlc2VudCB0aGUgcm93cyBbYFJfMVx0ZXh0eyx9YF0gW2BSXzJcdGV4dHssfWBdIGFuZCBbYFJfM1x0ZXh0ey59YF0KCkFuc3dlcjogIFtfXXskbGhzfXsyfSAgIFtfXXskcG9wfXs1fSAgIFtfXXskcmhzfXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-16')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-16-1-1-1">The matrix on the right results after performing a single row operation on the matrix on the left.</div> <div class="para logical" id="extracted-webwork-16-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+{\left[\begin{array}{ccc}
+4 \amp 1 \amp -1\cr
+3 \amp 3 \amp 4\cr
+4 \amp 6 \amp 3
+\end{array}\right]} \rightarrow {\left[\begin{array}{ccc}
+4 \amp 6 \amp 3\cr
+3 \amp 3 \amp 4\cr
+4 \amp 1 \amp -1
+\end{array}\right]}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-16-1-1-3">Identify the row operation. Use <em class="alert">R1</em>, <em class="alert">R2</em>, and <em class="alert">R3</em> to represent the rows <span class="process-math">\(R_1\text{,}\)</span> <span class="process-math">\(R_2\text{,}\)</span> and <span class="process-math">\(R_3\text{.}\)</span>
+</div> <div class="para logical" id="extracted-webwork-16-1-1-4">
+<div class="para">Answer:  <span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>
+</div>
+<ul class="square" id="extracted-webwork-16-1-1-4-2">
+<li id="extracted-webwork-16-1-1-4-2-1"><div class="para" id="extracted-webwork-16-1-1-4-2-1-1">select</div></li>
+<li id="extracted-webwork-16-1-1-4-2-2"><div class="para" id="extracted-webwork-16-1-1-4-2-2-1">-&gt;</div></li>
+<li id="extracted-webwork-16-1-1-4-2-3"><div class="para" id="extracted-webwork-16-1-1-4-2-3-1">&lt;--&gt;</div></li>
+</ul>
+</div>
+</div>
+</div></article></section><section class="exercises" id="exer-row-ops"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Additional Practice</span>
 </h3>
 <div class="exercisegroup" id="exer-row-ops-2">
