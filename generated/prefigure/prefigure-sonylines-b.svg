@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="diagram" width="210" height="210">
+  <defs>
+    <clipPath id="clipPath-0">
+      <rect x="5.0" y="5.0" width="200.0" height="200.0"/>
+    </clipPath>
+    <clipPath id="clipPath-1">
+      <rect x="5.0" y="5.0" width="200.0" height="200.0"/>
+    </clipPath>
+  </defs>
+  <g id="grid-axes">
+    <g id="grid" stroke="#ccc" stroke-width="1">
+      <line id="line-0" x1="19.3" y1="205.0" x2="19.3" y2="5.0"/>
+      <line id="line-1" x1="47.9" y1="205.0" x2="47.9" y2="5.0"/>
+      <line id="line-2" x1="76.4" y1="205.0" x2="76.4" y2="5.0"/>
+      <line id="line-3" x1="105.0" y1="205.0" x2="105.0" y2="5.0"/>
+      <line id="line-4" x1="133.6" y1="205.0" x2="133.6" y2="5.0"/>
+      <line id="line-5" x1="162.1" y1="205.0" x2="162.1" y2="5.0"/>
+      <line id="line-6" x1="190.7" y1="205.0" x2="190.7" y2="5.0"/>
+      <line id="line-7" x1="5.0" y1="190.7" x2="205.0" y2="190.7"/>
+      <line id="line-8" x1="5.0" y1="162.1" x2="205.0" y2="162.1"/>
+      <line id="line-9" x1="5.0" y1="133.6" x2="205.0" y2="133.6"/>
+      <line id="line-10" x1="5.0" y1="105.0" x2="205.0" y2="105.0"/>
+      <line id="line-11" x1="5.0" y1="76.4" x2="205.0" y2="76.4"/>
+      <line id="line-12" x1="5.0" y1="47.9" x2="205.0" y2="47.9"/>
+      <line id="line-13" x1="5.0" y1="19.3" x2="205.0" y2="19.3"/>
+    </g>
+    <g id="axes" stroke="black" stroke-width="2">
+      <line id="line-14" x1="5.0" y1="133.6" x2="205.0" y2="133.6" stroke="black" stroke-width="2"/>
+      <line id="line-15" x1="105.0" y1="205.0" x2="105.0" y2="5.0" stroke="black" stroke-width="2"/>
+      <g id="g-0">
+        <line id="line-16" x1="133.6" y1="136.6" x2="133.6" y2="130.6"/>
+      </g>
+      <g id="g-1">
+        <line id="line-17" x1="102.0" y1="105.0" x2="108.0" y2="105.0"/>
+      </g>
+    </g>
+    <g id="label-0" transform="translate(133.6,144.6) translate(-4.5,-0.0)">
+      <g id="g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#MJX-2-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="label-1" transform="translate(94.0,105.0) translate(-9.0,-6.0)">
+      <g id="g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="MJX-3-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#MJX-3-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="label-2" transform="translate(201.0,129.6) translate(-10.4,-8.2)">
+      <g id="g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="MJX-4-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#MJX-4-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="label-3" transform="translate(109.0,9.0) translate(0.0,-0.0)">
+      <g id="g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="MJX-5-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#MJX-5-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <g id="graph-fg">
+    <path id="graph-f" stroke="red" stroke-width="2" fill="none" d="M 5.0 -23.6 L 7.0 -21.6 L 9.0 -19.6 L 11.0 -17.6 L 13.0 -15.6 L 15.0 -13.6 L 17.0 -11.6 L 19.0 -9.6 L 21.0 -7.6 L 23.0 -5.6 L 25.0 -3.6 L 27.0 -1.6 L 29.0 0.4 L 31.0 2.4 L 33.0 4.4 L 35.0 6.4 L 37.0 8.4 L 39.0 10.4 L 41.0 12.4 L 43.0 14.4 L 45.0 16.4 L 47.0 18.4 L 49.0 20.4 L 51.0 22.4 L 53.0 24.4 L 55.0 26.4 L 57.0 28.4 L 59.0 30.4 L 61.0 32.4 L 63.0 34.4 L 65.0 36.4 L 67.0 38.4 L 69.0 40.4 L 71.0 42.4 L 73.0 44.4 L 75.0 46.4 L 77.0 48.4 L 79.0 50.4 L 81.0 52.4 L 83.0 54.4 L 85.0 56.4 L 87.0 58.4 L 89.0 60.4 L 91.0 62.4 L 93.0 64.4 L 95.0 66.4 L 97.0 68.4 L 99.0 70.4 L 101.0 72.4 L 103.0 74.4 L 105.0 76.4 L 107.0 78.4 L 109.0 80.4 L 111.0 82.4 L 113.0 84.4 L 115.0 86.4 L 117.0 88.4 L 119.0 90.4 L 121.0 92.4 L 123.0 94.4 L 125.0 96.4 L 127.0 98.4 L 129.0 100.4 L 131.0 102.4 L 133.0 104.4 L 135.0 106.4 L 137.0 108.4 L 139.0 110.4 L 141.0 112.4 L 143.0 114.4 L 145.0 116.4 L 147.0 118.4 L 149.0 120.4 L 151.0 122.4 L 153.0 124.4 L 155.0 126.4 L 157.0 128.4 L 159.0 130.4 L 161.0 132.4 L 163.0 134.4 L 165.0 136.4 L 167.0 138.4 L 169.0 140.4 L 171.0 142.4 L 173.0 144.4 L 175.0 146.4 L 177.0 148.4 L 179.0 150.4 L 181.0 152.4 L 183.0 154.4 L 185.0 156.4 L 187.0 158.4 L 189.0 160.4 L 191.0 162.4 L 193.0 164.4 L 195.0 166.4 L 197.0 168.4 L 199.0 170.4 L 201.0 172.4 L 203.0 174.4 L 205.0 176.4" clip-path="url(#clipPath-1)"/>
+    <path id="graph-g" stroke="blue" stroke-width="2" fill="none" d="M 5.0 -187.9 L 7.0 -182.9 L 9.0 -177.9 L 11.0 -172.9 L 13.0 -167.9 L 15.0 -162.9 L 17.0 -157.9 L 19.0 -152.9 L 21.0 -147.9 L 23.0 -142.9 L 25.0 -137.9 L 27.0 -132.9 L 29.0 -127.9 L 31.0 -122.9 L 33.0 -117.9 L 35.0 -112.9 L 37.0 -107.9 L 39.0 -102.9 L 41.0 -97.9 L 43.0 -92.9 L 45.0 -87.9 L 47.0 -82.9 L 49.0 -77.9 L 51.0 -72.9 L 53.0 -67.9 L 55.0 -62.9 L 57.0 -57.9 L 59.0 -52.9 L 61.0 -47.9 L 63.0 -42.9 L 65.0 -37.9 L 67.0 -32.9 L 69.0 -27.9 L 71.0 -22.9 L 73.0 -17.9 L 75.0 -12.9 L 77.0 -7.9 L 79.0 -2.9 L 81.0 2.1 L 83.0 7.1 L 85.0 12.1 L 87.0 17.1 L 89.0 22.1 L 91.0 27.1 L 93.0 32.1 L 95.0 37.1 L 97.0 42.1 L 99.0 47.1 L 101.0 52.1 L 103.0 57.1 L 105.0 62.1 L 107.0 67.1 L 109.0 72.1 L 111.0 77.1 L 113.0 82.1 L 115.0 87.1 L 117.0 92.1 L 119.0 97.1 L 121.0 102.1 L 123.0 107.1 L 125.0 112.1 L 127.0 117.1 L 129.0 122.1 L 131.0 127.1 L 133.0 132.1 L 135.0 137.1 L 137.0 142.1 L 139.0 147.1 L 141.0 152.1 L 143.0 157.1 L 145.0 162.1 L 147.0 167.1 L 149.0 172.1 L 151.0 177.1 L 153.0 182.1 L 155.0 187.1 L 157.0 192.1 L 159.0 197.1 L 161.0 202.1 L 163.0 207.1 L 165.0 212.1 L 167.0 217.1 L 169.0 222.1 L 171.0 227.1 L 173.0 232.1 L 175.0 237.1 L 177.0 242.1 L 179.0 247.1 L 181.0 252.1 L 183.0 257.1 L 185.0 262.1 L 187.0 267.1 L 189.0 272.1 L 191.0 277.1 L 193.0 282.1 L 195.0 287.1 L 197.0 292.1 L 199.0 297.1 L 201.0 302.1 L 203.0 307.1 L 205.0 312.1" clip-path="url(#clipPath-1)"/>
+    <circle id="point" cx="114.5" cy="86.0" r="4" stroke="black" stroke-width="2" fill="black"/>
+  </g>
+</svg>
