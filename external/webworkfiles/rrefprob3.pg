@@ -1,0 +1,113 @@
+## DESCRIPTION
+## Linear Algebra
+## ENDDESCRIPTION
+
+## Tagged by cmd6a 5/3/06
+
+## DBsubject(Linear algebra)
+## DBchapter(Matrices)
+## DBsection(Echelon form)
+## Date(July 2013)
+## Institution(Rochester and Hope College)
+## Author(Paul Pearson)
+## MLT(reduce_to_reform)
+## MLTleader(1)
+## Level(3)
+## MO(1)
+## TitleText1('Linear Algebra with Applications')
+## AuthorText1('Jeffrey Holt')
+## EditionText1('1')
+## Section1('1.2')
+## Problem1('')
+## KEYWORDS('linear algebra','matrix','echelon')
+
+DOCUMENT() ;        
+
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"parserVectorUtils.pl",
+"PGcourse.pl"
+) ;
+
+$showPartialCorrectAnswers = 1 ;
+
+############
+
+TEXT(beginproblem());
+
+Context('Matrix');
+
+$a = non_zero_random(-4,4,1);
+$b = non_zero_random(-3,3,1);
+$c = non_zero_random(-5,5,1);
+$d=non_zero_random(-5,5,1);
+
+$A = Matrix([[$a*1, $a*2, $a*1, $a*4*$d],[$b*0, $b*2, $b*3, $b*5*$d], [$c*0, $c*2, $c*4, $c*6*$d]]);
+
+#1/$a * R1 -> R1.
+$A1 = Matrix([[1, 2, 1, 4*$d],[$b*0, $b*2, $b*3, $b*5*$d], [$c*0, $c*2, $c*4, $c*6*$d]]);
+# 1/(2*$b) R2 -> R2
+$A2 = Matrix([[1, 2, 1, 4*$d],[0, 1, 3/2, 5/2*$d], [$c*0, $c*2, $c*4, $c*6*$d]]);
+# -2*$c*R2+R3 -> R3
+$A3 = Matrix([[1, 2, 1, 4*$d],[0, 1, 3/2, 5/2*$d], [0, 0, $c, $c*$d]]);
+# 1/$c *R3 -> R3
+$A4 = Matrix([[1, 2, 1, 4*$d],[0, 1, 3/2, 5/2*$d], [0, 0, 1, $d]]);
+# -3/2 *R3+R2 -> R2
+$A5 = Matrix([[1, 2, 1, 4*$d],[0, 1, 0, $d], [0, 0, 1, $d]]);
+# -R3+R1 -> R1
+$A6 = Matrix([[1, 2, 0, 3*$d],[0, 1, 0, $d], [0, 0, 1, $d]]);
+# -2 *R2+R1 -> R1
+$A7 = Matrix([[1, 0, 0, $d],[0, 1, 0, $d], [0, 0, 1, $d]]);
+
+
+
+
+# reduced row echelon form of A
+$answer = Matrix([
+[1,0,0,$d],
+[0,1,0,$d],
+[0,0,1,$d],
+]);
+
+
+Context()->texStrings;
+BEGIN_TEXT
+Reduce the matrix \[ A= $A\]
+to reduced row-echelon form.
+$BR
+$BR
+
+
+$BCENTER
+\{ $answer->ans_array() \} 
+$ECENTER
+END_TEXT
+Context()->normalStrings;
+
+
+ANS( $answer->cmp() );
+
+Context()->texStrings;
+$showHint=2;
+
+$bb = 2*$b;
+$cc = -2*$c;
+BEGIN_HINT
+
+First, do \(\frac{1}{$a} R_1 \to R_1 \), resulting in
+\[$A1 \]
+
+Then, do \(\frac{1}{$bb} R_2 \to R_2 \), resulting in
+\[$A2 \]
+Next, do \( $cc R_2+R_3 \to R_3 \), resulting in
+\[$A3 \]
+
+Now we can multiply \(R_3\) by a constant to create the leading 1, and then do the backwards steps.  
+
+
+END_HINT
+
+
+
+ENDDOCUMENT();

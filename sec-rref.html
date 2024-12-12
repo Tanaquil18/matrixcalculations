@@ -800,12 +800,78 @@ A = \left[\begin{array}{ccccc} -2\amp -4\amp -2\amp -10\amp 0\\2\amp 4\amp 1\amp
 <div class="sbspanel middle" style="width:65.7894736842105%;"><div class="para" id="ex_rref_3-3-7-2"><span class="process-math">\(\left[\begin{array}{cccc}  1\amp 0\amp 1/3\amp 0\\0\amp 1\amp 1/3\amp 0\\0\amp 0\amp 0\amp 1
 \end{array} \right]\)</span></div></div>
 </div></div>
-</div></details></div></article><div class="para" id="subsec-rref-bc-22">We were inspired by solving systems of linear equations to put matrices into reduced row echelon form, in order to make the solution easy to see.  Every time we’ve started with a linear system, there was exactly one solution, and the reduced row echelon form always had one particular form.  However, we’ve also practiced putting matrices in reduced row echelon form without referring back to their corresponding system of linear equations, and we have seen various different ways that rref can look.  Connecting different reduced row echelon forms with solutions to the corresponding linear system is the topic for next section.</div>
+</div></details></div></article><div class="para" id="subsec-rref-bc-22">We were inspired by solving systems of linear equations to put matrices into reduced row echelon form, in order to make the solution easy to see.  Every time we’ve started with a linear system, there was exactly one solution, and the reduced row echelon form always had one particular form.  However, we’ve also practiced putting matrices in reduced row echelon form without referring back to their corresponding system of linear equations, and we have seen various different ways that the reduced row echelon form of a matrix can look.  Connecting different reduced row echelon forms with solutions to the corresponding linear system is the topic for next section.</div>
 <section class="reading-questions" id="rqs-rref"><h4 class="heading hide-type">
 <span class="type">Reading Questions</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Reading Questions</span>
 </h4>
-<article class="exercise exercise-like" id="rq-rref-questions"><h5 class="heading">
-<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Reflection.</span>
+<article class="exercise exercise-like" id="rq-gauss-jordan-summary"><h5 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Gauss-Jordan Elimination.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-gauss-jordan-summary" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="rq-gauss-jordan-summary-2-1">Describe how to perform Gauss-Jordan elimination in your own words.</div> <div class="para" id="rq-gauss-jordan-summary-2-2">If it helps you to describe the process, you can make up a specific matrix to use, or use an arbitrary one like <span class="process-math">\(\begin{bmatrix} a_{11} \amp a_{12} \amp a_{13} \\ a_{21} \amp a_{22} \amp a_{23} \\ a_{31} \amp a_{32} \amp a_{33} \\ \end{bmatrix}\text{.}\)</span>
+</div>
+</div></div></div></article><article class="exercise exercise-like" id="parsons-perform-gauss-jordan"><h5 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Parsons Problem, Reduced Row Echelon Form.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="rs-parsons-perform-gauss-jordan">
+<div class="parsons_question parsons-text"><div class="para logical" id="parsons-perform-gauss-jordan-2-1">
+<div class="para">Perform Gauss-Jordan elimination on matrix <span class="process-math">\(A\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\begin{bmatrix} -1 \amp -1 \amp -1 \amp -1 \\ 0 \amp 1 \amp 2\amp 3 \\ 1 \amp 2\amp 4\amp 4 \\  \end{bmatrix} 
+\end{equation*}
+</div>
+</div></div>
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-adaptive="true" data-noindent="true"><div class="para logical" id="parsons-perform-gauss-jordan-3-1-1"><div class="displaymath process-math">
+\begin{equation*}
+R_1+R_3 \rightarrow R_3
+\end{equation*}
+</div></div> #distractor
+---
+<div class="para logical" id="parsons-perform-gauss-jordan-3-2-1"><div class="displaymath process-math">
+\begin{equation*}
+R_1 \leftrightarrow R_3
+\end{equation*}
+</div></div> #distractor
+---
+<div class="para logical" id="parsons-perform-gauss-jordan-3-3-1"><div class="displaymath process-math">
+\begin{equation*}
+-R_1 \rightarrow R_1
+\end{equation*}
+</div></div>
+---
+<div class="para logical" id="parsons-perform-gauss-jordan-3-4-1"><div class="displaymath process-math">
+\begin{equation*}
+-R_1 +R_3 \rightarrow R_3
+\end{equation*}
+</div></div>
+---
+<div class="para logical" id="parsons-perform-gauss-jordan-3-5-1"><div class="displaymath process-math">
+\begin{equation*}
+-R_2 + R_3 \rightarrow R_3
+\end{equation*}
+</div></div>
+---
+<div class="para logical" id="parsons-perform-gauss-jordan-3-6-1"><div class="displaymath process-math">
+\begin{equation*}
+-2R_3+R_2 \rightarrow R_2
+\end{equation*}
+</div></div>
+---
+<div class="para logical" id="parsons-perform-gauss-jordan-3-7-1"><div class="displaymath process-math">
+\begin{equation*}
+-R_3+R_1 \rightarrow R_1
+\end{equation*}
+</div></div>
+---
+<div class="para logical" id="parsons-perform-gauss-jordan-3-8-1"><div class="displaymath process-math">
+\begin{equation*}
+-R_2+R_1 \rightarrow R_1
+\end{equation*}
+</div></div></pre>
+</div></div></div></article><article class="exercise exercise-like" id="rq-rref-questions"><h5 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Reflection.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-rref-questions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-rref-questions-2-1">
 <div class="para">Enter a response to both of the following tasks:</div>
