@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-representations>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-1" ww-id="webwork-1">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-1" ww-id="webwork-1">
     <static seed="1">
       <statement><p>Find the point of intersection of the lines <m>y = x + 1</m> and <m>2x+3y=14\text{.}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="50%" pi:generated="webwork/images/webwork-1-image-1.png"><description>a graph with axes depicting two intersecting lines</description></image>
-<p>The point of intersection is <m>(x,y)</m> where <m>x=</m><fillin name="AnSwEr0001" characters="5"/> and <m>y=</m><fillin name="AnSwEr0002" characters="5"/>.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-1-image-1.png" width="50%"><description>a graph with axes depicting two intersecting lines</description></image>
+<p>The point of intersection is <m>(x,y)</m> where <m>x=</m><fillin characters="5" name="AnSwEr0001"/> and <m>y=</m><fillin characters="5" name="AnSwEr0002"/>.</p>
 </statement>
       <answer>
         <p>
@@ -22,7 +22,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -113,7 +113,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-2" ww-id="webwork-2">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-2" ww-id="webwork-2">
     <static seed="2">
       <statement><p>The solution of the linear system</p>
 <p><me>\begin{aligned}
@@ -121,7 +121,7 @@ ENDDOCUMENT();
 {4}x-{5}y \amp = {-15}
 \end{aligned}</me></p>
 <p>is</p>
-<p><m>x=</m><fillin name="AnSwEr0001" characters="2"/> and <m>y=</m><fillin name="AnSwEr0002" characters="2"/></p>
+<p><m>x=</m><fillin characters="2" name="AnSwEr0001"/> and <m>y=</m><fillin characters="2" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
@@ -138,7 +138,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -216,12 +216,12 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-3" ww-id="webwork-3">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-3" ww-id="webwork-3">
     <static seed="3">
       <statement><p>Suppose a jar contains red, blue and green marbles. You are told that there are a total of <m>{48}</m> marbles in the jar; there are twice as many red marbles as green ones; the number of blue marbles is the same as the sum of the red and green marbles. How many marbles of each color are there?</p>
-<p><m>g=</m><fillin name="AnSwEr0001" characters="2"/></p>
-<p><m>r=</m><fillin name="AnSwEr0002" characters="2"/></p>
-<p><m>b=</m><fillin name="AnSwEr0003" characters="2"/></p>
+<p><m>g=</m><fillin characters="2" name="AnSwEr0001"/></p>
+<p><m>r=</m><fillin characters="2" name="AnSwEr0002"/></p>
+<p><m>b=</m><fillin characters="2" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
@@ -243,7 +243,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -317,7 +317,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-4" ww-id="webwork-4">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-4" ww-id="webwork-4">
     <static seed="4">
       <statement><p>Solve the system:</p>
 <p><me>\begin{aligned}
@@ -325,7 +325,7 @@ ENDDOCUMENT();
 {5x_{2}-8x_{3}} \amp = 18\\
 {-4x_{3}} \amp = 4
 \end{aligned}</me></p>
-<p><m>(x_1, x_2, x_3) = \bigg(</m> <fillin name="AnSwEr0001" characters="2"/> , <fillin name="AnSwEr0002" characters="2"/> , <fillin name="AnSwEr0003" characters="2"/> <m>\bigg)</m></p>
+<p><m>(x_1, x_2, x_3) = \bigg(</m> <fillin characters="2" name="AnSwEr0001"/> , <fillin characters="2" name="AnSwEr0002"/> , <fillin characters="2" name="AnSwEr0003"/> <m>\bigg)</m></p>
 </statement>
       <answer>
         <p>
@@ -347,7 +347,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -438,7 +438,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-5" ww-id="webwork-5">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-5" ww-id="webwork-5">
     <static seed="5">
       <statement><p>Solve the system:</p>
 <p><me>\begin{aligned}
@@ -446,7 +446,7 @@ ENDDOCUMENT();
 {6x_{2}-2x_{3}} \amp = -14\\
 {-x_{1}+3x_{3}} \amp = 11
 \end{aligned}</me></p>
-<p><m>(x_1, x_2, x_3) = \bigg(</m> <fillin name="AnSwEr0001" characters="2"/> , <fillin name="AnSwEr0002" characters="2"/> , <fillin name="AnSwEr0003" characters="2"/> <m>\bigg)</m></p>
+<p><m>(x_1, x_2, x_3) = \bigg(</m> <fillin characters="2" name="AnSwEr0001"/> , <fillin characters="2" name="AnSwEr0002"/> , <fillin characters="2" name="AnSwEr0003"/> <m>\bigg)</m></p>
 </statement>
       <answer>
         <p>
@@ -468,7 +468,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -559,14 +559,14 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-6" ww-id="webwork-6">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-6" ww-id="webwork-6">
     <static seed="6">
       <statement><p>Use the method of elimination to solve the linear system:</p>
 <p><me>\begin{aligned}
 {3}x+{6}y \amp = {-24}\\
 {4}x-{5}y \amp = {33}
 \end{aligned}</me></p>
-<p>The solution is <m>x=</m><fillin name="AnSwEr0001" characters="2"/> and <m>y=</m><fillin name="AnSwEr0002" characters="2"/>.</p>
+<p>The solution is <m>x=</m><fillin characters="2" name="AnSwEr0001"/> and <m>y=</m><fillin characters="2" name="AnSwEr0002"/>.</p>
 </statement>
       <answer>
         <p>
@@ -583,7 +583,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -660,7 +660,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-7" ww-id="webwork-7">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-7" ww-id="webwork-7">
     <static seed="7">
       <statement><p>Use the method of elimination to solve the linear system:</p>
 <p><me>\begin{aligned}
@@ -668,7 +668,7 @@ ENDDOCUMENT();
 {-x_{2}-7x_{3}} \amp = {-24}\\
 {-2x_{1}-7x_{2}+2x_{3}} \amp = {-31}
 \end{aligned}</me></p>
-<p>The solution is <m>x_1=</m><fillin name="AnSwEr0001" characters="1"/>, <m>x_2=</m><fillin name="AnSwEr0002" characters="1"/> and <m>x_3=</m><fillin name="AnSwEr0003" characters="1"/>.</p>
+<p>The solution is <m>x_1=</m><fillin characters="1" name="AnSwEr0001"/>, <m>x_2=</m><fillin characters="1" name="AnSwEr0002"/> and <m>x_3=</m><fillin characters="1" name="AnSwEr0003"/>.</p>
 </statement>
       <answer>
         <p>
@@ -690,7 +690,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -782,7 +782,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-8" ww-id="webwork-8">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-8" ww-id="webwork-8">
     <static seed="8">
       <statement><p>Write the augmented matrix of the system</p>
 <p><me>\begin{aligned}
@@ -796,27 +796,27 @@ ENDDOCUMENT();
 <col right="medium"/>
 <col/>
 <row>
-<cell><fillin name="AnSwEr0001" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0001"/>
 </cell>
-<cell><fillin name="AnSwEr0002" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0002"/>
 </cell>
-<cell><fillin name="AnSwEr0003" characters="2"/>
-</cell>
-</row>
-<row>
-<cell><fillin name="AnSwEr0004" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0005" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0006" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0003"/>
 </cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0007" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0004"/>
 </cell>
-<cell><fillin name="AnSwEr0008" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0005"/>
 </cell>
-<cell><fillin name="AnSwEr0009" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0006"/>
+</cell>
+</row>
+<row>
+<cell><fillin characters="2" name="AnSwEr0007"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0008"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0009"/>
 </cell>
 </row>
 </tabular>
@@ -871,7 +871,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -970,7 +970,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-9" ww-id="webwork-9">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-9" ww-id="webwork-9">
     <static seed="9">
       <statement><p>Write the augmented matrix of the system</p>
 <p><me>\begin{aligned}
@@ -985,33 +985,33 @@ ENDDOCUMENT();
 <col right="medium"/>
 <col/>
 <row>
-<cell><fillin name="AnSwEr0001" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0001"/>
 </cell>
-<cell><fillin name="AnSwEr0002" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0002"/>
 </cell>
-<cell><fillin name="AnSwEr0003" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0003"/>
 </cell>
-<cell><fillin name="AnSwEr0004" characters="2"/>
-</cell>
-</row>
-<row>
-<cell><fillin name="AnSwEr0005" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0006" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0007" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0008" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0004"/>
 </cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0009" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0005"/>
 </cell>
-<cell><fillin name="AnSwEr0010" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0006"/>
 </cell>
-<cell><fillin name="AnSwEr0011" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0007"/>
 </cell>
-<cell><fillin name="AnSwEr0012" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0008"/>
+</cell>
+</row>
+<row>
+<cell><fillin characters="2" name="AnSwEr0009"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0010"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0011"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0012"/>
 </cell>
 </row>
 </tabular>
@@ -1081,7 +1081,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1189,7 +1189,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-10" ww-id="webwork-10">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-10" ww-id="webwork-10">
     <static seed="10">
       <statement><p><ol label="a.">
 <li>
@@ -1199,7 +1199,7 @@ ENDDOCUMENT();
                 -9 \amp -7 \amp 2 \amp {-6} \amp {-8}\\
                 -3 \amp 3 \amp -2 \amp 7 \amp 6 \end{bmatrix}</me></p>
 <p>Which of the following correctly describes the matrix above?</p>
-<p><ul name="AnSwEr0001">
+<p><ul form="buttons" name="AnSwEr0001">
 <li>
 <p>The matrix is <m>3\times 5</m>, with 3 rows and 5 columns.</p>
 </li>
@@ -1215,7 +1215,7 @@ ENDDOCUMENT();
 </ul></p>
 </li>
 <li>
-<p>Now consider an <m>{3} \times {9}</m> matrix <m>B\text{.}</m>  If <m>B</m> is an augmented matrix, the corresponding linear system has how many variables? <fillin name="AnSwEr0002" characters="2"/></p>
+<p>Now consider an <m>{3} \times {9}</m> matrix <m>B\text{.}</m>  If <m>B</m> is an augmented matrix, the corresponding linear system has how many variables? <fillin characters="2" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
 </statement>
@@ -1234,7 +1234,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1334,7 +1334,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-11" ww-id="webwork-11">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-11" ww-id="webwork-11">
     <static seed="11">
       <statement><p>Convert the augmented matrix below to the associated linear system.</p>
 <p><me>\begin{bmatrix} -7 \amp 5 \amp -3 \amp {-30} \\
@@ -1345,7 +1345,7 @@ ENDDOCUMENT();
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
-<col width="0%"/>
+<col width="62.5%"/>
 <col/>
 <row>
 <cell>Expression containing the variables</cell>
@@ -1353,24 +1353,24 @@ ENDDOCUMENT();
 <cell>Constants</cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0001" characters="8"/>
+<cell><fillin characters="8" name="AnSwEr0001"/>
 </cell>
 <cell><m>=</m></cell>
-<cell><fillin name="AnSwEr0002" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0002"/>
 </cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0003" characters="8"/>
+<cell><fillin characters="8" name="AnSwEr0003"/>
 </cell>
 <cell><m>=</m></cell>
-<cell><fillin name="AnSwEr0004" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0004"/>
 </cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0005" characters="8"/>
+<cell><fillin characters="8" name="AnSwEr0005"/>
 </cell>
 <cell><m>=</m></cell>
-<cell><fillin name="AnSwEr0006" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0006"/>
 </cell>
 </row>
 </tabular>
@@ -1410,7 +1410,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1525,7 +1525,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-12" ww-id="webwork-12">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-12" ww-id="webwork-12">
     <static seed="12">
       <statement><p>Given the matrix</p>
 <p><me>A={\left[\begin{array}{cccc}
@@ -1541,33 +1541,33 @@ ENDDOCUMENT();
 <col/>
 <col/>
 <row>
-<cell><fillin name="AnSwEr0001" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0001"/>
 </cell>
-<cell><fillin name="AnSwEr0002" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0002"/>
 </cell>
-<cell><fillin name="AnSwEr0003" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0003"/>
 </cell>
-<cell><fillin name="AnSwEr0004" characters="2"/>
-</cell>
-</row>
-<row>
-<cell><fillin name="AnSwEr0005" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0006" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0007" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0008" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0004"/>
 </cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0009" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0005"/>
 </cell>
-<cell><fillin name="AnSwEr0010" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0006"/>
 </cell>
-<cell><fillin name="AnSwEr0011" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0007"/>
 </cell>
-<cell><fillin name="AnSwEr0012" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0008"/>
+</cell>
+</row>
+<row>
+<cell><fillin characters="2" name="AnSwEr0009"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0010"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0011"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0012"/>
 </cell>
 </row>
 </tabular>
@@ -1579,33 +1579,33 @@ ENDDOCUMENT();
 <col/>
 <col/>
 <row>
-<cell><fillin name="AnSwEr0013" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0013"/>
 </cell>
-<cell><fillin name="AnSwEr0014" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0014"/>
 </cell>
-<cell><fillin name="AnSwEr0015" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0015"/>
 </cell>
-<cell><fillin name="AnSwEr0016" characters="2"/>
-</cell>
-</row>
-<row>
-<cell><fillin name="AnSwEr0017" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0018" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0019" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0020" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0016"/>
 </cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0021" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0017"/>
 </cell>
-<cell><fillin name="AnSwEr0022" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0018"/>
 </cell>
-<cell><fillin name="AnSwEr0023" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0019"/>
 </cell>
-<cell><fillin name="AnSwEr0024" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0020"/>
+</cell>
+</row>
+<row>
+<cell><fillin characters="2" name="AnSwEr0021"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0022"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0023"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0024"/>
 </cell>
 </row>
 </tabular>
@@ -1735,7 +1735,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1869,7 +1869,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-13" ww-id="webwork-13">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-13" ww-id="webwork-13">
     <static seed="13">
       <statement><p>Given the matrix</p>
 <p><me>A={\left[\begin{array}{cccc}
@@ -1890,33 +1890,33 @@ ENDDOCUMENT();
 <col/>
 <col/>
 <row>
-<cell><fillin name="AnSwEr0001" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0001"/>
 </cell>
-<cell><fillin name="AnSwEr0002" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0002"/>
 </cell>
-<cell><fillin name="AnSwEr0003" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0003"/>
 </cell>
-<cell><fillin name="AnSwEr0004" characters="2"/>
-</cell>
-</row>
-<row>
-<cell><fillin name="AnSwEr0005" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0006" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0007" characters="2"/>
-</cell>
-<cell><fillin name="AnSwEr0008" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0004"/>
 </cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0009" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0005"/>
 </cell>
-<cell><fillin name="AnSwEr0010" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0006"/>
 </cell>
-<cell><fillin name="AnSwEr0011" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0007"/>
 </cell>
-<cell><fillin name="AnSwEr0012" characters="2"/>
+<cell><fillin characters="2" name="AnSwEr0008"/>
+</cell>
+</row>
+<row>
+<cell><fillin characters="2" name="AnSwEr0009"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0010"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0011"/>
+</cell>
+<cell><fillin characters="2" name="AnSwEr0012"/>
 </cell>
 </row>
 </tabular>
@@ -1986,7 +1986,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2122,7 +2122,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-14" ww-id="webwork-14">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-14" ww-id="webwork-14">
     <static seed="14">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2135,17 +2135,13 @@ ENDDOCUMENT();
 2 \amp -4 \amp -5
 \end{array}\right]}</me></p>
 <p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1\text{,}</m> <m>R_2\text{,}</m> and <m>R_3\text{.}</m></p>
-<p>Answer:  <fillin name="AnSwEr0001" characters="2"/>   <var form="popup" name="AnSwEr0002">
-<li>
+<p>Answer:  <fillin characters="2" name="AnSwEr0001"/>   <ul form="popup" name="AnSwEr0002"><li>
 <p>select</p>
-</li>
-<li>
+</li><li>
 <p>-&gt;</p>
-</li>
-<li>
+</li><li>
 <p>&lt;--&gt;</p>
-</li>
-</var>   <fillin name="AnSwEr0003" characters="2"/></p>
+</li></ul>   <fillin characters="2" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
@@ -2167,7 +2163,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:13Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2275,7 +2271,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-15" ww-id="webwork-15">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-15" ww-id="webwork-15">
     <static seed="15">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2288,17 +2284,13 @@ ENDDOCUMENT();
 3 \amp 1 \amp -1
 \end{array}\right]}</me></p>
 <p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1\text{,}</m> <m>R_2\text{,}</m> and <m>R_3\text{.}</m></p>
-<p>Answer:  <fillin name="AnSwEr0001" characters="2"/>   <var form="popup" name="AnSwEr0002">
-<li>
+<p>Answer:  <fillin characters="2" name="AnSwEr0001"/>   <ul form="popup" name="AnSwEr0002"><li>
 <p>select</p>
-</li>
-<li>
+</li><li>
 <p>-&gt;</p>
-</li>
-<li>
+</li><li>
 <p>&lt;--&gt;</p>
-</li>
-</var>   <fillin name="AnSwEr0003" characters="2"/></p>
+</li></ul>   <fillin characters="2" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
@@ -2320,7 +2312,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:14Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2454,7 +2446,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-16" ww-id="webwork-16">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-16" ww-id="webwork-16">
     <static seed="16">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2467,17 +2459,13 @@ ENDDOCUMENT();
 4 \amp 1 \amp -1
 \end{array}\right]}</me></p>
 <p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1\text{,}</m> <m>R_2\text{,}</m> and <m>R_3\text{.}</m></p>
-<p>Answer:  <fillin name="AnSwEr0001" characters="2"/>   <var form="popup" name="AnSwEr0002">
-<li>
+<p>Answer:  <fillin characters="2" name="AnSwEr0001"/>   <ul form="popup" name="AnSwEr0002"><li>
 <p>select</p>
-</li>
-<li>
+</li><li>
 <p>-&gt;</p>
-</li>
-<li>
+</li><li>
 <p>&lt;--&gt;</p>
-</li>
-</var>   <fillin name="AnSwEr0003" characters="2"/></p>
+</li></ul>   <fillin characters="2" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
@@ -2499,7 +2487,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:14Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2618,80 +2606,60 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-17" ww-id="webwork-17">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-17" ww-id="webwork-17">
     <static seed="17" source="matrixtheory/rrefprob1.pg">
       <statement><p>Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</p>
 <p>a. 
-<var form="popup" name="AnSwEr0001">
-<li>
+<ul form="popup" name="AnSwEr0001"><li>
 <p>Choose</p>
-</li>
-<li>
+</li><li>
 <p>Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Reduced Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Not in Echelon Form</p>
-</li>
-</var> <m>\left[\begin{array}{cccc}
+</li></ul> <m>\left[\begin{array}{cccc}
 0 \amp 1 \amp 0 \amp 5\cr
 0 \amp 0 \amp 1 \amp -4
 \end{array}\right]</m></p>
 <p>b.
-<var form="popup" name="AnSwEr0002">
-<li>
+<ul form="popup" name="AnSwEr0002"><li>
 <p>Choose</p>
-</li>
-<li>
+</li><li>
 <p>Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Reduced Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Not in Echelon Form</p>
-</li>
-</var> <m>\left[\begin{array}{ccc}
+</li></ul> <m>\left[\begin{array}{ccc}
 -9 \amp 1 \amp 1\cr
 1 \amp -8 \amp -10\cr
 0 \amp 0 \amp 1
 \end{array}\right]</m></p>
 <p>c.
-<var form="popup" name="AnSwEr0003">
-<li>
+<ul form="popup" name="AnSwEr0003"><li>
 <p>Choose</p>
-</li>
-<li>
+</li><li>
 <p>Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Reduced Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Not in Echelon Form</p>
-</li>
-</var> <m>\left[\begin{array}{ccc}
+</li></ul> <m>\left[\begin{array}{ccc}
 1 \amp 0 \amp 1\cr
 0 \amp 1 \amp 1\cr
 0 \amp 0 \amp 1
 \end{array}\right]</m></p>
 <p>d.
-<var form="popup" name="AnSwEr0004">
-<li>
+<ul form="popup" name="AnSwEr0004"><li>
 <p>Choose</p>
-</li>
-<li>
+</li><li>
 <p>Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Reduced Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Not in Echelon Form</p>
-</li>
-</var> <m>\left[\begin{array}{cccc}
+</li></ul> <m>\left[\begin{array}{cccc}
 1 \amp 1 \amp 1 \amp 0\cr
 0 \amp 1 \amp 5 \amp 0\cr
 0 \amp 0 \amp 0 \amp 1
@@ -2721,79 +2689,59 @@ ENDDOCUMENT();
     <server-data sourceFilePath="matrixtheory/rrefprob1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="matrixtheory/rrefprob1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-18" ww-id="webwork-18">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-18" ww-id="webwork-18">
     <static seed="18" source="matrixtheory/rrefprob2.pg">
       <statement><p>Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</p>
 <p>a. 
-<var form="popup" name="AnSwEr0001">
-<li>
+<ul form="popup" name="AnSwEr0001"><li>
 <p>Choose</p>
-</li>
-<li>
+</li><li>
 <p>Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Reduced Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Not in Echelon Form</p>
-</li>
-</var> <m>\left[\begin{array}{ccc}
+</li></ul> <m>\left[\begin{array}{ccc}
 1 \amp -9 \amp 2\cr
 0 \amp 1 \amp 0
 \end{array}\right]</m></p>
 <p>b.
-<var form="popup" name="AnSwEr0002">
-<li>
+<ul form="popup" name="AnSwEr0002"><li>
 <p>Choose</p>
-</li>
-<li>
+</li><li>
 <p>Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Reduced Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Not in Echelon Form</p>
-</li>
-</var> <m>\left[\begin{array}{ccc}
+</li></ul> <m>\left[\begin{array}{ccc}
 1 \amp 1 \amp 2\cr
 1 \amp 0 \amp -9
 \end{array}\right]</m></p>
 <p>c.
-<var form="popup" name="AnSwEr0003">
-<li>
+<ul form="popup" name="AnSwEr0003"><li>
 <p>Choose</p>
-</li>
-<li>
+</li><li>
 <p>Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Reduced Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Not in Echelon Form</p>
-</li>
-</var> <m>\left[\begin{array}{cccc}
+</li></ul> <m>\left[\begin{array}{cccc}
 1 \amp 0 \amp 0 \amp -7\cr
 0 \amp 1 \amp 0 \amp -8\cr
 0 \amp 0 \amp 0 \amp 0
 \end{array}\right]</m></p>
 <p>d.
-<var form="popup" name="AnSwEr0004">
-<li>
+<ul form="popup" name="AnSwEr0004"><li>
 <p>Choose</p>
-</li>
-<li>
+</li><li>
 <p>Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Reduced Echelon Form</p>
-</li>
-<li>
+</li><li>
 <p>Not in Echelon Form</p>
-</li>
-</var> <m>\left[\begin{array}{ccccc}
+</li></ul> <m>\left[\begin{array}{ccccc}
 1 \amp -4 \amp 8 \amp 10 \amp -5\cr
 0 \amp 1 \amp 1 \amp 1 \amp 1\cr
 0 \amp 0 \amp 1 \amp 0 \amp 4\cr
@@ -2824,7 +2772,7 @@ ENDDOCUMENT();
     <server-data sourceFilePath="matrixtheory/rrefprob2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="matrixtheory/rrefprob2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-19" ww-id="webwork-19">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-19" ww-id="webwork-19">
     <static seed="19" source="matrixtheory/rrefprob3a.pg">
       <statement><p>Solve the following system using augmented matrix methods:
 <me>\begin{array}{c}
@@ -2835,58 +2783,58 @@ ENDDOCUMENT();
 <p>(a) The initial matrix is:</p>
 <tabular>
 <row>
-<cell><fillin name="AnSwEr0001" characters="5"/></cell>
-<cell><fillin name="AnSwEr0002" characters="5"/></cell>
-<cell><fillin name="AnSwEr0003" characters="5"/></cell>
+<cell><fillin characters="5" name="AnSwEr0001"/></cell>
+<cell><fillin characters="5" name="AnSwEr0002"/></cell>
+<cell><fillin characters="5" name="AnSwEr0003"/></cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0004" characters="5"/></cell>
-<cell><fillin name="AnSwEr0005" characters="5"/></cell>
-<cell><fillin name="AnSwEr0006" characters="5"/></cell>
+<cell><fillin characters="5" name="AnSwEr0004"/></cell>
+<cell><fillin characters="5" name="AnSwEr0005"/></cell>
+<cell><fillin characters="5" name="AnSwEr0006"/></cell>
 </row>
 </tabular>
 <p>(b) First, perform the Row Operation <m>\frac{1}{3} R_1 \to R_1</m>.  The resulting matrix is:</p>
 <tabular>
 <row>
-<cell><fillin name="AnSwEr0007" characters="5"/></cell>
-<cell><fillin name="AnSwEr0008" characters="5"/></cell>
-<cell><fillin name="AnSwEr0009" characters="5"/></cell>
+<cell><fillin characters="5" name="AnSwEr0007"/></cell>
+<cell><fillin characters="5" name="AnSwEr0008"/></cell>
+<cell><fillin characters="5" name="AnSwEr0009"/></cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0010" characters="5"/></cell>
-<cell><fillin name="AnSwEr0011" characters="5"/></cell>
-<cell><fillin name="AnSwEr0012" characters="5"/></cell>
+<cell><fillin characters="5" name="AnSwEr0010"/></cell>
+<cell><fillin characters="5" name="AnSwEr0011"/></cell>
+<cell><fillin characters="5" name="AnSwEr0012"/></cell>
 </row>
 </tabular>
 <p>(c) Next, perform the operation <m>-5 R_1 + R_2 \to R_2</m>.  The resulting matrix is:</p>
 <tabular>
 <row>
-<cell><fillin name="AnSwEr0013" characters="5"/></cell>
-<cell><fillin name="AnSwEr0014" characters="5"/></cell>
-<cell><fillin name="AnSwEr0015" characters="5"/></cell>
+<cell><fillin characters="5" name="AnSwEr0013"/></cell>
+<cell><fillin characters="5" name="AnSwEr0014"/></cell>
+<cell><fillin characters="5" name="AnSwEr0015"/></cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0016" characters="5"/></cell>
-<cell><fillin name="AnSwEr0017" characters="5"/></cell>
-<cell><fillin name="AnSwEr0018" characters="5"/></cell>
+<cell><fillin characters="5" name="AnSwEr0016"/></cell>
+<cell><fillin characters="5" name="AnSwEr0017"/></cell>
+<cell><fillin characters="5" name="AnSwEr0018"/></cell>
 </row>
 </tabular>
 <p>(d) Finish simplifying the augmented matrix.  The reduced matrix is:</p>
 <tabular>
 <row>
-<cell><fillin name="AnSwEr0019" characters="5"/></cell>
-<cell><fillin name="AnSwEr0020" characters="5"/></cell>
-<cell><fillin name="AnSwEr0021" characters="5"/></cell>
+<cell><fillin characters="5" name="AnSwEr0019"/></cell>
+<cell><fillin characters="5" name="AnSwEr0020"/></cell>
+<cell><fillin characters="5" name="AnSwEr0021"/></cell>
 </row>
 <row>
-<cell><fillin name="AnSwEr0022" characters="5"/></cell>
-<cell><fillin name="AnSwEr0023" characters="5"/></cell>
-<cell><fillin name="AnSwEr0024" characters="5"/></cell>
+<cell><fillin characters="5" name="AnSwEr0022"/></cell>
+<cell><fillin characters="5" name="AnSwEr0023"/></cell>
+<cell><fillin characters="5" name="AnSwEr0024"/></cell>
 </row>
 </tabular>
 <p>(e) What are the solutions to the system?</p>
-<p><m>x=</m> <fillin name="AnSwEr0025" characters="25"/></p>
-<p><m>y=</m> <fillin name="AnSwEr0026" characters="25"/></p>
+<p><m>x=</m> <fillin characters="25" name="AnSwEr0025"/></p>
+<p><m>y=</m> <fillin characters="25" name="AnSwEr0026"/></p>
 </statement>
       <answer>
         <p>
@@ -3022,7 +2970,7 @@ ENDDOCUMENT();
     <server-data sourceFilePath="matrixtheory/rrefprob3a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="matrixtheory/rrefprob3a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-20" ww-id="webwork-20">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-20" ww-id="webwork-20">
     <static seed="20" source="matrixtheory/rrefprob3.pg">
       <statement><p>Reduce the matrix <me>A= \left[\begin{array}{cccc}
 -3 \amp -6 \amp -3 \amp -24\cr
@@ -3030,7 +2978,7 @@ ENDDOCUMENT();
 0 \amp -8 \amp -16 \amp -48
 \end{array}\right]</me>
 to reduced row-echelon form.</p>
-<p><fillin rows="3" cols="4"/></p>
+<p><fillin cols="4" rows="3"/></p>
 </statement>
       <hint><p>First, do <m>\frac{1}{-3} R_1 \to R_1</m>, resulting in
 <me>\left[\begin{array}{cccc}
@@ -3056,7 +3004,7 @@ Next, do <m>8 R_2+R_3 \to R_3</m>, resulting in
     <server-data sourceFilePath="matrixtheory/rrefprob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="matrixtheory/rrefprob3.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-21" ww-id="webwork-21">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-21" ww-id="webwork-21">
     <static seed="21" source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg">
       <statement><p>Reduce the matrix <me>A= \left[\begin{array}{cccc}
 3 \amp -3 \amp 4 \amp -15\cr
@@ -3064,15 +3012,479 @@ Next, do <m>8 R_2+R_3 \to R_3</m>, resulting in
 3 \amp 3 \amp -2 \amp 3
 \end{array}\right]</me>
 to reduced row-echelon form.</p>
-<p><fillin rows="3" cols="4"/></p>
+<p><fillin cols="4" rows="3"/></p>
 </statement>
     </static>
     <server-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-22" ww-id="webwork-22">
-    <static seed="22">
-      <statement><p>Enter two numbers that are equal, and the first one must be a 2: <fillin name="AnSwEr0001" characters="5"/> <m>=</m> <fillin name="AnSwEr0002" characters="5"/></p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-22" ww-id="webwork-22">
+    <static seed="22" source="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg">
+      <statement><p>The reduced row-echelon forms of the augmented matrices of four systems are given below. How
+many solutions does each system have?</p>
+<p><OL TYPE="a"/></p>
+<p><BR><BR>
+<LI>
+<m>\left\lbrack \begin{array}{rrr|r} 1 \amp  0 \amp  -2 \amp  0 \\ 0 \amp  1 \amp  0 \amp  0 \\ 0 \amp  0 \amp  0 \amp  1 \\ 0 \amp  0 \amp  0 \amp  0 \end{array} \right\rbrack</m></LI></BR></BR></p>
+<p><var form="buttons">
+<li>
+<p>No solutions</p>
+</li>
+<li>
+<p>Infinitely many solutions</p>
+</li>
+<li>
+<p>Unique solution</p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p><BR><BR>
+<LI>
+<m>\left\lbrack \begin{array}{rrr|r} 0 \amp  1 \amp  0 \amp  -16 \\ 0 \amp  0 \amp  1 \amp  5 \end{array} \right\rbrack</m></LI></BR></BR></p>
+<p><var form="buttons">
+<li>
+<p>Infinitely many solutions</p>
+</li>
+<li>
+<p>No solutions</p>
+</li>
+<li>
+<p>Unique solution</p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p><BR><BR>
+<LI>
+<m>\left\lbrack \begin{array}{rr|r} 1 \amp  0 \amp  7 \\ 0 \amp  1 \amp  11 \\ 0 \amp  0 \amp  0 \end{array} \right\rbrack</m></LI></BR></BR></p>
+<p><var form="buttons">
+<li>
+<p>Unique solution</p>
+</li>
+<li>
+<p>No solutions</p>
+</li>
+<li>
+<p>Infinitely many solutions</p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p><BR><BR>
+<LI>
+<m>\left\lbrack \begin{array}{rrr|r} 1 \amp  0 \amp  0 \amp  13 \\ 0 \amp  0 \amp  1 \amp  -15 \end{array} \right\rbrack</m></LI></BR></BR></p>
+<p><var form="buttons">
+<li>
+<p>Infinitely many solutions</p>
+</li>
+<li>
+<p>No solutions</p>
+</li>
+<li>
+<p>Unique solution</p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p/>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-23" ww-id="webwork-23">
+    <static seed="23" source="Library/TCNJ/TCNJ_RowReduction/problem14.pg">
+      <statement><p>How many free variables does each augmented matrix have?</p>
+<p><OL TYPE="a"/></p>
+<p><LI>
+<ul form="popup" name="AnSwEr0001"><li>
+<p>Choose</p>
+</li><li>
+<p>None</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li></ul> <m>\left\lbrack 
+\begin{array}{rrrr|r} 
+1 \amp  0 \amp  0 \amp  -7 \amp  -6 \\
+0 \amp  1 \amp  0 \amp  0 \amp  -3 \\
+0 \amp  0 \amp  0 \amp  0 \amp  0 \\
+0 \amp  0 \amp  0 \amp  0 \amp  0 
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0002"><li>
+<p>Choose</p>
+</li><li>
+<p>None</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li></ul> <m>\left\lbrack 
+\begin{array}{rr|r} 
+1 \amp  0 \amp  -6 \\ 
+0 \amp  1 \amp  5 \\ 
+0 \amp  0 \amp  0 
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0003"><li>
+<p>Choose</p>
+</li><li>
+<p>None</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li></ul> <m>\left\lbrack 
+\begin{array}{rr|r} 
+1 \amp  7 \amp  -2 \\
+0 \amp  0 \amp  0 \\
+0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0004"><li>
+<p>Choose</p>
+</li><li>
+<p>None</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li></ul> <m>\left\lbrack 
+\begin{array}{rrr|r} 
+1 \amp  3 \amp  -8 \amp  4 \\
+0 \amp  0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+</LI></BR></BR></LI></BR></BR></LI></BR></BR></LI></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Two}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{None}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{One}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Two}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem14.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_RowReduction/problem14.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-24" ww-id="webwork-24">
+    <static seed="24" source="Library/TCNJ/TCNJ_RowReduction/problem15.pg">
+      <statement><p>How many determined (basic) variables does each augmented matrix have?</p>
+<p><OL TYPE="a"/></p>
+<p><LI>
+<ul form="popup" name="AnSwEr0001"><li>
+<p>Choose</p>
+</li><li>
+<p>Zero</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li><li>
+<p>Four</p>
+</li></ul> <m>\left\lbrack
+\begin{array}{rrr|r}
+1 \amp  0 \amp  0 \amp  7 \\
+0 \amp  1 \amp  0 \amp  -6 \\
+0 \amp  0 \amp  1 \amp  -3
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0002"><li>
+<p>Choose</p>
+</li><li>
+<p>Zero</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li><li>
+<p>Four</p>
+</li></ul> <m>\left\lbrack
+\begin{array}{rr|r}
+1 \amp  0 \amp  7 \\
+0 \amp  1 \amp  8 \\
+0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0003"><li>
+<p>Choose</p>
+</li><li>
+<p>Zero</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li><li>
+<p>Four</p>
+</li></ul> <m>\left\lbrack
+\begin{array}{rrr|r}
+1 \amp  8 \amp  -7 \amp  -6 \\
+0 \amp  0 \amp  0 \amp  0
+\end{array}
+\right\rbrack</m>
+<BR><BR>
+<LI>
+<ul form="popup" name="AnSwEr0004"><li>
+<p>Choose</p>
+</li><li>
+<p>Zero</p>
+</li><li>
+<p>One</p>
+</li><li>
+<p>Two</p>
+</li><li>
+<p>Three</p>
+</li><li>
+<p>Four</p>
+</li></ul> <m>\left\lbrack
+\begin{array}{rrrr|r}
+1 \amp  0 \amp  0 \amp  -4 \amp  4 \\
+0 \amp  1 \amp  0 \amp  0 \amp  -7 \\
+0 \amp  0 \amp  1 \amp  0 \amp  6
+\end{array}
+\right\rbrack</m>
+</LI></BR></BR></LI></BR></BR></LI></BR></BR></LI></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Three}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Two}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{One}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Three}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_RowReduction/problem15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-25" ww-id="webwork-25">
+    <static seed="25" source="matrixtheory/consistency_prob4.pg">
+      <statement><p>Convert the system</p>
+<p><me>\begin{array}{rcrcrcr}-4 x_1 \amp  - \amp  7 x_{2} \amp  = \amp  2 \\4 x_1 \amp  + \amp  9 x_{2} \amp  = \amp  -6 \\ x_1  \amp  + \amp  2 x_{2} \amp  = \amp  -1\end{array}</me></p>
+<p>to an augmented matrix. Then reduce the system to echelon form and determine if the system is consistent.</p>
+<p>Augmented matrix: <fillin cols="3" rows="3"/></p>
+<p>Echelon form: <fillin cols="3" rows="3"/></p>
+<p>Is the system consistent? <ul form="popup" name="AnSwEr0003"><li>
+<p>select</p>
+</li><li>
+<p>yes</p>
+</li><li>
+<p>no</p>
+</li></ul></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{yes}</m>
+        </p>
+      </answer>
+      <solution><p><alert>SOLUTION:</alert></p>
+<p><m>\begin{array}{ccc} \left[\begin{array}{rrr} -4 \amp   -7 \amp   2 \\ 4 \amp   9 \amp   -6 \\ 1 \amp   2 \amp   -1\end{array}\right] \amp  \overset{R_1 \Leftrightarrow R_3}{\sim} \amp  \left[\begin{array}{rrr} 1 \amp   2 \amp   -1 \\ 4 \amp   9 \amp   -6 \\ -4 \amp   -7 \amp   2\end{array}\right] \\
+\amp  \overset{\begin{align*}-4 R_1 + R_2 \amp \Rightarrow R_2 \\ 4 R_1 + R_3 \amp \Rightarrow R_3\end{align*}}{\sim} \amp  \left[\begin{array}{rrr} 1 \amp   2 \amp   -1 \\ 0 \amp   1 \amp   -2 \\ 0 \amp   1 \amp   -2\end{array}\right] \\ \amp  \overset{- R_2 + R_3 \Rightarrow R_3}{\sim} \amp  \left[\begin{array}{rrr} 1 \amp   2 \amp   -1 \\ 0 \amp   1 \amp   -2 \\ 0 \amp   0 \amp   0\end{array}\right] \end{array}</m></p>
+<p>Row 2 <m>\Rightarrow x_2 = -2</m>. Row 1 <m>\Rightarrow x_1+ 2 (-2) = -1 \Rightarrow x_1 = 3</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="matrixtheory/consistency_prob4.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="matrixtheory/consistency_prob4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-26" ww-id="webwork-26">
+    <static seed="26" source="Library/ASU-topics/set119LinearSystems/p10.pg">
+      <statement><p>Solve the system by finding the reduced row-echelon form of the augmented
+matrix.
+<me>\left\{
+\begin{array}{ll}
+        x+ y+ 3 z \amp = -5 \\
+        2 x+ 3 y+ 7 z \amp = -6 \\
+        -3 x- y - 7 z \amp  = 23
+\end{array}\right.</me></p>
+<p>reduced row-echelon form:</p>
+<tabular>
+<row>
+<cell><fillin characters="5" name="AnSwEr0001"/></cell>
+<cell><fillin characters="5" name="AnSwEr0002"/></cell>
+<cell><fillin characters="5" name="AnSwEr0003"/></cell>
+<cell><fillin characters="5" name="AnSwEr0004"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0005"/></cell>
+<cell><fillin characters="5" name="AnSwEr0006"/></cell>
+<cell><fillin characters="5" name="AnSwEr0007"/></cell>
+<cell><fillin characters="5" name="AnSwEr0008"/></cell>
+</row>
+<row>
+<cell><fillin characters="5" name="AnSwEr0009"/></cell>
+<cell><fillin characters="5" name="AnSwEr0010"/></cell>
+<cell><fillin characters="5" name="AnSwEr0011"/></cell>
+<cell><fillin characters="5" name="AnSwEr0012"/></cell>
+</row>
+</tabular>
+<p>How many solutions are there to this system?</p>
+<p><var form="buttons">
+<li>
+<p>None</p>
+</li>
+<li>
+<p>Exactly 1</p>
+</li>
+<li>
+<p>Exactly 2</p>
+</li>
+<li>
+<p>Exactly 3</p>
+</li>
+<li>
+<p>Infinitely many</p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p>If there is one solution, give its coordinates in the answer spaces below.</p>
+<p>If there
+are infinitely many solutions, enter <em>z</em> in the answer blank for <m>z</m>,
+enter a formula for <m>y</m> in terms of <m>z</m> in the answer blank for <m>y</m> and
+enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</m>.</p>
+<p>If there are no solutions, leave the answer blanks for <m>x</m>, <m>y</m> and <m>z</m> empty.</p>
+<p><m>x =</m> <fillin characters="40" name="AnSwEr0013"/></p>
+<p><m>y =</m> <fillin characters="40" name="AnSwEr0014"/></p>
+<p><m>z =</m> <fillin characters="40" name="AnSwEr0015"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>E</p>
+      </answer>
+      <answer>
+        <p>
+          <m>-9-2z</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4-1z</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p10.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/set119LinearSystems/p10.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-27" ww-id="webwork-27">
+    <static seed="27">
+      <statement><p>Enter two numbers that are equal, and the first one must be a 2: <fillin characters="5" name="AnSwEr0001"/> <m>=</m> <fillin characters="5" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
@@ -3089,7 +3501,7 @@ to reduced row-echelon form.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2024-12-12T18:14:54Z       
+###       on 2025-03-22T20:26:14Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          

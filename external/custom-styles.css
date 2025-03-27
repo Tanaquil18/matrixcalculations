@@ -1,0 +1,41 @@
+/* I like Denver or Salem themes.  In Denver, I'd like all Runestone containers to be wider, like 
+parsons is. Also, the exercise container and border doesn't get wider, which looks weird.  In Salem, 
+I'd need to fix the worksheets - not boxes around the exercises number, inline first paragraph, and black 
+color on the exercise number instead of gray. */
+
+/* @media screen and (width <= 1240px) {
+    :is(.theorem-like,.definition-like,.example-like,.exercise-like,.project-like,.remark-like,.openproblem-like,.openproblems-like,.computation-like,.knowl__content) .ptx-runestone-container {
+        margin-left: calc(-.5*(var(--cur-width) - 100%));
+    }
+} */
+
+/* .ptx-runestone-container {
+    margin-left: calc(-.5*(var(--cur-width) - 100%));
+    --max-width: min((100cqw - 2 * 48px), 900px);
+    min-width: 100%;
+    width: var(--max-width);
+    max-width: var(--max-width);
+    overflow-x: auto;
+    overflow-y: hidden;
+} */
+
+/* .exercise-like>.heading:first-child+.para {
+    display: inline;
+}
+
+.exercise-like>.heading:first-child {
+    display: inline;
+    line-height: initial;
+    border-bottom: 0;
+}
+
+.exercise-like:not(.knowl__content,.born-hidden-knowl)>.heading:first-child {
+    background-color: var(--exercise-like-border-color);
+    display: inline-block;
+    color: #070707;
+    padding: 5px 10px;
+    margin-left: -12px;
+    margin-top: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+} */

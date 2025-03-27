@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Consistent and Inconsistent Systems</title>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.googleapis.com">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta xmlns:xlink="http://www.w3.org/1999/xlink" name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:type" content="book">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:title" content="Matrix Calculations">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Chrissy Safranski">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.5.11';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.ee5a0b116b7d0991.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.e0c6d4592e23c667.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:xlink="http://www.w3.org/1999/xlink" src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
+</head>
+<body id="matrixtheory" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Matrix Calculations:</span> <span class="subtitle">An introduction to parts of linear algebra</span></a></h1>
+<p class="byline">Chrissy Safranski</p>
+</div></div></header><nav xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-rref.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-chapter-title.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-testing-things.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div xmlns:xlink="http://www.w3.org/1999/xlink" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+\newcommand{\Z}{\mathbb Z} 
+\newcommand{\Q}{\mathbb Q} 
+\newcommand{\R}{\mathbb R}
+\newcommand{\lambd}{\lambda}
+\newcommand{\rrefarrow}{\xrightarrow{\mathrm{rref}}}
+\newcommand{\tr}[1]{\mathrm{tr}#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations and Augmented Matrices</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-lin-eqn-substitution.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Equations and Substitution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lin-eqn-substitution.html#subsec-lin-eqn-dc" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lin-eqn-substitution.html#ww-lin-eqn-subs" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-lin-eqn-substitution.html#exer-lin-eqn-subs" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrices-elimination.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrices and Elimination</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrices-elimination.html#subsec-matrices-elim-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrices-elimination.html#rqs-matrices-elim" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrices-elimination.html#ws-matrices-elim" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrices-elimination.html#ww-matrices-elim" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrices-elimination.html#exer-matrices-elim" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-row-ops.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-row-ops.html#subsec-row-ops-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-row-ops.html#rqs-row-ops" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-row-ops.html#ws-row-ops" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-row-ops.html#ww-row-ops" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-row-ops.html#exer-row-ops" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-rref.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Reduced Row Echelon Form</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-rref.html#subsec-rref-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-rref.html#rqs-rref" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-rref.html#ws-rref" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rref.html#ww-rref" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-rref.html#exer-rref" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-consistency.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Consistent and Inconsistent Systems</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-consistency.html#subsec-consistency-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-consistency.html#subsubsec-typesofsolutions" class="internal"><span class="title">Types of solutions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-consistency.html#subsubsec-consistent-or-inconsistent" class="internal"><span class="title">Determining Consistency</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-consistency.html#subsubsec-infinitesolutions" class="internal"><span class="title">More on Infinite Solutions</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-consistency.html#rqs-consistency" class="internal"><span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-consistency.html#ws-consistency" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-consistency.html#ww-consistency" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-consistency.html#exer-consistency" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-testing-things.html" class="internal"><span class="codenumber">2</span> <span class="title">Testing Things</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-testing-things.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Testing things</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-testing-things.html#ws-rrefa" class="internal"><span class="codenumber">2.1</span> <span class="title">Participate</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:xlink="http://www.w3.org/1999/xlink" class="section" id="sec-consistency"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.5</span><span class="space"> </span><span class="title">Consistent and Inconsistent Systems</span>
+</h2>
+<section class="introduction" id="sec-consistency-2"><div class="para" id="sec-consistency-2-1">We’ve learned how to take a linear system, turn it into an augmented matrix, and use Gauss-Jordan elimination to put the matrix into reduced row echelon form.  We used the reduced row echelon form to see what the solution was to the original linear system, and in all the examples we’ve seen so far, there was exactly one solution.</div>
+<div class="para" id="sec-consistency-2-2">In this section, we consider different possibilities for what the solutions to a linear system can be and see how we can identify those different possibilities from the reduced row echelon form that results after performing Gauss-Jordan elimination.</div></section><section class="subsection" id="subsec-consistency-bc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Prepare</span>
+</h3>
+<section class="subsubsection" id="subsubsec-typesofsolutions"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Types of solutions</span>
+</h4>
+<div class="para" id="subsubsec-typesofsolutions-2">In <a href="sec-lin-eqn-substitution.html#fruit-puzzle" class="xref" data-knowl="./knowl/xref/ex-fruitpuzzle.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.1.3: Solve a fruit puzzle">Activity 1.1.3</a>, <a href="sec-lin-eqn-substitution.html#ex_sony_interview" class="xref" data-knowl="./knowl/xref/ex_sony_interview.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.7: Sony and The Interview">Example 1.1.7</a>, <a href="sec-lin-eqn-substitution.html#ex_by_hand" class="xref" data-knowl="./knowl/xref/ex_by_hand.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.8: Jar of multicolored marbles">Example 1.1.8</a>, <a href="sec-row-ops.html#ex_eq_mat" class="xref" data-knowl="./knowl/xref/ex_eq_mat.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.3.5: Equations and Matrices Side by Side">Example 1.3.5</a>, and all of our other examples of linear systems, there was exactly one solution, that is, one possible assignment of values to the variables which made all of the equations in the system true at the same time. We now consider if that is always the case or not.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="subsubsec-typesofsolutions-3-1">
+<div class="para">First, consider the following linear system with one equation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x-y=0\text{.}
+\end{equation*}
+</div>
+<div class="para">This equation is true whenever <span class="process-math">\(x=y\text{.}\)</span>  We can picture all of the possible solutions by thinking of the graph of the equation <span class="process-math">\(y=x\text{.}\)</span>
+</div>
+</div></div>
+<div class="sbspanel top" style="width:45%;"><img src="generated/prefigure/prefigure-graphofline.svg" role="img" class="contained" alt="Graph of the line y=x and three points on the line"></div>
+</div></div>
+<div class="para" id="subsubsec-typesofsolutions-4">Each single equation with two variables can be viewed in this way, as a line in the plane. Let’s now consider systems of linear equations with two equations and two variables, so that there are two lines in the plane.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="subsubsec-typesofsolutions-5-1">
+<div class="para">Consider the linear system</div>
+<div class="displaymath process-math" id="subsubsec-typesofsolutions-5-1-1">
+\begin{align*}
+x-y\amp =0\\
+x+y\amp =2\text{.}
+\end{align*}
+</div>
+<div class="para">Since each equation can be viewed as a line and since the slopes of the lines are different, we know the lines will intersect somewhere, and that point of intersection is the only solution to the system.</div>
+</div></div>
+<div class="sbspanel top" style="width:45%;"><img src="generated/prefigure/prefigure-graphofintersectinglines.svg" role="img" class="contained"></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="subsubsec-typesofsolutions-6-1">
+<div class="para">Now consider the linear system</div>
+<div class="displaymath process-math" id="subsubsec-typesofsolutions-6-1-1">
+\begin{align*}
+x-y\amp =0\\
+2x-2y\amp =0\text{.}
+\end{align*}
+</div>
+<div class="para">While this system has two equations, the second is a multiple of the first. The thicker line is used to represent that we’ve drawn the same line twice. In this case, we have an infinite solution set, just as if we only had the one equation <span class="process-math">\(x-y=0\text{.}\)</span>
+</div>
+</div></div>
+<div class="sbspanel top" style="width:45%;"><img src="generated/prefigure/prefigure-graphofsamelines.svg" role="img" class="contained"></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="subsubsec-typesofsolutions-7-1">
+<div class="para">Finally, consider the linear system</div>
+<div class="displaymath process-math" id="subsubsec-typesofsolutions-7-1-1">
+\begin{align*}
+x-y\amp =0\\
+x-y\amp =2\text{.}
+\end{align*}
+</div>
+<div class="para">If the difference between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is <span class="process-math">\(0\text{,}\)</span> it can’t also be <span class="process-math">\(2\text{.}\)</span> This linear system has no solution. We observe that the two lines are parallel and never intersect.</div>
+</div></div>
+<div class="sbspanel top" style="width:45%;"><img src="generated/prefigure/prefigure-graphofparallellines.svg" role="img" class="contained"></div>
+</div></div>
+<div class="para" id="subsubsec-typesofsolutions-8">It becomes harder to visualize when we add variables, but no matter how many equations and variables we have, solutions to linear equations always come in one of three forms: exactly one solution, infinite solutions, or no solution. This is a fact that we will not prove here, but it deserves to be stated.</div>
+<article class="theorem theorem-like" id="thm_existence_uniqueness"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Solution Forms of Linear Systems.</span>
+</h5>
+<div class="para" id="thm_existence_uniqueness-6-1">Every linear system of equations has exactly one solution, infinite solutions, or no solution.</div></article><div class="para" id="subsubsec-typesofsolutions-10">Visually, we think of the three options below, even though linear systems often have more than two equations and more than two variables.</div>
+<figure class="figure figure-like" id="fig_visual_solution"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like" id="fig_threepossibilities_intersecting"><img src="generated/prefigure/prefigure-graphofintersectinglines-2ndtime.svg" role="img" class="contained" alt="Two intersecting lines"><figcaption><span class="codenumber">(a)</span><span class="space"> </span>One solution</figcaption></figure></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like" id="fig_threepossibilities_sameline"><img src="generated/prefigure/prefigure-graphofsamelines-2ndtime.svg" role="img" class="contained" alt="Two lines that are the same line"><figcaption><span class="codenumber">(b)</span><span class="space"> </span>Infinitely many solutions</figcaption></figure></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like" id="fig_threepossibilities_parallel"><img src="generated/prefigure/prefigure-graphofparallellines-2ndtime.svg" role="img" class="contained" alt="Two parallel lines"><figcaption><span class="codenumber">(c)</span><span class="space"> </span>No solutions</figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.5.2<span class="period">.</span></span><span class="space"> </span>The three possibilities for all linear systems; the systems pictured have two equations and two variables</figcaption></figure></section><section class="subsubsection" id="subsubsec-consistent-or-inconsistent"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Determining Consistency</span>
+</h4>
+<div class="para" id="subsubsec-consistent-or-inconsistent-2">How can we tell whether a given system of linear equations has <span class="process-math">\(0\text{,}\)</span> <span class="process-math">\(1\text{,}\)</span> or infinitely many solutions? The answer to this question lies with the reduced row echelon form of its corresponding augmented matrix.</div>
+<article class="remark remark-like" id="subsubsec-consistent-or-inconsistent-3"><h5 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">A note on using technology.</span>
+</h5>
+<div class="para" id="subsubsec-consistent-or-inconsistent-3-2">When we are learning a new technique or procedure, it’s good to go through all the steps ourselves because understanding the process has benefits.  That’s why we typically learn how to add numbers using manipulatives like blocks or fingers, with the goal of eventually being able to add faster without any aids; in fact, we eventually add numbers we never could have represented with physical manipulatives. The focus shifted from the ability to add for its own sake to solving a problem which required addition as a step.</div>
+<div class="para" id="subsubsec-consistent-or-inconsistent-3-3">In a similar way, once we are able to perform Gauss-Jordan elimination by hand for small systems, we move to using technology to quickly obtain the reduced row echelon form of a matrix.  The focus is no longer on our ability to row reduce for its own sake but on answering a question which requires interpreting the result of row reducing a matrix.</div>
+<div class="para" id="subsubsec-consistent-or-inconsistent-3-4">There are many apps, websites, etc., which can produce the reduced row echelon form of a matrix very quickly.  This book will use SageMath, a language which is built on Python and free. Hit the “Evaluate (Sage)” button below to see both the matrix and its reduced row echelon form.</div>
+<div id="subsubsec-consistent-or-inconsistent-3-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">A=matrix(QQ,2,3,[[1,2,3],[4,5,6]])
+show(A,"-->",A.rref())
+</script></div>
+<div class="para" id="subsubsec-consistent-or-inconsistent-3-6">The “QQ” in the Sage cell above is present for a technical reason, and the rest of syntax means that <span class="process-math">\(A\)</span> is being defined as a <span class="process-math">\(2\times 3\)</span> matrix, whose first row is <span class="process-math">\([1, 2, 3]\)</span> and whose second row is <span class="process-math">\([4,5,6]\text{.}\)</span>
+</div>
+<div class="para" id="subsubsec-consistent-or-inconsistent-3-7">Try modifying the contents of the above Sage cell to calculate the reduced row echelon form of a different matrix. Don’t worry about messing anything up beyond repair; refreshing the page will reset the Sage cell back to its initial state.</div>
+<div class="para" id="subsubsec-consistent-or-inconsistent-3-8">From now on, we will give the reduced row echelon form of the matrix without showing work.</div></article><div class="para" id="subsubsec-consistent-or-inconsistent-4">We begin by distinguishing between systems which have a solution (either one or infinitely many) and those which have no solution.</div>
+<article class="definition definition-like" id="def_consistent"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">Consistency of Linear Systems.</span>
+</h5>
+<div class="para" id="def_consistent-6-1">A system of linear equations is <dfn class="terminology">consistent</dfn> if it has at least one solution. A linear system is <dfn class="terminology">inconsistent</dfn> if it does not have a solution.</div></article><div class="para" id="subsubsec-consistent-or-inconsistent-6">What happens in the reduced row echelon form if a linear system has no solutions?</div>
+<article class="example example-like" id="ex_ex_un_2"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">A system with no solutions.</span>
+</h5>
+<div class="para logical" id="ex_ex_un_2-2">
+<div class="para">Find the solution to the linear system</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ccccccc} x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 1\\ x_1\amp +\amp 2x_2\amp +\amp x_3\amp =\amp 2\\ 2x_1\amp +\amp 3x_2\amp +\amp 2x_3\amp =\amp 0 \end{array}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="ex_ex_un_2-3">
+<div class="para">
+<em class="emphasis">Answer:</em> We put the corresponding augmented matrix into reduced row echelon form.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{cccc}  1\amp 1\amp 1\amp 1\\1\amp 2\amp 1\amp 2\\ 2\amp 3\amp 2\amp 0\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc}  1\amp 0\amp 1\amp 0\\ 0\amp 1\amp 0\amp 0\\ 0\amp 0\amp 0\amp 1\\ \end{array} \right]
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="ex_ex_un_2-4">
+<div class="para">Now let us take the reduced matrix and write out the corresponding equations. The first two rows give us the equations</div>
+<div class="displaymath process-math" id="ex_ex_un_2-4-1">
+\begin{align*}
+x_1+x_3\amp =0\\
+x_2 \amp = 0\text{.}
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="ex_ex_un_2-5">
+<div class="para">So far, so good. However the last row gives us the equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0x_1+0x_2+0x_3 = 1\text{.}
+\end{equation*}
+</div>
+<div class="para">There are no values of <span class="process-math">\(x_1, x_2\)</span> and <span class="process-math">\(x_3\)</span> which can make <span class="process-math">\(0=1\text{.}\)</span> Therefore, no solution exists, and this system is inconsistent.</div>
+</div></article><div class="para" id="subsubsec-consistent-or-inconsistent-8">The key takeaway from <a href="sec-consistency.html#ex_ex_un_2" class="xref" data-knowl="./knowl/xref/ex_ex_un_2.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.5: A system with no solutions">Example 1.5.5</a> is: if any row has a leading <span class="process-math">\(1\)</span> in the last column after row reducing the augmented matrix of a linear system, the system is inconsistent. Otherwise, the system is consistent, which means it has at least 1 solution.</div>
+<article class="exercise exercise-like" id="consistent-or-not-examples"><h5 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.6</span><span class="period">.</span><span class="space"> </span><span class="title">Consistent or inconsistent?</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone tabbed_section"><div data-component="tabbedStuff" id="rs-consistent-or-not-examples">
+<div data-component="tab" data-tabname="Introduction"><div class="introduction" id="consistent-or-not-examples-2"><div class="para" id="consistent-or-not-examples-2-1">For each of the following linear systems, say whether it is consistent or inconsistent.</div></div></div>
+<div data-component="tab" data-tabname="(a)"><article class="task exercise-like" id="consistent-or-not-a"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-consistent-or-not-a" data-multipleanswers="false">
+<div class="para logical" id="consistent-or-not-a-1-1">
+<div class="para">The linear system whose augmented matrix in reduced row echelon form is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 1\amp 0 \amp -2\\0\amp 1 \amp 1
+\end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+<li data-component="answer" id="rs-consistent-or-not-a_opt_a" data-correct=""><div class="para" id="consistent-or-not-a-2-1-1-1">Consistent</div></li>
+<li data-component="feedback" id="rs-consistent-or-not-a_opt_a"><div class="para" id="consistent-or-not-a-2-1-2-1">Correct!</div></li>
+<li data-component="answer" id="rs-consistent-or-not-a_opt_b"><div class="para" id="consistent-or-not-a-2-2-1-1">Inconsistent</div></li>
+<li data-component="feedback" id="rs-consistent-or-not-a_opt_b"><div class="para" id="consistent-or-not-a-2-2-2-1">There is no row with a leading <span class="process-math">\(1\)</span> in the last column.  The first row says that <span class="process-math">\(x_1=-2\)</span> and the second row says that <span class="process-math">\(x_2=1\text{.}\)</span>  If a linear system has a solution, it is consistent.</div></li>
+</ul></div></div></article></div>
+<div data-component="tab" data-tabname="(b)"><article class="task exercise-like" id="consistent-or-not-b"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-consistent-or-not-b" data-multipleanswers="false">
+<div class="para logical" id="consistent-or-not-b-1-1">
+<div class="para">The linear system whose augmented matrix in reduced row echelon form is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 1 \amp 1  \amp -3 \\ 0\amp 0\amp 0
+\end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+<li data-component="answer" id="rs-consistent-or-not-b_opt_a" data-correct=""><div class="para" id="consistent-or-not-b-2-1-1-1">Consistent</div></li>
+<li data-component="feedback" id="rs-consistent-or-not-b_opt_a"><div class="para" id="consistent-or-not-b-2-1-2-1">Correct!</div></li>
+<li data-component="answer" id="rs-consistent-or-not-b_opt_b"><div class="para" id="consistent-or-not-b-2-2-1-1">Inconsistent</div></li>
+<li data-component="feedback" id="rs-consistent-or-not-b_opt_b"><div class="para" id="consistent-or-not-b-2-2-2-1">There is no row with a leading <span class="process-math">\(1\)</span> in the last column.  The first row says that <span class="process-math">\(x_1+x_2=-3\)</span> and the second row says that <span class="process-math">\(0x_1+0x_2=0\text{,}\)</span> which is true.</div></li>
+</ul></div></div></article></div>
+<div data-component="tab" data-tabname="(c)"><article class="task exercise-like" id="consistent-or-not-c"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-consistent-or-not-c" data-multipleanswers="false">
+<div class="para logical" id="consistent-or-not-c-1-1">
+<div class="para">The linear system whose augmented matrix has been row reduced to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 1 \amp 0  \amp -3 \\ 0\amp 1\amp 1 \\0\amp 0\amp 1 \\ 0 \amp 0 \amp 0
+\end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+<li data-component="answer" id="rs-consistent-or-not-c_opt_a"><div class="para" id="consistent-or-not-c-2-1-1-1">Consistent</div></li>
+<li data-component="feedback" id="rs-consistent-or-not-c_opt_a"><div class="para" id="consistent-or-not-c-2-1-2-1">There is a row with a leading <span class="process-math">\(1\)</span> in the last column.  The third row says that <span class="process-math">\(0x_1+0x_2=1\text{,}\)</span> which is not true for any possible values of <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_2\text{.}\)</span> A system with no solutions is inconsistent.</div></li>
+<li data-component="answer" id="rs-consistent-or-not-c_opt_b" data-correct=""><div class="para" id="consistent-or-not-c-2-2-1-1">Inconsistent</div></li>
+<li data-component="feedback" id="rs-consistent-or-not-c_opt_b"><div class="para" id="consistent-or-not-c-2-2-2-1">Correct!</div></li>
+</ul></div></div></article></div>
+<div data-component="tab" data-tabname="(d)"><article class="task exercise-like" id="consistent-or-not-d"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-consistent-or-not-d" data-multipleanswers="false">
+<div class="para" id="consistent-or-not-d-1-1">The linear system pictured below. <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="generated/prefigure/prefigure-graphofthreelines.svg" role="img" class="contained" alt="Three lines with no common point of intersection"></div>
+</div>
+<li data-component="answer" id="rs-consistent-or-not-d_opt_a"><div class="para" id="consistent-or-not-d-2-1-1-1">Consistent</div></li>
+<li data-component="feedback" id="rs-consistent-or-not-d_opt_a"><div class="para" id="consistent-or-not-d-2-1-2-1">There is no common point of intersection.  Each line is an equation, and there is no point which satisfies all three equations.  The linear system pictured has no solution, which means it’s inconsistent.</div></li>
+<li data-component="answer" id="rs-consistent-or-not-d_opt_b" data-correct=""><div class="para" id="consistent-or-not-d-2-2-1-1">Inconsistent</div></li>
+<li data-component="feedback" id="rs-consistent-or-not-d_opt_b"><div class="para" id="consistent-or-not-d-2-2-2-1">Correct!</div></li>
+</ul></div></div></article></div>
+</div></div></div></article><div class="para" id="subsubsec-consistent-or-inconsistent-10">We’ve now seen a system which has no solution and systems which have exactly one solution such as <a href="sec-row-ops.html#ex_eq_mat" class="xref" data-knowl="./knowl/xref/ex_eq_mat.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.3.5: Equations and Matrices Side by Side">Example 1.3.5</a>, so let’s look next at a system which has infinitely many solutions.</div>
+<article class="example example-like" id="ex_ex_un_1"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span><span class="space"> </span><span class="title">A system with infinitely many solutions.</span>
+</h5>
+<div class="para logical" id="ex_ex_un_1-2">
+<div class="para">Find the solution to the linear system</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ccccccc} \amp  \amp x_2\amp -\amp x_3\amp =\amp 3\\ x_1\amp   \amp  \amp +\amp 2x_3\amp =\amp 2\\ \amp \amp -3x_2\amp +\amp 3x_3\amp =\amp -9 \end{array}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="ex_ex_un_1-3">
+<div class="para">
+<em class="emphasis">Answer:</em> To find the solution, put the corresponding matrix into reduced row echelon form.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{cccc}  0\amp 1\amp -1\amp 3\\ 1\amp 0\amp 2\amp 2\\ 0\amp -3\amp 3\amp -9 \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 2\amp 2\\ 0\amp 1\amp -1\amp 3\\ 0\amp 0\amp 0\amp 0 \end{array} \right]
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="ex_ex_un_1-4">
+<div class="para">Now convert this reduced matrix back into equations. We have</div>
+<div class="displaymath process-math" id="ex_ex_un_1-4-1">
+\begin{align*}
+x_1 + 2x_3 \amp = 2\\
+x_2-x_3\amp =3\text{.}
+\end{align*}
+</div>
+<div class="para">We solve for <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_2\)</span> in terms of <span class="process-math">\(x_3\)</span> and get</div>
+<div class="displaymath process-math" id="ex_ex_un_1-4-5">
+\begin{align*}
+x_1 \amp = 2-2x_3\\
+x_2\amp =3+x_3
+\end{align*}
+</div>
+</div>
+<div class="para" id="ex_ex_un_1-5">These two equations tell us that the values of <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_2\)</span> depend on what <span class="process-math">\(x_3\)</span> is. There is no restriction on what <span class="process-math">\(x_3\)</span> must be; it is <em class="emphasis">free</em> to take on the value of any real number. Since we have infinite choices for the value of <span class="process-math">\(x_3\text{,}\)</span> we have infinitely many solutions.</div></article><div class="para" id="subsubsec-consistent-or-inconsistent-12">In the previous example we used the word “free” to describe a certain variable. What exactly is a free variable? How do we recognize which variables are free and which are not?</div>
+<article class="definition definition-like" id="def_free"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span><span class="space"> </span><span class="title">Dependent and Independent Variables.</span>
+</h5>
+<div class="para" id="def_free-2-1">Consider the reduced row echelon form of an augmented matrix of a consistent system of linear equations. Then:</div> <ul class="disc" id="def_free-2-2">
+<li id="def_free-2-2-1"><div class="para" id="def_free-2-2-1-1">a variable that corresponds to a leading <span class="process-math">\(1\)</span> is a <dfn class="terminology">dependent</dfn>, or <dfn class="terminology">determined</dfn>, or <dfn class="terminology">basic</dfn> variable, and </div></li>
+<li id="def_free-2-2-2"><div class="para" id="def_free-2-2-2-1">a variable that does not correspond to a leading <span class="process-math">\(1\)</span> is a <dfn class="terminology">free</dfn>, or <dfn class="terminology">independent</dfn> variable. </div></li>
+</ul></article><article class="remark remark-like" id="subsubsec-consistent-or-inconsistent-14"><h5 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.9</span><span class="period">.</span>
+</h5>
+<div class="para" id="subsubsec-consistent-or-inconsistent-14-1">
+<a href="sec-consistency.html#def_free" class="xref" data-knowl="./knowl/xref/def_free.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.5.8: Dependent and Independent Variables">Definition 1.5.8</a> applies only to <em class="emphasis">consistent</em> systems. If a system is <em class="emphasis">inconsistent</em>, then it’s meaningless to talk about being free (or not) to pick values for the variables because there are <em class="emphasis">no</em> values which satisfy all the equations in the system.</div></article><div class="para" id="subsubsec-consistent-or-inconsistent-15">
+<a href="sec-consistency.html#def_free" class="xref" data-knowl="./knowl/xref/def_free.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.5.8: Dependent and Independent Variables">Definition 1.5.8</a> helps us understand when a consistent system of linear equations will have infinitely many solutions.  If a consistent system has no free variables, then there is exactly one solution; inversely, if there are any free variables, then there are infinitely many solutions.</div>
+<article class="assemblage assemblage-like" id="subsubsec-consistent-or-inconsistent-16"><h5 class="heading"><span class="title">Analyzing the solutions of a linear system.</span></h5>
+<div class="para logical" id="subsubsec-consistent-or-inconsistent-16-2">
+<div class="para">Consider the reduced row echelon form of the augmented matrix of a system of linear equations.</div>
+<ul class="disc" id="subsubsec-consistent-or-inconsistent-16-2-1">
+<li id="subsubsec-consistent-or-inconsistent-16-2-1-1"><div class="para" id="subsubsec-consistent-or-inconsistent-16-2-1-1-1">If there is a leading <span class="process-math">\(1\)</span> in the last column, the system has no solution.</div></li>
+<li id="subsubsec-consistent-or-inconsistent-16-2-1-2"><div class="para" id="subsubsec-consistent-or-inconsistent-16-2-1-2-1">Otherwise, if there is a leading <span class="process-math">\(1\)</span> for each variable, then there is exactly one solution.</div></li>
+<li id="subsubsec-consistent-or-inconsistent-16-2-1-3"><div class="para" id="subsubsec-consistent-or-inconsistent-16-2-1-3-1">Otherwise, there are infinite solutions because there are variables which are free to take on any value.</div></li>
+</ul>
+</div></article><article class="exercise exercise-like" id="properties-of-linear-systems"><h5 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.10</span><span class="period">.</span><span class="space"> </span><span class="title">Number of solutions, free and basic variables.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone tabbed_section"><div data-component="tabbedStuff" id="rs-properties-of-linear-systems">
+<div data-component="tab" data-tabname="Introduction"><div class="introduction" id="properties-of-linear-systems-2"><div class="para" id="properties-of-linear-systems-2-1">For each augmented matrix in reduced row echelon form, select all that is true about the corresponding linear system.</div></div></div>
+<div data-component="tab" data-tabname="(a)"><article class="task exercise-like" id="properties-lin-sys-a"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-properties-lin-sys-a" data-multipleanswers="true">
+<div class="para logical" id="properties-lin-sys-a-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 1 \amp 2  \amp 0 \amp 7 \amp 6 \\ 0\amp 0 \amp 1 \amp -5  \amp -23 \end{bmatrix}
+\end{equation*}
+</div></div>
+<li data-component="answer" id="rs-properties-lin-sys-a_opt_a"><div class="para" id="properties-lin-sys-a-2-1-1-1">The variable <span class="process-math">\(x_1\)</span> is free.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-a_opt_a"><div class="para" id="properties-lin-sys-a-2-1-2-1">There is a leading 1 in the first column, so <span class="process-math">\(x_1\)</span> is basic, or dependent.</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-a_opt_b" data-correct=""><div class="para" id="properties-lin-sys-a-2-2-1-1">The variable <span class="process-math">\(x_2\)</span> is free.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-a_opt_b"><div class="para" id="properties-lin-sys-a-2-2-2-1">Correct!</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-a_opt_c"><div class="para" id="properties-lin-sys-a-2-3-1-1">The variable <span class="process-math">\(x_3\)</span> is free.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-a_opt_c"><div class="para" id="properties-lin-sys-a-2-3-2-1">There is a leading 1 in the third column, so <span class="process-math">\(x_3\)</span> is basic, or dependent.</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-a_opt_d" data-correct=""><div class="para" id="properties-lin-sys-a-2-4-1-1">The variable <span class="process-math">\(x_4\)</span> is free.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-a_opt_d"><div class="para" id="properties-lin-sys-a-2-4-2-1">Correct!</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-a_opt_e"><div class="para" id="properties-lin-sys-a-2-5-1-1">The variable <span class="process-math">\(x_5\)</span> is free.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-a_opt_e"><div class="para" id="properties-lin-sys-a-2-5-2-1">This system doesn’t have an <span class="process-math">\(x_5\text{.}\)</span>  The last column in an augmented matrix corresponds to the constants of the equations, so there are only 4 columns corresponding to variables.</div></li>
+</ul></div></div></article></div>
+<div data-component="tab" data-tabname="(b)"><article class="task exercise-like" id="properties-lin-sys-b"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-properties-lin-sys-b" data-multipleanswers="false" data-random="">
+<div class="para logical" id="properties-lin-sys-b-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 1 \amp 2  \amp 0 \amp 7 \amp 6 \\ 0\amp 0 \amp 1 \amp -5  \amp -23 \end{bmatrix}
+\end{equation*}
+</div></div>
+<li data-component="answer" id="rs-properties-lin-sys-b_opt_a"><div class="para" id="properties-lin-sys-b-2-1-1-1">The system has no solutions.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-b_opt_a"><div class="para" id="properties-lin-sys-b-2-1-2-1">There is no row with a leading 1 in the last column, so there is at least one solution.</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-b_opt_b"><div class="para" id="properties-lin-sys-b-2-2-1-1">The system has exactly 1 solution.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-b_opt_b"><div class="para" id="properties-lin-sys-b-2-2-2-1">This consistent system doesn’t have a leading 1 in every column corresponding to variables, and so there is more than 1 solution.</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-b_opt_c" data-correct=""><div class="para" id="properties-lin-sys-b-2-3-1-1">There are infinitely many solutions.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-b_opt_c"><div class="para" id="properties-lin-sys-b-2-3-2-1">Correct!</div></li>
+</ul></div></div></article></div>
+<div data-component="tab" data-tabname="(c)"><article class="task exercise-like" id="properties-lin-sys-c"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-properties-lin-sys-c" data-multipleanswers="false">
+<div class="para logical" id="properties-lin-sys-c-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 1 \amp 0  \amp 2 \\ 0\amp 1 \amp -1\\ 0 \amp 0 \amp 0 \end{bmatrix}
+\end{equation*}
+</div></div>
+<li data-component="answer" id="rs-properties-lin-sys-c_opt_a"><div class="para" id="properties-lin-sys-c-2-1-1-1">The variable <span class="process-math">\(x_1\)</span> is free.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-c_opt_a"><div class="para" id="properties-lin-sys-c-2-1-2-1">There is a leading 1 in the first column, so <span class="process-math">\(x_1\)</span> is basic, or dependent.</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-c_opt_b"><div class="para" id="properties-lin-sys-c-2-2-1-1">The variable <span class="process-math">\(x_2\)</span> is free.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-c_opt_b"><div class="para" id="properties-lin-sys-c-2-2-2-1">There is a leading 1 in the second column, so <span class="process-math">\(x_2\)</span> is basic, or dependent.</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-c_opt_c"><div class="para" id="properties-lin-sys-c-2-3-1-1">The variable <span class="process-math">\(x_3\)</span> is free.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-c_opt_c"><div class="para" id="properties-lin-sys-c-2-3-2-1">This system doesn’t have an <span class="process-math">\(x_3\text{.}\)</span>  The last column in an augmented matrix corresponds to the constants of the equations, so there are only 2 columns corresponding to variables.</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-c_opt_d" data-correct=""><div class="para" id="properties-lin-sys-c-2-4-1-1">There are no free variables.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-c_opt_d"><div class="para" id="properties-lin-sys-c-2-4-2-1">Correct!</div></li>
+</ul></div></div></article></div>
+<div data-component="tab" data-tabname="(d)"><article class="task exercise-like" id="properties-lin-sys-d"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-properties-lin-sys-d" data-multipleanswers="false" data-random="">
+<div class="para logical" id="properties-lin-sys-d-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 1 \amp 0  \amp 2 \\ 0\amp 1 \amp -1\\ 0 \amp 0 \amp 0 \end{bmatrix}
+\end{equation*}
+</div></div>
+<li data-component="answer" id="rs-properties-lin-sys-d_opt_a"><div class="para" id="properties-lin-sys-d-2-1-1-1">The system has no solutions.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-d_opt_a"><div class="para" id="properties-lin-sys-d-2-1-2-1">There is no row with a leading 1 in the last column, so there is at least one solution.</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-d_opt_b" data-correct=""><div class="para" id="properties-lin-sys-d-2-2-1-1">The system has exactly 1 solution.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-d_opt_b"><div class="para" id="properties-lin-sys-d-2-2-2-1">Correct!</div></li>
+<li data-component="answer" id="rs-properties-lin-sys-d_opt_c"><div class="para" id="properties-lin-sys-d-2-3-1-1">There are infinitely many solutions.</div></li>
+<li data-component="feedback" id="rs-properties-lin-sys-d_opt_c"><div class="para" id="properties-lin-sys-d-2-3-2-1">Every variable has a leading 1 in its column, so there are no free variables.</div></li>
+</ul></div></div></article></div>
+</div></div></div></article></section><section class="subsubsection" id="subsubsec-infinitesolutions"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">More on Infinite Solutions</span>
+</h4>
+<div class="para" id="subsubsec-infinitesolutions-2">Systems with exactly one solution or no solution are the easiest to deal with; systems with infinite solutions are a bit harder, and we will often want to give one or two of the infinite possibilities.</div>
+<article class="definition definition-like" id="def_particular"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.11</span><span class="period">.</span><span class="space"> </span><span class="title">Particular Solution.</span>
+</h5>
+<div class="para" id="def_particular-4-1">Consider a linear system of equations with infinite solutions. A <dfn class="terminology">particular solution</dfn> is one solution.</div></article><div class="para" id="subsubsec-infinitesolutions-4">The easiest way to find a particular solution is to pick specific values for the free variables which then determines the values of the dependent variables.</div>
+<article class="example example-like" id="ex_ex_un_4"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.12</span><span class="period">.</span><span class="space"> </span><span class="title">Infinite Solutions; Particular Solutions.</span>
+</h5>
+<div class="para logical" id="ex_ex_un_4-2">
+<div class="para">Give the solution to a linear system whose augmented matrix in reduced row echelon form is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccccc}  1\amp -1\amp 0\amp 2\amp 4\\ 0\amp 0\amp 1\amp -3\amp 7\\ 0\amp 0\amp 0\amp 0\amp 0\\ \end{array} \right]
+\end{equation*}
+</div>
+<div class="para">and give two particular solutions.</div>
+</div>
+<div class="para logical" id="ex_ex_un_4-3">
+<div class="para">
+<em class="emphasis">Answer:</em> We can ignore the third row as it does not give us any information about the solution. The first and second rows can be rewritten as the following equations:</div>
+<div class="displaymath process-math" id="ex_ex_un_4-3-2">
+\begin{align*}
+x_1 - x_2 + 2x_4 \amp =4\\
+x_3 - 3x_4 \amp = 7\text{.}
+\end{align*}
+</div>
+</div>
+<div class="para" id="ex_ex_un_4-4">Notice how the variables <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_3\)</span> correspond to the leading <span class="process-math">\(1\)</span>’s of the given matrix. Therefore <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_3\)</span> are dependent variables; all other variables, in this case <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_4\text{,}\)</span> are free variables.</div>
+<div class="para logical" id="ex_ex_un_4-5">
+<div class="para">We generally write our solution with the dependent variables on the left and independent variables and constants on the right. It is also a good practice to acknowledge the fact that our free variables are, in fact, free. So all the solutions to the system would look something like</div>
+<div class="displaymath process-math" id="ex_ex_un_4-5-1">
+\begin{align*}
+x_1 \amp = 4 +x_2 - 2x_4\\
+x_2 \amp  \ \ \text{ is free }\\
+x_3 \amp = 7+3x_4\\
+x_4 \amp  \ \ \text{ is free } \text{.}
+\end{align*}
+</div>
+</div>
+<div class="para" id="ex_ex_un_4-6">To find particular solutions, choose any values you wish for the free variables.</div>
+<div class="para logical" id="ex_ex_un_4-7">
+<div class="para">For example, by setting <span class="process-math">\(x_2 = 0 = x_4\text{,}\)</span> we get:</div>
+<div class="displaymath process-math" id="ex_ex_un_4-7-2">
+\begin{align*}
+x_1 \amp = 4\\
+x_2 \amp =0\\
+x_3 \amp = 7\\
+x_4 \amp = 0\text{.}
+\end{align*}
+</div>
+<div class="para">By setting <span class="process-math">\(x_2 = 1\)</span> and <span class="process-math">\(x_4 = -5\text{,}\)</span> we have the solution:</div>
+<div class="displaymath process-math" id="ex_ex_un_4-7-5">
+\begin{align*}
+x_1 \amp = 15\\
+x_2 \amp =1\\
+x_3 \amp = -8\\
+x_4 \amp = -5\text{.}
+\end{align*}
+</div>
+</div></article><div class="para" id="subsubsec-infinitesolutions-6">The constants and coefficients of an augmented matrix work together to determine whether a given system of linear equations has one, infinite, or no solution. The coefficients determine whether a matrix will have exactly one solution or not. In the “or not” case, the constants determine whether the system has infinite solutions or no solution.</div></section><section class="reading-questions" id="rqs-consistency"><h4 class="heading hide-type">
+<span class="type">Reading Questions</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Reading Questions</span>
+</h4>
+<article class="exercise exercise-like" id="systems-solution-types"><h5 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Matching Problem, Solution Types.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone matching_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-systems-solution-types">
+<span data-subcomponent="question"><div class="para" id="systems-solution-types-3-1">The matrices below are each the augmented matrix of a linear system. Sort the matrices by how many solutions the system has.</div></span><li data-subcomponent="draggable" id="rs-systems-solution-types_drag1" data-category="1"><span class="process-math">\(\begin{bmatrix}1 \amp 1  \amp -3 \\ 0\amp 0\amp 1 \end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-systems-solution-types_drag2" data-category="1"><span class="process-math">\(\begin{bmatrix}1 \amp 0  \amp 2 \\ 0\amp 1\amp -4 \\ 0\amp 0 \amp 1\end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-systems-solution-types_drag1" data-category="1">No solutions</li>
+<li data-subcomponent="draggable" id="rs-systems-solution-types_drag3" data-category="2"><span class="process-math">\(\begin{bmatrix}1 \amp 0  \amp 0 \amp  5 \\ 0\amp  1 \amp 0 \amp 7 \\ 0\amp  0 \amp 1 \amp 11 \end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-systems-solution-types_drag2" data-category="2">One solution</li>
+<li data-subcomponent="draggable" id="rs-systems-solution-types_drag4" data-category="3"><span class="process-math">\(\begin{bmatrix}1 \amp 0  \amp 4 \amp 0 \amp  5 \\ 0\amp  1 \amp -1 \amp 0 \amp 7 \\ 0\amp  0 \amp 0 \amp 1\amp 11 \end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-systems-solution-types_drag5" data-category="3"><span class="process-math">\(\begin{bmatrix}1 \amp 1  \amp -3 \\ 0\amp 0\amp 0 \end{bmatrix}\)</span></li>
+<li data-subcomponent="dropzone" for="rs-systems-solution-types_drag3" data-category="3">Infinitely many solutions</li>
+</ul></div></div></article><article class="exercise exercise-like" id="rqs-consistency-2"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para" id="rqs-consistency-2-1-1">Can there be a linear system which has exactly 3 solutions?  Why or why not?</div></div></div></div></article><article class="exercise exercise-like" id="rq-consistency-questions"><h5 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Reflection.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-consistency-questions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-consistency-questions-2-1">
+<div class="para">Enter a response to both of the following tasks:</div>
+<ol class="lower-alpha lower-alpha-level-1" id="rq-consistency-questions-2-1-1">
+<li id="rq-consistency-questions-2-1-1-1"><div class="para" id="rq-consistency-questions-2-1-1-1-1">Ask a question about the material, either about something you’re not sure you fully understand, or a “what if” question.</div></li>
+<li id="rq-consistency-questions-2-1-1-2"><div class="para" id="rq-consistency-questions-2-1-1-2-1">Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way.  0 means you didn’t actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.</div></li>
+</ol>
+</div></div></div></div></article></section></section><section class="worksheet" id="ws-consistency"><h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Participate</span><div class="print-links">
+<a href="ws-consistency-a4.html" class="a4">A4</a><a href="ws-consistency-letter.html" class="us">US</a>
+</div>
+</h3>
+<article class="objectives goal-like" id="ws-consistency-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="ws-consistency-2-1">
+<li id="ws-consistency-2-1-1"><div class="para" id="ws-consistency-2-1-1-1">Use the reduced row echelon form of an augmented matrix to analyze the consistency and existence of solution(s) to a linear system.</div></li>
+<li id="ws-consistency-2-1-2"><div class="para" id="ws-consistency-2-1-2-1">Identify and use properties of free and basic variables to describe solutions to linear systems.</div></li>
+</ul></article><section class="onepage" id="ws-consistency-3"><article class="exercise exercise-like" id="ws-consistency-3-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="introduction" id="ws-consistency-3-1-1"><div class="para logical" id="ws-consistency-3-1-1-1">
+<div class="para">Consider a linear system whose augmented matrix in reduced row echelon form is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix}  1\amp 0\amp 0\amp 2\amp 3\\0\amp 0\amp 1\amp 4\amp 5\\ \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="ws-consistency-3-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ws-consistency-3-1-2-1-1">Is the system consistent, inconsistent, or is there not enough information to tell?</div>
+<div class="workspace" data-space="1in"></div></article><article class="task exercise-like" id="ws-consistency-3-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ws-consistency-3-1-3-1-1">Which variables are free and which are basic?</div>
+<div class="workspace" data-space="1.5in"></div></article><article class="task exercise-like" id="ws-consistency-3-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ws-consistency-3-1-4-1-1">Solve the system.  If there are infinitely many solutions, give two particular solutions.</div>
+<div class="workspace" data-space="2.5in"></div></article></article><article class="exercise exercise-like" id="ws-consistency-3-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="introduction" id="ws-consistency-3-2-1"><div class="para logical" id="ws-consistency-3-2-1-1">
+<div class="para">Consider a linear system whose augmented matrix in reduced row echelon form is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix}  1\amp 0\amp 1\amp 4\\0\amp 1\amp 0\amp 1\\ \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="ws-consistency-3-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ws-consistency-3-2-2-1-1">Is the system consistent, inconsistent, or is there not enough information to tell?</div>
+<div class="workspace" data-space="1in"></div></article><article class="task exercise-like" id="ws-consistency-3-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ws-consistency-3-2-3-1-1">Which variables are free and which are basic?</div>
+<div class="workspace" data-space="1.5in"></div></article><article class="task exercise-like" id="ws-consistency-3-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ws-consistency-3-2-4-1-1">Solve the system.  If there are infinitely many solutions, give two particular solutions.</div>
+<div class="workspace" data-space="2.5in"></div></article></article></section><section class="onepage" id="ws-consistency-4"><article class="exercise exercise-like" id="ws-consistency-4-1"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="ws-consistency-4-1-1-1">Construct two different inconsistent linear systems with 3 variables.  Use Sage or another tool to calculate the reduced row echelon form of the augmented matrix of your linear systems.</div>
+<div class="workspace" data-space="2in"></div></article><article class="exercise exercise-like" id="ws-consistency-4-2"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="ws-consistency-4-2-1-1">Construct a linear system with 5 variables that has infinitely many solutions.  Use Sage or another tool to calculate the reduced row echelon form of the augmented matrix of your linear system.</div>
+<div class="workspace" data-space="2in"></div></article><div class="exercisegroup" id="ws-consistency-4-3">
+<h4 class="heading"><span class="title">Analyzing the Effect of Different Coefficient and Constant Values.</span></h4>
+<div class="introduction" id="ws-consistency-4-3-2"><div class="para" id="ws-consistency-4-3-2-1">For what values of <span class="process-math">\(k\)</span> will the given system have exactly one solution, infinite solutions, or no solution?</div></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise exercise-like" id="ws-consistency-4-3-3"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="para logical" id="ws-consistency-4-3-3-1-1"><div class="displaymath process-math" id="ws-consistency-4-3-3-1-1-1">
+\begin{align*}
+x_1 + 2x_2\amp =3\\
+3x_1 + kx_2\amp = 9 
+\end{align*}
+</div></div>
+<div class="workspace" data-space="4in"></div></article><article class="exercise exercise-like" id="ws-consistency-4-3-4"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="para logical" id="ws-consistency-4-3-4-1-1"><div class="displaymath process-math" id="ws-consistency-4-3-4-1-1-1">
+\begin{align*}
+x_1 + 2x_2\amp =3\\
+3x_1 + kx_2\amp = 10 
+\end{align*}
+</div></div>
+<div class="workspace" data-space="4in"></div></article><article class="exercise exercise-like" id="ws-consistency-4-3-5"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="para logical" id="ws-consistency-4-3-5-1-1"><div class="displaymath process-math" id="ws-consistency-4-3-5-1-1-1">
+\begin{align*}
+x_1 + 2x_2\amp =3\\
+3x_1 + 6x_2\amp = k 
+\end{align*}
+</div></div>
+<div class="workspace" data-space="4in"></div></article><article class="exercise exercise-like" id="ws-consistency-4-3-6"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="para logical" id="ws-consistency-4-3-6-1-1"><div class="displaymath process-math" id="ws-consistency-4-3-6-1-1-1">
+\begin{align*}
+x_1 + 2x_2\amp =3\\
+3x_1 + 7x_2\amp = k 
+\end{align*}
+</div></div>
+<div class="workspace" data-space="4in"></div></article>
+</div>
+</div></section></section><section class="conclusion" id="sec-consistency-summary"><h3 class="heading">Summary.<span></span>
+</h3>
+<div class="para logical" id="sec-consistency-summary-2"><ul class="disc" id="sec-consistency-summary-2-1">
+<li id="sec-consistency-summary-2-1-1"><div class="para" id="sec-consistency-summary-2-1-1-1">Every linear system has either no solutions, one solution, or infinitely many solutions. We call a linear system which has at least one solution <em class="emphasis">consistent</em>, and we call a linear system with no solutions <em class="emphasis">inconsistent.</em>
+</div></li>
+<li id="sec-consistency-summary-2-1-2"><div class="para" id="sec-consistency-summary-2-1-2-1">To analyze how many solutions a given linear system has, we examine the reduced row echelon form of the system’s augmented matrix. We look for number and location of leading <span class="process-math">\(1\)</span>’s to see whether the system is inconsistent, or in the case that it is consistent, to see which variables are <em class="emphasis">free</em> or <em class="emphasis">independent</em> and which variables are <em class="emphasis">basic</em> or <em class="emphasis">dependent</em>.</div></li>
+<li id="sec-consistency-summary-2-1-3"><div class="para" id="sec-consistency-summary-2-1-3-1">If a linear system has infinitely many solutions, we can describe all the possible solutions by solving for the dependent variables in terms of the free variables, and we can also give <em class="emphasis">particular solutions</em> by choosing specific values for the free variables.</div></li>
+</ul></div></section><section class="subsection" id="ww-consistency"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice</span>
+</h3>
+<article class="activity project-like" id="consistency_numofsolutions_prob1"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h4>
+<div id="webwork-22" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="22" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-22')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-22-1-1-1">The reduced row-echelon forms of the augmented matrices of four systems are given below. How many solutions does each system have?</div> <div class="para" id="extracted-webwork-22-1-1-2"></div> <div class="para" id="extracted-webwork-22-1-1-3"><span class="process-math">\(\left\lbrack \begin{array}{rrr|r} 1 \amp  0 \amp  -2 \amp  0 \\ 0 \amp  1 \amp  0 \amp  0 \\ 0 \amp  0 \amp  0 \amp  1 \\ 0 \amp  0 \amp  0 \amp  0 \end{array} \right\rbrack\)</span></div> <div class="para logical" id="extracted-webwork-22-1-1-4"><ul class="circle" id="extracted-webwork-22-1-1-4-1">
+<li id="extracted-webwork-22-1-1-4-1-1"><div class="para" id="extracted-webwork-22-1-1-4-1-1-1">No solutions</div></li>
+<li id="extracted-webwork-22-1-1-4-1-2"><div class="para" id="extracted-webwork-22-1-1-4-1-2-1">Infinitely many solutions</div></li>
+<li id="extracted-webwork-22-1-1-4-1-3"><div class="para" id="extracted-webwork-22-1-1-4-1-3-1">Unique solution</div></li>
+<li id="extracted-webwork-22-1-1-4-1-4"><div class="para" id="extracted-webwork-22-1-1-4-1-4-1">None of the above</div></li>
+</ul></div> <div class="para" id="extracted-webwork-22-1-1-5"><span class="process-math">\(\left\lbrack \begin{array}{rrr|r} 0 \amp  1 \amp  0 \amp  -16 \\ 0 \amp  0 \amp  1 \amp  5 \end{array} \right\rbrack\)</span></div> <div class="para logical" id="extracted-webwork-22-1-1-6"><ul class="circle" id="extracted-webwork-22-1-1-6-1">
+<li id="extracted-webwork-22-1-1-6-1-1"><div class="para" id="extracted-webwork-22-1-1-6-1-1-1">Infinitely many solutions</div></li>
+<li id="extracted-webwork-22-1-1-6-1-2"><div class="para" id="extracted-webwork-22-1-1-6-1-2-1">No solutions</div></li>
+<li id="extracted-webwork-22-1-1-6-1-3"><div class="para" id="extracted-webwork-22-1-1-6-1-3-1">Unique solution</div></li>
+<li id="extracted-webwork-22-1-1-6-1-4"><div class="para" id="extracted-webwork-22-1-1-6-1-4-1">None of the above</div></li>
+</ul></div> <div class="para" id="extracted-webwork-22-1-1-7"><span class="process-math">\(\left\lbrack \begin{array}{rr|r} 1 \amp  0 \amp  7 \\ 0 \amp  1 \amp  11 \\ 0 \amp  0 \amp  0 \end{array} \right\rbrack\)</span></div> <div class="para logical" id="extracted-webwork-22-1-1-8"><ul class="circle" id="extracted-webwork-22-1-1-8-1">
+<li id="extracted-webwork-22-1-1-8-1-1"><div class="para" id="extracted-webwork-22-1-1-8-1-1-1">Unique solution</div></li>
+<li id="extracted-webwork-22-1-1-8-1-2"><div class="para" id="extracted-webwork-22-1-1-8-1-2-1">No solutions</div></li>
+<li id="extracted-webwork-22-1-1-8-1-3"><div class="para" id="extracted-webwork-22-1-1-8-1-3-1">Infinitely many solutions</div></li>
+<li id="extracted-webwork-22-1-1-8-1-4"><div class="para" id="extracted-webwork-22-1-1-8-1-4-1">None of the above</div></li>
+</ul></div> <div class="para" id="extracted-webwork-22-1-1-9"><span class="process-math">\(\left\lbrack \begin{array}{rrr|r} 1 \amp  0 \amp  0 \amp  13 \\ 0 \amp  0 \amp  1 \amp  -15 \end{array} \right\rbrack\)</span></div> <div class="para logical" id="extracted-webwork-22-1-1-10"><ul class="circle" id="extracted-webwork-22-1-1-10-1">
+<li id="extracted-webwork-22-1-1-10-1-1"><div class="para" id="extracted-webwork-22-1-1-10-1-1-1">Infinitely many solutions</div></li>
+<li id="extracted-webwork-22-1-1-10-1-2"><div class="para" id="extracted-webwork-22-1-1-10-1-2-1">No solutions</div></li>
+<li id="extracted-webwork-22-1-1-10-1-3"><div class="para" id="extracted-webwork-22-1-1-10-1-3-1">Unique solution</div></li>
+<li id="extracted-webwork-22-1-1-10-1-4"><div class="para" id="extracted-webwork-22-1-1-10-1-4-1">None of the above</div></li>
+</ul></div> <div class="para" id="extracted-webwork-22-1-1-11"></div>
+</div>
+</div></article><article class="activity project-like" id="consistency_numoffreevars_prob1"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
+</h4>
+<div id="webwork-23" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="23" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem14.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-23')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-23-1-1-1">How many free variables does each augmented matrix have?</div> <div class="para" id="extracted-webwork-23-1-1-2"></div> <div class="para" id="extracted-webwork-23-1-1-3">
+<ul class="disc" id="extracted-webwork-23-1-1-3-1-1">
+<li id="extracted-webwork-23-1-1-3-1-1-1"><div class="para" id="extracted-webwork-23-1-1-3-1-1-1-1">Choose</div></li>
+<li id="extracted-webwork-23-1-1-3-1-1-2"><div class="para" id="extracted-webwork-23-1-1-3-1-1-2-1">None</div></li>
+<li id="extracted-webwork-23-1-1-3-1-1-3"><div class="para" id="extracted-webwork-23-1-1-3-1-1-3-1">One</div></li>
+<li id="extracted-webwork-23-1-1-3-1-1-4"><div class="para" id="extracted-webwork-23-1-1-3-1-1-4-1">Two</div></li>
+<li id="extracted-webwork-23-1-1-3-1-1-5"><div class="para" id="extracted-webwork-23-1-1-3-1-1-5-1">Three</div></li>
+</ul> <span class="process-math">\(\left\lbrack 
+\begin{array}{rrrr|r} 
+1 \amp  0 \amp  0 \amp  -7 \amp  -6 \\
+0 \amp  1 \amp  0 \amp  0 \amp  -3 \\
+0 \amp  0 \amp  0 \amp  0 \amp  0 \\
+0 \amp  0 \amp  0 \amp  0 \amp  0 
+\end{array}
+\right\rbrack\)</span> <ul class="disc" id="extracted-webwork-23-1-1-3-1-3-1-1-1">
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-1-1"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-1-1-1">Choose</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-1-2"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-1-2-1">None</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-1-3"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-1-3-1">One</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-1-4"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-1-4-1">Two</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-1-5"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-1-5-1">Three</div></li>
+</ul> <span class="process-math">\(\left\lbrack 
+\begin{array}{rr|r} 
+1 \amp  0 \amp  -6 \\ 
+0 \amp  1 \amp  5 \\ 
+0 \amp  0 \amp  0 
+\end{array}
+\right\rbrack\)</span> <ul class="disc" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1">
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-1"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-1-1">Choose</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-2"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-2-1">None</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-3"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-3-1">One</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-4"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-4-1">Two</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-5"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-1-5-1">Three</div></li>
+</ul> <span class="process-math">\(\left\lbrack 
+\begin{array}{rr|r} 
+1 \amp  7 \amp  -2 \\
+0 \amp  0 \amp  0 \\
+0 \amp  0 \amp  0
+\end{array}
+\right\rbrack\)</span> <ul class="disc" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1">
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-1"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-1-1">Choose</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-2"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-2-1">None</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-3"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-3-1">One</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-4"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-4-1">Two</div></li>
+<li id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-5"><div class="para" id="extracted-webwork-23-1-1-3-1-3-1-1-3-1-1-3-1-1-1-5-1">Three</div></li>
+</ul> <span class="process-math">\(\left\lbrack 
+\begin{array}{rrr|r} 
+1 \amp  3 \amp  -8 \amp  4 \\
+0 \amp  0 \amp  0 \amp  0
+\end{array}
+\right\rbrack\)</span>
+</div>
+</div>
+</div></article><article class="activity project-like" id="consistency_numofbasicvars_prob1"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
+</h4>
+<div id="webwork-24" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="24" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem15.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-24')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-24-1-1-1">How many determined (basic) variables does each augmented matrix have?</div> <div class="para" id="extracted-webwork-24-1-1-2"></div> <div class="para" id="extracted-webwork-24-1-1-3">
+<ul class="disc" id="extracted-webwork-24-1-1-3-1-1">
+<li id="extracted-webwork-24-1-1-3-1-1-1"><div class="para" id="extracted-webwork-24-1-1-3-1-1-1-1">Choose</div></li>
+<li id="extracted-webwork-24-1-1-3-1-1-2"><div class="para" id="extracted-webwork-24-1-1-3-1-1-2-1">Zero</div></li>
+<li id="extracted-webwork-24-1-1-3-1-1-3"><div class="para" id="extracted-webwork-24-1-1-3-1-1-3-1">One</div></li>
+<li id="extracted-webwork-24-1-1-3-1-1-4"><div class="para" id="extracted-webwork-24-1-1-3-1-1-4-1">Two</div></li>
+<li id="extracted-webwork-24-1-1-3-1-1-5"><div class="para" id="extracted-webwork-24-1-1-3-1-1-5-1">Three</div></li>
+<li id="extracted-webwork-24-1-1-3-1-1-6"><div class="para" id="extracted-webwork-24-1-1-3-1-1-6-1">Four</div></li>
+</ul> <span class="process-math">\(\left\lbrack
+\begin{array}{rrr|r}
+1 \amp  0 \amp  0 \amp  7 \\
+0 \amp  1 \amp  0 \amp  -6 \\
+0 \amp  0 \amp  1 \amp  -3
+\end{array}
+\right\rbrack\)</span> <ul class="disc" id="extracted-webwork-24-1-1-3-1-3-1-1-1">
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-1-1"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-1-1-1">Choose</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-1-2"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-1-2-1">Zero</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-1-3"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-1-3-1">One</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-1-4"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-1-4-1">Two</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-1-5"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-1-5-1">Three</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-1-6"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-1-6-1">Four</div></li>
+</ul> <span class="process-math">\(\left\lbrack
+\begin{array}{rr|r}
+1 \amp  0 \amp  7 \\
+0 \amp  1 \amp  8 \\
+0 \amp  0 \amp  0
+\end{array}
+\right\rbrack\)</span> <ul class="disc" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1">
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-1"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-1-1">Choose</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-2"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-2-1">Zero</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-3"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-3-1">One</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-4"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-4-1">Two</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-5"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-5-1">Three</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-6"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-1-6-1">Four</div></li>
+</ul> <span class="process-math">\(\left\lbrack
+\begin{array}{rrr|r}
+1 \amp  8 \amp  -7 \amp  -6 \\
+0 \amp  0 \amp  0 \amp  0
+\end{array}
+\right\rbrack\)</span> <ul class="disc" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1">
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-1"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-1-1">Choose</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-2"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-2-1">Zero</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-3"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-3-1">One</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-4"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-4-1">Two</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-5"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-5-1">Three</div></li>
+<li id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-6"><div class="para" id="extracted-webwork-24-1-1-3-1-3-1-1-3-1-1-3-1-1-1-6-1">Four</div></li>
+</ul> <span class="process-math">\(\left\lbrack
+\begin{array}{rrrr|r}
+1 \amp  0 \amp  0 \amp  -4 \amp  4 \\
+0 \amp  1 \amp  0 \amp  0 \amp  -7 \\
+0 \amp  0 \amp  1 \amp  0 \amp  6
+\end{array}
+\right\rbrack\)</span>
+</div>
+</div>
+</div></article><article class="activity project-like" id="consistency_solve_consistentornot_prob1"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
+</h4>
+<div id="webwork-25" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="25" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/consistency_prob4.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-25')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-25-1-1-1">Convert the system</div> <div class="para logical" id="extracted-webwork-25-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{rcrcrcr}-4 x_1 \amp  - \amp  7 x_{2} \amp  = \amp  2 \\4 x_1 \amp  + \amp  9 x_{2} \amp  = \amp  -6 \\ x_1  \amp  + \amp  2 x_{2} \amp  = \amp  -1\end{array}
+\end{equation*}
+</div></div> <div class="para" id="extracted-webwork-25-1-1-3">to an augmented matrix. Then reduce the system to echelon form and determine if the system is consistent.</div> <div class="para" id="extracted-webwork-25-1-1-4">Augmented matrix: <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)</div> <div class="para" id="extracted-webwork-25-1-1-5">Echelon form: <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)</div> <div class="para logical" id="extracted-webwork-25-1-1-6">
+<div class="para">Is the system consistent?</div>
+<ul class="disc" id="extracted-webwork-25-1-1-6-1">
+<li id="extracted-webwork-25-1-1-6-1-1"><div class="para" id="extracted-webwork-25-1-1-6-1-1-1">select</div></li>
+<li id="extracted-webwork-25-1-1-6-1-2"><div class="para" id="extracted-webwork-25-1-1-6-1-2-1">yes</div></li>
+<li id="extracted-webwork-25-1-1-6-1-3"><div class="para" id="extracted-webwork-25-1-1-6-1-3-1">no</div></li>
+</ul>
+</div>
+</div>
+</div></article><article class="activity project-like" id="consistency_solvesystem_prob1"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
+</h4>
+<div id="webwork-26" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="26" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/ASU-topics/set119LinearSystems/p10.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-26')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-26-1-1-1">
+<div class="para">Solve the system by finding the reduced row-echelon form of the augmented matrix.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\{
+\begin{array}{ll}
+x+ y+ 3 z \amp = -5 \\
+2 x+ 3 y+ 7 z \amp = -6 \\
+-3 x- y - 7 z \amp  = 23
+\end{array}\right.
+\end{equation*}
+</div>
+</div> <div class="para" id="extracted-webwork-26-1-1-2">reduced row-echelon form:</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+</tr>
+</table></div> <div class="para" id="extracted-webwork-26-1-1-4">How many solutions are there to this system?</div> <div class="para logical" id="extracted-webwork-26-1-1-5"><ul class="circle" id="extracted-webwork-26-1-1-5-1">
+<li id="extracted-webwork-26-1-1-5-1-1"><div class="para" id="extracted-webwork-26-1-1-5-1-1-1">None</div></li>
+<li id="extracted-webwork-26-1-1-5-1-2"><div class="para" id="extracted-webwork-26-1-1-5-1-2-1">Exactly 1</div></li>
+<li id="extracted-webwork-26-1-1-5-1-3"><div class="para" id="extracted-webwork-26-1-1-5-1-3-1">Exactly 2</div></li>
+<li id="extracted-webwork-26-1-1-5-1-4"><div class="para" id="extracted-webwork-26-1-1-5-1-4-1">Exactly 3</div></li>
+<li id="extracted-webwork-26-1-1-5-1-5"><div class="para" id="extracted-webwork-26-1-1-5-1-5-1">Infinitely many</div></li>
+<li id="extracted-webwork-26-1-1-5-1-6"><div class="para" id="extracted-webwork-26-1-1-5-1-6-1">None of the above</div></li>
+</ul></div> <div class="para" id="extracted-webwork-26-1-1-6">If there is one solution, give its coordinates in the answer spaces below.</div> <div class="para" id="extracted-webwork-26-1-1-7">If there are infinitely many solutions, enter <em class="emphasis">z</em> in the answer blank for <span class="process-math">\(z\text{,}\)</span> enter a formula for <span class="process-math">\(y\)</span> in terms of <span class="process-math">\(z\)</span> in the answer blank for <span class="process-math">\(y\)</span> and enter a formula for <span class="process-math">\(x\)</span> in terms of <span class="process-math">\(z\)</span> in the answer blank for <span class="process-math">\(x\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-26-1-1-8">If there are no solutions, leave the answer blanks for <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\)</span> and <span class="process-math">\(z\)</span> empty.</div> <div class="para" id="extracted-webwork-26-1-1-9">
+<span class="process-math">\(x =\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span>
+</div> <div class="para" id="extracted-webwork-26-1-1-10">
+<span class="process-math">\(y =\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span>
+</div> <div class="para" id="extracted-webwork-26-1-1-11">
+<span class="process-math">\(z =\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span>
+</div>
+</div>
+</div></article></section><section class="exercises" id="exer-consistency"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Additional Practice</span>
+</h3>
+<div class="exercisegroup" id="exer-consistency-2">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="exer-consistency-2-1"><div class="para" id="exer-consistency-2-1-1">In the following exercises, find the solution to the given linear system. If the system has infinite solutions, give <span class="process-math">\(2\)</span> particular solutions.</div></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise exercise-like" id="exer-consistency-2-2"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-2-1-1"><div class="displaymath process-math" id="exer-consistency-2-2-1-1-1">
+\begin{align*}
+2x_1 + 4x_2\amp = 2\\
+x_1 +  2x_2\amp = 1 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-2-2-1">
+<span class="process-math">\(x_1=1-2x_2\text{;}\)</span> <span class="process-math">\(x_2\)</span> is free. Two possible particular solutions: <span class="process-math">\(x_1=1\text{,}\)</span> <span class="process-math">\(x_2=0\)</span> or <span class="process-math">\(x_1=-1\text{,}\)</span> <span class="process-math">\(x_2=1\text{.}\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-3"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-3-1-1"><div class="displaymath process-math" id="exer-consistency-2-3-1-1-1">
+\begin{align*}
+-x_1 + 5x_2\amp = 3\\
+2x_1 - 10x_2\amp = -6 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-3-2-1">
+<span class="process-math">\(x_1=-3+5x_2\text{;}\)</span> <span class="process-math">\(x_2\)</span> is free. Two possible particular solutions: <span class="process-math">\(x_1 = 3\text{,}\)</span> <span class="process-math">\(x_2=0\)</span> or <span class="process-math">\(x_1 = -8\text{,}\)</span> <span class="process-math">\(x_2 = -1\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-4"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-4-1-1"><div class="displaymath process-math" id="exer-consistency-2-4-1-1-1">
+\begin{align*}
+x_1 + x_2\amp = 3\\
+2x_1 + x_2\amp = 4 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-4-2-1">
+<span class="process-math">\(x_1=1\text{;}\)</span> <span class="process-math">\(x_2=2\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-5"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-5-1-1"><div class="displaymath process-math" id="exer-consistency-2-5-1-1-1">
+\begin{align*}
+-3x_1 + 7x_2\amp = -7\\
+2x_1 - 8x_2\amp = 8 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-5-2-1">
+<span class="process-math">\(x_1=0\text{;}\)</span> <span class="process-math">\(x_2=-1\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-6"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-6-1-1"><div class="displaymath process-math" id="exer-consistency-2-6-1-1-1">
+\begin{align*}
+2x_1 + 3x_2\amp = 1\\
+-2x_1 - 3x_2\amp = 1 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-6-2-1">No solution; the system is inconsistent.</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-7"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-7-1-1"><div class="displaymath process-math" id="exer-consistency-2-7-1-1-1">
+\begin{align*}
+x_1+ 2x_2\amp = 1\\
+-x_1- 2x_2\amp = 5 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-7-2-1">No solution; the system is inconsistent.</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-8"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-8-1-1"><div class="displaymath process-math" id="exer-consistency-2-8-1-1-1">
+\begin{align*}
+-2x_1+ 4x_2+ 4x_3\amp = 6\\
+x_1- 3x_2+ 2x_3\amp = 1 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-8-2-1">
+<span class="process-math">\(x_1=-11+10x_3\text{;}\)</span> <span class="process-math">\(x_2=-4+4x_3\text{;}\)</span> <span class="process-math">\(x_3\)</span> is free. Two possible particular solutions: <span class="process-math">\(x_1=-11\text{,}\)</span> <span class="process-math">\(x_2 = -4\text{,}\)</span> <span class="process-math">\(x_3=0\)</span> or <span class="process-math">\(x_1 = -1\text{,}\)</span> <span class="process-math">\(x_2 = 0\)</span> and <span class="process-math">\(x_3 = 1\text{.}\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-9"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-9-1-1"><div class="displaymath process-math" id="exer-consistency-2-9-1-1-1">
+\begin{align*}
+-x_1+ 2x_2+ 2x_3\amp = 2\\
+2x_1+ 5x_2+ x_3\amp = 2 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-9-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-9-2-1">
+<span class="process-math">\(x_1=-\frac23+\frac89x_3\text{;}\)</span> <span class="process-math">\(x_2=\frac23-\frac59x_3\text{;}\)</span> <span class="process-math">\(x_3\)</span> is free. Two possible particular solutions: <span class="process-math">\(x_1 = -\frac23\text{,}\)</span> <span class="process-math">\(x_2 = \frac23\text{,}\)</span> <span class="process-math">\(x_3 = 0\)</span> and <span class="process-math">\(x_1 = \frac49\text{,}\)</span> <span class="process-math">\(x_2 = -\frac19\text{,}\)</span> <span class="process-math">\(x_3 = 1\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-10"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-10-1-1"><div class="displaymath process-math" id="exer-consistency-2-10-1-1-1">
+\begin{align*}
+-x_1-x_2+x_3+x_4\amp = 0\\
+-2x_1-2x_2+x_3\amp = -1 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-10-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-10-2-1">
+<span class="process-math">\(x_1=1-x_2-x_4\text{;}\)</span> <span class="process-math">\(x_2\)</span> is free; <span class="process-math">\(x_3=1-2x_4\text{;}\)</span> <span class="process-math">\(x_4\)</span> is free. Two possible solutions: <span class="process-math">\(x_1 = 1\text{,}\)</span> <span class="process-math">\(x_2 = 0\text{,}\)</span> <span class="process-math">\(x_3 = 1\text{,}\)</span> <span class="process-math">\(x_4 = 0\)</span> or <span class="process-math">\(x_1 = -2\text{,}\)</span> <span class="process-math">\(x_2 = 1\text{,}\)</span> <span class="process-math">\(x_3 = -3\text{,}\)</span> <span class="process-math">\(x_4=2\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-11"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-11-1-1"><div class="displaymath process-math" id="exer-consistency-2-11-1-1-1">
+\begin{align*}
+x_1+x_2+6x_3+9x_4\amp = 0\\
+-x_1-x_3-2x_4\amp = -3 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-11-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-11-2-1">
+<span class="process-math">\(x_1=3-x_3-2x_4\text{;}\)</span> <span class="process-math">\(x_2=-3-5x_3-7x_4\text{;}\)</span> <span class="process-math">\(x_3\)</span> is free; <span class="process-math">\(x_4\)</span> is free. Two possible solutions: <span class="process-math">\(x_1 =3\text{,}\)</span> <span class="process-math">\(x_2 = -3\text{,}\)</span> <span class="process-math">\(x_3=0\text{,}\)</span> <span class="process-math">\(x_4=0\)</span> or <span class="process-math">\(x_1 = 0\text{,}\)</span> <span class="process-math">\(x_2 = -5\text{,}\)</span> <span class="process-math">\(x_3 =-1\text{,}\)</span> <span class="process-math">\(x_4=1\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-12"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-12-1-1"><div class="displaymath process-math" id="exer-consistency-2-12-1-1-1">
+\begin{align*}
+2x_1+ x_2+ 2x_3\amp = 0\\
+x_1+ x_2+ 3x_3\amp = 1\\
+3x_1+ 2x_2+ 5x_3\amp = 3 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-12-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-12-2-1">No solution; the system is inconsistent.</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-13"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-13-1-1"><div class="displaymath process-math" id="exer-consistency-2-13-1-1-1">
+\begin{align*}
+x_1+ 3x_2+ 3x_3\amp = 1\\
+2x_1- x_2+ 2x_3\amp = -1\\
+4x_1+ 5x_2+ 8x_3\amp = 2 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-13-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-13-2-1">No solution; the system is inconsistent.</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-14"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-14-1-1"><div class="displaymath process-math" id="exer-consistency-2-14-1-1-1">
+\begin{align*}
+x_1+ 2x_2+ 2x_3\amp =1\\
+2x_1+ x_2+ 3x_3\amp = 1\\
+3x_1+ 3x_2+ 5x_3\amp = 2 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-14-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-14-2-1">
+<span class="process-math">\(x_1=\frac13-\frac43x_3\text{;}\)</span> <span class="process-math">\(x_2=\frac13-\frac13x_3\text{;}\)</span> <span class="process-math">\(x_3\)</span> is free. Two possible solutions: <span class="process-math">\(x_1 = \frac13\text{,}\)</span> <span class="process-math">\(x_2=\frac13\text{,}\)</span> <span class="process-math">\(x_3=0\)</span> or <span class="process-math">\(x_1 = -1\text{,}\)</span> <span class="process-math">\(x_2 = 0\text{,}\)</span> <span class="process-math">\(x_3=1\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-2-15"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-2-15-1-1"><div class="displaymath process-math" id="exer-consistency-2-15-1-1-1">
+\begin{align*}
+2x_1+ 4x_2+ 6x_3\amp = 2\\
+1x_1+ 2x_2+ 3x_3\amp = 1\\
+-3x_1- 6x_2- 9x_3\amp = -3 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-2-15-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-2-15-2-1">
+<span class="process-math">\(x_1=1-2x_2-3x_3\text{;}\)</span> <span class="process-math">\(x_2\)</span> is free; <span class="process-math">\(x_3\)</span> is free. Two possible solutions: <span class="process-math">\(x_1=1\text{,}\)</span> <span class="process-math">\(x_2=0\text{,}\)</span> <span class="process-math">\(x_3=0\)</span> or <span class="process-math">\(x_1=8\text{,}\)</span> <span class="process-math">\(x_2=1\text{,}\)</span> <span class="process-math">\(x_3 = -3\)</span>
+</div></div></details></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exer-consistency-3">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="exer-consistency-3-1"><div class="para" id="exer-consistency-3-1-1">In the following exercises, state for which values of <span class="process-math">\(k\)</span> the given system will have exactly <span class="process-math">\(1\)</span> solution, infinite solutions, or no solution.</div></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise exercise-like" id="exer-consistency-3-2"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-3-2-1-1"><div class="displaymath process-math" id="exer-consistency-3-2-1-1-1">
+\begin{align*}
+x_1+ 2x_2\amp = 1\\
+2x_1+ 4x_2\amp = k 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-3-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-3-2-2-1">Never exactly <span class="process-math">\(1\)</span> solution; infinite solutions if <span class="process-math">\(k=2\text{;}\)</span> no solution if <span class="process-math">\(k\neq 2\text{.}\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-3-3"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-3-3-1-1"><div class="displaymath process-math" id="exer-consistency-3-3-1-1-1">
+\begin{align*}
+x_1+ 2x_2\amp = 1\\
+x_1+ kx_2\amp = 1 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-3-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-3-3-2-1">Exactly <span class="process-math">\(1\)</span> solution if <span class="process-math">\(k\neq 2\text{;}\)</span> infinite solutions if <span class="process-math">\(k=2\text{;}\)</span> never no solution.</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-3-4"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-3-4-1-1"><div class="displaymath process-math" id="exer-consistency-3-4-1-1-1">
+\begin{align*}
+x_1+ 2x_2\amp = 1\\
+x_1+ kx_2\amp = 2 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-3-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-3-4-2-1">Exactly <span class="process-math">\(1\)</span> solution if <span class="process-math">\(k\neq 2\text{;}\)</span> no solution if <span class="process-math">\(k=2\text{;}\)</span> never infinite solutions.</div></div></details></div></article><article class="exercise exercise-like" id="exer-consistency-3-5"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<div class="para logical" id="exer-consistency-3-5-1-1"><div class="displaymath process-math" id="exer-consistency-3-5-1-1-1">
+\begin{align*}
+x_1+ 2x_2\amp = 1\\
+x_1+ 3x_2\amp = k 
+\end{align*}
+</div></div>
+<div class="solutions"><details id="exer-consistency-3-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-consistency-3-5-2-1">Exactly <span class="process-math">\(1\)</span> solution for all <span class="process-math">\(k\text{.}\)</span>
+</div></div></details></div></article>
+</div>
+</div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-rref.html" title="Previous"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-testing-things.html" title="Next"><span class="name">Next</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:csafranski@franciscan.edu" target="_blank">Feedback</a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script>
+</body>
+</html>
