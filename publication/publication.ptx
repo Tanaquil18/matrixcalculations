@@ -76,7 +76,7 @@
     <worksheets formatted="no" />
   </latex>
 
-  <html short-answer-responses="always">
+  <html short-answer-responses="always" embed-button="yes">
     <platform host="web"/>
     <!-- The host above could also be "runestone" -->
 

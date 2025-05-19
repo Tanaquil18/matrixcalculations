@@ -4,6 +4,212 @@
     <title>Testing things</title>
 
     <image width="50%">
+      <shortdescription>demonstrating new domains and ranges improvements</shortdescription>
+      <prefigure xmlns="https://prefigure.org"
+              label="prefigure-test-domains3"> 
+        <diagram dimensions="(300,300)" margins="5">
+          <coordinates bbox = "(-4,-4,4,4)">
+            <grid-axes/>
+            <definition>f(x)=-x^2/2 + 2</definition>
+            <definition>g(x)=exp(x/2)</definition>
+            <graph function="f"/>
+            <graph function="g" stroke="green"/>
+            <tangent-line function="f" point="2" name="tan"/>
+            <definition>b = intersect((g, tan), -1)</definition>
+            <point p="(b,g(b))" />
+            <definition>c = intersect(f, -1)</definition>
+            <point p="(c,f(c))" />
+
+          </coordinates>
+        </diagram>
+
+      </prefigure>
+      </image>
+
+
+
+   <image width="50%">
+      <shortdescription>demonstrating new domains and ranges improvements</shortdescription>
+      <prefigure xmlns="https://prefigure.org"
+              label="prefigure-test-domains"> 
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>a=1</definition>
+          <definition>s(x) = x^2</definition>
+          <definition>f(x) = exp(x^2/2-3*x)</definition>
+          <definition>g(x) = 1/x</definition>
+          <definition>h(x) = sqrt(2-x)</definition>
+          <definition>r(x) = 1/((x-2)*(x+2))</definition>
+          <coordinates bbox="[-4,-4,4,4]">
+            <grid-axes xlabel="x" ylabel="y"/>
+
+            <graph at="graphs" function='s' stroke ="black"/>
+            <graph at="graphf" function='f' />
+            <graph at="graphg" function='g' stroke="red" />
+            <graph at="graphh" function='h' N="500" stroke="yellow"/>
+            <graph at="graphr" function='r' stroke="purple"/>
+
+          </coordinates>
+
+          <!-- <annotations>
+            <annotation ref="figure"
+                        text="The graphs of some functions with domain or range issues">
+              <annotation ref="graphs" text="The graph of x squared" sonify="yes"/>
+              <annotation ref="graphf" text="The graph of an exponential function" sonify="yes"/>
+              <annotation ref="graphg" text="The graph of 1 over x" sonify="yes"/>
+              <annotation ref="graphh" text="The graph of square root of 2 minus x" sonify="yes"/>
+              <annotation ref="graphr" text="The graph of 1 over x+2 times x minus 2" sonify="yes"/>
+            </annotation>
+          </annotations> -->
+
+        </diagram>
+      </prefigure>
+      </image>
+
+    <image width="50%">
+      <shortdescription>demonstrating new domains and ranges improvements</shortdescription>
+      <prefigure xmlns="https://prefigure.org"
+              label="prefigure-test-domains2"> 
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>a=1</definition>
+          <definition>s(x) = x^2</definition>
+          <definition>f(x) = exp(x^2/2-3*x)</definition>
+          <definition>g(x) = 1/x</definition>
+          <definition>h(x) = sqrt(2-x)</definition>
+          <definition>r(x) = 1/((x-2)*(x+2))</definition>
+          <coordinates bbox="[-4,-4,4,4]">
+            <grid-axes xlabel="x" ylabel="y"/>
+
+            <graph at="graphs" function='s' stroke="black"/>
+            <graph at="graphf" function='f' />
+            <graph at="graphg" function='g' stroke="red" />
+            <graph at="graphh" function='h' N="500" stroke="yellow"/>
+            <graph at="graphr" function='r' stroke="purple"/>
+
+          </coordinates>
+
+          <annotations>
+            <annotation ref="figure"
+                        text="The graphs of some functions with domain or range issues">
+              <annotation ref="graphs" text="The graph of x squared" sonify="yes"/>
+              <annotation ref="graphf" text="The graph of an exponential function" sonify="yes"/>
+              <annotation ref="graphg" text="The graph of 1 over x" sonify="yes"/>
+              <annotation ref="graphh" text="The graph of square root of 2 minus x" sonify="yes"/>
+              <annotation ref="graphr" text="The graph of 1 over x+2 times x minus 2" sonify="yes"/>
+            </annotation>
+          </annotations>
+
+        </diagram>
+      </prefigure>
+      </image>
+  
+
+
+    <exercise component="proteus" xml:id="reading-D-4" label="reading-D-4">
+      <title>Match vector spaces to basis size</title>
+      <statement>
+          <p>Drag the following vector spaces to the number of elements in a basis for the space.</p>
+      </statement>
+      <matches>
+          <match>
+              <premise order="5"><m>\spn{\set{
+                \colvector{1\\2\\3},
+                \colvector{2\\4\\6},
+                \colvector{-1\\0\\1},
+                \colvector{0\\2\\4},
+                \colvector{1\\4\\7}
+                }}
+                </m>
+              </premise>
+              <response><m>2</m></response>
+          </match>
+          <match>
+              <response><m>3</m></response>
+          </match>
+          <match>
+              <premise order="1"><m>\complex{4}</m></premise>
+              <premise order="3"><m>P_3</m></premise>
+              <premise order="6"><m>M_{22}</m></premise>
+              <response><m>4</m></response>
+          </match>
+          <match>
+              <premise order="7">The span of a set of 5 linearly independent vectors</premise>
+              <premise order="2"><m>P_4</m></premise>
+              <response><m>5</m></response>
+          </match>
+          <match>
+              <premise order="4">The span of a set of 5 vectors</premise>
+              <response>Not enough information to tell</response>
+        </match>
+      </matches>
+  </exercise>
+
+  <exercise component="proteus" xml:id="reading-D-5" label="reading-D-5">
+    <title>Match matrix properties to their number</title>
+    <statement>
+        <p>Let <m>A</m> be a matrix whose reduced row echelon form is given below.
+        <me>
+          \begin{bmatrix}
+            \leading{1} \amp -2 \amp 0 \amp 1 \amp 4\\
+            0 \amp 0  \amp \leading{1} \amp -2 \amp 3\\
+            0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+          \end{bmatrix}
+        </me>
+        </p>
+    </statement>
+    <matches>
+        <match>
+          <premise order="6"><m>\dimension{\lns{A}}</m></premise>
+          <response><m>1</m></response>
+        </match>
+        <match>
+          <premise order="2"><m>\rank{A}</m></premise>
+          <premise order="4"><m>\dimension{\rsp{A}}</m></premise>
+          <premise order="5"><m>\dimension{\csp{A}}</m></premise>
+          <response><m>2</m></response>
+        </match>
+        <match>
+            <premise order="1"><m>\nullity{A}</m></premise>
+            <premise order="3"><m>\dimension{\nsp{A}}</m></premise>
+            <premise order="7">Number of variables in <m>\homosystem{A}</m></premise>
+            <response><m>3</m></response>
+        </match>
+        <match>
+            <response><m>4</m></response>
+        </match>
+        <match>
+            <response><m>5</m></response>
+        </match>
+    </matches>
+  </exercise>
+
+  <exercise component="proteus" xml:id="reading-D-6" label="reading-D-6">
+    <title>Dimension, linear independence, and spanning</title>
+    <statement>
+        <p>Let <m>V</m> be a vector space of dimension <m>5</m>.  Explain each of your 
+          answers to the questions below.
+          <ol>
+            <li>
+              <p>
+                Can there be a spanning set of <m>V</m> with <m>4</m> elements?  <m>6</m> elements? 
+              </p>
+            </li>
+            <li>
+              <p>
+                Can there be a linearly independent set of vectors in <m>V</m> with <m>4</m> elements?  <m>6</m> elements?
+              </p>
+            </li>
+            <li>
+              <p>
+                Can there be a basis of <m>V</m> with <m>4</m> elements?  <m>6</m> elements?
+              </p>
+            </li>
+          </ol>
+        </p>   
+    </statement>
+    <response/>
+  </exercise>
+
+    <image width="50%">
       <shortdescription>a number line</shortdescription>
       <prefigure xmlns="https://prefigure.org"
               label="prefigure-ex-numberline">

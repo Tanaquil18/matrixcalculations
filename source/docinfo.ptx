@@ -27,6 +27,22 @@
     \newcommand{\lambd}{\lambda}
     \newcommand{\rrefarrow}{\xrightarrow{\mathrm{rref}}}
     \newcommand{\tr}[1]{\mathrm{tr}#1} 
+    \newcommand{\colvector}[1]{\begin{bmatrix}#1\end{bmatrix}}
+    \newcommand{\complex}[1]{\mathbb{C}^{#1}}
+    \newcommand{\spn}[1]{\left\langle#1\right\rangle}
+    \newcommand{\set}[1]{\left\{#1\right\}}
+    \newcommand{\leading}[1]{\boxed{#1}}
+    \newcommand{\nullity}[1]{n\left(#1\right)}
+    \newcommand{\dimension}[1]{\dim\left(#1\right)}
+    \newcommand{\nsp}[1]{\mathcal{N}\!\left(#1\right)}
+    \newcommand{\rank}[1]{r\left(#1\right)}
+    \newcommand{\csp}[1]{\mathcal{C}\!\left(#1\right)}
+    \newcommand{\rsp}[1]{\mathcal{R}\!\left(#1\right)}
+    \newcommand{\lns}[1]{\mathcal{L}\!\left(#1\right)}
+    \newcommand{\linearsystem}[2]{\mathcal{LS}\!\left(#1,\,#2\right)}
+    \newcommand{\vect}[1]{\mathbf{#1}}
+    \newcommand{\zerovector}{\vect{0}}
+    \newcommand{\homosystem}[1]{\linearsystem{#1}{\zerovector}}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

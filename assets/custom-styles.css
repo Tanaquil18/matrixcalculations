@@ -27,9 +27,9 @@ color on the exercise number instead of gray. */
     display: inline;
     line-height: initial;
     border-bottom: 0;
-}
+} */
 
-.exercise-like:not(.knowl__content,.born-hidden-knowl)>.heading:first-child {
+/*.exercise-like:not(.knowl__content,.born-hidden-knowl)>.heading:first-child {
     background-color: var(--exercise-like-border-color);
     display: inline-block;
     color: #070707;

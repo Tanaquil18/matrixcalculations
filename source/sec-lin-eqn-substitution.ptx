@@ -122,6 +122,7 @@
     Almost all the food puzzles are these same kinds of equations, called <em>linear equations</em>.  Before
     defining what that means in general, let's explore another example from both graphical and algebraic perspectives.
   </p>
+
   <exercise xml:id="act_sony-interview" label="graphing-eqns-sony">
     <task label="solnstoxplusyequals2">
       <statement>
@@ -132,7 +133,7 @@
       </p>
       <figure>
         <caption>Solutions to the equation <m>x+y=2</m></caption>
-        <interactive xml:id="desmos-xplusyis2" label="desmos-xplusyis2" desmos="aipnfasaht" width="85%" aspect="4:3" />
+        <interactive xml:id="desmos-xplusyis2" label="desmos-xplusyis2" desmos="aipnfasaht" width="100%" aspect="6:3" />
       </figure>
       <p>
         What do you notice about the visual relationship between the points on the graph, that is, points that satisfy the equation <m>x+y=2</m>?
@@ -154,7 +155,7 @@
       </p>
       <figure>
         <caption>Solutions to the equation <m>15x+6y=15</m></caption>
-        <interactive xml:id="desmos-15xplus6yis15" label="desmos-15xplus6yis15" desmos="vvw2yv58qm" width="85%" aspect="4:3" />
+        <interactive xml:id="desmos-15xplus6yis15" label="desmos-15xplus6yis15" desmos="vvw2yv58qm" width="95%" aspect="4:3" />
       </figure>
       <p>
         What does the graph of <m>15x+6y=15</m> look like?
@@ -305,14 +306,14 @@
       <p>
         Finally, we know that the number of blue marbles is the same as the sum of the red and green marbles,
         so we have
-        <me >
+        <me>
           b = r+g
         </me>.
       </p>
       <p>
         Collecting these equations together and giving them numbers to make it easier to refer to them, we have
         <mdn>
-          <mrow xml:id="eq_rbg30" > r+b+g  =30 </mrow>
+          <mrow xml:id="eq_rbg30"> r+b+g  =30 </mrow>
           <mrow xml:id="eq_r2g"> r  =2g </mrow>
           <mrow xml:id="eq_brg"> b  = r+g </mrow>
         </mdn>
@@ -345,7 +346,7 @@
         to find <m>r</m> and <m>b</m>;
         we know from <xref ref="eq_r2g"></xref> that
         <m>r = 2g = 10</m> and then since <m>r+b+g = 30</m>,
-        we easily find that <m>b = 15</m>.
+        we find that <m>b = 15</m>.
       </p>
     </solution>
   </example>
