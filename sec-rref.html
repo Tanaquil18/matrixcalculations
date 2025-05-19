@@ -6,14 +6,20 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: salem                          *-->
+<!--*  Palette: ice-fire                     *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Reduced Row Echelon Form</title>
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.googleapis.com">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="external/custom-styles.css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
@@ -87,11 +93,11 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta xmlns:xlink="http://www.w3.org/1999/xlink" name="Keywords" content="Authored in PreTeXt">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:type" content="book">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:title" content="Matrix Calculations">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Chrissy Safranski">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Matrix Calculations">
+<meta property="book:author" content="Chrissy Safranski">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -114,23 +120,23 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.11';
+eBookConfig.runestone_version = '7.6.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.ee5a0b116b7d0991.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.e0c6d4592e23c667.css">
-<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:xlink="http://www.w3.org/1999/xlink" src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.052b07dd5d5bd82e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.253ff4af1e53e55f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="matrixtheory" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Matrix Calculations:</span> <span class="subtitle">An introduction to parts of linear algebra</span></a></h1>
 <p class="byline">Chrissy Safranski</p>
-</div></div></header><nav xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
@@ -142,14 +148,36 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-row-ops.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-chapter-title.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-consistency.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div xmlns:xlink="http://www.w3.org/1999/xlink" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-row-ops.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-chapter-title.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-consistency.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
 \newcommand{\Z}{\mathbb Z} 
 \newcommand{\Q}{\mathbb Q} 
 \newcommand{\R}{\mathbb R}
 \newcommand{\lambd}{\lambda}
 \newcommand{\rrefarrow}{\xrightarrow{\mathrm{rref}}}
-\newcommand{\tr}[1]{\mathrm{tr}#1}
+\newcommand{\tr}[1]{\mathrm{tr}#1} 
+\newcommand{\colvector}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\complex}[1]{\mathbb{C}^{#1}}
+\newcommand{\spn}[1]{\left\langle#1\right\rangle}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\leading}[1]{\boxed{#1}}
+\newcommand{\nullity}[1]{n\left(#1\right)}
+\newcommand{\dimension}[1]{\dim\left(#1\right)}
+\newcommand{\nsp}[1]{\mathcal{N}\!\left(#1\right)}
+\newcommand{\rank}[1]{r\left(#1\right)}
+\newcommand{\csp}[1]{\mathcal{C}\!\left(#1\right)}
+\newcommand{\rsp}[1]{\mathcal{R}\!\left(#1\right)}
+\newcommand{\lns}[1]{\mathcal{L}\!\left(#1\right)}
+\newcommand{\linearsystem}[2]{\mathcal{LS}\!\left(#1,\,#2\right)}
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\zerovector}{\vect{0}}
+\newcommand{\homosystem}[1]{\linearsystem{#1}{\zerovector}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -157,7 +185,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
@@ -241,7 +269,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:xlink="http://www.w3.org/1999/xlink" class="section" id="sec-rref"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-rref"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">Reduced Row Echelon Form</span>
 </h2>
 <section class="introduction" id="sec-rref-2"><div class="para" id="sec-rref-2-1">We have learned about the method of elimination of variables and about row operations on matrices; in this section, we learn <em class="emphasis">Gauss-Jordan elimination</em> to put matrices into <em class="emphasis">reduced row echelon form</em>.</div></section><section class="subsection" id="subsec-rref-bc"><h3 class="heading hide-type">
@@ -270,30 +298,34 @@ eBookConfig.enable_chatcodes =  false;
 </div> <div class="para" id="def_rref-4-2">A matrix that satisfies the first three conditions is said to be in <dfn class="terminology">row echelon form</dfn>.</div></article><article class="exercise exercise-like" id="rref-or-not-examples"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">RREF or not?</span>
 </h4>
-<div class="ptx-runestone-container"><div class="runestone tabbed_section"><div data-component="tabbedStuff" id="rs-rref-or-not-examples">
-<div data-component="tab" data-tabname="Introduction"><div class="introduction" id="rref-or-not-examples-2"><div class="para" id="rref-or-not-examples-2-1">For each of the following matrices, say whether they are in reduced row echelon form or not.</div></div></div>
+<div class="ptx-runestone-container"><div class="runestone tabbed_section">
+<div class="tabs-introduction exercise-leadin"><div class="introduction" id="rref-or-not-examples-2"><div class="para" id="rref-or-not-examples-2-1">For each of the following matrices, say whether they are in reduced row echelon form or not.</div></div></div>
+<div data-component="tabbedStuff" id="rs-rref-or-not-examples">
 <div data-component="tab" data-tabname="(a)"><article class="task exercise-like" id="rref-or-not-a"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-or-not-a" data-multipleanswers="false">
-<div class="para logical" id="rref-or-not-a-1-1"><div class="displaymath process-math">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-or-not-a-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{cc} 1\amp 0\\0\amp 1
 \end{array} \right]
 \end{equation*}
-</div></div>
+</div></div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-or-not-a" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-or-not-a_opt_a" data-correct=""><div class="para" id="rref-or-not-a-2-1-1-1">Reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-a_opt_a"><div class="para" id="rref-or-not-a-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-rref-or-not-a_opt_b"><div class="para" id="rref-or-not-a-2-2-1-1">Not in reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-a_opt_b"><div class="para" id="rref-or-not-a-2-2-2-1">The first nonzero entry in each row is a <span class="process-math">\(1\text{,}\)</span> each leading 1 appears down and to the right from the previous leading 1, and all the entries in the same column as a leading 1 are <span class="process-math">\(0\text{.}\)</span>
 </div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(b)"><article class="task exercise-like" id="rref-or-not-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-or-not-b" data-multipleanswers="false">
-<div class="para logical" id="rref-or-not-b-1-1"><div class="displaymath process-math">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-or-not-b-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{ccc}  1\amp 0\amp 1\\0\amp 1\amp 2
 \end{array} \right]
 \end{equation*}
-</div></div>
+</div></div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-or-not-b" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-or-not-b_opt_a" data-correct=""><div class="para" id="rref-or-not-b-2-1-1-1">Reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-b_opt_a"><div class="para" id="rref-or-not-b-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-rref-or-not-b_opt_b"><div class="para" id="rref-or-not-b-2-2-1-1">Not in reduced row echelon form</div></li>
@@ -301,28 +333,32 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="rref-or-not-b-2-2-2-1">The first nonzero entry in each row is a <span class="process-math">\(1\text{,}\)</span> each leading 1 appears down and to the right from the previous leading 1, and all the entries in the same column as a leading 1 are <span class="process-math">\(0\text{.}\)</span>
 </div> <div class="para" id="rref-or-not-b-2-2-2-2">The third column does not have a leading 1 in it, but that’s okay; the conditions for rref don’t say that every column has to contain a leading 1.</div>
 </li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(c)"><article class="task exercise-like" id="rref-or-not-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-or-not-c" data-multipleanswers="false">
-<div class="para logical" id="rref-or-not-c-1-1"><div class="displaymath process-math">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-or-not-c-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{cc} 0\amp 0\\0\amp 0
 \end{array} \right]
 \end{equation*}
-</div></div>
+</div></div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-or-not-c" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-or-not-c_opt_a" data-correct=""><div class="para" id="rref-or-not-c-2-1-1-1">Reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-c_opt_a"><div class="para" id="rref-or-not-c-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-rref-or-not-c_opt_b"><div class="para" id="rref-or-not-c-2-2-1-1">Not in reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-c_opt_b"><div class="para" id="rref-or-not-c-2-2-2-1">The rref conditions don’t say that leading 1’s have to exist; the conditions say that if nonzero entries are present, then leading 1’s have to be in certain relative positions.</div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(d)"><article class="task exercise-like" id="rref-or-not-d"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-or-not-d" data-multipleanswers="false">
-<div class="para logical" id="rref-or-not-d-1-1"><div class="displaymath process-math">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-or-not-d-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{ccc}  1\amp 1\amp 0\\0\amp 0\amp 1
 \end{array} \right]
 \end{equation*}
-</div></div>
+</div></div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-or-not-d" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-or-not-d_opt_a" data-correct=""><div class="para" id="rref-or-not-d-2-1-1-1">Reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-d_opt_a"><div class="para" id="rref-or-not-d-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-rref-or-not-d_opt_b"><div class="para" id="rref-or-not-d-2-2-1-1">Not in reduced row echelon form</div></li>
@@ -335,61 +371,71 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 </div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(e)"><article class="task exercise-like" id="rref-or-not-e"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-or-not-e" data-multipleanswers="false">
-<div class="para logical" id="rref-or-not-e-1-1"><div class="displaymath process-math">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-or-not-e-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 1\\0\amp 0\amp 0\amp 0\\0\amp 0\amp 1\amp 3
 \end{array} \right]
 \end{equation*}
-</div></div>
+</div></div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-or-not-e" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-or-not-e_opt_a"><div class="para" id="rref-or-not-e-2-1-1-1">Reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-e_opt_a"><div class="para" id="rref-or-not-e-2-1-2-1">The third condition in <a href="sec-rref.html#def_rref" class="xref" data-knowl="./knowl/xref/def_rref.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.4.1: Reduced Row Echelon Form">Definition 1.4.1</a> says that any rows of all zeroes must be at the bottom.</div></li>
 <li data-component="answer" id="rs-rref-or-not-e_opt_b" data-correct=""><div class="para" id="rref-or-not-e-2-2-1-1">Not in reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-e_opt_b"><div class="para" id="rref-or-not-e-2-2-2-1">Correct!</div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(f)"><article class="task exercise-like" id="rref-or-not-f"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-or-not-f" data-multipleanswers="false">
-<div class="para logical" id="rref-or-not-f-1-1"><div class="displaymath process-math">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-or-not-f-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 2\amp 0\amp 0 \\0\amp 0\amp 3\amp 0\\0\amp 0\amp 0\amp 4
 \end{array} \right]
 \end{equation*}
-</div></div>
+</div></div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-or-not-f" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-or-not-f_opt_a"><div class="para" id="rref-or-not-f-2-1-1-1">Reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-f_opt_a"><div class="para" id="rref-or-not-f-2-1-2-1">The first nonzero entry of the second row is <span class="process-math">\(3\text{,}\)</span> and it needs to be <span class="process-math">\(1\)</span> to be in rref. (The third row fails this condition also).</div></li>
 <li data-component="answer" id="rs-rref-or-not-f_opt_b" data-correct=""><div class="para" id="rref-or-not-f-2-2-1-1">Not in reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-f_opt_b"><div class="para" id="rref-or-not-f-2-2-2-1">Correct!</div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(g)"><article class="task exercise-like" id="rref-or-not-g"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-or-not-g" data-multipleanswers="false">
-<div class="para logical" id="rref-or-not-g-1-1"><div class="displaymath process-math">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-or-not-g-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{cccccc} 0\amp 1\amp 2\amp 3\amp 0\amp 4\\ 
 0\amp 0\amp 0\amp 0\amp 1\amp 5\\0\amp 0\amp 0\amp 0\amp 0\amp 0 \end{array} \right]
 \end{equation*}
-</div></div>
+</div></div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-or-not-g" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-or-not-g_opt_a" data-correct=""><div class="para" id="rref-or-not-g-2-1-1-1">Reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-g_opt_a"><div class="para" id="rref-or-not-g-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-rref-or-not-g_opt_b"><div class="para" id="rref-or-not-g-2-2-1-1">Not in reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-g_opt_b"><div class="para" id="rref-or-not-g-2-2-2-1">The first, third, fourth, and sixth columns do not have a leading 1 in them, and that means that the other entries in those columns don’t have to be <span class="process-math">\(0\text{.}\)</span>
 </div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(h)"><article class="task exercise-like" id="rref-or-not-h"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-or-not-h" data-multipleanswers="false">
-<div class="para logical" id="rref-or-not-h-1-1"><div class="displaymath process-math">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-or-not-h-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{ccc} 1\amp 1\amp 0\\ 0\amp 1\amp 0\\0\amp 0\amp 1 \end{array} \right]
 \end{equation*}
-</div></div>
+</div></div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-or-not-h" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-or-not-h_opt_a"><div class="para" id="rref-or-not-h-2-1-1-1">Reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-h_opt_a"><div class="para" id="rref-or-not-h-2-1-2-1">The second column has a leading <span class="process-math">\(1\)</span> in it (from the second row), and that means all the other entries in that column have to be <span class="process-math">\(0\text{.}\)</span>
 </div></li>
 <li data-component="answer" id="rs-rref-or-not-h_opt_b" data-correct=""><div class="para" id="rref-or-not-h-2-2-1-1">Not in reduced row echelon form</div></li>
 <li data-component="feedback" id="rs-rref-or-not-h_opt_b"><div class="para" id="rref-or-not-h-2-2-2-1">Correct!</div></li>
-</ul></div></div></article></div>
-</div></div></div></article><div class="para" id="subsec-rref-bc-6">We began this section with two questions, “Where do we go?” and “How do we get there quickly?” We’ve just answered the first question: most of the time we are going to <em class="emphasis">reduced row echelon form.</em> We now address the second question.</div>
+</ul>
+</div></div></article></div>
+</div>
+</div></div></article><div class="para" id="subsec-rref-bc-6">We began this section with two questions, “Where do we go?” and “How do we get there quickly?” We’ve just answered the first question: most of the time we are going to <em class="emphasis">reduced row echelon form.</em> We now address the second question.</div>
 <div class="para" id="subsec-rref-bc-7">There are many ways to use elementary row operations to transform a matrix into reduced row echelon form, but there is a general technique that is efficient and doesn’t waste time on unnecessary steps. This technique is called <em class="emphasis">Gauss-Jordan elimination</em>, named in honor of the mathematicians Karl Friedrich Gauss and Wilhelm Jordan.</div>
 <article class="assemblage assemblage-like" id="def_gaussian_elimination"><h4 class="heading"><span class="title">Gauss-Jordan Elimination.</span></h4>
 <div class="para logical" id="def_gaussian_elimination-3">
@@ -506,11 +552,12 @@ eBookConfig.enable_chatcodes =  false;
 <article class="exercise exercise-like" id="rref-steps"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Gauss-Jordan Steps.</span>
 </h4>
-<div class="ptx-runestone-container"><div class="runestone tabbed_section"><div data-component="tabbedStuff" id="rs-rref-steps">
-<div data-component="tab" data-tabname="Introduction"><div class="introduction" id="rref-steps-2"><div class="para" id="rref-steps-2-1">Answer the following questions about using Gauss-Jordan elimination, which entries to work on next and what row operations to perform.</div></div></div>
+<div class="ptx-runestone-container"><div class="runestone tabbed_section">
+<div class="tabs-introduction exercise-leadin"><div class="introduction" id="rref-steps-2"><div class="para" id="rref-steps-2-1">Answer the following questions about using Gauss-Jordan elimination, which entries to work on next and what row operations to perform.</div></div></div>
+<div data-component="tabbedStuff" id="rs-rref-steps">
 <div data-component="tab" data-tabname="(a)"><article class="task exercise-like" id="rref-steps-a"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-steps-a" data-multipleanswers="false">
-<div class="para logical" id="rref-steps-a-1-1">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-steps-a-1-1">
 <div class="para">Given the matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -518,7 +565,8 @@ A=\begin{bmatrix} \fbox{2} \amp 4 \amp 6\amp -2 \\ 1 \amp -1 \amp -1 \amp -1 \\ 
 \end{equation*}
 </div>
 <div class="para">the Gauss-Jordan algorithm starts by turning the <span class="process-math">\(2\)</span> that is entry <span class="process-math">\(a_{11}\text{,}\)</span> into a <span class="process-math">\(1\text{.}\)</span> Which row operation do we use?</div>
-</div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-steps-a" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-steps-a_opt_a" data-correct=""><div class="para" id="rref-steps-a-2-1-1-1">Scaling (multiplying a row by a nonzero number)</div></li>
 <li data-component="feedback" id="rs-rref-steps-a_opt_a"><div class="para" id="rref-steps-a-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-rref-steps-a_opt_b"><div class="para" id="rref-steps-a-2-2-1-1">Swapping rows</div></li>
@@ -527,10 +575,11 @@ A=\begin{bmatrix} \fbox{2} \amp 4 \amp 6\amp -2 \\ 1 \amp -1 \amp -1 \amp -1 \\ 
 <li data-component="answer" id="rs-rref-steps-a_opt_c"><div class="para" id="rref-steps-a-2-3-1-1">Multiply and add</div></li>
 <li data-component="feedback" id="rs-rref-steps-a_opt_c"><div class="para" id="rref-steps-a-2-3-2-1">We use the “multiply and add” row operation when we are trying to get <span class="process-math">\(0\)</span>’s, not when our goal is to get a <span class="process-math">\(1\text{.}\)</span>
 </div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(b)"><article class="task exercise-like" id="rref-steps-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-steps-b" data-multipleanswers="false">
-<div class="para logical" id="rref-steps-b-1-1">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-steps-b-1-1">
 <div class="para">Given the matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -538,7 +587,8 @@ B=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 1 \amp -1 \amp -1 \amp -1 \\ 0 \amp 
 \end{equation*}
 </div>
 <div class="para">which entry do we focus on turning into a <span class="process-math">\(1\)</span> or <span class="process-math">\(0\)</span> next?</div>
-</div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-steps-b" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-steps-b_opt_a"><div class="para" id="rref-steps-b-2-1-1-1"><span class="process-math">\(b_{11}\)</span></div></li>
 <li data-component="feedback" id="rs-rref-steps-b_opt_a"><div class="para logical" id="rref-steps-b-2-1-2-1">
 <div class="displaymath process-math">
@@ -566,17 +616,19 @@ B=\begin{bmatrix} 1 \amp \fbox{2} \amp 3\amp -1 \\ 1 \amp -1 \amp -1 \amp -1 \\ 
 </div>
 <div class="para">No, we finish putting <span class="process-math">\(0\)</span>’s below the leading <span class="process-math">\(1\)</span> in the first column before moving to the right.</div>
 </div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(c)"><article class="task exercise-like" id="rref-steps-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-steps-c" data-multipleanswers="false">
-<div class="para logical" id="rref-steps-c-1-1">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-steps-c-1-1">
 <div class="para">To turn the boxed entry below into a <span class="process-math">\(0\text{,}\)</span> which row operation do we perform?</div>
 <div class="displaymath process-math">
 \begin{equation*}
 B=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ \fbox{1} \amp -1 \amp -1 \amp -1 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
 \end{equation*}
 </div>
-</div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-steps-c" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-steps-c_opt_a"><div class="para" id="rref-steps-c-2-1-1-1">Scaling a row</div></li>
 <li data-component="feedback" id="rs-rref-steps-c_opt_a"><div class="para" id="rref-steps-c-2-1-2-1">No, scaling a row means multiplying by a nonzero number which won’t result in a <span class="process-math">\(0\)</span> if we didn’t start with a <span class="process-math">\(0\text{.}\)</span>
 </div></li>
@@ -585,10 +637,11 @@ B=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ \fbox{1} \amp -1 \amp -1 \amp -1 \\ 
 <li data-component="answer" id="rs-rref-steps-c_opt_c" data-correct=""><div class="para" id="rref-steps-c-2-3-1-1">Multiply and add</div></li>
 <li data-component="feedback" id="rs-rref-steps-c_opt_c"><div class="para" id="rref-steps-c-2-3-2-1">Correct!  Multiplying Row 1 by <span class="process-math">\(-1\)</span> and adding to Row 2 will create a <span class="process-math">\(0\)</span> in position <span class="process-math">\(b_{21}\text{.}\)</span>
 </div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(d)"><article class="task exercise-like" id="rref-steps-d"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-steps-d" data-multipleanswers="false">
-<div class="para logical" id="rref-steps-d-1-1">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-steps-d-1-1">
 <div class="para">To continue the Gauss-Jordan algorithm on the matrix below, which entry do we next try to turn into a <span class="process-math">\(1\)</span> or <span class="process-math">\(0\text{?}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -596,7 +649,8 @@ B=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ \fbox{1} \amp -1 \amp -1 \amp -1 \\ 
 C=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 0 \amp -3 \amp -4 \amp 0 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix}
 \end{equation*}
 </div>
-</div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-steps-d" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-steps-d_opt_a"><div class="para" id="rref-steps-d-2-1-1-1"><span class="process-math">\(c_{12}\)</span></div></li>
 <li data-component="feedback" id="rs-rref-steps-d_opt_a"><div class="para logical" id="rref-steps-d-2-1-2-1">
 <div class="para">No, entry <span class="process-math">\(c_{12}\)</span> is the entry boxed below.  The Gauss-Jordan algorithm says that after finishing a column, we move down and to the right from the leading <span class="process-math">\(1\text{.}\)</span>
@@ -627,10 +681,11 @@ C=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 0 \amp \fbox{-3} \amp -4 \amp 0 \\ 0
 \end{equation*}
 </div>
 </div></li>
-</ul></div></div></article></div>
+</ul>
+</div></div></article></div>
 <div data-component="tab" data-tabname="(e)"><article class="task exercise-like" id="rref-steps-e"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="rs-rref-steps-e" data-multipleanswers="false">
-<div class="para logical" id="rref-steps-e-1-1">
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para logical" id="rref-steps-e-1-1">
 <div class="para">Given the matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -638,7 +693,8 @@ C=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 0 \amp \fbox{-3} \amp -4 \amp 0 \\ 0
 \end{equation*}
 </div>
 <div class="para">which row operation do we use next in the Gauss-Jordan algorithm?</div>
-</div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-rref-steps-e" data-multipleanswers="false">
 <li data-component="answer" id="rs-rref-steps-e_opt_a" data-correct=""><div class="para" id="rref-steps-e-2-1-1-1">Scaling a row</div></li>
 <li data-component="feedback" id="rs-rref-steps-e_opt_a"><div class="para" id="rref-steps-e-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-rref-steps-e_opt_b"><div class="para" id="rref-steps-e-2-2-1-1">Swapping rows</div></li>
@@ -646,8 +702,10 @@ C=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 0 \amp \fbox{-3} \amp -4 \amp 0 \\ 0
 <li data-component="answer" id="rs-rref-steps-e_opt_c"><div class="para" id="rref-steps-e-2-3-1-1">Multiply and add</div></li>
 <li data-component="feedback" id="rs-rref-steps-e_opt_c"><div class="para" id="rref-steps-e-2-3-2-1">We use the “multiply and add” row operation when we are trying to get <span class="process-math">\(0\)</span>’s, not when our goal is to get a <span class="process-math">\(1\text{.}\)</span>
 </div></li>
-</ul></div></div></article></div>
-</div></div></div></article><div class="para" id="subsec-rref-bc-19">Let’s practice the Gauss-Jordan algorithm some more.</div>
+</ul>
+</div></div></article></div>
+</div>
+</div></div></article><div class="para" id="subsec-rref-bc-19">Let’s practice the Gauss-Jordan algorithm some more.</div>
 <article class="example example-like" id="ex_rref_2"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Another Gauss-Jordan Elimination.</span>
 </h4>
@@ -905,7 +963,7 @@ R_1 \leftrightarrow R_3
 <article class="activity project-like" id="rref_matrixforms_prob1"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span>
 </h4>
-<div id="webwork-17" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="17" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/rrefprob1.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div id="webwork-17" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="17" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/rrefprob1.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-17')">Activate</button></div>
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-17-1-1-1">Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</div> <div class="para logical" id="extracted-webwork-17-1-1-2">
@@ -964,7 +1022,7 @@ R_1 \leftrightarrow R_3
 </div></article><article class="activity project-like" id="rref_matrixforms_prob2"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
 </h4>
-<div id="webwork-18" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="18" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/rrefprob2.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div id="webwork-18" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="18" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/rrefprob2.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-18')">Activate</button></div>
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-18-1-1-1">Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</div> <div class="para logical" id="extracted-webwork-18-1-1-2">
@@ -1023,7 +1081,7 @@ R_1 \leftrightarrow R_3
 </div></article><article class="activity project-like" id="rref_performgauss1"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
 </h4>
-<div id="webwork-19" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="19" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/rrefprob3a.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div id="webwork-19" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="19" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/rrefprob3a.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-19')">Activate</button></div>
 <div class="problem-contents">
 <div class="para logical" id="extracted-webwork-19-1-1-1">
@@ -1090,7 +1148,7 @@ R_1 \leftrightarrow R_3
 </div></article><article class="activity project-like" id="rref_performgauss2"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
 </h4>
-<div id="webwork-20" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="20" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/rrefprob3.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div id="webwork-20" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="20" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/rrefprob3.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-20')">Activate</button></div>
 <div class="problem-contents">
 <div class="para logical" id="extracted-webwork-20-1-1-1">
@@ -1147,7 +1205,7 @@ A= \left[\begin{array}{cccc}
 </div></article><article class="activity project-like" id="rref_performgauss3"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
 </h4>
-<div id="webwork-21" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="21" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div id="webwork-21" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="21" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-21')">Activate</button></div>
 <div class="problem-contents"><div class="para logical" id="extracted-webwork-21-1-1-1">
 <div class="para">Reduce the matrix</div>
@@ -1249,12 +1307,12 @@ A= \left[\begin{array}{cccc}
 <div class="solutions"><details id="exer-rref-3-20-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="exer-rref-3-20-2-1"><span class="process-math">\(\left[\begin{array}{cccccc} 1\amp -1\amp 3\amp 0\amp 0\amp 4\\0\amp 0\amp 0\amp 1\amp -2\amp 5\\ \end{array} \right]\)</span></div></div></details></div></article>
 </div>
 </div></section></section></div>
-<div class="ptx-content-footer">
-<a class="previous-button button" href="sec-row-ops.html" title="Previous"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-consistency.html" title="Next"><span class="name">Next</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-row-ops.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-consistency.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="feedback-link" href="mailto:csafranski@franciscan.edu" target="_blank">Feedback</a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+<a class="feedback-link" href="mailto:csafranski@franciscan.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 <script>diagcess.Base.init()</script>
 </body>
