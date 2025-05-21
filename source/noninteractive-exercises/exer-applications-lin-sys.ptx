@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exer-applications-lin-sys" ><title>Additional Practice</title>
+    <exercisegroup cols="2">
+        <introduction>
+            <p>
+                In the following exercises, find the solution of the given problem by:
+                <ol marker="(a)">
+                <li>
+                    <p>
+                    creating an appropriate system of linear equations
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        forming the augmented matrix that corresponds to this system
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        putting the augmented matrix into reduced row echelon form
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        interpreting the reduced row echelon form of the matrix as a solution
+                    </p>
+                </li>
+                </ol>
+            </p>
+        </introduction>
+        <exercise>
+            <statement>
+            <p>
+                A farmer looks out his window at his chickens and pigs.
+                He tells his daughter that he sees <m>62</m> heads and <m>190</m> legs.
+                How many chickens and pigs does the farmer have?
+            </p>
+            </statement>
+            <answer>
+            <p>
+                <m>29</m> chickens and <m>33</m> pigs
+            </p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+            <p>
+                A lady buys <m>20</m> trinkets at a yard sale.
+                The cost of each trinket is either <m>\$ 0.30</m> or <m>\$ 0.65</m>.
+                If she spends <m>\$ 8.80</m>, how many of each type of trinket does she buy?
+            </p>
+            </statement>
+            <answer>
+            <p>
+                <m>12</m> of the <m>\$ 0.30</m> trinkets, <m>8</m> of the <m>\$ 0.65</m> trinkets
+            </p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+            <p>
+                A carpenter can make two sizes of table, grande and venti.
+                The grande table requires <m>4</m> table legs and <m>1</m> table top;
+                the venti requires <m>6</m> table legs and <m>2</m> table tops.
+                After doing work,
+                he counts up spare parts in his warehouse and realizes that he has <m>86</m> table tops left over,
+                and <m>300</m> legs.
+                How many tables of each kind can he build and use up exactly all of his materials?
+            </p>
+            </statement>
+            <answer>
+            <p>
+                <m>42</m> grande tables, <m>22</m> venti tables
+            </p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+            <p>
+                A jar contains <m>100</m> marbles.
+                We know there are twice as many green marbles as red;
+                that the number of blue and yellow marbles together is the same as the number of green;
+                and that three times the number of yellow marbles together with the red marbles gives the same numbers as the blue marbles.
+                How many of each color of marble are in the jar?
+            </p>
+            </statement>
+            <answer>
+            <p>
+                <m>35</m> blue, <m>40</m> green, <m>20</m> red, <m>5</m> yellow
+            </p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+            <p>
+                A rescue mission has <m>85</m> sandwiches, <m>65</m> bags of chips and <m>210</m> cookies.
+                They know from experience that men will eat <m>2</m> sandwiches, <m>1</m> bag of chips and <m>4</m> cookies;
+                women will eat one sandwich, a bag of chips and two cookies;
+                kids will eat half a sandwhich,
+                a bag of chips and <m>3</m> cookies.
+                If they want to use all their food up,
+                how many men, women and kids can they feed?
+            </p>
+            </statement>
+            <answer>
+            <p>
+                <m>30</m> men, <m>15</m> women, <m>20</m> kids
+            </p>
+            </answer>
+        </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+    <introduction>
+    <p>
+        In the following exercises,
+        find the polynomial with the smallest degree that goes through the given points.
+    </p>
+    </introduction>
+    <exercise>
+        <statement>
+        <p>
+            <m>(1,3)</m> and <m>(3,15)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = 6x-3</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(-2,14)</m> and <m>(3,4)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = -2x+10</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(1,5)</m>, <m>(-1,3)</m> and <m>(3,-1)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = -x^2+x+5</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(-4,-3)</m>, <m>(0,1)</m> and <m>(1,4.5)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = \frac12x^2+3x+1</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(-1,-8)</m>, <m>(1,-2)</m> and <m>(3,4)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = 3x-5</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(-3,3)</m>, <m>(1,3)</m> and <m>(2,3)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = 3</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(-2,15)</m>, <m>(-1,4)</m>,
+            <m>(1,0)</m> and <m>(2,-5)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = -x^3+x^2-x+1</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(-2,-7)</m>, <m>(1,2)</m>,
+            <m>(2,9)</m> and <m>(3,28)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = x^3+1</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(-3,10)</m>, <m>(-1,2)</m>,
+            <m>(1,2)</m> and <m>(2,5)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = x^2+1</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <m>(0,1)</m>, <m>(-3,-3.5)</m>,
+            <m>(-2,-2)</m> and <m>(4,7)</m>
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>f(x) = \frac32x+1</m>
+        </p>
+        </answer>
+    </exercise>
+    </exercisegroup>
+    <exercise>
+        <statement>
+        <p>
+            The general exponential function has the form <m>f(x)= ae^{bx}</m>,
+            where <m>a</m> and <m>b</m> are constants and <m>e</m> is Euler's constant
+            (<m>\approx</m> 2.718).
+            We want to find the equation of the exponential function that goes through the points <m>(1,2)</m> and <m>(2,4)</m>.
+            <ol>
+            <li>
+                <p>
+                Show why we cannot simply substitute in values for <m>x</m> and <m>y</m> in
+                the equation <m>y = ae^{bx}</m> and solve using the techniques we used for polynomials.
+                </p>
+            </li>
+            <li>
+                <p>
+                Show how the equality <m>y = ae^{bx}</m> leads us to the equation <m>\ln(y) = \ln(a) + bx</m>, which is linear in <m>x</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Use the techniques we developed to solve for the unknowns <m>\ln(a)</m> and <m>b</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Knowing <m>\ln(a)</m>, find <m>a</m>;
+                find the exponential function
+                <m>f(x) = ae^{bx}</m> that goes through the points <m>(1,2)</m> and <m>(2,4)</m>.
+                </p>
+            </li>
+            </ol>
+        </p>
+        </statement>
+        <answer>
+        <ol>
+            <li>
+            <p>
+                Substitution yields the equations
+                <m>2 = ae^{b}</m> and <m>4 = ae^{2b}</m>;
+                these are not linear equations.
+            </p>
+            </li>
+            <li>
+            <p>
+                <m>y = ae^{bx}</m> implies that <m>\ln y = \ln (ae^{bx}) = \ln(a) + \ln e^{bx} = \ln(a) + bx</m>.
+            </p>
+            </li>
+            <li>
+            <p>
+                Plugging in the points for <m>x</m> and <m>y</m> in the equation <m>\ln y = \ln(a) + bx</m>,
+                we have equations
+                <me>
+                \begin{array}{ccccc} \ln a \amp  + \amp  b \amp  = \amp  \ln 2 \\ \ln a \amp  + \amp  2b \amp  = \amp  \ln 4 \end{array}
+                </me>.
+                To solve,
+                <me>
+                \left[\begin{array}{ccc}  1 \amp 1\amp \ln 2 \\ 1 \amp  2 \amp \ln 4 \\ \end{array} \right] \rrefarrow \left[\begin{array}{ccc}  1\amp 0\amp 0\\0\amp 1\amp \ln 2\\ \end{array} \right]
+                </me>.
+                Therefore <m>\ln(a) = 0</m> and <m>b = \ln(2)</m>.
+            </p>
+            </li>
+            <li>
+            <p>
+                Since <m>\ln a = 0</m>, we know that <m>a = e^0 = 1</m>.
+                Thus our exponential function is <m>f(x) = e^{x\ln(2)}</m>.
+            </p>
+            </li>
+        </ol>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            In a football game, <m>24</m> points are scored from <m>8</m> scoring occasions.
+            The number of successful extra point kicks is equal to the number of successful two point conversions.
+            Find all ways in which the points may have been scored in this game.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            The augmented matrix from this system is <m>\left[\begin{array}{ccccc} 1\amp 1\amp 1\amp 1\amp 8\\6\amp 1\amp 2\amp 3\amp 24\\0\amp 1\amp -1\amp 0\amp 0\\ \end{array} \right]</m>.
+            From this we find the solution
+            <md>
+            <mrow>t\amp =\frac83-\frac13f</mrow>
+            <mrow>x\amp =\frac83-\frac13f</mrow>
+            <mrow>w\amp =\frac83-\frac13f</mrow>
+            </md>.
+        </p>
+        <p>
+            The only time each of these variables are nonnegative integers is when <m>f=2</m> or <m>f=8</m>.
+            If <m>f=2</m>,
+            then we have <m>2</m> touchdowns, <m>2</m> extra points and <m>2</m> two point conversions (and <m>2</m> field goals);
+            this doesn't make sense since the extra points and two point conversions follow touchdowns.
+            If <m>f=8</m>, then we have no touchdowns,
+            extra points or two point conversions
+            (just <m>8</m> field goals).
+            This is the only solution; all points were scored from field goals.
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            In a football game, <m>29</m> points are scored from <m>8</m> scoring occasions.
+            There are <m>2</m> more successful extra point kicks than successful two point conversions.
+            Find all ways in which the points may have been scored in this game.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            The augmented matrix from this system is <m>\left[\begin{array}{ccccc} 1\amp 1\amp 1\amp 1\amp 8\\6\amp 1\amp 2\amp 3\amp 29\\0\amp 1\amp -1\amp 0\amp 2\\ \end{array} \right]</m>.
+            From this we find the solution
+            <md>
+            <mrow>t\amp =4-\frac13f</mrow>
+            <mrow>x\amp =3-\frac13f</mrow>
+            <mrow>w\amp =1-\frac13f</mrow>
+            </md>.
+        </p>
+        <p>
+            The only time each of these variables are nonnegative integers is when <m>f=0</m> or <m>f=3</m>.
+            If <m>f=0</m>,
+            then we have <m>4</m> touchdowns, <m>3</m> extra points and <m>1</m> two point conversion
+            (no field goals).
+            If <m>f=3</m>,
+            then we have <m>3</m> touchdowns, <m>2</m> extra points and no two point conversions
+            (and <m>3</m> field goals).
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            In a basketball game, where points are scored either by a <m>3</m> point shot,
+            a <m>2</m> point shot or a <m>1</m> point free throw, <m>80</m> points were scored from <m>30</m> successful shots.
+            Find all ways in which the points may have been scored in this game.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            Let <m>x_1</m>,
+            <m>x_2</m> and <m>x_3</m> represent the number of free throws, 2 point and 3 point shots taken.
+            The augmented matrix from this system is <m>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\1\amp 2\amp 3\amp 80 \end{array} \right]</m>.
+            From this we find the solution
+            <md>
+            <mrow>x_1\amp =-20+x_3</mrow>
+            <mrow>x_2\amp =50-2x_3</mrow>
+            </md>.
+        </p>
+        <p>
+            In order for <m>x_1</m> and <m>x_2</m> to be nonnegative,
+            we need <m>20\leq x_3\leq 25</m>.
+            Thus there are <m>6</m> different scenerios: the
+            <q>first</q>
+            is where <m>20</m> three point shots are taken,
+            no free throws, and <m>10</m> two point shots; the
+            <q>last</q>
+            is where <m>25</m> three point shots are taken, <m>5</m> free throws,
+            and no two point shots.
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            In a basketball game, where points are scored either by a <m>3</m> point shot,
+            a <m>2</m> point shot or a <m>1</m> point free throw, <m>110</m> points were scored from <m>70</m> successful shots.
+            Find all ways in which the points may have been scored in this game.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            Let <m>x_1</m>,
+            <m>x_2</m> and <m>x_3</m> represent the number of free throws, 2 point and 3 point shots taken.
+            The augmented matrix from this system is <m>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 70\\1\amp 2\amp 3\amp 110 \end{array} \right]</m>.
+            From this we find the solution
+            <md>
+            <mrow>x_1\amp =30+x_3</mrow>
+            <mrow>x_2\amp =40-2x_3</mrow>
+            </md>.
+        </p>
+        <p>
+            In order for <m>x_2</m> to be nonnegative,
+            we need <m>x_3\leq 20</m>.
+            Thus there are <m>21</m> different scenerios: the
+            <q>first</q>
+            is where <m>0</m> three point shots are taken (<m>x_3=0</m>, <m>30</m> free throws and <m>40</m> two point shots; the
+            <q>last</q>
+            is where <m>20</m> three point shots are taken, <m>50</m> free throws,
+            and no two point shots.
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Describe the equations of the linear functions that go through the point <m>(1,3)</m>. Give <m>2</m> examples.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            Let <m>y = ax+b</m>;
+            all linear functions through <m>(1,3)</m> come in the form <m>y = (3-b)x+b</m>.
+            Two possible examples could be: setting <m>b=0</m> yields <m>y = 3x</m>; 
+            and setting <m>b=2</m> yields <m>y=x+2</m>.
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Describe the equations of the linear functions that go through the point <m>(2,5)</m>. Give <m>2</m> examples.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            Let <m>y = ax+b</m>;
+            all linear functions through <m>(2,5)</m> come in the form <m>y = (2.5-\frac12b)x+b</m>.
+            Two possible examples could be: setting <m>b=1</m> yields <m>y = 2x+1</m>; 
+            and setting <m>b=-1</m> yields <m>y=3x-1</m>.
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Describe the equations of the quadratic functions that go through the points <m>(2,-1)</m> and <m>(1,0)</m>. Give <m>2</m> examples.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            Let <m>y = ax^2+bx+c</m>; we find that <m>a = -\frac12+\frac12 c</m> and <m>b = \frac12-\frac32c</m>.  Two possible examples could be: setting <m>c=1</m> yields <m>y = -x+1</m>; and setting <m>c=3</m> yields <m>y=x^2-4x+3</m>.
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Describe the equations of the quadratic functions that go through the points <m>(-1,3)</m> and <m>(2,6)</m>. Give <m>2</m> examples.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            Let <m>y = ax^2+bx+c</m>;
+            we find that <m>a = 2-\frac12 c</m> and <m>b = -1+\frac12c</m>. 
+            Two possible examples could be: setting <m>c=0</m> yields <m>y = 2x^2-x</m>; 
+            and setting <m>c=-2</m> yields <m>y=3x^2-2x-2</m>.
+        </p>
+        </answer>
+    </exercise>
+    
+</exercises>

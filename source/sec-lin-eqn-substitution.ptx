@@ -133,7 +133,7 @@
       </p>
       <figure>
         <caption>Solutions to the equation <m>x+y=2</m></caption>
-        <interactive xml:id="desmos-xplusyis2" label="desmos-xplusyis2" desmos="aipnfasaht" width="100%" aspect="6:3" />
+        <interactive xml:id="desmos-xplusyis2" label="desmos-xplusyis2" desmos="aipnfasaht" width="100%" aspect="3:2" />
       </figure>
       <p>
         What do you notice about the visual relationship between the points on the graph, that is, points that satisfy the equation <m>x+y=2</m>?
@@ -155,7 +155,7 @@
       </p>
       <figure>
         <caption>Solutions to the equation <m>15x+6y=15</m></caption>
-        <interactive xml:id="desmos-15xplus6yis15" label="desmos-15xplus6yis15" desmos="vvw2yv58qm" width="95%" aspect="4:3" />
+        <interactive xml:id="desmos-15xplus6yis15" label="desmos-15xplus6yis15" desmos="vvw2yv58qm" width="100%" aspect="3:2" />
       </figure>
       <p>
         What does the graph of <m>15x+6y=15</m> look like?

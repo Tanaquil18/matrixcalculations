@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-applications-lin-sys" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Applications of Linear Systems</title>
+  <introduction>
+    <p>
+        Most of the problems we've seen so far have started with a given linear system, and we learned how
+        to find the solution(s) to the system by performing Gauss-Jordan elimination and interpreting the 
+        resulting reduced row echelon form. 
+    </p>
+    <p>
+        In this section, we will consider problems where the linear system is <q>hidden</q>, that is, not stated in the problem.
+        In each of these different contexts, we create a linear system to solve the problem and interpret the possible solution(s)
+         in terms of that context, where the values of the variables might need to be positive or whole numbers, in order for the solution to make sense.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-applications-lin-sys-bc">
+    <title>Prepare</title>
+    <p>
+        We will start with an example.   
+    </p>
+    <example xml:id="ex_application_1"><title>Seats in a Concert Hall</title>
+        <p>
+            A concert hall has seating arranged in three sections. As part of a special promotion, guests will recieve two of three prizes.
+            Guests seated in the first and second sections will receive Prize A, guests seated in the second and third sections will receive Prize B, and guests seated in the first and third sections will receive Prize C. Concert promoters told the concert hall managers of their plans, and asked how many seats were in each section. (The promoters want to store prizes for each section separately for easier distribution.)
+            The managers, thinking they were being helpful, told the promoters they would need <m>105</m> A prizes, <m>103</m> B prizes,
+            and <m>88</m> C prizes, and have since been unavailable for further help. How many seats are in each section?
+        </p>
+        <p>
+            <em>Answer:</em> In order to answer this question, we need to make sure we're clear about what is being asked.
+            The final sentence asks: <q>How many seats are in each section?</q>
+            This means that we are trying to solve for the number of seats in each section, so those should be our variables.
+            Let <m>x_1</m>, <m>x_2</m> and <m>x_3</m> denote the number of seats in the first,
+            second and third sections, respectively.
+        </p>
+        <p>
+            Now we use the information given to create linear equations. We were told that Prize A goes to guests 
+            in the first and second sections and that we'll need <m>105</m> of these prizes, which means that
+            <me>
+            x_1+x_2 = 105.
+            </me>
+            Proceeding in a similar fashion,
+            we get two more equations,
+            <me>
+            x_2+x_3 = 103\text{ and }  x_1+x_3 = 88
+            </me>.
+            Thus our linear system is
+            <me>
+            \begin{array}{rcl}x_1+x_2\amp =\amp 105\\x_2+x_3\amp =\amp 103\\x_1+x_3\amp =\amp 88 \end{array}
+            </me>
+            and the corresponding augmented matrix is
+            <me>
+            \left[\begin{array}{cccc} 1\amp 1\amp 0\amp 105\\0\amp 1\amp 1\amp 103\\1\amp 0\amp 1\amp 88\\ \end{array} \right]
+            </me>
+        </p>
+        <p>
+            To solve our system,
+            let's put this matrix into reduced row echelon form.
+            <me>
+            \left[\begin{array}{cccc} 1\amp 1\amp 0\amp 105\\0\amp 1\amp 1\amp 103\\1\amp 0\amp 1\amp 88\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 45\\0\amp 1\amp 0\amp 60\\0\amp 0\amp 1\amp 43\\ \end{array} \right]
+            </me>
+        </p>
+        <p>
+            We can now read off our solution.
+            The first section has <m>45</m> seats,
+            the second has <m>60</m> seats, and the third has <m>43</m> seats.
+        </p>
+    </example>
+      
+  
+      
+    <reading-questions xml:id="rqs-applciations-lin-sys">
+      <exercise label="rq-applications-lin-sys-questions"><title>Reflection</title>
+        <statement>
+          <p>
+            Enter a response to both of the following tasks:
+            <ol>
+              <li>
+                <p>
+                  Ask a question about the material, either about something you're not sure you fully understand, 
+                  or a <q>what if</q> question.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Give a percentage from 0 to 100 that reflects how confident you are with the material you 
+                  just read about, and give one sentence as to why you feel that way.  0 means you didn't 
+                  actually do the reading and 100 means that everything makes sense so far and you think you are 
+                  completely ready to engage with the material more deeply.  
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <response/>
+      </exercise>
+    </reading-questions>
+
+  </subsection>
+
+   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+  
+
+  <conclusion xml:id="subsec-applications-lin-sys-summary">
+    <title>Summary</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+              
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+      </ul>
+    </p>
+  </conclusion>
+  
+
+
+  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+
+  <xi:include href="noninteractive-exercises/exer-applications-lin-sys.ptx" />
+
+</section>

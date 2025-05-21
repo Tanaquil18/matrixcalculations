@@ -4,7 +4,7 @@
   <title></title>
   <introduction>
     <p>
-      The non-interactive Prepare material, and also the Additional Practice, in this section comes heavily from Gregory Hartman's Fundamentals of Matrix Algebra.
+
     </p>
     <p>
       
@@ -15,231 +15,69 @@
     <title>Prepare</title>
     <p>
         
-      </p>
+    </p>
       
-      <!-- <exercise label="">
-        <title>Row operations</title>
-        <introduction>
-          <p>
-            In the following tasks, perform the row operations described on the given matrix.  
-          </p>
-        </introduction>
-        <task label="row-ops-practice-a">
-        <statement>
-          <p>
-            Consider the matrix 
-            <me>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>.
-            Which matrix is the result of multiplying Row 1 by <m>-2</m> and adding to Row 3?
-          </p>
-        </statement>
-        <choices randomize="yes">
-          <choice correct="no">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</m>
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                This multiplied Row 1 by <m>-2</m> and replaced Row 1.  It didn't do anything to Row 3.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="yes">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ -2\amp -7\amp -1\amp \frac{-7}{2}\\ \end{array} \right]</m> 
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct! 
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ -2\amp -7\amp -1\amp \frac{-7}{2}\\ \end{array} \right]</m> 
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                In the <q>multiply and add</q> row operation, you don't change the row you multiplied by a number; you only change the row you added to.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ -2\amp -5\amp -3 \amp \frac{1}{2}\\ \end{array} \right]</m>
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                We have to do the operation to the entire row, not just the first entry.  
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-      </task>
-      <task label="row-ops-practice-b">
-        <statement>
-          <p>
-            Consider the matrix 
-            <me>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>.
-            Which matrix is the result of multiplying Row 1 by <m>-2</m>?
-          </p>
-        </statement>
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</m>
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp 10\amp 6\amp -1\\ \end{array} \right]</m>
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                This multiplied both Row 1 and Row 3 by <m>-2</m>.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ -2\amp -1\amp -5\amp -7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</m>
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                This multiplied Row 2 by <m>-1</m>.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-      </task>
-      <task label="row-ops-practice-c">
-        <statement>
-          <p>
-            Consider the matrix 
-            <me>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>.
-            Which matrix is the result of interchanging Row 2 and Row 3?
-          </p>
-        </statement>
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ 2\amp 1\amp 5\amp 7\\ \end{array} \right]</m>
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct!
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} 2\amp 1\amp 5\amp 7\\ 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</m>
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                This interchanged Row 1 and Row 2.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                <m>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</m>
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                This replaced Row 2 with a copy of Row 3, but didn't replace Row 3 with a copy of Row 2.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-      </task>
-      </exercise> -->
+  
       
-<reading-questions xml:id="rqs-">
-
-
-    <exercise label="rq--questions"><title>Reflection</title>
-      <statement>
-        <p>
-          Enter a response to both of the following tasks:
-          <ol>
-            <li>
-              <p>
-                Ask a question about the material, either about something you're not sure you fully understand, 
-          or a <q>what if</q> question.
-              </p>
-            </li>
-            <li>
-              <p>
-                Give a percentage from 0 to 100 that reflects how confident you are with the material you 
-                just read about, and give one sentence as to why you feel that way.  0 means you didn't 
-                actually do the reading and 100 means that everything makes sense so far and you think you are 
-                completely ready to engage with the material more deeply.  
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <response />
-    </exercise>
-  </reading-questions>
+    <reading-questions xml:id="rqs-">
+      <exercise label="rq--questions"><title>Reflection</title>
+        <statement>
+          <p>
+            Enter a response to both of the following tasks:
+            <ol>
+              <li>
+                <p>
+                  Ask a question about the material, either about something you're not sure you fully understand, 
+                  or a <q>what if</q> question.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Give a percentage from 0 to 100 that reflects how confident you are with the material you 
+                  just read about, and give one sentence as to why you feel that way.  0 means you didn't 
+                  actually do the reading and 100 means that everything makes sense so far and you think you are 
+                  completely ready to engage with the material more deeply.  
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <response/>
+      </exercise>
+    </reading-questions>
 
   </subsection>
 
    <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
   
 
-    <conclusion xml:id="subsec--summary">
-      <title>Summary</title>
-      <p>
-        <ul>
-          <li>
-            <p>
-                
-            </p>
-          </li>
-          <li>
-            <p>
+  <conclusion xml:id="subsec--summary">
+    <title>Summary</title>
+    <p>
+      <ul>
+        <li>
+          <p>
               
-            </p>
-          </li>
-          <li>
-            <p>
-              
-            </p>
-          </li>
-        </ul>
-      </p>
-    </conclusion>
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+      </ul>
+    </p>
+  </conclusion>
   
 
 
-    <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
 
-    <!-- <xi:include href="noninteractive-exercises/exer-.ptx" /> -->
+  <!-- <xi:include href="noninteractive-exercises/exer-.ptx" /> -->
 
 </section>
