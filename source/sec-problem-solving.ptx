@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-problem-solving" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Problem Solving with Linear Systems</title>
+  <introduction>
+    <p>
+        Most of the problems we've seen so far have started with a given linear system, and we learned how
+        to find the solution(s) to the system by performing Gauss-Jordan elimination and interpreting the 
+        resulting reduced row echelon form. 
+    </p>
+    <p>
+        In this section, we will consider problems where the linear system is <q>hidden</q>, that is, not stated in the problem.
+        We will create a linear system to solve the problem, and we will also need to interpret the possible solution(s)
+         in terms of the context of the question, where it's possible that not all values of the variables make sense.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-problem-solving-bc">
+    <title>Prepare</title>
+    <p>
+        Let's start with an example.   
+    </p>
+    <example xml:id="ex_application_1"><title>Seats in a Baseball Stadium</title>
+        <p>
+            A baseball stadium has seating arranged in three sections. As part of a special promotion, guests will receive 
+            two of three prizes. Guests seated in Sections A and B will receive a hat, guests seated in Sections B and C will 
+            receive a shirt, and guests seated in Sections A and C will receive a hot dog. The promoters told the stadium managers 
+            of their plans, and asked how many seats were in each section. 
+            The managers, thinking they were being helpful, told the promoters they would need <m>800</m> hats, <m>608</m> shirts,
+            and <m>612</m> hot dogs, and they have since been unavailable for further help. How many seats are in each section?
+        </p>
+        <p>
+            In order to answer this question, we need to make we know what is being asked.
+            The final sentence of the question asks: <q>How many seats are in each section?</q>
+        </p>
+        <p>
+            Since we are trying to solve for the number of seats in each section, those should be our variables.
+            Let <m>x_1</m> be the number of seats in Section A, <m>x_2</m> be the number of seats in Section B,
+             and <m>x_3</m> be the number of seats in Section C.
+        </p>
+        <p>
+            Now we use the information given to create linear equations. We were told that hats go to guests 
+            in Sections A and B and that we'll need <m>800</m> hats, which means that
+            <me>
+            x_1+x_2 = 800.
+            </me>
+            Guests in Sections B and C get shirts, which means that 
+            <me>
+              x_2+x_3 = 608
+            </me>.
+            Lastly, guests in Sections A and C get hot dogs, which means that
+            <me>
+              x_1+x_3 = 612
+            </me>.
+            Putting these three equations into a linear system results in
+            <md>
+            <mrow> \amp x_1\amp \amp +  \amp \amp x_2\amp \amp \amp \amp \amp \amp = 800 </mrow>
+            <mrow> \amp \amp \amp \amp \amp x_2\amp  \amp +\amp   \amp x_3\amp \amp = 608 </mrow>
+            <mrow> \amp x_1  \amp \amp +\amp  \amp \amp  \amp \amp  \amp x_3\amp \amp =612 </mrow>
+            </md>,
+            and the corresponding augmented matrix is
+            <me>
+            \left[\begin{array}{cccc} 1\amp 1\amp 0\amp 800\\0\amp 1\amp 1\amp 608\\1\amp 0\amp 1\amp 612\\ \end{array} \right]
+            </me>.
+        </p>
+        <p>
+            To solve our system,
+            we put the augmented matrix into reduced row echelon form and get
+            <me>
+            \left[\begin{array}{cccc} 1\amp 1\amp 0\amp 800\\0\amp 1\amp 1\amp 608\\1\amp 0\amp 1\amp 612\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 402\\0\amp 1\amp 0\amp 398\\0\amp 0\amp 1\amp 210\\ \end{array} \right]
+            </me>.
+        </p>
+        <p>
+            Since <m>x_1=402</m>, this means that Section A has <m>402</m> seats.
+            Similarly, we see that Section B has <m>398</m> seats, and Section C has <m>210</m> seats. 
+            This is a reasonable solution because the number of seats in each section is 
+            nonnegative and a whole number. 
+        </p>
+    </example>
+    <p>
+      Let's recap and generalize our steps.
+      <ol>
+        <li>
+          <p>
+            We made sure we knew what the problem was asking. (<q>How many seats in each section?</q>)
+          </p>
+        </li>
+        <li>
+          <p>
+            We gave variable names to the unknown number of seats in each section. 
+            (Section A had <m>x_1</m> number of seats, Section B had <m>x_2</m>, and Section C had 
+            <m>x_3</m> many seats.)
+          </p>
+        </li>
+        <li>
+          <p>
+            We used the information given in the problem to write down linear equations involving those variables.  
+          </p>
+        </li>
+        <li>
+          <p>
+            We constructed an augmented matrix from the system of linear equations and put the matrix into reduced row echelon form.
+          </p>
+        </li>
+        <li>
+          <p>
+            We made sure the solution obtained from the reduced row echelon form made sense in the context of the problem.  
+            (The number of seats in a section couldn't have been a negative or fractional number like <m>-4.78</m>, for example.)
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>This set of problem-solving steps is important enough to say again.</p>
+    
+    <assemblage xml:id="assemblage-problem-solving-steps">
+      <title>Problem Solving with Linear Systems</title>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Identify what is being asked.
+            </p>
+          </li>
+          <li>
+            <p>
+              Identify and give variable names to any <em>unknown</em> quantities.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use the information in the problem to write down linear equations involving the variables.
+            </p>
+          </li>
+          <li>
+            <p>
+              Form an augmented matrix from the system of linear equations and put the matrix into reduced row echelon form.
+            </p>
+          </li>
+          <li>
+            <p>
+              Check that any solution(s) found from the reduced row echelon form make sense in the context of the problem.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </assemblage>
+
+    <paragraphs xml:id="ex_football">
+      <title>An example with points scoring in football</title>
+      <p>
+        The most common ways to score points in an American football game are by touchdowns, extra points,
+        2-point conversions, and field goals.  
+        Touchdowns are worth <m>6</m> points and are immediately followed by either an extra point worth <m>1</m> point 
+        or by a 2-point conversion worth <m>2</m> points.  Field goals are worth <m>3</m> points.  
+      </p>
+      <p>
+        Suppose that in one game a team had <m>7</m> scoring plays and scored a total of <m>24</m> points.  Each touchdown
+        was followed by a successful extra point or 2-point conversion.  How did the team score their points?
+      </p>
+      <p>
+        Let's go through our problem-solving steps.  We are asked to find how the team scored their points,
+        which means how many touchdowns, extra points, 2-point conversions, and field goals the team had.  
+      </p>
+      <exercise label="mc-what-variables">
+        <statement>
+          <p>
+            What should the variables be?
+          </p>
+        </statement>
+        <choices>
+          <choice correct="no">
+            <statement>
+              <p>
+                the number of points <m>p</m> and the ways of scoring them <m>w</m>.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Incorrect.  The number of points is given in the problem.  
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                number of touchdowns <m>t</m>, number of extra points <m>e</m>, 
+                number of 2-point conversions <m>c</m>, and the number of field goals <m>f</m>.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct.  These are the ways to score and that's what we were asked to find.
+              </p>
+            </feedback>
+          </choice>
+        
+        </choices>
+      </exercise>
+      
+      <example><title>Points in a Football Game</title>
+    <statement>
+      <p>
+        In a football game,
+        teams can score points through touchdowns worth 6 points,
+        extra points
+        (that follow touchdowns)
+        worth <m>1</m> point, two point conversions
+        (that also follow touchdowns)
+        worth <m>2</m> points and field goals, worth <m>3</m> points.
+        You are told that in a football game,
+        the two competing teams scored on <m>7</m> occasions,
+        giving a total score of <m>24</m> points.
+        Each touchdown was followed by either a successful extra point or two point conversion.
+        In what ways were these points scored?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The question asks how the points were scored;
+        we can interpret this as asking how many touchdowns,
+        extra points, two point conversions and field goals were scored.
+        We'll need to assign variable names to our unknowns;
+        let <m>t</m> represent the number of touchdowns scored; let <m>x</m> represent the number of extra points scored,
+        let <m>w</m> represent the number of two point conversions,
+        and let <m>f</m> represent the number of field goals scored.
+      </p>
+      <p>
+        Now we address the issue of writing equations with these variables using the given information.
+        Since we have a total of <m>7</m> scoring occasions, we know that
+        <me>
+          t+x+w+f=7
+        </me>.
+        The total points scored is <m>24</m>; considering the value of each type of scoring opportunity,
+        we can write the equation
+        <me>
+          6t+x+2w+3f = 24
+        </me>.
+        Finally, we know that each touchdown was followed by a successful extra point or two point conversion.
+        This is subtle,
+        but it tells us that the number of touchdowns is equal to the sum of extra points and two point conversions.
+        In other words,
+        <me>
+          t = x+w
+        </me>
+      </p>
+      <p>
+        To solve our problem,
+        we put these equations into a matrix and put the matrix into reduced row echelon form.
+        Doing so, we find
+        <me>
+          \left[\begin{array}{ccccc} 1\amp 1\amp 1\amp 1\amp 7\\ 6\amp 1\amp 2\amp 3\amp 24\\1\amp -1\amp -1\amp 0\amp 0\\ \end{array} \right] \rrefarrow \left[\begin{array}{ccccc}  1\amp 0\amp 0\amp 0.5\amp 3.5\\0\amp 1\amp 0\amp 1\amp 4\\ 0\amp 0\amp 1\amp -0.5\amp -0.5\\ \end{array} \right]
+        </me>
+      </p>
+      <p>
+        Therefore, we know that
+        <md>
+          <mrow>t \amp =3.5-0.5f</mrow>
+          <mrow>x\amp =4-f</mrow>
+          <mrow>w\amp =-0.5+0.5f</mrow>
+        </md>.
+      </p>
+      <p>
+        We recognize that this means there are
+        <q>infinite solutions,</q>
+        but of course most of these will not make sense in the context of a real football game.
+        We must apply some logic to make sense of the situation.
+      </p>
+      <p>
+        Progressing in no particular order,
+        consider the second equation, <m>x = 4-f</m>.
+        In order for us to have a positive number of extra points,
+        we must have <m>f\leq 4</m>.
+        (And of course, we need <m>f\geq 0</m>, too.)
+        Therefore, right away we know we have a total of only <m>5</m> possibilities,
+        where <m>f = 0</m>, <m>1</m>,
+        <m>2</m>, <m>3</m> or <m>4</m>.
+      </p>
+      <p>
+        From the first and third equations,
+        we see that if <m>f</m> is an even number,
+        then <m>t</m> and <m>w</m> will both be fractions
+        (for instance, if <m>f=0</m>, then <m>t = 3.5</m>)
+        which does not make sense.
+        Therefore, we are down to two possible solutions,
+        <m>f = 1</m> and <m>f=3</m>.
+      </p>
+      <p>
+        If <m>f=1</m>, we have <m>3</m> touchdowns, <m>3</m> extra points,
+        no two point conversions, and (of course), <m>1</m> field goal. (Check to make sure that gives <m>24</m> points!) If <m>f=3</m>,
+        then we have <m>2</m> touchdowns, <m>1</m> extra point, <m>1</m> two point conversion, and (of course) <m>3</m> field goals.
+        Again, check to make sure this gives us <m>24</m> points.
+        Also, we should check each solution to make sure that we have a total of <m>7</m> scoring occasions and that each touchdown could be followed by an extra point or a two point conversion.
+      </p>
+    </solution>
+  </example>
+    </paragraphs>
+    <p>
+      Not all applications of linear systems are sports-related.  Let's do another example, one which involves balancing a chemical equation.
+      <fn>All chemical reaction problems found in this text are thanks to Gregory Bard and Gergely Sirokman.</fn> 
+    </p>
+    <example xml:id="ex_balance_chem_eqn"><title>Balancing a chemical equation</title>
+      <p>
+        When chemicals react, no elements are created or destroyed; instead they recombine into different substances.  
+        For example, a blow torch works by burning acetylene <m>C_2H_2</m> in the presence of oxygen <m>O_2</m>.  The result is carbon
+        dioxide <m>CO_2</m> and water <m>H_2 O</m>. 
+        <me>
+          \text{acetylene } + \text{ oxygen } \longrightarrow \text{ carbon dioxide } + \text{ water}
+        </me>
+        If there were <m>4</m> atoms of carbon (as part of the acetylene)
+        before the reaction, then there have to be <m>4</m> atoms of carbon (in the form of carbon dioxide) after the reaction also.  
+      </p>
+      <p>
+        In chemistry, balancing a chemical equation means finding the smallest numbers of the different molecules involved in the reaction. 
+        Most students of chemistry balance equations by guessing and checking, but there's actually a system of linear equations involved, 
+        which means there's an algorithm which always leads to a solution.  
+      </p>
+      <p>
+        Let's balance the blow torch reaction, using our problem solving steps.
+        <me>
+          <fillin characters="1"/>C_2H_2 + <fillin characters="1" />O_2 \longrightarrow <fillin characters="1" /> CO_2 + <fillin characters="1" />H_2O
+        </me>
+      </p>
+      <p>
+        We need to find the coefficients of each of the molecules, so those are the unknowns we should give names to.  Let's say there are
+        <m>x_1</m> many molecules of <m>C_2H_2</m>, and <m>x_2</m> many molecules of <m>O_2</m>, and
+         <m>x_3</m> many molecules of <m>CO_2</m>, and <m>x_4</m> many molecules of <m>H_2O</m>.
+         <me>
+          x_1 \, C_2H_2 + x_2 \, O_2 \longrightarrow x_3 \, CO_2 + x_4 \, H_2O
+        </me>
+      </p>
+      <p>
+        Now we consider each element and the number of atoms there are before and after the reaction.  
+      </p>
+      <p>
+        For carbon, which is denoted by <m>C</m>,
+        there are <m>x_1</m> molecules of <m>C_2H_2</m>, and there are <m>2</m> carbon atoms in each of the <m>x_1</m>
+        molecules, which means there are <m>2x_1</m> carbon atoms before the reaction takes place.  After the reaction 
+        (or after the arrow), there are <m>x_3</m> molecules of <m>CO_2</m> and <m>1</m> carbon atom in each molecule, which means
+        there are <m>x_3</m> many atoms of carbon after the reaction occurs.  
+        Because the number of carbon atoms must be the same before and after the reaction, we get the equation <m>2x_1=x_3</m>, 
+        or restated in the form which has the constant after the equal sign as
+        <me>
+          2x_1-x_3=0
+        </me>.
+      </p>
+      <p>
+        Next, we examine hydrogen, which is denoted by <m>H</m>. Before the reaction there were <m>2</m> hydrogen atoms in each of
+        the <m>x_1</m> molecules of <m>C_2H_2</m>, for a total of <m>2x_1</m> hydrogen atoms. 
+        After the reaction, there are <m>2</m> hydrogen atoms in each of the <m>x_4</m> molecules of <m>H_2O</m>, for a total of <m>2x_4</m> 
+        hydrogen atoms.  This gives the equation <m>2x_1=2x_4</m>, or moving the variables to the left side of the equal sign,
+        <me>
+          2x_1-2x_4=0
+        </me>.
+      </p>
+      <p>
+        Finally, we look at oxygen, denoted by <m>O</m>.  Note that there is oxygen in both of the molecules that appear after the reaction.  
+        There were <m>2x_2</m> oxygen atoms before the reaction took place, and after the reaction there are 
+        <m>2</m> oxygen atoms in each of the <m>x_3</m> molecules of <m>CO_2</m> and <m>1</m> oxygen atom in each of
+        the <m>x_4</m> molecules of <m>H_2O</m>, which means there is a total of
+        <m>2x_3+x_4</m> oxygen atoms after the reaction.  This gives us the equation <m>2x_2=2x_3+x_4</m>, or
+        <me>
+          2x_2-2x_3-x_4=0
+        </me>.
+      </p>
+      <p>
+        We put these equations into an augmented matrix and then reduced row echelon form.
+        <me>
+            \begin{bmatrix} 1\amp 0 \amp -1\amp 0\amp 0\\2\amp 0 \amp 0\amp -2\amp 0\\0\amp 2\amp -2\amp -1\amp 0\\ \end{bmatrix} \rrefarrow \begin{bmatrix} 1\amp 0\amp 0\amp -1 \amp 0\\0\amp 1\amp 0\amp \frac{-5}{2}\amp 0\\0\amp 0\amp 1\amp -2 \amp 0\\ \end{bmatrix}
+        </me>.
+      </p>
+      <p>
+        Note that the variable <m>x_4</m> is free, which means that mathematically, <m>x_4</m> can take on any value.  What happens if we let 
+        <m>x_4=1</m>?  The third row says that <m>x_3-2x_4=0</m>, which means that <m>x_3=2</m>.  The second row says that
+        <m>x_2-\frac{5}{2}x_4=0</m>, which means that <m>x_2=\frac{5}{2}</m>, and the first row says that <m>x_1-x_4=0</m>,
+        which means that <m>x_1=1</m>.
+      </p>
+      <p>
+        However, it is impossible to have a fractional number of molecules.  To clear the denominator, let's multiply by <m>2</m> and let
+        <m>x_4=2</m> instead of <m>1</m>.  Then the particular solution becomes
+        <md>
+          <mrow>x_1 \amp =2 </mrow>
+          <mrow>x_2 \amp =5 </mrow>
+          <mrow>x_3 \amp =4 </mrow>
+          <mrow>x_4 \amp =2 </mrow>
+        </md>
+        and the balanced equation is 
+        <me>
+          2 C_2H_2 + 5 O_2 \longrightarrow 4 CO_2 + 2 H_2 O
+        </me>.
+        Note that it makes sense to have infinitely many solutions to the linear system, since multiplying the 
+        whole thing by <m>2</m> or <m>5</m> or any whole positive number will keep the 
+        reaction balanced with equal numbers of each element's atoms before and after the arrow.
+      </p>
+    </example>
+
+    <!-- do an interactive?  asking about how many atoms are on the left vs the right?  what equation 
+     arises? or move on to an interactive or series of interactive questions involving a sports example or a polynomial?
+     could also do a parsons on the problem solving steps, maybe for a specific example.  
+     I think I like doing a parsons for the last "example" problem type. do a sports problem and a polynomial problem. -->
+
+  
+      
+      
+  
+      
+    <reading-questions xml:id="rqs-problem-solving">
+      <exercise label="parsons-quadratic-through-3-pts" adaptive="yes">
+        <title>Parsons Problem, Equation of a Quadratic Through 3 Points</title>
+        <statement>
+          <p>
+            Select the correct steps to find the equation of the quadratic function that goes through the points <m>(-1,6)</m>, <m>(1,2)</m>
+            and <m>(2,3)</m>.
+          </p>
+        </statement>
+        <!-- a quadratic function has equation y= ax^2+bx+c
+              x and y refer to points in the plane, so the unknowns to solve for are the coefficients a, b, c
+              distractor: x, y, a, b, c, are all unknowns
+              Going through the point (-1,6) means x=-1 and y=6, so 6=a(-1)^2+b(-1)+c
+              Similarly for the two remaining points we get 2=a(1)^2+b(1)+c and 3=a(2)^2+b(2)+c
+              equations are a-b+c=6, a+b+c=2 and 4a+2b+c=3
+              <me>
+          \left[\begin{array}{cccc} 1\amp -1\amp 1\amp 6\\1\amp 1\amp 1\amp 2\\4\amp 2\amp 1\amp 3\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 1\\0\amp 1\amp 0\amp -2\\0\amp 0\amp 1\amp 3\\ \end{array} \right]
+        </me>
+              Solution is a=1, b=-2 and c=3, so y=x^2-2x+3 -->
+        <blocks>
+          <block order="2">
+            <p>
+              A quadratic function has equation <m>y=ax^2+bx+c</m>.
+            </p>
+          </block>
+        <block order="8" correct="no">
+        <p>
+          <m>x</m>, <m>y</m>, <m>a</m>, <m>b</m>, and <m>c</m> are all unknowns which need to be solved for.
+        </p>
+        </block>
+        <block order="5" >
+          <p>
+            <m>x</m> and <m>y</m> refer to <m>(x,y)</m> points in the plane, so the unknowns to solve 
+            for are the coefficients <m>a</m>, <m>b</m>, and <m>c</m>.
+          </p>
+        </block>
+        <block order="7">
+          <p>
+            Passing through the point <m>(-1,6)</m> means the equation holds when <m>x=-1</m> and <m>y=6</m>, 
+            so we get the equation <m>6=a(-1)^2+b(-1)+c </m>.
+          </p>
+        </block>
+        <block order="4">
+          <p>
+            The two remaining points gives us the equations <m>2=a(1)^2+b(1)+c</m> and <m>3=a(2)^2+b(2)+c </m>.
+          </p>
+        </block>
+        <block order="1">
+          <p>
+            Rewriting the set of linear equations gives us 
+            <md>
+              <mrow>a-b+c \amp = 6</mrow>
+              <mrow>a+b+c \amp = 2</mrow>
+              <mrow>4a+2b+c \amp = 3 </mrow>
+            </md>.
+          </p>
+        </block>
+        <block order="3">
+          <p>
+            <me>
+              \left[\begin{array}{cccc} 1\amp -1\amp 1\amp 6\\1\amp 1\amp 1\amp 2\\4\amp 2\amp 1\amp 3\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 1\\0\amp 1\amp 0\amp -2\\0\amp 0\amp 1\amp 3\\ \end{array} \right]
+            </me>
+          </p>
+        </block>
+        <block order="6">
+          <p>
+            The solution is <m>a=1</m>, <m>b=-2</m> and <m>c=3</m>, which is the quadratic function <m>y=x^2-2x+3</m>.
+          </p>
+        </block>
+        </blocks>
+      </exercise>
+
+      <!-- last reading question could be collection of multiple choice.  
+       how many points would we need to solve for degree 3, or degree n? 
+       something about the chemistry example
+       would basketball solution make sense with a negative point value? give math and then context-->
+      <exercise label="rq-problem-solving-questions"><title>Reflection</title>
+        <statement>
+          <p>
+            Enter a response to both of the following tasks:
+            <ol>
+              <li>
+                <p>
+                  Ask a question about the material, either about something you're not sure you fully understand, 
+                  or a <q>what if</q> question.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Give a percentage from 0 to 100 that reflects how confident you are with the material you 
+                  just read about, and give one sentence as to why you feel that way.  0 means you didn't 
+                  actually do the reading and 100 means that everything makes sense so far and you think you are 
+                  completely ready to engage with the material more deeply.  
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <response/>
+      </exercise>
+    </reading-questions>
+
+  </subsection>
+
+   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+  
+
+  <conclusion xml:id="subsec-problem-solving-summary">
+    <title>Summary</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+              
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+      </ul>
+    </p>
+  </conclusion>
+  
+
+
+  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+
+  <xi:include href="noninteractive-exercises/exer-problem-solving.ptx" />
+
+</section>

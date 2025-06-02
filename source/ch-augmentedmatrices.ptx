@@ -14,6 +14,6 @@
   <xi:include href="sec-row-operations.ptx" />
   <xi:include href="sec-rref.ptx" />
   <xi:include href="sec-consistency.ptx" />
-  <xi:include href="sec-problems-lin-sys.ptx" />
+  <xi:include href="sec-problem-solving.ptx" />
 
 </chapter>
