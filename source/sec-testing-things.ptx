@@ -3,6 +3,8 @@
 <section xml:id="sec-testing-things" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Testing things</title>
 
+    <p>Testing deploy.</p>
+
     <image width="50%">
       <shortdescription>demonstrating new domains and ranges improvements</shortdescription>
       <prefigure xmlns="https://prefigure.org"
