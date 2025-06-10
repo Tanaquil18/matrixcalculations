@@ -1927,6 +1927,312 @@ var ptx_lunr_docs = [
   "body": "       Exactly solution for all .   "
 },
 {
+  "id": "sec-problem-solving",
+  "level": "1",
+  "url": "sec-problem-solving.html",
+  "type": "Section",
+  "number": "1.6",
+  "title": "Problem Solving with Linear Systems",
+  "body": " Problem Solving with Linear Systems   Most of the problems we've seen so far have started with a given linear system, and we learned how to find the solution(s) to the system by performing Gauss-Jordan elimination and interpreting the resulting reduced row echelon form.  In this section, we will consider problems where the linear system is hidden , that is, not stated in the problem. We will create a linear system to solve the problem, and we will also need to interpret the possible solution(s) in terms of the context of the question, where it's possible that not all values of the variables make sense.    Prepare  Let's start with an example.  Seats in a Baseball Stadium  A baseball stadium has seating arranged in three sections. As part of a special promotion, guests will receive two of three prizes. Guests seated in Sections A and B will receive a hat, guests seated in Sections B and C will receive a shirt, and guests seated in Sections A and C will receive a hot dog. The promoters told the stadium managers of their plans, and asked how many seats were in each section. The managers, thinking they were being helpful, told the promoters they would need hats, shirts, and hot dogs, and they have since been unavailable for further help. How many seats are in each section?  In order to answer this question, we need to make we know what is being asked. The final sentence of the question asks: How many seats are in each section?   Since we are trying to solve for the number of seats in each section, those should be our variables. Let be the number of seats in Section A, be the number of seats in Section B, and be the number of seats in Section C.  Now we use the information given to create linear equations. We were told that hats go to guests in Sections A and B and that we'll need hats, which means that Guests in Sections B and C get shirts, which means that . Lastly, guests in Sections A and C get hot dogs, which means that . Putting these three equations into a linear system results in , and the corresponding augmented matrix is .  To solve our system, we put the augmented matrix into reduced row echelon form and get .  Since , this means that Section A has seats. Similarly, we see that Section B has seats, and Section C has seats. This is a reasonable solution because the number of seats in each section is nonnegative and a whole number.   Let's recap and generalize our steps.   We made sure we knew what the problem was asking. ( How many seats in each section? )    We gave variable names to the unknown number of seats in each section. (Section A had number of seats, Section B had , and Section C had many seats.)    We used the information given in the problem to write down linear equations involving those variables.    We constructed an augmented matrix from the system of linear equations and put the matrix into reduced row echelon form.    We made sure the solution obtained from the reduced row echelon form made sense in the context of the problem. (The number of seats in a section couldn't have been a negative or fractional number like , for example.)     This set of problem-solving steps is important enough to say again.   Steps for Problem Solving with Linear Systems     Identify what is being asked.    Identify and give variable names to the unknown quantities whose values we need to find.    Use the information in the problem to write down linear equations involving the variables.    Form an augmented matrix from the system of linear equations and put the matrix into reduced row echelon form.    Check that any solution(s) found from the reduced row echelon form make sense in the context of the problem.       An example with points scoring in football  The most common ways to score points in an American football game are by touchdowns, extra points, 2-point conversions, and field goals. Touchdowns are worth points and are immediately followed by either an extra point worth point or by a 2-point conversion worth points. Field goals are worth points.  Suppose that in one game a team had scoring plays and scored a total of points. Each touchdown was followed by a successful extra point or 2-point conversion. How did the team score their points?  Let's go through our problem-solving steps.   Identify what is being asked  We are asked to find how the team scored their points.    Identify unknowns and name variables  We need to focus on the unknowns that answer the question: how many touchdowns, extra points, 2-point conversions, and field goals the team had.     Which quantities should be variables?   An American football team can score points via touchdowns, extra points, 2-point conversions, and field goals. We were given the total points scored and some other information and were asked to find how the team scored its points. What should the variables in this problem be?    The variables should be the things we are solving for, the ways to score points. Other information in the problem will get used as part of the linear equations which involve the variables.     Variables in this problem  The number of touchdowns,  The number of field goals,  The number of extra points,  The number of 2-point conversions,    Not variables in this problem  The number of points,  Points earned through touchdowns,  Extra points and 2-point conversions only come after touchdowns,        Form linear equations involving the variables  We are told that there were scoring plays, so . We were also told that the total number of points is , and that each touchdown is worth points, each field goal is worth , each extra point is worth and each 2-point conversion is worth points. This means that .  There is one more given piece of information: that every touchdown is followed by either an extra point or a 2-point conversion. This means that , or     Form augmented matrix and row reduce  Putting the three equations above into an augmented matrix and row reducing gives us .    Interpret solutions which make sense  The reduced row echelon form has a free variable in the fourth column. Turning each row of the matrix back into an equation results in .  Mathematically, the value of can be any real number, which means there are infinitely many solutions. However, in this problem stood for the number of field goals, and there can't be a negative or fractional number of field goals in a football game. The solution only makes sense if is .  Looking at the second equation , we see a further restriction on the value of . If then the value of is negative, and it doesn't make sense to have a negative number of extra points. Thus must be one of . Can we eliminate still more solutions?  Looking at the first equation , if then , but the number of touchdowns must be a whole number. We also get a fractional number of touchdowns if or if . The only remaining possibilities are or .  If , then and touchdowns each followed by an extra point plus a field goal adds up to points in scoring plays.  If , then and touchdowns, one followed by an extra point and one by a 2-point conversion, plus field goals also adds up to points in scoring plays.      We see that sometimes there's a lot of work involved in interpreting the solutions which make sense. In the case of points in a football game, there were infinitely many solutions which made mathematical sense, but only two solutions which made sense as actual ways to score points meeting the necessary conditions.   Which solutions make sense?     Consider a linear system whose augmented matrix and reduced row echelon form are shown below. Note that this translates back to equations as Which of the following values is a possible solution for , , and ?       , ,     Correct!       , ,     Correct!       , ,     Correct!       , ,     Correct!        A woman has total bills in her purse, consisting of , and bills, giving her a total of . How many bills of each denomination does she have?  Let , and be the number of ones, fives and tens, respectively, and suppose that the problem has been solved as far as Which of the following values is a possible solution for , , and ?       , ,     She can't have one-dollar bills, or five-dollar bills.       , ,     She can't have a negative amount of ten-dollar bills.       , ,     Correct! This is a total of bills, and ones plus fives add up to .  If you had to pick one solution only, this one is likely not the best choice because the wording consisting of might imply that she has at least one of each type of bill.       , ,     Correct! This is a total of bills, and ones, fives, and tens add up to .       Let's do another example, one which involves balancing a chemical equation. All chemical reaction problems found in this text are thanks to Gregory Bard and Gergely Sirokman.   Balancing a chemical equation  When chemicals react, no elements are created or destroyed; instead they recombine into different substances. For example, a blow torch works by burning acetylene in the presence of oxygen . The result is carbon dioxide and water . If there were atoms of carbon (as part of the acetylene) before the reaction, then there have to be atoms of carbon (in the form of carbon dioxide) after the reaction also.  In chemistry, balancing a chemical equation means finding the smallest numbers of the different molecules involved in the reaction. Most students of chemistry balance equations by guessing and checking, but there's actually a system of linear equations involved, which means there's an algorithm which always leads to a solution.  Let's balance the blow torch reaction, using our problem solving steps.   We need to find the coefficients of each of the molecules, so those are the unknowns we should give names to. Let's say there are many molecules of , and many molecules of , and many molecules of , and many molecules of .   Now we consider each element and the number of atoms there are before and after the reaction.  For carbon, which is denoted by , there are molecules of , and there are carbon atoms in each of the molecules, which means there are carbon atoms before the reaction takes place. After the reaction (or after the arrow), there are molecules of and carbon atom in each molecule, which means there are many atoms of carbon after the reaction occurs. Because the number of carbon atoms must be the same before and after the reaction, we get the equation , or restated in the form which has the constant after the equal sign as .  Next, we examine hydrogen, which is denoted by . Before the reaction there were hydrogen atoms in each of the molecules of , for a total of hydrogen atoms. After the reaction, there are hydrogen atoms in each of the molecules of , for a total of hydrogen atoms. This gives the equation , or moving the variables to the left side of the equal sign, .  Finally, we look at oxygen, denoted by . Note that there is oxygen in both of the molecules that appear after the reaction. There were oxygen atoms before the reaction took place, and after the reaction there are oxygen atoms in each of the molecules of and oxygen atom in each of the molecules of , which means there is a total of oxygen atoms after the reaction. This gives us the equation , or .  We put these equations into an augmented matrix and then find the reduced row echelon form .  Note that the variable is free, which means that mathematically, can take on any value. What happens if we let ? The third row says that , which means that . The second row says that , which means that , and the first row says that , which means that .  However, it is impossible to have a fractional number of molecules. To clear the denominator, let's multiply by and let instead of . Then the particular solution becomes and the balanced equation is . Note that it makes sense to have infinitely many solutions to the linear system, since multiplying the whole thing by or or any whole positive number will keep the reaction balanced with equal numbers of each element's atoms before and after the arrow.      Parsons Problem, Equation of a Quadratic Through 3 Points   Select the correct steps to find the equation of the quadratic function that goes through the points , and .      A quadratic function has equation .     , , , , and are all unknowns which need to be solved for.     and refer to points in the plane, so the unknowns to solve for are the coefficients , , and .    Passing through the point means the equation holds when and , so we get the equation .    The two remaining points gives us the equations and .    Rewriting the set of linear equations gives us .    Putting the equations into an augmented matrix and then row reducing gives .    The solution is , and , which is the quadratic function .      Parsons Problem, Balancing a Chemical Equation   Select the steps to balance the chemical equation below.       We are looking for the values of such that     Looking at the element calcium , we have atoms before the reaction and atoms of calcium after the reaction takes place, so .    Similarly, looking at the number of atoms of oxygen before and after the reaction gives us the equation , while examining hydrogen gives the equation , and considering phosphorus results in .    Putting these equations into an augmented matrix and then row reducing gives     Turning the reduced row echelon form back into equations results in     Letting yields a final answer of .    Letting yields a final answer of .      Reflection   Enter a response to both of the following tasks:   Ask a question about the material, either about something you're not sure you fully understand, or a what if question.    Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way. 0 means you didn't actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.          Participate     Be able to use linear systems and reduced row echelon form to solve problems in different contexts where the linear system is not immediately apparent.    Be able to identify unknowns and constraints , or in other words, variables and equations involving those variables.    Build on our past work interpreting solutions to a linear system from the reduced row echelon form by further restricting to solutions which make sense in the context of a given problem.         Suppose we know that in a football game there were points scored from scoring occasions and also that the number of successful extra point kicks was equal to the number of successful two point conversions. Find all ways in which the points may have been scored in this game.    The only way which meets all the conditions and makes sense is by scoring field goals.    The augmented matrix from this system is . From this we find the solution .  The only time each of these variables are nonnegative integers is when or . If , then we have touchdowns, extra points and two point conversions (and field goals); this doesn't make sense since the extra points and two point conversions follow touchdowns. If , then we have no touchdowns, extra points or two point conversions (just field goals). This is the only solution; all points were scored from field goals.      Pure elemental phosphorous and hypochlorous acid react in water to make phosphoric acid and hydrochloric acid . Balance the chemical equation .    The balanced equation is .    We are looking for . Consider the number of atoms of each element before and after the reaction. Turning this system into an augmented matrix and row reducing results in We want the smallest possible numbers such that no value is negative or fractional, so let . Then and the balanced equation is .        You might know that two points determine a line. That's because in a line there are two unknowns: the coefficient of the term and the constant term. Note that in we needed three points to determine a specific quadratic function because there were three unknowns: the coefficient of the term, the coefficient of the term and the coefficient of the constant term.     Find the smallest degree polynomial which goes through the points , , and .           Go through the same steps to attempt to find a quadratic function through the points , , and . What do you get, and why does the answer make sense?    The coefficient of the term is , giving the linear function . The three given points all lie on a line.       In a basketball game, where points are scored either by a point shot, a point shot or a point free throw, there were points scored from successful shots. Find all ways in which the points may have been scored in this game.    There are possible solutions:    free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots       Let , and represent the number of free throws, 2 point and 3 point shots taken. The augmented matrix from this system is . From this we find the solution .  In order for and to be nonnegative, we need . Thus there are different scenarios: the first is where three point shots are taken, no free throws, and two point shots; the last is where three point shots are taken, free throws, and no two point shots.       Summary     Many problems in different areas of sports, science, computer science, artificial intelligence and machine learning, and other areas can be solved using linear systems.    These problems often don't appear already phrased in terms of variables and linear equations, but there are problem solving steps we can use to frame the problem in terms of linear systems and an augmented matrix we can put into reduced row echelon form.    Interpreting the possible solutions in terms of which ones make sense in the context of the problem is necessary and often quite involved.       Additional Practice    In the following exercises, find the solution of the given problem by:   creating an appropriate system of linear equations    forming the augmented matrix that corresponds to this system    putting the augmented matrix into reduced row echelon form    interpreting the reduced row echelon form of the matrix as a solution        A farmer looks out his window at his chickens and pigs. He tells his daughter that he sees heads and legs. How many chickens and pigs does the farmer have?     chickens and pigs      A lady buys trinkets at a yard sale. The cost of each trinket is either or . If she spends , how many of each type of trinket does she buy?     of the trinkets, of the trinkets      A carpenter can make two sizes of table, grande and venti. The grande table requires table legs and table top; the venti requires table legs and table tops. After doing work, he counts up spare parts in his warehouse and realizes that he has table tops left over, and legs. How many tables of each kind can he build and use up exactly all of his materials?     grande tables, venti tables      A jar contains marbles. We know there are twice as many green marbles as red; that the number of blue and yellow marbles together is the same as the number of green; and that three times the number of yellow marbles together with the red marbles gives the same numbers as the blue marbles. How many of each color of marble are in the jar?     blue, green, red, yellow      A rescue mission has sandwiches, bags of chips and cookies. They know from experience that men will eat sandwiches, bag of chips and cookies; women will eat one sandwich, a bag of chips and two cookies; kids will eat half a sandwhich, a bag of chips and cookies. If they want to use all their food up, how many men, women and kids can they feed?     men, women, kids       In the following exercises, find the polynomial with the smallest degree that goes through the given points.      and             and            Find the smallest degree polynomial which goes through the points , and .            , and             , and             , and             , , and             , , and             , , and             The general exponential function has the form , where and are constants and is Euler's constant ( 2.718). We want to find the equation of the exponential function that goes through the points and .   Show why we cannot simply substitute in values for and in the equation and solve using the techniques we used for polynomials.    Show how the equality leads us to the equation , which is linear in .    Use the techniques we developed to solve for the unknowns and .    Knowing , find ; find the exponential function that goes through the points and .              Substitution yields the equations and ; these are not linear equations.     implies that .    Plugging in the points for and in the equation , we have equations . To solve, . Therefore and .    Since , we know that . Thus our exponential function is .        In a football game, points are scored from scoring occasions. There are more successful extra point kicks than successful two point conversions. Find all ways in which the points may have been scored in this game.    The augmented matrix from this system is . From this we find the solution .  The only time each of these variables are nonnegative integers is when or . If , then we have touchdowns, extra points and two point conversion (no field goals). If , then we have touchdowns, extra points and no two point conversions (and field goals).      In a basketball game, where points are scored either by a point shot, a point shot or a point free throw, there were points scored from successful shots. Find all ways in which the points may have been scored in this game.    Let , and represent the number of free throws, 2 point and 3 point shots taken. The augmented matrix from this system is . From this we find the solution .  In order for to be nonnegative, we need . Thus there are different scenerios: the first is where three point shots are taken ( , free throws and two point shots; the last is where three point shots are taken, free throws, and no two point shots.      Describe the equations of the linear functions that go through the point . Give examples.    Let ; all linear functions through come in the form . Two possible examples could be: setting yields ; and setting yields .      Describe the equations of the linear functions that go through the point . Give examples.    Let ; all linear functions through come in the form . Two possible examples could be: setting yields ; and setting yields .      Describe the equations of the quadratic functions that go through the points and . Give examples.    Let ; we find that and . Two possible examples could be: setting yields ; and setting yields .      Describe the equations of the quadratic functions that go through the points and . Give examples.    Let ; we find that and . Two possible examples could be: setting yields ; and setting yields .     "
+},
+{
+  "id": "ex_application_1",
+  "level": "2",
+  "url": "sec-problem-solving.html#ex_application_1",
+  "type": "Example",
+  "number": "1.6.1",
+  "title": "Seats in a Baseball Stadium.",
+  "body": "Seats in a Baseball Stadium  A baseball stadium has seating arranged in three sections. As part of a special promotion, guests will receive two of three prizes. Guests seated in Sections A and B will receive a hat, guests seated in Sections B and C will receive a shirt, and guests seated in Sections A and C will receive a hot dog. The promoters told the stadium managers of their plans, and asked how many seats were in each section. The managers, thinking they were being helpful, told the promoters they would need hats, shirts, and hot dogs, and they have since been unavailable for further help. How many seats are in each section?  In order to answer this question, we need to make we know what is being asked. The final sentence of the question asks: How many seats are in each section?   Since we are trying to solve for the number of seats in each section, those should be our variables. Let be the number of seats in Section A, be the number of seats in Section B, and be the number of seats in Section C.  Now we use the information given to create linear equations. We were told that hats go to guests in Sections A and B and that we'll need hats, which means that Guests in Sections B and C get shirts, which means that . Lastly, guests in Sections A and C get hot dogs, which means that . Putting these three equations into a linear system results in , and the corresponding augmented matrix is .  To solve our system, we put the augmented matrix into reduced row echelon form and get .  Since , this means that Section A has seats. Similarly, we see that Section B has seats, and Section C has seats. This is a reasonable solution because the number of seats in each section is nonnegative and a whole number.  "
+},
+{
+  "id": "cardsort-what-variables",
+  "level": "2",
+  "url": "sec-problem-solving.html#cardsort-what-variables",
+  "type": "Activity",
+  "number": "1.6.2",
+  "title": "Which quantities should be variables?",
+  "body": "Which quantities should be variables?   An American football team can score points via touchdowns, extra points, 2-point conversions, and field goals. We were given the total points scored and some other information and were asked to find how the team scored its points. What should the variables in this problem be?    The variables should be the things we are solving for, the ways to score points. Other information in the problem will get used as part of the linear equations which involve the variables.     Variables in this problem  The number of touchdowns,  The number of field goals,  The number of extra points,  The number of 2-point conversions,    Not variables in this problem  The number of points,  Points earned through touchdowns,  Extra points and 2-point conversions only come after touchdowns,    "
+},
+{
+  "id": "valid-solutions",
+  "level": "2",
+  "url": "sec-problem-solving.html#valid-solutions",
+  "type": "Activity",
+  "number": "1.6.3",
+  "title": "Which solutions make sense?",
+  "body": " Which solutions make sense?     Consider a linear system whose augmented matrix and reduced row echelon form are shown below. Note that this translates back to equations as Which of the following values is a possible solution for , , and ?       , ,     Correct!       , ,     Correct!       , ,     Correct!       , ,     Correct!        A woman has total bills in her purse, consisting of , and bills, giving her a total of . How many bills of each denomination does she have?  Let , and be the number of ones, fives and tens, respectively, and suppose that the problem has been solved as far as Which of the following values is a possible solution for , , and ?       , ,     She can't have one-dollar bills, or five-dollar bills.       , ,     She can't have a negative amount of ten-dollar bills.       , ,     Correct! This is a total of bills, and ones plus fives add up to .  If you had to pick one solution only, this one is likely not the best choice because the wording consisting of might imply that she has at least one of each type of bill.       , ,     Correct! This is a total of bills, and ones, fives, and tens add up to .      "
+},
+{
+  "id": "ex_balance_chem_eqn",
+  "level": "2",
+  "url": "sec-problem-solving.html#ex_balance_chem_eqn",
+  "type": "Example",
+  "number": "1.6.4",
+  "title": "Balancing a chemical equation.",
+  "body": "Balancing a chemical equation  When chemicals react, no elements are created or destroyed; instead they recombine into different substances. For example, a blow torch works by burning acetylene in the presence of oxygen . The result is carbon dioxide and water . If there were atoms of carbon (as part of the acetylene) before the reaction, then there have to be atoms of carbon (in the form of carbon dioxide) after the reaction also.  In chemistry, balancing a chemical equation means finding the smallest numbers of the different molecules involved in the reaction. Most students of chemistry balance equations by guessing and checking, but there's actually a system of linear equations involved, which means there's an algorithm which always leads to a solution.  Let's balance the blow torch reaction, using our problem solving steps.   We need to find the coefficients of each of the molecules, so those are the unknowns we should give names to. Let's say there are many molecules of , and many molecules of , and many molecules of , and many molecules of .   Now we consider each element and the number of atoms there are before and after the reaction.  For carbon, which is denoted by , there are molecules of , and there are carbon atoms in each of the molecules, which means there are carbon atoms before the reaction takes place. After the reaction (or after the arrow), there are molecules of and carbon atom in each molecule, which means there are many atoms of carbon after the reaction occurs. Because the number of carbon atoms must be the same before and after the reaction, we get the equation , or restated in the form which has the constant after the equal sign as .  Next, we examine hydrogen, which is denoted by . Before the reaction there were hydrogen atoms in each of the molecules of , for a total of hydrogen atoms. After the reaction, there are hydrogen atoms in each of the molecules of , for a total of hydrogen atoms. This gives the equation , or moving the variables to the left side of the equal sign, .  Finally, we look at oxygen, denoted by . Note that there is oxygen in both of the molecules that appear after the reaction. There were oxygen atoms before the reaction took place, and after the reaction there are oxygen atoms in each of the molecules of and oxygen atom in each of the molecules of , which means there is a total of oxygen atoms after the reaction. This gives us the equation , or .  We put these equations into an augmented matrix and then find the reduced row echelon form .  Note that the variable is free, which means that mathematically, can take on any value. What happens if we let ? The third row says that , which means that . The second row says that , which means that , and the first row says that , which means that .  However, it is impossible to have a fractional number of molecules. To clear the denominator, let's multiply by and let instead of . Then the particular solution becomes and the balanced equation is . Note that it makes sense to have infinitely many solutions to the linear system, since multiplying the whole thing by or or any whole positive number will keep the reaction balanced with equal numbers of each element's atoms before and after the arrow.  "
+},
+{
+  "id": "parsons-quadratic-through-3-pts",
+  "level": "2",
+  "url": "sec-problem-solving.html#parsons-quadratic-through-3-pts",
+  "type": "Reading Question",
+  "number": "1",
+  "title": "Parsons Problem, Equation of a Quadratic Through 3 Points.",
+  "body": " Parsons Problem, Equation of a Quadratic Through 3 Points   Select the correct steps to find the equation of the quadratic function that goes through the points , and .      A quadratic function has equation .     , , , , and are all unknowns which need to be solved for.     and refer to points in the plane, so the unknowns to solve for are the coefficients , , and .    Passing through the point means the equation holds when and , so we get the equation .    The two remaining points gives us the equations and .    Rewriting the set of linear equations gives us .    Putting the equations into an augmented matrix and then row reducing gives .    The solution is , and , which is the quadratic function .    "
+},
+{
+  "id": "parsons-balance-equation-1",
+  "level": "2",
+  "url": "sec-problem-solving.html#parsons-balance-equation-1",
+  "type": "Reading Question",
+  "number": "2",
+  "title": "Parsons Problem, Balancing a Chemical Equation.",
+  "body": " Parsons Problem, Balancing a Chemical Equation   Select the steps to balance the chemical equation below.       We are looking for the values of such that     Looking at the element calcium , we have atoms before the reaction and atoms of calcium after the reaction takes place, so .    Similarly, looking at the number of atoms of oxygen before and after the reaction gives us the equation , while examining hydrogen gives the equation , and considering phosphorus results in .    Putting these equations into an augmented matrix and then row reducing gives     Turning the reduced row echelon form back into equations results in     Letting yields a final answer of .    Letting yields a final answer of .    "
+},
+{
+  "id": "rq-problem-solving-questions",
+  "level": "2",
+  "url": "sec-problem-solving.html#rq-problem-solving-questions",
+  "type": "Reading Question",
+  "number": "3",
+  "title": "Reflection.",
+  "body": "Reflection   Enter a response to both of the following tasks:   Ask a question about the material, either about something you're not sure you fully understand, or a what if question.    Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way. 0 means you didn't actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.       "
+},
+{
+  "id": "ws-problem-solving-2",
+  "level": "2",
+  "url": "sec-problem-solving.html#ws-problem-solving-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "   Be able to use linear systems and reduced row echelon form to solve problems in different contexts where the linear system is not immediately apparent.    Be able to identify unknowns and constraints , or in other words, variables and equations involving those variables.    Build on our past work interpreting solutions to a linear system from the reduced row echelon form by further restricting to solutions which make sense in the context of a given problem.    "
+},
+{
+  "id": "ws-problem-solving-3-1",
+  "level": "2",
+  "url": "sec-problem-solving.html#ws-problem-solving-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose we know that in a football game there were points scored from scoring occasions and also that the number of successful extra point kicks was equal to the number of successful two point conversions. Find all ways in which the points may have been scored in this game.    The only way which meets all the conditions and makes sense is by scoring field goals.    The augmented matrix from this system is . From this we find the solution .  The only time each of these variables are nonnegative integers is when or . If , then we have touchdowns, extra points and two point conversions (and field goals); this doesn't make sense since the extra points and two point conversions follow touchdowns. If , then we have no touchdowns, extra points or two point conversions (just field goals). This is the only solution; all points were scored from field goals.   "
+},
+{
+  "id": "ws-problem-solving-3-2",
+  "level": "2",
+  "url": "sec-problem-solving.html#ws-problem-solving-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Pure elemental phosphorous and hypochlorous acid react in water to make phosphoric acid and hydrochloric acid . Balance the chemical equation .    The balanced equation is .    We are looking for . Consider the number of atoms of each element before and after the reaction. Turning this system into an augmented matrix and row reducing results in We want the smallest possible numbers such that no value is negative or fractional, so let . Then and the balanced equation is .   "
+},
+{
+  "id": "ws-problem-solving-4-1",
+  "level": "2",
+  "url": "sec-problem-solving.html#ws-problem-solving-4-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  You might know that two points determine a line. That's because in a line there are two unknowns: the coefficient of the term and the constant term. Note that in we needed three points to determine a specific quadratic function because there were three unknowns: the coefficient of the term, the coefficient of the term and the coefficient of the constant term.     Find the smallest degree polynomial which goes through the points , , and .           Go through the same steps to attempt to find a quadratic function through the points , , and . What do you get, and why does the answer make sense?    The coefficient of the term is , giving the linear function . The three given points all lie on a line.    "
+},
+{
+  "id": "ws-problem-solving-4-2",
+  "level": "2",
+  "url": "sec-problem-solving.html#ws-problem-solving-4-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  In a basketball game, where points are scored either by a point shot, a point shot or a point free throw, there were points scored from successful shots. Find all ways in which the points may have been scored in this game.    There are possible solutions:    free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots     free throws, two-point shots, three-point shots       Let , and represent the number of free throws, 2 point and 3 point shots taken. The augmented matrix from this system is . From this we find the solution .  In order for and to be nonnegative, we need . Thus there are different scenarios: the first is where three point shots are taken, no free throws, and two point shots; the last is where three point shots are taken, free throws, and no two point shots.   "
+},
+{
+  "id": "exer-problem-solving-2-2",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-2-2",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  A farmer looks out his window at his chickens and pigs. He tells his daughter that he sees heads and legs. How many chickens and pigs does the farmer have?     chickens and pigs   "
+},
+{
+  "id": "exer-problem-solving-2-3",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-2-3",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A lady buys trinkets at a yard sale. The cost of each trinket is either or . If she spends , how many of each type of trinket does she buy?     of the trinkets, of the trinkets   "
+},
+{
+  "id": "exer-problem-solving-2-4",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-2-4",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  A carpenter can make two sizes of table, grande and venti. The grande table requires table legs and table top; the venti requires table legs and table tops. After doing work, he counts up spare parts in his warehouse and realizes that he has table tops left over, and legs. How many tables of each kind can he build and use up exactly all of his materials?     grande tables, venti tables   "
+},
+{
+  "id": "exer-problem-solving-2-5",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-2-5",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  A jar contains marbles. We know there are twice as many green marbles as red; that the number of blue and yellow marbles together is the same as the number of green; and that three times the number of yellow marbles together with the red marbles gives the same numbers as the blue marbles. How many of each color of marble are in the jar?     blue, green, red, yellow   "
+},
+{
+  "id": "exer-problem-solving-2-6",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-2-6",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  A rescue mission has sandwiches, bags of chips and cookies. They know from experience that men will eat sandwiches, bag of chips and cookies; women will eat one sandwich, a bag of chips and two cookies; kids will eat half a sandwhich, a bag of chips and cookies. If they want to use all their food up, how many men, women and kids can they feed?     men, women, kids   "
+},
+{
+  "id": "exer-problem-solving-3-2",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-2",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "   and         "
+},
+{
+  "id": "exer-problem-solving-3-3",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-3",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "   and         "
+},
+{
+  "id": "exer-problem-solving-3-4",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-4",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  Find the smallest degree polynomial which goes through the points , and .        "
+},
+{
+  "id": "exer-problem-solving-3-5",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-5",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": "   , and         "
+},
+{
+  "id": "exer-problem-solving-3-6",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-6",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": "   , and         "
+},
+{
+  "id": "exer-problem-solving-3-7",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-7",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": "   , and         "
+},
+{
+  "id": "exer-problem-solving-3-8",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-8",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": "   , , and         "
+},
+{
+  "id": "exer-problem-solving-3-9",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-9",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": "   , , and         "
+},
+{
+  "id": "exer-problem-solving-3-10",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-3-10",
+  "type": "Exercise",
+  "number": "14",
+  "title": "",
+  "body": "   , , and         "
+},
+{
+  "id": "exer-problem-solving-4",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-4",
+  "type": "Exercise",
+  "number": "15",
+  "title": "",
+  "body": "  The general exponential function has the form , where and are constants and is Euler's constant ( 2.718). We want to find the equation of the exponential function that goes through the points and .   Show why we cannot simply substitute in values for and in the equation and solve using the techniques we used for polynomials.    Show how the equality leads us to the equation , which is linear in .    Use the techniques we developed to solve for the unknowns and .    Knowing , find ; find the exponential function that goes through the points and .              Substitution yields the equations and ; these are not linear equations.     implies that .    Plugging in the points for and in the equation , we have equations . To solve, . Therefore and .    Since , we know that . Thus our exponential function is .     "
+},
+{
+  "id": "exer-problem-solving-5",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-5",
+  "type": "Exercise",
+  "number": "16",
+  "title": "",
+  "body": "  In a football game, points are scored from scoring occasions. There are more successful extra point kicks than successful two point conversions. Find all ways in which the points may have been scored in this game.    The augmented matrix from this system is . From this we find the solution .  The only time each of these variables are nonnegative integers is when or . If , then we have touchdowns, extra points and two point conversion (no field goals). If , then we have touchdowns, extra points and no two point conversions (and field goals).   "
+},
+{
+  "id": "exer-problem-solving-6",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-6",
+  "type": "Exercise",
+  "number": "17",
+  "title": "",
+  "body": "  In a basketball game, where points are scored either by a point shot, a point shot or a point free throw, there were points scored from successful shots. Find all ways in which the points may have been scored in this game.    Let , and represent the number of free throws, 2 point and 3 point shots taken. The augmented matrix from this system is . From this we find the solution .  In order for to be nonnegative, we need . Thus there are different scenerios: the first is where three point shots are taken ( , free throws and two point shots; the last is where three point shots are taken, free throws, and no two point shots.   "
+},
+{
+  "id": "exer-problem-solving-7",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-7",
+  "type": "Exercise",
+  "number": "18",
+  "title": "",
+  "body": "  Describe the equations of the linear functions that go through the point . Give examples.    Let ; all linear functions through come in the form . Two possible examples could be: setting yields ; and setting yields .   "
+},
+{
+  "id": "exer-problem-solving-8",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-8",
+  "type": "Exercise",
+  "number": "19",
+  "title": "",
+  "body": "  Describe the equations of the linear functions that go through the point . Give examples.    Let ; all linear functions through come in the form . Two possible examples could be: setting yields ; and setting yields .   "
+},
+{
+  "id": "exer-problem-solving-9",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-9",
+  "type": "Exercise",
+  "number": "20",
+  "title": "",
+  "body": "  Describe the equations of the quadratic functions that go through the points and . Give examples.    Let ; we find that and . Two possible examples could be: setting yields ; and setting yields .   "
+},
+{
+  "id": "exer-problem-solving-10",
+  "level": "2",
+  "url": "sec-problem-solving.html#exer-problem-solving-10",
+  "type": "Exercise",
+  "number": "21",
+  "title": "",
+  "body": "  Describe the equations of the quadratic functions that go through the points and . Give examples.    Let ; we find that and . Two possible examples could be: setting yields ; and setting yields .   "
+},
+{
   "id": "sec-testing-things",
   "level": "1",
   "url": "sec-testing-things.html",
