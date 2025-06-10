@@ -289,51 +289,137 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <article class="objectives goal-like" id="ws-rref-2"><h4 class="heading"><span class="type">Objectives</span></h4>
 <ul class="disc" id="ws-rref-2-1">
-<li id="ws-rref-2-1-1"><div class="para" id="ws-rref-2-1-1-1">Identify matrices in reduced row echelon form and row echelon form</div></li>
-<li id="ws-rref-2-1-2"><div class="para" id="ws-rref-2-1-2-1">Use Gauss-Jordan elimination to put matrices into reduced row echelon form</div></li>
-</ul></article><section class="onepage" id="ws-rref-3"><article class="exercise exercise-like" id="ws-rref-3-1"><h4 class="heading">
+<li id="ws-rref-2-1-1">
+<div class="para" id="ws-rref-2-1-1-1">Identify matrices in reduced row echelon form and row echelon form<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-rref-2-1-1" title="Copy permalink for Objective">🔗</a></div>
+</li>
+<li id="ws-rref-2-1-2">
+<div class="para" id="ws-rref-2-1-2-1">Use Gauss-Jordan elimination to put matrices into reduced row echelon form<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-rref-2-1-2" title="Copy permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives"><a href="#ws-rref-2" title="Copy permalink for Objectives">🔗</a></div></article><section class="onepage" id="ws-rref-3"><article class="exercise exercise-like" id="ws-rref-3-1"><h4 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Why rref?</span>
 </h4>
-<div class="para" id="ws-rref-3-1-2-1">Write the associated system of linear equations for each of the matrices below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
-<div class="sbspanel top" style="width:37.5%;"><div class="para" id="ws-rref-3-1-2-2-1"><span class="process-math">\(\begin{bmatrix} 1 \amp 2 \amp 3 \amp 4 \\ 2 \amp -1 \amp 3 \amp 0 \\ 3 \amp 1 \amp 5 \amp 3 \end{bmatrix}\)</span></div></div>
-<div class="sbspanel top" style="width:37.5%;"><div class="para" id="ws-rref-3-1-2-2-2"><span class="process-math">\(\begin{bmatrix} 1 \amp 0 \amp 0 \amp 4 \\ 0 \amp 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 3 \end{bmatrix}\)</span></div></div>
-</div></div> <div class="para" id="ws-rref-3-1-2-3">Which system of equations would you prefer to be asked to solve on an exam?</div>
-<div class="workspace" data-space="1.2in"></div></article><article class="exercise exercise-like" id="ws-rref-3-2"><h4 class="heading">
+<div class="para" id="ws-rref-3-1-2-1">Write the associated system of linear equations for each of the matrices below.<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
+<div class="sbspanel top" style="width:37.5%;"><div class="para" id="ws-rref-3-1-2-2-1">
+<span class="process-math">\(\begin{bmatrix} 1 \amp 2 \amp 3 \amp 4 \\ 2 \amp -1 \amp 3 \amp 0 \\ 3 \amp 1 \amp 5 \amp 3 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-1-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel top" style="width:37.5%;"><div class="para" id="ws-rref-3-1-2-2-2">
+<span class="process-math">\(\begin{bmatrix} 1 \amp 0 \amp 0 \amp 4 \\ 0 \amp 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 3 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-1-2-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div> <div class="para" id="ws-rref-3-1-2-3">Which system of equations would you prefer to be asked to solve on an exam?<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-1-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1.2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1: Why rref?"><a href="#ws-rref-3-1" title="Copy permalink for Worksheet Exercise 1: Why rref?">🔗</a></div></article><article class="exercise exercise-like" id="ws-rref-3-2"><h4 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Gauss-Jordan algorithm.</span>
 </h4>
-<div class="para" id="ws-rref-3-2-2-1">Use Gauss-Jordan elimination to put each of the matrices below into reduced row echelon form.</div> <div class="para logical" id="ws-rref-3-2-2-2"><ol class="lower-alpha lower-alpha-level-1 cols3" id="ws-rref-3-2-2-2-1">
-<li id="ws-rref-3-2-2-2-1-1"><div class="para logical" id="ws-rref-3-2-2-2-1-1-1"><div class="displaymath process-math">
+<div class="para" id="ws-rref-3-2-2-1">Use Gauss-Jordan elimination to put each of the matrices below into reduced row echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="ws-rref-3-2-2-2">
+<ol class="lower-alpha lower-alpha-level-1 cols3" id="ws-rref-3-2-2-2-1">
+<li id="ws-rref-3-2-2-2-1-1">
+<div class="para logical" id="ws-rref-3-2-2-2-1-1-1">
+<div class="displaymath process-math">
 \begin{equation*}
 \begin{bmatrix} 2 \amp 5 \amp -3 \\ 5 \amp -5 \amp -25 \end{bmatrix} 
 \end{equation*}
-</div></div></li>
-<li id="ws-rref-3-2-2-2-1-2"><div class="para logical" id="ws-rref-3-2-2-2-1-2-1"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-2-2-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#ws-rref-3-2-2-2-1-1" title="Copy permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="ws-rref-3-2-2-2-1-2">
+<div class="para logical" id="ws-rref-3-2-2-2-1-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 \begin{bmatrix} 2 \amp 5 \amp -3 \\ 2 \amp 5 \amp 1 \end{bmatrix} 
 \end{equation*}
-</div></div></li>
-<li id="ws-rref-3-2-2-2-1-3"><div class="para logical" id="ws-rref-3-2-2-2-1-3-1"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-2-2-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#ws-rref-3-2-2-2-1-2" title="Copy permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="ws-rref-3-2-2-2-1-3">
+<div class="para logical" id="ws-rref-3-2-2-2-1-3-1">
+<div class="displaymath process-math">
 \begin{equation*}
 \begin{bmatrix} 1\amp 2 \amp 3 \amp 5 \\ 0 \amp 4 \amp 5 \amp 7 \\ 1 \amp 6 \amp 9 \amp 11 \end{bmatrix} 
 \end{equation*}
-</div></div></li>
-</ol></div>
-<div class="workspace" data-space="4in"></div></article></section><section class="onepage" id="ws-rref-4"><article class="exercise exercise-like" id="ws-rref-4-1"><h4 class="heading">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-2-2-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.c"><a href="#ws-rref-3-2-2-2-1-3" title="Copy permalink for Item 2.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-3-2-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="4in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2: Gauss-Jordan algorithm"><a href="#ws-rref-3-2" title="Copy permalink for Worksheet Exercise 2: Gauss-Jordan algorithm">🔗</a></div></article></section><section class="onepage" id="ws-rref-4"><article class="exercise exercise-like" id="ws-rref-4-1"><h4 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Form of matrices.</span>
 </h4>
-<div class="para" id="ws-rref-4-1-2-1">For each of the following matrices, say if it is in reduced row echelon form.  If it isn’t, say whether it is in row echelon form or if it’s in neither form.</div> <div class="para logical" id="ws-rref-4-1-2-2"><ol class="lower-alpha lower-alpha-level-1 cols2" id="ws-rref-4-1-2-2-1">
-<li id="ws-rref-4-1-2-2-1-1"><div class="para" id="ws-rref-4-1-2-2-1-1-1"><span class="process-math">\(\displaystyle \left[\begin{array}{ccc} 1\amp 0 \amp -3\\0\amp 1 \amp 1\\ \end{array} \right]\)</span></div></li>
-<li id="ws-rref-4-1-2-2-1-2"><div class="para" id="ws-rref-4-1-2-2-1-2-1"><span class="process-math">\(\displaystyle \left[\begin{array}{cc} 1\amp 2\\0\amp 0\\ \end{array} \right]\)</span></div></li>
-<li id="rrefsys1"><div class="para" id="rrefsys1-1"><span class="process-math">\(\displaystyle \left[\begin{array}{ccc} 1\amp 1 \amp -3\\0\amp 0 \amp 1\\ \end{array} \right]\)</span></div></li>
-<li id="ws-rref-4-1-2-2-1-4"><div class="para" id="ws-rref-4-1-2-2-1-4-1"><span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp -3\\0\amp 0 \amp 0\\ 0 \amp 1 \amp 3 \end{bmatrix}\)</span></div></li>
-<li id="ws-rref-4-1-2-2-1-5"><div class="para" id="ws-rref-4-1-2-2-1-5-1"><span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp 0 \amp 4 \amp 5 \\0\amp 0 \amp 1 \amp 2 \amp 7 \\ 0 \amp 1 \amp 0 \amp 3 \amp 11 \end{bmatrix}\)</span></div></li>
-<li id="ws-rref-4-1-2-2-1-6"><div class="para" id="ws-rref-4-1-2-2-1-6-1"><span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp 0 \amp 5 \\0\amp 4 \amp 0 \amp 7 \\ 0 \amp 0 \amp 1 \amp 11 \end{bmatrix}\)</span></div></li>
-<li id="rrefsys2"><div class="para" id="rrefsys2-1"><span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp 0 \amp 5 \\0\amp 1 \amp 0 \amp 7 \\ 0 \amp 0 \amp 1 \amp 11 \end{bmatrix}\)</span></div></li>
-<li id="rrefsys3"><div class="para" id="rrefsys3-1"><span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp 3 \amp 0 \amp 6 \\0\amp 1 \amp -1 \amp 0 \amp -23 \\ 0 \amp 0 \amp 0 \amp 1 \amp 11 \end{bmatrix}\)</span></div></li>
-</ol></div>
-<div class="workspace" data-space=".5in"></div></article><article class="exercise exercise-like" id="ws-rref-4-2"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div class="para" id="ws-rref-4-2-1-1">Write down the associated linear system of equations for <a href="sec-rref.html#rrefsys1" class="xref" data-knowl="./knowl/xref/rrefsys1.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 3.c">Item 3.c</a>, <a href="sec-rref.html#rrefsys2" class="xref" data-knowl="./knowl/xref/rrefsys2.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 3.g">Item 3.g</a> and <a href="sec-rref.html#rrefsys3" class="xref" data-knowl="./knowl/xref/rrefsys3.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 3.h">Item 3.h</a>. What observations and questions do you have about these systems?</div>
-<div class="workspace" data-space="3in"></div></article></section></section>
+<div class="para" id="ws-rref-4-1-2-1">For each of the following matrices, say if it is in reduced row echelon form.  If it isn’t, say whether it is in row echelon form or if it’s in neither form.<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-4-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="ws-rref-4-1-2-2">
+<ol class="lower-alpha lower-alpha-level-1 cols2" id="ws-rref-4-1-2-2-1">
+<li id="ws-rref-4-1-2-2-1-1">
+<div class="para" id="ws-rref-4-1-2-2-1-1-1">
+<span class="process-math">\(\displaystyle \left[\begin{array}{ccc} 1\amp 0 \amp -3\\0\amp 1 \amp 1\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-4-1-2-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#ws-rref-4-1-2-2-1-1" title="Copy permalink for Item 3.a">🔗</a></div>
+</li>
+<li id="ws-rref-4-1-2-2-1-2">
+<div class="para" id="ws-rref-4-1-2-2-1-2-1">
+<span class="process-math">\(\displaystyle \left[\begin{array}{cc} 1\amp 2\\0\amp 0\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-4-1-2-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#ws-rref-4-1-2-2-1-2" title="Copy permalink for Item 3.b">🔗</a></div>
+</li>
+<li id="rrefsys1">
+<div class="para" id="rrefsys1-1">
+<span class="process-math">\(\displaystyle \left[\begin{array}{ccc} 1\amp 1 \amp -3\\0\amp 0 \amp 1\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#rrefsys1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.c"><a href="#rrefsys1" title="Copy permalink for Item 3.c">🔗</a></div>
+</li>
+<li id="ws-rref-4-1-2-2-1-4">
+<div class="para" id="ws-rref-4-1-2-2-1-4-1">
+<span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp -3\\0\amp 0 \amp 0\\ 0 \amp 1 \amp 3 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-4-1-2-2-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.d"><a href="#ws-rref-4-1-2-2-1-4" title="Copy permalink for Item 3.d">🔗</a></div>
+</li>
+<li id="ws-rref-4-1-2-2-1-5">
+<div class="para" id="ws-rref-4-1-2-2-1-5-1">
+<span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp 0 \amp 4 \amp 5 \\0\amp 0 \amp 1 \amp 2 \amp 7 \\ 0 \amp 1 \amp 0 \amp 3 \amp 11 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-4-1-2-2-1-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.e"><a href="#ws-rref-4-1-2-2-1-5" title="Copy permalink for Item 3.e">🔗</a></div>
+</li>
+<li id="ws-rref-4-1-2-2-1-6">
+<div class="para" id="ws-rref-4-1-2-2-1-6-1">
+<span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp 0 \amp 5 \\0\amp 4 \amp 0 \amp 7 \\ 0 \amp 0 \amp 1 \amp 11 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-4-1-2-2-1-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.f"><a href="#ws-rref-4-1-2-2-1-6" title="Copy permalink for Item 3.f">🔗</a></div>
+</li>
+<li id="rrefsys2">
+<div class="para" id="rrefsys2-1">
+<span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp 0 \amp 5 \\0\amp 1 \amp 0 \amp 7 \\ 0 \amp 0 \amp 1 \amp 11 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#rrefsys2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.g"><a href="#rrefsys2" title="Copy permalink for Item 3.g">🔗</a></div>
+</li>
+<li id="rrefsys3">
+<div class="para" id="rrefsys3-1">
+<span class="process-math">\(\displaystyle \begin{bmatrix} 1\amp 0 \amp 3 \amp 0 \amp 6 \\0\amp 1 \amp -1 \amp 0 \amp -23 \\ 0 \amp 0 \amp 0 \amp 1 \amp 11 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#rrefsys3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.h"><a href="#rrefsys3" title="Copy permalink for Item 3.h">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-4-1-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3: Form of matrices"><a href="#ws-rref-4-1" title="Copy permalink for Worksheet Exercise 3: Form of matrices">🔗</a></div></article><article class="exercise exercise-like" id="ws-rref-4-2"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="ws-rref-4-2-1-1">Write down the associated linear system of equations for <a href="sec-rref.html#rrefsys1" class="xref" data-knowl="./knowl/xref/rrefsys1.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 3.c">Item 3.c</a>, <a href="sec-rref.html#rrefsys2" class="xref" data-knowl="./knowl/xref/rrefsys2.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 3.g">Item 3.g</a> and <a href="sec-rref.html#rrefsys3" class="xref" data-knowl="./knowl/xref/rrefsys3.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 3.h">Item 3.h</a>. What observations and questions do you have about these systems?<div class="autopermalink" data-description="Paragraph"><a href="#ws-rref-4-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="3in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-rref-4-2" title="Copy permalink for Worksheet Exercise 4">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-rref" title="Copy permalink for Worksheet: Participate">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-rref.html#subsec-rref-bc" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-consistency.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
