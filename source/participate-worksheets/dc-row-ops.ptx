@@ -78,7 +78,7 @@
             Solve the linear system below using the method of elimination side-by-side with row operations.
           </p>
           
-        <sidebyside>
+        <sidebyside valign="bottom">
           <p>
             <md>
               <mrow> 2x_1 + 4x_2 \amp = -6</mrow>

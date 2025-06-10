@@ -109,7 +109,7 @@
       <statement>
           <p>Drag the following vector spaces to the number of elements in a basis for the space.</p>
       </statement>
-      <matches>
+      <cardsort>
           <match>
               <premise order="5"><m>\spn{\set{
                 \colvector{1\\2\\3},
@@ -140,7 +140,7 @@
               <premise order="4">The span of a set of 5 vectors</premise>
               <response>Not enough information to tell</response>
         </match>
-      </matches>
+      </cardsort>
   </exercise>
 
   <exercise component="proteus" xml:id="reading-D-5" label="reading-D-5">
@@ -156,7 +156,7 @@
         </me>
         </p>
     </statement>
-    <matches>
+    <cardsort>
         <match>
           <premise order="6"><m>\dimension{\lns{A}}</m></premise>
           <response><m>1</m></response>
@@ -179,7 +179,7 @@
         <match>
             <response><m>5</m></response>
         </match>
-    </matches>
+      </cardsort>
   </exercise>
 
   <exercise component="proteus" xml:id="reading-D-6" label="reading-D-6">
@@ -390,7 +390,7 @@
         url.
       </p>
     </feedback>
-    <matches>
+    <cardsort>
     <match>
       <response>Linear</response>
       <premise order="4"><m>y=5x+3</m></premise>
@@ -412,7 +412,7 @@
       <premise order="2"><m>y=3x^5</m></premise>
       <premise order="3"><m>y=\sqrt{x}</m></premise>
     </match>
-    </matches>
+  </cardsort>
   </exercise>
 
   <exercise label="matrix-indices1">

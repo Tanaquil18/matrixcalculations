@@ -11,7 +11,7 @@
     <!-- Level at which are html files generated (chapter/section/etc): -->
     <chunking level="2" />
     <!-- Depth for table of contents.  0 means no TOC -->
-    <tableofcontents level="3" />
+    <tableofcontents level="0" />
     <!-- Visibility of exercise components where they first appear.          -->
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
@@ -19,7 +19,7 @@
     <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
     <exercise-divisional statement="yes" hint="yes" answer="yes" solution="no"/>
     <exercise-project statement="yes" hint="yes" answer="no" solution="no" />
-    <exercise-worksheet statement="yes" hint="yes" answer="yes" solution="yes" />
+    <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
     <!-- Style of fill-in-the-blanks: -->
     <fillin textstyle="underline" mathstyle="shade" />
     <!-- You can set a watermark: -->
@@ -36,7 +36,7 @@
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
     <!-- <version include=" "/> -->
-    <version include="responses online-worksheets"/>
+    <version include="print-worksheets"/>
   </source>
 
   <numbering>
@@ -76,7 +76,7 @@
     <worksheets formatted="no" />
   </latex>
 
-  <html short-answer-responses="always" embed-button="yes">
+  <html short-answer-responses="always">
     <platform host="web"/>
     <!-- The host above could also be "runestone" -->
 
@@ -109,9 +109,7 @@
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
     <css
         theme="salem"
-        palette="ice-fire"
-      />
-      
+    />
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
     <search variant="default" />
@@ -140,7 +138,7 @@
     <!-- StatCounter requires both values to be set            -->
     <!-- <analytics google-gst="UA-0123456-1" statcounter-project="0123456"
     statcounter-security="0123456"/> -->
-    <!-- <tableofcontents focused="yes" preexpanded-levels="2" /> -->
+    <tableofcontents focused="yes" preexpanded-levels="2" />
 
     <feedback href="mailto:csafranski@franciscan.edu" />
   </html>

@@ -6,7 +6,7 @@
       <stringparams html.css.extra="external/custom-styles.css" />
     </target>
     <target name="print" format="pdf" publication="publication-print.ptx" />
-    <target name="worksheets" format="pdf" source="worksheets.ptx"/>
+    <target name="worksheets" format="pdf" source="worksheets.ptx" publication="publication-print-worksheets.ptx"/>
     <target name="latex" format="latex"/>
   </targets>
 </project>

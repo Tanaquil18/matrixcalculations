@@ -898,7 +898,7 @@
           The matrices below are each the augmented matrix of a linear system. Sort the matrices by how many solutions the system has.  
         </p>
       </statement>
-      <matches>
+      <cardsort>
       <match>
       <response>No solutions</response>
       <premise order="5"><m>\begin{bmatrix}1 \amp 1  \amp -3 \\ 0\amp 0\amp 1 \end{bmatrix}</m></premise>
@@ -913,7 +913,7 @@
       <premise order="1"><m>\begin{bmatrix}1 \amp 0  \amp 4 \amp 0 \amp  5 \\ 0\amp  1 \amp -1 \amp 0 \amp 7 \\ 0\amp  0 \amp 0 \amp 1\amp 11 \end{bmatrix}</m></premise>
       <premise order="4"><m>\begin{bmatrix}1 \amp 1  \amp -3 \\ 0\amp 0\amp 0 \end{bmatrix}</m></premise>
       </match>
-      </matches>
+    </cardsort>
     </exercise>
 
     <exercise>

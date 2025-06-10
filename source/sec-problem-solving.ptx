@@ -281,21 +281,21 @@
       </p>
     </paragraphs>
     <p>
-      We see that sometimes there's a lot of work involved in interpreting the solutions which make sense!  In the case of points
+      We see that sometimes there's a lot of work involved in interpreting the solutions which make sense.  In the case of points
       in a football game, there were infinitely many solutions which made mathematical sense, but only two solutions which made sense as actual ways
       to score points meeting the necessary conditions.  
     </p>
     <exercise xml:id="exer_valid_solutions" label="valid-solutions">
       <title>Which solutions make sense?</title>
-    <introduction>
+    <!-- <introduction>
         <p>
             In each of the following questions, decide which of the given options make sense as a solution to the given problem.
         </p>
-    </introduction>
+    </introduction> -->
       <task label="valid-solutions-a">
         <statement>
             <p>
-              A linear system whose augmented matrix and reduced row echelon are shown below.  
+              Consider a linear system whose augmented matrix and reduced row echelon form are shown below.  
               <me>
                 \left[\begin{array}{cccc} 1\amp 1\amp 1\amp 32\\ 1\amp 5\amp 10\amp 100\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp -\frac54\amp 15\\0\amp 1\amp \frac94\amp 17\\ \end{array} \right]
               </me>
@@ -305,6 +305,7 @@
                   <mrow>y\amp =17 - \frac94z</mrow>
                   <mrow>z \amp \text{ is free.} </mrow>
                 </md>
+              Which of the following values is a possible solution for <m>x</m>, <m>y</m>, and <m>z</m>?
             </p>
         </statement>
         <choices>
@@ -367,21 +368,13 @@
             <p>
               Let <m>x</m>,
               <m>y</m> and <m>z</m> be the number of ones,
-              fives and tens, respectively, and note that if we put 
-              <md>
-                <mrow> x+y+z\amp =32</mrow>
-                <mrow> x+5y+10z\amp =100</mrow>
-              </md>
-              into an augmented matrix and row reduce, we get
-              <me>
-                \left[\begin{array}{cccc} 1\amp 1\amp 1\amp 32\\ 1\amp 5\amp 10\amp 100\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp -\frac54\amp 15\\0\amp 1\amp \frac94\amp 17\\ \end{array} \right]
-              </me>,
-              which translates back to equations as
+              fives and tens, respectively, and suppose that the problem has been solved as far as
                <md>
                   <mrow>x \amp =15+\frac54z</mrow>
                   <mrow>y\amp =17 - \frac94z</mrow>
                   <mrow>z \amp \text{ is free.} </mrow>
                 </md>
+              Which of the following values is a possible solution for <m>x</m>, <m>y</m>, and <m>z</m>?
             </p>
         </statement>
         <choices>
@@ -554,7 +547,7 @@
   
       
     <reading-questions xml:id="rqs-problem-solving">
-      <exercise label="parsons-quadratic-through-3-pts" adaptive="yes">
+      <exercise xml:id="parsons-quadratic-through-3-pts" label="parsons-quadratic-through-3-pts" adaptive="yes">
         <title>Parsons Problem, Equation of a Quadratic Through 3 Points</title>
         <statement>
           <p>
@@ -750,7 +743,7 @@
 
   </subsection>
 
-   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+   <xi:include href="participate-worksheets/dc-problem-solving.ptx" />
   
 
   <conclusion xml:id="subsec-problem-solving-summary">

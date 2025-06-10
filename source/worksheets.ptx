@@ -4,14 +4,13 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+  <article xml:id="my-great-book">
+    <title>Matrix Calculations Worksheets</title>
 
 
     
-    <chapter xml:id="ch-chapter-titlea" xmlns:xi="http://www.w3.org/2001/XInclude">
-      <title>Chapter Title</title>
+    <section xml:id="ch-chapter-titlea" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Worksheets</title>
   
     
       <!-- include sections -->
@@ -19,13 +18,15 @@
       <xi:include href="participate-worksheets/dc-row-ops.ptx" />
       <xi:include href="participate-worksheets/dc-rref.ptx" />
       <xi:include href="participate-worksheets/dc-rrefa.ptx" />
-    </chapter>
+      <xi:include href="participate-worksheets/dc-consistency.ptx" />
+      <xi:include href="participate-worksheets/dc-problem-solving.ptx" />
+    </section>
 
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
-  </book>
+  </article>
 </pretext>
 
 

@@ -143,14 +143,14 @@
     </exercise>
     <exercise>
         <statement>
-        <p>
-            <m>(1,5)</m>, <m>(-1,3)</m> and <m>(3,-1)</m>
-        </p>
+            <p>
+                Find the smallest degree polynomial which goes through the points <m>(1,5)</m>, <m>(-1,3)</m> and <m>(3,-1)</m>.
+            </p>
         </statement>
         <answer>
-        <p>
-            <m>f(x) = -x^2+x+5</m>
-        </p>
+            <p>
+                <m>f(x) = -x^2+x+5</m>
+            </p>
         </answer>
     </exercise>
     <exercise>
@@ -186,19 +186,6 @@
         <answer>
         <p>
             <m>f(x) = 3</m>
-        </p>
-        </answer>
-    </exercise>
-    <exercise>
-        <statement>
-        <p>
-            <m>(-2,15)</m>, <m>(-1,4)</m>,
-            <m>(1,0)</m> and <m>(2,-5)</m>
-        </p>
-        </statement>
-        <answer>
-        <p>
-            <m>f(x) = -x^3+x^2-x+1</m>
         </p>
         </answer>
     </exercise>
@@ -277,6 +264,11 @@
         </p>
         </statement>
         <answer>
+            <p>
+                <m>f(x) = e^{x\ln(2)}</m>
+            </p>
+        </answer>
+        <solution>
         <ol>
             <li>
             <p>
@@ -311,37 +303,7 @@
             </p>
             </li>
         </ol>
-        </answer>
-    </exercise>
-    <exercise>
-        <statement>
-        <p>
-            In a football game, <m>24</m> points are scored from <m>8</m> scoring occasions.
-            The number of successful extra point kicks is equal to the number of successful two point conversions.
-            Find all ways in which the points may have been scored in this game.
-        </p>
-        </statement>
-        <answer>
-        <p>
-            The augmented matrix from this system is <m>\left[\begin{array}{ccccc} 1\amp 1\amp 1\amp 1\amp 8\\6\amp 1\amp 2\amp 3\amp 24\\0\amp 1\amp -1\amp 0\amp 0\\ \end{array} \right]</m>.
-            From this we find the solution
-            <md>
-            <mrow>t\amp =\frac83-\frac13f</mrow>
-            <mrow>x\amp =\frac83-\frac13f</mrow>
-            <mrow>w\amp =\frac83-\frac13f</mrow>
-            </md>.
-        </p>
-        <p>
-            The only time each of these variables are nonnegative integers is when <m>f=2</m> or <m>f=8</m>.
-            If <m>f=2</m>,
-            then we have <m>2</m> touchdowns, <m>2</m> extra points and <m>2</m> two point conversions (and <m>2</m> field goals);
-            this doesn't make sense since the extra points and two point conversions follow touchdowns.
-            If <m>f=8</m>, then we have no touchdowns,
-            extra points or two point conversions
-            (just <m>8</m> field goals).
-            This is the only solution; all points were scored from field goals.
-        </p>
-        </answer>
+    </solution>
     </exercise>
     <exercise>
         <statement>
@@ -376,39 +338,8 @@
         <statement>
         <p>
             In a basketball game, where points are scored either by a <m>3</m> point shot,
-            a <m>2</m> point shot or a <m>1</m> point free throw, <m>80</m> points were scored from <m>30</m> successful shots.
-            Find all ways in which the points may have been scored in this game.
-        </p>
-        </statement>
-        <answer>
-        <p>
-            Let <m>x_1</m>,
-            <m>x_2</m> and <m>x_3</m> represent the number of free throws, 2 point and 3 point shots taken.
-            The augmented matrix from this system is <m>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\1\amp 2\amp 3\amp 80 \end{array} \right]</m>.
-            From this we find the solution
-            <md>
-            <mrow>x_1\amp =-20+x_3</mrow>
-            <mrow>x_2\amp =50-2x_3</mrow>
-            </md>.
-        </p>
-        <p>
-            In order for <m>x_1</m> and <m>x_2</m> to be nonnegative,
-            we need <m>20\leq x_3\leq 25</m>.
-            Thus there are <m>6</m> different scenerios: the
-            <q>first</q>
-            is where <m>20</m> three point shots are taken,
-            no free throws, and <m>10</m> two point shots; the
-            <q>last</q>
-            is where <m>25</m> three point shots are taken, <m>5</m> free throws,
-            and no two point shots.
-        </p>
-        </answer>
-    </exercise>
-    <exercise>
-        <statement>
-        <p>
-            In a basketball game, where points are scored either by a <m>3</m> point shot,
-            a <m>2</m> point shot or a <m>1</m> point free throw, <m>110</m> points were scored from <m>70</m> successful shots.
+            a <m>2</m> point shot or a <m>1</m> point free throw, there were <m>110</m> points
+             scored from <m>70</m> successful shots.
             Find all ways in which the points may have been scored in this game.
         </p>
         </statement>
