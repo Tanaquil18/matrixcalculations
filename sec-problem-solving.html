@@ -787,21 +787,6 @@ x_3 \amp =\frac{1}{6}x_4
 <li id="ws-problem-solving-2-1-3"><div class="para" id="ws-problem-solving-2-1-3-1">Build on our past work interpreting solutions to a linear system from the reduced row echelon form by further restricting to solutions which make sense in the context of a given problem.</div></li>
 </ul></article><section class="onepage" id="ws-problem-solving-3"><article class="exercise exercise-like" id="ws-problem-solving-3-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <div class="para" id="ws-problem-solving-3-1-1-1">Suppose we know that in a football game there were <span class="process-math">\(24\)</span> points scored from <span class="process-math">\(8\)</span> scoring occasions and also that the number of successful extra point kicks was equal to the number of successful two point conversions. Find all ways in which the points may have been scored in this game.</div>
-<div class="solutions">
-<details id="ws-problem-solving-3-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="ws-problem-solving-3-1-2-1">The only way which meets all the conditions and makes sense is by scoring <span class="process-math">\(8\)</span> field goals.</div></div></details><details id="ws-problem-solving-3-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="ws-problem-solving-3-1-3-1">
-<div class="para">The augmented matrix from this system is <span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 1\amp 1\amp 1\amp 8\\6\amp 1\amp 2\amp 3\amp 24\\0\amp 1\amp -1\amp 0\amp 0\\ \end{array} \right]\text{.}\)</span> From this we find the solution</div>
-<div class="displaymath process-math" id="ws-problem-solving-3-1-3-1-2">
-\begin{align*}
-t\amp =\frac83-\frac13f\\
-x\amp =\frac83-\frac13f\\
-c\amp =\frac83-\frac13f\text{.}
-\end{align*}
-</div>
-</div>
-<div class="para" id="ws-problem-solving-3-1-3-2">The only time each of these variables are nonnegative integers is when <span class="process-math">\(f=2\)</span> or <span class="process-math">\(f=8\text{.}\)</span> If <span class="process-math">\(f=2\text{,}\)</span> then we have <span class="process-math">\(2\)</span> touchdowns, <span class="process-math">\(2\)</span> extra points and <span class="process-math">\(2\)</span> two point conversions (and <span class="process-math">\(2\)</span> field goals); this doesn’t make sense since the extra points and two point conversions follow touchdowns. If <span class="process-math">\(f=8\text{,}\)</span> then we have no touchdowns, extra points or two point conversions (just <span class="process-math">\(8\)</span> field goals). This is the only solution; all points were scored from field goals.</div>
-</div></details>
-</div>
 <div class="workspace" data-space="3in"></div></article><article class="exercise exercise-like" id="ws-problem-solving-3-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="para logical" id="ws-problem-solving-3-2-1-1">
 <div class="para">Pure elemental phosphorous and hypochlorous acid <span class="process-math">\(HClO\)</span> react in water to make phosphoric acid <span class="process-math">\(H_3PO_4\)</span> and hydrochloric acid <span class="process-math">\(HCl\text{.}\)</span>  Balance the chemical equation</div>
@@ -811,99 +796,15 @@ c\amp =\frac83-\frac13f\text{.}
 \end{equation*}
 </div>
 </div>
-<div class="solutions">
-<details id="ws-problem-solving-3-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ws-problem-solving-3-2-2-1">
-<div class="para">The balanced equation is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P_4 + 10 HClO+ 6 H_2 O \longrightarrow 4  H_3PO_4+ 10  HCl\text{.}
-\end{equation*}
-</div>
-</div></div></details><details id="ws-problem-solving-3-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="ws-problem-solving-3-2-3-1">
-<div class="para">We are looking for</div>
-<div class="displaymath process-math">
-\begin{equation*}
-x_1 \, P_4 + x_2 \, HClO+ x_3\, H_2 O \longrightarrow x_4 \,  H_3PO_4+ x_5 \, HCl\text{.}
-\end{equation*}
-</div>
-<div class="para">Consider the number of atoms of each element before and after the reaction.</div>
-<div class="displaymath process-math" id="ws-problem-solving-3-2-3-1-2">
-\begin{align*}
-P\amp:  \amp 4x_1 \amp=x_4 \\
-H\amp:  \amp x_2 + 2x_3 \amp = 3x_4+x_5  \\
-Cl\amp: \amp x_2 \amp=x_5\\
-O\amp: \amp x_2+x_3 \amp =4x_4
-\end{align*}
-</div>
-<div class="para">Turning this system into an augmented matrix and row reducing results in</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{bmatrix} 4 \amp 0 \amp 0 \amp -1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 2 \amp -3 \amp -1 \amp 0
-\\ 0\amp 1\amp 0 \amp 0 \amp -1 \amp 0 \\ 0\amp 1 \amp 1 \amp -4 \amp 0 \amp 0 \end{bmatrix}
-\rrefarrow 
-\begin{bmatrix} 1 \amp 0 \amp 0 \amp 0 \amp \frac{-1}{10} \amp 0 \\ 0 \amp 1 \amp 0 \amp 0 \amp -1 \amp 0
-\\ 1 \amp 0 \amp 0 \amp 0 \amp \frac{-3}{5} \amp 0 \\ 1 \amp 0 \amp 0 \amp 0 \amp \frac{-2}{5} \amp 0 \end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">We want the smallest possible numbers such that no value is negative or fractional, so let <span class="process-math">\(x_5=10\text{.}\)</span>  Then</div>
-<div class="displaymath process-math" id="ws-problem-solving-3-2-3-1-5">
-\begin{align*}
-x_1 \amp=1 \\
-x_2 \amp=10 \\
-x_3 \amp=6 \\
-x_4 \amp=4 \\
-x_5 \amp=10 
-\end{align*}
-</div>
-<div class="para">and the balanced equation is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P_4 + 10 HClO+ 6 H_2 O \longrightarrow 4  H_3PO_4+ 10  HCl\text{.}
-\end{equation*}
-</div>
-</div></div></details>
-</div>
 <div class="workspace" data-space="2.5in"></div></article></section><section class="onepage" id="ws-problem-solving-4"><article class="exercise exercise-like" id="ws-problem-solving-4-1"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="introduction" id="ws-problem-solving-4-1-1"><div class="para" id="ws-problem-solving-4-1-1-1">You might know that two points determine a line. That’s because in a line <span class="process-math">\(y=mx+b\)</span> there are two unknowns: the coefficient of the <span class="process-math">\(x\)</span> term and the constant term.  Note that in <a href="sec-problem-solving.html#parsons-quadratic-through-3-pts" class="xref" data-knowl="./knowl/xref/parsons-quadratic-through-3-pts.html" data-reveal-label="Reveal" data-close-label="Close" title="Reading Question 1: Parsons Problem, Equation of a Quadratic Through 3 Points">Reading Question 1</a> we needed three points to determine a specific quadratic function because there were three unknowns: the coefficient of the <span class="process-math">\(x^2\)</span> term, the coefficient of the <span class="process-math">\(x\)</span> term and the coefficient of the constant term.</div></div>
 <article class="task exercise-like" id="ws-problem-solving-4-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ws-problem-solving-4-1-2-1-1">Find the smallest degree polynomial which goes through the points <span class="process-math">\((-2,15)\text{,}\)</span> <span class="process-math">\((-1,4)\text{,}\)</span> <span class="process-math">\((1,0)\)</span> and <span class="process-math">\((2,-5)\text{.}\)</span>
 </div>
-<div class="solutions"><details id="ws-problem-solving-4-1-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="ws-problem-solving-4-1-2-2-1"><span class="process-math">\(f(x) = -x^3+x^2-x+1\)</span></div></div></details></div>
 <div class="workspace" data-space="2.5in"></div></article><article class="task exercise-like" id="ws-problem-solving-4-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ws-problem-solving-4-1-3-1-1">Go through the same steps to attempt to find a quadratic function through the points <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((1,1)\text{,}\)</span> and <span class="process-math">\((2,2)\text{.}\)</span>  What do you get, and why does the answer make sense?</div>
-<div class="solutions"><details id="ws-problem-solving-4-1-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="ws-problem-solving-4-1-3-2-1">The coefficient of the <span class="process-math">\(x^2\)</span> term is <span class="process-math">\(0\text{,}\)</span> giving the linear function <span class="process-math">\(y=x\text{.}\)</span> The three given points all lie on a line.</div></div></details></div>
 <div class="workspace" data-space="2in"></div></article></article><article class="exercise exercise-like" id="ws-problem-solving-4-2"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="para" id="ws-problem-solving-4-2-1-1">In a basketball game, where points are scored either by a <span class="process-math">\(3\)</span> point shot, a <span class="process-math">\(2\)</span> point shot or a <span class="process-math">\(1\)</span> point free throw, there were <span class="process-math">\(80\)</span> points scored from <span class="process-math">\(30\)</span> successful shots. Find all ways in which the points may have been scored in this game.</div>
-<div class="solutions">
-<details id="ws-problem-solving-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ws-problem-solving-4-2-2-1">
-<div class="para">There are <span class="process-math">\(6\)</span> possible solutions:</div>
-<ul class="disc" id="ws-problem-solving-4-2-2-1-2">
-<li id="ws-problem-solving-4-2-2-1-2-1"><div class="para" id="ws-problem-solving-4-2-2-1-2-1-1">
-<span class="process-math">\(0\)</span> free throws, <span class="process-math">\(10\)</span> two-point shots, <span class="process-math">\(20\)</span> three-point shots</div></li>
-<li id="ws-problem-solving-4-2-2-1-2-2"><div class="para" id="ws-problem-solving-4-2-2-1-2-2-1">
-<span class="process-math">\(1\)</span> free throws, <span class="process-math">\(8\)</span> two-point shots, <span class="process-math">\(21\)</span> three-point shots</div></li>
-<li id="ws-problem-solving-4-2-2-1-2-3"><div class="para" id="ws-problem-solving-4-2-2-1-2-3-1">
-<span class="process-math">\(2\)</span> free throws, <span class="process-math">\(6\)</span> two-point shots, <span class="process-math">\(22\)</span> three-point shots</div></li>
-<li id="ws-problem-solving-4-2-2-1-2-4"><div class="para" id="ws-problem-solving-4-2-2-1-2-4-1">
-<span class="process-math">\(3\)</span> free throws, <span class="process-math">\(4\)</span> two-point shots, <span class="process-math">\(23\)</span> three-point shots</div></li>
-<li id="ws-problem-solving-4-2-2-1-2-5"><div class="para" id="ws-problem-solving-4-2-2-1-2-5-1">
-<span class="process-math">\(4\)</span> free throws, <span class="process-math">\(2\)</span> two-point shots, <span class="process-math">\(24\)</span> three-point shots</div></li>
-<li id="ws-problem-solving-4-2-2-1-2-6"><div class="para" id="ws-problem-solving-4-2-2-1-2-6-1">
-<span class="process-math">\(5\)</span> free throws, <span class="process-math">\(0\)</span> two-point shots, <span class="process-math">\(25\)</span> three-point shots</div></li>
-</ul>
-</div></div></details><details id="ws-problem-solving-4-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="ws-problem-solving-4-2-3-1">
-<div class="para">Let <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> represent the number of free throws, 2 point and 3 point shots taken. The augmented matrix from this system is <span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\1\amp 2\amp 3\amp 80 \end{array} \right]\text{.}\)</span> From this we find the solution</div>
-<div class="displaymath process-math" id="ws-problem-solving-4-2-3-1-5">
-\begin{align*}
-x_1\amp =-20+x_3\\
-x_2\amp =50-2x_3\text{.}
-\end{align*}
-</div>
-</div>
-<div class="para" id="ws-problem-solving-4-2-3-2">In order for <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_2\)</span> to be nonnegative, we need <span class="process-math">\(20\leq x_3\leq 25\text{.}\)</span> Thus there are <span class="process-math">\(6\)</span> different scenarios: the “first” is where <span class="process-math">\(20\)</span> three point shots are taken, no free throws, and <span class="process-math">\(10\)</span> two point shots; the “last” is where <span class="process-math">\(25\)</span> three point shots are taken, <span class="process-math">\(5\)</span> free throws, and no two point shots.</div>
-</div></details>
-</div>
 <div class="workspace" data-space="2.5in"></div></article></section></section><section class="conclusion" id="subsec-problem-solving-summary"><h3 class="heading">Summary.<span></span>
 </h3>
 <div class="para logical" id="subsec-problem-solving-summary-2"><ul class="disc" id="subsec-problem-solving-summary-2-1">
