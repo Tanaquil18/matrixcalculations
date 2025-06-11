@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch-lineqnandaugmentedmatrices" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Linear Equations and Augmented Matrices</title>
 
   <introduction>
     <p> The first chapter introduces linear equations and methods for analyzing their solutions, including augmented matrices
-    and Gauss-Jordan elimination. </p>
+    and Gauss-Jordan elimination. It also discusses types of solutions and solutions to applied problems.</p>
   </introduction>
 
   <!-- include sections -->

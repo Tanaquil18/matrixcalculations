@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-matrixarithmetic" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Matrix Arithmetic</title>
+  <introduction>
+    <p>
+         We will stop thinking about matrices as representing linear systems, and instead think of
+          matrices as being kind of like numbers.  
+    </p>
+    <p>
+      When we were children, we learned about numbers and their names and numerals, then how to count,
+      how to add, subtract, and multiply, and various properties of those operations that led us
+      to be able to solve equations containing unknown numbers.  All of this took years to became second nature,
+      but we will build on the knowledge and familiarity with how numbers work to understand how matrices work.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-matrixarithmetic-bc">
+    <title>Prepare</title>
+    <p>
+        We had previously defined a matrix in <xref ref="def_matrix"/>, and even though we
+        were exclusively interested in augmented matrices representing linear systems, we gave a more
+        general definition.  A matrix is an array of numbers; both the size of the array and the contents are important
+        to the essence of a matrix. 
+    </p>
+    <p>
+      We add two matrices by adding the numbers in their corresponding positions.  For example,
+      <md>
+        <mrow> \begin{bmatrix} 1 \amp 0 \\ -2 \amp 3 \end{bmatrix} + 
+        \begin{bmatrix} 1 \amp -1 \\ 2 \amp 5 \end{bmatrix}\amp = \begin{bmatrix} 1+1 \amp 0+-1 \\ -2+2 \amp 3+5 \end{bmatrix} </mrow>
+        <mrow> \amp = \begin{bmatrix} 2 \amp -1 \\ 0 \amp 8 \end{bmatrix} </mrow>
+      </md>
+      Because numbers can be added in either order and result in the same sum, for example <m>2+3=3+2=5</m>, it follows that adding
+      matrices in either order results in the same matrix sum also.  
+      <me>
+        \begin{bmatrix} 1 \amp 0 \\ -2 \amp 3 \end{bmatrix} + 
+        \begin{bmatrix} 1 \amp -1 \\ 2 \amp 5 \end{bmatrix} = 
+        \begin{bmatrix} 1 \amp -1 \\ 2 \amp 5 \end{bmatrix} + 
+        \begin{bmatrix} 1 \amp 0 \\ -2 \amp 3 \end{bmatrix} =
+        \begin{bmatrix} 2 \amp -1 \\ 0 \amp 8 \end{bmatrix}
+      </me>
+    </p>
+    <p>
+      Subtraction and multiplying by numbers can be related back to addition, for example 
+      <m>3-1=3+(-1)</m> and <m>3\cdot 5 = 5+5+5</m>, 
+      so it makes sense that subtracting two matrices and multiplying a matrix by a number also work
+       by doing the operation to each entry in the matrix.  
+    </p>
+    <p>
+      We know that numbers can sometimes appear in different forms but really be the same number: for example,
+      <m>2</m>, <m>\frac{10}{5}</m>, <m>2.00</m> are all different ways to write the number <q>two</q>.
+      Two matrices are equal if each corresponding position contains the same number, regardless of the form of the number.
+    </p>
+    <p>
+      Before giving the formal definitions, let's try some examples.  
+    </p>
+    <exercise label="matrix-addsubscalarmult"><title>Matrix Operations</title>
+    
+      <introduction>
+        <p>
+          Define matrices <m>A</m>, <m>B</m>, and <m>C</m> by
+          <md>
+            <mrow>A\amp = \begin{bmatrix} 1 \amp 2 \amp 3 \\ -1 \amp 0 \amp 4 \end{bmatrix} \amp 
+              B\amp = \begin{bmatrix} -3 \amp 2 \amp -3 \\ 2 \amp 2 \amp 0 \end{bmatrix} \amp
+              C\amp = \begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}
+            </mrow>
+          </md>
+        </p>
+      </introduction>
+      <task label="matrix-addsubscalarmult-a">
+        <statement>
+          <p>
+            Select all answers which are equal to
+            <me>
+              A+B
+            </me>
+          </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} -2 \amp 4 \amp 0 \\ 1 \amp 2 \amp 4 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} 1+-3 \amp 2+2 \amp 3+-3 \\ -1+2 \amp 0+2 \amp 4+0 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>B+A</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice> 
+        </choices>
+      </task>
+      <task label="matrix-addsubscalarmult-b">
+        <statement>
+          <p>
+            Select all answers which are equal to
+            <me>
+              A-B
+            </me>
+          </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} 4 \amp 0 \amp 6 \\ -3 \amp -2 \amp 4 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} -4 \amp 0 \amp -6 \\ 3 \amp 2 \amp -4 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                This is <m>B-A</m>, subtracted in the other order.  
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} 1-(-3) \amp 2-2 \amp 3-(-3) \\ -1-2 \amp 0-2 \amp 4-0 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice> 
+        </choices>
+      </task>
+      <task label="matrix-addsubscalarmult-c">
+        <statement>
+          <p>
+            Select all answers which are equal to
+            <me>
+              2B
+            </me>
+          </p>
+        </statement>
+        <choices>
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} 2 \amp 4 \amp 6 \\ -2 \amp 0 \amp 8 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                This is <m>2A</m>.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} -6 \amp 4 \amp -6 \\ 4 \amp 4 \amp 0 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!  
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} -9 \amp 6 \amp -9 \\ 6 \amp 6 \amp 0 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                This is <m>3B</m>.
+              </p>
+            </feedback>
+          </choice> 
+        </choices>
+      </task>
+      <task label="matrix-addsubscalarmult-d">
+        <statement>
+          <p>
+            Select all answers which are equal to
+            <me>
+              \begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix}
+            </me>.
+          </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>0C</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>C-C</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!  
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>0A</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                <m>0A=\begin{bmatrix} 0\cdot 1 \amp 0\cdot 2 \amp \cdot 3 \\ 0\cdot -1 \amp 0 \cdot 0 \amp 0\cdot 4 \end{bmatrix}
+                  =\begin{bmatrix} 0 \amp 0 \amp 0 \\ 0 \amp 0 \amp 0 \end{bmatrix}
+                </m>
+              </p>
+              <p>
+                <m>0A</m> is a <m>2\times 3</m> matrix containing all zeros, while the given matrix was a 
+                <m>2 \times 2 </m> matrix containing all zeros.
+              </p>
+            </feedback>
+          </choice> 
+        </choices>
+      </task>
+      <task label="matrix-addsubscalarmult-e">
+        <statement>
+          <p>
+            Select all answers which are equal to
+            <me>
+              A+C
+            </me>
+          </p>
+        </statement>
+        <choices>
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} 2 \amp 4 \amp 3 \\ 2 \amp 4 \amp 4 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Matrix <m>A</m> and matrix <m>C</m> have different sizes, so there are positions
+                without corresponding entries to add.  For example, the third column of <m>A</m> has
+                nothing corresponding in <m>C</m>.  
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>A+C</m> is not defined
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice> 
+        </choices>
+      </task> 
+    </exercise>
+    <p>
+      We never had to worry about whether two numbers could be added or subtracted, so this is a difference between
+      numbers and matrices.
+      The size of a matrix is key to being able to perform calculations;
+       only matrices of the same size can be 
+      added and subtracted, and if two matrices have different sizes, then they cannot be equal.  
+    </p>
+    <p>
+      Matrices containing all zeros come up enough that we should define them.    
+    </p>
+    
+    <definition xml:id="def_zero_matrix"> <title>The Zero Matrix</title>
+      <statement>
+        <p>
+              <idx><h>zero matrix</h></idx>
+              <idx><h>matrix</h><h>the zero matrix</h></idx>
+          The <m>m\times n</m> matrix containing <m>0</m> in every entry,
+          denoted <m>\mathbf{0}_{m\times n}</m>,
+          is the <term>zero matrix of size <m>m \times n</m> </term>.
+        </p>
+        <p>
+          When the dimensions are clear from the context, 
+          we just write <m>\mathbf{0}</m> in bold font and call it <term>the zero matrix</term>, even though there
+          is a different zero matrix for each size.  
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Note the difference between <m>0</m> and <m>\mathbf{0}</m>: the first is a number
+      and the second is a matrix in which every entry is the number <m>0</m>.
+    </p>
+
+    <p>
+      Lots of things we've known are true about adding and subtracting numbers are true for matrices also,
+      and we'll collect them here. 
+    </p>
+
+    <theorem xml:id="thm_addition_properties"> <title>Properties of Matrix Addition and Multiplication by a Number</title>
+    <statement>
+            <idx><h>matrix</h><h>arithmetic properties</h></idx>
+       <p>
+        The following equalities hold for all
+        <m>m\times n</m> matrices <m>A</m>, <m>B</m> and <m>C</m> and numbers <m>k</m>.
+        <dl>
+          <li><title>Commutative Property</title>
+            <p>
+              <m>A+ B = B + A</m>
+            </p>
+          </li>
+          <li><title>Associative Property</title>          
+            <p>
+              <m>( A+ B)+ C = A + ( B+ C)</m>
+            </p>
+          </li>
+          <li><title>Number Multiplication Distributive Property</title>
+            <p>
+              <m>k( A + B) = k A + k B</m>
+            </p>
+          </li>
+          <li><title>Number Multiplication Commutative Property</title>
+            <p>
+              <m>k A = A k</m>
+            </p>
+          </li>
+          <li><title>Additive Identity</title>
+            <p>
+              <m>A + \mathbf{0} = \mathbf{0}+ A = A</m>
+            </p>
+          </li>
+          <li><title>Multiplying by the Number <m>0</m> Equals the Zero Matrix</title>
+            <p>
+              <m>0 A = \mathbf{0}</m>
+            </p>
+          </li>
+        </dl>
+      </p>
+    </statement>
+  </theorem>
+
+    <reading-questions xml:id="rqs-matrixarithmetic">
+      <exercise label="rq--questions"><title>Reflection</title>
+        <statement>
+          <p>
+            Enter a response to both of the following tasks:
+            <ol>
+              <li>
+                <p>
+                  Ask a question about the material, either about something you're not sure you fully understand, 
+                  or a <q>what if</q> question.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Give a percentage from 0 to 100 that reflects how confident you are with the material you 
+                  just read about, and give one sentence as to why you feel that way.  0 means you didn't 
+                  actually do the reading and 100 means that everything makes sense so far and you think you are 
+                  completely ready to engage with the material more deeply.  
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <response/>
+      </exercise>
+    </reading-questions>
+
+  </subsection>
+
+   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+  
+
+  <conclusion xml:id="subsec-matrixarithmetic-summary">
+    <title>Summary</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+              
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+      </ul>
+    </p>
+  </conclusion>
+  
+
+
+  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+
+  <xi:include href="noninteractive-exercises/exer-matrixarithmetic.ptx" />
+
+</section>

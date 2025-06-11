@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-matrixoperations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Matrices as Mathematical Objects</title>
+
+  <introduction>
+    <p> In the previous chapter, we used matrices as a tool to organize information from linear systems.
+        Now we will change our perspective and view matrices as mathematical objects in their own right. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-intromatrixarithmetic.ptx" />
+  <!-- <xi:include href="sec-matrices-elimination.ptx" />
+  <xi:include href="sec-row-operations.ptx" />
+  <xi:include href="sec-rref.ptx" />
+  <xi:include href="sec-consistency.ptx" />
+  <xi:include href="sec-problem-solving.ptx" /> -->
+
+</chapter>
