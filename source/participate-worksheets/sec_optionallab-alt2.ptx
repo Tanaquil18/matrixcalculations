@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="sec_optionallab-alt2" margin="1in" bottom="1.25cm">
+  <title>Optional Lab</title>
+
+  <exercise>
+    <p>
+      Convert the following complex numbers into their polar representation,
+      i.e., give the absolute value and the argument of the number.
+    <md>
+      <mrow>34 \amp = <fillin/>\amp  i \amp = <fillin/>\amp  -\pi \amp = <fillin/>\amp  2+2i \amp = <fillin/>\amp  - \frac 1 2 \left( \sqrt 3 + i \right) \amp =<fillin/></mrow>
+    </md>
+    <!-- <me>
+      34 = <fillin/> \hspace{.2in}  i = <fillin characters="3"/>\hspace{.2in}  -\pi  = <fillin characters="3"/> \ \ \   2+2i  = <fillin characters="3"/> \ \ \   - \frac 1 2 \left( \sqrt 3 + i \right) =<fillin characters="3"/>
+    </me> -->
+    
+      After you have finished computing these numbers,
+      check your answers with the open-source software platform
+      <url href="https://www.geogebra.org/calculator">
+        Geogebra.
+      </url> You might search for <em>geogebra complex function grapher</em>.
+      <idx><h>geogebra</h></idx>
+    </p>
+
+  </exercise>
+
+  <exercise>
+    <p>
+      Convert the following complex numbers given in polar representation into their rectangular representation.
+      <md>
+        <mrow>2 \, e^{ i 0 } \amp = <fillin/> \amp   3 \, e^{ \frac{ \pi i} 2 } \amp =<fillin/> \amp  \tfrac{1}{2} \, e^{ i \pi } \amp = <fillin/>\amp  e^{ - \frac{ 3 \pi i }{ 2 } } \amp =<fillin/> \amp   2 \, e^{ \frac{ 3 \pi i }{ 2 } } \amp =<fillin/></mrow>
+      </md>
+      <em>After</em> you have finished computing these numbers,
+      check your answers with Geogebra.
+    </p>
+  </exercise>
+  <exercise>
+    <p>
+      Pick your favorite five numbers <m>z_1</m>, <m>z_2</m>,
+      <m>z_3</m>, <m>z_4</m>, and <m>z_5</m> from the ones that you've
+      played around with and put them in the table below,
+      in both rectangular and polar form.
+      Apply the functions listed to your numbers.
+      Think about which representation is more helpful in each instance.
+    </p>
+    <sidebyside width="100%">
+    <tabular bottom="minor" right="minor" halign="center">
+      <col right="medium"/>
+      <col width="16%" />
+      <col width="16%"/>
+      <col width="16%"/>
+      <col width="16%"/>
+      <col width="16%"/>
+      <row header="yes" >
+        <cell></cell>
+        <cell><m>z_1 </m></cell>
+        <cell><m>z_2</m></cell>
+        <cell><m>z_3</m></cell>
+        <cell><m>z_4</m></cell>
+        <cell><m>z_5</m></cell>
+      </row>
+      <row>
+        <cell>rectangular</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row bottom="medium">
+        <cell>polar</cell>
+        <cell><p>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+        </p></cell>
+        <cell><p>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+        </p></cell>
+        <cell><p>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+        </p></cell>
+        <cell><p>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+        </p></cell>
+        <cell><p>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+          <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+        </p></cell>
+        <!-- <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell> -->
+      </row>
+      <row>
+        <cell><m>z+1</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>z+2-i</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>2z</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>-z</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+
+      <row>
+        <cell><m>\frac z 2</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+
+      <row>
+        <cell><m>iz</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\overline z</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>z^2</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\Re(z)</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\Im(z)</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>i \Im(z)</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>|z|</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\frac 1 z</m></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    </sidebyside>
+  </exercise>
+  <exercise>
+    <statement>
+        <p>
+            Play with other examples until you get a feel for these functions.
+        </p>
+    </statement>
+  </exercise>
+</worksheet>
