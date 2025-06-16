@@ -2,7 +2,7 @@
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exer-matrixarithmetic" ><title>Additional Practice</title>
 
- <exercisegroup>
+ <exercisegroup cols="2">
   <introduction>
   <p>
     Matrices <m>A</m> and <m>B</m> are given below.
@@ -85,7 +85,7 @@
     </answer>
   </exercise>
  </exercisegroup>
- <exercisegroup>
+ <exercisegroup cols="2">
   <introduction>
   <p>
     Matrices <m>A</m> and <m>B</m> are given below.
@@ -144,7 +144,7 @@
     </answer>
   </exercise>
  </exercisegroup>
- <exercisegroup>
+ <exercisegroup cols="2">
   <introduction>
   <p>
     Matrices <m>A</m> and <m>B</m> are given below.
@@ -203,7 +203,7 @@
     </answer>
   </exercise>
  </exercisegroup>
- <exercisegroup>
+ <exercisegroup cols="2">
   <introduction>
   <p>
     In the following exercises,

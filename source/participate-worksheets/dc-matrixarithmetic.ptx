@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-name-dc"> 
+    <title>Participate</title> -->
+    
+    <worksheet xml:id="ws-matrixarithmetic" margin="1in" bottom="1.25cm"><title component="print-worksheets">Participate: Matrix Arithmetic</title><title component="online-worksheets">Participate</title>
+      <objectives>
+        <ul>
+          <li>
+            <p>
+              Begin to view matrices as objects similar to numbers, which can be added, subtracted, and multiplied
+              by a number.  
+            </p>
+          </li>
+          <li>
+            <p>
+              Be able to perform matrix arithmetic and use properties of matrix arithmetic. 
+            </p>
+          </li>
+        </ul>
+</objectives>
+      <introduction>
+        <p>
+          We have discussed multiplying a matrix by a number.  Most texts (and possibly your instructor) will use the term <term>scalar</term>
+          instead of <q>number</q>.  There are good reasons for this, but they are outside the scope of this material.  
+          Still, it would be good to recognize both words.  
+        </p>
+      </introduction>
+      <page>
+        <exercise workspace="1in">
+          <statement>
+            <p>
+              Consider the matrices <m>A=\begin{bmatrix}1 \amp 2 \amp 3 \end{bmatrix}</m> and <m>B=\begin{bmatrix} 1\\ 2 \\ 3 \end{bmatrix}</m>. 
+          Say why <m>A</m> and <m>B</m> are not equal as matrix objects.  Does this make sense to you, or do you think
+          they should be the same thing?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              They are not the same size, so they can't be equal as matrices.  However, they contain the exact same 
+              information and the only difference is the orientation of the writing.  
+            </p>
+          </answer>
+        </exercise>
+        <exercise workspace="1in">
+          <statement>
+            <p>
+              What do you think a <term>square matrix</term> is?  What about a <term>row matrix</term> or <term>column matrix</term>?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A square matrix is <m>n\times n</m>, same number of rows as columns.  A row matrix is <m>1\times n</m>, written
+              as one row, while a column matrix is <m>n\times 1</m>, written as one column.  
+            </p>
+          </answer>
+        </exercise>
+        <exercise>
+          <introduction>
+            <p>
+              Let <m>A=\begin{bmatrix} 1 \amp 3 \\ 2 \amp 5 \\ -1 \amp 1 \end{bmatrix}</m>, 
+              <m>B=\begin{bmatrix} 4 \amp -1 \\ -2 \amp -3 \\ 2 \amp 0 \end{bmatrix}</m>, and 
+              <m>C=\begin{bmatrix} 2 \amp 0 \\ -1 \amp 5 \\ -2 \amp 0 \end{bmatrix}</m>.
+            </p>
+            <p>
+              Calculate each of the items below.  What do you notice about your answers?
+            </p>
+          </introduction>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                <m>A+B</m>, and <m>(A+B)+C</m>
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                <m>B+C</m> and <m>A+(B+C)</m>
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                <m>5(A+B)</m>
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                <m>5A</m>, <m>5B</m>, and <m>5A+5B</m>
+              </p>
+            </statement>
+          </task> 
+        </exercise>
+
+      </page>
+      <page>
+        <exercise>
+          <introduction>
+            <p>
+              Consider the list of proposed properties below.  For each one, say whether it is True, False, or 
+              Insufficient Information.  Note that these are all statements you might be used to thinking about with 
+              numbers, and the goal is to think about how matrices and numbers are similar in some ways and different in some ways.   
+            </p>
+            <p>
+              Let <m>A</m>, <m>B</m>, and <m>X</m> be matrices of the same size, and let <m>k</m> and <m>n</m>
+              be numbers.
+            </p>
+          </introduction>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                <m>A-B=A+(-B)</m>
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                <m>(k+n)A = kA+nA</m>
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                If <m>2A+X=B</m> then <m>X=B-2A</m>.
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                If <m>2X=B</m> then <m>X=\frac{1}{2}B</m>.
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                If <m>AX=B</m> then <m>X=\frac{1}{A}B</m>.
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                <m>3B=B+B+B</m>
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                <m>AB=BA</m>
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                For every matrix <m>C</m>, there is a matrix <m>Z</m> such that <m>Z+C=C+Z=C</m>.  (The matrix
+                      <m>Z</m> acts like the number <m>0</m> does for numbers.)
+              </p>
+            </statement>
+          </task>
+          <task workspace=".5in">
+            <statement>
+              <p>
+                For every matrix <m>C</m>, there is a matrix <m>I</m> such that <m>IC=CI=C</m>. (The matrix
+                      <m>I</m> acts like the number <m>1</m> does for numbers.)
+              </p>
+            </statement>
+          </task>
+        </exercise>
+        
+
+      
+      </page>
+    </worksheet>
+    <!-- </subsection> -->
