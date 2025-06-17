@@ -203,7 +203,7 @@
     </answer>
   </exercise>
  </exercisegroup>
- <exercisegroup cols="2">
+ <!-- <exercisegroup cols="2">
   <introduction>
   <p>
     In the following exercises,
@@ -294,6 +294,6 @@
       </p>
     </answer>
   </exercise>
- </exercisegroup>
+ </exercisegroup> -->
     
 </exercises>

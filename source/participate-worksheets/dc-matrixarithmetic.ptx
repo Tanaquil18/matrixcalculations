@@ -14,16 +14,16 @@
           </li>
           <li>
             <p>
-              Be able to perform matrix arithmetic and use properties of matrix arithmetic. 
+              Be able to perform matrix addition and multiplication by a number and use properties of these operations. 
             </p>
           </li>
         </ul>
 </objectives>
       <introduction>
         <p>
-          We have discussed multiplying a matrix by a number.  Most texts (and possibly your instructor) will use the term <term>scalar</term>
+          We have discussed multiplying a matrix by a number.  Most texts will use the term <term>scalar</term>
           instead of <q>number</q>.  There are good reasons for this, but they are outside the scope of this material.  
-          Still, it would be good to recognize both words.  
+          Still, it is good to recognize both words could be used.  
         </p>
       </introduction>
       <page>
@@ -72,6 +72,12 @@
                 <m>A+B</m>, and <m>(A+B)+C</m>
               </p>
             </statement>
+            <answer>
+              <p>
+                <m>A+B=\begin{bmatrix} 5 \amp 2 \\ 0 \amp 2 \\ 1 \amp 1 \end{bmatrix}</m>, 
+                <m>(A+B)+C=\begin{bmatrix} 7 \amp 2 \\ -1 \amp 7 \\ -1 \amp 1 \end{bmatrix}</m> 
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -79,6 +85,12 @@
                 <m>B+C</m> and <m>A+(B+C)</m>
               </p>
             </statement>
+            <answer>
+              <p>
+                <m>B+C=\begin{bmatrix} 6 \amp -1 \\ -3 \amp 2 \\ 0 \amp 0 \end{bmatrix}</m>, 
+                <m>A+(B+C)=\begin{bmatrix} 7 \amp 2 \\ -1 \amp 7 \\ -1 \amp 1 \end{bmatrix}</m>,
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -86,6 +98,11 @@
                 <m>5(A+B)</m>
               </p>
             </statement>
+            <answer>
+              <p>
+                <m>5(A+B)=\begin{bmatrix} 25 \amp 10 \\ 0 \amp 10 \\ 5 \amp 5 \end{bmatrix}</m>,
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -93,6 +110,13 @@
                 <m>5A</m>, <m>5B</m>, and <m>5A+5B</m>
               </p>
             </statement>
+            <answer>
+              <p>
+                <m>5A=\begin{bmatrix} 5 \amp 15 \\ 10 \amp 25 \\ -5 \amp 5 \end{bmatrix}</m>, 
+              <m>5B=\begin{bmatrix} 20 \amp -5 \\ -10 \amp -15 \\ 10 \amp 0 \end{bmatrix}</m>, and 
+              <m>5A+5B=\begin{bmatrix} 25 \amp 10 \\ 0 \amp 10 \\ 5 \amp 5 \end{bmatrix}</m>.
+              </p>
+            </answer>
           </task> 
         </exercise>
 
@@ -116,6 +140,11 @@
                 <m>A-B=A+(-B)</m>
               </p>
             </statement>
+            <answer>
+              <p>
+                True.  Discuss subtracting versus multiplying by <m>-1</m> and adding, possibly additive inverses.
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -123,13 +152,23 @@
                 <m>(k+n)A = kA+nA</m>
               </p>
             </statement>
+            <answer>
+              <p>
+                True, another distributive property.  
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
               <p>
-                If <m>2A+X=B</m> then <m>X=B-2A</m>.
+                If <m>2A+X=B</m> then <m>X=2A-B</m>.
               </p>
             </statement>
+            <answer>
+              <p>
+                False, subtracting <m>2A</m> from both sides gives <m>X=B-2A</m>. 
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -137,6 +176,11 @@
                 If <m>2X=B</m> then <m>X=\frac{1}{2}B</m>.
               </p>
             </statement>
+            <answer>
+              <p>
+                True, multiplying both sides by the number <m>\frac{1}{2}</m>.
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -144,13 +188,25 @@
                 If <m>AX=B</m> then <m>X=\frac{1}{A}B</m>.
               </p>
             </statement>
+            <answer>
+              <p>
+                Insufficient Information.  We don't yet know what multiplying by a matrix means, and certainly not
+                what dividing by a matrix might mean.  
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
               <p>
-                <m>3B=B+B+B</m>
+                <m>kB=Bk</m>
               </p>
             </statement>
+            <answer>
+              <p>
+                True. Multiplying a matrix by a number in either order comes down to 
+                multiplying the number entries together in either order, and number multiplication is commutative.
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -158,6 +214,11 @@
                 <m>AB=BA</m>
               </p>
             </statement>
+            <answer>
+              <p>
+                Insufficient information.  We don't yet know what multiplying by a matrix means.  This is true for numbers, however.
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -166,6 +227,11 @@
                       <m>Z</m> acts like the number <m>0</m> does for numbers.)
               </p>
             </statement>
+            <answer>
+              <p>
+                True, the zero matrix of the appropriate size.
+              </p>
+            </answer>
           </task>
           <task workspace=".5in">
             <statement>
@@ -174,6 +240,11 @@
                       <m>I</m> acts like the number <m>1</m> does for numbers.)
               </p>
             </statement>
+            <answer>
+              <p>
+                Insufficient Information.
+              </p>
+            </answer>
           </task>
         </exercise>
         

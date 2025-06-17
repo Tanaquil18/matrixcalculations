@@ -18,9 +18,10 @@
   <subsection xml:id="subsec-matrixarithmetic-bc">
     <title>Prepare</title>
     <p>
-        We defined a matrix in <xref ref="def_matrix"/>, and even though previously we
-        were interested in augmented matrices representing linear systems, we gave a more
-        general definition.  Now when we look at a matrix we don't think of variables and constants at all.  
+        We defined a matrix in <xref ref="def_matrix"/>, and included defining rows, columns, and notation
+        for the size of a matrix and for the entries within a matrix.  An augmented matrix, whose entries 
+        represent the coefficients and constants in a linear system, is a type of matrix or a way of interpreting
+        a matrix, but when we look at a matrix we don't have to think of a linear system at all.  
         A matrix is an array of numbers; both the size of the array and the contents are important
         to the essence of a matrix. 
     </p>
@@ -33,8 +34,8 @@
         \begin{bmatrix} 1 \amp -1 \\ 2 \amp 5 \end{bmatrix}\amp = \begin{bmatrix} 1+1 \amp 0+-1 \\ -2+2 \amp 3+5 \end{bmatrix} </mrow>
         <mrow> \amp = \begin{bmatrix} 2 \amp -1 \\ 0 \amp 8 \end{bmatrix} </mrow>
       </md>
-      Because numbers can be added in either order and result in the same sum, for example <m>2+3=3+2=5</m>, it follows that adding
-      matrices in either order results in the same matrix sum also.  
+      Because numbers can be added in either order and the answer is the same, for example <m>2+3=3+2=5</m>, it follows that adding
+      matrices in either order results in the same matrix also.  
       <me>
         \begin{bmatrix} 1 \amp 0 \\ -2 \amp 3 \end{bmatrix} + 
         \begin{bmatrix} 1 \amp -1 \\ 2 \amp 5 \end{bmatrix} = 
@@ -192,6 +193,18 @@
             <statement>
               <p>
                 <m>\begin{bmatrix} -6 \amp 4 \amp -6 \\ 4 \amp 4 \amp 0 \end{bmatrix}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!  
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>\begin{bmatrix} -6.0 \amp \frac{8}{2} \amp -6 \\ \sqrt{16} \amp 4 \amp 0 \end{bmatrix}</m>
               </p>
             </statement>
             <feedback>
@@ -388,14 +401,74 @@
     </statement>
   </theorem>
 
+  <exercise label="matching-matrixpropertynames"><title>Matrix Property Names</title>
+    <statement>
+        <p>
+          Match each property to its correct name.
+        </p>
+        <p>
+          Let <m>A, B</m>, and <m>C</m> be matrices and let <m>k</m> be a number.
+        </p>
+      </statement>
+      <matching>
+      <premise ref="dist">Distributive</premise>
+      <premise ref="comm1 comm2">Commutativity of Addition</premise>
+      <premise ref="assoc">Associativity of Addition</premise>
+<!--  -->
+      <response xml:id="dist" order="4"><m>k(A+B)=kA+kB</m></response>
+      <response xml:id="assoc" order="3"><m>A+(B+C)=(A+B)+C</m></response>
+      <response xml:id="comm1" order="2"><m>B+C=C+B</m></response>
+      <response xml:id="comm2" order="1"><m>A+C=C+A</m></response>
+      <response xml:id="commmult" order="1"><m>AB=BA</m></response>
+      </matching>
+  </exercise>
+
   <p>
     You might have noticed that there are a couple of operations we do with numbers that we have not 
-    discussed with matrices so far, namely, multiplication and division.  There's a very good reason for this:
+    discussed how to do with matrices, namely, multiplication and division.  There's a very good reason for this:
     multiplication and division in the realm of matrices are <em>very</em> different from multiplication
      and division of numbers, and we leave them for future sections.  
   </p>
 
     <reading-questions xml:id="rqs-matrixarithmetic">
+      <exercise label="rq-matrixarithmetic-explainaddition">
+        <statement>
+          <p>
+            In your own words, explain how to add two matrices together.  Be sure to discuss if 
+            addition is always possible or if not, what conditions need to be satisfied. 
+          </p>
+        </statement>
+        <response />
+      </exercise>
+      <exercise label="rq-matrixarithmetic-truefalse"><title>True or False?</title>
+      <task label="rq-matrixarithmetic-truefalse-a">
+        <statement correct="no">
+          <p>
+            There is exactly one Zero Matrix.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            There is one matrix of all zeros for each size.  
+            However, <m>\begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix} \neq \begin{bmatrix} 0 \\  0 \end{bmatrix}</m>, for example.
+          </p>
+        </feedback>
+      </task>
+      <task label="rq-matrixarithmetic-truefalse-b">
+        <statement correct="yes">
+          <p>
+            Multiplying a matrix by <m>3</m> means multiplying each entry in the matrix by <m>3</m>.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            True, this is how we define multiplying a matrix by a number.
+          </p>
+        </feedback>
+      </task>
+      
+        
+      </exercise>
       <exercise label="rq-matrixarithmetic-questions"><title>Reflection</title>
         <statement>
           <p>
@@ -434,17 +507,20 @@
       <ul>
         <li>
           <p>
-              
+              Matrices are mathematical objects like numbers are.  We don't need to think of matrices as
+              coming from a linear system.  
           </p>
         </li>
         <li>
           <p>
-            
+            Matrices can be multiplied by numbers (also called scalars). 
+            If two matrices are the same size, they can be added and subtracted.
           </p>
         </li>
         <li>
           <p>
-            
+              Many of the properties we're used to still hold for matrix addition and multiplication by a number, 
+              such as associativity and commutativity of addition and the distributive property.  
           </p>
         </li>
       </ul>
@@ -453,7 +529,7 @@
   
 
 
-  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+  <xi:include href="interactive-exercises/ww-matrixarithmetic.ptx" />
 
   <xi:include href="noninteractive-exercises/exer-matrixarithmetic.ptx" />
 

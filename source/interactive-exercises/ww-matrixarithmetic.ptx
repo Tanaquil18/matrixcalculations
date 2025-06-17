@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ww-matrixarithmetic" ><title>Practice</title>
+
+
+    <activity label="ww-matrixarithmetic1"><title>Adding and Multiplying by a Number</title>
+        <webwork source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg"/> 
+    </activity>
+    
+    <activity label="ww-matrixarithmetic2"><title>Matrix Addition Application</title>
+        <webwork>
+          <pg-code>
+            Context("Matrix");
+            $microA1 = random(30,60);
+            $fridgeA1 = random(10,30);
+            $stoveA1 = random(20,50);
+            $microA2 = random(25,55);
+            $fridgeA2 = random(12,40);
+            $stoveA2 = random(15,45);
+
+            $microX1 = random(30,60);
+            $fridgeX1 = random(10,30);
+            $stoveX1 = random(20,50);
+            $microX2 = random(25,55);
+            $fridgeX2 = random(12,40);
+            $stoveX2 = random(15,45);
+
+            $Jan=Matrix([[$microA1,$fridgeA1,$stoveA1],[$microX1,$fridgeX1,$stoveX1]]);
+
+            $Feb=Matrix([[$microA2,$fridgeA2,$stoveA2],[$microX2,$fridgeX2,$stoveX2]]);
+
+            $JanplusFeb = $Jan+$Feb;
+          </pg-code>
+        
+          <statement>
+            <p>
+              During the month of January, <q>ABC Appliances</q> sold <m><var name="$microA1"/></m> 
+              microwaves, <m><var name="$fridgeA1"/></m> refrigerators, and <m><var name="$stoveA1"/></m> stoves, 
+              while <q>XYZ Appliances</q> sold <m><var name="$microX1"/></m> microwaves, 
+              <m><var name="$fridgeX1"/></m> refrigerators and <m><var name="$stoveX1"/></m> stoves.
+            </p>
+            <p>
+              During the month of February, <q>ABC Appliances</q> sold <m><var name="$microA2"/></m> 
+              microwaves, <m><var name="$fridgeA2"/></m> refrigerators, and <m><var name="$stoveA2"/></m> stoves, 
+              while <q>XYZ Appliances</q> sold <m><var name="$microX2"/></m> microwaves, 
+              <m><var name="$fridgeX2"/></m> refrigerators and <m><var name="$stoveX2"/></m> stoves.
+            </p>
+
+            <p>
+              Write a <m>2 \times 3 </m> matrix summarizing the sales for the month of January. (Keep the
+            order of information). <var name="$Jan" form="array"/>
+            </p>
+
+            <p>
+              Write a <m>2 \times 3 </m> matrix summarizing the sales for the month of February. (Keep the
+            order of information). <var name="$Feb" form="array"/>
+            </p>
+
+            <p>
+              Using matrix addition, write a <m>2 \times 3 </m> matrix summarizing the total sales for the months of January and February. <var name="$JanplusFeb" form="array"/>
+            </p>
+            </statement>
+        </webwork>
+      </activity>
+
+      <activity label="wwmatrixarithmetic3"><title>Solving a Matrix Equation</title>
+        <webwork source="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg"/>
+      </activity>
+
+      <activity label="ww-matrixarithmetic4"><title>Adding Matrices, List of Lists Notation</title>
+        <introduction>
+            <p>
+                Many programming languages, including Python and Sage, 
+                use a list of lists to enter matrices. We use that notation in this problem 
+                instead of the usual array answer box notation to avoid giving away information
+                about the size of the matrix or whether such a matrix exists at all.  
+            </p>
+        </introduction>
+        <webwork source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg"/>
+      </activity>
+
+      <activity label="ww-matrixarithmetic5"><title>True/False Matrix Properties</title>
+        <webwork source="matrixtheory/matrixarithmetic5.pg"/>
+      </activity>
+
+      
+      
+  </subsection>
