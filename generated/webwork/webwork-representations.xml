@@ -22,7 +22,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -138,7 +138,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -243,7 +243,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -347,7 +347,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -468,7 +468,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -583,7 +583,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -690,7 +690,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -871,7 +871,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1081,7 +1081,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1230,11 +1230,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCdOdW1lcmljJyk7JHJhZGlvID0gUmFkaW9CdXR0b25zKFtbCiAgIlRoZSBtYXRyaXggaXMgJHtCTX0zXHRpbWVzIDUke0VNfSwgd2l0aCAzIHJvd3MgYW5kIDUgY29sdW1ucy4iLAogICJUaGUgbWF0cml4IGlzICR7Qk19M1x0aW1lcyA1JHtFTX0sIHdpdGggMyBjb2x1bW5zIGFuZCA1IHJvd3MuIiwKICAiVGhlIG1hdHJpeCBpcyAke0JNfTVcdGltZXMgMyR7RU19LCB3aXRoIDUgcm93cyBhbmQgMyBjb2x1bW5zLiIsCiAgIlRoZSBtYXRyaXggaXMgJHtCTX01XHRpbWVzIDMke0VNfSwgd2l0aCA1IGNvbHVtbnMgYW5kIDMgcm93cy4iLAogIF1dLCAwCik7CgokbiA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDUsMTAsMSkpOwokbSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDEsMywxKSk7CiRudW12YXJzID0gJG4tMTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSByYW5kb20oLTksOSwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRkMSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC05LDksMSkpOwokZTEgPSBDb21wdXRlKHJhbmRvbSgtOSw5LDEpKTsKJGEyID0gcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTksOSwxKSk7CiRlMiA9IENvbXB1dGUocmFuZG9tKC05LDksMSkpOwokYTMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIzID0gcmFuZG9tKC05LDksMSk7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGUzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CgpCRUdJTl9QR01MCmEuICBDb25zaWRlciB0aGUgbWF0cml4LgoKICAgIFtgYGBBPQogICAgICAgICAgICAgICAgXGJlZ2lue2JtYXRyaXh9IFskYTFdIFxhbXAgWyRiMV0gXGFtcCBbJGMxXSBcYW1wIFskZDFdIFxhbXAgWyRlMV0gXFwKICAgICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxhbXAgWyRlMl1cXAogICAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGFtcCBbJGUzXSBcZW5ke2JtYXRyaXh9CiAgICAgICAgICAgICAgYGBgXQoKICAgIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29ycmVjdGx5IGRlc2NyaWJlcyB0aGUgbWF0cml4IGFib3ZlPwoKICAgIFtfXXskcmFkaW99ezV9CgoKYS4gIE5vdyBjb25zaWRlciBhbiBbYFskbV0gXHRpbWVzIFskbl1gXSBtYXRyaXggW2BCXHRleHR7Ln1gXSAgSWYgW2BCYF0gaXMgYW4gYXVnbWVudGVkIG1hdHJpeCwgdGhlIGNvcnJlc3BvbmRpbmcgbGluZWFyIHN5c3RlbSBoYXMgaG93IG1hbnkgdmFyaWFibGVzPyBbX117JG51bXZhcnN9ezJ9CgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCdOdW1lcmljJyk7JHJhZGlvID0gUmFkaW9CdXR0b25zKFtbCiAgIlRoZSBtYXRyaXggaXMgJHtCTX0zXHRpbWVzIDUke0VNfSwgd2l0aCAzIHJvd3MgYW5kIDUgY29sdW1ucy4iLAogICJUaGUgbWF0cml4IGlzICR7Qk19M1x0aW1lcyA1JHtFTX0sIHdpdGggMyBjb2x1bW5zIGFuZCA1IHJvd3MuIiwKICAiVGhlIG1hdHJpeCBpcyAke0JNfTVcdGltZXMgMyR7RU19LCB3aXRoIDUgcm93cyBhbmQgMyBjb2x1bW5zLiIsCiAgIlRoZSBtYXRyaXggaXMgJHtCTX01XHRpbWVzIDMke0VNfSwgd2l0aCA1IGNvbHVtbnMgYW5kIDMgcm93cy4iLAogIF1dLCAwCik7CgokbiA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDUsMTAsMSkpOwokbSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDEsMywxKSk7CiRudW12YXJzID0gJG4tMTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSByYW5kb20oLTksOSwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRkMSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC05LDksMSkpOwokZTEgPSBDb21wdXRlKHJhbmRvbSgtOSw5LDEpKTsKJGEyID0gcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTksOSwxKSk7CiRlMiA9IENvbXB1dGUocmFuZG9tKC05LDksMSkpOwokYTMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIzID0gcmFuZG9tKC05LDksMSk7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGUzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CgpCRUdJTl9QR01MCmEuICBDb25zaWRlciB0aGUgbWF0cml4LgoKICAgIFtgYGBBPQogICAgICAgICAgICAgICAgXGJlZ2lue2JtYXRyaXh9IFskYTFdIFxhbXAgWyRiMV0gXGFtcCBbJGMxXSBcYW1wIFskZDFdIFxhbXAgWyRlMV0gXFwKICAgICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxhbXAgWyRlMl1cXAogICAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGFtcCBbJGUzXSBcZW5ke2JtYXRyaXh9CiAgICAgICAgICAgICAgYGBgXQoKICAgIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29ycmVjdGx5IGRlc2NyaWJlcyB0aGUgbWF0cml4IGFib3ZlPwoKICAgIFtfXXskcmFkaW99ezV9CgoKYS4gIE5vdyBjb25zaWRlciBhbiBbYFskbV0gXHRpbWVzIFskbl1gXSBtYXRyaXggW2BCXHRleHR7Ln1gXSAgSWYgW2BCYF0gaXMgYW4gYXVnbWVudGVkIG1hdHJpeCwgdGhlIGNvcnJlc3BvbmRpbmcgbGluZWFyIHN5c3RlbSBoYXMgaG93IG1hbnkgdmFyaWFibGVzPyBbX117JG51bXZhcnN9ezJ9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1410,7 +1410,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1735,7 +1735,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1986,7 +1986,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2163,7 +2163,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2312,7 +2312,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2487,7 +2487,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -3483,7 +3483,201 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
     <pg source="Library/ASU-topics/set119LinearSystems/p10.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-27" ww-id="webwork-27">
-    <static seed="27">
+    <static seed="27" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg">
+      <statement><p>Let <m>A</m> and <m>B</m> be the following matrices.</p>
+<p><me>A = \left[\begin{array}{ccc}
+9 \amp 4 \amp -9\cr
+4 \amp 1 \amp -4\cr
+5 \amp -1 \amp -8
+\end{array}\right], \qquad B = \left[\begin{array}{ccc}
+-2 \amp 3 \amp 3\cr
+-5 \amp -2 \amp -1\cr
+9 \amp 8 \amp -1
+\end{array}\right]</me></p>
+<p>Perform the following operations:</p>
+<p><m>4 A =</m> <fillin cols="3" rows="3"/></p>
+<p><m>A  + 3 B =</m> <fillin cols="3" rows="3"/></p>
+<p><m>2 A - 5 B =</m> <fillin cols="3" rows="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-28" ww-id="webwork-28">
+    <static seed="28">
+      <statement><p>During the month of January, <lq/>ABC Appliances<rq/> sold <m>33</m> microwaves, <m>17</m> refrigerators, and <m>33</m> stoves, while <lq/>XYZ Appliances<rq/> sold <m>57</m> microwaves, <m>27</m> refrigerators and <m>31</m> stoves.</p>
+<p>During the month of February, <lq/>ABC Appliances<rq/> sold <m>38</m> microwaves, <m>27</m> refrigerators, and <m>40</m> stoves, while <lq/>XYZ Appliances<rq/> sold <m>51</m> microwaves, <m>20</m> refrigerators and <m>34</m> stoves.</p>
+<p>Write a <m>2 \times 3</m> matrix summarizing the sales for the month of January. (Keep the order of information). <fillin cols="3" rows="2"/></p>
+<p>Write a <m>2 \times 3</m> matrix summarizing the sales for the month of February. (Keep the order of information). <fillin cols="3" rows="2"/></p>
+<p>Using matrix addition, write a <m>2 \times 3</m> matrix summarizing the total sales for the months of January and February. <fillin cols="3" rows="2"/></p>
+</statement>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIk1hdHJpeCIpOwokbWljcm9BMSA9IHJhbmRvbSgzMCw2MCk7CiRmcmlkZ2VBMSA9IHJhbmRvbSgxMCwzMCk7CiRzdG92ZUExID0gcmFuZG9tKDIwLDUwKTsKJG1pY3JvQTIgPSByYW5kb20oMjUsNTUpOwokZnJpZGdlQTIgPSByYW5kb20oMTIsNDApOwokc3RvdmVBMiA9IHJhbmRvbSgxNSw0NSk7CgokbWljcm9YMSA9IHJhbmRvbSgzMCw2MCk7CiRmcmlkZ2VYMSA9IHJhbmRvbSgxMCwzMCk7CiRzdG92ZVgxID0gcmFuZG9tKDIwLDUwKTsKJG1pY3JvWDIgPSByYW5kb20oMjUsNTUpOwokZnJpZGdlWDIgPSByYW5kb20oMTIsNDApOwokc3RvdmVYMiA9IHJhbmRvbSgxNSw0NSk7CgokSmFuPU1hdHJpeChbWyRtaWNyb0ExLCRmcmlkZ2VBMSwkc3RvdmVBMV0sWyRtaWNyb1gxLCRmcmlkZ2VYMSwkc3RvdmVYMV1dKTsKCiRGZWI9TWF0cml4KFtbJG1pY3JvQTIsJGZyaWRnZUEyLCRzdG92ZUEyXSxbJG1pY3JvWDIsJGZyaWRnZVgyLCRzdG92ZVgyXV0pOwoKJEphbnBsdXNGZWIgPSAkSmFuKyRGZWI7CgpCRUdJTl9QR01MCkR1cmluZyB0aGUgbW9udGggb2YgSmFudWFyeSwgIkFCQyBBcHBsaWFuY2VzIiBzb2xkIFtgWyRtaWNyb0ExXWBdIG1pY3Jvd2F2ZXMsIFtgWyRmcmlkZ2VBMV1gXSByZWZyaWdlcmF0b3JzLCBhbmQgW2BbJHN0b3ZlQTFdYF0gc3RvdmVzLCB3aGlsZSAiWFlaIEFwcGxpYW5jZXMiIHNvbGQgW2BbJG1pY3JvWDFdYF0gbWljcm93YXZlcywgW2BbJGZyaWRnZVgxXWBdIHJlZnJpZ2VyYXRvcnMgYW5kIFtgWyRzdG92ZVgxXWBdIHN0b3Zlcy4KCkR1cmluZyB0aGUgbW9udGggb2YgRmVicnVhcnksICJBQkMgQXBwbGlhbmNlcyIgc29sZCBbYFskbWljcm9BMl1gXSBtaWNyb3dhdmVzLCBbYFskZnJpZGdlQTJdYF0gcmVmcmlnZXJhdG9ycywgYW5kIFtgWyRzdG92ZUEyXWBdIHN0b3Zlcywgd2hpbGUgIlhZWiBBcHBsaWFuY2VzIiBzb2xkIFtgWyRtaWNyb1gyXWBdIG1pY3Jvd2F2ZXMsIFtgWyRmcmlkZ2VYMl1gXSByZWZyaWdlcmF0b3JzIGFuZCBbYFskc3RvdmVYMl1gXSBzdG92ZXMuCgpXcml0ZSBhIFtgMiBcdGltZXMgMyBgXSBtYXRyaXggc3VtbWFyaXppbmcgdGhlIHNhbGVzIGZvciB0aGUgbW9udGggb2YgSmFudWFyeS4gKEtlZXAgdGhlIG9yZGVyIG9mIGluZm9ybWF0aW9uKS4gW19dKnskSmFufXs1fQoKV3JpdGUgYSBbYDIgXHRpbWVzIDMgYF0gbWF0cml4IHN1bW1hcml6aW5nIHRoZSBzYWxlcyBmb3IgdGhlIG1vbnRoIG9mIEZlYnJ1YXJ5LiAoS2VlcCB0aGUgb3JkZXIgb2YgaW5mb3JtYXRpb24pLiBbX10qeyRGZWJ9ezV9CgpVc2luZyBtYXRyaXggYWRkaXRpb24sIHdyaXRlIGEgW2AyIFx0aW1lcyAzIGBdIG1hdHJpeCBzdW1tYXJpemluZyB0aGUgdG90YWwgc2FsZXMgZm9yIHRoZSBtb250aHMgb2YgSmFudWFyeSBhbmQgRmVicnVhcnkuIFtfXSp7JEphbnBsdXNGZWJ9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-06-17T15:11:30Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Matrix");
+$microA1 = random(30,60);
+$fridgeA1 = random(10,30);
+$stoveA1 = random(20,50);
+$microA2 = random(25,55);
+$fridgeA2 = random(12,40);
+$stoveA2 = random(15,45);
+
+$microX1 = random(30,60);
+$fridgeX1 = random(10,30);
+$stoveX1 = random(20,50);
+$microX2 = random(25,55);
+$fridgeX2 = random(12,40);
+$stoveX2 = random(15,45);
+
+$Jan=Matrix([[$microA1,$fridgeA1,$stoveA1],[$microX1,$fridgeX1,$stoveX1]]);
+
+$Feb=Matrix([[$microA2,$fridgeA2,$stoveA2],[$microX2,$fridgeX2,$stoveX2]]);
+
+$JanplusFeb = $Jan+$Feb;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+During the month of January, "ABC Appliances" sold [`[$microA1]`] microwaves, [`[$fridgeA1]`] refrigerators, and [`[$stoveA1]`] stoves, while "XYZ Appliances" sold [`[$microX1]`] microwaves, [`[$fridgeX1]`] refrigerators and [`[$stoveX1]`] stoves.
+
+During the month of February, "ABC Appliances" sold [`[$microA2]`] microwaves, [`[$fridgeA2]`] refrigerators, and [`[$stoveA2]`] stoves, while "XYZ Appliances" sold [`[$microX2]`] microwaves, [`[$fridgeX2]`] refrigerators and [`[$stoveX2]`] stoves.
+
+Write a [`2 \times 3 `] matrix summarizing the sales for the month of January. (Keep the order of information). [_]*{$Jan}{5}
+
+Write a [`2 \times 3 `] matrix summarizing the sales for the month of February. (Keep the order of information). [_]*{$Feb}{5}
+
+Using matrix addition, write a [`2 \times 3 `] matrix summarizing the total sales for the months of January and February. [_]*{$JanplusFeb}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-29" ww-id="webwork-29">
+    <static seed="29" source="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg">
+      <statement><p>Solve for <m>X</m>.</p>
+<p><me>\left[\begin{array}{cc}
+-5 \amp -9\cr
+7 \amp -7
+\end{array}\right] + 3 X = \left[\begin{array}{cc}
+-4 \amp 9\cr
+-5 \amp 4
+\end{array}\right].</me></p>
+<p><m>X=</m> <fillin cols="2" rows="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-30" ww-id="webwork-30">
+    <static seed="30" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg">
+      <statement><p>Let 
+<me>A = \left[\begin{array}{cc}
+-2 \amp 2\cr
+-3 \amp 4
+\end{array}\right],</me>
+<me>B = \left[\begin{array}{cc}
+3 \amp -5\cr
+2 \amp 5\cr
+3 \amp 1
+\end{array}\right],</me>
+<me>C = \left[\begin{array}{cc}
+1 \amp 5\cr
+-3 \amp 3
+\end{array}\right].</me>
+If possible, compute the following.  
+If an answer does not exist, enter <alert>DNE</alert>.</p>
+<p><m>A+B =</m>
+<var height="3" name="AnSwEr0001" width="30"/></p>
+<p><m>A+C =</m>
+<var height="3" name="AnSwEr0002" width="30"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{DNE}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\left[\begin{array}{cc} -1 &amp;7\cr -6 &amp;7 \end{array}\right]</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-31" ww-id="webwork-31">
+    <static seed="31" source="matrixtheory/matrixarithmetic5.pg">
+      <statement><p>Enter T or F depending on whether the statement is true or false.
+(You must enter T or F -- True and False will not work.)</p>
+<p><ol>
+<li>
+<p>For any matrix <m>A</m>, there exists a matrix <m>B</m> so that <m>A + B = 0</m>.</p>
+</li>
+<li>
+<p>An <m>m \times n</m> matrix has <m>m</m> columns and <m>n</m> rows.</p>
+</li>
+<li>
+<p>For any matrices <m>A</m> and <m>B</m>, <m>3A+3B=3(A + B)</m>.</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="matrixtheory/matrixarithmetic5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="matrixtheory/matrixarithmetic5.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-32" ww-id="webwork-32">
+    <static seed="32">
       <statement><p>Enter two numbers that are equal, and the first one must be a 2: <fillin characters="5" name="AnSwEr0001"/> <m>=</m> <fillin characters="5" name="AnSwEr0002"/></p>
 </statement>
       <answer>
@@ -3501,7 +3695,7 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-05-30T15:33:09Z       
+###       on 2025-06-17T15:11:30Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -3517,7 +3711,7 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.1.12)
+## Problem1(3.1.12)
 ## Author()
 ## Institution()
 ## Language(en-US)

@@ -2233,11 +2233,308 @@ var ptx_lunr_docs = [
   "body": "  Describe the equations of the quadratic functions that go through the points and . Give examples.    Let ; we find that and . Two possible examples could be: setting yields ; and setting yields .   "
 },
 {
+  "id": "sec-matrixarithmetic",
+  "level": "1",
+  "url": "sec-matrixarithmetic.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Introduction to Matrix Arithmetic",
+  "body": " Introduction to Matrix Arithmetic   We will stop thinking about matrices as representing linear systems, and instead think of matrices as being kind of like numbers.  When we were children, we learned about numbers and their names and numerals, then how to count, how to add, subtract, and multiply, and various properties of those operations that led us to be able to solve equations containing unknown numbers. All of this took years to became second nature, but we will build on the knowledge and familiarity with how numbers work to understand how matrices work.    Prepare  We defined a matrix in , and included defining rows, columns, and notation for the size of a matrix and for the entries within a matrix. An augmented matrix, whose entries represent the coefficients and constants in a linear system, is a type of matrix or a way of interpreting a matrix, but when we look at a matrix we don't have to think of a linear system at all. A matrix is an array of numbers; both the size of the array and the contents are important to the essence of a matrix.   Adding matrices  Matrix addition We add two matrices by adding the numbers in their corresponding positions. For example, Because numbers can be added in either order and the answer is the same, for example , it follows that adding matrices in either order results in the same matrix also.   Subtraction and multiplying by numbers can be related back to addition, for example and , so it makes sense that subtracting two matrices and multiplying a matrix by a number also work by doing the operation to each entry in the matrix.  We know that numbers can sometimes appear in different forms but really be the same number: for example, , , are all different ways to write the number two . Two matrices are equal if each corresponding position contains the same number, regardless of the form of the number.  Let's try some examples.  Matrix Operations   Define matrices , , and by      Select all answers which are equal to            Correct!           Correct!           Correct!        Select all answers which are equal to            Correct!           This is , subtracted in the other order.           Correct!        Select all answers which are equal to            This is .           Correct!           Correct!           This is .        Select all answers which are equal to .           Correct!           Correct!               is a matrix containing all zeros, while the given matrix was a matrix containing all zeros.        Select all answers which are equal to            Matrix and matrix have different sizes, so there are positions without corresponding entries to add. For example, the third column of has nothing corresponding in .      Trick question! is not defined    Correct! and have different sizes so there are positions which don't have corresponding entries to add.       We never had to worry about whether two numbers could be added or subtracted, so that is a difference between numbers and matrices. The size of a matrix is key to being able to perform calculations; only matrices of the same size can be added and subtracted, and if two matrices have different sizes, then they cannot be equal.  Matrices containing all zeros come up enough that we should define them.   The Zero Matrix    zero matrix  matrix the zero matrix The matrix containing in every entry, denoted , is the zero matrix of size  .  When the dimensions are clear from the context, we just write in bold font and call it the zero matrix , even though there is a different zero matrix for each size.    Note the difference between and : the first is a number and the second is a matrix in which every entry is the number .  Lots of things we've known are true about adding and subtracting numbers are true for matrices also, and we'll collect them here.   Properties of Adding Matrices and of Multiplying a Matrix by a Number   matrix arithmetic properties  If , and are matrices, and is a number, then the following equalities are all true.  Commutative Property      Associative Property      Number Multiplication Distributive Property      Number Multiplication Commutative Property      Additive Identity      Multiplying by the Number Equals the Zero Matrix          Matrix Property Names   Match each property to its correct name.  Let , and be matrices and let be a number.    Distributive  Commutativity of Addition  Associativity of Addition          You might have noticed that there are a couple of operations we do with numbers that we have not discussed how to do with matrices, namely, multiplication and division. There's a very good reason for this: multiplication and division in the realm of matrices are very different from multiplication and division of numbers, and we leave them for future sections.     In your own words, explain how to add two matrices together. Be sure to discuss if addition is always possible or if not, what conditions need to be satisfied.     True or False?    There is exactly one Zero Matrix.    There is one matrix of all zeros for each size. However, , for example.      Multiplying a matrix by means multiplying each entry in the matrix by .    True, this is how we define multiplying a matrix by a number.     Reflection   Enter a response to both of the following tasks:   Ask a question about the material, either about something you're not sure you fully understand, or a what if question.    Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way. 0 means you didn't actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.          Participate     Begin to view matrices as objects similar to numbers, which can be added, subtracted, and multiplied by a number.    Be able to perform matrix addition and multiplication by a number and use properties of these operations.      We have discussed multiplying a matrix by a number. Most texts will use the term scalar instead of number . There are good reasons for this, but they are outside the scope of this material. Still, it is good to recognize both words could be used.      Consider the matrices and . Say why and are not equal as matrix objects. Does this make sense to you, or do you think they should be the same thing?    They are not the same size, so they can't be equal as matrices. However, they contain the exact same information and the only difference is the orientation of the writing.      What do you think a square matrix is? What about a row matrix or column matrix ?    A square matrix is , same number of rows as columns. A row matrix is , written as one row, while a column matrix is , written as one column.      Let , , and .  Calculate each of the items below. What do you notice about your answers?      , and      ,        and      , ,            ,       , , and      , , and .         Consider the list of proposed properties below. For each one, say whether it is True, False, or Insufficient Information. Note that these are all statements you might be used to thinking about with numbers, and the goal is to think about how matrices and numbers are similar in some ways and different in some ways.  Let , , and be matrices of the same size, and let and be numbers.          True. Discuss subtracting versus multiplying by and adding, possibly additive inverses.           True, another distributive property.      If then .    False, subtracting from both sides gives .      If then .    True, multiplying both sides by the number .      If then .    Insufficient Information. We don't yet know what multiplying by a matrix means, and certainly not what dividing by a matrix might mean.           True. Multiplying a matrix by a number in either order comes down to multiplying the number entries together in either order, and number multiplication is commutative.           Insufficient information. We don't yet know what multiplying by a matrix means. This is true for numbers, however.      For every matrix , there is a matrix such that . (The matrix acts like the number does for numbers.)    True, the zero matrix of the appropriate size.      For every matrix , there is a matrix such that . (The matrix acts like the number does for numbers.)    Insufficient Information.         Summary     Matrices are mathematical objects like numbers are. We don't need to think of matrices as coming from a linear system.    Matrices can be multiplied by numbers (also called scalars). If two matrices are the same size, they can be added and subtracted.    Many of the properties we're used to still hold for matrix addition and multiplication by a number, such as associativity and commutativity of addition and the distributive property.      Practice  Adding and Multiplying by a Number    Let and be the following matrices.   Perform the following operations:              Matrix Addition Application    During the month of January, ABC Appliances sold microwaves, refrigerators, and stoves, while XYZ Appliances sold microwaves, refrigerators and stoves.  During the month of February, ABC Appliances sold microwaves, refrigerators, and stoves, while XYZ Appliances sold microwaves, refrigerators and stoves.  Write a matrix summarizing the sales for the month of January. (Keep the order of information).  Write a matrix summarizing the sales for the month of February. (Keep the order of information).  Using matrix addition, write a matrix summarizing the total sales for the months of January and February.        Solving a Matrix Equation    Solve for .           Adding Matrices, List of Lists Notation   Many programming languages, including Python and Sage, use a list of lists to enter matrices. We use that notation in this problem instead of the usual array answer box notation to avoid giving away information about the size of the matrix or whether such a matrix exists at all.     Let   If possible, compute the following. If an answer does not exist, enter DNE .                      True\/False Matrix Properties    Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)    For any matrix , there exists a matrix so that .    An matrix has columns and rows.    For any matrices and , .           Additional Practice    Matrices and are given below. In the following exercises, simplify the given expression.                                                                               Matrices and are given below. In the following exercises, simplify the given expression.                                                       Matrices and are given below. In the following exercises, find a matrix that satisfies the equation.                                                       "
+},
+{
+  "id": "matrix-addsubscalarmult",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#matrix-addsubscalarmult",
+  "type": "Activity",
+  "number": "2.1.1",
+  "title": "Matrix Operations.",
+  "body": "Matrix Operations   Define matrices , , and by      Select all answers which are equal to            Correct!           Correct!           Correct!        Select all answers which are equal to            Correct!           This is , subtracted in the other order.           Correct!        Select all answers which are equal to            This is .           Correct!           Correct!           This is .        Select all answers which are equal to .           Correct!           Correct!               is a matrix containing all zeros, while the given matrix was a matrix containing all zeros.        Select all answers which are equal to            Matrix and matrix have different sizes, so there are positions without corresponding entries to add. For example, the third column of has nothing corresponding in .      Trick question! is not defined    Correct! and have different sizes so there are positions which don't have corresponding entries to add.      "
+},
+{
+  "id": "def_zero_matrix",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#def_zero_matrix",
+  "type": "Definition",
+  "number": "2.1.2",
+  "title": "The Zero Matrix.",
+  "body": " The Zero Matrix    zero matrix  matrix the zero matrix The matrix containing in every entry, denoted , is the zero matrix of size  .  When the dimensions are clear from the context, we just write in bold font and call it the zero matrix , even though there is a different zero matrix for each size.   "
+},
+{
+  "id": "thm_addition_properties",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#thm_addition_properties",
+  "type": "Theorem",
+  "number": "2.1.3",
+  "title": "Properties of Adding Matrices and of Multiplying a Matrix by a Number.",
+  "body": " Properties of Adding Matrices and of Multiplying a Matrix by a Number   matrix arithmetic properties  If , and are matrices, and is a number, then the following equalities are all true.  Commutative Property      Associative Property      Number Multiplication Distributive Property      Number Multiplication Commutative Property      Additive Identity      Multiplying by the Number Equals the Zero Matrix         "
+},
+{
+  "id": "matching-matrixpropertynames",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#matching-matrixpropertynames",
+  "type": "Activity",
+  "number": "2.1.4",
+  "title": "Matrix Property Names.",
+  "body": "Matrix Property Names   Match each property to its correct name.  Let , and be matrices and let be a number.    Distributive  Commutativity of Addition  Associativity of Addition         "
+},
+{
+  "id": "rq-matrixarithmetic-explainaddition",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#rq-matrixarithmetic-explainaddition",
+  "type": "Reading Question",
+  "number": "1",
+  "title": "",
+  "body": "  In your own words, explain how to add two matrices together. Be sure to discuss if addition is always possible or if not, what conditions need to be satisfied.    "
+},
+{
+  "id": "rq-matrixarithmetic-truefalse",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#rq-matrixarithmetic-truefalse",
+  "type": "Reading Question",
+  "number": "2",
+  "title": "True or False?",
+  "body": "True or False?    There is exactly one Zero Matrix.    There is one matrix of all zeros for each size. However, , for example.      Multiplying a matrix by means multiplying each entry in the matrix by .    True, this is how we define multiplying a matrix by a number.    "
+},
+{
+  "id": "rq-matrixarithmetic-questions",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#rq-matrixarithmetic-questions",
+  "type": "Reading Question",
+  "number": "3",
+  "title": "Reflection.",
+  "body": "Reflection   Enter a response to both of the following tasks:   Ask a question about the material, either about something you're not sure you fully understand, or a what if question.    Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way. 0 means you didn't actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.       "
+},
+{
+  "id": "ws-matrixarithmetic-2",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ws-matrixarithmetic-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "   Begin to view matrices as objects similar to numbers, which can be added, subtracted, and multiplied by a number.    Be able to perform matrix addition and multiplication by a number and use properties of these operations.    "
+},
+{
+  "id": "ws-matrixarithmetic-3-1",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ws-matrixarithmetic-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "scalar "
+},
+{
+  "id": "ws-matrixarithmetic-4-1",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ws-matrixarithmetic-4-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the matrices and . Say why and are not equal as matrix objects. Does this make sense to you, or do you think they should be the same thing?    They are not the same size, so they can't be equal as matrices. However, they contain the exact same information and the only difference is the orientation of the writing.   "
+},
+{
+  "id": "ws-matrixarithmetic-4-2",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ws-matrixarithmetic-4-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  What do you think a square matrix is? What about a row matrix or column matrix ?    A square matrix is , same number of rows as columns. A row matrix is , written as one row, while a column matrix is , written as one column.   "
+},
+{
+  "id": "ws-matrixarithmetic-4-3",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ws-matrixarithmetic-4-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Let , , and .  Calculate each of the items below. What do you notice about your answers?      , and      ,        and      , ,            ,       , , and      , , and .    "
+},
+{
+  "id": "ws-matrixarithmetic-5-1",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ws-matrixarithmetic-5-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Consider the list of proposed properties below. For each one, say whether it is True, False, or Insufficient Information. Note that these are all statements you might be used to thinking about with numbers, and the goal is to think about how matrices and numbers are similar in some ways and different in some ways.  Let , , and be matrices of the same size, and let and be numbers.          True. Discuss subtracting versus multiplying by and adding, possibly additive inverses.           True, another distributive property.      If then .    False, subtracting from both sides gives .      If then .    True, multiplying both sides by the number .      If then .    Insufficient Information. We don't yet know what multiplying by a matrix means, and certainly not what dividing by a matrix might mean.           True. Multiplying a matrix by a number in either order comes down to multiplying the number entries together in either order, and number multiplication is commutative.           Insufficient information. We don't yet know what multiplying by a matrix means. This is true for numbers, however.      For every matrix , there is a matrix such that . (The matrix acts like the number does for numbers.)    True, the zero matrix of the appropriate size.      For every matrix , there is a matrix such that . (The matrix acts like the number does for numbers.)    Insufficient Information.    "
+},
+{
+  "id": "ww-matrixarithmetic1",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ww-matrixarithmetic1",
+  "type": "Exercise",
+  "number": "2.1.1",
+  "title": "Adding and Multiplying by a Number.",
+  "body": "Adding and Multiplying by a Number    Let and be the following matrices.   Perform the following operations:             "
+},
+{
+  "id": "ww-matrixarithmetic2",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ww-matrixarithmetic2",
+  "type": "Exercise",
+  "number": "2.1.2",
+  "title": "Matrix Addition Application.",
+  "body": "Matrix Addition Application    During the month of January, ABC Appliances sold microwaves, refrigerators, and stoves, while XYZ Appliances sold microwaves, refrigerators and stoves.  During the month of February, ABC Appliances sold microwaves, refrigerators, and stoves, while XYZ Appliances sold microwaves, refrigerators and stoves.  Write a matrix summarizing the sales for the month of January. (Keep the order of information).  Write a matrix summarizing the sales for the month of February. (Keep the order of information).  Using matrix addition, write a matrix summarizing the total sales for the months of January and February.       "
+},
+{
+  "id": "wwmatrixarithmetic3",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#wwmatrixarithmetic3",
+  "type": "Exercise",
+  "number": "2.1.3",
+  "title": "Solving a Matrix Equation.",
+  "body": "Solving a Matrix Equation    Solve for .          "
+},
+{
+  "id": "ww-matrixarithmetic4",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ww-matrixarithmetic4",
+  "type": "Exercise",
+  "number": "2.1.4",
+  "title": "Adding Matrices, List of Lists Notation.",
+  "body": "Adding Matrices, List of Lists Notation   Many programming languages, including Python and Sage, use a list of lists to enter matrices. We use that notation in this problem instead of the usual array answer box notation to avoid giving away information about the size of the matrix or whether such a matrix exists at all.     Let   If possible, compute the following. If an answer does not exist, enter DNE .                     "
+},
+{
+  "id": "ww-matrixarithmetic5",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#ww-matrixarithmetic5",
+  "type": "Exercise",
+  "number": "2.1.5",
+  "title": "True\/False Matrix Properties.",
+  "body": "True\/False Matrix Properties    Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)    For any matrix , there exists a matrix so that .    An matrix has columns and rows.    For any matrices and , .         "
+},
+{
+  "id": "exer-matrixarithmetic-2-2",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-2-2",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-2-3",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-2-3",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-2-4",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-2-4",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-2-5",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-2-5",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-2-6",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-2-6",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-2-7",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-2-7",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-3-2",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-3-2",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-3-3",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-3-3",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-3-4",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-3-4",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-3-5",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-3-5",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-4-2",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-4-2",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-4-3",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-4-3",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-4-4",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-4-4",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exer-matrixarithmetic-4-5",
+  "level": "2",
+  "url": "sec-matrixarithmetic.html#exer-matrixarithmetic-4-5",
+  "type": "Exercise",
+  "number": "14",
+  "title": "",
+  "body": "           "
+},
+{
   "id": "sec-testing-things",
   "level": "1",
   "url": "sec-testing-things.html",
   "type": "Section",
-  "number": "2.1",
+  "number": "3.1",
   "title": "Testing things",
   "body": " Testing things   Optional Lab   Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra     Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                    Play with other examples until you get a feel for these functions.      demonstrating new domains and ranges improvements      f(x)=-x^2\/2 + 2  g(x)=exp(x\/2)     b = intersect((g, tan), -1)   c = intersect(f, -1)        demonstrating new domains and ranges improvements    a=1  s(x) = x^2  f(x) = exp(x^2\/2-3*x)  g(x) = 1\/x  h(x) = sqrt(2-x)  r(x) = 1\/((x-2)*(x+2))               demonstrating new domains and ranges improvements    a=1  s(x) = x^2  f(x) = exp(x^2\/2-3*x)  g(x) = 1\/x  h(x) = sqrt(2-x)  r(x) = 1\/((x-2)*(x+2))                       a number line     labels=['0','1','2','3','4','5','6','7','8','9','10']      ${labels[k]}          Testing Interactive and Response together   Some text.   Solutions to the equation       Testing tabs and prefigure   testing the intro     With annotations   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                         With annotations and dimensions changed to (200,200).   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                         Without annotations   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                  Participate     Identify matrices in reduced row echelon form and row echelon form    Use Gauss-Jordan elimination to put matrices into reduced row echelon form       Why rref?   Write the associated system of linear equations for each of the matrices below.          Which system of equations would you prefer to be asked to solve on an exam?                2. Gauss-Jordan algorithm   Use Gauss-Jordan elimination to put each of the matrices below into reduced row echelon form.                                          3. Form of matrices   For each of the following matrices, say if it is in reduced row echelon form. If it isn't, say whether it is in row echelon form or if it's in neither form.          rref           rref           ref           neither           neither           neither           rref           rref       Write down the associated linear system of equations for part , part and part . What observations and questions do you have about these systems?                    Non 1-1 Matching Problem, Function Types  matching function types   Sort the following functions into their correct categories.    Review Active Prelude to Calculus url.     Linear       Quadratic       Exponential     Power        How a matrix is indexed, old markup   In the matrix what is ?        The entry in the second row and third column is 6.      The row number comes first, then the column number.      Incorrect. If you're stuck, try reviewing the definition of matrix .        How a matrix is indexed, new markup   In the matrix what is ?         The number in the second row and third column is .       You gave the entry in the third row and second column, but is the number in the second row and third column.      Incorrect. If you're stuck, try reviewing the definition of matrix .         Solve a fruit puzzle, image child of paragraph     an algebra puzzle involving food, claiming most people can't solve it    The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.        Solve a fruit puzzle, image child of figure     an algebra puzzle involving food, claiming most people can't solve it    The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.        Solve a fruit puzzle, image child of statement    an algebra puzzle involving food, claiming most people can't solve it   The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.       MultiAnswer, and the logical and   This problem uses a MultiAnswer, where multiple blanks are needed for the right answer. Since the checking of these problems often involves logic, we also demonstrate how to replace the perl and in the pretext source, since ampersands are reserved characters.     Enter two numbers that are equal, and the first one must be a 2:                    "
 },
@@ -2246,7 +2543,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#sec_optionallab-alt2-2",
   "type": "Worksheet Exercise",
-  "number": "2.1.1",
+  "number": "3.1.1",
   "title": "",
   "body": " Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra   "
 },
@@ -2255,7 +2552,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#sec_optionallab-alt2-3",
   "type": "Worksheet Exercise",
-  "number": "2.1.2",
+  "number": "3.1.2",
   "title": "",
   "body": " Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.  "
 },
@@ -2264,7 +2561,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#sec_optionallab-alt2-4",
   "type": "Worksheet Exercise",
-  "number": "2.1.3",
+  "number": "3.1.3",
   "title": "",
   "body": " Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                 "
 },
@@ -2273,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#sec_optionallab-alt2-5",
   "type": "Worksheet Exercise",
-  "number": "2.1.4",
+  "number": "3.1.4",
   "title": "",
   "body": "  Play with other examples until you get a feel for these functions.   "
 },
@@ -2282,7 +2579,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#test-response",
   "type": "Activity",
-  "number": "2.1.1",
+  "number": "3.1.1",
   "title": "Testing Interactive and Response together.",
   "body": "Testing Interactive and Response together   Some text.   Solutions to the equation      "
 },
@@ -2291,7 +2588,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#sec-testing-things-8",
   "type": "Activity",
-  "number": "2.1.3",
+  "number": "3.1.3",
   "title": "Testing tabs and prefigure.",
   "body": "Testing tabs and prefigure   testing the intro     With annotations   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                         With annotations and dimensions changed to (200,200).   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                         Without annotations   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                 "
 },
@@ -2300,7 +2597,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-2",
   "type": "Objectives",
-  "number": "2.1",
+  "number": "3.1",
   "title": "",
   "body": "   Identify matrices in reduced row echelon form and row echelon form    Use Gauss-Jordan elimination to put matrices into reduced row echelon form    "
 },
@@ -2309,7 +2606,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-3-1",
   "type": "Worksheet Exercise",
-  "number": "2.1.1",
+  "number": "3.1.1",
   "title": "Why rref?",
   "body": "Why rref?   Write the associated system of linear equations for each of the matrices below.          Which system of equations would you prefer to be asked to solve on an exam?               "
 },
@@ -2318,7 +2615,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-3-2-3",
   "type": "Worksheet Exercise",
-  "number": "2.1.a",
+  "number": "3.1.a",
   "title": "",
   "body": "           "
 },
@@ -2327,7 +2624,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-3-2-4",
   "type": "Worksheet Exercise",
-  "number": "2.1.b",
+  "number": "3.1.b",
   "title": "",
   "body": "           "
 },
@@ -2336,7 +2633,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-3-2-5",
   "type": "Worksheet Exercise",
-  "number": "2.1.c",
+  "number": "3.1.c",
   "title": "",
   "body": "           "
 },
@@ -2345,7 +2642,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-4-1-3",
   "type": "Worksheet Exercise",
-  "number": "2.1.a",
+  "number": "3.1.a",
   "title": "",
   "body": "       rref   "
 },
@@ -2354,7 +2651,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-4-1-4",
   "type": "Worksheet Exercise",
-  "number": "2.1.b",
+  "number": "3.1.b",
   "title": "",
   "body": "       rref   "
 },
@@ -2363,7 +2660,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#rrefsys1a",
   "type": "Worksheet Exercise",
-  "number": "2.1.c",
+  "number": "3.1.c",
   "title": "",
   "body": "       ref   "
 },
@@ -2372,7 +2669,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-4-1-6",
   "type": "Worksheet Exercise",
-  "number": "2.1.d",
+  "number": "3.1.d",
   "title": "",
   "body": "       neither   "
 },
@@ -2381,7 +2678,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-4-1-7",
   "type": "Worksheet Exercise",
-  "number": "2.1.e",
+  "number": "3.1.e",
   "title": "",
   "body": "       neither   "
 },
@@ -2390,7 +2687,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-4-1-8",
   "type": "Worksheet Exercise",
-  "number": "2.1.f",
+  "number": "3.1.f",
   "title": "",
   "body": "       neither   "
 },
@@ -2399,7 +2696,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#rrefsys2a",
   "type": "Worksheet Exercise",
-  "number": "2.1.g",
+  "number": "3.1.g",
   "title": "",
   "body": "       rref   "
 },
@@ -2408,7 +2705,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#rrefsys3a",
   "type": "Worksheet Exercise",
-  "number": "2.1.h",
+  "number": "3.1.h",
   "title": "",
   "body": "       rref   "
 },
@@ -2417,7 +2714,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#ws-rrefa-4-2",
   "type": "Worksheet Exercise",
-  "number": "2.1.4",
+  "number": "3.1.4",
   "title": "",
   "body": "  Write down the associated linear system of equations for part , part and part . What observations and questions do you have about these systems?                "
 },
@@ -2426,7 +2723,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#matching-function-types",
   "type": "Activity",
-  "number": "2.1.4",
+  "number": "3.1.4",
   "title": "Non 1-1 Matching Problem, Function Types.",
   "body": " Non 1-1 Matching Problem, Function Types  matching function types   Sort the following functions into their correct categories.    Review Active Prelude to Calculus url.     Linear       Quadratic       Exponential     Power      "
 },
@@ -2435,7 +2732,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#matrix-indices1",
   "type": "Activity",
-  "number": "2.1.5",
+  "number": "3.1.5",
   "title": "How a matrix is indexed, old markup.",
   "body": " How a matrix is indexed, old markup   In the matrix what is ?        The entry in the second row and third column is 6.      The row number comes first, then the column number.      Incorrect. If you're stuck, try reviewing the definition of matrix .      "
 },
@@ -2444,7 +2741,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#matrix-indices2",
   "type": "Activity",
-  "number": "2.1.6",
+  "number": "3.1.6",
   "title": "How a matrix is indexed, new markup.",
   "body": " How a matrix is indexed, new markup   In the matrix what is ?         The number in the second row and third column is .       You gave the entry in the third row and second column, but is the number in the second row and third column.      Incorrect. If you're stuck, try reviewing the definition of matrix .       "
 },
@@ -2453,7 +2750,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#fruit-puzzle1",
   "type": "Activity",
-  "number": "2.1.7",
+  "number": "3.1.7",
   "title": "Solve a fruit puzzle, image child of paragraph.",
   "body": " Solve a fruit puzzle, image child of paragraph     an algebra puzzle involving food, claiming most people can't solve it    The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.      "
 },
@@ -2462,7 +2759,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#fruit-puzzle2",
   "type": "Activity",
-  "number": "2.1.8",
+  "number": "3.1.8",
   "title": "Solve a fruit puzzle, image child of figure.",
   "body": " Solve a fruit puzzle, image child of figure     an algebra puzzle involving food, claiming most people can't solve it    The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.      "
 },
@@ -2471,7 +2768,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#fruit-puzzle3",
   "type": "Activity",
-  "number": "2.1.10",
+  "number": "3.1.10",
   "title": "Solve a fruit puzzle, image child of statement.",
   "body": " Solve a fruit puzzle, image child of statement    an algebra puzzle involving food, claiming most people can't solve it   The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.      "
 },
@@ -2480,7 +2777,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-testing-things.html#testmultianswer",
   "type": "Activity",
-  "number": "2.1.11",
+  "number": "3.1.11",
   "title": "MultiAnswer, and the logical “and”.",
   "body": "MultiAnswer, and the logical and   This problem uses a MultiAnswer, where multiple blanks are needed for the right answer. Since the checking of these problems often involves logic, we also demonstrate how to replace the perl and in the pretext source, since ampersands are reserved characters.     Enter two numbers that are equal, and the first one must be a 2:                   "
 },
