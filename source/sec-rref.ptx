@@ -422,7 +422,7 @@
           <p>
             Our first step is to make the first entry in the first row a <m>1</m>.  We do this by multiplying Row 1 by <m>-\frac13</m>. (This row operation is also called <q>scaling.</q>)
           </p>
-          <sidebyside widths="20% 50%" margins="30% 0%" valign="middle">
+          <sidebyside widths="25% 50%" margins="25% 0%" valign="middle">
             <p>
                 <m>-\frac13R_1\rightarrow R_1</m>
             </p>
@@ -435,7 +435,7 @@
             Our next step is to put zeros under this <m>1</m>. To create a 
             <m>0</m> for the first entry in the second row, we'll use the <q>multiply and add</q> elementary row operation.
           </p>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="30% 50%" margins="20% 0%" valign="middle">
             <p>
                 <m>-2R_1+R_2\rightarrow R_2</m>
               </p>
@@ -495,7 +495,7 @@
             Our next task is to use the "multiply and add" row operation to put zeros above the leading <m>1</m>'s.
             This is referred to as the <em>backward steps</em>.
           </p>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="30% 50%" margins="20% 0%" valign="middle">
             <p>
               <md>
                   <mrow>-2R_3+R_2 \amp \rightarrow R_2</mrow>
@@ -915,7 +915,7 @@
           <p>
             Next we need to put zeros in the column below this newly formed leading <m>1</m>.
           </p>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="30% 50%" margins="20% 0%" valign="middle">
             <p>
               <md>
                   <mrow>-2R_1+R_2 \amp \rightarrow R_2</mrow>
@@ -955,7 +955,7 @@
           <p>
             Next we use <q>multiply and add</q> to put a <m>0</m> underneath this leading <m>1</m>.
           </p>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="26% 50%" margins="24% 0%" valign="middle">
             <p>
               <m>2R_2+R_3\rightarrow R_3</m>
             </p>
@@ -970,7 +970,7 @@
           <p>
             Our next goal is to put a <m>0</m> above each of the leading <m>1</m>'s.
           </p>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="26% 50%" margins="24% 0%" valign="middle">
             <p>
               <m>-R_2+R_1\rightarrow R_1</m>
             </p>
@@ -999,7 +999,7 @@
           <p>
             Here we will show all steps without explaining each one.
           </p>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="30% 50%" margins="20% 0%" valign="middle">
             <p>
               <md>
                   <mrow>-2R_1+R_2 \amp \rightarrow R_2</mrow>
@@ -1011,7 +1011,7 @@
                 \end{array} \right]</m>
             </p>
           </sidebyside>
-          <sidebyside widths="20% 50%" margins="30% 0%" valign="middle">
+          <sidebyside widths="25% 50%" margins="25% 0%" valign="middle">
             <p>
                 <m>-\frac13R_2\rightarrow R_2</m>
             </p>
@@ -1020,7 +1020,7 @@
                 \end{array} \right]</m>
             </p>
           </sidebyside>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="26% 50%" margins="24% 0%" valign="middle">
             <p>
               <m>3R_2+R_3\rightarrow R_3</m>
             </p>
@@ -1029,7 +1029,7 @@
                 \end{array} \right]</m>
             </p>
           </sidebyside>
-          <sidebyside widths="20% 50%" margins="30% 0%" valign="middle">
+          <sidebyside widths="25% 50%" margins="25% 0%" valign="middle">
             <p>
               <m>-\frac13R_3\rightarrow R_3</m>
             </p>
@@ -1038,7 +1038,7 @@
                 \end{array} \right]</m>
             </p>
           </sidebyside>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="30% 50%" margins="20% 0%" valign="middle">
             <p>
               <md>
                   <mrow>-3R_3+R_1 \amp \rightarrow R_1</mrow>
@@ -1050,7 +1050,7 @@
                 \end{array} \right]</m>
             </p>
           </sidebyside>
-          <sidebyside widths="20% 50%" margins="24% 0%" valign="middle">
+          <sidebyside widths="26% 50%" margins="24% 0%" valign="middle">
             <p>
               <m>-2R_2+R_1\rightarrow R_1</m>
             </p>
