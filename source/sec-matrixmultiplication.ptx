@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-matrixmult" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Matrix Multiplication</title>
+  <introduction>
+    <p>
+        Last section, we learned how to add and subtract matrices of the same size and 
+        how to multiply a matrix by a number.  In this section, we learn how to multiply 
+        two matrices together, when matrix multiplication can be performed.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-matrixmult-bc"><title>Prepare</title>
+    <p>
+        Matrices of the same size are added by adding corresponding entries together, but
+        we do <em>not</em> multiply matrices by multiplying corresponding entries together.  
+        This is confusing at first, but there are very good reasons for defining matrix 
+        multiplication differently.  Unfortunately, most of those reasons do not become 
+        understandable until much, much later.
+    </p>
+    <p>
+      To start, two matrices can be multiplied together only if <em>the number of columns in the 
+      first matrix equals the number of rows in the second matrix</em>.  This means that a 
+      <m>2\times 3</m> matrix can be multiplied by a <m>3\times 1</m> matrix, or a <m>3\times 2</m> matrix,
+      or a <m>3\times 3</m> or <m>3\times 4</m> etc. matrix, but a <m>2\times 3</m> matrix 
+      <em>cannot</em> be multiplied by another <m>2\times 3</m> matrix.  
+    </p>
+    <p>
+      That's already pretty surprising, so let's check our understanding.  
+    </p>
+    <exercise label="canmatricesbemultiplied">
+      <introduction>
+        <p>
+          Define matrices <m>A</m>, <m>B</m>, and <m>C</m> by
+          <md>
+            <mrow>A\amp = \begin{bmatrix} 1 \amp 2 \amp 3 \\ -1 \amp 0 \amp 4 \end{bmatrix} \amp 
+              B\amp = \begin{bmatrix} -3 \amp 2 \amp -3 \\ 2 \amp 2 \amp 0 \end{bmatrix} \amp
+              C\amp = \begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}
+            </mrow>
+          </md>
+        </p>
+      </introduction>
+      <task label="canmatricesbemultiplied-a">
+        <statement>
+          <p>
+            Can matrix <m>A</m> be multiplied by matrix <m>B</m>?  In other words, is <m>AB</m> defined?
+          </p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>
+                Yes
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                No, because the first matrix, <m>A</m>, has <m>3</m> columns, but the second matrix,
+                <m>B</m>, does not have <m>3</m> rows.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                No
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct! The first matrix, <m>A</m>, has <m>3</m> columns, but the second matrix,
+                <m>B</m>, has <m>2</m> rows.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </task>
+      <task label="canmatricesbemultiplied-b">
+        <statement>
+          <p>
+            Can matrix <m>C</m> be multiplied by matrix <m>A</m>?  In other words, is <m>CA</m> defined?
+          </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                Yes
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct! The first matrix, <m>C</m>, has <m>2</m> columns, and the second matrix,
+                <m>A</m>, has <m>2</m> rows.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                No
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The first matrix, <m>A</m>, has <m>2</m> columns, and the second matrix,
+                <m>C</m>, has <m>2</m> rows.  These are equal.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </task>
+      <task label="canmatricesbemultiplied-c">
+        <statement>
+          <p>
+            Can matrix <m>A</m> be multiplied by matrix <m>C</m>?  In other words, is <m>AC</m> defined?
+          </p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>
+                Yes
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                No, because the first matrix, <m>A</m>, has <m>3</m> columns, but the second matrix,
+                <m>C</m>, does not have <m>3</m> rows.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                No
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct! The first matrix, <m>A</m>, has <m>3</m> columns, but the second matrix,
+                <m>C</m>, has <m>2</m> rows.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </task>
+      <task label="canmatricesbemultiplied-d">
+        <statement>
+          <p>
+            Consider the two statements below.
+            <ol>
+              <li>
+                <p>
+                  <m>A^2</m> is defined.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>C^2</m> is defined.
+                </p>
+              </li>
+            </ol>
+            Which of the following choices is correct?
+          </p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>
+                Both statements are true.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                <m>A^2</m> is the same as <m>A\cdot A</m>. The first matrix, <m>A</m>, has <m>3</m> columns, but the second matrix,
+                <m>A</m>, does not have <m>3</m> rows.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                1. is true but 2. is false
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                <m>A^2</m> is the same as <m>A\cdot A</m>. The first matrix, <m>A</m>, has <m>3</m> columns, but the second matrix,
+                <m>A</m>, does not have <m>3</m> rows.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                1. is false and 2. is true
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!  Any square matrix can be multiplied by itself, since the number of columns
+                equals the number of rows.  
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                Both statements are false.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Any square matrix can be multiplied by itself, since the number of columns
+                equals the number of rows.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </task>
+    </exercise>
+    <p>
+
+      <me>
+      (\underbrace{m\times \overbrace{n) \times (n}^{\mathclap{\text{these inner dimensions must match}}} \times r}_{\mathclap{\text{final dimensions are the outer dimensions}}})
+    </me>
+
+    </p>
+    <!-- cardsort with properties of number multiplication that do hold for matrices and ones that don't. -->
+
+  
+      
+    <reading-questions xml:id="rqs-matrixmult">
+      <exercise label="rq-matrixmult-questions"><title>Reflection</title>
+        <statement>
+          <p>
+            Enter a response to both of the following tasks:
+            <ol>
+              <li>
+                <p>
+                  Ask a question about the material, either about something you're not sure you fully understand, 
+                  or a <q>what if</q> question.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Give a percentage from 0 to 100 that reflects how confident you are with the material you 
+                  just read about, and give one sentence as to why you feel that way.  0 means you didn't 
+                  actually do the reading and 100 means that everything makes sense so far and you think you are 
+                  completely ready to engage with the material more deeply.  
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <response/>
+      </exercise>
+    </reading-questions>
+
+  </subsection>
+
+   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+  
+
+  <conclusion xml:id="subsec-matrixmult-summary">
+    <title>Summary</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+              
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+      </ul>
+    </p>
+  </conclusion>
+  
+
+
+  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+
+  <!-- <xi:include href="noninteractive-exercises/exer-.ptx" /> -->
+
+</section>

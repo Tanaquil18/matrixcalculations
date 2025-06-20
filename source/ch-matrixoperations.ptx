@@ -10,8 +10,8 @@
 
   <!-- include sections -->
   <xi:include href="sec-matrixarithmetic.ptx" />
-  <!-- <xi:include href="sec-matrices-elimination.ptx" />
-  <xi:include href="sec-row-operations.ptx" />
+  <xi:include href="sec-matrixmultiplication.ptx" />
+  <!--<xi:include href="sec-row-operations.ptx" />
   <xi:include href="sec-rref.ptx" />
   <xi:include href="sec-consistency.ptx" />
   <xi:include href="sec-problem-solving.ptx" /> -->

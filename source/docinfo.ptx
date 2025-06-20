@@ -16,6 +16,20 @@
   <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
   <!-- <document-id>unique-book-id</document-id> -->
 
+  
+
+  <math-package latex-name="cancel" mathjax-name="cancel"/>
+  <math-package latex-name="mathtools" mathjax-name="mathtools"/>
+  <!-- need the math tools package for \mathclap in sec-matrixmultiplication -->
+
+  <!-- the two lines above and the latex-preamble lines below appear to both work.  
+   not sure which is preferred or what the difference is.-->
+  
+  <!-- <latex-preamble>
+        <package>mathtools</package>
+        <package>cancel</package>
+  </latex-preamble> -->
+
   <!-- macros for defining latex math shortcuts. It is good practice -->
   <!-- to define these semantically, so that the macro relates to what-->
   <!-- it defines. -->
@@ -47,12 +61,12 @@
 
   <!-- If you put any latex-image elements you can include preambles -->
   <!-- for those in the next element. -->
-  <latex-image-preamble> 
+  <!-- <latex-image-preamble> 
     \usepackage{tikz, pgfplots} 
     \usetikzlibrary{positioning,matrix,arrows} 
     \usetikzlibrary{shapes,decorations,shadows,fadings,patterns} 
     \usetikzlibrary{decorations.markings} 
-  </latex-image-preamble>
+  </latex-image-preamble> -->
 
   <!-- <latex-image-preamble>
     \usepackage{pgfplots}
@@ -74,7 +88,7 @@
    post-section exercises, one where I'm okay if the answers are showing (the divisional one, with non-interactive problems) and one 
    that's not showing answers (containing interactive problems).  That difference in behavior means that the two sets of 
    problems have to be a different division type and/or exercise type.  I know webwork works within activity on Runestone, so that's what I've chosen to use. 
-   As a bonus commpanying this choice, activity has its own numbering, so as long as I use activity-like only for this purpose, the end-of-section webwork
+   As a bonus acommpanying this choice, activity has its own numbering, so as long as I use activity-like only for this purpose, the end-of-section webwork
    are numbered starting at chap.sec.1. Also, I use a lot of runestone interactives inline that I would like to be called Activity, but as of this 
    writing, pretext has perhaps tacitly assumed that all runestone directives are exercise elements, especially fillin. -->
 
