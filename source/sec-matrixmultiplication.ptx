@@ -5,8 +5,8 @@
   <introduction>
     <p>
         Last section, we learned how to add and subtract matrices of the same size and 
-        how to multiply a matrix by a number.  In this section, we learn how to multiply 
-        two matrices together, when matrix multiplication can be performed.
+        how to multiply a matrix by a number.  In this section, we learn when matrix multiplication
+        can be performed and how to multiply two matrices together. 
     </p>
   </introduction>
 
@@ -220,13 +220,156 @@
         </choices>
       </task>
     </exercise>
-    <p>
 
+    <p>
+      To start to understand why the number of columns of the first 
+      matrix must equal the number of rows of the second matrix, we demonstrate how to multiply a 
+      <m>3\times 2</m> matrix by a <m>2\times 1</m> matrix.  
+    </p>
+    <!-- example shamelessly stolen and modified from ULA by David Austin -->
+    <example xml:id="ex_matrixbycolumn"><title>Multiplying on the right by a column matrix</title>
+      <statement>
+        <p>
+        Suppose we have the matrices <m>A</m> and <m>B</m> below:
+        <me>
+          A = \left[\begin{array}{rr}
+          -2 \amp 3 \\
+          0 \amp 2 \\
+          3 \amp 1 \\
+          \end{array}\right],~~~
+          B = \left[\begin{array}{r}
+          2 \\ 3 \\ \end{array}\right]
+        </me>.
+        Their product is defined by multiplying the first column of <m>A</m> by 
+        the first number in <m>B</m>, and multiplying the second column of <m>A</m> by the second 
+        number in <m>B</m>, and adding the results.
+        <me>
+          \begin{aligned}
+          AB = 
+          \left[\begin{array}{rr}
+          -2 \amp 3 \\
+          0 \amp 2 \\
+          3 \amp 1 \\
+          \end{array}\right]
+          \left[\begin{array}{r} 2 \\ 3 \\ \end{array}\right]
+          {}={} \amp
+          \left[\begin{array}{r} -2 \\ 0 \\ 3 \\ \end{array}\right]2 +
+           \left[\begin{array}{r} 3 \\ 2 \\ 1 \\ \end{array}\right]3
+          \\ \\
+          {}={} \amp
+          \left[\begin{array}{r} -2\cdot 2 \\ 0\cdot 2 \\ 3\cdot 2 \\ \end{array}\right] +
+          \left[\begin{array}{r} 3\cdot 3 \\ 2\cdot 3 \\ 1\cdot 3 \\ \end{array}\right] \\ \\
+          {}={} \amp
+          \left[\begin{array}{r} 5 \\ 6 \\ 9 \\ \end{array}\right]. \\
+          \end{aligned}
+        </me>
+        </p>
+        <p>
+          If we look at the first entry, we see it came from
+          <me>
+            -2\cdot 2 + 3 \cdot 3
+          </me>,
+          and we note that the first row of <m>A</m> is <m>\begin{bmatrix} -2 \amp 3 \end{bmatrix}</m>.
+          Looking at the second entry of <m>AB</m> we have 
+          <me>
+            0\cdot 2 + 2 \cdot 3
+          </me>,
+          and the second row of <m>A</m> is <m>\begin{bmatrix} 0 \amp 2 \end{bmatrix}</m>.
+          The third entry of <m>AB</m> is
+          <me>
+            3\cdot 2 + 1 \cdot 3
+          </me>, 
+          and the third row of <m>A</m> is <m>\begin{bmatrix} 3 \amp 1 \end{bmatrix}</m>.
+        </p>
+        <p>
+          This means that we can view matrix multiplication entry-wise as 
+          multiplying the numbers in a row of the first matrix by the numbers in a column of the second matrix and adding them up.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Note that in <xref ref="ex_matrixbycolumn"/> the matrix <m>A</m> has two columns and so we
+      needed <m>B</m> to contain two numbers in its column, which means <m>B</m> has two rows.  
+      On the other hand, since <m>A</m> has three rows, the result of multiplying a column of <m>A</m> 
+      by a number still has three rows, and adding matrices keeps the size the same, which is why the 
+      product <m>AB</m> has three rows.
+    </p>
+    <p>
+      This generalizes to when the second matrix of the product has more columns than <m>1</m>.
       <me>
       (\underbrace{m\times \overbrace{n) \times (n}^{\mathclap{\text{these inner dimensions must match}}} \times r}_{\mathclap{\text{final dimensions are the outer dimensions}}})
     </me>
-
     </p>
+    <example xml:id="ex_matrix_multiply_1"><title>Matrix Multiplication, More Columns</title>
+      <statement>
+        <p>
+          Calculate
+          <me>
+            \left[\begin{array}{cc} 1\amp 2\\3\amp 4 \end{array} \right]\left[\begin{array}{ccc} 3\amp -1\amp 0\\1\amp 2\amp -1 \end{array} \right]
+          </me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's call the first matrix <m>A</m> and the second matrix <m>B</m>. We should first check to see that we can actually perform this multiplication.
+          Matrix <m>A</m> is <m>2\times 2</m> and <m>B</m> is <m>2\times 3</m>.
+          The <q>inner</q>
+          dimensions match up, so we can compute the product; the
+          <q>outer</q>
+          dimensions tell us that the product will be <m>2\times 3</m>.
+          We form a <m>2\times 3</m> matrix
+          <me>
+            A B = \left[\begin{array}{ccc} m_{11} \amp  m_{12} \amp  m_{13}\\m_{21} \amp  m_{22} \amp  m_{23} \end{array} \right]
+          </me>,
+          and we will now find the value of each of the entries.
+        </p>
+        <p>
+          The entry <m>m_{11}</m> is in the first row and first column, so
+          we use the first row of <m>A</m> and the first column of <m>B</m>, multiply corresponding number entries and add them up. Thus
+          <me>
+            m_{11} = \left[\begin{array}{cc}  1\amp 2 \end{array} \right]\left[\begin{array}{c} 3\\1 \end{array} \right] = 1\cdot 3+2 \cdot 1 = 5
+          </me>.
+          We now know that
+          <me>
+            A B = \left[\begin{array}{ccc} 5 \amp  m_{12} \amp  m_{13}\\m_{21} \amp  m_{22} \amp  m_{23} \end{array} \right]
+          </me>
+        </p>
+        <p>
+          Moving to the next entry to the right, we use the the first row of <m>A</m> and the second column of <m>B</m>, giving us
+          <me>
+            m_{12} = \left[\begin{array}{cc} 1\amp 2 \end{array} \right]\left[\begin{array}{c} -1\\2 \end{array} \right] = 1\cdot(-1)+2\cdot 2 = 3
+          </me>.
+          Finishing the first row of <m>AB</m>, using the first row of <m>A</m> and the third column of B, we get
+          <me>
+            m_{13} = \left[\begin{array}{cc} 1\amp 2 \end{array} \right]\left[\begin{array}{c} 0\\-1 \end{array} \right] = 1\cdot 0+2\cdot (-1) = -2
+          </me>. 
+          So far we have
+          <me>
+            A B = \left[\begin{array}{ccc} 5 \amp  3 \amp  -2\\m_{21} \amp  m_{22} \amp  m_{23} \end{array} \right]
+          </me>.
+        </p>
+        <p>
+          To compute the second row of <m>A B</m>, we use the second row of <m>A</m> with the first, then second, and finally third columns of <m>B</m>.
+          We find
+          <me>
+            m_{21} = \left[\begin{array}{cc} 3\amp 4 \end{array} \right]\left[\begin{array}{c} 3\\1 \end{array} \right] = 13
+          </me>
+          <me>
+            m_{22} = \left[\begin{array}{cc} 3\amp 4 \end{array} \right]\left[\begin{array}{c} -1\\2 \end{array} \right] = 5
+          </me>,
+          and
+          <me>
+            m_{23} = \left[\begin{array}{cc} 3\amp 4 \end{array} \right]\left[\begin{array}{c} 0\\-1 \end{array} \right] = -4
+          </me>.
+          Thus
+          <me>
+            A B = \left[\begin{array}{cc} 1\amp 2\\3\amp 4 \end{array} \right]\left[\begin{array}{ccc} 1\amp -1\amp 0\\2\amp 2\amp -1 \end{array} \right] = \left[\begin{array}{ccc} 5 \amp  3 \amp  -2\\13 \amp  5 \amp  -4 \end{array} \right]
+          </me>
+        </p>
+      </solution>
+    </example>
+    <!-- something with entries coming from which row and which column? -->
+     <!-- keep the below for in-class? if it doesn't hold give a counterexample? -->
     <!-- cardsort with properties of number multiplication that do hold for matrices and ones that don't. -->
 
   

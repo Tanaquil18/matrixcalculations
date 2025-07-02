@@ -762,7 +762,7 @@
       <title>Row operation, yes or no?</title>
       <statement>
         <p>
-          Let <m>A</m> be a <m>4\times 5</m> matrix.  Which of the following notations represent elementary operations we can 
+          Let <m>A</m> be a <m>4\times 5</m> matrix.  Which of the following notations represent elementary row operations we can 
           perform on <m>A</m>?
         </p>
       </statement>

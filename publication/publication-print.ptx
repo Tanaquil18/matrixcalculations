@@ -17,7 +17,8 @@
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project). Some examples:                                            -->
     <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
-    <exercise-divisional statement="yes" hint="yes" answer="yes" solution="no"/>
+    <exercise-divisional statement="yes" hint="yes" answer="no" solution="no"/>
+    <exercise-reading statement="yes" hint="yes" answer="no" solution="no"/>
     <exercise-project statement="yes" hint="yes" answer="no" solution="no" />
     <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
     <!-- Style of fill-in-the-blanks: -->

@@ -55,8 +55,14 @@
     \newcommand{\lns}[1]{\mathcal{L}\!\left(#1\right)}
     \newcommand{\linearsystem}[2]{\mathcal{LS}\!\left(#1,\,#2\right)}
     \newcommand{\vect}[1]{\mathbf{#1}}
+    \newcommand{\lteval}[2]{#1\left(#2\right)}
+    \newcommand{\ltdefn}[3]{#1\colon #2\rightarrow#3}
     \newcommand{\zerovector}{\vect{0}}
     \newcommand{\homosystem}[1]{\linearsystem{#1}{\zerovector}}
+    \newcommand{\eigenspace}[2]{\mathcal{E}_{#1}\left(#2\right)}
+    \newcommand{\matrixrep}[3]{M^{#1}_{#2,#3}}
+    \newcommand{\vectrepname}[1]{\rho_{#1}}
+    \newcommand{\vectrep}[2]{\lteval{\vectrepname{#1}}{#2}}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

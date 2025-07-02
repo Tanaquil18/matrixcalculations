@@ -223,20 +223,21 @@
           <task workspace=".5in">
             <statement>
               <p>
-                For every matrix <m>C</m>, there is a matrix <m>Z</m> such that <m>Z+C=C+Z=C</m>.  (The matrix
+                For each matrix <m>C</m>, there is a matrix <m>Z</m> such that <m>Z+C=C+Z=C</m>.  (The matrix
                       <m>Z</m> acts like the number <m>0</m> does for numbers.)
               </p>
             </statement>
             <answer>
               <p>
-                True, the zero matrix of the appropriate size.
+                True, the zero matrix of the appropriate size.  But there are different zero matrices and only
+                one number <m>0</m>.
               </p>
             </answer>
           </task>
           <task workspace=".5in">
             <statement>
               <p>
-                For every matrix <m>C</m>, there is a matrix <m>I</m> such that <m>IC=CI=C</m>. (The matrix
+                For each matrix <m>C</m>, there is a matrix <m>I</m> such that <m>IC=CI=C</m>. (The matrix
                       <m>I</m> acts like the number <m>1</m> does for numbers.)
               </p>
             </statement>
