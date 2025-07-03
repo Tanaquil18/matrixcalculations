@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-name-dc"> 
+    <title>Participate</title> -->
+    
+    <worksheet xml:id="ws-matrixmultiplication" margin="1in" bottom="1.25cm"><title component="print-worksheets">Participate: Matrix Multiplication</title><title component="online-worksheets">Participate</title>
+      <objectives>
+        <ul>
+          <li>
+            <p>
+              Be able to perform matrix multiplication when it is possible.
+            </p>
+          </li>
+          <li>
+            <p>
+              Explore ways in which matrix multiplication acts like multiplication of numbers, and 
+              ways in which matrix multiplication is different.  
+            </p>
+          </li>
+        </ul>
+</objectives>
+      <!-- <introduction>
+        <p>
+          something else to say?
+        </p>
+      </introduction> -->
+      <page>
+        <!-- Still need something about the identity matrix, and maybe (a+b)^2 \neq a^2+2ab+b^2 -->
+        <activity>
+      <statement>
+      <p> Consider the matrices
+	<me>
+	  A = \left[\begin{array}{rrr}
+	  1 \amp 3 \amp 2 \\
+	  -3 \amp 4 \amp -1 \\
+	  \end{array}\right],~~~
+	  B = \left[\begin{array}{rr}
+	  3 \amp 0 \\
+	  1 \amp 2 \\
+	  -2 \amp -1 \\
+	  \end{array}\right]
+	</me>.
+	<ol marker="a.">
+	  <li>
+	    <p>
+	      Before
+	      computing, first explain why the shapes of
+	      <m>A</m> and <m>B</m> enable us to form the product <m>AB</m>.
+	      Then describe the shape of <m>AB</m>.
+	    </p>
+	  </li>
+
+	  <li><p> Compute the product <m>AB</m>. </p></li>
+
+	  <li><p> Sage can multiply matrices using the <c>*</c>
+	  operator.  Define the matrices <m>A</m> and <m>B</m> in the
+	  Sage cell below and
+	  check your work by computing <m>AB</m>.
+	  <sage>
+	    <input>
+	    </input>
+	  </sage>
+	  </p></li>
+	  
+	  <li><p> Are we able to form the matrix product <m>BA</m>?  If
+	  so, use the Sage cell above to find <m>BA</m>.  Is it
+	  generally true that <m>AB = BA</m>?
+	  </p></li>
+	  
+	  <li><p> Suppose we form the three matrices.
+	  <me>
+	    A = \left[\begin{array}{rr}
+	    1 \amp 2 \\
+	    3 \amp -2 \\
+	    \end{array}\right],
+	    B = \left[\begin{array}{rr}
+	    0 \amp 4 \\
+	    2 \amp -1 \\
+	    \end{array}\right],
+	    C = \left[\begin{array}{rr}
+	    -1 \amp 3 \\
+	    4 \amp 3 \\
+	    \end{array}\right]
+	    </me>.
+	    Compare what happens when you compute <m>A(B+C)</m> and <m>AB
+	    + AC</m>.  State your finding as a general principle.
+	    <sage>
+	      <input>
+	      </input>
+	    </sage>
+	    
+	  </p></li>
+	  
+	  <li><p> Compare the results of evaluating <m>A(BC)</m> and
+	  <m>(AB)C</m> and state your finding as a general
+	  principle. </p></li> 
+	  
+	  <li><p> When we are dealing with real numbers, we know if
+	  <m>a\neq 0</m> and <m>ab = ac</m>, then <m>b=c</m>.  Define
+	  matrices 
+	  <me>
+	    A = \left[\begin{array}{rr}
+	    1 \amp 2 \\
+	    -2 \amp -4 \\
+	    \end{array}\right],
+	    B = \left[\begin{array}{rr}
+	    3 \amp 0 \\
+	    1 \amp 3 \\
+	    \end{array}\right],
+	    C = \left[\begin{array}{rr}
+	    1 \amp 2 \\
+	    2 \amp 2 \\
+	    \end{array}\right]
+	  </me>
+	  and compute <m>AB</m> and <m>AC</m>.
+	  <sage>
+	    <input>
+	    </input>
+	  </sage>
+	  If <m>AB = AC</m>, is it necessarily true that <m>B = C</m>?
+	  </p></li>
+	  
+	  <li><p> Again, with real numbers, we know that if <m>ab =
+	  0</m>, then either <m>a = 0</m> or <m>b=0</m>.  Define
+	  <me>
+	    A = \left[\begin{array}{rr}
+	    1 \amp 2 \\
+	    -2 \amp -4 \\
+	    \end{array}\right],
+	    B = \left[\begin{array}{rr}
+	    2 \amp -4 \\
+	    -1 \amp 2 \\
+	    \end{array}\right]
+	  </me>
+	  and compute <m>AB</m>.
+	  <sage>
+	    <input>
+	    </input>
+	  </sage>
+	  If <m>AB = 0</m>, is it necessarily true that either
+	  <m>A=0</m> or <m>B=0</m>?
+	  </p></li>
+	</ol>
+      </p>
+      </statement>
+      
+      <solution>
+	<p><ol marker="a.">
+	  <li><p>
+	    The product <m>AB</m> exists because the number of columns
+	    of <m>A</m> equals the number of rows of <m>B</m>.  The
+	    dimensions of <m>AB</m> are <m>2\times 2</m>.
+	  </p></li>
+
+	  <li><p>
+	    We have
+	    <m>AB =
+	    \left[\begin{array}{rr}
+	    2 \amp 4 \\
+	    -3 \amp 9
+	    \end{array}\right]
+	    </m>.
+	  </p></li>
+
+	  <li><p> Define
+	    <cd>
+A = matrix(2, 3, [1, 3, 2, -3, 4, -1])
+B = matrix(3, 2, [3, 0, 1, 2, -2, -1])
+A*B
+	    </cd>
+	  </p></li>
+
+	  <li><p>
+	    Yes, we can form the product <m>BA</m> because the number
+	    of columns of <m>B</m> equals the number of rows of
+	    <m>A</m>.  This product <m>AB</m> will be <m>3\times3</m>,
+	    however, so it must be true that <m>AB\neq BA</m>.
+	  </p></li>
+
+	  <li><p> We find that <m>A(B+C)=AB + AC</m>.
+	  </p></li>
+
+	  <li><p> We find that <m>A(BC) = (AB)C</m>.
+	  </p></li>
+
+	  <li><p>
+	    It is not generally true that <m>B=C</m> if <m>AB=AC</m>,
+	    as illustrated by this example.
+	  </p></li>
+
+	  <li><p>
+	    It is not generally true that <m>A=0</m> or <m>B=0</m> if
+	    <m>AB=0</m>, as illustrated by this example.
+	  </p></li>
+
+	</ol></p>
+      </solution>
+
+      <answer>
+	<p><ol marker="a.">
+	  <li><p>
+	    The product <m>AB</m> exists because the number of columns
+	    of <m>A</m> equals the number of rows of <m>B</m>.  The
+	    dimensions of <m>AB</m> are <m>2\times 2</m>.
+	  </p></li>
+
+	  <li><p>
+	    We have
+	    <m>AB =
+	    \left[\begin{array}{rr}
+	    2 \amp 4 \\
+	    -3 \amp 9
+	    \end{array}\right]
+	    </m>.
+	  </p></li>
+
+	  <li><p> Define
+	    <cd>
+A = matrix(2, 3, [1, 3, 2, -3, 4, -1])
+B = matrix(3, 2, [3, 0, 1, 2, -2, -1])
+A*B
+	    </cd>
+	  </p></li>
+
+	  <li><p>
+	    It is not generally true that <m>AB=BA</m>.
+	  </p></li>
+
+	  <li><p> We find that <m>A(B+C)=AB + AC</m>.
+	  </p></li>
+
+	  <li><p> We find that <m>A(BC) = (AB)C</m>.
+	  </p></li>
+
+	  <li><p>
+	    It is not generally true that <m>B=C</m> if <m>AB=AC</m>.
+	  </p></li>
+
+	  <li><p>
+	    It is not generally true that <m>A=0</m> or <m>B=0</m> if
+	    <m>AB=0</m>.
+	  </p></li>
+
+	</ol></p>
+      </answer>
+
+      
+    </activity>
+
+      
+      </page>
+    </worksheet>
+    <!-- </subsection> -->
