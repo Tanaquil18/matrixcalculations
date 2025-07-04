@@ -121,14 +121,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.1';
+eBookConfig.runestone_version = '7.8.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.242116c5bc6b6581.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -155,8 +155,8 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-matrixarithmetic.html#subsec-matrixarithmetic-bc" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="sec-matrixarithmetic.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-testing-things.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-matrixarithmetic.html#subsec-matrixarithmetic-bc" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="sec-matrixarithmetic.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-matrixmult.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\newcommand{\N}{\mathbb N} 
 \newcommand{\Z}{\mathbb Z} 
 \newcommand{\Q}{\mathbb Q} 
 \newcommand{\R}{\mathbb R}
@@ -177,8 +177,14 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\lns}[1]{\mathcal{L}\!\left(#1\right)}
 \newcommand{\linearsystem}[2]{\mathcal{LS}\!\left(#1,\,#2\right)}
 \newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\lteval}[2]{#1\left(#2\right)}
+\newcommand{\ltdefn}[3]{#1\colon #2\rightarrow#3}
 \newcommand{\zerovector}{\vect{0}}
 \newcommand{\homosystem}[1]{\linearsystem{#1}{\zerovector}}
+\newcommand{\eigenspace}[2]{\mathcal{E}_{#1}\left(#2\right)}
+\newcommand{\matrixrep}[3]{M^{#1}_{#2,#3}}
+\newcommand{\vectrepname}[1]{\rho_{#1}}
+\newcommand{\vectrep}[2]{\lteval{\vectrepname{#1}}{#2}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -196,7 +202,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ch-lineqnandaugmentedmatrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations and Augmented Matrices</span></a></div>
+<div class="toc-title-box"><a href="ch-lineqnandaugmentedmatrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations, Augmented Matrices</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-lin-eqn-substitution.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Equations and Substitution</span></a></div>
@@ -274,7 +280,8 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-matrixoperations.html" class="internal"><span class="codenumber">2</span> <span class="title">Matrices as Mathematical Objects</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-matrixarithmetic.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Matrix Arithmetic</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-subsection">
@@ -285,7 +292,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#ww-matrixarithmetic" class="internal"><span class="title">Practice</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#exer-matrixarithmetic" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
-</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrixmult.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Matrix Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrixmult.html#subsec-matrixmult-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrixmult.html#rqs-matrixmult" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrixmult.html#ws-matrixmultiplication" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixmult.html#exer-" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-testing-things.html" class="internal"><span class="codenumber">3</span> <span class="title">Testing Things</span></a></div>
@@ -394,17 +413,17 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="workspace" data-space=".5in"></div>
 <div class="autopermalink" data-description="Task 4.g"><a href="#ws-matrixarithmetic-5-1-8" title="Copy permalink for Task 4.g">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="ws-matrixarithmetic-5-1-9-1-1">For every matrix <span class="process-math">\(C\text{,}\)</span> there is a matrix <span class="process-math">\(Z\)</span> such that <span class="process-math">\(Z+C=C+Z=C\text{.}\)</span>  (The matrix <span class="process-math">\(Z\)</span> acts like the number <span class="process-math">\(0\)</span> does for numbers.)<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-9-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-5-1-9-1-1">For each matrix <span class="process-math">\(C\text{,}\)</span> there is a matrix <span class="process-math">\(Z\)</span> such that <span class="process-math">\(Z+C=C+Z=C\text{.}\)</span>  (The matrix <span class="process-math">\(Z\)</span> acts like the number <span class="process-math">\(0\)</span> does for numbers.)<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-9-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
 <div class="autopermalink" data-description="Task 4.h"><a href="#ws-matrixarithmetic-5-1-9" title="Copy permalink for Task 4.h">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="ws-matrixarithmetic-5-1-10-1-1">For every matrix <span class="process-math">\(C\text{,}\)</span> there is a matrix <span class="process-math">\(I\)</span> such that <span class="process-math">\(IC=CI=C\text{.}\)</span> (The matrix <span class="process-math">\(I\)</span> acts like the number <span class="process-math">\(1\)</span> does for numbers.)<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-10-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-5-1-10-1-1">For each matrix <span class="process-math">\(C\text{,}\)</span> there is a matrix <span class="process-math">\(I\)</span> such that <span class="process-math">\(IC=CI=C\text{.}\)</span> (The matrix <span class="process-math">\(I\)</span> acts like the number <span class="process-math">\(1\)</span> does for numbers.)<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-10-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
 <div class="autopermalink" data-description="Task 4.i"><a href="#ws-matrixarithmetic-5-1-10" title="Copy permalink for Task 4.i">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-matrixarithmetic-5-1" title="Copy permalink for Worksheet Exercise 4">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-matrixarithmetic" title="Copy permalink for Worksheet: Participate">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="sec-matrixarithmetic.html#subsec-matrixarithmetic-bc" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-testing-things.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-matrixarithmetic.html#subsec-matrixarithmetic-bc" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-matrixmult.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

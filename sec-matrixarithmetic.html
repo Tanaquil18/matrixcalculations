@@ -120,19 +120,19 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.1';
+eBookConfig.runestone_version = '7.8.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.242116c5bc6b6581.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
-<body id="matrixtheory" class="pretext book ignore-math">
+<body id="matrixcalculations" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Matrix Calculations</span> <span class="subtitle">An introduction to parts of linear algebra</span></a></h1>
 <p class="byline">Chrissy Safranski</p>
@@ -154,8 +154,8 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-matrixoperations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrixoperations.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-testing-things.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-matrixoperations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrixoperations.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-matrixmult.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\newcommand{\N}{\mathbb N} 
 \newcommand{\Z}{\mathbb Z} 
 \newcommand{\Q}{\mathbb Q} 
 \newcommand{\R}{\mathbb R}
@@ -176,8 +176,14 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\lns}[1]{\mathcal{L}\!\left(#1\right)}
 \newcommand{\linearsystem}[2]{\mathcal{LS}\!\left(#1,\,#2\right)}
 \newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\lteval}[2]{#1\left(#2\right)}
+\newcommand{\ltdefn}[3]{#1\colon #2\rightarrow#3}
 \newcommand{\zerovector}{\vect{0}}
 \newcommand{\homosystem}[1]{\linearsystem{#1}{\zerovector}}
+\newcommand{\eigenspace}[2]{\mathcal{E}_{#1}\left(#2\right)}
+\newcommand{\matrixrep}[3]{M^{#1}_{#2,#3}}
+\newcommand{\vectrepname}[1]{\rho_{#1}}
+\newcommand{\vectrep}[2]{\lteval{\vectrepname{#1}}{#2}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -195,7 +201,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ch-lineqnandaugmentedmatrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations and Augmented Matrices</span></a></div>
+<div class="toc-title-box"><a href="ch-lineqnandaugmentedmatrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations, Augmented Matrices</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-lin-eqn-substitution.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Equations and Substitution</span></a></div>
@@ -273,7 +279,8 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-matrixoperations.html" class="internal"><span class="codenumber">2</span> <span class="title">Matrices as Mathematical Objects</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-matrixarithmetic.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Matrix Arithmetic</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection">
@@ -284,7 +291,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#ww-matrixarithmetic" class="internal"><span class="title">Practice</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#exer-matrixarithmetic" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
-</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrixmult.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Matrix Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrixmult.html#subsec-matrixmult-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrixmult.html#rqs-matrixmult" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrixmult.html#ws-matrixmultiplication" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixmult.html#exer-" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-testing-things.html" class="internal"><span class="codenumber">3</span> <span class="title">Testing Things</span></a></div>
@@ -301,13 +320,13 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-matrixarithmetic"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Introduction to Matrix Arithmetic</span>
 </h2>
-<section class="introduction" id="sec-matrixarithmetic-2"><div class="para" id="sec-matrixarithmetic-2-1">We will stop thinking about matrices as representing linear systems, and instead think of matrices as being kind of like numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrixarithmetic-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-matrixarithmetic-2"><div class="para" id="sec-matrixarithmetic-2-1">We will stop thinking about matrices as representing linear systems, and instead think of matrices as being kind of like numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrixarithmetic-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-matrixarithmetic-2-2">When we were children, we learned about numbers and their names and numerals, then how to count, how to add, subtract, and multiply, and various properties of those operations that led us to be able to solve equations containing unknown numbers.  All of this took years to became second nature, but we will build on the knowledge and familiarity with how numbers work to understand how matrices work.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrixarithmetic-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-matrixarithmetic-2-2">When we were children, we learned about numbers and their names and numerals, then how to count, how to add, subtract, and multiply, and various properties of those operations that led us to be able to solve equations containing unknown numbers.  All of this took years to became second nature, but we will build on the knowledge and familiarity with how numbers work to understand how matrices work.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrixarithmetic-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsec-matrixarithmetic-bc"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Prepare</span>
 </h3>
-<div class="para" id="subsec-matrixarithmetic-bc-2">We defined a matrix in <a href="sec-matrices-elimination.html#def_matrix" class="xref" data-knowl="./knowl/xref/def_matrix.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.2.6: Matrix">Definition 1.2.6</a>, and included defining rows, columns, and notation for the size of a matrix and for the entries within a matrix.  An augmented matrix, whose entries represent the coefficients and constants in a linear system, is a type of matrix or a way of interpreting a matrix, but when we look at a matrix we don’t have to think of a linear system at all. A matrix is an array of numbers; both the size of the array and the contents are important to the essence of a matrix.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-bc-2">We defined a matrix in <a href="sec-matrices-elimination.html#def_matrix" class="xref" data-knowl="./knowl/xref/def_matrix.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.2.6: Matrix">Definition 1.2.6</a>, and included defining rows, columns, and notation for the size of a matrix and for the entries within a matrix.  An augmented matrix, whose entries represent the coefficients and constants in a linear system, is a type of matrix or a way of interpreting a matrix, but when we look at a matrix we don’t have to think of a linear system at all. A matrix is an array of numbers; both the size of the array and the contents are important to the essence of a matrix.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-matrixarithmetic-bc-3">
 <div class="para"> We add two matrices by adding the numbers in their corresponding positions.  For example,</div>
@@ -328,13 +347,13 @@ eBookConfig.enable_chatcodes =  false;
 \begin{bmatrix} 2 \amp -1 \\ 0 \amp 8 \end{bmatrix}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrixarithmetic-bc-4">Subtraction and multiplying by numbers can be related back to addition, for example <span class="process-math">\(3-1=3+(-1)\)</span> and <span class="process-math">\(3\cdot 5 = 5+5+5\text{,}\)</span> so it makes sense that subtracting two matrices and multiplying a matrix by a number also work by doing the operation to each entry in the matrix.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-bc-4">Subtraction and multiplying by numbers can be related back to addition, for example <span class="process-math">\(3-1=3+(-1)\)</span> and <span class="process-math">\(3\cdot 5 = 5+5+5\text{,}\)</span> so it makes sense that subtracting two matrices and multiplying a matrix by a number also work by doing the operation to each entry in the matrix.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrixarithmetic-bc-5">We know that numbers can sometimes appear in different forms but really be the same number: for example, <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(\frac{10}{5}\text{,}\)</span> <span class="process-math">\(2.00\)</span> are all different ways to write the number “two”. Two matrices are equal if each corresponding position contains the same number, regardless of the form of the number.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-bc-5">We know that numbers can sometimes appear in different forms but really be the same number: for example, <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(\frac{10}{5}\text{,}\)</span> <span class="process-math">\(2.00\)</span> are all different ways to write the number “two”. Two matrices are equal if each corresponding position contains the same number, regardless of the form of the number.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrixarithmetic-bc-6">Let’s try some examples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-6" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-bc-6">Let’s try some examples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="matrix-addsubscalarmult"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Operations.</span>
@@ -349,7 +368,7 @@ B\amp = \begin{bmatrix} -3 \amp 2 \amp -3 \\ 2 \amp 2 \amp 0 \end{bmatrix} \amp
 C\amp = \begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div>
 <div data-component="tabbedStuff" id="rs-matrix-addsubscalarmult">
 <div data-component="tab" data-tabname="(a)"><article class="task exercise-like" id="matrix-addsubscalarmult-a"><h5 class="heading"><span class="codenumber">(a)</span></h5>
@@ -361,24 +380,24 @@ C\amp = \begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}
 A+B
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-a-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-a-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-matrix-addsubscalarmult-a" data-multipleanswers="true">
 <li data-component="answer" id="rs-matrix-addsubscalarmult-a_opt_a" data-correct=""><div class="para" id="matrix-addsubscalarmult-a-2-1-1-1">
-<span class="process-math">\(\begin{bmatrix} -2 \amp 4 \amp 0 \\ 1 \amp 2 \amp 4 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-a-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} -2 \amp 4 \amp 0 \\ 1 \amp 2 \amp 4 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-a-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-a_opt_a"><div class="para" id="matrix-addsubscalarmult-a-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-a_opt_b" data-correct=""><div class="para" id="matrix-addsubscalarmult-a-2-2-1-1">
-<span class="process-math">\(\begin{bmatrix} 1+-3 \amp 2+2 \amp 3+-3 \\ -1+2 \amp 0+2 \amp 4+0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-a-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} 1+-3 \amp 2+2 \amp 3+-3 \\ -1+2 \amp 0+2 \amp 4+0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-a-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-a_opt_b"><div class="para" id="matrix-addsubscalarmult-a-2-2-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-a_opt_c" data-correct=""><div class="para" id="matrix-addsubscalarmult-a-2-3-1-1">
-<span class="process-math">\(B+A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-a-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(B+A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-a-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-a_opt_c"><div class="para" id="matrix-addsubscalarmult-a-2-3-2-1">Correct!</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.1.1.a"><a href="#matrix-addsubscalarmult-a" title="Copy permalink for Task 2.1.1.a">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.1.1.a"><a href="#matrix-addsubscalarmult-a" title="Copy heading and permalink for Task 2.1.1.a">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(b)"><article class="task exercise-like" id="matrix-addsubscalarmult-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="matrix-addsubscalarmult-b-1-1">
@@ -388,24 +407,24 @@ A+B
 A-B
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-b-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-b-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-matrix-addsubscalarmult-b" data-multipleanswers="true">
 <li data-component="answer" id="rs-matrix-addsubscalarmult-b_opt_a" data-correct=""><div class="para" id="matrix-addsubscalarmult-b-2-1-1-1">
-<span class="process-math">\(\begin{bmatrix} 4 \amp 0 \amp 6 \\ -3 \amp -2 \amp 4 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-b-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} 4 \amp 0 \amp 6 \\ -3 \amp -2 \amp 4 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-b-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-b_opt_a"><div class="para" id="matrix-addsubscalarmult-b-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-b_opt_b"><div class="para" id="matrix-addsubscalarmult-b-2-2-1-1">
-<span class="process-math">\(\begin{bmatrix} -4 \amp 0 \amp -6 \\ 3 \amp 2 \amp -4 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-b-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} -4 \amp 0 \amp -6 \\ 3 \amp 2 \amp -4 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-b-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-b_opt_b"><div class="para" id="matrix-addsubscalarmult-b-2-2-2-1">This is <span class="process-math">\(B-A\text{,}\)</span> subtracted in the other order.</div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-b_opt_c" data-correct=""><div class="para" id="matrix-addsubscalarmult-b-2-3-1-1">
-<span class="process-math">\(\begin{bmatrix} 1-(-3) \amp 2-2 \amp 3-(-3) \\ -1-2 \amp 0-2 \amp 4-0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-b-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} 1-(-3) \amp 2-2 \amp 3-(-3) \\ -1-2 \amp 0-2 \amp 4-0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-b-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-b_opt_c"><div class="para" id="matrix-addsubscalarmult-b-2-3-2-1">Correct!</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.1.1.b"><a href="#matrix-addsubscalarmult-b" title="Copy permalink for Task 2.1.1.b">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.1.1.b"><a href="#matrix-addsubscalarmult-b" title="Copy heading and permalink for Task 2.1.1.b">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(c)"><article class="task exercise-like" id="matrix-addsubscalarmult-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="matrix-addsubscalarmult-c-1-1">
@@ -415,30 +434,30 @@ A-B
 2B
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-matrix-addsubscalarmult-c" data-multipleanswers="true">
 <li data-component="answer" id="rs-matrix-addsubscalarmult-c_opt_a"><div class="para" id="matrix-addsubscalarmult-c-2-1-1-1">
-<span class="process-math">\(\begin{bmatrix} 2 \amp 4 \amp 6 \\ -2 \amp 0 \amp 8 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} 2 \amp 4 \amp 6 \\ -2 \amp 0 \amp 8 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-c_opt_a"><div class="para" id="matrix-addsubscalarmult-c-2-1-2-1">This is <span class="process-math">\(2A\text{.}\)</span>
 </div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-c_opt_b" data-correct=""><div class="para" id="matrix-addsubscalarmult-c-2-2-1-1">
-<span class="process-math">\(\begin{bmatrix} -6 \amp 4 \amp -6 \\ 4 \amp 4 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} -6 \amp 4 \amp -6 \\ 4 \amp 4 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-c_opt_b"><div class="para" id="matrix-addsubscalarmult-c-2-2-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-c_opt_c" data-correct=""><div class="para" id="matrix-addsubscalarmult-c-2-3-1-1">
-<span class="process-math">\(\begin{bmatrix} -6.0 \amp \frac{8}{2} \amp -6 \\ \sqrt{16} \amp 4 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} -6.0 \amp \frac{8}{2} \amp -6 \\ \sqrt{16} \amp 4 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-c_opt_c"><div class="para" id="matrix-addsubscalarmult-c-2-3-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-c_opt_d"><div class="para" id="matrix-addsubscalarmult-c-2-4-1-1">
-<span class="process-math">\(\begin{bmatrix} -9 \amp 6 \amp -9 \\ 6 \amp 6 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-2-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} -9 \amp 6 \amp -9 \\ 6 \amp 6 \amp 0 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-c-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-c_opt_d"><div class="para" id="matrix-addsubscalarmult-c-2-4-2-1">This is <span class="process-math">\(3B\text{.}\)</span>
 </div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.1.1.c"><a href="#matrix-addsubscalarmult-c" title="Copy permalink for Task 2.1.1.c">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.1.1.c"><a href="#matrix-addsubscalarmult-c" title="Copy heading and permalink for Task 2.1.1.c">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(d)"><article class="task exercise-like" id="matrix-addsubscalarmult-d"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="matrix-addsubscalarmult-d-1-1">
@@ -448,19 +467,19 @@ A-B
 \begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-d-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-d-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-matrix-addsubscalarmult-d" data-multipleanswers="true">
 <li data-component="answer" id="rs-matrix-addsubscalarmult-d_opt_a" data-correct=""><div class="para" id="matrix-addsubscalarmult-d-2-1-1-1">
-<span class="process-math">\(0C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-d-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(0C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-d-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-d_opt_a"><div class="para" id="matrix-addsubscalarmult-d-2-1-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-d_opt_b" data-correct=""><div class="para" id="matrix-addsubscalarmult-d-2-2-1-1">
-<span class="process-math">\(C-C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-d-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(C-C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-d-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-d_opt_b"><div class="para" id="matrix-addsubscalarmult-d-2-2-2-1">Correct!</div></li>
 <li data-component="answer" id="rs-matrix-addsubscalarmult-d_opt_c"><div class="para" id="matrix-addsubscalarmult-d-2-3-1-1">
-<span class="process-math">\(0A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-d-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(0A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-d-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-d_opt_c">
 <div class="para" id="matrix-addsubscalarmult-d-2-3-2-1"><span class="process-math">\(0A=\begin{bmatrix} 0\cdot 1 \amp 0\cdot 2 \amp \cdot 3 \\ 0\cdot -1 \amp 0 \cdot 0 \amp 0\cdot 4 \end{bmatrix}
@@ -469,7 +488,7 @@ A-B
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.1.1.d"><a href="#matrix-addsubscalarmult-d" title="Copy permalink for Task 2.1.1.d">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.1.1.d"><a href="#matrix-addsubscalarmult-d" title="Copy heading and permalink for Task 2.1.1.d">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(e)"><article class="task exercise-like" id="matrix-addsubscalarmult-e"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="matrix-addsubscalarmult-e-1-1">
@@ -479,250 +498,248 @@ A-B
 A+C
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-e-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-e-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-matrix-addsubscalarmult-e" data-multipleanswers="false">
 <li data-component="answer" id="rs-matrix-addsubscalarmult-e_opt_a"><div class="para" id="matrix-addsubscalarmult-e-2-1-1-1">
-<span class="process-math">\(\begin{bmatrix} 2 \amp 4 \amp 3 \\ 2 \amp 4 \amp 4 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-e-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{bmatrix} 2 \amp 4 \amp 3 \\ 2 \amp 4 \amp 4 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-e-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-e_opt_a"><div class="para" id="matrix-addsubscalarmult-e-2-1-2-1">Matrix <span class="process-math">\(A\)</span> and matrix <span class="process-math">\(C\)</span> have different sizes, so there are positions without corresponding entries to add.  For example, the third column of <span class="process-math">\(A\)</span> has nothing corresponding in <span class="process-math">\(C\text{.}\)</span>
 </div></li>
-<li data-component="answer" id="rs-matrix-addsubscalarmult-e_opt_b" data-correct=""><div class="para" id="matrix-addsubscalarmult-e-2-2-1-1">Trick question!  <span class="process-math">\(A+C\)</span> is not defined<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-e-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-matrix-addsubscalarmult-e_opt_b" data-correct=""><div class="para" id="matrix-addsubscalarmult-e-2-2-1-1">Trick question!  <span class="process-math">\(A+C\)</span> is not defined<div class="autopermalink" data-description="Paragraph"><a href="#matrix-addsubscalarmult-e-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-matrix-addsubscalarmult-e_opt_b"><div class="para" id="matrix-addsubscalarmult-e-2-2-2-1">Correct!  <span class="process-math">\(A\)</span> and <span class="process-math">\(C\)</span> have different sizes so there are positions which don’t have corresponding entries to add.</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.1.1.e"><a href="#matrix-addsubscalarmult-e" title="Copy permalink for Task 2.1.1.e">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.1.1.e"><a href="#matrix-addsubscalarmult-e" title="Copy heading and permalink for Task 2.1.1.e">🔗</a></div></article></div>
 </div>
 </div></div>
-<div class="autopermalink" data-description="Activity 2.1.1: Matrix Operations"><a href="#matrix-addsubscalarmult" title="Copy permalink for Activity 2.1.1: Matrix Operations">🔗</a></div></article><div class="para" id="subsec-matrixarithmetic-bc-8">We never had to worry about whether two numbers could be added or subtracted, so that is a difference between numbers and matrices. The size of a matrix is key to being able to perform calculations; only matrices of the same size can be added and subtracted, and if two matrices have different sizes, then they cannot be equal.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Activity 2.1.1: Matrix Operations"><a href="#matrix-addsubscalarmult" title="Copy heading and permalink for Activity 2.1.1: Matrix Operations">🔗</a></div></article><div class="para" id="subsec-matrixarithmetic-bc-8">We never had to worry about whether two numbers could be added or subtracted, so that is a difference between numbers and matrices. The size of a matrix is key to being able to perform calculations; only matrices of the same size can be added and subtracted, and if two matrices have different sizes, then they cannot be equal.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrixarithmetic-bc-9">Matrices containing all zeros come up enough that we should define them.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-9" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-bc-9">Matrices containing all zeros come up enough that we should define them.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def_zero_matrix"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">The Zero Matrix.</span>
 </h4>
-<div class="para" id="def_zero_matrix-2-1"> The <span class="process-math">\(m\times n\)</span> matrix containing <span class="process-math">\(0\)</span> in every entry, denoted <span class="process-math">\(\mathbf{0}_{m\times n}\text{,}\)</span> is the <dfn class="terminology">zero matrix of size <span class="process-math">\(m \times n\)</span></dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def_zero_matrix-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="def_zero_matrix-2-2">When the dimensions are clear from the context, we just write <span class="process-math">\(\mathbf{0}\)</span> in bold font and call it <dfn class="terminology">the zero matrix</dfn>, even though there is a different zero matrix for each size.<div class="autopermalink" data-description="Paragraph"><a href="#def_zero_matrix-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="def_zero_matrix-2-1"> The <span class="process-math">\(m\times n\)</span> matrix containing <span class="process-math">\(0\)</span> in every entry, denoted <span class="process-math">\(\mathbf{0}_{m\times n}\text{,}\)</span> is the <dfn class="terminology">zero matrix of size <span class="process-math">\(m \times n\)</span></dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def_zero_matrix-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def_zero_matrix-2-2">When the dimensions are clear from the context, we just write <span class="process-math">\(\mathbf{0}\)</span> in bold font and call it <dfn class="terminology">the zero matrix</dfn>, even though there is a different zero matrix for each size.<div class="autopermalink" data-description="Paragraph"><a href="#def_zero_matrix-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 2.1.2: The Zero Matrix"><a href="#def_zero_matrix" title="Copy permalink for Definition 2.1.2: The Zero Matrix">🔗</a></div></article><div class="para" id="subsec-matrixarithmetic-bc-11">Note the difference between <span class="process-math">\(0\)</span> and <span class="process-math">\(\mathbf{0}\text{:}\)</span> the first is a number and the second is a matrix in which every entry is the number <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-11" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 2.1.2: The Zero Matrix"><a href="#def_zero_matrix" title="Copy heading and permalink for Definition 2.1.2: The Zero Matrix">🔗</a></div></article><div class="para" id="subsec-matrixarithmetic-bc-11">Note the difference between <span class="process-math">\(0\)</span> and <span class="process-math">\(\mathbf{0}\text{:}\)</span> the first is a number and the second is a matrix in which every entry is the number <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrixarithmetic-bc-12">Lots of things we’ve known are true about adding and subtracting numbers are true for matrices also, and we’ll collect them here.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-12" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-bc-12">Lots of things we’ve known are true about adding and subtracting numbers are true for matrices also, and we’ll collect them here.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-12" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm_addition_properties"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Adding Matrices and of Multiplying a Matrix by a Number.</span>
 </h4> <div class="para logical" id="thm_addition_properties-2-2">
 <div class="para">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(C\)</span> are <span class="process-math">\(m\times n\)</span> matrices, and <span class="process-math">\(k\)</span> is a number, then the following equalities are all true.</div>
 <dl class="description-list">
-<dt id="thm_addition_properties-2-2-6-1">Commutative Property<div class="autopermalink" data-description="Item: Commutative Property"><a href="#thm_addition_properties-2-2-6-1" title="Copy permalink for Item: Commutative Property">🔗</a></div>
+<dt id="thm_addition_properties-2-2-6-1">Commutative Property<div class="autopermalink" data-description="Item: Commutative Property"><a href="#thm_addition_properties-2-2-6-1" title="Copy heading and permalink for Item: Commutative Property">🔗</a></div>
 </dt>
 <dd><div class="para" id="thm_addition_properties-2-2-6-1-2">
-<span class="process-math">\(\displaystyle A+ B = B + A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle A+ B = B + A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
-<dt id="thm_addition_properties-2-2-6-2">Associative Property<div class="autopermalink" data-description="Item: Associative Property"><a href="#thm_addition_properties-2-2-6-2" title="Copy permalink for Item: Associative Property">🔗</a></div>
+<dt id="thm_addition_properties-2-2-6-2">Associative Property<div class="autopermalink" data-description="Item: Associative Property"><a href="#thm_addition_properties-2-2-6-2" title="Copy heading and permalink for Item: Associative Property">🔗</a></div>
 </dt>
 <dd><div class="para" id="thm_addition_properties-2-2-6-2-2">
-<span class="process-math">\(\displaystyle ( A+ B)+ C = A + ( B+ C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle ( A+ B)+ C = A + ( B+ C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
-<dt id="thm_addition_properties-2-2-6-3">Number Multiplication Distributive Property<div class="autopermalink" data-description="Item: Number Multiplication Distributive Property"><a href="#thm_addition_properties-2-2-6-3" title="Copy permalink for Item: Number Multiplication Distributive Property">🔗</a></div>
+<dt id="thm_addition_properties-2-2-6-3">Number Multiplication Distributive Property<div class="autopermalink" data-description="Item: Number Multiplication Distributive Property"><a href="#thm_addition_properties-2-2-6-3" title="Copy heading and permalink for Item: Number Multiplication Distributive Property">🔗</a></div>
 </dt>
 <dd><div class="para" id="thm_addition_properties-2-2-6-3-2">
-<span class="process-math">\(\displaystyle k( A + B) = k A + k B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-3-2" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle k( A + B) = k A + k B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
-<dt id="thm_addition_properties-2-2-6-4">Number Multiplication Commutative Property<div class="autopermalink" data-description="Item: Number Multiplication Commutative Property"><a href="#thm_addition_properties-2-2-6-4" title="Copy permalink for Item: Number Multiplication Commutative Property">🔗</a></div>
+<dt id="thm_addition_properties-2-2-6-4">Number Multiplication Commutative Property<div class="autopermalink" data-description="Item: Number Multiplication Commutative Property"><a href="#thm_addition_properties-2-2-6-4" title="Copy heading and permalink for Item: Number Multiplication Commutative Property">🔗</a></div>
 </dt>
 <dd><div class="para" id="thm_addition_properties-2-2-6-4-2">
-<span class="process-math">\(\displaystyle k A = A k\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-4-2" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle k A = A k\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-4-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
-<dt id="thm_addition_properties-2-2-6-5">Additive Identity<div class="autopermalink" data-description="Item: Additive Identity"><a href="#thm_addition_properties-2-2-6-5" title="Copy permalink for Item: Additive Identity">🔗</a></div>
+<dt id="thm_addition_properties-2-2-6-5">Additive Identity<div class="autopermalink" data-description="Item: Additive Identity"><a href="#thm_addition_properties-2-2-6-5" title="Copy heading and permalink for Item: Additive Identity">🔗</a></div>
 </dt>
 <dd><div class="para" id="thm_addition_properties-2-2-6-5-2">
-<span class="process-math">\(\displaystyle A + \mathbf{0} = \mathbf{0}+ A = A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle A + \mathbf{0} = \mathbf{0}+ A = A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
-<dt id="thm_addition_properties-2-2-6-6">Multiplying by the Number <span class="process-math">\(0\)</span> Equals the Zero Matrix<div class="autopermalink" data-description="Item: Multiplying by the Number 0 Equals the Zero Matrix"><a href="#thm_addition_properties-2-2-6-6" title="Copy permalink for Item: Multiplying by the Number 0 Equals the Zero Matrix">🔗</a></div>
+<dt id="thm_addition_properties-2-2-6-6">Multiplying by the Number <span class="process-math">\(0\)</span> Equals the Zero Matrix<div class="autopermalink" data-description="Item: Multiplying by the Number 0 Equals the Zero Matrix"><a href="#thm_addition_properties-2-2-6-6" title="Copy heading and permalink for Item: Multiplying by the Number 0 Equals the Zero Matrix">🔗</a></div>
 </dt>
 <dd><div class="para" id="thm_addition_properties-2-2-6-6-2">
-<span class="process-math">\(\displaystyle 0 A = \mathbf{0}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-6-2" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle 0 A = \mathbf{0}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2-6-6-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
 </dl>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm_addition_properties-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 2.1.3: Properties of Adding Matrices and of Multiplying a Matrix by a Number"><a href="#thm_addition_properties" title="Copy permalink for Theorem 2.1.3: Properties of Adding Matrices and of Multiplying a Matrix by a Number">🔗</a></div></article><article class="exercise exercise-like" id="matching-matrixpropertynames"><h4 class="heading">
+<div class="autopermalink" data-description="Theorem 2.1.3: Properties of Adding Matrices and of Multiplying a Matrix by a Number"><a href="#thm_addition_properties" title="Copy heading and permalink for Theorem 2.1.3: Properties of Adding Matrices and of Multiplying a Matrix by a Number">🔗</a></div></article><article class="exercise exercise-like" id="matching-matrixpropertynames"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Property Names.</span>
 </h4>
-<div class="ptx-runestone-container"><div data-component="matching" class="runestone" id="rs-matching-matrixpropertynames"><script type="text/xml"><matching><statement><div class="para" id="matching-matrixpropertynames-2-1">Match each property to its correct name.<div class="autopermalink" data-description="Paragraph"><a href="#matching-matrixpropertynames-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="matching-matrixpropertynames-2-2">Let <span class="process-math">\(A, B\text{,}\)</span> and <span class="process-math">\(C\)</span> be matrices and let <span class="process-math">\(k\)</span> be a number.<div class="autopermalink" data-description="Paragraph"><a href="#matching-matrixpropertynames-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="ptx-runestone-container"><div data-component="matching" class="runestone" id="rs-matching-matrixpropertynames"><script type="text/xml"><matching><statement><div class="para" id="matching-matrixpropertynames-2-1">Match each property to its correct name.<div class="autopermalink" data-description="Paragraph"><a href="#matching-matrixpropertynames-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="matching-matrixpropertynames-2-2">Let <span class="process-math">\(A, B\text{,}\)</span> and <span class="process-math">\(C\)</span> be matrices and let <span class="process-math">\(k\)</span> be a number.<div class="autopermalink" data-description="Paragraph"><a href="#matching-matrixpropertynames-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></statement><feedback></feedback><premise><id>matching-matrixpropertynames-p1</id><label>Distributive</label></premise><premise><id>matching-matrixpropertynames-p2</id><label>Commutativity of Addition</label></premise><premise><id>matching-matrixpropertynames-p3</id><label>Associativity of Addition</label></premise><response><id>matching-matrixpropertynames-r1</id><label><span class="process-math">\(k(A+B)=kA+kB\)</span></label></response><response><id>matching-matrixpropertynames-r2</id><label><span class="process-math">\(A+(B+C)=(A+B)+C\)</span></label></response><response><id>matching-matrixpropertynames-r3</id><label><span class="process-math">\(B+C=C+B\)</span></label></response><response><id>matching-matrixpropertynames-r4</id><label><span class="process-math">\(A+C=C+A\)</span></label></response><response><id>matching-matrixpropertynames-r5</id><label><span class="process-math">\(AB=BA\)</span></label></response><edge><label>matching-matrixpropertynames-p1</label><label>matching-matrixpropertynames-r1</label></edge><edge><label>matching-matrixpropertynames-p2</label><label>matching-matrixpropertynames-r3</label></edge><edge><label>matching-matrixpropertynames-p2</label><label>matching-matrixpropertynames-r4</label></edge><edge><label>matching-matrixpropertynames-p3</label><label>matching-matrixpropertynames-r2</label></edge></matching></script></div></div>
-<div class="autopermalink" data-description="Activity 2.1.4: Matrix Property Names"><a href="#matching-matrixpropertynames" title="Copy permalink for Activity 2.1.4: Matrix Property Names">🔗</a></div></article><div class="para" id="subsec-matrixarithmetic-bc-15">You might have noticed that there are a couple of operations we do with numbers that we have not discussed how to do with matrices, namely, multiplication and division.  There’s a very good reason for this: multiplication and division in the realm of matrices are <em class="emphasis">very</em> different from multiplication and division of numbers, and we leave them for future sections.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-15" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Activity 2.1.4: Matrix Property Names"><a href="#matching-matrixpropertynames" title="Copy heading and permalink for Activity 2.1.4: Matrix Property Names">🔗</a></div></article><div class="para" id="subsec-matrixarithmetic-bc-15">You might have noticed that there are a couple of operations we do with numbers that we have not discussed how to do with matrices, namely, multiplication and division.  There’s a very good reason for this: multiplication and division in the realm of matrices are <em class="emphasis">very</em> different from multiplication and division of numbers, and we leave them for future sections.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-bc-15" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <section class="reading-questions" id="rqs-matrixarithmetic"><h4 class="heading hide-type">
 <span class="type">Reading Questions</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Reading Questions</span>
 </h4>
 <article class="exercise exercise-like" id="rq-matrixarithmetic-explainaddition"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
-<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrixarithmetic-explainaddition" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para" id="rq-matrixarithmetic-explainaddition-1-1">In your own words, explain how to add two matrices together.  Be sure to discuss if addition is always possible or if not, what conditions need to be satisfied.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-explainaddition-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrixarithmetic-explainaddition" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para" id="rq-matrixarithmetic-explainaddition-1-1">In your own words, explain how to add two matrices together.  Be sure to discuss if addition is always possible or if not, what conditions need to be satisfied.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-explainaddition-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
-<div class="autopermalink" data-description="Reading Question 1"><a href="#rq-matrixarithmetic-explainaddition" title="Copy permalink for Reading Question 1">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrixarithmetic-truefalse"><h5 class="heading">
+<div class="autopermalink" data-description="Reading Question 1"><a href="#rq-matrixarithmetic-explainaddition" title="Copy heading and permalink for Reading Question 1">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrixarithmetic-truefalse"><h5 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">True or False?</span>
 </h5>
 <article class="task exercise-like" id="rq-matrixarithmetic-truefalse-a"><h6 class="heading"><span class="codenumber">(a)</span></h6>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-rq-matrixarithmetic-truefalse-a">
-<div class="para" id="rq-matrixarithmetic-truefalse-a-1-1">There is exactly one Zero Matrix.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-truefalse-a-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="rq-matrixarithmetic-truefalse-a-1-1">There is exactly one Zero Matrix.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-truefalse-a-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <li data-component="answer" id="rs-rq-matrixarithmetic-truefalse-a_opt_t"><p>True.</p></li>
 <li data-component="feedback" id="rs-rq-matrixarithmetic-truefalse-a_opt_t"><div class="para" id="rq-matrixarithmetic-truefalse-a-2-1">There is one matrix of all zeros for each size. However, <span class="process-math">\(\begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix} \neq \begin{bmatrix} 0 \\  0 \end{bmatrix}\text{,}\)</span> for example.</div></li>
 <li data-component="answer" id="rs-rq-matrixarithmetic-truefalse-a_opt_f" data-correct=""><p>False.</p></li>
 <li data-component="feedback" id="rs-rq-matrixarithmetic-truefalse-a_opt_f"><div class="para" id="rq-matrixarithmetic-truefalse-a-2-1">There is one matrix of all zeros for each size. However, <span class="process-math">\(\begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix} \neq \begin{bmatrix} 0 \\  0 \end{bmatrix}\text{,}\)</span> for example.</div></li>
 </ul></div></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#rq-matrixarithmetic-truefalse-a" title="Copy permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="rq-matrixarithmetic-truefalse-b"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="autopermalink" data-description="Task 2.a"><a href="#rq-matrixarithmetic-truefalse-a" title="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="rq-matrixarithmetic-truefalse-b"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-rq-matrixarithmetic-truefalse-b">
-<div class="para" id="rq-matrixarithmetic-truefalse-b-1-1">Multiplying a matrix by <span class="process-math">\(3\)</span> means multiplying each entry in the matrix by <span class="process-math">\(3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-truefalse-b-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="rq-matrixarithmetic-truefalse-b-1-1">Multiplying a matrix by <span class="process-math">\(3\)</span> means multiplying each entry in the matrix by <span class="process-math">\(3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-truefalse-b-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <li data-component="answer" id="rs-rq-matrixarithmetic-truefalse-b_opt_t" data-correct=""><p>True.</p></li>
 <li data-component="feedback" id="rs-rq-matrixarithmetic-truefalse-b_opt_t"><div class="para" id="rq-matrixarithmetic-truefalse-b-2-1">True, this is how we define multiplying a matrix by a number.</div></li>
 <li data-component="answer" id="rs-rq-matrixarithmetic-truefalse-b_opt_f"><p>False.</p></li>
 <li data-component="feedback" id="rs-rq-matrixarithmetic-truefalse-b_opt_f"><div class="para" id="rq-matrixarithmetic-truefalse-b-2-1">True, this is how we define multiplying a matrix by a number.</div></li>
 </ul></div></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#rq-matrixarithmetic-truefalse-b" title="Copy permalink for Task 2.b">🔗</a></div></article><div class="autopermalink" data-description="Reading Question 2: True or False?"><a href="#rq-matrixarithmetic-truefalse" title="Copy permalink for Reading Question 2: True or False?">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrixarithmetic-questions"><h5 class="heading">
+<div class="autopermalink" data-description="Task 2.b"><a href="#rq-matrixarithmetic-truefalse-b" title="Copy heading and permalink for Task 2.b">🔗</a></div></article><div class="autopermalink" data-description="Reading Question 2: True or False?"><a href="#rq-matrixarithmetic-truefalse" title="Copy heading and permalink for Reading Question 2: True or False?">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrixarithmetic-questions"><h5 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Reflection.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrixarithmetic-questions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrixarithmetic-questions-2-1">
 <div class="para">Enter a response to both of the following tasks:</div>
 <ol class="lower-alpha lower-alpha-level-1" id="rq-matrixarithmetic-questions-2-1-1">
 <li id="rq-matrixarithmetic-questions-2-1-1-1">
-<div class="para" id="rq-matrixarithmetic-questions-2-1-1-1-1">Ask a question about the material, either about something you’re not sure you fully understand, or a “what if” question.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-questions-2-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="rq-matrixarithmetic-questions-2-1-1-1-1">Ask a question about the material, either about something you’re not sure you fully understand, or a “what if” question.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-questions-2-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3.a"><a href="#rq-matrixarithmetic-questions-2-1-1-1" title="Copy permalink for Item 3.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#rq-matrixarithmetic-questions-2-1-1-1" title="Copy heading and permalink for Item 3.a">🔗</a></div>
 </li>
 <li id="rq-matrixarithmetic-questions-2-1-1-2">
-<div class="para" id="rq-matrixarithmetic-questions-2-1-1-2-1">Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way.  0 means you didn’t actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-questions-2-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="rq-matrixarithmetic-questions-2-1-1-2-1">Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way.  0 means you didn’t actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-questions-2-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3.b"><a href="#rq-matrixarithmetic-questions-2-1-1-2" title="Copy permalink for Item 3.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#rq-matrixarithmetic-questions-2-1-1-2" title="Copy heading and permalink for Item 3.b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-questions-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixarithmetic-questions-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
-<div class="autopermalink" data-description="Reading Question 3: Reflection"><a href="#rq-matrixarithmetic-questions" title="Copy permalink for Reading Question 3: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-matrixarithmetic" title="Copy permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-matrixarithmetic-bc" title="Copy permalink for Subsection: Prepare">🔗</a></div></section><section class="worksheet" id="ws-matrixarithmetic"><h3 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Participate</span><div class="print-links">
-<a href="ws-matrixarithmetic-a4.html" class="a4">A4</a><a href="ws-matrixarithmetic-letter.html" class="us">US</a>
-</div>
+<div class="autopermalink" data-description="Reading Question 3: Reflection"><a href="#rq-matrixarithmetic-questions" title="Copy heading and permalink for Reading Question 3: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-matrixarithmetic" title="Copy heading and permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-matrixarithmetic-bc" title="Copy heading and permalink for Subsection: Prepare">🔗</a></div></section><section class="worksheet" id="ws-matrixarithmetic"><h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Participate</span><div class="print-links"><a href="ws-matrixarithmetic-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h3>
 <article class="objectives goal-like" id="ws-matrixarithmetic-2"><h4 class="heading"><span class="type">Objectives</span></h4>
 <ul class="disc" id="ws-matrixarithmetic-2-1">
 <li id="ws-matrixarithmetic-2-1-1">
-<div class="para" id="ws-matrixarithmetic-2-1-1-1">Begin to view matrices as objects similar to numbers, which can be added, subtracted, and multiplied by a number.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-2-1-1-1">Begin to view matrices as objects similar to numbers, which can be added, subtracted, and multiplied by a number.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#ws-matrixarithmetic-2-1-1" title="Copy permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-matrixarithmetic-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="ws-matrixarithmetic-2-1-2">
-<div class="para" id="ws-matrixarithmetic-2-1-2-1">Be able to perform matrix addition and multiplication by a number and use properties of these operations.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-2-1-2-1">Be able to perform matrix addition and multiplication by a number and use properties of these operations.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#ws-matrixarithmetic-2-1-2" title="Copy permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-matrixarithmetic-2-1-2" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Objectives"><a href="#ws-matrixarithmetic-2" title="Copy permalink for Objectives">🔗</a></div></article><section class="introduction" id="ws-matrixarithmetic-3"><div class="para" id="ws-matrixarithmetic-3-1">We have discussed multiplying a matrix by a number.  Most texts will use the term <dfn class="terminology">scalar</dfn> instead of “number”.  There are good reasons for this, but they are outside the scope of this material. Still, it is good to recognize both words could be used.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Objectives"><a href="#ws-matrixarithmetic-2" title="Copy heading and permalink for Objectives">🔗</a></div></article><section class="introduction" id="ws-matrixarithmetic-3"><div class="para" id="ws-matrixarithmetic-3-1">We have discussed multiplying a matrix by a number.  Most texts will use the term <dfn class="terminology">scalar</dfn> instead of “number”.  There are good reasons for this, but they are outside the scope of this material. Still, it is good to recognize both words could be used.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="onepage" id="ws-matrixarithmetic-4"><article class="exercise exercise-like" id="ws-matrixarithmetic-4-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="para" id="ws-matrixarithmetic-4-1-1-1">Consider the matrices <span class="process-math">\(A=\begin{bmatrix}1 \amp 2 \amp 3 \end{bmatrix}\)</span> and <span class="process-math">\(B=\begin{bmatrix} 1\\ 2 \\ 3 \end{bmatrix}\text{.}\)</span> Say why <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are not equal as matrix objects.  Does this make sense to you, or do you think they should be the same thing?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-4-1-1-1">Consider the matrices <span class="process-math">\(A=\begin{bmatrix}1 \amp 2 \amp 3 \end{bmatrix}\)</span> and <span class="process-math">\(B=\begin{bmatrix} 1\\ 2 \\ 3 \end{bmatrix}\text{.}\)</span> Say why <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are not equal as matrix objects.  Does this make sense to you, or do you think they should be the same thing?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#ws-matrixarithmetic-4-1" title="Copy permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrixarithmetic-4-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="para" id="ws-matrixarithmetic-4-2-1-1">What do you think a <dfn class="terminology">square matrix</dfn> is?  What about a <dfn class="terminology">row matrix</dfn> or <dfn class="terminology">column matrix</dfn>?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#ws-matrixarithmetic-4-1" title="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrixarithmetic-4-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="ws-matrixarithmetic-4-2-1-1">What do you think a <dfn class="terminology">square matrix</dfn> is?  What about a <dfn class="terminology">row matrix</dfn> or <dfn class="terminology">column matrix</dfn>?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#ws-matrixarithmetic-4-2" title="Copy permalink for Worksheet Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrixarithmetic-4-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#ws-matrixarithmetic-4-2" title="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrixarithmetic-4-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="introduction" id="ws-matrixarithmetic-4-3-1">
-<div class="para" id="ws-matrixarithmetic-4-3-1-1">Let <span class="process-math">\(A=\begin{bmatrix} 1 \amp 3 \\ 2 \amp 5 \\ -1 \amp 1 \end{bmatrix}\text{,}\)</span> <span class="process-math">\(B=\begin{bmatrix} 4 \amp -1 \\ -2 \amp -3 \\ 2 \amp 0 \end{bmatrix}\text{,}\)</span> and <span class="process-math">\(C=\begin{bmatrix} 2 \amp 0 \\ -1 \amp 5 \\ -2 \amp 0 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-4-3-1-1">Let <span class="process-math">\(A=\begin{bmatrix} 1 \amp 3 \\ 2 \amp 5 \\ -1 \amp 1 \end{bmatrix}\text{,}\)</span> <span class="process-math">\(B=\begin{bmatrix} 4 \amp -1 \\ -2 \amp -3 \\ 2 \amp 0 \end{bmatrix}\text{,}\)</span> and <span class="process-math">\(C=\begin{bmatrix} 2 \amp 0 \\ -1 \amp 5 \\ -2 \amp 0 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ws-matrixarithmetic-4-3-1-2">Calculate each of the items below.  What do you notice about your answers?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-4-3-1-2">Calculate each of the items below.  What do you notice about your answers?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="ws-matrixarithmetic-4-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ws-matrixarithmetic-4-3-2-1-1">
-<span class="process-math">\(A+B\text{,}\)</span> and <span class="process-math">\((A+B)+C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A+B\text{,}\)</span> and <span class="process-math">\((A+B)+C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 3.a"><a href="#ws-matrixarithmetic-4-3-2" title="Copy permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-4-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 3.a"><a href="#ws-matrixarithmetic-4-3-2" title="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-4-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ws-matrixarithmetic-4-3-3-1-1">
-<span class="process-math">\(B+C\)</span> and <span class="process-math">\(A+(B+C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(B+C\)</span> and <span class="process-math">\(A+(B+C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 3.b"><a href="#ws-matrixarithmetic-4-3-3" title="Copy permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-4-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 3.b"><a href="#ws-matrixarithmetic-4-3-3" title="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-4-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ws-matrixarithmetic-4-3-4-1-1">
-<span class="process-math">\(5(A+B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(5(A+B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 3.c"><a href="#ws-matrixarithmetic-4-3-4" title="Copy permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-4-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Task 3.c"><a href="#ws-matrixarithmetic-4-3-4" title="Copy heading and permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-4-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ws-matrixarithmetic-4-3-5-1-1">
-<span class="process-math">\(5A\text{,}\)</span> <span class="process-math">\(5B\text{,}\)</span> and <span class="process-math">\(5A+5B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(5A\text{,}\)</span> <span class="process-math">\(5B\text{,}\)</span> and <span class="process-math">\(5A+5B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-4-3-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 3.d"><a href="#ws-matrixarithmetic-4-3-5" title="Copy permalink for Task 3.d">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#ws-matrixarithmetic-4-3" title="Copy permalink for Worksheet Exercise 3">🔗</a></div></article></section><section class="onepage" id="ws-matrixarithmetic-5"><article class="exercise exercise-like" id="ws-matrixarithmetic-5-1"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Task 3.d"><a href="#ws-matrixarithmetic-4-3-5" title="Copy heading and permalink for Task 3.d">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#ws-matrixarithmetic-4-3" title="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article></section><section class="onepage" id="ws-matrixarithmetic-5"><article class="exercise exercise-like" id="ws-matrixarithmetic-5-1"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="introduction" id="ws-matrixarithmetic-5-1-1">
-<div class="para" id="ws-matrixarithmetic-5-1-1-1">Consider the list of proposed properties below.  For each one, say whether it is True, False, or Insufficient Information.  Note that these are all statements you might be used to thinking about with numbers, and the goal is to think about how matrices and numbers are similar in some ways and different in some ways.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-5-1-1-1">Consider the list of proposed properties below.  For each one, say whether it is True, False, or Insufficient Information.  Note that these are all statements you might be used to thinking about with numbers, and the goal is to think about how matrices and numbers are similar in some ways and different in some ways.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ws-matrixarithmetic-5-1-1-2">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(X\)</span> be matrices of the same size, and let <span class="process-math">\(k\)</span> and <span class="process-math">\(n\)</span> be numbers.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrixarithmetic-5-1-1-2">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(X\)</span> be matrices of the same size, and let <span class="process-math">\(k\)</span> and <span class="process-math">\(n\)</span> be numbers.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="ws-matrixarithmetic-5-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ws-matrixarithmetic-5-1-2-1-1">
-<span class="process-math">\(A-B=A+(-B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A-B=A+(-B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.a"><a href="#ws-matrixarithmetic-5-1-2" title="Copy permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 4.a"><a href="#ws-matrixarithmetic-5-1-2" title="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ws-matrixarithmetic-5-1-3-1-1">
-<span class="process-math">\((k+n)A = kA+nA\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\((k+n)A = kA+nA\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.b"><a href="#ws-matrixarithmetic-5-1-3" title="Copy permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="ws-matrixarithmetic-5-1-4-1-1">If <span class="process-math">\(2A+X=B\)</span> then <span class="process-math">\(X=2A-B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#ws-matrixarithmetic-5-1-3" title="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ws-matrixarithmetic-5-1-4-1-1">If <span class="process-math">\(2A+X=B\)</span> then <span class="process-math">\(X=2A-B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.c"><a href="#ws-matrixarithmetic-5-1-4" title="Copy permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="ws-matrixarithmetic-5-1-5-1-1">If <span class="process-math">\(2X=B\)</span> then <span class="process-math">\(X=\frac{1}{2}B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.c"><a href="#ws-matrixarithmetic-5-1-4" title="Copy heading and permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ws-matrixarithmetic-5-1-5-1-1">If <span class="process-math">\(2X=B\)</span> then <span class="process-math">\(X=\frac{1}{2}B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.d"><a href="#ws-matrixarithmetic-5-1-5" title="Copy permalink for Task 4.d">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="ws-matrixarithmetic-5-1-6-1-1">If <span class="process-math">\(AX=B\)</span> then <span class="process-math">\(X=\frac{1}{A}B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.d"><a href="#ws-matrixarithmetic-5-1-5" title="Copy heading and permalink for Task 4.d">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="ws-matrixarithmetic-5-1-6-1-1">If <span class="process-math">\(AX=B\)</span> then <span class="process-math">\(X=\frac{1}{A}B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.e"><a href="#ws-matrixarithmetic-5-1-6" title="Copy permalink for Task 4.e">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="autopermalink" data-description="Task 4.e"><a href="#ws-matrixarithmetic-5-1-6" title="Copy heading and permalink for Task 4.e">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="ws-matrixarithmetic-5-1-7-1-1">
-<span class="process-math">\(kB=Bk\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-7-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(kB=Bk\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.f"><a href="#ws-matrixarithmetic-5-1-7" title="Copy permalink for Task 4.f">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="autopermalink" data-description="Task 4.f"><a href="#ws-matrixarithmetic-5-1-7" title="Copy heading and permalink for Task 4.f">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
 <div class="para" id="ws-matrixarithmetic-5-1-8-1-1">
-<span class="process-math">\(AB=BA\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-8-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(AB=BA\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.g"><a href="#ws-matrixarithmetic-5-1-8" title="Copy permalink for Task 4.g">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="ws-matrixarithmetic-5-1-9-1-1">For every matrix <span class="process-math">\(C\text{,}\)</span> there is a matrix <span class="process-math">\(Z\)</span> such that <span class="process-math">\(Z+C=C+Z=C\text{.}\)</span>  (The matrix <span class="process-math">\(Z\)</span> acts like the number <span class="process-math">\(0\)</span> does for numbers.)<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-9-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.g"><a href="#ws-matrixarithmetic-5-1-8" title="Copy heading and permalink for Task 4.g">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para" id="ws-matrixarithmetic-5-1-9-1-1">For each matrix <span class="process-math">\(C\text{,}\)</span> there is a matrix <span class="process-math">\(Z\)</span> such that <span class="process-math">\(Z+C=C+Z=C\text{.}\)</span>  (The matrix <span class="process-math">\(Z\)</span> acts like the number <span class="process-math">\(0\)</span> does for numbers.)<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-9-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.h"><a href="#ws-matrixarithmetic-5-1-9" title="Copy permalink for Task 4.h">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="ws-matrixarithmetic-5-1-10-1-1">For every matrix <span class="process-math">\(C\text{,}\)</span> there is a matrix <span class="process-math">\(I\)</span> such that <span class="process-math">\(IC=CI=C\text{.}\)</span> (The matrix <span class="process-math">\(I\)</span> acts like the number <span class="process-math">\(1\)</span> does for numbers.)<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-10-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.h"><a href="#ws-matrixarithmetic-5-1-9" title="Copy heading and permalink for Task 4.h">🔗</a></div></article><article class="task exercise-like" id="ws-matrixarithmetic-5-1-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="ws-matrixarithmetic-5-1-10-1-1">For each matrix <span class="process-math">\(C\text{,}\)</span> there is a matrix <span class="process-math">\(I\)</span> such that <span class="process-math">\(IC=CI=C\text{.}\)</span> (The matrix <span class="process-math">\(I\)</span> acts like the number <span class="process-math">\(1\)</span> does for numbers.)<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixarithmetic-5-1-10-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".5in"></div>
-<div class="autopermalink" data-description="Task 4.i"><a href="#ws-matrixarithmetic-5-1-10" title="Copy permalink for Task 4.i">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-matrixarithmetic-5-1" title="Copy permalink for Worksheet Exercise 4">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-matrixarithmetic" title="Copy permalink for Worksheet: Participate">🔗</a></div></section><section class="conclusion" id="subsec-matrixarithmetic-summary"><h3 class="heading">Summary.<span></span>
+<div class="autopermalink" data-description="Task 4.i"><a href="#ws-matrixarithmetic-5-1-10" title="Copy heading and permalink for Task 4.i">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-matrixarithmetic-5-1" title="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-matrixarithmetic" title="Copy heading and permalink for Worksheet: Participate">🔗</a></div></section><section class="conclusion" id="subsec-matrixarithmetic-summary"><h3 class="heading">Summary.<span></span>
 </h3>
 <div class="para logical" id="subsec-matrixarithmetic-summary-2">
 <ul class="disc" id="subsec-matrixarithmetic-summary-2-1">
 <li id="subsec-matrixarithmetic-summary-2-1-1">
-<div class="para" id="subsec-matrixarithmetic-summary-2-1-1-1">Matrices are mathematical objects like numbers are.  We don’t need to think of matrices as coming from a linear system.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-summary-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-summary-2-1-1-1">Matrices are mathematical objects like numbers are.  We don’t need to think of matrices as coming from a linear system.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-summary-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-matrixarithmetic-summary-2-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-matrixarithmetic-summary-2-1-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-matrixarithmetic-summary-2-1-2">
-<div class="para" id="subsec-matrixarithmetic-summary-2-1-2-1">Matrices can be multiplied by numbers (also called scalars). If two matrices are the same size, they can be added and subtracted.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-summary-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-summary-2-1-2-1">Matrices can be multiplied by numbers (also called scalars). If two matrices are the same size, they can be added and subtracted.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-summary-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-matrixarithmetic-summary-2-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-matrixarithmetic-summary-2-1-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-matrixarithmetic-summary-2-1-3">
-<div class="para" id="subsec-matrixarithmetic-summary-2-1-3-1">Many of the properties we’re used to still hold for matrix addition and multiplication by a number, such as associativity and commutativity of addition and the distributive property.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-summary-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixarithmetic-summary-2-1-3-1">Many of the properties we’re used to still hold for matrix addition and multiplication by a number, such as associativity and commutativity of addition and the distributive property.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-summary-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-matrixarithmetic-summary-2-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-matrixarithmetic-summary-2-1-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-summary-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixarithmetic-summary-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="ww-matrixarithmetic"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice</span>
 </h3>
@@ -732,7 +749,7 @@ A+C
 <div id="webwork-27" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="27" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-27')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-27-1-1-1">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be the following matrices.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-27-1-1-1">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be the following matrices.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-27-1-1-2">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -747,38 +764,38 @@ A = \left[\begin{array}{ccc}
 \end{array}\right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-27-1-1-3">Perform the following operations:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-27-1-1-3">Perform the following operations:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-27-1-1-4">
-<span class="process-math">\(4 A =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-4" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(4 A =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-27-1-1-5">
-<span class="process-math">\(A  + 3 B =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-5" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A  + 3 B =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-27-1-1-6">
-<span class="process-math">\(2 A - 5 B =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-6" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(2 A - 5 B =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-27-1-1-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 2.1.1: Adding and Multiplying by a Number"><a href="#ww-matrixarithmetic1" title="Copy permalink for Exercise 2.1.1: Adding and Multiplying by a Number">🔗</a></div></article><article class="activity project-like" id="ww-matrixarithmetic2"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 2.1.1: Adding and Multiplying by a Number"><a href="#ww-matrixarithmetic1" title="Copy heading and permalink for Exercise 2.1.1: Adding and Multiplying by a Number">🔗</a></div></article><article class="activity project-like" id="ww-matrixarithmetic2"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Addition Application.</span>
 </h4>
 <div id="webwork-28" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="28" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIk1hdHJpeCIpOwokbWljcm9BMSA9IHJhbmRvbSgzMCw2MCk7CiRmcmlkZ2VBMSA9IHJhbmRvbSgxMCwzMCk7CiRzdG92ZUExID0gcmFuZG9tKDIwLDUwKTsKJG1pY3JvQTIgPSByYW5kb20oMjUsNTUpOwokZnJpZGdlQTIgPSByYW5kb20oMTIsNDApOwokc3RvdmVBMiA9IHJhbmRvbSgxNSw0NSk7CgokbWljcm9YMSA9IHJhbmRvbSgzMCw2MCk7CiRmcmlkZ2VYMSA9IHJhbmRvbSgxMCwzMCk7CiRzdG92ZVgxID0gcmFuZG9tKDIwLDUwKTsKJG1pY3JvWDIgPSByYW5kb20oMjUsNTUpOwokZnJpZGdlWDIgPSByYW5kb20oMTIsNDApOwokc3RvdmVYMiA9IHJhbmRvbSgxNSw0NSk7CgokSmFuPU1hdHJpeChbWyRtaWNyb0ExLCRmcmlkZ2VBMSwkc3RvdmVBMV0sWyRtaWNyb1gxLCRmcmlkZ2VYMSwkc3RvdmVYMV1dKTsKCiRGZWI9TWF0cml4KFtbJG1pY3JvQTIsJGZyaWRnZUEyLCRzdG92ZUEyXSxbJG1pY3JvWDIsJGZyaWRnZVgyLCRzdG92ZVgyXV0pOwoKJEphbnBsdXNGZWIgPSAkSmFuKyRGZWI7CgpCRUdJTl9QR01MCkR1cmluZyB0aGUgbW9udGggb2YgSmFudWFyeSwgIkFCQyBBcHBsaWFuY2VzIiBzb2xkIFtgWyRtaWNyb0ExXWBdIG1pY3Jvd2F2ZXMsIFtgWyRmcmlkZ2VBMV1gXSByZWZyaWdlcmF0b3JzLCBhbmQgW2BbJHN0b3ZlQTFdYF0gc3RvdmVzLCB3aGlsZSAiWFlaIEFwcGxpYW5jZXMiIHNvbGQgW2BbJG1pY3JvWDFdYF0gbWljcm93YXZlcywgW2BbJGZyaWRnZVgxXWBdIHJlZnJpZ2VyYXRvcnMgYW5kIFtgWyRzdG92ZVgxXWBdIHN0b3Zlcy4KCkR1cmluZyB0aGUgbW9udGggb2YgRmVicnVhcnksICJBQkMgQXBwbGlhbmNlcyIgc29sZCBbYFskbWljcm9BMl1gXSBtaWNyb3dhdmVzLCBbYFskZnJpZGdlQTJdYF0gcmVmcmlnZXJhdG9ycywgYW5kIFtgWyRzdG92ZUEyXWBdIHN0b3Zlcywgd2hpbGUgIlhZWiBBcHBsaWFuY2VzIiBzb2xkIFtgWyRtaWNyb1gyXWBdIG1pY3Jvd2F2ZXMsIFtgWyRmcmlkZ2VYMl1gXSByZWZyaWdlcmF0b3JzIGFuZCBbYFskc3RvdmVYMl1gXSBzdG92ZXMuCgpXcml0ZSBhIFtgMiBcdGltZXMgMyBgXSBtYXRyaXggc3VtbWFyaXppbmcgdGhlIHNhbGVzIGZvciB0aGUgbW9udGggb2YgSmFudWFyeS4gKEtlZXAgdGhlIG9yZGVyIG9mIGluZm9ybWF0aW9uKS4gW19dKnskSmFufXs1fQoKV3JpdGUgYSBbYDIgXHRpbWVzIDMgYF0gbWF0cml4IHN1bW1hcml6aW5nIHRoZSBzYWxlcyBmb3IgdGhlIG1vbnRoIG9mIEZlYnJ1YXJ5LiAoS2VlcCB0aGUgb3JkZXIgb2YgaW5mb3JtYXRpb24pLiBbX10qeyRGZWJ9ezV9CgpVc2luZyBtYXRyaXggYWRkaXRpb24sIHdyaXRlIGEgW2AyIFx0aW1lcyAzIGBdIG1hdHJpeCBzdW1tYXJpemluZyB0aGUgdG90YWwgc2FsZXMgZm9yIHRoZSBtb250aHMgb2YgSmFudWFyeSBhbmQgRmVicnVhcnkuIFtfXSp7JEphbnBsdXNGZWJ9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-28')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-28-1-1-1">During the month of January, “ABC Appliances” sold <span class="process-math">\(33\)</span> microwaves, <span class="process-math">\(17\)</span> refrigerators, and <span class="process-math">\(33\)</span> stoves, while “XYZ Appliances” sold <span class="process-math">\(57\)</span> microwaves, <span class="process-math">\(27\)</span> refrigerators and <span class="process-math">\(31\)</span> stoves.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-28-1-1-2">During the month of February, “ABC Appliances” sold <span class="process-math">\(38\)</span> microwaves, <span class="process-math">\(27\)</span> refrigerators, and <span class="process-math">\(40\)</span> stoves, while “XYZ Appliances” sold <span class="process-math">\(51\)</span> microwaves, <span class="process-math">\(20\)</span> refrigerators and <span class="process-math">\(34\)</span> stoves.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-28-1-1-3">Write a <span class="process-math">\(2 \times 3\)</span> matrix summarizing the sales for the month of January. (Keep the order of information). <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-28-1-1-4">Write a <span class="process-math">\(2 \times 3\)</span> matrix summarizing the sales for the month of February. (Keep the order of information). <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-4" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-28-1-1-5">Using matrix addition, write a <span class="process-math">\(2 \times 3\)</span> matrix summarizing the total sales for the months of January and February. <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-28-1-1-1">During the month of January, “ABC Appliances” sold <span class="process-math">\(33\)</span> microwaves, <span class="process-math">\(17\)</span> refrigerators, and <span class="process-math">\(33\)</span> stoves, while “XYZ Appliances” sold <span class="process-math">\(57\)</span> microwaves, <span class="process-math">\(27\)</span> refrigerators and <span class="process-math">\(31\)</span> stoves.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-28-1-1-2">During the month of February, “ABC Appliances” sold <span class="process-math">\(38\)</span> microwaves, <span class="process-math">\(27\)</span> refrigerators, and <span class="process-math">\(40\)</span> stoves, while “XYZ Appliances” sold <span class="process-math">\(51\)</span> microwaves, <span class="process-math">\(20\)</span> refrigerators and <span class="process-math">\(34\)</span> stoves.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-28-1-1-3">Write a <span class="process-math">\(2 \times 3\)</span> matrix summarizing the sales for the month of January. (Keep the order of information). <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-28-1-1-4">Write a <span class="process-math">\(2 \times 3\)</span> matrix summarizing the sales for the month of February. (Keep the order of information). <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-28-1-1-5">Using matrix addition, write a <span class="process-math">\(2 \times 3\)</span> matrix summarizing the total sales for the months of January and February. <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 3 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-28-1-1-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 2.1.2: Matrix Addition Application"><a href="#ww-matrixarithmetic2" title="Copy permalink for Exercise 2.1.2: Matrix Addition Application">🔗</a></div></article><article class="activity project-like" id="wwmatrixarithmetic3"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 2.1.2: Matrix Addition Application"><a href="#ww-matrixarithmetic2" title="Copy heading and permalink for Exercise 2.1.2: Matrix Addition Application">🔗</a></div></article><article class="activity project-like" id="wwmatrixarithmetic3"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Solving a Matrix Equation.</span>
 </h4>
 <div id="webwork-29" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="29" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-29')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-29-1-1-1">Solve for <span class="process-math">\(X\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-29-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-29-1-1-1">Solve for <span class="process-math">\(X\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-29-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-29-1-1-2">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -791,16 +808,16 @@ A = \left[\begin{array}{ccc}
 \end{array}\right].
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-29-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-29-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-29-1-1-3">
-<span class="process-math">\(X=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-29-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(X=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-29-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 2.1.3: Solving a Matrix Equation"><a href="#wwmatrixarithmetic3" title="Copy permalink for Exercise 2.1.3: Solving a Matrix Equation">🔗</a></div></article><article class="activity project-like" id="ww-matrixarithmetic4"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 2.1.3: Solving a Matrix Equation"><a href="#wwmatrixarithmetic3" title="Copy heading and permalink for Exercise 2.1.3: Solving a Matrix Equation">🔗</a></div></article><article class="activity project-like" id="ww-matrixarithmetic4"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Adding Matrices, List of Lists Notation.</span>
 </h4>
-<div class="introduction" id="ww-matrixarithmetic4-2"><div class="para" id="ww-matrixarithmetic4-2-1">Many programming languages, including Python and Sage, use a list of lists to enter matrices. We use that notation in this problem instead of the usual array answer box notation to avoid giving away information about the size of the matrix or whether such a matrix exists at all.<div class="autopermalink" data-description="Paragraph"><a href="#ww-matrixarithmetic4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="ww-matrixarithmetic4-2"><div class="para" id="ww-matrixarithmetic4-2-1">Many programming languages, including Python and Sage, use a list of lists to enter matrices. We use that notation in this problem instead of the usual array answer box notation to avoid giving away information about the size of the matrix or whether such a matrix exists at all.<div class="autopermalink" data-description="Paragraph"><a href="#ww-matrixarithmetic4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div id="webwork-30" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="30" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-30')">Activate</button></div>
@@ -833,44 +850,44 @@ C = \left[\begin{array}{cc}
 \end{equation*}
 </div>
 <div class="para">If possible, compute the following. If an answer does not exist, enter <em class="alert">DNE</em>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-30-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-30-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-30-1-1-2">
-<span class="process-math">\(A+B =\)</span> <div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-30-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A+B =\)</span> <div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-30-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-30-1-1-3">
-<span class="process-math">\(A+C =\)</span> <div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-30-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A+C =\)</span> <div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-30-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 2.1.4: Adding Matrices, List of Lists Notation"><a href="#ww-matrixarithmetic4" title="Copy permalink for Exercise 2.1.4: Adding Matrices, List of Lists Notation">🔗</a></div></article><article class="activity project-like" id="ww-matrixarithmetic5"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 2.1.4: Adding Matrices, List of Lists Notation"><a href="#ww-matrixarithmetic4" title="Copy heading and permalink for Exercise 2.1.4: Adding Matrices, List of Lists Notation">🔗</a></div></article><article class="activity project-like" id="ww-matrixarithmetic5"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">True/False Matrix Properties.</span>
 </h4>
 <div id="webwork-31" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="31" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="matrixtheory/matrixarithmetic5.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-31')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-31-1-1-1">Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-31-1-1-1">Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-31-1-1-2">
 <ol class="decimal" id="extracted-webwork-31-1-1-2-1">
 <li id="extracted-webwork-31-1-1-2-1-1">
-<div class="para" id="extracted-webwork-31-1-1-2-1-1-1">For any matrix <span class="process-math">\(A\text{,}\)</span> there exists a matrix <span class="process-math">\(B\)</span> so that <span class="process-math">\(A + B = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-31-1-1-2-1-1-1">For any matrix <span class="process-math">\(A\text{,}\)</span> there exists a matrix <span class="process-math">\(B\)</span> so that <span class="process-math">\(A + B = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#extracted-webwork-31-1-1-2-1-1" title="Copy permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#extracted-webwork-31-1-1-2-1-1" title="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="extracted-webwork-31-1-1-2-1-2">
-<div class="para" id="extracted-webwork-31-1-1-2-1-2-1">An <span class="process-math">\(m \times n\)</span> matrix has <span class="process-math">\(m\)</span> columns and <span class="process-math">\(n\)</span> rows.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-31-1-1-2-1-2-1">An <span class="process-math">\(m \times n\)</span> matrix has <span class="process-math">\(m\)</span> columns and <span class="process-math">\(n\)</span> rows.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#extracted-webwork-31-1-1-2-1-2" title="Copy permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#extracted-webwork-31-1-1-2-1-2" title="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li id="extracted-webwork-31-1-1-2-1-3">
-<div class="para" id="extracted-webwork-31-1-1-2-1-3-1">For any matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(3A+3B=3(A + B)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-31-1-1-2-1-3-1">For any matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(3A+3B=3(A + B)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#extracted-webwork-31-1-1-2-1-3" title="Copy permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#extracted-webwork-31-1-1-2-1-3" title="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-31-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 2.1.5: True/False Matrix Properties"><a href="#ww-matrixarithmetic5" title="Copy permalink for Exercise 2.1.5: True/False Matrix Properties">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Practice"><a href="#ww-matrixarithmetic" title="Copy permalink for Subsection: Practice">🔗</a></div></section><section class="exercises" id="exer-matrixarithmetic"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Exercise 2.1.5: True/False Matrix Properties"><a href="#ww-matrixarithmetic5" title="Copy heading and permalink for Exercise 2.1.5: True/False Matrix Properties">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Practice"><a href="#ww-matrixarithmetic" title="Copy heading and permalink for Subsection: Practice">🔗</a></div></section><section class="exercises" id="exer-matrixarithmetic"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Additional Practice</span>
 </h3>
 <div class="exercisegroup" id="exer-matrixarithmetic-2">
@@ -882,72 +899,72 @@ C = \left[\begin{array}{cc}
 A = \left[\begin{array}{cc}  1 \amp  -1\\ 7 \amp  4 \end{array} \right] \quad  B = \left[\begin{array}{cc}  -3 \amp  2\\5 \amp  9 \end{array} \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="exer-matrixarithmetic-2-2"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-2-2-1-1">
-<span class="process-math">\(A + B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A + B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-2-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-2-2-2-1">
-<span class="process-math">\(\left[\begin{array}{cc} -2\amp -1\\12 \amp 13 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{cc} -2\amp -1\\12 \amp 13 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 1.1"><a href="#exer-matrixarithmetic-2-2-2" title="Copy permalink for Answer 1.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 1.1"><a href="#exer-matrixarithmetic-2-2-2" title="Copy heading and permalink for Answer 1.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 1"><a href="#exer-matrixarithmetic-2-2" title="Copy permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-3"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1"><a href="#exer-matrixarithmetic-2-2" title="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-3"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-2-3-1-1">
-<span class="process-math">\(2 A - 3 B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(2 A - 3 B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-2-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-2-3-2-1">
-<span class="process-math">\(\left[\begin{array}{cc} 11\amp -8\\-1 \amp -19 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{cc} 11\amp -8\\-1 \amp -19 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 2.1"><a href="#exer-matrixarithmetic-2-3-2" title="Copy permalink for Answer 2.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 2.1"><a href="#exer-matrixarithmetic-2-3-2" title="Copy heading and permalink for Answer 2.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 2"><a href="#exer-matrixarithmetic-2-3" title="Copy permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-4"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2"><a href="#exer-matrixarithmetic-2-3" title="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-4"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-2-4-1-1">
-<span class="process-math">\(3 A - A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(3 A - A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-2-4-2-1">
-<span class="process-math">\(\left[\begin{array}{cc} 2 \amp -2\\14 \amp 8 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{cc} 2 \amp -2\\14 \amp 8 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 3.1"><a href="#exer-matrixarithmetic-2-4-2" title="Copy permalink for Answer 3.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 3.1"><a href="#exer-matrixarithmetic-2-4-2" title="Copy heading and permalink for Answer 3.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 3"><a href="#exer-matrixarithmetic-2-4" title="Copy permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-5"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 3"><a href="#exer-matrixarithmetic-2-4" title="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-5"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-2-5-1-1">
-<span class="process-math">\(4 B - 2 A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(4 B - 2 A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-2-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-2-5-2-1">
-<span class="process-math">\(\left[\begin{array}{c} -14\\-5 \\ -9 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{c} -14\\-5 \\ -9 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 4.1"><a href="#exer-matrixarithmetic-2-5-2" title="Copy permalink for Answer 4.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 4.1"><a href="#exer-matrixarithmetic-2-5-2" title="Copy heading and permalink for Answer 4.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 4"><a href="#exer-matrixarithmetic-2-5" title="Copy permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-6"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 4"><a href="#exer-matrixarithmetic-2-5" title="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-6"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-2-6-1-1">
-<span class="process-math">\(3( A - B)+ B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(3( A - B)+ B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-2-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-2-6-2-1">
-<span class="process-math">\(\left[\begin{array}{cc} 9\amp -7\\11 \amp -6 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-6-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{cc} 9\amp -7\\11 \amp -6 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 5.1"><a href="#exer-matrixarithmetic-2-6-2" title="Copy permalink for Answer 5.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 5.1"><a href="#exer-matrixarithmetic-2-6-2" title="Copy heading and permalink for Answer 5.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 5"><a href="#exer-matrixarithmetic-2-6" title="Copy permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-7"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 5"><a href="#exer-matrixarithmetic-2-6" title="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-2-7"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-2-7-1-1">
-<span class="process-math">\(2( A - B)-( A - 3 B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-7-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(2( A - B)-( A - 3 B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-2-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-2-7-2-1">
-<span class="process-math">\(\left[\begin{array}{cc} -2\amp 1\\12\amp 13 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-7-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{cc} -2\amp 1\\12\amp 13 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-2-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 6.1"><a href="#exer-matrixarithmetic-2-7-2" title="Copy permalink for Answer 6.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 6.1"><a href="#exer-matrixarithmetic-2-7-2" title="Copy heading and permalink for Answer 6.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 6"><a href="#exer-matrixarithmetic-2-7" title="Copy permalink for Exercise 6">🔗</a></div></article>
+<div class="autopermalink" data-description="Exercise 6"><a href="#exer-matrixarithmetic-2-7" title="Copy heading and permalink for Exercise 6">🔗</a></div></article>
 </div>
-<div class="autopermalink" data-description="Exercise Group 1–6"><a href="#exer-matrixarithmetic-2" title="Copy permalink for Exercise Group 1–6">🔗</a></div>
+<div class="autopermalink" data-description="Exercise Group 1–6"><a href="#exer-matrixarithmetic-2" title="Copy heading and permalink for Exercise Group 1–6">🔗</a></div>
 </div>
 <div class="exercisegroup" id="exer-matrixarithmetic-3">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
@@ -958,52 +975,52 @@ A = \left[\begin{array}{cc}  1 \amp  -1\\ 7 \amp  4 \end{array} \right] \quad  B
 A = \left[\begin{array}{c}  3\\ 5 \end{array} \right] \quad  B = \left[\begin{array}{c}  -2\\4 \end{array} \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="exer-matrixarithmetic-3-2"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-3-2-1-1">
-<span class="process-math">\(4 B - 2 A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(4 B - 2 A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-3-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-3-2-2-1">
-<span class="process-math">\(\left[\begin{array}{c} -14\\6 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{c} -14\\6 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 7.1"><a href="#exer-matrixarithmetic-3-2-2" title="Copy permalink for Answer 7.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 7.1"><a href="#exer-matrixarithmetic-3-2-2" title="Copy heading and permalink for Answer 7.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 7"><a href="#exer-matrixarithmetic-3-2" title="Copy permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-3-3"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 7"><a href="#exer-matrixarithmetic-3-2" title="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-3-3"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-3-3-1-1">
-<span class="process-math">\(-2 A + 3 A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(-2 A + 3 A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-3-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-3-3-2-1">
-<span class="process-math">\(\left[\begin{array}{c} -12\\2 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{c} -12\\2 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 8.1"><a href="#exer-matrixarithmetic-3-3-2" title="Copy permalink for Answer 8.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 8.1"><a href="#exer-matrixarithmetic-3-3-2" title="Copy heading and permalink for Answer 8.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 8"><a href="#exer-matrixarithmetic-3-3" title="Copy permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-3-4"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 8"><a href="#exer-matrixarithmetic-3-3" title="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-3-4"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-3-4-1-1">
-<span class="process-math">\(-2 A - 3 A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(-2 A - 3 A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-3-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-3-4-2-1">
-<span class="process-math">\(\left[\begin{array}{c} -15\\-25 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{c} -15\\-25 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 9.1"><a href="#exer-matrixarithmetic-3-4-2" title="Copy permalink for Answer 9.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 9.1"><a href="#exer-matrixarithmetic-3-4-2" title="Copy heading and permalink for Answer 9.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 9"><a href="#exer-matrixarithmetic-3-4" title="Copy permalink for Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-3-5"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 9"><a href="#exer-matrixarithmetic-3-4" title="Copy heading and permalink for Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-3-5"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-3-5-1-1">
-<span class="process-math">\(- B + 3 B-2 B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(- B + 3 B-2 B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-3-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-3-5-2-1">
-<span class="process-math">\(\left[\begin{array}{c} 0\\0 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{c} 0\\0 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-3-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 10.1"><a href="#exer-matrixarithmetic-3-5-2" title="Copy permalink for Answer 10.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 10.1"><a href="#exer-matrixarithmetic-3-5-2" title="Copy heading and permalink for Answer 10.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 10"><a href="#exer-matrixarithmetic-3-5" title="Copy permalink for Exercise 10">🔗</a></div></article>
+<div class="autopermalink" data-description="Exercise 10"><a href="#exer-matrixarithmetic-3-5" title="Copy heading and permalink for Exercise 10">🔗</a></div></article>
 </div>
-<div class="autopermalink" data-description="Exercise Group 7–10"><a href="#exer-matrixarithmetic-3" title="Copy permalink for Exercise Group 7–10">🔗</a></div>
+<div class="autopermalink" data-description="Exercise Group 7–10"><a href="#exer-matrixarithmetic-3" title="Copy heading and permalink for Exercise Group 7–10">🔗</a></div>
 </div>
 <div class="exercisegroup" id="exer-matrixarithmetic-4">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
@@ -1014,56 +1031,56 @@ A = \left[\begin{array}{c}  3\\ 5 \end{array} \right] \quad  B = \left[\begin{ar
 A = \left[\begin{array}{cc}  3 \amp  -1\\ 2 \amp  5 \end{array} \right] \quad  B = \left[\begin{array}{cc}  1 \amp  7\\3 \amp  -4 \end{array} \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="exer-matrixarithmetic-4-2"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-4-2-1-1">
-<span class="process-math">\(2 A + X = B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(2 A + X = B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-4-2-2-1">
-<span class="process-math">\(X = \left[\begin{array}{cc} -5 \amp 9 \\-1 \amp -14 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(X = \left[\begin{array}{cc} -5 \amp 9 \\-1 \amp -14 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 11.1"><a href="#exer-matrixarithmetic-4-2-2" title="Copy permalink for Answer 11.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 11.1"><a href="#exer-matrixarithmetic-4-2-2" title="Copy heading and permalink for Answer 11.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 11"><a href="#exer-matrixarithmetic-4-2" title="Copy permalink for Exercise 11">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-4-3"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 11"><a href="#exer-matrixarithmetic-4-2" title="Copy heading and permalink for Exercise 11">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-4-3"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-4-3-1-1">
-<span class="process-math">\(A - X = 3 B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A - X = 3 B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-4-3-2-1">
-<span class="process-math">\(X = \left[\begin{array}{cc} 0 \amp -22 \\-7 \amp 17 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(X = \left[\begin{array}{cc} 0 \amp -22 \\-7 \amp 17 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 12.1"><a href="#exer-matrixarithmetic-4-3-2" title="Copy permalink for Answer 12.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 12.1"><a href="#exer-matrixarithmetic-4-3-2" title="Copy heading and permalink for Answer 12.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 12"><a href="#exer-matrixarithmetic-4-3" title="Copy permalink for Exercise 12">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-4-4"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 12"><a href="#exer-matrixarithmetic-4-3" title="Copy heading and permalink for Exercise 12">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-4-4"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-4-4-1-1">
-<span class="process-math">\(3 A + 2 X = -1 B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(3 A + 2 X = -1 B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-4-4-2-1">
-<span class="process-math">\(X = \left[\begin{array}{cc} -5 \amp -2 \\-9/2 \amp -19/2 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(X = \left[\begin{array}{cc} -5 \amp -2 \\-9/2 \amp -19/2 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 13.1"><a href="#exer-matrixarithmetic-4-4-2" title="Copy permalink for Answer 13.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 13.1"><a href="#exer-matrixarithmetic-4-4-2" title="Copy heading and permalink for Answer 13.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 13"><a href="#exer-matrixarithmetic-4-4" title="Copy permalink for Exercise 13">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-4-5"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 13"><a href="#exer-matrixarithmetic-4-4" title="Copy heading and permalink for Exercise 13">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrixarithmetic-4-5"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrixarithmetic-4-5-1-1">
-<span class="process-math">\(A - \frac12 X = - B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A - \frac12 X = - B\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrixarithmetic-4-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrixarithmetic-4-5-2-1">
-<span class="process-math">\(X = \left[\begin{array}{cc} 8 \amp 12 \\10 \amp 2 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(X = \left[\begin{array}{cc} 8 \amp 12 \\10 \amp 2 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixarithmetic-4-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 14.1"><a href="#exer-matrixarithmetic-4-5-2" title="Copy permalink for Answer 14.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 14.1"><a href="#exer-matrixarithmetic-4-5-2" title="Copy heading and permalink for Answer 14.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 14"><a href="#exer-matrixarithmetic-4-5" title="Copy permalink for Exercise 14">🔗</a></div></article>
+<div class="autopermalink" data-description="Exercise 14"><a href="#exer-matrixarithmetic-4-5" title="Copy heading and permalink for Exercise 14">🔗</a></div></article>
 </div>
-<div class="autopermalink" data-description="Exercise Group 11–14"><a href="#exer-matrixarithmetic-4" title="Copy permalink for Exercise Group 11–14">🔗</a></div>
+<div class="autopermalink" data-description="Exercise Group 11–14"><a href="#exer-matrixarithmetic-4" title="Copy heading and permalink for Exercise Group 11–14">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercises: Additional Practice"><a href="#exer-matrixarithmetic" title="Copy permalink for Exercises: Additional Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: Introduction to Matrix Arithmetic"><a href="#sec-matrixarithmetic" title="Copy permalink for Section 2.1: Introduction to Matrix Arithmetic">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercises: Additional Practice"><a href="#exer-matrixarithmetic" title="Copy heading and permalink for Exercises: Additional Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: Introduction to Matrix Arithmetic"><a href="#sec-matrixarithmetic" title="Copy heading and permalink for Section 2.1: Introduction to Matrix Arithmetic">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="ch-matrixoperations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-testing-things.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-matrixoperations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-matrixmult.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

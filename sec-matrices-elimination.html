@@ -120,19 +120,19 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.1';
+eBookConfig.runestone_version = '7.8.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.242116c5bc6b6581.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
-<body id="matrixtheory" class="pretext book ignore-math">
+<body id="matrixcalculations" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Matrix Calculations</span> <span class="subtitle">An introduction to parts of linear algebra</span></a></h1>
 <p class="byline">Chrissy Safranski</p>
@@ -155,7 +155,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-lin-eqn-substitution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-lineqnandaugmentedmatrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-row-ops.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\newcommand{\N}{\mathbb N} 
 \newcommand{\Z}{\mathbb Z} 
 \newcommand{\Q}{\mathbb Q} 
 \newcommand{\R}{\mathbb R}
@@ -176,8 +176,14 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\lns}[1]{\mathcal{L}\!\left(#1\right)}
 \newcommand{\linearsystem}[2]{\mathcal{LS}\!\left(#1,\,#2\right)}
 \newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\lteval}[2]{#1\left(#2\right)}
+\newcommand{\ltdefn}[3]{#1\colon #2\rightarrow#3}
 \newcommand{\zerovector}{\vect{0}}
 \newcommand{\homosystem}[1]{\linearsystem{#1}{\zerovector}}
+\newcommand{\eigenspace}[2]{\mathcal{E}_{#1}\left(#2\right)}
+\newcommand{\matrixrep}[3]{M^{#1}_{#2,#3}}
+\newcommand{\vectrepname}[1]{\rho_{#1}}
+\newcommand{\vectrep}[2]{\lteval{\vectrepname{#1}}{#2}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -195,7 +201,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="ch-lineqnandaugmentedmatrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations and Augmented Matrices</span></a></div>
+<div class="toc-title-box"><a href="ch-lineqnandaugmentedmatrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations, Augmented Matrices</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-lin-eqn-substitution.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Equations and Substitution</span></a></div>
@@ -273,7 +279,8 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-matrixoperations.html" class="internal"><span class="codenumber">2</span> <span class="title">Matrices as Mathematical Objects</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-matrixarithmetic.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Matrix Arithmetic</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection">
@@ -284,7 +291,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#ww-matrixarithmetic" class="internal"><span class="title">Practice</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#exer-matrixarithmetic" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
-</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrixmult.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Matrix Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrixmult.html#subsec-matrixmult-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrixmult.html#rqs-matrixmult" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrixmult.html#ws-matrixmultiplication" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixmult.html#exer-" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-testing-things.html" class="internal"><span class="codenumber">3</span> <span class="title">Testing Things</span></a></div>
@@ -301,34 +320,34 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-matrices-elimination"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Matrices and Elimination</span>
 </h2>
-<section class="introduction" id="sec-matrices-elimination-2"><div class="para" id="sec-matrices-elimination-2-1">We saw that substitution is one way of solving systems of linear equations, but the method of substituion is not very practical when there are more than 2 or 3 varibables. In this section, we start learning a more generalizable and easy-to-automate way of solving systems of linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-elimination-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-matrices-elimination-2"><div class="para" id="sec-matrices-elimination-2-1">We saw that substitution is one way of solving systems of linear equations, but the method of substituion is not very practical when there are more than 2 or 3 varibables. In this section, we start learning a more generalizable and easy-to-automate way of solving systems of linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-elimination-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsec-matrices-elim-bc"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Prepare</span>
 </h3>
 <article class="remark remark-like" id="subsec-matrices-elim-bc-2"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-matrices-elim-bc-2-1">Mathematicians often see solutions to given problems and ask “What if <span class="process-math">\(\ldots\text{?}\)</span>” What are the right kinds of “what if” questions to ask? It’s impossible to know at first, and so mathematicians very often ask <em class="emphasis">wrong</em> questions. That is, they often ask questions and find that the answer isn’t particularly interesting. However, asking enough questions often will result in some good <em class="emphasis">right</em> questions.  The answers to “right” questions help us see a bigger picture more clearly and usually lead to something applicable beyond the initial problem. The moral of the story is: don’t be afraid of doing something wrong because mathematicians do it all the time!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-2-1">Mathematicians often see solutions to given problems and ask “What if <span class="process-math">\(\ldots\text{?}\)</span>” What are the right kinds of “what if” questions to ask? It’s impossible to know at first, and so mathematicians very often ask <em class="emphasis">wrong</em> questions. That is, they often ask questions and find that the answer isn’t particularly interesting. However, asking enough questions often will result in some good <em class="emphasis">right</em> questions.  The answers to “right” questions help us see a bigger picture more clearly and usually lead to something applicable beyond the initial problem. The moral of the story is: don’t be afraid of doing something wrong because mathematicians do it all the time!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Remark 1.2.1"><a href="#subsec-matrices-elim-bc-2" title="Copy permalink for Remark 1.2.1">🔗</a></div></article><div class="para logical" id="subsec-matrices-elim-bc-3">
+<div class="autopermalink" data-description="Remark 1.2.1"><a href="#subsec-matrices-elim-bc-2" title="Copy heading and permalink for Remark 1.2.1">🔗</a></div></article><div class="para logical" id="subsec-matrices-elim-bc-3">
 <div class="para">Recall that in the previous section, we worked through a few examples of solving linear equations using substitution; that is, we solved for one variable in one equation and substituted the resulting expression into another equation.  What is a good question to ask after seeing <a href="sec-lin-eqn-substitution.html#ex_by_hand" class="xref" data-knowl="./knowl/xref/ex_by_hand.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.8: Jar of multicolored marbles">Example 1.1.8</a>? Here are two possibilities (though not the only two):</div>
 <ol class="decimal" id="subsec-matrices-elim-bc-3-2">
 <li id="subsec-matrices-elim-bc-3-2-1">
-<div class="para" id="subsec-matrices-elim-bc-3-2-1-1">Did we really have to call the red balls “<span class="process-math">\(r\)</span>”? Could we call them “<span class="process-math">\(q\)</span>”?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-3-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-3-2-1-1">Did we really have to call the red balls “<span class="process-math">\(r\)</span>”? Could we call them “<span class="process-math">\(q\)</span>”?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#subsec-matrices-elim-bc-3-2-1" title="Copy permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-matrices-elim-bc-3-2-1" title="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="subsec-matrices-elim-bc-3-2-2">
-<div class="para" id="subsec-matrices-elim-bc-3-2-2-1">What if we had <span class="process-math">\(60\)</span> balls at the start instead of <span class="process-math">\(30\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-3-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-3-2-2-1">What if we had <span class="process-math">\(60\)</span> balls at the start instead of <span class="process-math">\(30\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-3-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#subsec-matrices-elim-bc-3-2-2" title="Copy permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-matrices-elim-bc-3-2-2" title="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrices-elim-bc-4">Let’s look at the first question. Would the solution to our problem change if we called the red balls <span class="process-math">\(q\text{?}\)</span> No, we picked the letter “r” because it made us think of “red”, but we could have picked <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> or any other letter instead. The process of solving would have been exactly the same if we used “q” for the number of red balls, and at the end we’d find that <span class="process-math">\(q = 10\text{,}\)</span> and we would know that this meant that we had <span class="process-math">\(10\)</span> red balls.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-4">Let’s look at the first question. Would the solution to our problem change if we called the red balls <span class="process-math">\(q\text{?}\)</span> No, we picked the letter “r” because it made us think of “red”, but we could have picked <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> or any other letter instead. The process of solving would have been exactly the same if we used “q” for the number of red balls, and at the end we’d find that <span class="process-math">\(q = 10\text{,}\)</span> and we would know that this meant that we had <span class="process-math">\(10\)</span> red balls.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrices-elim-bc-5">Now let’s look at the second question. Suppose we had <span class="process-math">\(60\)</span> balls, but the other relationships stayed the same. How would the situation and solution change? Let’s compare the original equations to the new equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-5">Now let’s look at the second question. Suppose we had <span class="process-math">\(60\)</span> balls, but the other relationships stayed the same. How would the situation and solution change? Let’s compare the original equations to the new equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
@@ -348,46 +367,46 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(b=r+g\)</span></td>
 </tr>
 </table></div>
-<div class="para" id="subsec-matrices-elim-bc-7">The process of solving would stay exactly the same, substituting <span class="process-math">\(2g\)</span> for <span class="process-math">\(r\)</span> in the third equation to get that <span class="process-math">\(b=2g+g=3g\text{,}\)</span> and then substituting for both <span class="process-math">\(r\)</span> and <span class="process-math">\(b\)</span> in the first equation to get that <span class="process-math">\(2g+3g+g=60\text{.}\)</span>  The only difference is that total is <span class="process-math">\(6g=60\)</span> instead of <span class="process-math">\(30\text{,}\)</span> so the value of <span class="process-math">\(g\)</span> is twice as much, and thus also the values of <span class="process-math">\(r\)</span> and <span class="process-math">\(b\)</span> are twice what they had been.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-7" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-7">The process of solving would stay exactly the same, substituting <span class="process-math">\(2g\)</span> for <span class="process-math">\(r\)</span> in the third equation to get that <span class="process-math">\(b=2g+g=3g\text{,}\)</span> and then substituting for both <span class="process-math">\(r\)</span> and <span class="process-math">\(b\)</span> in the first equation to get that <span class="process-math">\(2g+3g+g=60\text{.}\)</span>  The only difference is that total is <span class="process-math">\(6g=60\)</span> instead of <span class="process-math">\(30\text{,}\)</span> so the value of <span class="process-math">\(g\)</span> is twice as much, and thus also the values of <span class="process-math">\(r\)</span> and <span class="process-math">\(b\)</span> are twice what they had been.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-matrices-elim-bc-8">
 <div class="para">Two conclusions from answering these two questions are:</div>
 <ul class="disc" id="subsec-matrices-elim-bc-8-1">
 <li id="subsec-matrices-elim-bc-8-1-1">
-<div class="para" id="subsec-matrices-elim-bc-8-1-1-1">it doesn’t matter what we call our variables, and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-8-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-8-1-1-1">it doesn’t matter what we call our variables, and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-8-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-matrices-elim-bc-8-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-matrices-elim-bc-8-1-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-matrices-elim-bc-8-1-2">
-<div class="para" id="subsec-matrices-elim-bc-8-1-2-1">while changing the constants in the equations changes the solution, they don’t really change the <em class="emphasis">method</em> of how we solve these equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-8-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-8-1-2-1">while changing the constants in the equations changes the solution, they don’t really change the <em class="emphasis">method</em> of how we solve these equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-8-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-matrices-elim-bc-8-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-matrices-elim-bc-8-1-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrices-elim-bc-9">In fact, it is a great discovery to realize that all that matters about a linear system are the <em class="emphasis">constants</em> and the <em class="emphasis">coefficients</em> of the equations. By systematically handling these, we can solve any set of linear equations in a way that saves on processing power, whether the processing is being done by a human or by a computer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-9" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-9">In fact, it is a great discovery to realize that all that matters about a linear system are the <em class="emphasis">constants</em> and the <em class="emphasis">coefficients</em> of the equations. By systematically handling these, we can solve any set of linear equations in a way that saves on processing power, whether the processing is being done by a human or by a computer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="clickable-coefficients"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Clickable Areas, Coefficients.</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;" id="rs-clickable-coefficients">
-<span data-question=""><div class="para" id="clickable-coefficients-2-1">Identify (by clicking, or by circling) all of the <em class="emphasis">coefficients</em> in this linear equation.<div class="autopermalink" data-description="Paragraph"><a href="#clickable-coefficients-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span data-question=""><div class="para" id="clickable-coefficients-2-1">Identify (by clicking, or by circling) all of the <em class="emphasis">coefficients</em> in this linear equation.<div class="autopermalink" data-description="Paragraph"><a href="#clickable-coefficients-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></span><span data-feedback=""><div class="para" id="clickable-coefficients-4-1">The coefficients are the numbers that are multiplied by the variables.</div></span><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><div class="para" id="clickable-coefficients-3-1-1">
-<span data-correct=""><span class="process-math">\(5\)</span></span><span data-incorrect=""><span class="process-math">\(x_1\)</span></span> <span class="process-math">\(+\)</span> <span data-correct=""><span class="process-math">\(\pi\)</span></span><span data-incorrect=""><span class="process-math">\(x_2\)</span></span> <span class="process-math">\(-\)</span> <span data-correct=""><span class="process-math">\(\ln(2)\)</span></span><span data-incorrect=""><span class="process-math">\(x_3\)</span></span> <span class="process-math">\(=\)</span> <span data-incorrect=""><span class="process-math">\(27\)</span></span><div class="autopermalink" data-description="Paragraph"><a href="#clickable-coefficients-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span data-correct=""><span class="process-math">\(5\)</span></span><span data-incorrect=""><span class="process-math">\(x_1\)</span></span> <span class="process-math">\(+\)</span> <span data-correct=""><span class="process-math">\(\pi\)</span></span><span data-incorrect=""><span class="process-math">\(x_2\)</span></span> <span class="process-math">\(-\)</span> <span data-correct=""><span class="process-math">\(\ln(2)\)</span></span><span data-incorrect=""><span class="process-math">\(x_3\)</span></span> <span class="process-math">\(=\)</span> <span data-incorrect=""><span class="process-math">\(27\)</span></span><div class="autopermalink" data-description="Paragraph"><a href="#clickable-coefficients-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.2.2: Clickable Areas, Coefficients"><a href="#clickable-coefficients" title="Copy permalink for Activity 1.2.2: Clickable Areas, Coefficients">🔗</a></div></article><article class="exercise exercise-like" id="clickable-constants"><h4 class="heading">
+<div class="autopermalink" data-description="Activity 1.2.2: Clickable Areas, Coefficients"><a href="#clickable-coefficients" title="Copy heading and permalink for Activity 1.2.2: Clickable Areas, Coefficients">🔗</a></div></article><article class="exercise exercise-like" id="clickable-constants"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Clickable Areas, Constants.</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;" id="rs-clickable-constants">
-<span data-question=""><div class="para" id="clickable-constants-2-1">Identify (by clicking, or by circling) all of the <em class="emphasis">constants</em> in this linear equation.<div class="autopermalink" data-description="Paragraph"><a href="#clickable-constants-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span data-question=""><div class="para" id="clickable-constants-2-1">Identify (by clicking, or by circling) all of the <em class="emphasis">constants</em> in this linear equation.<div class="autopermalink" data-description="Paragraph"><a href="#clickable-constants-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></span><span data-feedback=""><div class="para" id="clickable-constants-4-1">The constants are the numbers that aren’t multiplied by any variables.</div></span><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><div class="para" id="clickable-constants-3-1-1">
-<span data-incorrect=""><span class="process-math">\(5\)</span></span><span data-incorrect=""><span class="process-math">\(x_1\)</span></span> <span class="process-math">\(+\)</span> <span data-incorrect=""><span class="process-math">\(\pi\)</span></span><span data-incorrect=""><span class="process-math">\(x_2\)</span></span> <span class="process-math">\(-\)</span> <span data-incorrect=""><span class="process-math">\(\ln(2)\)</span></span><span data-incorrect=""><span class="process-math">\(x_3\)</span></span> <span class="process-math">\(+\)</span> <span data-correct=""><span class="process-math">\(10\)</span></span> <span class="process-math">\(=\)</span> <span data-correct=""><span class="process-math">\(0\)</span></span><div class="autopermalink" data-description="Paragraph"><a href="#clickable-constants-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span data-incorrect=""><span class="process-math">\(5\)</span></span><span data-incorrect=""><span class="process-math">\(x_1\)</span></span> <span class="process-math">\(+\)</span> <span data-incorrect=""><span class="process-math">\(\pi\)</span></span><span data-incorrect=""><span class="process-math">\(x_2\)</span></span> <span class="process-math">\(-\)</span> <span data-incorrect=""><span class="process-math">\(\ln(2)\)</span></span><span data-incorrect=""><span class="process-math">\(x_3\)</span></span> <span class="process-math">\(+\)</span> <span data-correct=""><span class="process-math">\(10\)</span></span> <span class="process-math">\(=\)</span> <span data-correct=""><span class="process-math">\(0\)</span></span><div class="autopermalink" data-description="Paragraph"><a href="#clickable-constants-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.2.3: Clickable Areas, Constants"><a href="#clickable-constants" title="Copy permalink for Activity 1.2.3: Clickable Areas, Constants">🔗</a></div></article><section class="paragraphs" id="elim-jar-marbles"><h4 class="heading"><span class="title">Method of Elimination (of Variables).</span></h4>
-<div class="para" id="elim-jar-marbles-2">Let’s return to <a href="sec-lin-eqn-substitution.html#ex_by_hand" class="xref" data-knowl="./knowl/xref/ex_by_hand.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.8: Jar of multicolored marbles">Example 1.1.8</a>. As we mentioned before, there isn’t just one right way of finding the solution to this system of equations. Here is another way to do it.<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Activity 1.2.3: Clickable Areas, Constants"><a href="#clickable-constants" title="Copy heading and permalink for Activity 1.2.3: Clickable Areas, Constants">🔗</a></div></article><section class="paragraphs" id="elim-jar-marbles"><h4 class="heading"><span class="title">Method of Elimination (of Variables).</span></h4>
+<div class="para" id="elim-jar-marbles-2">Let’s return to <a href="sec-lin-eqn-substitution.html#ex_by_hand" class="xref" data-knowl="./knowl/xref/ex_by_hand.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.8: Jar of multicolored marbles">Example 1.1.8</a>. As we mentioned before, there isn’t just one right way of finding the solution to this system of equations. Here is another way to do it.<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="elim-jar-marbles-3">
 <div class="para">First, we rewrite the equations so that all variables are on the left of the equal sign and all constants are on the right. Also, for a bit more consistency, let’s list the variables in alphabetical order in each equation. Therefore we can write the equations as</div>
@@ -396,7 +415,7 @@ eBookConfig.enable_chatcodes =  false;
 \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\ \amp -\amp 2g\amp +\amp r\amp =\amp 0\\ -b\amp +\amp g\amp +\amp r\amp =\amp 0 \end{array}\tag{1.2.1}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="elim-jar-marbles-4">
 <div class="para">Now, let’s add the first and last equations together, and write the result as a new third equation. This gives us:</div>
@@ -406,7 +425,7 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">A nice feature of this is that the only equation with a <span class="process-math">\(b\)</span> in it is the first equation.  One could say that we <em class="emphasis">eliminated</em> the <span class="process-math">\(b\)</span> from the third equation.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="elim-jar-marbles-5">
 <div class="para">Next let’s multiply the second equation by <span class="process-math">\(-\frac{1}{2}\text{.}\)</span> This gives</div>
@@ -415,7 +434,7 @@ eBookConfig.enable_chatcodes =  false;
 \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\ \amp  \amp  g\amp -\amp \frac{1}{2}r\amp =\amp 0\\ \amp  \amp 2g\amp +\amp 2r\amp =\amp 30 \end{array}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="mc-elimination-check"><h5 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Use equations to eliminate variables.</span>
@@ -431,24 +450,24 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">We want to use the second equation to eliminate the variable <span class="process-math">\(g\)</span> from the first equation.  What step should we take?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-a-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-a-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-mc-elimination-check-a" data-multipleanswers="false">
-<li data-component="answer" id="rs-mc-elimination-check-a_opt_a"><div class="para" id="mc-elimination-check-a-2-1-1-1">Multiply the second equation by <span class="process-math">\(1\)</span> and add to the first equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-a-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-mc-elimination-check-a_opt_a"><div class="para" id="mc-elimination-check-a-2-1-1-1">Multiply the second equation by <span class="process-math">\(1\)</span> and add to the first equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-a-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-mc-elimination-check-a_opt_a"><div class="para" id="mc-elimination-check-a-2-1-2-1">This would make the first equation <span class="process-math">\(b+2g+\frac{1}{2}r=30\text{,}\)</span> which didn’t eliminate the <span class="process-math">\(g\text{.}\)</span>
 </div></li>
-<li data-component="answer" id="rs-mc-elimination-check-a_opt_b" data-correct=""><div class="para" id="mc-elimination-check-a-2-2-1-1">Multiply the second equation by <span class="process-math">\(-1\)</span> and add to the first equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-a-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-mc-elimination-check-a_opt_b" data-correct=""><div class="para" id="mc-elimination-check-a-2-2-1-1">Multiply the second equation by <span class="process-math">\(-1\)</span> and add to the first equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-a-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-mc-elimination-check-a_opt_b"><div class="para" id="mc-elimination-check-a-2-2-2-1">This gives <span class="process-math">\(b+\frac{3}{2}r=30\text{,}\)</span> which eliminates the <span class="process-math">\(g\text{.}\)</span>
 </div></li>
-<li data-component="answer" id="rs-mc-elimination-check-a_opt_c"><div class="para" id="mc-elimination-check-a-2-3-1-1">Multiply the second equation by <span class="process-math">\(2\)</span> and add to the first equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-a-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-mc-elimination-check-a_opt_c"><div class="para" id="mc-elimination-check-a-2-3-1-1">Multiply the second equation by <span class="process-math">\(2\)</span> and add to the first equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-a-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-mc-elimination-check-a_opt_c"><div class="para" id="mc-elimination-check-a-2-3-2-1">This makes the first equation <span class="process-math">\(b+3g=30\text{,}\)</span> which eliminates the <span class="process-math">\(r\)</span> in the first equation, not the <span class="process-math">\(g\text{.}\)</span>
 </div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 1.2.4.a"><a href="#mc-elimination-check-a" title="Copy permalink for Task 1.2.4.a">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 1.2.4.a"><a href="#mc-elimination-check-a" title="Copy heading and permalink for Task 1.2.4.a">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(b)"><article class="task exercise-like" id="mc-elimination-check-b"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="mc-elimination-check-b-1-1">
@@ -459,31 +478,31 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">We want to use the top equation to eliminate the variable <span class="process-math">\(g\)</span> from the bottom equation.  What step should we take?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-b-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-b-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-mc-elimination-check-b" data-multipleanswers="false">
-<li data-component="answer" id="rs-mc-elimination-check-b_opt_a"><div class="para" id="mc-elimination-check-b-2-1-1-1">Multiply the top equation by <span class="process-math">\(-1\)</span> and add to the bottom equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-b-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-mc-elimination-check-b_opt_a"><div class="para" id="mc-elimination-check-b-2-1-1-1">Multiply the top equation by <span class="process-math">\(-1\)</span> and add to the bottom equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-b-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-mc-elimination-check-b_opt_a"><div class="para" id="mc-elimination-check-b-2-1-2-1">This would make the bottom equation <span class="process-math">\(g+\frac{5}{2}r=30\text{,}\)</span> which didn’t eliminate the <span class="process-math">\(g\text{.}\)</span>
 </div></li>
-<li data-component="answer" id="rs-mc-elimination-check-b_opt_b"><div class="para" id="mc-elimination-check-b-2-2-1-1">Multiply the top equation by <span class="process-math">\(2\)</span> and subtract from the bottom equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-b-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-mc-elimination-check-b_opt_b"><div class="para" id="mc-elimination-check-b-2-2-1-1">Multiply the top equation by <span class="process-math">\(2\)</span> and subtract from the bottom equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-b-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-mc-elimination-check-b_opt_b"><div class="para" id="mc-elimination-check-b-2-2-2-1">This would eliminate the <span class="process-math">\(g\text{,}\)</span> but to use this method systematically, we’re always going to want to multiply and <em class="emphasis">add</em>, not subtract. Subtracting <span class="process-math">\(2g\)</span> is the same as adding <span class="process-math">\(-2g\)</span> though!</div></li>
-<li data-component="answer" id="rs-mc-elimination-check-b_opt_c" data-correct=""><div class="para" id="mc-elimination-check-b-2-3-1-1">Multiply the top equation by <span class="process-math">\(-2\)</span> and add to the bottom equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-b-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-mc-elimination-check-b_opt_c" data-correct=""><div class="para" id="mc-elimination-check-b-2-3-1-1">Multiply the top equation by <span class="process-math">\(-2\)</span> and add to the bottom equation.<div class="autopermalink" data-description="Paragraph"><a href="#mc-elimination-check-b-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-mc-elimination-check-b_opt_c"><div class="para" id="mc-elimination-check-b-2-3-2-1">This makes the bottom equation <span class="process-math">\(3r=30\text{,}\)</span> which eliminates the <span class="process-math">\(g\)</span> from the bottom equation.</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 1.2.4.b"><a href="#mc-elimination-check-b" title="Copy permalink for Task 1.2.4.b">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 1.2.4.b"><a href="#mc-elimination-check-b" title="Copy heading and permalink for Task 1.2.4.b">🔗</a></div></article></div>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.2.4: Use equations to eliminate variables"><a href="#mc-elimination-check" title="Copy permalink for Activity 1.2.4: Use equations to eliminate variables">🔗</a></div></article><div class="para logical" id="elim-jar-marbles-7">
+<div class="autopermalink" data-description="Activity 1.2.4: Use equations to eliminate variables"><a href="#mc-elimination-check" title="Copy heading and permalink for Activity 1.2.4: Use equations to eliminate variables">🔗</a></div></article><div class="para logical" id="elim-jar-marbles-7">
 <div class="para">Let’s now do both of those steps in a row to eliminate the <span class="process-math">\(g\)</span> from the first and third equations; multiply the second equation by <span class="process-math">\(-1\)</span> and add that to the first equation, replacing the first equation with that sum, and multiply the second equation by <span class="process-math">\(-2\)</span> and add that to the third equation, replacing the third equation. Our new system of equations now becomes</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{ccccccc} b\amp +\amp  \amp  \amp \frac{3}{2}r\amp =\amp 30\\ \amp  \amp g\amp -\amp \frac{1}{2}r\amp =\amp 0\\ \amp  \amp  \amp  \amp 3r\amp =\amp 30 \end{array}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-7" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="elim-jar-marbles-8">
 <div class="para">We can now multiply the third equation by <span class="process-math">\(\frac{1}{3}\)</span> and find that <span class="process-math">\(r=10\text{;}\)</span> let’s make this our new third equation, giving</div>
@@ -492,7 +511,7 @@ eBookConfig.enable_chatcodes =  false;
 \begin{array}{ccccccc} b\amp +\amp  \amp  \amp \frac{3}{2}r\amp =\amp 30\\ \amp  \amp g\amp -\amp \frac{1}{2}r\amp =\amp 0\\ \amp  \amp  \amp  \amp r\amp =\amp 10 \end{array}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="elim-jar-marbles-9">
 <div class="para">Now let’s eliminate the <span class="process-math">\(r\)</span>’s in the first and second equation. To remove the <span class="process-math">\(r\)</span> in the first equation, let’s multiply the third equation by <span class="process-math">\(-\frac{3}{2}\)</span> and add the result to the first equation, replacing the first equation with that sum. To remove the <span class="process-math">\(r\)</span> in the second equation, we can multiply the third equation by <span class="process-math">\(\frac{1}{2}\)</span> and add that to the second equation, replacing the second equation with that sum. This gives us:</div>
@@ -502,11 +521,11 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">We have arrived at the same result as when we solved this problem in <a href="sec-lin-eqn-substitution.html#ex_by_hand" class="xref" data-knowl="./knowl/xref/ex_by_hand.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.8: Jar of multicolored marbles">Example 1.1.8</a>, even though our steps were different.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-9" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#elim-jar-marbles-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Method of Elimination (of Variables)"><a href="#elim-jar-marbles" title="Copy permalink for Paragraphs: Method of Elimination (of Variables)">🔗</a></div></section><div class="para" id="subsec-matrices-elim-bc-13">Why did we need to learn another method (elimination) when our old method (substitution) worked and got the same answer?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-13" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraphs: Method of Elimination (of Variables)"><a href="#elim-jar-marbles" title="Copy heading and permalink for Paragraphs: Method of Elimination (of Variables)">🔗</a></div></section><div class="para" id="subsec-matrices-elim-bc-13">Why did we need to learn another method (elimination) when our old method (substitution) worked and got the same answer?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-13" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrices-elim-bc-14">Everyone thinks of a different way to solve a system using substitution — Mary might choose a different variable to solve for than John chose, and Alicia might start with a different equation, and Steven might substitute into a different equation. When there are more than 2 or 3 variables, substituting gets really laborious, and it’s not always clear what steps should come next in order to make progress in solving. Elimination can be made into an algorithm, a set of steps to follow in a particular order that will always result in an answer.<details class="ptx-footnote" aria-live="polite" id="subsec-matrices-elim-bc-14-2"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-matrices-elim-bc-14-2">Even if sometimes the answer is that there is no solution, or that there are infinitely many solutions.</div></details>  This is both comforting and practical; if you have to work a problem by hand, it’s nice to know you’ll be able to complete it as long as you remember the steps, and if you don’t have to work the problem by hand, an algorithm means it’s possible to program a computer to do the steps for you.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-14" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrices-elim-bc-14">Everyone thinks of a different way to solve a system using substitution — Mary might choose a different variable to solve for than John chose, and Alicia might start with a different equation, and Steven might substitute into a different equation. When there are more than 2 or 3 variables, substituting gets really laborious, and it’s not always clear what steps should come next in order to make progress in solving. Elimination can be made into an algorithm, a set of steps to follow in a particular order that will always result in an answer.<details class="ptx-footnote" aria-live="polite" id="subsec-matrices-elim-bc-14-2"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-matrices-elim-bc-14-2">Even if sometimes the answer is that there is no solution, or that there are infinitely many solutions.</div></details>  This is both comforting and practical; if you have to work a problem by hand, it’s nice to know you’ll be able to complete it as long as you remember the steps, and if you don’t have to work the problem by hand, an algorithm means it’s possible to program a computer to do the steps for you.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrices-elim-bc-14" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="parsons-elim-vs-sub"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Parsons Problem, Elimination vs Substitution.</span>
@@ -521,7 +540,7 @@ eBookConfig.enable_chatcodes =  false;
 \end{align*}
 </div>
 <div class="para">using the method of elimination.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-adaptive="true" data-noindent="true"><div class="para logical" id="parsons-elim-vs-sub-3-1-1-1">
 <div class="para">Multiply the first equation by <span class="process-math">\(2\)</span> and add the result to the second equation, yielding</div>
@@ -531,7 +550,7 @@ eBookConfig.enable_chatcodes =  false;
 0 + 7y\amp = 14 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 ---
 <div class="para logical" id="parsons-elim-vs-sub-3-1-2-1">
@@ -541,7 +560,7 @@ eBookConfig.enable_chatcodes =  false;
 y = \frac{3+3x}{2}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> #paired
 ---
 <div class="para logical" id="parsons-elim-vs-sub-3-2-2-1">
@@ -552,7 +571,7 @@ y = \frac{3+3x}{2}\text{.}
 0 + y\amp = 2 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 ---
 <div class="para logical" id="parsons-elim-vs-sub-3-2-1-1">
@@ -562,7 +581,7 @@ y = \frac{3+3x}{2}\text{.}
 6x + \frac{9}{2}x+\frac{9}{2} = 8 \text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> #paired
 ---
 <div class="para logical" id="parsons-elim-vs-sub-3-3-2-1">
@@ -572,7 +591,7 @@ y = \frac{3+3x}{2}\text{.}
 \begin{array}{cccc}x \amp \amp \amp= \frac{1}{3} \\ \amp \amp y \amp=2 \end{array} \text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 ---
 <div class="para logical" id="parsons-elim-vs-sub-3-3-1-1">
@@ -582,11 +601,11 @@ y = \frac{3+3x}{2}\text{.}
 x=\frac{1}{3}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-elim-vs-sub-3-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> #paired</pre>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.2.5: Parsons Problem, Elimination vs Substitution"><a href="#parsons-elim-vs-sub" title="Copy permalink for Activity 1.2.5: Parsons Problem, Elimination vs Substitution">🔗</a></div></article><section class="paragraphs" id="subsubsec-matrices-matrices"><h4 class="heading"><span class="title">Matrices.</span></h4>
-<div class="para" id="subsubsec-matrices-matrices-2">We noticed earlier that there is nothing special about the letters <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(g\)</span> and <span class="process-math">\(r\text{;}\)</span> we could have used <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\)</span> and <span class="process-math">\(z\text{,}\)</span> or <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\text{.}\)</span> Our work demonstrating the method of elimination suggests that we don’t actually need to write the variable names at all, as long as we carefully line them up in the system of equations so that we can keep track of what’s being eliminated.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Activity 1.2.5: Parsons Problem, Elimination vs Substitution"><a href="#parsons-elim-vs-sub" title="Copy heading and permalink for Activity 1.2.5: Parsons Problem, Elimination vs Substitution">🔗</a></div></article><section class="paragraphs" id="subsubsec-matrices-matrices"><h4 class="heading"><span class="title">Matrices.</span></h4>
+<div class="para" id="subsubsec-matrices-matrices-2">We noticed earlier that there is nothing special about the letters <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(g\)</span> and <span class="process-math">\(r\text{;}\)</span> we could have used <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\)</span> and <span class="process-math">\(z\text{,}\)</span> or <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\text{.}\)</span> Our work demonstrating the method of elimination suggests that we don’t actually need to write the variable names at all, as long as we carefully line them up in the system of equations so that we can keep track of what’s being eliminated.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsubsec-matrices-matrices-3">
 <div class="para">Let’s look again at our system of equations in <a href="sec-matrices-elimination.html#eq_before_matrix" class="xref" data-knowl="./knowl/xref/eq_before_matrix.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.1">(1.2.1)</a> and write the coefficients and the constants in a rectangular array. If any variables are missing from any equations, we write that the coefficient is <span class="process-math">\(0\text{.}\)</span>
@@ -596,19 +615,19 @@ x=\frac{1}{3}\text{.}
 \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\ \amp -\amp 2g\amp +\amp r\amp =\amp 0\\ -b\amp +\amp g\amp +\amp r\amp =\amp 0 \end{array} \quad \Longleftrightarrow \quad \left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp -2\amp 1\amp 0\\ -1\amp 1\amp 1\amp 0 \end{array} \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsubsec-matrices-matrices-4">Notice how even the equal signs are gone; we don’t need them, for we know that the last entry in each row is the constant of the corresponding equation.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-matrices-matrices-4">Notice how even the equal signs are gone; we don’t need them, for we know that the last entry in each row is the constant of the corresponding equation.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsubsec-matrices-matrices-5">We call this array we have just created a <em class="emphasis">matrix</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-matrices-matrices-5">We call this array we have just created a <em class="emphasis">matrix</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def_matrix"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix.</span>
 </h5>
-<div class="para" id="def_matrix-3-1">A <dfn class="terminology">matrix</dfn> is a rectangular array of numbers.<div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="def_matrix-3-2">The horizontal lines of numbers form <dfn class="terminology">rows</dfn> and the vertical lines of numbers form <dfn class="terminology">columns</dfn>. A matrix with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns is said to be an <dfn class="terminology"><span class="process-math">\(m\times n\)</span> matrix</dfn> (said out loud as “an <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix”).<div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="def_matrix-3-3">If a matrix corresponds to a linear system of equations such that the last column corresponds to the constants of the system, we call the matrix an <dfn class="terminology">augmented matrix</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-3" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="def_matrix-3-4">We tend to use capital letters for matrices (the plural of matrix), such as <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{,}\)</span> and we use lowercase letters with subscripts for the entries within a matrix.  That is, <span class="process-math">\(a_{32}\)</span> means “the number in the third row and second column” of matrix <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="def_matrix-3-1">A <dfn class="terminology">matrix</dfn> is a rectangular array of numbers.<div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def_matrix-3-2">The horizontal lines of numbers form <dfn class="terminology">rows</dfn> and the vertical lines of numbers form <dfn class="terminology">columns</dfn>. A matrix with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns is said to be an <dfn class="terminology"><span class="process-math">\(m\times n\)</span> matrix</dfn> (said out loud as “an <span class="process-math">\(m\)</span> by <span class="process-math">\(n\)</span> matrix”).<div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def_matrix-3-3">If a matrix corresponds to a linear system of equations such that the last column corresponds to the constants of the system, we call the matrix an <dfn class="terminology">augmented matrix</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def_matrix-3-4">We tend to use capital letters for matrices (the plural of matrix), such as <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{,}\)</span> and we use lowercase letters with subscripts for the entries within a matrix.  That is, <span class="process-math">\(a_{32}\)</span> means “the number in the third row and second column” of matrix <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="def_matrix-3-5">
 <div class="para">All the entries of an <span class="process-math">\(m\times n\)</span> matrix <span class="process-math">\(A\)</span> would appear like this:</div>
 <div class="displaymath process-math">
@@ -616,11 +635,11 @@ x=\frac{1}{3}\text{.}
 A=\begin{bmatrix} a_{11}\amp a_{12}\amp a_{13}\amp \cdots\amp a_{1n}\\ a_{21}\amp a_{22}\amp a_{23}\amp \cdots\amp a_{2n}\\ a_{31}\amp a_{32}\amp a_{33}\amp \cdots\amp a_{3n}\\ \vdots\amp \vdots\amp \vdots\amp \ddots\amp \vdots\\ a_{m1}\amp a_{m2}\amp a_{m3}\amp \cdots\amp a_{mn} \end{bmatrix}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-5" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def_matrix-3-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.2.6: Matrix"><a href="#def_matrix" title="Copy permalink for Definition 1.2.6: Matrix">🔗</a></div></article><div class="para" id="subsubsec-matrices-matrices-7">Since matrices contain all the important information from a linear system, we are working our way up to solving systems using only augmented matrices.  Using matrices saves us from having to write out the variables over and over again, and matrices are also easy for a computer to understand and manipulate.  Matrices are important objects in their own right, and in future sections, we will be able to compute with matrices even when we don’t think of them as corresponding to a system of linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-7" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 1.2.6: Matrix"><a href="#def_matrix" title="Copy heading and permalink for Definition 1.2.6: Matrix">🔗</a></div></article><div class="para" id="subsubsec-matrices-matrices-7">Since matrices contain all the important information from a linear system, we are working our way up to solving systems using only augmented matrices.  Using matrices saves us from having to write out the variables over and over again, and matrices are also easy for a computer to understand and manipulate.  Matrices are important objects in their own right, and in future sections, we will be able to compute with matrices even when we don’t think of them as corresponding to a system of linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-matrices-matrices-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Matrices"><a href="#subsubsec-matrices-matrices" title="Copy permalink for Paragraphs: Matrices">🔗</a></div></section><section class="reading-questions" id="rqs-matrices-elim"><h4 class="heading hide-type">
+<div class="autopermalink" data-description="Paragraphs: Matrices"><a href="#subsubsec-matrices-matrices" title="Copy heading and permalink for Paragraphs: Matrices">🔗</a></div></section><section class="reading-questions" id="rqs-matrices-elim"><h4 class="heading hide-type">
 <span class="type">Reading Questions</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Reading Questions</span>
 </h4>
 <article class="exercise exercise-like" id="matrix-indices"><h5 class="heading">
@@ -636,74 +655,72 @@ A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 
 </div>
 <div class="para">what is <span class="process-math">\(a_{23}\text{?}\)</span> <input type="text" placeholder="Number" size="5">
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#matrix-indices-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#matrix-indices-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <script type="application/json">[[{"number": [6, 6], "feedback": "<div class=\"para\" id=\"matrix-indices-3-1-1-1-1\">The entry in the second row and third column is 6.<\/div>"}, {"number": [-2, -2], "feedback": "<div class=\"para\" id=\"matrix-indices-3-1-2-1-1\">The row number comes first, then the column number.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"matrix-indices-3-1-3-1-1\">Incorrect.  If you’re stuck, try reviewing the <a href=\"sec-matrices-elimination.html#def_matrix\" class=\"xref\" data-knowl=\".\/knowl\/xref\/def_matrix.html\" data-reveal-label=\"Reveal\" data-close-label=\"Close\" title=\"Definition 1.2.6: Matrix\">definition of matrix 1.2.6<\/a>.<\/div>"}]]</script>
 </div></div></div>
-<div class="autopermalink" data-description="Reading Question 1: How a matrix is indexed"><a href="#matrix-indices" title="Copy permalink for Reading Question 1: How a matrix is indexed">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrices-sub-vs-elim"><h5 class="heading">
+<div class="autopermalink" data-description="Reading Question 1: How a matrix is indexed"><a href="#matrix-indices" title="Copy heading and permalink for Reading Question 1: How a matrix is indexed">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrices-sub-vs-elim"><h5 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Elimination vs. substitution.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrices-sub-vs-elim" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-sub-vs-elim-2-1">
 <div class="para">Consider the <em class="emphasis">method of substitution</em> used in <a href="sec-lin-eqn-substitution.html" class="internal" title="Section 1.1: Linear Equations and Substitution">Section 1.1</a> and the <em class="emphasis">method of elimination</em> described in this section.</div>
 <ol class="lower-alpha lower-alpha-level-1" id="rq-matrices-sub-vs-elim-2-1-4">
 <li id="rq-matrices-sub-vs-elim-2-1-4-1">
-<div class="para" id="rq-matrices-sub-vs-elim-2-1-4-1-1">State at least one thing the two methods have in common.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-sub-vs-elim-2-1-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="rq-matrices-sub-vs-elim-2-1-4-1-1">State at least one thing the two methods have in common.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-sub-vs-elim-2-1-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2.a"><a href="#rq-matrices-sub-vs-elim-2-1-4-1" title="Copy permalink for Item 2.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#rq-matrices-sub-vs-elim-2-1-4-1" title="Copy heading and permalink for Item 2.a">🔗</a></div>
 </li>
 <li id="rq-matrices-sub-vs-elim-2-1-4-2">
-<div class="para" id="rq-matrices-sub-vs-elim-2-1-4-2-1">State at least one thing that’s different between the two methods.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-sub-vs-elim-2-1-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="rq-matrices-sub-vs-elim-2-1-4-2-1">State at least one thing that’s different between the two methods.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-sub-vs-elim-2-1-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2.b"><a href="#rq-matrices-sub-vs-elim-2-1-4-2" title="Copy permalink for Item 2.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#rq-matrices-sub-vs-elim-2-1-4-2" title="Copy heading and permalink for Item 2.b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-sub-vs-elim-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-sub-vs-elim-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
-<div class="autopermalink" data-description="Reading Question 2: Elimination vs. substitution"><a href="#rq-matrices-sub-vs-elim" title="Copy permalink for Reading Question 2: Elimination vs. substitution">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrices-questions"><h5 class="heading">
+<div class="autopermalink" data-description="Reading Question 2: Elimination vs. substitution"><a href="#rq-matrices-sub-vs-elim" title="Copy heading and permalink for Reading Question 2: Elimination vs. substitution">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrices-questions"><h5 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Reflection.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrices-questions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para logical" id="rq-matrices-questions-2-1">
 <div class="para">Enter a response to both of the following tasks:</div>
 <ol class="lower-alpha lower-alpha-level-1" id="rq-matrices-questions-2-1-1">
 <li id="rq-matrices-questions-2-1-1-1">
-<div class="para" id="rq-matrices-questions-2-1-1-1-1">Ask a question about the material, either about something you’re not sure you fully understand, or a “what if” question.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-questions-2-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="rq-matrices-questions-2-1-1-1-1">Ask a question about the material, either about something you’re not sure you fully understand, or a “what if” question.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-questions-2-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3.a"><a href="#rq-matrices-questions-2-1-1-1" title="Copy permalink for Item 3.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#rq-matrices-questions-2-1-1-1" title="Copy heading and permalink for Item 3.a">🔗</a></div>
 </li>
 <li id="rq-matrices-questions-2-1-1-2">
-<div class="para" id="rq-matrices-questions-2-1-1-2-1">Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way.  0 means you didn’t actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-questions-2-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="rq-matrices-questions-2-1-1-2-1">Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way.  0 means you didn’t actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-questions-2-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3.b"><a href="#rq-matrices-questions-2-1-1-2" title="Copy permalink for Item 3.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#rq-matrices-questions-2-1-1-2" title="Copy heading and permalink for Item 3.b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-questions-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrices-questions-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
-<div class="autopermalink" data-description="Reading Question 3: Reflection"><a href="#rq-matrices-questions" title="Copy permalink for Reading Question 3: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-matrices-elim" title="Copy permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-matrices-elim-bc" title="Copy permalink for Subsection: Prepare">🔗</a></div></section><section class="worksheet" id="ws-matrices-elim"><h3 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Participate</span><div class="print-links">
-<a href="ws-matrices-elim-a4.html" class="a4">A4</a><a href="ws-matrices-elim-letter.html" class="us">US</a>
-</div>
+<div class="autopermalink" data-description="Reading Question 3: Reflection"><a href="#rq-matrices-questions" title="Copy heading and permalink for Reading Question 3: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-matrices-elim" title="Copy heading and permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-matrices-elim-bc" title="Copy heading and permalink for Subsection: Prepare">🔗</a></div></section><section class="worksheet" id="ws-matrices-elim"><h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Participate</span><div class="print-links"><a href="ws-matrices-elim-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h3>
 <article class="objectives goal-like" id="ws-matrices-elim-2"><h4 class="heading"><span class="type">Objectives</span></h4>
 <ul class="disc" id="ws-matrices-elim-2-1">
 <li id="ws-matrices-elim-2-1-1">
-<div class="para" id="ws-matrices-elim-2-1-1-1">Solve systems of linear equations using the method of elimination<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrices-elim-2-1-1-1">Solve systems of linear equations using the method of elimination<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#ws-matrices-elim-2-1-1" title="Copy permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-matrices-elim-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="ws-matrices-elim-2-1-2">
-<div class="para" id="ws-matrices-elim-2-1-2-1">Become more familiar with the terminology and parts of a matrix<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrices-elim-2-1-2-1">Become more familiar with the terminology and parts of a matrix<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#ws-matrices-elim-2-1-2" title="Copy permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-matrices-elim-2-1-2" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="ws-matrices-elim-2-1-3">
-<div class="para" id="ws-matrices-elim-2-1-3-1">Go back and forth between a linear system and an augmented matrix<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrices-elim-2-1-3-1">Go back and forth between a linear system and an augmented matrix<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#ws-matrices-elim-2-1-3" title="Copy permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-matrices-elim-2-1-3" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Objectives"><a href="#ws-matrices-elim-2" title="Copy permalink for Objectives">🔗</a></div></article><section class="onepage" id="ws-matrices-elim-3"><div class="exercisegroup" id="ws-matrices-elim-3-1">
+<div class="autopermalink" data-description="Objectives"><a href="#ws-matrices-elim-2" title="Copy heading and permalink for Objectives">🔗</a></div></article><section class="onepage" id="ws-matrices-elim-3"><div class="exercisegroup" id="ws-matrices-elim-3-1">
 <h4 class="heading"><span class="title">Elimination.</span></h4>
-<div class="introduction" id="ws-matrices-elim-3-1-2"><div class="para" id="ws-matrices-elim-3-1-2-1">Solve the linear systems below using the method of elimination.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="ws-matrices-elim-3-1-2"><div class="para" id="ws-matrices-elim-3-1-2-1">Solve the linear systems below using the method of elimination.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="ws-matrices-elim-3-1-3"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
@@ -714,10 +731,10 @@ A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 
 5x_1 - 5x_2 \amp = 15 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-3-1-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-3-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#ws-matrices-elim-3-1-3" title="Copy permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="dc-linsystem4var"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#ws-matrices-elim-3-1-3" title="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="dc-linsystem4var"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
 <div class="para logical" id="dc-linsystem4var-1-1">
 <div class="displaymath process-math" id="dc-linsystem4var-1-1-1">
 \begin{align*}
@@ -727,75 +744,75 @@ x_2+ x_3 \amp = 3 \\
 x_2 - x_4\amp = 4 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#dc-linsystem4var-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#dc-linsystem4var-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#dc-linsystem4var" title="Copy permalink for Worksheet Exercise 2">🔗</a></div></article>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#dc-linsystem4var" title="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article>
 </div>
-<div class="autopermalink" data-description="Exercise Group 1–2: Elimination"><a href="#ws-matrices-elim-3-1" title="Copy permalink for Exercise Group 1–2: Elimination">🔗</a></div>
+<div class="autopermalink" data-description="Exercise Group 1–2: Elimination"><a href="#ws-matrices-elim-3-1" title="Copy heading and permalink for Exercise Group 1–2: Elimination">🔗</a></div>
 </div></section><section class="onepage" id="ws-matrices-elim-4"><div class="exercisegroup" id="ws-matrices-elim-4-1">
 <h4 class="heading"><span class="title">Parts of a Matrix.</span></h4>
-<div class="introduction" id="ws-matrices-elim-4-1-2"><div class="para" id="ws-matrices-elim-4-1-2-1">For the matrix <span class="process-math">\(B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\text{,}\)</span> identify the<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="ws-matrices-elim-4-1-2"><div class="para" id="ws-matrices-elim-4-1-2-1">For the matrix <span class="process-math">\(B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\text{,}\)</span> identify the<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="exercisegroup-exercises cols3">
 <article class="exercise exercise-like" id="ws-matrices-elim-4-1-3"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
-<div class="para" id="ws-matrices-elim-4-1-3-1-1">entry <span class="process-math">\(b_{32}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-1-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrices-elim-4-1-3-1-1">entry <span class="process-math">\(b_{32}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".7in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#ws-matrices-elim-4-1-3" title="Copy permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-1-4"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
-<div class="para" id="ws-matrices-elim-4-1-4-1-1">third column.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-1-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#ws-matrices-elim-4-1-3" title="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-1-4"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="para" id="ws-matrices-elim-4-1-4-1-1">third column.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-1-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".7in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-matrices-elim-4-1-4" title="Copy permalink for Worksheet Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-1-5"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
-<div class="para" id="ws-matrices-elim-4-1-5-1-1">second row.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-1-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-matrices-elim-4-1-4" title="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-1-5"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="para" id="ws-matrices-elim-4-1-5-1-1">second row.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-1-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".7in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#ws-matrices-elim-4-1-5" title="Copy permalink for Worksheet Exercise 5">🔗</a></div></article>
+<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#ws-matrices-elim-4-1-5" title="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div></article>
 </div>
-<div class="autopermalink" data-description="Exercise Group 3–5: Parts of a Matrix"><a href="#ws-matrices-elim-4-1" title="Copy permalink for Exercise Group 3–5: Parts of a Matrix">🔗</a></div>
+<div class="autopermalink" data-description="Exercise Group 3–5: Parts of a Matrix"><a href="#ws-matrices-elim-4-1" title="Copy heading and permalink for Exercise Group 3–5: Parts of a Matrix">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="ws-matrices-elim-4-2"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div class="para" id="ws-matrices-elim-4-2-1-1">If <span class="process-math">\(A\)</span> is a <span class="process-math">\(3\times 5\)</span> matrix, how many columns does <span class="process-math">\(A\)</span> have?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-matrices-elim-4-2-1-1">If <span class="process-math">\(A\)</span> is a <span class="process-math">\(3\times 5\)</span> matrix, how many columns does <span class="process-math">\(A\)</span> have?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space=".2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#ws-matrices-elim-4-2" title="Copy permalink for Worksheet Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-3"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<div class="para" id="ws-matrices-elim-4-3-1-1">Using variables <span class="process-math">\(x_1, x_2, \ldots \text{,}\)</span> write the linear system corresponding to the above matrix <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#ws-matrices-elim-4-2" title="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-3"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="ws-matrices-elim-4-3-1-1">Using variables <span class="process-math">\(x_1, x_2, \ldots \text{,}\)</span> write the linear system corresponding to the above matrix <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#ws-matrices-elim-4-3" title="Copy permalink for Worksheet Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-4"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<div class="para" id="ws-matrices-elim-4-4-1-1">Give the augmented matrix corresponding to the linear system in <a href="sec-matrices-elimination.html#dc-linsystem4var" class="xref" data-knowl="./knowl/xref/dc-linsystem4var.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2">2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#ws-matrices-elim-4-3" title="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-4"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="ws-matrices-elim-4-4-1-1">Give the augmented matrix corresponding to the linear system in <a href="sec-matrices-elimination.html#dc-linsystem4var" class="xref" data-knowl="./knowl/xref/dc-linsystem4var.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2">2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 8"><a href="#ws-matrices-elim-4-4" title="Copy permalink for Worksheet Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-5"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="para" id="ws-matrices-elim-4-5-1-1">Create your own augmented matrix, of any size you choose.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 8"><a href="#ws-matrices-elim-4-4" title="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-5"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para" id="ws-matrices-elim-4-5-1-1">Create your own augmented matrix, of any size you choose.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 9"><a href="#ws-matrices-elim-4-5" title="Copy permalink for Worksheet Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-6"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
-<div class="para" id="ws-matrices-elim-4-6-1-1">Create your own linear system, with however many variables and equations you choose.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 9"><a href="#ws-matrices-elim-4-5" title="Copy heading and permalink for Worksheet Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrices-elim-4-6"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para" id="ws-matrices-elim-4-6-1-1">Create your own linear system, with however many variables and equations you choose.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrices-elim-4-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 10"><a href="#ws-matrices-elim-4-6" title="Copy permalink for Worksheet Exercise 10">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-matrices-elim" title="Copy permalink for Worksheet: Participate">🔗</a></div></section><section class="conclusion" id="sec-matrices-summary"><h3 class="heading">Summary.<span></span>
+<div class="autopermalink" data-description="Worksheet Exercise 10"><a href="#ws-matrices-elim-4-6" title="Copy heading and permalink for Worksheet Exercise 10">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-matrices-elim" title="Copy heading and permalink for Worksheet: Participate">🔗</a></div></section><section class="conclusion" id="sec-matrices-summary"><h3 class="heading">Summary.<span></span>
 </h3>
 <div class="para logical" id="sec-matrices-summary-2">
 <ul class="disc" id="sec-matrices-summary-2-1">
 <li id="sec-matrices-summary-2-1-1">
-<div class="para" id="sec-matrices-summary-2-1-1-1">The <em class="emphasis">method of elimination</em> is a way of solving systems of linear equations that can be made systematic and algorithmic.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-summary-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-matrices-summary-2-1-1-1">The <em class="emphasis">method of elimination</em> is a way of solving systems of linear equations that can be made systematic and algorithmic.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-summary-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-matrices-summary-2-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-matrices-summary-2-1-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-matrices-summary-2-1-2">
 <div class="para" id="sec-matrices-summary-2-1-2-1">
-<em class="emphasis">Matrices</em> are arrays of numbers.  Right now, we are most interested in <em class="emphasis">augmented matrices</em>, whose entries correspond to the coefficients and constants of a system of linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-summary-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Matrices</em> are arrays of numbers.  Right now, we are most interested in <em class="emphasis">augmented matrices</em>, whose entries correspond to the coefficients and constants of a system of linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-summary-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-matrices-summary-2-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-matrices-summary-2-1-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-matrices-summary-2-1-3">
-<div class="para" id="sec-matrices-summary-2-1-3-1">Elimination works better than substitution when there are more than 2 or 3 variables, and it is the foundation of future sections of material.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-summary-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-matrices-summary-2-1-3-1">Elimination works better than substitution when there are more than 2 or 3 variables, and it is the foundation of future sections of material.<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-summary-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-matrices-summary-2-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-matrices-summary-2-1-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-summary-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-matrices-summary-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="ww-matrices-elim"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice</span>
 </h3>
@@ -805,7 +822,7 @@ x_2 - x_4\amp = 4
 <div id="webwork-6" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="6" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTUsNSwxKSk7CiR5ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTUsNSwxKSk7CiRhPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRkPTIqJGE7CiRiPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjb25zdDE9JGEqJHgrJGQqJHk7CiRjb25zdDI9JGIqJHgtJGMqJHk7CgpCRUdJTl9QR01MClVzZSB0aGUgbWV0aG9kIG9mIGVsaW1pbmF0aW9uIHRvIHNvbHZlIHRoZSBsaW5lYXIgc3lzdGVtOgoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGFdeCtbJGRdeSBcYW1wID0gWyRjb25zdDFdXFwKWyRiXXgtWyRjXXkgXGFtcCA9IFskY29uc3QyXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKVGhlIHNvbHV0aW9uIGlzIFtgeD1gXVtfXXskeH17Mn0gYW5kIFtgeT1gXVtfXXskeX17Mn0uCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-6')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-6-1-1-1">Use the method of elimination to solve the linear system:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-6-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-6-1-1-1">Use the method of elimination to solve the linear system:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-6-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-6-1-1-2">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -815,18 +832,18 @@ x_2 - x_4\amp = 4
 \end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-6-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-6-1-1-3">The solution is <span class="process-math">\(x=\)</span><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> and <span class="process-math">\(y=\)</span><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-6-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-6-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-6-1-1-3">The solution is <span class="process-math">\(x=\)</span><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> and <span class="process-math">\(y=\)</span><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-6-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.2.1: Two variable elimination"><a href="#ww-2-var-elimination" title="Copy permalink for Exercise 1.2.1: Two variable elimination">🔗</a></div></article><article class="activity project-like" id="ww-3var-elimination"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 1.2.1: Two variable elimination"><a href="#ww-2-var-elimination" title="Copy heading and permalink for Exercise 1.2.1: Two variable elimination">🔗</a></div></article><article class="activity project-like" id="ww-3var-elimination"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Three variable elimination.</span>
 </h4>
 <div id="webwork-7" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="7" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZvcm0ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFyZSh4XzEgPT4gJ1JlYWwnLCB4XzI9PiAnUmVhbCcsIHhfMz0+ICdSZWFsJyk7CkNvbnRleHQoKS0+cmVkdWN0aW9uLT5zZXQoJygteCkreSc9PjAsICcoLXgpLXknPT4wKTsKJHgxID0gQ29tcHV0ZShub25femVyb19yYW5kb20oMiw5LDEpKTsKJHgyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTcsNywxKSk7CiR4MyA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC03LDcsMSkpOwokYTEgPSBub25femVyb19yYW5kb20oLTEsMSwxKSpub25femVyb19yYW5kb20oMiwzLDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMSA9IENvbXB1dGUoIiRhMSokeDErJGIxKiR4MiskYzEqJHgzIik7CiRhMiA9IDA7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtMywzLDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTcsNywxKTsKJGQyID0gQ29tcHV0ZSgiJGEyKiR4MSskYjIqJHgyKyRjMiokeDMiKTsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC03LDcsMSk7CiRiMyA9IG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpOwokYzMgPSByYW5kb20oMiw5LDEpOwokZDMgPSBDb21wdXRlKCIkYTMqJHgxKyRiMyokeDIrJGMzKiR4MyIpOwoKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeF8xKyRiMSp4XzIrJGMxKnhfMyIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKnhfMSskYjIqeF8yKyRjMip4XzMiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4XzErJGIzKnhfMiskYzMqeF8zIiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKVXNlIHRoZSBtZXRob2Qgb2YgZWxpbWluYXRpb24gdG8gc29sdmUgdGhlIGxpbmVhciBzeXN0ZW06CgpbYGBgXGJlZ2lue2FsaWduZWR9ClskY29lZmYxXSBcYW1wID0gWyRkMV1cXApbJGNvZWZmMl0gXGFtcCA9IFskZDJdXFwKWyRjb2VmZjNdIFxhbXAgPSBbJGQzXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKVGhlIHNvbHV0aW9uIGlzIFtgeF8xPWBdW19deyR4fXsyfSwgW2B4XzI9YF1bX117JHl9ezJ9IGFuZCBbYHhfMz1gXVtfXXsken17Mn0uCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-7')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-7-1-1-1">Use the method of elimination to solve the linear system:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-7-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-7-1-1-1">Use the method of elimination to solve the linear system:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-7-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-7-1-1-2">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -837,18 +854,18 @@ x_2 - x_4\amp = 4
 \end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-7-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-7-1-1-3">The solution is <span class="process-math">\(x_1=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span>, <span class="process-math">\(x_2=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span> and <span class="process-math">\(x_3=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-7-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-7-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-7-1-1-3">The solution is <span class="process-math">\(x_1=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span>, <span class="process-math">\(x_2=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span> and <span class="process-math">\(x_3=\)</span><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-7-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.2.2: Three variable elimination"><a href="#ww-3var-elimination" title="Copy permalink for Exercise 1.2.2: Three variable elimination">🔗</a></div></article><article class="activity project-like" id="ww-aug-from-2var"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 1.2.2: Three variable elimination"><a href="#ww-3var-elimination" title="Copy heading and permalink for Exercise 1.2.2: Three variable elimination">🔗</a></div></article><article class="activity project-like" id="ww-aug-from-2var"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Augmented matrix from 2-variable system.</span>
 </h4>
 <div id="webwork-8" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="8" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpURVhUKE1PREVTKFBUWD0+JycsSFRNTD0+JzxkaXYgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPlwoXG5ld2NvbW1hbmR7XGFtcH17Jn1cKTwvZGl2PicpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHgxID0+ICdSZWFsJywgeDI9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtMSwxLDEpKnJhbmRvbSgyLDIwLDEpOwokYjEgPSByYW5kb20oMiwyNywxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC0yNywyNywxKTsKJGEyID0gbm9uX3plcm9fcmFuZG9tKC0xLDEsMSkqcmFuZG9tKDIsMjAsMSk7CiRiMiA9IHJhbmRvbSgyLDI3LDEpOwokYjJhbnMgPSAtMSokYjI7CiRjMiA9IG5vbl96ZXJvX3JhbmRvbSgtMjcsMjcsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtMSwxLDEpKnJhbmRvbSgyLDIwLDEpOwokYjMgPSByYW5kb20oMiwyNywxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC0yNywyNywxKTsKCkJFR0lOX1BHTUwKV3JpdGUgdGhlIGF1Z21lbnRlZCBtYXRyaXggb2YgdGhlIHN5c3RlbQoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGExXXhfMSsgWyRiMV14XzJcYW1wID0gWyRjMV1cXApbJGEyXXhfMS0gWyRiMl14XzJcYW1wID0gWyRjMl1cXApbJGEzXXhfMSsgWyRiM114XzJcYW1wID0gWyRjM10KXGVuZHthbGlnbmVkfQpgYGBdCgoKCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhMX17Mn0nKSxQR01MKCdbX117JGIxfXsyfScpLFBHTUwoJ1tfXXskYzF9ezJ9JyksXSxbUEdNTCgnW19deyRhMn17Mn0nKSxQR01MKCdbX117JGIyYW5zfXsyfScpLFBHTUwoJ1tfXXskYzJ9ezJ9JyksXSxbUEdNTCgnW19deyRhM317Mn0nKSxQR01MKCdbX117JGIzfXsyfScpLFBHTUwoJ1tfXXskYzN9ezJ9JyksXSxdLGFsaWduPT4nbGwhe1x2cnVsZSB3aWR0aCAwLjA3ZW19bCcsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-8')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-8-1-1-1">Write the augmented matrix of the system<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-8-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-8-1-1-1">Write the augmented matrix of the system<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-8-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-8-1-1-2">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -859,7 +876,7 @@ x_2 - x_4\amp = 4
 \end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-8-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-8-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>  <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
@@ -879,13 +896,13 @@ x_2 - x_4\amp = 4
 </table></div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.2.3: Augmented matrix from 2-variable system"><a href="#ww-aug-from-2var" title="Copy permalink for Exercise 1.2.3: Augmented matrix from 2-variable system">🔗</a></div></article><article class="activity project-like" id="ww-aug-from-3var"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 1.2.3: Augmented matrix from 2-variable system"><a href="#ww-aug-from-2var" title="Copy heading and permalink for Exercise 1.2.3: Augmented matrix from 2-variable system">🔗</a></div></article><article class="activity project-like" id="ww-aug-from-3var"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Augmented matrix from 3-variable system.</span>
 </h4>
 <div id="webwork-9" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="9" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsImNvbnRleHRGb3JtLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+dmFyaWFibGVzLT5hZGQoeSA9PiAnUmVhbCcsIHo9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokZDEgPSByYW5kb20oLTk5LDk5LDEpOwokYTIgPSAwOwokYjIgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gcmFuZG9tKC05LDksMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtOTksOTksMSk7CiRiMyA9IDA7CiRjMyA9IHJhbmRvbSgyLDk5LDEpOwokZDMgPSByYW5kb20oLTk5LDk5LDEpOwokY29lZmYxPUZvcm11bGEoIiRhMSp4KyRiMSp5KyRjMSp6IiktPnJlZHVjZTsKJGNvZWZmMj1Gb3JtdWxhKCIkYTIqeCskYjIqeSskYzIqeiIpLT5yZWR1Y2U7CiRjb2VmZjM9Rm9ybXVsYSgiJGEzKngrJGIzKnkrJGMzKnoiKS0+cmVkdWNlOwoKQkVHSU5fUEdNTApXcml0ZSB0aGUgYXVnbWVudGVkIG1hdHJpeCBvZiB0aGUgc3lzdGVtCgpbYGBgXGJlZ2lue2FsaWduZWR9ClskY29lZmYxXSBcYW1wID0gWyRkMV1cXApbJGNvZWZmMl0gXGFtcCA9IFskZDJdXFwKWyRjb2VmZjNdIFxhbXAgPSBbJGQzXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbX117JGExfXsyfScpLFBHTUwoJ1tfXXskYjF9ezJ9JyksUEdNTCgnW19deyRjMX17Mn0nKSxQR01MKCdbX117JGQxfXsyfScpLF0sW1BHTUwoJ1tfXXskYTJ9ezJ9JyksUEdNTCgnW19deyRiMn17Mn0nKSxQR01MKCdbX117JGMyfXsyfScpLFBHTUwoJ1tfXXskZDJ9ezJ9JyksXSxbUEdNTCgnW19deyRhM317Mn0nKSxQR01MKCdbX117JGIzfXsyfScpLFBHTUwoJ1tfXXskYzN9ezJ9JyksUEdNTCgnW19deyRkM317Mn0nKSxdLF0sYWxpZ249PidsbGwhe1x2cnVsZSB3aWR0aCAwLjA3ZW19bCcsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-9')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-9-1-1-1">Write the augmented matrix of the system<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-9-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-9-1-1-1">Write the augmented matrix of the system<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-9-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-9-1-1-2">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -896,7 +913,7 @@ x_2 - x_4\amp = 4
 \end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-9-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-9-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>  <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
@@ -919,7 +936,7 @@ x_2 - x_4\amp = 4
 </table></div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.2.4: Augmented matrix from 3-variable system"><a href="#ww-aug-from-3var" title="Copy permalink for Exercise 1.2.4: Augmented matrix from 3-variable system">🔗</a></div></article><article class="activity project-like" id="ww-matrix-properties"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 1.2.4: Augmented matrix from 3-variable system"><a href="#ww-aug-from-3var" title="Copy heading and permalink for Exercise 1.2.4: Augmented matrix from 3-variable system">🔗</a></div></article><article class="activity project-like" id="ww-matrix-properties"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">About matrices and augmented matrices.</span>
 </h4>
 <div id="webwork-10" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="10" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCdOdW1lcmljJyk7JHJhZGlvID0gUmFkaW9CdXR0b25zKFtbCiAgIlRoZSBtYXRyaXggaXMgJHtCTX0zXHRpbWVzIDUke0VNfSwgd2l0aCAzIHJvd3MgYW5kIDUgY29sdW1ucy4iLAogICJUaGUgbWF0cml4IGlzICR7Qk19M1x0aW1lcyA1JHtFTX0sIHdpdGggMyBjb2x1bW5zIGFuZCA1IHJvd3MuIiwKICAiVGhlIG1hdHJpeCBpcyAke0JNfTVcdGltZXMgMyR7RU19LCB3aXRoIDUgcm93cyBhbmQgMyBjb2x1bW5zLiIsCiAgIlRoZSBtYXRyaXggaXMgJHtCTX01XHRpbWVzIDMke0VNfSwgd2l0aCA1IGNvbHVtbnMgYW5kIDMgcm93cy4iLAogIF1dLCAwCik7CgokbiA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDUsMTAsMSkpOwokbSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDEsMywxKSk7CiRudW12YXJzID0gJG4tMTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSByYW5kb20oLTksOSwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRkMSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC05LDksMSkpOwokZTEgPSBDb21wdXRlKHJhbmRvbSgtOSw5LDEpKTsKJGEyID0gcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTksOSwxKSk7CiRlMiA9IENvbXB1dGUocmFuZG9tKC05LDksMSkpOwokYTMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIzID0gcmFuZG9tKC05LDksMSk7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGUzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CgpCRUdJTl9QR01MCmEuICBDb25zaWRlciB0aGUgbWF0cml4LgoKICAgIFtgYGBBPQogICAgICAgICAgICAgICAgXGJlZ2lue2JtYXRyaXh9IFskYTFdIFxhbXAgWyRiMV0gXGFtcCBbJGMxXSBcYW1wIFskZDFdIFxhbXAgWyRlMV0gXFwKICAgICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxhbXAgWyRlMl1cXAogICAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGFtcCBbJGUzXSBcZW5ke2JtYXRyaXh9CiAgICAgICAgICAgICAgYGBgXQoKICAgIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29ycmVjdGx5IGRlc2NyaWJlcyB0aGUgbWF0cml4IGFib3ZlPwoKICAgIFtfXXskcmFkaW99ezV9CgoKYS4gIE5vdyBjb25zaWRlciBhbiBbYFskbV0gXHRpbWVzIFskbl1gXSBtYXRyaXggW2BCXHRleHR7Ln1gXSAgSWYgW2BCYF0gaXMgYW4gYXVnbWVudGVkIG1hdHJpeCwgdGhlIGNvcnJlc3BvbmRpbmcgbGluZWFyIHN5c3RlbSBoYXMgaG93IG1hbnkgdmFyaWFibGVzPyBbX117JG51bXZhcnN9ezJ9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
@@ -927,7 +944,7 @@ x_2 - x_4\amp = 4
 <div class="problem-contents"><div class="para logical" id="extracted-webwork-10-1-1-1">
 <ol class="lower-alpha ol-marker-1" id="extracted-webwork-10-1-1-1-1">
 <li id="extracted-webwork-10-1-1-1-1-1">
-<div class="para" id="extracted-webwork-10-1-1-1-1-1-1">Consider the matrix.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-10-1-1-1-1-1-1">Consider the matrix.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="extracted-webwork-10-1-1-1-1-1-2">
 <div class="displaymath process-math">
@@ -938,53 +955,53 @@ A=
 -3 \amp 3 \amp -2 \amp 7 \amp 6 \end{bmatrix}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="extracted-webwork-10-1-1-1-1-1-3">Which of the following correctly describes the matrix above?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-10-1-1-1-1-1-3">Which of the following correctly describes the matrix above?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="extracted-webwork-10-1-1-1-1-1-4">
-<ul class="disc" id="extracted-webwork-10-1-1-1-1-1-4-1">
+<ul class="circle" id="extracted-webwork-10-1-1-1-1-1-4-1">
 <li id="extracted-webwork-10-1-1-1-1-1-4-1-1">
-<div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-1-1">The matrix is <span class="process-math">\(3\times 5\text{,}\)</span> with 3 rows and 5 columns.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-1-1">The matrix is <span class="process-math">\(3\times 5\text{,}\)</span> with 3 rows and 5 columns.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-1" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="extracted-webwork-10-1-1-1-1-1-4-1-2">
-<div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-2-1">The matrix is <span class="process-math">\(5\times 3\text{,}\)</span> with 5 rows and 3 columns.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-2-1">The matrix is <span class="process-math">\(5\times 3\text{,}\)</span> with 5 rows and 3 columns.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-2" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="extracted-webwork-10-1-1-1-1-1-4-1-3">
-<div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-3-1">The matrix is <span class="process-math">\(5\times 3\text{,}\)</span> with 5 columns and 3 rows.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-3-1">The matrix is <span class="process-math">\(5\times 3\text{,}\)</span> with 5 columns and 3 rows.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-3" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="extracted-webwork-10-1-1-1-1-1-4-1-4">
-<div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-4-1">The matrix is <span class="process-math">\(3\times 5\text{,}\)</span> with 3 columns and 5 rows.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-10-1-1-1-1-1-4-1-4-1">The matrix is <span class="process-math">\(3\times 5\text{,}\)</span> with 3 columns and 5 rows.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-4" title="Copy permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-10-1-1-1-1-1-4-1-4" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#extracted-webwork-10-1-1-1-1-1" title="Copy permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#extracted-webwork-10-1-1-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="extracted-webwork-10-1-1-1-1-2">
-<div class="para" id="extracted-webwork-10-1-1-1-1-2-1">Now consider an <span class="process-math">\({3} \times {9}\)</span> matrix <span class="process-math">\(B\text{.}\)</span>  If <span class="process-math">\(B\)</span> is an augmented matrix, the corresponding linear system has how many variables? <span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-10-1-1-1-1-2-1">Now consider an <span class="process-math">\({3} \times {9}\)</span> matrix <span class="process-math">\(B\text{.}\)</span>  If <span class="process-math">\(B\)</span> is an augmented matrix, the corresponding linear system has how many variables? <span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#extracted-webwork-10-1-1-1-1-2" title="Copy permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#extracted-webwork-10-1-1-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-10-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.2.5: About matrices and augmented matrices"><a href="#ww-matrix-properties" title="Copy permalink for Exercise 1.2.5: About matrices and augmented matrices">🔗</a></div></article><article class="activity project-like" id="ww-3var-system-from-aug"><h4 class="heading">
+<div class="autopermalink" data-description="Exercise 1.2.5: About matrices and augmented matrices"><a href="#ww-matrix-properties" title="Copy heading and permalink for Exercise 1.2.5: About matrices and augmented matrices">🔗</a></div></article><article class="activity project-like" id="ww-3var-system-from-aug"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Linear system from augmented matrix.</span>
 </h4>
 <div id="webwork-11" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="11" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsImNvbnRleHRGb3JtLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+dmFyaWFibGVzLT5hcmUoeCA9PiAnUmVhbCcsIHk9PiAnUmVhbCcsIHo9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oMiw5LDEpKTsKJHkgPSBDb21wdXRlKG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpKTsKJHogPSBDb21wdXRlKG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpKTsKJGExID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQxID0gQ29tcHV0ZSgiJGExKiR4KyRiMSokeSskYzEqJHoiKTsKJGEyID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZSgiJGEyKiR4KyRiMiokeSskYzIqJHoiKTsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMyA9IDA7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBDb21wdXRlKCIkYTMqJHgrJGIzKiR5KyRjMyokeiIpOwoKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeCskYjEqeSskYzEqeiIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKngrJGIyKnkrJGMyKnoiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4KyRiMyp5KyRjMyp6IiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKQ29udmVydCB0aGUgYXVnbWVudGVkIG1hdHJpeCBiZWxvdyB0byB0aGUgYXNzb2NpYXRlZCBsaW5lYXIgc3lzdGVtLgoKW2BgYAogICAgICAgICAgICAgIFxiZWdpbntibWF0cml4fSBbJGExXSBcYW1wIFskYjFdIFxhbXAgWyRjMV0gXGFtcCBbJGQxXSBcXAogICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxcCiAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGVuZHtibWF0cml4fQogICAgICAgICAgICBgYGBdCgpVc2UgW2B4XHRleHR7LH1gXSBbYHlcdGV4dHssfWBdIGFuZCBbYHpgXSBmb3IgdGhlIHZhcmlhYmxlcy4KClRoZSBhc3NvY2lhdGVkIGxpbmVhciBzeXN0ZW0gaXM6Cgo+PiBbQERhdGFUYWJsZShbW1BHTUwoJ0V4cHJlc3Npb24gY29udGFpbmluZyB0aGUgdmFyaWFibGVzJyksUEdNTCgnW2A9YF0nKSxQR01MKCdDb25zdGFudHMnKSxdLFtQR01MKCdbX117JGNvZWZmMX17OH0nKSxQR01MKCdbYD1gXScpLFBHTUwoJ1tfXXskZDF9ezJ9JyksXSxbUEdNTCgnW19deyRjb2VmZjJ9ezh9JyksUEdNTCgnW2A9YF0nKSxQR01MKCdbX117JGQyfXsyfScpLF0sW1BHTUwoJ1tfXXskY29lZmYzfXs4fScpLFBHTUwoJ1tgPWBdJyksUEdNTCgnW19deyRkM317Mn0nKSxdLF0sYWxpZ249PidycHswLjYyNX1sJyx2YWxpZ249PidtaWRkbGUnLCk7QF0qIDw8CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-11')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-11-1-1-1">Convert the augmented matrix below to the associated linear system.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-11-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-11-1-1-1">Convert the augmented matrix below to the associated linear system.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-11-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-11-1-1-2">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -993,9 +1010,9 @@ A=
 -6 \amp 0 \amp 1 \amp {-20} \end{bmatrix}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-11-1-1-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-11-1-1-3">Use <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> for the variables.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-11-1-1-3" title="Copy permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-11-1-1-4">The associated linear system is:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-11-1-1-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-11-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-11-1-1-3">Use <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> for the variables.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-11-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-11-1-1-4">The associated linear system is:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-11-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>  <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="r m b0 r0 l0 t0 lines">Expression containing the variables</td>
@@ -1020,12 +1037,12 @@ A=
 </table></div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 1.2.6: Linear system from augmented matrix"><a href="#ww-3var-system-from-aug" title="Copy permalink for Exercise 1.2.6: Linear system from augmented matrix">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Practice"><a href="#ww-matrices-elim" title="Copy permalink for Subsection: Practice">🔗</a></div></section><section class="exercises" id="exer-matrices-elim"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Exercise 1.2.6: Linear system from augmented matrix"><a href="#ww-3var-system-from-aug" title="Copy heading and permalink for Exercise 1.2.6: Linear system from augmented matrix">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Practice"><a href="#ww-matrices-elim" title="Copy heading and permalink for Subsection: Practice">🔗</a></div></section><section class="exercises" id="exer-matrices-elim"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Additional Practice</span>
 </h3>
 <div class="exercisegroup" id="exer-matrices-elim-2">
 <h4 class="heading"><span class="title">Method of Elimination.</span></h4>
-<div class="introduction" id="exer-matrices-elim-2-2"><div class="para" id="exer-matrices-elim-2-2-1">In the following exercises, solve the systems of linear equations using the method of elimination.<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="exer-matrices-elim-2-2"><div class="para" id="exer-matrices-elim-2-2-1">In the following exercises, solve the systems of linear equations using the method of elimination.<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="exer-matrices-elim-2-3"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
@@ -1037,15 +1054,15 @@ x + y - z \amp = 1 \\
 y + 2z\amp = 0 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-2-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrices-elim-2-3-2-1">
-<span class="process-math">\(x =1,\ y=0,\ z=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(x =1,\ y=0,\ z=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 1.1"><a href="#exer-matrices-elim-2-3-2" title="Copy permalink for Answer 1.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 1.1"><a href="#exer-matrices-elim-2-3-2" title="Copy heading and permalink for Answer 1.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 1"><a href="#exer-matrices-elim-2-3" title="Copy permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-2-4"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1"><a href="#exer-matrices-elim-2-3" title="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-2-4"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
 <div class="para logical" id="exer-matrices-elim-2-4-1-1">
 <div class="displaymath process-math" id="exer-matrices-elim-2-4-1-1-1">
 \begin{align*}
@@ -1054,21 +1071,21 @@ x - y + z\amp = 1\\
 2x + 6y - z\amp = -4
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrices-elim-2-4-2-1">
-<span class="process-math">\(x = -1, y=0,z=2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(x = -1, y=0,z=2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-2-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 2.1"><a href="#exer-matrices-elim-2-4-2" title="Copy permalink for Answer 2.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 2.1"><a href="#exer-matrices-elim-2-4-2" title="Copy heading and permalink for Answer 2.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 2"><a href="#exer-matrices-elim-2-4" title="Copy permalink for Exercise 2">🔗</a></div></article>
+<div class="autopermalink" data-description="Exercise 2"><a href="#exer-matrices-elim-2-4" title="Copy heading and permalink for Exercise 2">🔗</a></div></article>
 </div>
-<div class="autopermalink" data-description="Exercise Group 1–2: Method of Elimination"><a href="#exer-matrices-elim-2" title="Copy permalink for Exercise Group 1–2: Method of Elimination">🔗</a></div>
+<div class="autopermalink" data-description="Exercise Group 1–2: Method of Elimination"><a href="#exer-matrices-elim-2" title="Copy heading and permalink for Exercise Group 1–2: Method of Elimination">🔗</a></div>
 </div>
 <div class="exercisegroup" id="exer-matrices-elim-3">
 <h4 class="heading"><span class="title">Linear System to Augmented Matrix.</span></h4>
-<div class="introduction" id="exer-matrices-elim-3-2"><div class="para" id="exer-matrices-elim-3-2-1">In the following exercises, convert the given system of linear equations into an augmented matrix.<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="exer-matrices-elim-3-2"><div class="para" id="exer-matrices-elim-3-2-1">In the following exercises, convert the given system of linear equations into an augmented matrix.<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="exer-matrices-elim-3-3"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
@@ -1078,7 +1095,7 @@ x - y + z\amp = 1\\
 \begin{array}{ccccccc} 3x\amp +\amp 4y\amp +\amp 5z\amp =\amp 7\\ -x\amp +\amp y\amp -\amp 3z\amp =\amp 1\\ 2x\amp -\amp 2y\amp +\amp 3z\amp =\amp 5 \end{array}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-3-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para logical" id="exer-matrices-elim-3-3-2-1">
@@ -1087,18 +1104,18 @@ x - y + z\amp = 1\\
 \left[\begin{array}{cccc} 3\amp 4\amp 5\amp 7\\-1\amp 1\amp -3\amp 1\\2\amp -2\amp 3\amp 5\\ \end{array} \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 3.1"><a href="#exer-matrices-elim-3-3-2" title="Copy permalink for Answer 3.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 3.1"><a href="#exer-matrices-elim-3-3-2" title="Copy heading and permalink for Answer 3.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 3"><a href="#exer-matrices-elim-3-3" title="Copy permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-4"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 3"><a href="#exer-matrices-elim-3-3" title="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-4"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
 <div class="para logical" id="exer-matrices-elim-3-4-1-1">
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{ccccccc} 2x\amp +\amp 5y\amp -\amp 6z\amp =\amp 2\\ 9x\amp \amp \amp -\amp 8z\amp =\amp 10\\ -2x\amp +\amp 4y\amp +\amp z\amp =\amp -7 \end{array}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-3-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para logical" id="exer-matrices-elim-3-4-2-1">
@@ -1107,11 +1124,11 @@ x - y + z\amp = 1\\
 \left[\begin{array}{cccc} 2\amp 5\amp -6\amp 2\\9\amp 0\amp -8\amp 10\\-2\amp 4\amp 1\amp -7\\ \end{array} \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 4.1"><a href="#exer-matrices-elim-3-4-2" title="Copy permalink for Answer 4.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 4.1"><a href="#exer-matrices-elim-3-4-2" title="Copy heading and permalink for Answer 4.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 4"><a href="#exer-matrices-elim-3-4" title="Copy permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-5"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 4"><a href="#exer-matrices-elim-3-4" title="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-5"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
 <div class="para logical" id="exer-matrices-elim-3-5-1-1">
 <div class="displaymath process-math" id="exer-matrices-elim-3-5-1-1-1">
 \begin{align*}
@@ -1120,15 +1137,15 @@ x_1 +3x_2-4x_3 + 5x_4 \amp = 17 \\
 2x_1+3x_2+4x_3+5x_4\amp = 6 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-3-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrices-elim-3-5-2-1">
-<span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 3\amp -4\amp 5\amp 17\\-1\amp 0\amp 4\amp 8\amp 1\\ 2\amp 3\amp 4\amp 5\amp 6 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 3\amp -4\amp 5\amp 17\\-1\amp 0\amp 4\amp 8\amp 1\\ 2\amp 3\amp 4\amp 5\amp 6 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 5.1"><a href="#exer-matrices-elim-3-5-2" title="Copy permalink for Answer 5.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 5.1"><a href="#exer-matrices-elim-3-5-2" title="Copy heading and permalink for Answer 5.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 5"><a href="#exer-matrices-elim-3-5" title="Copy permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-6"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 5"><a href="#exer-matrices-elim-3-5" title="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-3-6"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
 <div class="para logical" id="exer-matrices-elim-3-6-1-1">
 <div class="displaymath process-math" id="exer-matrices-elim-3-6-1-1-1">
 \begin{align*}
@@ -1138,7 +1155,7 @@ x_1 +3x_2-4x_3 + 5x_4 \amp = 17 \\
 5x_1-7x_2\amp = 13 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-3-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para logical" id="exer-matrices-elim-3-6-2-1">
@@ -1147,74 +1164,74 @@ x_1 +3x_2-4x_3 + 5x_4 \amp = 17 \\
 \left[\begin{array}{ccc} 3\amp -2\amp 4\\ 2\amp 0\amp 3\\-1\amp 9\amp 8\\5\amp -7\amp 13\\ \end{array} \right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-6-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-3-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 6.1"><a href="#exer-matrices-elim-3-6-2" title="Copy permalink for Answer 6.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 6.1"><a href="#exer-matrices-elim-3-6-2" title="Copy heading and permalink for Answer 6.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 6"><a href="#exer-matrices-elim-3-6" title="Copy permalink for Exercise 6">🔗</a></div></article>
+<div class="autopermalink" data-description="Exercise 6"><a href="#exer-matrices-elim-3-6" title="Copy heading and permalink for Exercise 6">🔗</a></div></article>
 </div>
-<div class="autopermalink" data-description="Exercise Group 3–6: Linear System to Augmented Matrix"><a href="#exer-matrices-elim-3" title="Copy permalink for Exercise Group 3–6: Linear System to Augmented Matrix">🔗</a></div>
+<div class="autopermalink" data-description="Exercise Group 3–6: Linear System to Augmented Matrix"><a href="#exer-matrices-elim-3" title="Copy heading and permalink for Exercise Group 3–6: Linear System to Augmented Matrix">🔗</a></div>
 </div>
 <div class="exercisegroup" id="exer-matrices-elim-4">
 <h4 class="heading"><span class="title">Augmented Matrix to Linear System.</span></h4>
-<div class="introduction" id="exer-matrices-elim-4-2"><div class="para" id="exer-matrices-elim-4-2-1">In the following exercises, convert the given augmented matrix into a system of linear equations. Use the variables <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="exer-matrices-elim-4-2"><div class="para" id="exer-matrices-elim-4-2-1">In the following exercises, convert the given augmented matrix into a system of linear equations. Use the variables <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="exer-matrices-elim-4-3"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrices-elim-4-3-1-1">
-<span class="process-math">\(\left[\begin{array}{ccc} 1\amp 2\amp 3\\ -1\amp 3\amp 9\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{ccc} 1\amp 2\amp 3\\ -1\amp 3\amp 9\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrices-elim-4-3-2-1">
-<span class="process-math">\(\begin{array}{rl} x_1+2x_2=\amp 3\\ -x_1+3x_2=\amp 9 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{array}{rl} x_1+2x_2=\amp 3\\ -x_1+3x_2=\amp 9 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 7.1"><a href="#exer-matrices-elim-4-3-2" title="Copy permalink for Answer 7.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 7.1"><a href="#exer-matrices-elim-4-3-2" title="Copy heading and permalink for Answer 7.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 7"><a href="#exer-matrices-elim-4-3" title="Copy permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-4"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 7"><a href="#exer-matrices-elim-4-3" title="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-4"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrices-elim-4-4-1-1">
-<span class="process-math">\(\left[\begin{array}{ccc} -3\amp 4\amp 7\\ 0\amp 1\amp -2\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{ccc} -3\amp 4\amp 7\\ 0\amp 1\amp -2\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrices-elim-4-4-2-1">
-<span class="process-math">\(\begin{array}{rl} -3x_1+4x_2=\amp 7\\ x_2=\amp -2 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{array}{rl} -3x_1+4x_2=\amp 7\\ x_2=\amp -2 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 8.1"><a href="#exer-matrices-elim-4-4-2" title="Copy permalink for Answer 8.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 8.1"><a href="#exer-matrices-elim-4-4-2" title="Copy heading and permalink for Answer 8.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 8"><a href="#exer-matrices-elim-4-4" title="Copy permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-5"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 8"><a href="#exer-matrices-elim-4-4" title="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-5"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrices-elim-4-5-1-1">
-<span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 1\amp -1\amp -1\amp 2\\ 2\amp 1\amp 3\amp 5\amp 7\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-5-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 1\amp -1\amp -1\amp 2\\ 2\amp 1\amp 3\amp 5\amp 7\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-4-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrices-elim-4-5-2-1">
-<span class="process-math">\(\begin{array}{rl} x_1+x_2-x_3-x_4=\amp 2\\ 2x_1+x_2+3x_3+5x_4=\amp 7 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{array}{rl} x_1+x_2-x_3-x_4=\amp 2\\ 2x_1+x_2+3x_3+5x_4=\amp 7 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 9.1"><a href="#exer-matrices-elim-4-5-2" title="Copy permalink for Answer 9.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 9.1"><a href="#exer-matrices-elim-4-5-2" title="Copy heading and permalink for Answer 9.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 9"><a href="#exer-matrices-elim-4-5" title="Copy permalink for Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-6"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 9"><a href="#exer-matrices-elim-4-5" title="Copy heading and permalink for Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-6"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrices-elim-4-6-1-1">
-<span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 0\amp 0\amp 0\amp 2\\ 0\amp 1\amp 0\amp 0\amp -1\\ 0\amp 0\amp 1\amp 0\amp 5\\ 0\amp 0\amp 0\amp 1\amp 3 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{ccccc} 1\amp 0\amp 0\amp 0\amp 2\\ 0\amp 1\amp 0\amp 0\amp -1\\ 0\amp 0\amp 1\amp 0\amp 5\\ 0\amp 0\amp 0\amp 1\amp 3 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-4-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrices-elim-4-6-2-1">
-<span class="process-math">\(\begin{array}{rl} x_1=\amp 2\\ x_2=\amp -1\\ x_3=\amp 5\\ x_4=\amp 3 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-6-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{array}{rl} x_1=\amp 2\\ x_2=\amp -1\\ x_3=\amp 5\\ x_4=\amp 3 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 10.1"><a href="#exer-matrices-elim-4-6-2" title="Copy permalink for Answer 10.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 10.1"><a href="#exer-matrices-elim-4-6-2" title="Copy heading and permalink for Answer 10.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 10"><a href="#exer-matrices-elim-4-6" title="Copy permalink for Exercise 10">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-7"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 10"><a href="#exer-matrices-elim-4-6" title="Copy heading and permalink for Exercise 10">🔗</a></div></article><article class="exercise exercise-like" id="exer-matrices-elim-4-7"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
 <div class="para" id="exer-matrices-elim-4-7-1-1">
-<span class="process-math">\(\left[\begin{array}{cccccc} 1\amp 0\amp 1\amp 0\amp 7\amp 2\\ 0\amp 1\amp 3\amp 2\amp 0\amp 5\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-7-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left[\begin{array}{cccccc} 1\amp 0\amp 1\amp 0\amp 7\amp 2\\ 0\amp 1\amp 3\amp 2\amp 0\amp 5\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="exer-matrices-elim-4-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exer-matrices-elim-4-7-2-1">
-<span class="process-math">\(\begin{array}{rl} x_1+x_3+7x_5=\amp 2\\ x_2+3x_3+2x_4=\amp 5 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-7-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\begin{array}{rl} x_1+x_3+7x_5=\amp 2\\ x_2+3x_3+2x_4=\amp 5 \end{array}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrices-elim-4-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 11.1"><a href="#exer-matrices-elim-4-7-2" title="Copy permalink for Answer 11.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 11.1"><a href="#exer-matrices-elim-4-7-2" title="Copy heading and permalink for Answer 11.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 11"><a href="#exer-matrices-elim-4-7" title="Copy permalink for Exercise 11">🔗</a></div></article>
+<div class="autopermalink" data-description="Exercise 11"><a href="#exer-matrices-elim-4-7" title="Copy heading and permalink for Exercise 11">🔗</a></div></article>
 </div>
-<div class="autopermalink" data-description="Exercise Group 7–11: Augmented Matrix to Linear System"><a href="#exer-matrices-elim-4" title="Copy permalink for Exercise Group 7–11: Augmented Matrix to Linear System">🔗</a></div>
+<div class="autopermalink" data-description="Exercise Group 7–11: Augmented Matrix to Linear System"><a href="#exer-matrices-elim-4" title="Copy heading and permalink for Exercise Group 7–11: Augmented Matrix to Linear System">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercises: Additional Practice"><a href="#exer-matrices-elim" title="Copy permalink for Exercises: Additional Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 1.2: Matrices and Elimination"><a href="#sec-matrices-elimination" title="Copy permalink for Section 1.2: Matrices and Elimination">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercises: Additional Practice"><a href="#exer-matrices-elim" title="Copy heading and permalink for Exercises: Additional Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 1.2: Matrices and Elimination"><a href="#sec-matrices-elimination" title="Copy heading and permalink for Section 1.2: Matrices and Elimination">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-lin-eqn-substitution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-row-ops.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
