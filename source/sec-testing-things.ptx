@@ -54,6 +54,231 @@
       </exercise>
     </introduction> -->
 
+  <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5a" label="1-5a_Preview_traveltime_as_functionofspeed">
+    <webwork xml:id="webwork-PA-1-5a">
+      <!-- This exercise is very long. It runs the risk of butting up agains a server's URI length -->
+      <!-- cap. So solutions are commented out for now.                                            -->
+      <pg-code>
+        Context("Point");
+        $answer = List("(10,5),(50,1),(25,2)");
+        $evaluator = $answer ->cmp(list_checker => sub {
+          my ($correct,$student,$ansHash,$value) = @_;
+          my $n = scalar(@$student);  # number of student answers
+          my $score = 0;              # number of correct student answers
+          my @errors = ();            # stores error messages
+          my $i, $j;                  # loop counters
+
+          #
+          #  Loop though the student answers
+          ##
+          for ($i = 0; $i &lt; $n; $i++) {
+            my $ith = Value::List->NameForNumber($i+1);
+            my $p = $student->[$i];   # i-th student answer
+            #
+            #  Check that the student's answer is a point
+            #
+            if ($p->type ne "Point") {
+              push(@errors,"Your $ith entry is not a point");
+              next;
+            }
+            #
+            #  Check that the point hasn't been given before
+            #
+            for ($j = 0, $used = 0; $j &lt; $i; $j++) {
+              if ($student->[$j]->type eq "Point" &amp;&amp; $student->[$j] == $p) {
+                push(@errors,"Your $ith point is the same as a previous one") unless $ansHash->{isPreview};
+                $used = 1; last;
+              }
+            }
+            #
+            #  If not already used, check that it satisfies the equation
+            #    and increase the score if so.
+            #
+            if (!$used) {
+              my ($a,$b) = $p->value;
+              if ($a * $b == 50 &amp;&amp; $a > 0) {$score++} else {
+                push(@errors,"Your $ith point is not correct") unless $ansHash->{isPreview}
+              }
+            }
+          }
+          #
+          #  Check that there are the right number of answers
+          #
+          if (!$ansHash->{isPreview}) {
+            push(@errors,"You need to provide more points") if $i &lt; 3;
+            push(@errors,"You have given too many points") if $score > 3 &amp;&amp; $i != $score;
+          }
+          return ($score,@errors);
+        });
+
+
+        $radio = RadioButtons([
+          'The function is concave up because as speed goes up, travel time goes up.',
+          'The function is concave down because as speed goes up, travel time goes down.',
+          'The function is increasing because as speed goes up, travel time goes up.',
+          'The function is decreasing because as speed goes up, travel time goes down.',
+          ], 3
+        );
+        Context("Numeric")->flags->set(tolType => 'absolute', tolerance => 0.01);
+        $answer2 = NumberWithUnits("5/6 hr");
+        $radio2 = RadioButtons([
+          "${BM}T(60)${EM} is the speed, ${BM}60${EM} mph.",
+          "${BM}T(60)${EM} is the distance, ${BM}60${EM} miles.",
+          "${BM}T(60)${EM} is the time it takes to travel ${BM}50${EM} miles at a speed of ${BM}60${EM} mph.",
+          "${BM}T(60)${EM} is how fast the travel time is changing when the car is traveling at a speed of ${BM}60${EM} mph.",
+          ], 2
+        );
+        $answer3 = NumberWithUnits("(50/65-50/60)/5 hr/mph");
+        $popup = PopUp([
+          "",
+          "positive",
+          "negative",
+          ], 2
+        );
+        $radio3 = RadioButtons([
+          "${BM}T${EM} is increasing from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}T${EM} is decreasing from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}T${EM} is concave up from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}T${EM} is concave down from ${BM}60${EM} to ${BM}65${EM} mph.",
+          ], 1
+        );
+        $radio4 = RadioButtons([
+          "${BM}AV_{[60, 65]}${EM} is the amount of hours ${BM}T${EM} has changed from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}AV_{[60, 65]}${EM} is the change in speed from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}AV_{[60, 65]}${EM} is the average change in hours the trip takes when the speed changes from ${BM}60${EM} to ${BM}65${EM} mph.",
+          ], 2
+        );
+      </pg-code>
+      <introduction>
+          <p>
+            Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed.  The time, <m>T</m> (measured in hours), it takes to drive 50 miles depends on the constant rate, 
+            <m>s</m> (measured in miles per hour) at which you are driving.  Since 
+            <me>
+              \mbox{distance} = \mbox{rate} \cdot \mbox{travel time}
+            </me>,
+            it follows that 
+            <me>
+              \mbox{travel time} =  \frac{\mbox{distance}}{\mbox{rate}}
+            </me>,
+            and thus we know that <m>T(s) = \frac{50}{s}</m>.  
+          </p>
+          <p>  
+            For instance, observe that <m>T(75) = \frac{50}{75} = \frac{2}{3}</m>, so it takes <m>\frac{2}{3}</m> of an hour to drive <m>50</m> miles at <m>75</m> miles per hour, and the point <m>(75, \frac{2}{3})</m> lies on the graph of <m>T(s)</m>.
+          </p>
+
+        <!-- <image>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                xmin = -2,
+                xmax = 2,
+                xtick = {-1, 1},
+                minor xtick = {-2,-1.5,...,2},
+                ymin = -0.5,
+                ymax = 3,
+                ytick = {1,2,3},
+                minor ytick = {-0.5,0,...,3.5},
+                legend style = {at = {(0.03, 0.97)}, anchor=north west}
+              ]
+                \addplot+[domain=-2:1.26] {e^x};
+                \addlegendentry{\(f(x) = e^x\)};
+                \addplot+[domain=-1.5:2] {1 + x};
+                \addlegendentry{\(L(x) = 1 + x\)};
+                \addplot[soliddot] coordinates {(0, 1)};
+                \draw[guideline] (axis cs:0.25, 0.75) -| (axis cs:-0.25, 1.25) -| cycle;
+              \end{axis}
+            \end{tikzpicture}
+            \qquad
+            \begin{tikzpicture}
+              \begin{axis}[
+                xmin = -0.25,
+                xmax = 0.25,
+                xtick = {},
+                ymin = .75,
+                ymax = 1.25,
+                ytick = {},
+                axis lines = none
+              ]
+                \addplot+[domain=-0.25:0.25] {e^x};
+                \addplot+[domain=-0.25:0.25] {1 + x};
+                \addplot[soliddot] coordinates {(0, 1)};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image> -->
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Give three points which lie on the graph of <m>T</m>, separated by commas.
+          </p>
+          <p><var name="$answer" evaluator="$evaluator" width="10" /></p>
+          <!-- how to do this?  list of three points where they can't be the same and y has to be 50/x. restriction on domain?-->
+          <p>
+            Which of the following statements <em>and explanations</em> is true about the graph of <m>T(s)</m>?
+          </p>
+          <p>
+            <var name="$radio" form="buttons"/>
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What is the value of <m>T(60)</m>? Include units on your answer. 
+          </p>
+          <p>
+            <var name="$answer2" width="10"/>
+          </p>
+          <p>
+            Which of the following is the best explanation of the meaning of this 
+        value in context?
+          </p>
+          <p>
+            <var name="$radio2" form="buttons"/>
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Recall the average rate of change of a function on an interval <m>[a,b]</m>, as stated in 
+              <xref ref="def-1-3-aroc">Definition</xref>, <m>AV_{[a,b]}</m>. 
+              Determine the average rate of <m>T</m> on the interval <m>[60,65]</m>, <m>AV_{[60, 65]}</m>.  Include units on your answer.
+          </p>
+          <p>
+            <var name="$answer3" width="10"/>
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            The sign of <m>AV_{[60, 65]}</m> is <var name="$popup" form="popup"/>
+          </p>
+          <p>This sign makes sense because</p>
+          <p>
+            <var name="$radio3" form="buttons"/>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Which of the following explains the meaning of the value of <m>AV_{[60, 65]}</m>? 
+          </p>
+          <p>
+            <var name="$radio4" form="buttons"/>
+          </p>
+        </statement>
+      </task>
+    </webwork>
+  </exploration>
+
     <exercise component="proteus" xml:id="reading-SS-5" label="reading-SS-5-v1">
       <title>Another membership in span</title>
       <statement>
@@ -116,7 +341,7 @@
       </cardsort>
     </exercise>
 
-    <exercise xml:id="reading-MR-5" label="reading-MR-5-v1">
+    <exercise component="proteus" xml:id="reading-MR-5" label="reading-MR-5-v1">
 	<title>Algorithm for finding a matrix representation</title>
 		<statement>
 			<p>The following are possible steps for finding the matrix representation <m>\matrixrep{T}{B}{C}</m> of the linear transformation 
@@ -162,7 +387,7 @@
 
 
 
-      <exercise xml:id="reading-VR-4" label="reading-VR-4-v1">
+      <exercise component="proteus" xml:id="reading-VR-4" label="reading-VR-4-v1">
         <title>Algorithm for Calculating a Vector Representation</title>
         <statement>
           <p>
@@ -219,7 +444,7 @@
         </blocks>
       </exercise>
 
-      <exercise xml:id="reading-SD-4" label="reading-SD-4-v1">
+      <exercise component="proteus" xml:id="reading-SD-4" label="reading-SD-4-v1">
         <title>Algorithm for Diagonalizing a Matrix</title>
         <statement>
           <p>
@@ -272,7 +497,7 @@
         </blocks>
       </exercise>
 
-      <exercise xml:id="reading-SD-6" label="reading-SD-6-v1">
+      <exercise component="proteus" xml:id="reading-SD-6" label="reading-SD-6-v1">
         <title>Properties of Similarity</title>
         <statement>
           <p>
