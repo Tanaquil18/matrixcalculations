@@ -5,7 +5,9 @@
  <exercisegroup>
   <introduction>
   <p>
-    In the following exercises, matrices <m>A</m> and <m>B</m> are defined. Give the dimensions of <m>A</m> and <m>B</m>. If the dimensions properly match, give the dimensions of <m>A B</m> and <m>B A</m>. Find the products <m>A B</m>and <m>B A</m>, if possible.
+    In the following exercises, matrices <m>A</m> and <m>B</m> are defined. Give the dimensions 
+    of <m>A</m> and <m>B</m>. If the dimensions properly match, give the dimensions of <m>A B</m> 
+    and <m>B A</m>. Find the products <m>A B</m> and <m>B A</m>, if possible.
   </p>
   </introduction>
   <exercise>

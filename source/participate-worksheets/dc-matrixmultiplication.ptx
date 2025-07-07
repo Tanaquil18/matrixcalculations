@@ -3,251 +3,362 @@
 <!-- <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-name-dc"> 
     <title>Participate</title> -->
     
-    <worksheet xml:id="ws-matrixmultiplication" margin="1in" bottom="1.25cm"><title component="print-worksheets">Participate: Matrix Multiplication</title><title component="online-worksheets">Participate</title>
-      <objectives>
-        <ul>
-          <li>
-            <p>
-              Be able to perform matrix multiplication when it is possible.
-            </p>
-          </li>
-          <li>
-            <p>
-              Explore ways in which matrix multiplication acts like multiplication of numbers, and 
-              ways in which matrix multiplication is different.  
-            </p>
-          </li>
-        </ul>
-</objectives>
-      <!-- <introduction>
-        <p>
-          something else to say?
-        </p>
-      </introduction> -->
-      <page>
-        <!-- Still need something about the identity matrix, and maybe (a+b)^2 \neq a^2+2ab+b^2 -->
-        <activity>
-      <statement>
-      <p> Consider the matrices
-	<me>
-	  A = \left[\begin{array}{rrr}
-	  1 \amp 3 \amp 2 \\
-	  -3 \amp 4 \amp -1 \\
-	  \end{array}\right],~~~
-	  B = \left[\begin{array}{rr}
-	  3 \amp 0 \\
-	  1 \amp 2 \\
-	  -2 \amp -1 \\
-	  \end{array}\right]
-	</me>.
-	<ol marker="a.">
-	  <li>
-	    <p>
-	      Before
-	      computing, first explain why the shapes of
-	      <m>A</m> and <m>B</m> enable us to form the product <m>AB</m>.
-	      Then describe the shape of <m>AB</m>.
-	    </p>
-	  </li>
+<worksheet xml:id="ws-matrixmultiplication" margin="1in" bottom="1.25cm"><title component="print-worksheets">Participate: Matrix Multiplication</title><title component="online-worksheets">Participate</title>
+	<objectives>
+	  <ul>
+		<li>
+			<p>
+				Be able to perform matrix multiplication when it is possible.
+			</p>
+		</li>
+		<li>
+			<p>
+				Explore ways in which matrix multiplication acts like multiplication of numbers, and 
+				ways in which matrix multiplication is different.  
+			</p>
+		</li>
+	  </ul>
+	</objectives>
+	<page>
+	
+	 <exercise><title>Is Matrix Multiplication Commutative in General?</title>
+		<introduction>
+			<p>
+				Consider the matrices
+				<md>
+					<mrow>A\amp=\begin{bmatrix} 1 \amp 2 \amp 3 \end{bmatrix} \amp B\amp= \begin{bmatrix} 2 \\ -3 \\4 \end{bmatrix}</mrow>
+				</md>.
+			</p>
+		</introduction>
+		<task workspace=".2in">
+			<statement>
+				<p>
+					Is <m>AB</m> defined, and if so, what size is it?  
+				</p>
+			</statement>
+			<answer>
+				<p>
+					<m>1\times 1</m>
+				</p>
+			</answer>
+		</task>
+		<task workspace=".2in">
+			<statement>
+				<p>
+					Is <m>BA</m> defined, and if so, what size is it?  
+				</p>
+			</statement>
+			<answer>
+				<p>
+					<m>3\times 3</m>
+				</p>
+			</answer>
+		</task>
+		<task workspace=".5in">
+			<statement>
+				<p>
+					We are used to multiplication of numbers being <em>commutative</em>, that is, that the order in which we multiply numbers together
+					does not matter, <m>xy=yx</m> for all numbers <m>x</m> and <m>y</m>. What does your work above mean for the <em>commutativity</em> of matrix multiplication in general? 
+				</p>
+			</statement>
+			<answer>
+				<p>
+					In general, matrix multiplication is not commutative, that is, it is not usually true that <m>AB = BA</m>.
+				</p>
+			</answer>
+		</task>
+	 </exercise>
+	 <exercise><title>Diagonal Matrices and the Identity Matrix</title>
+		<introduction>
+			<p>
+				Consider the matrices
+				<md>
+					<mrow>A\amp=\begin{bmatrix} 2 \amp 0 \amp 0 \\ 0 \amp -1 \amp 0 \\ 0 \amp 0 \amp 1 \end{bmatrix} \amp B\amp= \begin{bmatrix} 1 \amp 3 \amp 0 \\ 2 \amp 2 \amp -1 \\ 3 \amp 1 \amp -2 \\ \end{bmatrix}</mrow>
+				</md>.
+			</p>
+		</introduction>
+		<task workspace="1in">
+			<statement>
+				<p>
+					Calculate <m>AB</m> and <m>BA</m>. 
+				</p>
+			</statement>
+			<answer>
+				<p>
+					Both are equal to <m>\begin{bmatrix} 2 \amp -3 \amp 0 \\ 4 \amp -2 \amp -1 \\ 6 \amp -1 \amp -2 \\ \end{bmatrix}</m>
+				</p>
+			</answer>
+		</task>
+		<task workspace=".2in">
+			<statement>
+				<p>
+					What does this suggest about the commutativity of matrix multiplication in the case that one matrix is diagonal?
+				</p>
+			</statement>
+			<answer>
+				<p>
+					Matrix multiplication of square matrices is commutative when one matrix is diagonal.  
+				</p>
+			</answer>
+		</task>
+		<task workspace=".5in">
+			<statement>
+				<p>
+					Examine the columns of <m>AB</m> and the columns of <m>B</m>.  
+					What do you notice about the diagonal entries of <m>A</m> and the effect of multiplying <m>B</m> by <m>A</m>?
+				</p>
+			</statement>
+			<answer>
+				<p>
+					The corresponding column is multiplied by the number on the diagonal.  
+				</p>
+			</answer>
+		</task>
+		<task workspace=".5in">
+			<statement>
+				<p>
+					The number <m>1</m> is called the <em>multiplicative identity</em> because multiplying 
+					any number <m>x</m> by <m>1</m> equals the same number you started with, <m>1\cdot x = x\cdot 1 = x</m>.
+					Given an <m>n\times n</m> matrix <m>X</m>, what is the <term>identity matrix</term>, that is, the matrix <m>I</m> such that
+					<m>I\cdot X=X\cdot I = X</m>?
+				</p>
+			</statement>
+			<answer>
+				<p>
+					A diagonal matrix of size <m>n</m> with every diagonal entry equal to <m>1</m>.
+				</p>
+			</answer>
+		</task>
+	 </exercise>
+	</page>
+	<page>
+	 <exercise><title>Properties of Zero and Cancellation</title>
+		<introduction>
+			<p>
+				Define
+				<md>
+					<mrow>A\amp=\begin{bmatrix} 1 \amp 2 \\ -2 \amp -4 \\ \end{bmatrix} 
+						\amp B\amp= \begin{bmatrix} 2 \amp -4 \\-1 \amp 2 \\ \end{bmatrix}
+						\amp C\amp=\begin{bmatrix} 3 \amp 0 \\ 1 \amp 3 \end{bmatrix} 
+						\amp D\amp= \begin{bmatrix} 1 \amp 2 \\ 2 \amp 2 \end{bmatrix}
+					</mrow>
+				</md>
+			</p>
+		</introduction>
+		<task workspace="1in">
+			<statement>
+				<p>
+					With numbers, we know that if <m>ab=0</m>, then either <m>a = 0</m> or <m>b=0</m>. 
+				</p>
+				<p>
+					Compute <m>AB</m>. With matrices, if <m>AB = 0</m>, 
+					is it necessarily true that either <m>A=0</m> or <m>B=0</m>?
+				</p>
+			</statement>
+			<answer>
+				<p>
+					<m>AB=\mathbf{0}</m> while neither <m>A</m> nor <m>B</m> equalled the zero matrix.  
+				</p>
+			</answer>
+		</task>
+		<task workspace="1in">
+			<statement>
+				<p>
+					When we are dealing with numbers, we know that if <m>a\neq 0</m> and <m>ac = ad</m>, then <m>c=d</m>. 
+				</p>
+				<p>
+					Compute both <m>AC</m> and <m>AD</m>. With matrices, if <m>A\neq \mathbf{0}</m> and 
+					<m>AC = AD</m>, is it necessarily true that <m>C=D</m>?
+				</p>
+			</statement>
+		</task>
+	 </exercise>
 
-	  <li><p> Compute the product <m>AB</m>. </p></li>
+	 <exercise><title>Is Matrix Multiplication Associative? Distributive?</title>
+		<introduction>
+			<p>
+				Consider the matrices
+				<md>
+					<mrow>
+						A\amp=\begin{bmatrix} 1 \amp 2 \\ 3 \amp -2 \\ \end{bmatrix} 
+						\amp B\amp= \begin{bmatrix} 0 \amp 4 \\ 2 \amp -1 \\ \end{bmatrix}
+						\amp C\amp= \begin{bmatrix} -1 \amp 3 \\ 4 \amp 3 \end{bmatrix}
+					</mrow>
+				</md>.
+				Here is a sage cell to perform (or check) the required computations.
+				<sage>
+					<input>
+					</input>
+				</sage>
+			</p>
+		</introduction>
+		<task workspace=".2in" xml:id="task_computeAB">
+			<statement>
+				<p>
+					Compute <m>AB</m> and then <m>(AB)C</m>, and record your answers.
+				</p>
+			</statement>
+		</task>
+		<task workspace=".2in">
+			<statement>
+				<p>
+					Compute <m>BC</m> and then <m>A(BC)</m> and record your answers.
+				</p>
+			</statement>
+		</task>
+		<task workspace=".3in">
+			<statement>
+				<p>
+					What does this suggest about the <em>associativity</em> of matrix multiplication?
+				</p>
+			</statement>
+			<answer>
+				<p>
+					Matrix multiplication is associative (when matrices are of the appropriate sizes).
+				</p>
+			</answer>
+		</task>
+		<task workspace=".2in">
+			<statement>
+				<p>
+					Compute <m>B+C</m> and then <m>A(B+C)</m> and record your answers.
+				</p>
+			</statement>
+		</task>
+		<task workspace=".2in">
+			<statement>
+				<p>
+					Compute <m>AC</m>, and then <m>AB+AC</m> (recall you computed <m>AB</m> in <xref ref="task_computeAB" text="global"/>).
+				</p>
+			</statement>
+		</task>
+		<task workspace=".3in">
+			<statement>
+				<p>
+					What does this suggest about the <em>distributive property</em> of matrix multiplication?
+				</p>
+			</statement>
+			<answer>
+				<p>
+					Matrix multiplication is distributive (when matrices are of the appropriate sizes).
+				</p>
+			</answer>
+		</task>
+	 </exercise>
+	 
+	 <!-- <exercise workspace="1in"><title>Hidden Issue?</title>
+		<statement>
+			<p>
+				With numbers <m>a</m> and <m>b</m>, we are used to the fact that <m>(a+b)^2=a^2+2ab+b^2</m>.  Carefully write out
+				<m>(A+B)^2=(A+B)(A+B)</m>.  Is the result equal to <m>A^2+2AB+B^2</m>?  Why or why not?
+			</p>
+		</statement>
+	 </exercise> -->
+	<!-- <exercise>
+		<solution>
+		<p><ol marker="a.">
+		<li><p>
+			The product <m>AB</m> exists because the number of columns
+			of <m>A</m> equals the number of rows of <m>B</m>.  The
+			dimensions of <m>AB</m> are <m>2\times 2</m>.
+		</p></li>
 
-	  <li><p> Sage can multiply matrices using the <c>*</c>
-	  operator.  Define the matrices <m>A</m> and <m>B</m> in the
-	  Sage cell below and
-	  check your work by computing <m>AB</m>.
-	  <sage>
-	    <input>
-	    </input>
-	  </sage>
-	  </p></li>
-	  
-	  <li><p> Are we able to form the matrix product <m>BA</m>?  If
-	  so, use the Sage cell above to find <m>BA</m>.  Is it
-	  generally true that <m>AB = BA</m>?
-	  </p></li>
-	  
-	  <li><p> Suppose we form the three matrices.
-	  <me>
-	    A = \left[\begin{array}{rr}
-	    1 \amp 2 \\
-	    3 \amp -2 \\
-	    \end{array}\right],
-	    B = \left[\begin{array}{rr}
-	    0 \amp 4 \\
-	    2 \amp -1 \\
-	    \end{array}\right],
-	    C = \left[\begin{array}{rr}
-	    -1 \amp 3 \\
-	    4 \amp 3 \\
-	    \end{array}\right]
-	    </me>.
-	    Compare what happens when you compute <m>A(B+C)</m> and <m>AB
-	    + AC</m>.  State your finding as a general principle.
-	    <sage>
-	      <input>
-	      </input>
-	    </sage>
-	    
-	  </p></li>
-	  
-	  <li><p> Compare the results of evaluating <m>A(BC)</m> and
-	  <m>(AB)C</m> and state your finding as a general
-	  principle. </p></li> 
-	  
-	  <li><p> When we are dealing with real numbers, we know if
-	  <m>a\neq 0</m> and <m>ab = ac</m>, then <m>b=c</m>.  Define
-	  matrices 
-	  <me>
-	    A = \left[\begin{array}{rr}
-	    1 \amp 2 \\
-	    -2 \amp -4 \\
-	    \end{array}\right],
-	    B = \left[\begin{array}{rr}
-	    3 \amp 0 \\
-	    1 \amp 3 \\
-	    \end{array}\right],
-	    C = \left[\begin{array}{rr}
-	    1 \amp 2 \\
-	    2 \amp 2 \\
-	    \end{array}\right]
-	  </me>
-	  and compute <m>AB</m> and <m>AC</m>.
-	  <sage>
-	    <input>
-	    </input>
-	  </sage>
-	  If <m>AB = AC</m>, is it necessarily true that <m>B = C</m>?
-	  </p></li>
-	  
-	  <li><p> Again, with real numbers, we know that if <m>ab =
-	  0</m>, then either <m>a = 0</m> or <m>b=0</m>.  Define
-	  <me>
-	    A = \left[\begin{array}{rr}
-	    1 \amp 2 \\
-	    -2 \amp -4 \\
-	    \end{array}\right],
-	    B = \left[\begin{array}{rr}
-	    2 \amp -4 \\
-	    -1 \amp 2 \\
-	    \end{array}\right]
-	  </me>
-	  and compute <m>AB</m>.
-	  <sage>
-	    <input>
-	    </input>
-	  </sage>
-	  If <m>AB = 0</m>, is it necessarily true that either
-	  <m>A=0</m> or <m>B=0</m>?
-	  </p></li>
-	</ol>
-      </p>
-      </statement>
-      
-      <solution>
-	<p><ol marker="a.">
-	  <li><p>
-	    The product <m>AB</m> exists because the number of columns
-	    of <m>A</m> equals the number of rows of <m>B</m>.  The
-	    dimensions of <m>AB</m> are <m>2\times 2</m>.
-	  </p></li>
+		<li><p>
+			We have
+			<m>AB =
+			\left[\begin{array}{rr}
+			2 \amp 4 \\
+			-3 \amp 9
+			\end{array}\right]
+			</m>.
+		</p></li>
 
-	  <li><p>
-	    We have
-	    <m>AB =
-	    \left[\begin{array}{rr}
-	    2 \amp 4 \\
-	    -3 \amp 9
-	    \end{array}\right]
-	    </m>.
-	  </p></li>
+		<li><p> Define
+			<cd>
+	A = matrix(2, 3, [1, 3, 2, -3, 4, -1])
+	B = matrix(3, 2, [3, 0, 1, 2, -2, -1])
+	A*B
+			</cd>
+		</p></li>
 
-	  <li><p> Define
-	    <cd>
-A = matrix(2, 3, [1, 3, 2, -3, 4, -1])
-B = matrix(3, 2, [3, 0, 1, 2, -2, -1])
-A*B
-	    </cd>
-	  </p></li>
+		<li><p>
+			Yes, we can form the product <m>BA</m> because the number
+			of columns of <m>B</m> equals the number of rows of
+			<m>A</m>.  This product <m>AB</m> will be <m>3\times3</m>,
+			however, so it must be true that <m>AB\neq BA</m>.
+		</p></li>
 
-	  <li><p>
-	    Yes, we can form the product <m>BA</m> because the number
-	    of columns of <m>B</m> equals the number of rows of
-	    <m>A</m>.  This product <m>AB</m> will be <m>3\times3</m>,
-	    however, so it must be true that <m>AB\neq BA</m>.
-	  </p></li>
+		<li><p> We find that <m>A(B+C)=AB + AC</m>.
+		</p></li>
 
-	  <li><p> We find that <m>A(B+C)=AB + AC</m>.
-	  </p></li>
+		<li><p> We find that <m>A(BC) = (AB)C</m>.
+		</p></li>
 
-	  <li><p> We find that <m>A(BC) = (AB)C</m>.
-	  </p></li>
+		<li><p>
+			It is not generally true that <m>B=C</m> if <m>AB=AC</m>,
+			as illustrated by this example.
+		</p></li>
 
-	  <li><p>
-	    It is not generally true that <m>B=C</m> if <m>AB=AC</m>,
-	    as illustrated by this example.
-	  </p></li>
+		<li><p>
+			It is not generally true that <m>A=0</m> or <m>B=0</m> if
+			<m>AB=0</m>, as illustrated by this example.
+		</p></li>
 
-	  <li><p>
-	    It is not generally true that <m>A=0</m> or <m>B=0</m> if
-	    <m>AB=0</m>, as illustrated by this example.
-	  </p></li>
+		</ol></p>
+		</solution>
 
-	</ol></p>
-      </solution>
+		<answer>
+		<p><ol marker="a.">
+		<li><p>
+			The product <m>AB</m> exists because the number of columns
+			of <m>A</m> equals the number of rows of <m>B</m>.  The
+			dimensions of <m>AB</m> are <m>2\times 2</m>.
+		</p></li>
 
-      <answer>
-	<p><ol marker="a.">
-	  <li><p>
-	    The product <m>AB</m> exists because the number of columns
-	    of <m>A</m> equals the number of rows of <m>B</m>.  The
-	    dimensions of <m>AB</m> are <m>2\times 2</m>.
-	  </p></li>
+		<li><p>
+			We have
+			<m>AB =
+			\left[\begin{array}{rr}
+			2 \amp 4 \\
+			-3 \amp 9
+			\end{array}\right]
+			</m>.
+		</p></li>
 
-	  <li><p>
-	    We have
-	    <m>AB =
-	    \left[\begin{array}{rr}
-	    2 \amp 4 \\
-	    -3 \amp 9
-	    \end{array}\right]
-	    </m>.
-	  </p></li>
+		<li><p> Define
+			<cd>
+	A = matrix(2, 3, [1, 3, 2, -3, 4, -1])
+	B = matrix(3, 2, [3, 0, 1, 2, -2, -1])
+	A*B
+			</cd>
+		</p></li>
 
-	  <li><p> Define
-	    <cd>
-A = matrix(2, 3, [1, 3, 2, -3, 4, -1])
-B = matrix(3, 2, [3, 0, 1, 2, -2, -1])
-A*B
-	    </cd>
-	  </p></li>
+		<li><p>
+			It is not generally true that <m>AB=BA</m>.
+		</p></li>
 
-	  <li><p>
-	    It is not generally true that <m>AB=BA</m>.
-	  </p></li>
+		<li><p> We find that <m>A(B+C)=AB + AC</m>.
+		</p></li>
 
-	  <li><p> We find that <m>A(B+C)=AB + AC</m>.
-	  </p></li>
+		<li><p> We find that <m>A(BC) = (AB)C</m>.
+		</p></li>
 
-	  <li><p> We find that <m>A(BC) = (AB)C</m>.
-	  </p></li>
+		<li><p>
+			It is not generally true that <m>B=C</m> if <m>AB=AC</m>.
+		</p></li>
 
-	  <li><p>
-	    It is not generally true that <m>B=C</m> if <m>AB=AC</m>.
-	  </p></li>
+		<li><p>
+			It is not generally true that <m>A=0</m> or <m>B=0</m> if
+			<m>AB=0</m>.
+		</p></li>
 
-	  <li><p>
-	    It is not generally true that <m>A=0</m> or <m>B=0</m> if
-	    <m>AB=0</m>.
-	  </p></li>
+		</ol></p>
+		</answer>
 
-	</ol></p>
-      </answer>
+	
+	</exercise> -->
 
-      
-    </activity>
-
-      
-      </page>
-    </worksheet>
+	</page>
+	
+</worksheet>
     <!-- </subsection> -->
