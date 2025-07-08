@@ -313,6 +313,7 @@ sagecell.makeSagecell({
 <ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrixmult.html#rqs-matrixmult" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="sec-matrixmult.html#ws-matrixmultiplication" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrixmult.html#ww-matrixmult" class="internal"><span class="title">Practice</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixmult.html#exer-" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
 </li>
@@ -355,132 +356,125 @@ sagecell.makeSagecell({
 <div class="autopermalink" data-description="Objective"><a href="#ws-matrixmultiplication-2-1-2" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Objectives"><a href="#ws-matrixmultiplication-2" title="Copy heading and permalink for Objectives">🔗</a></div></article><section class="onepage" id="ws-matrixmultiplication-3"><article class="activity project-like" id="ws-matrixmultiplication-3-1"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+<div class="autopermalink" data-description="Objectives"><a href="#ws-matrixmultiplication-2" title="Copy heading and permalink for Objectives">🔗</a></div></article><section class="onepage" id="ws-matrixmultiplication-3"><article class="exercise exercise-like" id="ws-matrixmultiplication-3-1"><h4 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Is Matrix Multiplication Commutative in General?</span>
 </h4>
-<div class="para logical" id="ws-matrixmultiplication-3-1-1-1">
+<div class="introduction" id="ws-matrixmultiplication-3-1-2"><div class="para logical" id="ws-matrixmultiplication-3-1-2-1">
 <div class="para">Consider the matrices</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A = \left[\begin{array}{rrr}
-1 \amp 3 \amp 2 \\
--3 \amp 4 \amp -1 \\
-\end{array}\right],~~~
-B = \left[\begin{array}{rr}
-3 \amp 0 \\
-1 \amp 2 \\
--2 \amp -1 \\
-\end{array}\right]\text{.}
-\end{equation*}
+<div class="displaymath process-math" id="ws-matrixmultiplication-3-1-2-1-1">
+\begin{align*}
+A\amp=\begin{bmatrix} 1 \amp 2 \amp 3 \end{bmatrix} \amp B\amp= \begin{bmatrix} 2 \\ -3 \\4 \end{bmatrix}\text{.}
+\end{align*}
 </div>
-<ol class="lower-alpha ol-marker-1" id="ws-matrixmultiplication-3-1-1-1-2">
-<li id="ws-matrixmultiplication-3-1-1-1-2-1">
-<div class="para" id="ws-matrixmultiplication-3-1-1-1-2-1-1">Before computing, first explain why the shapes of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> enable us to form the product <span class="process-math">\(AB\text{.}\)</span> Then describe the shape of <span class="process-math">\(AB\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ws-matrixmultiplication-3-1-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ws-matrixmultiplication-3-1-3-1-1">Is <span class="process-math">\(AB\)</span> defined, and if so, what size is it?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#ws-matrixmultiplication-3-1-1-1-2-1" title="Copy heading and permalink for Item a">🔗</a></div>
-</li>
-<li id="ws-matrixmultiplication-3-1-1-1-2-2">
-<div class="para" id="ws-matrixmultiplication-3-1-1-1-2-2-1">Compute the product <span class="process-math">\(AB\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="workspace" data-space=".2in"></div>
+<div class="autopermalink" data-description="Task 1.a"><a href="#ws-matrixmultiplication-3-1-3" title="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-3-1-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ws-matrixmultiplication-3-1-4-1-1">Is <span class="process-math">\(BA\)</span> defined, and if so, what size is it?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#ws-matrixmultiplication-3-1-1-1-2-2" title="Copy heading and permalink for Item b">🔗</a></div>
-</li>
-<li id="ws-matrixmultiplication-3-1-1-1-2-3">
-<div class="para" id="ws-matrixmultiplication-3-1-1-1-2-3-1">Sage can multiply matrices using the <code class="code-inline tex2jax_ignore">*</code> operator.  Define the matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> in the Sage cell below and check your work by computing <span class="process-math">\(AB\text{.}\)</span> <div id="ws-matrixmultiplication-3-1-1-1-2-3-1-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
+<div class="workspace" data-space=".2in"></div>
+<div class="autopermalink" data-description="Task 1.b"><a href="#ws-matrixmultiplication-3-1-4" title="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-3-1-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ws-matrixmultiplication-3-1-5-1-1">We are used to multiplication of numbers being <em class="emphasis">commutative</em>, that is, that the order in which we multiply numbers together does not matter, <span class="process-math">\(xy=yx\)</span> for all numbers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> What do your answers above mean for the <em class="emphasis">commutativity</em> of matrix multiplication in general?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" data-description="Task 1.c"><a href="#ws-matrixmultiplication-3-1-5" title="Copy heading and permalink for Task 1.c">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1: Is Matrix Multiplication Commutative in General?"><a href="#ws-matrixmultiplication-3-1" title="Copy heading and permalink for Worksheet Exercise 1: Is Matrix Multiplication Commutative in General?">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrixmultiplication-3-2"><h4 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Diagonal Matrices and the Identity Matrix.</span>
+</h4>
+<div class="introduction" id="ws-matrixmultiplication-3-2-2"><div class="para logical" id="ws-matrixmultiplication-3-2-2-1">
+<div class="para">Consider the matrices</div>
+<div class="displaymath process-math" id="ws-matrixmultiplication-3-2-2-1-1">
+\begin{align*}
+A\amp=\begin{bmatrix} 2 \amp 0 \amp 0 \\ 0 \amp -1 \amp 0 \\ 0 \amp 0 \amp 1 \end{bmatrix} \amp B\amp= \begin{bmatrix} 1 \amp 3 \amp 0 \\ 2 \amp 2 \amp -1 \\ 3 \amp 1 \amp -2 \\ \end{bmatrix}\text{.}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ws-matrixmultiplication-3-2-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ws-matrixmultiplication-3-2-3-1-1">Calculate <span class="process-math">\(AB\)</span> and <span class="process-math">\(BA\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.a"><a href="#ws-matrixmultiplication-3-2-3" title="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-3-2-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ws-matrixmultiplication-3-2-4-1-1">Examine the rows of <span class="process-math">\(AB\)</span> and the rows of <span class="process-math">\(B\text{.}\)</span> What do you notice about the diagonal entries of <span class="process-math">\(A\)</span> and the effect of multiplying <span class="process-math">\(B\)</span> by <span class="process-math">\(A\)</span> on the left?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" data-description="Task 2.b"><a href="#ws-matrixmultiplication-3-2-4" title="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-3-2-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ws-matrixmultiplication-3-2-5-1-1">Examine the columns of <span class="process-math">\(BA\)</span> and the columns of <span class="process-math">\(B\text{.}\)</span> What do you notice about the diagonal entries of <span class="process-math">\(A\)</span> and the effect of multiplying <span class="process-math">\(B\)</span> by <span class="process-math">\(A\)</span> on the right?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-2-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" data-description="Task 2.c"><a href="#ws-matrixmultiplication-3-2-5" title="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-3-2-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ws-matrixmultiplication-3-2-6-1-1">The number <span class="process-math">\(1\)</span> is called the <em class="emphasis">multiplicative identity</em> because multiplying any number <span class="process-math">\(x\)</span> by <span class="process-math">\(1\)</span> equals the same number you started with, <span class="process-math">\(1\cdot x = x\cdot 1 = x\text{.}\)</span> Given an <span class="process-math">\(n\times n\)</span> matrix <span class="process-math">\(X\text{,}\)</span> what is the <dfn class="terminology">identity matrix</dfn>, that is, the matrix <span class="process-math">\(I\)</span> such that multiplying on both the left and the right leaves <span class="process-math">\(X\)</span> unchanged, <span class="process-math">\(I\cdot X=X\cdot I = X\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-2-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" data-description="Task 2.d"><a href="#ws-matrixmultiplication-3-2-6" title="Copy heading and permalink for Task 2.d">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2: Diagonal Matrices and the Identity Matrix"><a href="#ws-matrixmultiplication-3-2" title="Copy heading and permalink for Worksheet Exercise 2: Diagonal Matrices and the Identity Matrix">🔗</a></div></article></section><section class="onepage" id="ws-matrixmultiplication-4"><article class="exercise exercise-like" id="ws-matrixmultiplication-4-1"><h4 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Properties of Zero and Cancellation.</span>
+</h4>
+<div class="introduction" id="ws-matrixmultiplication-4-1-2"><div class="para logical" id="ws-matrixmultiplication-4-1-2-1">
+<div class="para">Define</div>
+<div class="displaymath process-math" id="ws-matrixmultiplication-4-1-2-1-1">
+\begin{align*}
+A\amp=\begin{bmatrix} 1 \amp 2 \\ -2 \amp -4 \\ \end{bmatrix} 
+\amp B\amp= \begin{bmatrix} 2 \amp -4 \\-1 \amp 2 \\ \end{bmatrix}
+\amp C\amp=\begin{bmatrix} 3 \amp 0 \\ 1 \amp 3 \end{bmatrix} 
+\amp D\amp= \begin{bmatrix} 1 \amp 2 \\ 2 \amp 2 \end{bmatrix}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ws-matrixmultiplication-4-1-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ws-matrixmultiplication-4-1-3-1-1">With numbers, we know that if <span class="process-math">\(ab=0\text{,}\)</span> then either <span class="process-math">\(a = 0\)</span> or <span class="process-math">\(b=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ws-matrixmultiplication-4-1-3-1-2">Compute <span class="process-math">\(AB\text{.}\)</span> With matrices, if <span class="process-math">\(AB = 0\text{,}\)</span> is it necessarily true that either <span class="process-math">\(A=0\)</span> or <span class="process-math">\(B=0\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-1-3-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#ws-matrixmultiplication-4-1-3" title="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-4-1-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ws-matrixmultiplication-4-1-4-1-1">When we are dealing with numbers, we know that if <span class="process-math">\(a\neq 0\)</span> and <span class="process-math">\(ac = ad\text{,}\)</span> then <span class="process-math">\(c=d\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-1-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ws-matrixmultiplication-4-1-4-1-2">Compute both <span class="process-math">\(AC\)</span> and <span class="process-math">\(AD\text{.}\)</span> With matrices, if <span class="process-math">\(A\neq \mathbf{0}\)</span> and <span class="process-math">\(AC = AD\text{,}\)</span> is it necessarily true that <span class="process-math">\(C=D\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-1-4-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#ws-matrixmultiplication-4-1-4" title="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 3: Properties of Zero and Cancellation"><a href="#ws-matrixmultiplication-4-1" title="Copy heading and permalink for Worksheet Exercise 3: Properties of Zero and Cancellation">🔗</a></div></article><article class="exercise exercise-like" id="ws-matrixmultiplication-4-2"><h4 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Is Matrix Multiplication Associative? Distributive?</span>
+</h4>
+<div class="introduction" id="ws-matrixmultiplication-4-2-2"><div class="para logical" id="ws-matrixmultiplication-4-2-2-1">
+<div class="para">Consider the matrices</div>
+<div class="displaymath process-math" id="ws-matrixmultiplication-4-2-2-1-1">
+\begin{align*}
+A\amp=\begin{bmatrix} 1 \amp 2 \\ 3 \amp -2 \\ \end{bmatrix} 
+\amp B\amp= \begin{bmatrix} 0 \amp 4 \\ 2 \amp -1 \\ \end{bmatrix}
+\amp C\amp= \begin{bmatrix} -1 \amp 3 \\ 4 \amp 3 \end{bmatrix}\text{.}
+\end{align*}
+</div>
+<div class="para">Here is a sage cell to perform (or check) the required computations. <div id="ws-matrixmultiplication-4-2-2-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
 </script></div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#ws-matrixmultiplication-3-1-1-1-2-3" title="Copy heading and permalink for Item c">🔗</a></div>
-</li>
-<li id="ws-matrixmultiplication-3-1-1-1-2-4">
-<div class="para" id="ws-matrixmultiplication-3-1-1-1-2-4-1">Are we able to form the matrix product <span class="process-math">\(BA\text{?}\)</span>  If so, use the Sage cell above to find <span class="process-math">\(BA\text{.}\)</span>  Is it generally true that <span class="process-math">\(AB = BA\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="task_computeAB"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="task_computeAB-1-1">Compute <span class="process-math">\(AB\)</span> and then <span class="process-math">\((AB)C\text{,}\)</span> and record your answers.<div class="autopermalink" data-description="Paragraph"><a href="#task_computeAB-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#ws-matrixmultiplication-3-1-1-1-2-4" title="Copy heading and permalink for Item d">🔗</a></div>
-</li>
-<li id="ws-matrixmultiplication-3-1-1-1-2-5">
-<div class="para logical" id="ws-matrixmultiplication-3-1-1-1-2-5-1">
-<div class="para">Suppose we form the three matrices.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A = \left[\begin{array}{rr}
-1 \amp 2 \\
-3 \amp -2 \\
-\end{array}\right],
-B = \left[\begin{array}{rr}
-0 \amp 4 \\
-2 \amp -1 \\
-\end{array}\right],
-C = \left[\begin{array}{rr}
--1 \amp 3 \\
-4 \amp 3 \\
-\end{array}\right]\text{.}
-\end{equation*}
+<div class="workspace" data-space=".2in"></div>
+<div class="autopermalink" data-description="Task 4.a"><a href="#task_computeAB" title="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-4-2-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ws-matrixmultiplication-4-2-4-1-1">Compute <span class="process-math">\(BC\)</span> and then <span class="process-math">\(A(BC)\)</span> and record your answers.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">Compare what happens when you compute <span class="process-math">\(A(B+C)\)</span> and <span class="process-math">\(AB
-+ AC\text{.}\)</span>  State your finding as a general principle. <div id="ws-matrixmultiplication-3-1-1-1-2-5-1-4" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
-</script></div>
+<div class="workspace" data-space=".2in"></div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#ws-matrixmultiplication-4-2-4" title="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-4-2-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ws-matrixmultiplication-4-2-5-1-1">What does this suggest about the <em class="emphasis">associativity</em> of matrix multiplication?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-2-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1-2-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="workspace" data-space=".3in"></div>
+<div class="autopermalink" data-description="Task 4.c"><a href="#ws-matrixmultiplication-4-2-5" title="Copy heading and permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-4-2-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ws-matrixmultiplication-4-2-6-1-1">Compute <span class="process-math">\(B+C\)</span> and then <span class="process-math">\(A(B+C)\)</span> and record your answers.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-2-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#ws-matrixmultiplication-3-1-1-1-2-5" title="Copy heading and permalink for Item e">🔗</a></div>
-</li>
-<li id="ws-matrixmultiplication-3-1-1-1-2-6">
-<div class="para" id="ws-matrixmultiplication-3-1-1-1-2-6-1">Compare the results of evaluating <span class="process-math">\(A(BC)\)</span> and <span class="process-math">\((AB)C\)</span> and state your finding as a general principle.<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1-2-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="workspace" data-space=".2in"></div>
+<div class="autopermalink" data-description="Task 4.d"><a href="#ws-matrixmultiplication-4-2-6" title="Copy heading and permalink for Task 4.d">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-4-2-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="ws-matrixmultiplication-4-2-7-1-1">Compute <span class="process-math">\(AC\text{,}\)</span> and then <span class="process-math">\(AB+AC\)</span> (recall you computed <span class="process-math">\(AB\)</span> in <a href="sec-matrixmult.html#task_computeAB" class="xref" data-knowl="./knowl/xref/task_computeAB.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 4.a">4.a</a>).<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-2-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item f"><a href="#ws-matrixmultiplication-3-1-1-1-2-6" title="Copy heading and permalink for Item f">🔗</a></div>
-</li>
-<li id="ws-matrixmultiplication-3-1-1-1-2-7">
-<div class="para logical" id="ws-matrixmultiplication-3-1-1-1-2-7-1">
-<div class="para">When we are dealing with real numbers, we know if <span class="process-math">\(a\neq 0\)</span> and <span class="process-math">\(ab = ac\text{,}\)</span> then <span class="process-math">\(b=c\text{.}\)</span>  Define matrices</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A = \left[\begin{array}{rr}
-1 \amp 2 \\
--2 \amp -4 \\
-\end{array}\right],
-B = \left[\begin{array}{rr}
-3 \amp 0 \\
-1 \amp 3 \\
-\end{array}\right],
-C = \left[\begin{array}{rr}
-1 \amp 2 \\
-2 \amp 2 \\
-\end{array}\right]
-\end{equation*}
+<div class="workspace" data-space=".2in"></div>
+<div class="autopermalink" data-description="Task 4.e"><a href="#ws-matrixmultiplication-4-2-7" title="Copy heading and permalink for Task 4.e">🔗</a></div></article><article class="task exercise-like" id="ws-matrixmultiplication-4-2-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="ws-matrixmultiplication-4-2-8-1-1">What does this suggest about the <em class="emphasis">distributive property</em> of matrix multiplication?<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-4-2-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">and compute <span class="process-math">\(AB\)</span> and <span class="process-math">\(AC\text{.}\)</span> <div id="ws-matrixmultiplication-3-1-1-1-2-7-1-7" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
-</script></div> If <span class="process-math">\(AB = AC\text{,}\)</span> is it necessarily true that <span class="process-math">\(B = C\text{?}\)</span>
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1-2-7-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item g"><a href="#ws-matrixmultiplication-3-1-1-1-2-7" title="Copy heading and permalink for Item g">🔗</a></div>
-</li>
-<li id="ws-matrixmultiplication-3-1-1-1-2-8">
-<div class="para logical" id="ws-matrixmultiplication-3-1-1-1-2-8-1">
-<div class="para">Again, with real numbers, we know that if <span class="process-math">\(ab =
-0\text{,}\)</span> then either <span class="process-math">\(a = 0\)</span> or <span class="process-math">\(b=0\text{.}\)</span>  Define</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A = \left[\begin{array}{rr}
-1 \amp 2 \\
--2 \amp -4 \\
-\end{array}\right],
-B = \left[\begin{array}{rr}
-2 \amp -4 \\
--1 \amp 2 \\
-\end{array}\right]
-\end{equation*}
-</div>
-<div class="para">and compute <span class="process-math">\(AB\text{.}\)</span> <div id="ws-matrixmultiplication-3-1-1-1-2-8-1-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">
-</script></div> If <span class="process-math">\(AB = 0\text{,}\)</span> is it necessarily true that either <span class="process-math">\(A=0\)</span> or <span class="process-math">\(B=0\text{?}\)</span>
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1-2-8-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item h"><a href="#ws-matrixmultiplication-3-1-1-1-2-8" title="Copy heading and permalink for Item h">🔗</a></div>
-</li>
-</ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#ws-matrixmultiplication-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Exercise 2.2.1"><a href="#ws-matrixmultiplication-3-1" title="Copy heading and permalink for Exercise 2.2.1">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-matrixmultiplication" title="Copy heading and permalink for Worksheet: Participate">🔗</a></div></section>
+<div class="workspace" data-space=".3in"></div>
+<div class="autopermalink" data-description="Task 4.f"><a href="#ws-matrixmultiplication-4-2-8" title="Copy heading and permalink for Task 4.f">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 4: Is Matrix Multiplication Associative? Distributive?"><a href="#ws-matrixmultiplication-4-2" title="Copy heading and permalink for Worksheet Exercise 4: Is Matrix Multiplication Associative? Distributive?">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-matrixmultiplication" title="Copy heading and permalink for Worksheet: Participate">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-matrixmult.html#subsec-matrixmult-bc" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-testing-things.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

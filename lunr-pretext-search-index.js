@@ -2536,7 +2536,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Matrix Multiplication",
-  "body": " Matrix Multiplication   Last section, we learned how to add and subtract matrices of the same size and how to multiply a matrix of any size by a number. In this section, we learn how to multiply two matrices together when their sizes allow for multiplication.   Prepare  Matrices of the same size are added by adding corresponding entries together, but we do not multiply matrices by multiplying corresponding entries together. This is confusing at first, but there are very good reasons for defining matrix multiplication differently. Unfortunately, most of those reasons do not become understandable until much, much later.  To start, two matrices can be multiplied together only if the number of columns in the first matrix equals the number of rows in the second matrix . This means that a matrix can be multiplied by a matrix, or a matrix, or a or etc. matrix, but a matrix cannot be multiplied by another matrix.  That's already pretty surprising, so let's check our understanding.    Define matrices , , and by      Can matrix be multiplied by matrix ? In other words, is defined?      Yes    No, because the first matrix, , has columns, but the second matrix, , does not have rows.      No    Correct! The first matrix, , has columns, but the second matrix, , has rows.        Can matrix be multiplied by matrix ? In other words, is defined?      Yes    Correct! The first matrix, , has columns, and the second matrix, , has rows.      No    The first matrix, , has columns, and the second matrix, , has rows. These are equal.        Can matrix be multiplied by matrix ? In other words, is defined?      Yes    No, because the first matrix, , has columns, but the second matrix, , does not have rows.      No    Correct! The first matrix, , has columns, but the second matrix, , has rows.        Consider the two statements below.    is defined.     is defined.   Which of the following choices is correct?      Both statements are true.     is the same as . The first matrix, , has columns, but the second matrix, , does not have rows.      1. is true but 2. is false     is the same as . The first matrix, , has columns, but the second matrix, , does not have rows.      1. is false and 2. is true    Correct! Any square matrix can be multiplied by itself, since the number of columns equals the number of rows.      Both statements are false.    Any square matrix can be multiplied by itself, since the number of columns equals the number of rows.       To begin to understand why the number of columns of the first matrix must equal the number of rows of the second matrix, we demonstrate how to multiply a matrix by a matrix.   Multiplying on the right by a column matrix   Suppose we have the matrices and below: . Their product is defined by multiplying the first column of by the first number in , and multiplying the second column of by the second number in , and adding the results.   If we look at the first entry, we see it came from , and we note that the first row of is . Looking at the second entry of we have , and the second row of is . The third entry of is , and the third row of is .  This means that we can view matrix multiplication entry-wise as multiplying the numbers in a row of the first matrix by the numbers in a column of the second matrix and adding them up.    Note that in the matrix has two columns and so we needed to contain two numbers in its column, which means has two rows. On the other hand, since has three rows, the result of multiplying a column of by a number still has three rows, and adding matrices keeps the size the same, which is why the product has three rows.  This generalizes to when the second matrix of the product has more columns than . The product is defined when is an matrix and is an matrix, and the matrix will have size . Let's see this in action in an example.  Matrix Multiplication, More than One Column   Let's calculate .   Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . Finishing the first row with , we use the first row of the first matrix and the third column of the second matrix and obtain . So far we have .  To compute the second row, we use the second row of the first matrix with the first, then second, and finally third columns of the second matrix. We calculate . Putting it all together, we have .        Reflection   Enter a response to both of the following tasks:   Ask a question about the material, either about something you're not sure you fully understand, or a what if question.    Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way. 0 means you didn't actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.          Participate     Be able to perform matrix multiplication when it is possible.    Explore ways in which matrix multiplication acts like multiplication of numbers, and ways in which matrix multiplication is different.          Consider the matrices .   Before computing, first explain why the shapes of and enable us to form the product . Then describe the shape of .   Compute the product .  Sage can multiply matrices using the * operator. Define the matrices and in the Sage cell below and check your work by computing .   Are we able to form the matrix product ? If so, use the Sage cell above to find . Is it generally true that ?  Suppose we form the three matrices. . Compare what happens when you compute and . State your finding as a general principle.   Compare the results of evaluating and and state your finding as a general principle.  When we are dealing with real numbers, we know if and , then . Define matrices and compute and . If , is it necessarily true that ?  Again, with real numbers, we know that if , then either or . Define and compute . If , is it necessarily true that either or ?       The product exists because the number of columns of equals the number of rows of . The dimensions of are .  We have .  Define A = matrix(2, 3, [1, 3, 2, -3, 4, -1]) B = matrix(3, 2, [3, 0, 1, 2, -2, -1]) A*B   Yes, we can form the product because the number of columns of equals the number of rows of . This product will be , however, so it must be true that .  We find that .  We find that .  It is not generally true that if , as illustrated by this example.  It is not generally true that or if , as illustrated by this example.      The product exists because the number of columns of equals the number of rows of . The dimensions of are .  We have .  Define A = matrix(2, 3, [1, 3, 2, -3, 4, -1]) B = matrix(3, 2, [3, 0, 1, 2, -2, -1]) A*B   It is not generally true that .  We find that .  We find that .  It is not generally true that if .  It is not generally true that or if .        Summary     Matrix multiplication can be performed only when the number of columns in the first matrix equals the number of rows in the second matrix.    If matrix multiplication can be performed, the entries come from multiplying rows of the first matrix by columns of the second matrix. We multiply the corresponding numbers and add them up to get one entry of the product.    Some properties of multiplication of numbers also hold for multiplication of matrices, and some don't. Perhaps the most surprising or important of these properties is that matrix multiplication is not commutative in general.       Additional Practice    In the following exercises, matrices and are defined. Give the dimensions of and . If the dimensions properly match, give the dimensions of and . Find the products and , if possible.                                            is not possible.               is not possible.            is not possible.                                                                              is not possible.               is not possible.                                                                   In the following exercises, a diagonal matrix and a matrix are given. Find the products and , where possible.                                                                                                        \\        Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       We explore whether or not .   Let and let . Compute .    Find by using your answer from the first part.    Compute .    Are the results from the second and third parts the same?    Carefully expand the expression and show why this is not equal to .                         No.     .        "
+  "body": " Matrix Multiplication   Last section, we learned how to add and subtract matrices of the same size and how to multiply a matrix of any size by a number. In this section, we learn how to multiply two matrices together when their sizes allow for multiplication.   Prepare  Matrices of the same size are added by adding corresponding entries together, but we do not multiply matrices by multiplying corresponding entries together. This is confusing at first, but there are very good reasons for defining matrix multiplication differently. Unfortunately, most of those reasons do not become understandable until much, much later.  To start, two matrices can be multiplied together only if the number of columns in the first matrix equals the number of rows in the second matrix . This means that a matrix can be multiplied by a matrix, or a matrix, or a or etc. matrix, but a matrix cannot be multiplied by another matrix.  That's already pretty surprising, so let's check our understanding.    Define matrices , , and by      Can matrix be multiplied by matrix ? In other words, is defined?      Yes    No, because the first matrix, , has columns, but the second matrix, , does not have rows.      No    Correct! The first matrix, , has columns, but the second matrix, , has rows.        Can matrix be multiplied by matrix ? In other words, is defined?      Yes    Correct! The first matrix, , has columns, and the second matrix, , has rows.      No    The first matrix, , has columns, and the second matrix, , has rows. These are equal.        Can matrix be multiplied by matrix ? In other words, is defined?      Yes    No, because the first matrix, , has columns, but the second matrix, , does not have rows.      No    Correct! The first matrix, , has columns, but the second matrix, , has rows.        Consider the two statements below.    is defined.     is defined.   Which of the following choices is correct?      Both statements are true.     is the same as . The first matrix, , has columns, but the second matrix, , does not have rows.      1. is true but 2. is false     is the same as . The first matrix, , has columns, but the second matrix, , does not have rows.      1. is false and 2. is true    Correct! Any square matrix can be multiplied by itself, since the number of columns equals the number of rows.      Both statements are false.    Any square matrix can be multiplied by itself, since the number of columns equals the number of rows.       To begin to understand why the number of columns of the first matrix must equal the number of rows of the second matrix, we demonstrate how to multiply a matrix by a matrix.   Multiplying on the right by a column matrix   Suppose we have the matrices and below: . Their product is defined by multiplying the first column of by the first number in , and multiplying the second column of by the second number in , and adding the results.   If we look at the first entry, we see it came from , and we note that the first row of is . Looking at the second entry of we have , and the second row of is . The third entry of is , and the third row of is .  This means that we can view matrix multiplication entry-wise as multiplying the numbers in a row of the first matrix by the numbers in a column of the second matrix and adding them up.    Note that in the matrix has two columns and so we needed to contain two numbers in its column, which means has two rows. On the other hand, since has three rows, the result of multiplying a column of by a number still has three rows, and adding matrices keeps the size the same, which is why the product has three rows.  This generalizes to when the second matrix of the product has more columns than . The product is defined when is an matrix and is an matrix, and the matrix will have size . Let's see this in action in an example.  Matrix Multiplication, More than One Column   Let's calculate .   Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . Finishing the first row with , we use the first row of the first matrix and the third column of the second matrix and obtain . So far we have .  To compute the second row, we use the second row of the first matrix with the first, then second, and finally third columns of the second matrix. We calculate . Putting it all together, we have .    Let's check to see that we understand how to compute the entries of a product of two matrices.   Entries in Matrix Multiplication   Match each entry of a matrix product to which things need to be multiplied together and added up, if applicable.       first row of  second row of  third row of  first column of  second column of  third column of  first entry of  first entry of      Another Matrix Multiplication   Calculate .    Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . So far we have .  To compute , we use the second row of the first matrix with the first column of the second matrix , and calculate . To compute , we use the second row of the first matrix with the second column of the second matrix , and calculate .  Putting it all together, we have .     Matrix multiplication is a lot more complicated than addition or multiplication by a number, but it turns out to be very useful and connected to solving linear systems.    Sizes of Matrix Products   Define matrices , , and by Matrix the matrix products to their correct sizes.        Product is not defined       Addition versus Multiplication   Match the correct statements and methods.     Add corresponding entries              Matrices can't be added because the number of rows of the first does not equal the number of columns of the second.  Matrices can't be multiplied because they aren't the same size.  Multiply corresponding entries      Reflection     How confident do you feel with the material you just read about?      Not at all confident or didn't do the reading.      Not very confident.      Somewhat confident.      Mostly confident.      Confident so far and ready to engage more deeply.         If you're not fully confident, what additional information would you need to become more confident? What is confusing you?  If you are confident, ask a what if? or extension question.         Participate     Be able to perform matrix multiplication when it is possible.    Explore ways in which matrix multiplication acts like multiplication of numbers, and ways in which matrix multiplication is different.      Is Matrix Multiplication Commutative in General?   Consider the matrices .     Is defined, and if so, what size is it?           Is defined, and if so, what size is it?           We are used to multiplication of numbers being commutative , that is, that the order in which we multiply numbers together does not matter, for all numbers and . What do your answers above mean for the commutativity of matrix multiplication in general?    In general, matrix multiplication is not commutative, that is, it is not usually true that .     Diagonal Matrices and the Identity Matrix   Consider the matrices .     Calculate and .     ,       Examine the rows of and the rows of . What do you notice about the diagonal entries of and the effect of multiplying by on the left?    The corresponding row is multiplied by the number on the diagonal.      Examine the columns of and the columns of . What do you notice about the diagonal entries of and the effect of multiplying by on the right?    The corresponding column is multiplied by the number on the diagonal.      The number is called the multiplicative identity because multiplying any number by equals the same number you started with, . Given an matrix , what is the identity matrix , that is, the matrix such that multiplying on both the left and the right leaves unchanged, ?    A diagonal matrix of size with every diagonal entry equal to .       Properties of Zero and Cancellation   Define      With numbers, we know that if , then either or .  Compute . With matrices, if , is it necessarily true that either or ?     while neither nor equalled the zero matrix.      When we are dealing with numbers, we know that if and , then .  Compute both and . With matrices, if and , is it necessarily true that ?     Is Matrix Multiplication Associative? Distributive?   Consider the matrices . Here is a sage cell to perform (or check) the required computations.      Compute and then , and record your answers.      Compute and then and record your answers.      What does this suggest about the associativity of matrix multiplication?    Matrix multiplication is associative (when matrices are of the appropriate sizes).      Compute and then and record your answers.      Compute , and then (recall you computed in ).      What does this suggest about the distributive property of matrix multiplication?    Matrix multiplication is distributive (when matrices are of the appropriate sizes).          Summary     Matrix multiplication can be performed only when the number of columns in the first matrix equals the number of rows in the second matrix.    If matrix multiplication can be performed, the entries come from multiplying rows of the first matrix by columns of the second matrix. We multiply the corresponding numbers and add them up to get one entry of the product.    Some properties of multiplication of numbers also hold for multiplication of matrices, and some don't. Perhaps the most surprising or important of these properties is that matrix multiplication is not commutative in general.      Practice  Properties of Matrix Multiplication    Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)    If A is a square matrix such that equals the 0 matrix, then A must equal the 0 matrix.    If A has size and B has size , then AB has size .    If A has size and B has size , then the 3rd row, 2nd column entry of AB is obtained by multiplying the 3rd column of A by the 2nd row of B.          Matrix Multiplication Commutativity    Give an example of two matrices and such that .            More Commutativity    Give an example of two matrices and , neither of which is the zero matrix or the identity matrix, such that .            Multiplying Matrices   Many programming languages, including Python and Sage, use a list of lists to enter matrices. We use that notation in this problem instead of the usual array answer box notation to avoid giving away information about the size of the matrix or whether such a matrix exists at all.     Let   If possible, compute the following. If an answer does not exist, enter DNE .                      More Multiplying Matrices    Determine the value(s) of such that   =  Note: If there is more than one value separate them by commas.              Additional Practice    We explore whether or not .     Let and let . Compute .           Find by using your answer from the first part.           Compute .           Are the results from the second and third parts the same?    No.      Carefully expand the expression and show why this is not equal to .     .       In the following exercises, matrices and are defined. Give the dimensions of and . If the dimensions properly match, give the dimensions of and . Find the products and , if possible.                                            is not possible.               is not possible.            is not possible.                                                                              is not possible.               is not possible.                                                                   In the following exercises, a diagonal matrix and a matrix are given. Find the products and , where possible.                                                                                                        \\        Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;      "
 },
 {
   "id": "canmatricesbemultiplied",
@@ -2566,13 +2566,49 @@ var ptx_lunr_docs = [
   "body": "Matrix Multiplication, More than One Column   Let's calculate .   Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . Finishing the first row with , we use the first row of the first matrix and the third column of the second matrix and obtain . So far we have .  To compute the second row, we use the second row of the first matrix with the first, then second, and finally third columns of the second matrix. We calculate . Putting it all together, we have .   "
 },
 {
-  "id": "rq-matrixmult-questions",
+  "id": "matching-matrixmultiplication",
   "level": "2",
-  "url": "sec-matrixmult.html#rq-matrixmult-questions",
+  "url": "sec-matrixmult.html#matching-matrixmultiplication",
+  "type": "Activity",
+  "number": "2.2.4",
+  "title": "Entries in Matrix Multiplication.",
+  "body": "Entries in Matrix Multiplication   Match each entry of a matrix product to which things need to be multiplied together and added up, if applicable.       first row of  second row of  third row of  first column of  second column of  third column of  first entry of  first entry of   "
+},
+{
+  "id": "ex_matrix_multiply_2",
+  "level": "2",
+  "url": "sec-matrixmult.html#ex_matrix_multiply_2",
+  "type": "Example",
+  "number": "2.2.5",
+  "title": "Another Matrix Multiplication.",
+  "body": "Another Matrix Multiplication   Calculate .    Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . So far we have .  To compute , we use the second row of the first matrix with the first column of the second matrix , and calculate . To compute , we use the second row of the first matrix with the second column of the second matrix , and calculate .  Putting it all together, we have .   "
+},
+{
+  "id": "rq-matrixmult-sizes",
+  "level": "2",
+  "url": "sec-matrixmult.html#rq-matrixmult-sizes",
   "type": "Reading Question",
   "number": "1",
+  "title": "Sizes of Matrix Products.",
+  "body": "Sizes of Matrix Products   Define matrices , , and by Matrix the matrix products to their correct sizes.        Product is not defined      "
+},
+{
+  "id": "rq-matrixmult-multandadd",
+  "level": "2",
+  "url": "sec-matrixmult.html#rq-matrixmult-multandadd",
+  "type": "Reading Question",
+  "number": "2",
+  "title": "Addition versus Multiplication.",
+  "body": "Addition versus Multiplication   Match the correct statements and methods.     Add corresponding entries              Matrices can't be added because the number of rows of the first does not equal the number of columns of the second.  Matrices can't be multiplied because they aren't the same size.  Multiply corresponding entries     "
+},
+{
+  "id": "rq-matrixmult-questions-poll",
+  "level": "2",
+  "url": "sec-matrixmult.html#rq-matrixmult-questions-poll",
+  "type": "Reading Question",
+  "number": "3",
   "title": "Reflection.",
-  "body": "Reflection   Enter a response to both of the following tasks:   Ask a question about the material, either about something you're not sure you fully understand, or a what if question.    Give a percentage from 0 to 100 that reflects how confident you are with the material you just read about, and give one sentence as to why you feel that way. 0 means you didn't actually do the reading and 100 means that everything makes sense so far and you think you are completely ready to engage with the material more deeply.       "
+  "body": "Reflection     How confident do you feel with the material you just read about?      Not at all confident or didn't do the reading.      Not very confident.      Somewhat confident.      Mostly confident.      Confident so far and ready to engage more deeply.         If you're not fully confident, what additional information would you need to become more confident? What is confusing you?  If you are confident, ask a what if? or extension question.     "
 },
 {
   "id": "ws-matrixmultiplication-2",
@@ -2587,208 +2623,280 @@ var ptx_lunr_docs = [
   "id": "ws-matrixmultiplication-3-1",
   "level": "2",
   "url": "sec-matrixmult.html#ws-matrixmultiplication-3-1",
-  "type": "Exercise",
-  "number": "2.2.1",
-  "title": "",
-  "body": "  Consider the matrices .   Before computing, first explain why the shapes of and enable us to form the product . Then describe the shape of .   Compute the product .  Sage can multiply matrices using the * operator. Define the matrices and in the Sage cell below and check your work by computing .   Are we able to form the matrix product ? If so, use the Sage cell above to find . Is it generally true that ?  Suppose we form the three matrices. . Compare what happens when you compute and . State your finding as a general principle.   Compare the results of evaluating and and state your finding as a general principle.  When we are dealing with real numbers, we know if and , then . Define matrices and compute and . If , is it necessarily true that ?  Again, with real numbers, we know that if , then either or . Define and compute . If , is it necessarily true that either or ?       The product exists because the number of columns of equals the number of rows of . The dimensions of are .  We have .  Define A = matrix(2, 3, [1, 3, 2, -3, 4, -1]) B = matrix(3, 2, [3, 0, 1, 2, -2, -1]) A*B   Yes, we can form the product because the number of columns of equals the number of rows of . This product will be , however, so it must be true that .  We find that .  We find that .  It is not generally true that if , as illustrated by this example.  It is not generally true that or if , as illustrated by this example.      The product exists because the number of columns of equals the number of rows of . The dimensions of are .  We have .  Define A = matrix(2, 3, [1, 3, 2, -3, 4, -1]) B = matrix(3, 2, [3, 0, 1, 2, -2, -1]) A*B   It is not generally true that .  We find that .  We find that .  It is not generally true that if .  It is not generally true that or if .    "
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Is Matrix Multiplication Commutative in General?",
+  "body": "Is Matrix Multiplication Commutative in General?   Consider the matrices .     Is defined, and if so, what size is it?           Is defined, and if so, what size is it?           We are used to multiplication of numbers being commutative , that is, that the order in which we multiply numbers together does not matter, for all numbers and . What do your answers above mean for the commutativity of matrix multiplication in general?    In general, matrix multiplication is not commutative, that is, it is not usually true that .    "
 },
 {
-  "id": "exer--2-2",
+  "id": "ws-matrixmultiplication-3-2",
   "level": "2",
-  "url": "sec-matrixmult.html#exer--2-2",
+  "url": "sec-matrixmult.html#ws-matrixmultiplication-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Diagonal Matrices and the Identity Matrix.",
+  "body": "Diagonal Matrices and the Identity Matrix   Consider the matrices .     Calculate and .     ,       Examine the rows of and the rows of . What do you notice about the diagonal entries of and the effect of multiplying by on the left?    The corresponding row is multiplied by the number on the diagonal.      Examine the columns of and the columns of . What do you notice about the diagonal entries of and the effect of multiplying by on the right?    The corresponding column is multiplied by the number on the diagonal.      The number is called the multiplicative identity because multiplying any number by equals the same number you started with, . Given an matrix , what is the identity matrix , that is, the matrix such that multiplying on both the left and the right leaves unchanged, ?    A diagonal matrix of size with every diagonal entry equal to .    "
+},
+{
+  "id": "ws-matrixmultiplication-4-1",
+  "level": "2",
+  "url": "sec-matrixmult.html#ws-matrixmultiplication-4-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Properties of Zero and Cancellation.",
+  "body": "Properties of Zero and Cancellation   Define      With numbers, we know that if , then either or .  Compute . With matrices, if , is it necessarily true that either or ?     while neither nor equalled the zero matrix.      When we are dealing with numbers, we know that if and , then .  Compute both and . With matrices, if and , is it necessarily true that ?    "
+},
+{
+  "id": "ws-matrixmultiplication-4-2",
+  "level": "2",
+  "url": "sec-matrixmult.html#ws-matrixmultiplication-4-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Is Matrix Multiplication Associative? Distributive?",
+  "body": "Is Matrix Multiplication Associative? Distributive?   Consider the matrices . Here is a sage cell to perform (or check) the required computations.      Compute and then , and record your answers.      Compute and then and record your answers.      What does this suggest about the associativity of matrix multiplication?    Matrix multiplication is associative (when matrices are of the appropriate sizes).      Compute and then and record your answers.      Compute , and then (recall you computed in ).      What does this suggest about the distributive property of matrix multiplication?    Matrix multiplication is distributive (when matrices are of the appropriate sizes).    "
+},
+{
+  "id": "ww-matrixmult1",
+  "level": "2",
+  "url": "sec-matrixmult.html#ww-matrixmult1",
+  "type": "Exercise",
+  "number": "2.2.1",
+  "title": "Properties of Matrix Multiplication.",
+  "body": "Properties of Matrix Multiplication    Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)    If A is a square matrix such that equals the 0 matrix, then A must equal the 0 matrix.    If A has size and B has size , then AB has size .    If A has size and B has size , then the 3rd row, 2nd column entry of AB is obtained by multiplying the 3rd column of A by the 2nd row of B.         "
+},
+{
+  "id": "ww-matrixmult2",
+  "level": "2",
+  "url": "sec-matrixmult.html#ww-matrixmult2",
+  "type": "Exercise",
+  "number": "2.2.2",
+  "title": "Matrix Multiplication Commutativity.",
+  "body": "Matrix Multiplication Commutativity    Give an example of two matrices and such that .           "
+},
+{
+  "id": "wwmatrixmult3",
+  "level": "2",
+  "url": "sec-matrixmult.html#wwmatrixmult3",
+  "type": "Exercise",
+  "number": "2.2.3",
+  "title": "More Commutativity.",
+  "body": "More Commutativity    Give an example of two matrices and , neither of which is the zero matrix or the identity matrix, such that .           "
+},
+{
+  "id": "ww-matrixmult4",
+  "level": "2",
+  "url": "sec-matrixmult.html#ww-matrixmult4",
+  "type": "Exercise",
+  "number": "2.2.4",
+  "title": "Multiplying Matrices.",
+  "body": "Multiplying Matrices   Many programming languages, including Python and Sage, use a list of lists to enter matrices. We use that notation in this problem instead of the usual array answer box notation to avoid giving away information about the size of the matrix or whether such a matrix exists at all.     Let   If possible, compute the following. If an answer does not exist, enter DNE .                     "
+},
+{
+  "id": "ww-matrixmult5",
+  "level": "2",
+  "url": "sec-matrixmult.html#ww-matrixmult5",
+  "type": "Exercise",
+  "number": "2.2.5",
+  "title": "More Multiplying Matrices.",
+  "body": "More Multiplying Matrices    Determine the value(s) of such that   =  Note: If there is more than one value separate them by commas.            "
+},
+{
+  "id": "exer--2",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--2",
   "type": "Exercise",
   "number": "1",
   "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-3",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-3",
-  "type": "Exercise",
-  "number": "2",
-  "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-4",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-4",
-  "type": "Exercise",
-  "number": "3",
-  "title": "",
-  "body": "           is not possible.   "
-},
-{
-  "id": "exer--2-5",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-5",
-  "type": "Exercise",
-  "number": "4",
-  "title": "",
-  "body": "           is not possible.   "
-},
-{
-  "id": "exer--2-6",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-6",
-  "type": "Exercise",
-  "number": "5",
-  "title": "",
-  "body": "        is not possible.      "
-},
-{
-  "id": "exer--2-7",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-7",
-  "type": "Exercise",
-  "number": "6",
-  "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-8",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-8",
-  "type": "Exercise",
-  "number": "7",
-  "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-9",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-9",
-  "type": "Exercise",
-  "number": "8",
-  "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-10",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-10",
-  "type": "Exercise",
-  "number": "9",
-  "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-11",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-11",
-  "type": "Exercise",
-  "number": "10",
-  "title": "",
-  "body": "           is not possible.   "
-},
-{
-  "id": "exer--2-12",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-12",
-  "type": "Exercise",
-  "number": "11",
-  "title": "",
-  "body": "           is not possible.   "
-},
-{
-  "id": "exer--2-13",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-13",
-  "type": "Exercise",
-  "number": "12",
-  "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-14",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-14",
-  "type": "Exercise",
-  "number": "13",
-  "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-15",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-15",
-  "type": "Exercise",
-  "number": "14",
-  "title": "",
-  "body": "              "
-},
-{
-  "id": "exer--2-16",
-  "level": "2",
-  "url": "sec-matrixmult.html#exer--2-16",
-  "type": "Exercise",
-  "number": "15",
-  "title": "",
-  "body": "              "
+  "body": "  We explore whether or not .     Let and let . Compute .           Find by using your answer from the first part.           Compute .           Are the results from the second and third parts the same?    No.      Carefully expand the expression and show why this is not equal to .     .    "
 },
 {
   "id": "exer--3-2",
   "level": "2",
   "url": "sec-matrixmult.html#exer--3-2",
   "type": "Exercise",
-  "number": "16",
+  "number": "2",
   "title": "",
-  "body": "                 "
+  "body": "              "
 },
 {
   "id": "exer--3-3",
   "level": "2",
   "url": "sec-matrixmult.html#exer--3-3",
   "type": "Exercise",
-  "number": "17",
+  "number": "3",
   "title": "",
-  "body": "                 "
+  "body": "              "
 },
 {
   "id": "exer--3-4",
   "level": "2",
   "url": "sec-matrixmult.html#exer--3-4",
   "type": "Exercise",
-  "number": "18",
+  "number": "4",
   "title": "",
-  "body": "                 "
+  "body": "           is not possible.   "
 },
 {
   "id": "exer--3-5",
   "level": "2",
   "url": "sec-matrixmult.html#exer--3-5",
   "type": "Exercise",
-  "number": "19",
+  "number": "5",
   "title": "",
-  "body": "                 "
+  "body": "           is not possible.   "
 },
 {
   "id": "exer--3-6",
   "level": "2",
   "url": "sec-matrixmult.html#exer--3-6",
   "type": "Exercise",
-  "number": "20",
+  "number": "6",
   "title": "",
-  "body": "                 "
+  "body": "        is not possible.      "
 },
 {
   "id": "exer--3-7",
   "level": "2",
   "url": "sec-matrixmult.html#exer--3-7",
   "type": "Exercise",
-  "number": "21",
+  "number": "7",
   "title": "",
-  "body": "           \\    "
+  "body": "              "
 },
 {
-  "id": "exer--4",
+  "id": "exer--3-8",
   "level": "2",
-  "url": "sec-matrixmult.html#exer--4",
+  "url": "sec-matrixmult.html#exer--3-8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "              "
+},
+{
+  "id": "exer--3-9",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--3-9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": "              "
+},
+{
+  "id": "exer--3-10",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--3-10",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": "              "
+},
+{
+  "id": "exer--3-11",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--3-11",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": "           is not possible.   "
+},
+{
+  "id": "exer--3-12",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--3-12",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": "           is not possible.   "
+},
+{
+  "id": "exer--3-13",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--3-13",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": "              "
+},
+{
+  "id": "exer--3-14",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--3-14",
+  "type": "Exercise",
+  "number": "14",
+  "title": "",
+  "body": "              "
+},
+{
+  "id": "exer--3-15",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--3-15",
+  "type": "Exercise",
+  "number": "15",
+  "title": "",
+  "body": "              "
+},
+{
+  "id": "exer--3-16",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--3-16",
+  "type": "Exercise",
+  "number": "16",
+  "title": "",
+  "body": "              "
+},
+{
+  "id": "exer--4-2",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--4-2",
+  "type": "Exercise",
+  "number": "17",
+  "title": "",
+  "body": "                 "
+},
+{
+  "id": "exer--4-3",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--4-3",
+  "type": "Exercise",
+  "number": "18",
+  "title": "",
+  "body": "                 "
+},
+{
+  "id": "exer--4-4",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--4-4",
+  "type": "Exercise",
+  "number": "19",
+  "title": "",
+  "body": "                 "
+},
+{
+  "id": "exer--4-5",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--4-5",
+  "type": "Exercise",
+  "number": "20",
+  "title": "",
+  "body": "                 "
+},
+{
+  "id": "exer--4-6",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--4-6",
+  "type": "Exercise",
+  "number": "21",
+  "title": "",
+  "body": "                 "
+},
+{
+  "id": "exer--4-7",
+  "level": "2",
+  "url": "sec-matrixmult.html#exer--4-7",
   "type": "Exercise",
   "number": "22",
   "title": "",
-  "body": "  Let . Find and .     ;    "
+  "body": "           \\    "
 },
 {
   "id": "exer--5",
@@ -2833,7 +2941,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "27",
   "title": "",
-  "body": "  We explore whether or not .   Let and let . Compute .    Find by using your answer from the first part.    Compute .    Are the results from the second and third parts the same?    Carefully expand the expression and show why this is not equal to .                         No.     .      "
+  "body": "  Let . Find and .     ;    "
 },
 {
   "id": "sec-testing-things",
