@@ -365,14 +365,238 @@
         </p>
       </statement>
     </example>
+    <p>
+      Let's check to see that we understand how to compute the entries of a product of two matrices.
+    </p>
     <!-- something with entries coming from which row and which column? -->
+    <exercise label="matching-matrixmultiplication"><title>Entries in Matrix Multiplication</title>
+      <statement>
+        <p>
+          Match each entry of a matrix product <m>AB</m> to which things need to be multiplied together and added up, if applicable.
+        </p>
+      </statement>
+      <matching>
+        <premise ref="row1A col1B"><m>\begin{bmatrix} * \amp - \amp - \\ - \amp - \amp - \amp \\ - \amp - \amp - \end{bmatrix}</m></premise>
+        <premise ref="row3A col2B"><m>\begin{bmatrix} - \amp - \amp - \\ - \amp - \amp - \amp \\ - \amp * \amp - \end{bmatrix}</m></premise>
+        <premise ref="row3A col3B"><m>\begin{bmatrix} - \amp - \amp - \\ - \amp - \amp - \amp \\ - \amp - \amp * \end{bmatrix}</m></premise>
+        <response xml:id="row1A" order="1">first row of <m>A</m></response>
+        <response xml:id="row2A" order="2">second row of <m>A</m></response>
+        <response xml:id="row3A" order="3">third row of <m>A</m></response>
+        <response xml:id="col1B" order="4">first column of <m>B</m></response>
+        <response xml:id="col2B" order="5">second column of <m>B</m></response>
+        <response xml:id="col3B" order="6">third column of <m>B</m></response>
+        <response xml:id="entry3A" order="7">first entry of <m>A</m></response>
+        <response xml:id="entry3B" order="8">first entry of <m>B</m></response>
+      </matching>
+    </exercise>
      <!-- keep the below for in-class? if it doesn't hold give a counterexample? -->
     <!-- cardsort with properties of number multiplication that do hold for matrices and ones that don't. -->
+    
+    <example xml:id="ex_matrix_multiply_2"><title>Another Matrix Multiplication</title>
+      <statement>
+        <p>
+          Calculate
+          <me>
+            \left[\begin{array}{cc} -1\amp 0 \amp 3\\2 \amp 1 \amp -2 \end{array} \right]\left[\begin{array}{cc} 1\amp -1\\2 \amp 1 \\ 0 \amp 3 \end{array} \right]
+          </me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since the first matrix has <m>3</m> columns and the second matrix has <m>3</m> rows, this multiplication
+          can be performed.  The product will be a <m>2\times 2</m> matrix because the first matrix has 
+          <m>2</m> rows and the second matrix has <m>2</m> columns. 
+        </p>
+        <p>
+          We form a <m>2\times 2</m> matrix
+          <me>
+            \left[\begin{array}{cc} m_{11} \amp  m_{12} \\m_{21} \amp  m_{22} \end{array} \right]
+          </me>,
+          and we will now calculate the value of each of the entries.
+        </p>
+        <p>
+          The entry <m>m_{11}</m> is in the first row and first column, so
+          we use the <em>first row of the first matrix</em> and the <em>first column of the second matrix</em>, multiply corresponding number entries and add them up. Thus
+          <me>
+            m_{11} = \left[\begin{array}{ccc}  -1\amp 0 \amp 3 \end{array} \right]\left[\begin{array}{c} 1\\2 \\ 0 \end{array} \right] = -1\cdot 1+0 \cdot 2 + 3\cdot 0 = -1
+          </me>.
+          We now know that the product looks like
+          <me>
+            \left[\begin{array}{cc} -1 \amp  m_{12} \\m_{21} \amp  m_{22} \end{array} \right]
+          </me>.
+        </p>
+        <p>
+          Moving to the next entry to the right <m>m_{12}</m>, we still use the <em>first row of the first matrix</em>, now with the <em>second column of the second matrix</em>, giving us
+          <me>
+            m_{12} = \left[\begin{array}{ccc} -1\amp 0 \amp 3 \end{array} \right]\left[\begin{array}{c} -1\\1 \\ 3 \end{array} \right] = -1\cdot(-1)+0\cdot 1 + 3\cdot 3 = 10
+          </me>.
+          So far we have
+          <me>
+            \left[\begin{array}{cc} -1 \amp  10 \\m_{21} \amp  m_{22} \end{array} \right]
+          </me>.
+        </p>
+        <p>
+          To compute <m>m_{21}</m>, we use the <em>second row of the first matrix</em> with the <em>first
+          column of the second matrix</em>, and calculate
+          <me>
+            m_{21} = \left[\begin{array}{ccc} 2\amp 1 \amp -2 \end{array} \right]\left[\begin{array}{c} 1\\2 \\ 0 \end{array} \right] = 2\cdot 1+1\cdot 2 + -2\cdot 0 = 4
+          </me>.
+          To compute <m>m_{22}</m>, we use the <em>second row of the first matrix</em> with the <em>second
+          column of the second matrix</em>, and calculate
+          <me>
+            m_{22} = \left[\begin{array}{ccc} 2\amp 1 \amp -2 \end{array} \right]\left[\begin{array}{c} -1\\1 \\ 3 \end{array} \right] = 2\cdot(-1)+1\cdot 1 + -2\cdot 3 = -7
+          </me>.
+        </p>
+        <p>
+          Putting it all together, we have
+          <me>
+            \left[\begin{array}{cc} -1\amp 0 \amp 3\\2 \amp 1 \amp -2 \end{array} \right]\left[\begin{array}{cc} 1\amp -1\\2 \amp 1 \\ 0 \amp 3 \end{array} \right] = \left[\begin{array}{cc} -1 \amp  10 \\4\amp  -7 \end{array} \right]
+          </me>.
+        </p>
+      </solution>
+    </example>
 
-  
+  <!-- <activity>
+    <statement>
+        <query label="discipline-query" scale="5" visibility="instructor">
+        <statement>
+          <p>
+            I like computer science better than mathematics.
+            <q>1</q>
+            is
+            <q>strongly disagree</q>
+            and
+            <q>5</q>
+            is
+            <q>strongly agree</q>.
+          </p>
+        </statement>
+        </query>
+      </statement>
+      </activity> -->
+    <p>
+      Matrix multiplication is a lot more complicated than addition or multiplication by a number, but it
+      turns out to be very useful and connected to solving linear systems.
+    </p>
       
     <reading-questions xml:id="rqs-matrixmult">
-      <exercise label="rq-matrixmult-questions"><title>Reflection</title>
+      <!-- could be a cardsort instead as written -->
+      <exercise label="rq-matrixmult-sizes"><title>Sizes of Matrix Products</title>
+      <statement>
+        <p>
+          Define matrices <m>A</m>, <m>B</m>, and <m>C</m> by
+          <md>
+            <mrow>A\amp = \begin{bmatrix} 1 \amp 2 \amp 3 \\ -1 \amp 0 \amp 4 \end{bmatrix} \amp 
+              B\amp = \begin{bmatrix} -3 \amp 2 \amp -3 \\ 2 \amp 2 \amp 0 \end{bmatrix} \amp
+              C\amp = \begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}
+            </mrow>
+          </md>
+          Matrix the matrix products to their correct sizes.  
+        </p>
+      </statement>
+      <matching>
+        <premise ref="cantdo"><m>AB</m></premise>
+        <premise ref="cantdo"><m>AC</m></premise>
+        <premise ref="2by3"><m>CA</m></premise>
+        <premise ref="2by2"><m>C^2</m></premise>
+        <response xml:id="cantdo" order="1">Product is not defined</response>
+        <response xml:id="2by3" order="2"><m>2 \times 3</m></response>
+        <response xml:id="3by2" order="3"><m>3 \times 2</m></response>
+        <response xml:id="2by2" order="4"><m>2 \times 2</m></response>
+      </matching>
+    </exercise>
+
+
+      <exercise label="rq-matrixmult-multandadd"><title>Addition versus Multiplication</title>
+        <statement>
+          <p>
+            Match the correct statements and methods.
+          </p>
+        </statement>
+        <cardsort>
+          <match>
+            <premise order="4">Add corresponding entries</premise>
+            <premise order="1"><m>\begin{bmatrix} 3 \amp 1 \amp 6 \\ 0 \amp 1 \amp 4 \end{bmatrix}</m></premise>
+            <response><m>\begin{bmatrix} 1 \amp 2 \amp 3 \\ -1 \amp 0 \amp 2 \end{bmatrix} + \begin{bmatrix} 2 \amp -1 \amp 3 \\ 1 \amp 1 \amp 2 \end{bmatrix}</m></response>
+          </match>
+          <match>
+            <premise order="3"><m>\begin{bmatrix} 2 \amp -1 \\ 0 \amp 1 \end{bmatrix}</m></premise>
+            <response><m>\begin{bmatrix} 1 \amp 2 \\ -1 \amp 0 \end{bmatrix}\begin{bmatrix} 0 \amp -1  \\ 1 \amp 0  \end{bmatrix}</m></response>
+          </match>
+          <match>
+            <premise order="6"><m>\begin{bmatrix} 2 \\ 0 \end{bmatrix}</m></premise>
+            <response><m>\begin{bmatrix} 1 \amp 2 \\ -1 \amp 0 \end{bmatrix} \begin{bmatrix} 0  \\ 1  \end{bmatrix}</m></response>
+          </match>
+          <match>
+            <premise order="2">Matrices can't be added because the number of rows of the first does not equal the number of columns of the second.</premise>
+            <premise order="7">Matrices can't be multiplied because they aren't the same size.</premise>
+            <premise order="5">Multiply corresponding entries</premise>
+            <premise order="8"><m>\begin{bmatrix} 0 \amp -2 \\ -1 \amp 0 \end{bmatrix}</m></premise>
+          </match>   
+        </cardsort> 
+      </exercise>
+
+      <exercise label="rq-matrixmult-questions-poll"><title>Reflection</title>
+        <task label="rq-matrixmult-confidencepoll-task">
+          <query label="rq-matrixmult-confidencepoll" visibility="instructor">
+            <statement>
+              <p>
+                How confident do you feel with the material you just read about?
+              </p>
+            </statement>
+            <choices>
+              <choice>
+                <statement>
+                  <p>
+                    Not at all confident or didn't do the reading.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Not very confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Somewhat confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Mostly confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Confident so far and ready to engage more deeply.
+                  </p>
+                </statement>
+              </choice>
+            </choices>
+          </query>
+          </task>
+          <task label="rq-matrixmult-confidenceresponse">
+            <statement>
+              <p>
+                If you're not fully confident, what additional information would you need to become more confident?  What is confusing you?
+              </p>
+              <p>
+                If you are confident, ask a <q>what if?</q> or extension question.
+              </p>
+            </statement>
+            <response/>
+          </task>
+      </exercise>
+      
+      <!-- <exercise label="rq-matrixmult-questions"><title>Reflection</title>
         <statement>
           <p>
             Enter a response to both of the following tasks:
@@ -395,7 +619,7 @@
           </p>
         </statement>
         <response/>
-      </exercise>
+      </exercise> -->
     </reading-questions>
 
   </subsection>
@@ -432,7 +656,7 @@
   
 
 
-  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+  <xi:include href="interactive-exercises/ww-matrixmult.ptx" />
 
   <xi:include href="noninteractive-exercises/exer-matrixmultiplication.ptx" />
 

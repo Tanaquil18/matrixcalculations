@@ -2,7 +2,76 @@
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exer-" ><title>Additional Practice</title>
 
- <exercisegroup>
+ <exercise>
+    <introduction>
+      <p>
+        We explore whether or not <m>( A+ B)^2 = A^2+2 A B+ B^2</m>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Let <m>A = \left[\begin{array}{cc} 5\amp 3\\ -3\amp -2 \end{array} \right]</m> and let <m>B = \left[\begin{array}{cc} -5\amp -5\\ -2\amp 1 \end{array} \right]</m>.
+              Compute <m>A+ B</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[\begin{array}{cc} 0\amp -2\\-5\amp -1 \end{array} \right]</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find <m>( A+ B)^2</m> by using your answer from the first part.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[\begin{array}{cc} 10\amp 2\\ 5\amp 11 \end{array} \right]</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Compute <m>A^2+2 A B+ B^2</m>.
+        </p>
+      </statement>
+      <answer>
+      <p>
+        <m>\left[\begin{array}{cc} -11\amp -15\\ 37\amp 32 \end{array} \right]</m>
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Are the results from the second and third parts the same?
+        </p>
+      </statement>
+      <answer>
+      <p>
+        No.
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Carefully expand the expression <m>( A+ B)^2 = ( A+ B)( A+ B)</m> and 
+          show why this is not equal to <m>A^2+2 A B+ B^2</m>.
+        </p>
+      </statement>
+      <answer>
+      <p>
+        <m>( A+ B)( A + B) = A A + A B + B A + B B = A^2+ A B+ B A+ B^2</m>.
+      </p>
+    </answer>
+    </task>
+  </exercise>
+  <exercisegroup>
   <introduction>
   <p>
     In the following exercises, matrices <m>A</m> and <m>B</m> are defined. Give the dimensions 
@@ -420,73 +489,7 @@
       </p>
     </answer>
   </exercise>
-  <exercise>
-    <statement>
-      <p>
-        We explore whether or not <m>( A+ B)^2 = A^2+2 A B+ B^2</m>.
-        <ol>
-          <li>
-            <p>
-              Let <m>A = \left[\begin{array}{cc} 5\amp 3\\ -3\amp -2 \end{array} \right]</m> and let <m>B = \left[\begin{array}{cc} -5\amp -5\\ -2\amp 1 \end{array} \right]</m>.
-              Compute <m>A+ B</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Find <m>( A+ B)^2</m> by using your answer from the first part.
-            </p>
-          </li>
-          <li>
-            <p>
-              Compute <m>A^2+2 A B+ B^2</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Are the results from the second and third parts the same?
-            </p>
-          </li>
-          <li>
-            <p>
-              Carefully expand the expression
-              <m>( A+ B)^2 = ( A+ B)( A+ B)</m> and show why this is not equal to <m>A^2+2 A B+ B^2</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-    <answer>
-        <p>
-      <ol>
-        <li>
-          <p>
-            <m>\left[\begin{array}{cc} 0\amp -2\\-5\amp -1 \end{array} \right]</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>\left[\begin{array}{cc} 10\amp 2\\ 5\amp 11 \end{array} \right]</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>\left[\begin{array}{cc} -11\amp -15\\ 37\amp 32 \end{array} \right]</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            No.
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>( A+ B)( A + B) = A A + A B + B A + B B = A^2+ A B+ B A+ B^2</m>.
-          </p>
-        </li>
-      </ol>
-    </p>
-    </answer>
-  </exercise>
+  
     
     
 </exercises>

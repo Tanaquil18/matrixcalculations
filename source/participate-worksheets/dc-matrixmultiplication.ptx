@@ -58,7 +58,7 @@
 			<statement>
 				<p>
 					We are used to multiplication of numbers being <em>commutative</em>, that is, that the order in which we multiply numbers together
-					does not matter, <m>xy=yx</m> for all numbers <m>x</m> and <m>y</m>. What does your work above mean for the <em>commutativity</em> of matrix multiplication in general? 
+					does not matter, <m>xy=yx</m> for all numbers <m>x</m> and <m>y</m>. What do your answers above mean for the <em>commutativity</em> of matrix multiplication in general? 
 				</p>
 			</statement>
 			<answer>
@@ -85,27 +85,29 @@
 			</statement>
 			<answer>
 				<p>
-					Both are equal to <m>\begin{bmatrix} 2 \amp -3 \amp 0 \\ 4 \amp -2 \amp -1 \\ 6 \amp -1 \amp -2 \\ \end{bmatrix}</m>
-				</p>
-			</answer>
-		</task>
-		<task workspace=".2in">
-			<statement>
-				<p>
-					What does this suggest about the commutativity of matrix multiplication in the case that one matrix is diagonal?
-				</p>
-			</statement>
-			<answer>
-				<p>
-					Matrix multiplication of square matrices is commutative when one matrix is diagonal.  
+					<m>AB=\begin{bmatrix} 2 \amp 6 \amp 0 \\ -2 \amp -2 \amp 1 \\ 3 \amp 1 \amp -2 \\ \end{bmatrix}</m>, 
+					<m>BA=\begin{bmatrix} 2 \amp -3 \amp 0 \\ 4 \amp -2 \amp -1 \\ 6 \amp -1 \amp -2 \\ \end{bmatrix}</m>
 				</p>
 			</answer>
 		</task>
 		<task workspace=".5in">
 			<statement>
 				<p>
-					Examine the columns of <m>AB</m> and the columns of <m>B</m>.  
-					What do you notice about the diagonal entries of <m>A</m> and the effect of multiplying <m>B</m> by <m>A</m>?
+					Examine the rows of <m>AB</m> and the rows of <m>B</m>.  
+					What do you notice about the diagonal entries of <m>A</m> and the effect of multiplying <m>B</m> by <m>A</m> on the left?
+				</p>
+			</statement>
+			<answer>
+				<p>
+					The corresponding row is multiplied by the number on the diagonal.  
+				</p>
+			</answer>
+		</task>
+		<task workspace=".5in">
+			<statement>
+				<p>
+					Examine the columns of <m>BA</m> and the columns of <m>B</m>.  
+					What do you notice about the diagonal entries of <m>A</m> and the effect of multiplying <m>B</m> by <m>A</m> on the right?
 				</p>
 			</statement>
 			<answer>
@@ -120,7 +122,7 @@
 					The number <m>1</m> is called the <em>multiplicative identity</em> because multiplying 
 					any number <m>x</m> by <m>1</m> equals the same number you started with, <m>1\cdot x = x\cdot 1 = x</m>.
 					Given an <m>n\times n</m> matrix <m>X</m>, what is the <term>identity matrix</term>, that is, the matrix <m>I</m> such that
-					<m>I\cdot X=X\cdot I = X</m>?
+					multiplying on both the left and the right leaves <m>X</m> unchanged, <m>I\cdot X=X\cdot I = X</m>?
 				</p>
 			</statement>
 			<answer>

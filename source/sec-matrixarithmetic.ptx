@@ -418,7 +418,7 @@
       <response xml:id="dist" order="4"><m>k(A+B)=kA+kB</m></response>
       <response xml:id="assoc" order="3"><m>A+(B+C)=(A+B)+C</m></response>
       <response xml:id="comm1" order="2"><m>B+C=C+B</m></response>
-      <response xml:id="comm2" order="1"><m>A+C=C+A</m></response>
+      <response xml:id="comm2" order="5"><m>A+C=C+A</m></response>
       <response xml:id="commmult" order="1"><m>AB=BA</m></response>
       </matching>
   </exercise>

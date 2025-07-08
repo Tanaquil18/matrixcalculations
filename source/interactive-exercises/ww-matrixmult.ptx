@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ww-matrixmult" ><title>Practice</title>
+
+
+    <activity label="ww-matrixmult1"><title>Properties of Matrix Multiplication</title>
+        <webwork source="matrixtheory/matrixmult1.pg"/> 
+    </activity>
+    
+    <activity label="ww-matrixmult2"><title>Matrix Multiplication Commutativity</title>
+        <webwork source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg"/> 
+    </activity>
+
+      <activity label="wwmatrixmult3"><title>More Commutativity</title>
+        <webwork source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg"/>
+      </activity>
+
+      <activity label="ww-matrixmult4"><title>Multiplying Matrices</title>
+        <introduction>
+            <p>
+                Many programming languages, including Python and Sage, 
+                use a list of lists to enter matrices. We use that notation in this problem 
+                instead of the usual array answer box notation to avoid giving away information
+                about the size of the matrix or whether such a matrix exists at all.  
+            </p>
+        </introduction>
+        <webwork source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg"/>
+      </activity>
+
+      <activity label="ww-matrixmult5"><title>More Multiplying Matrices</title>
+        <webwork source="Library/ASU-topics/set119MatrixAlgebra/p14.pg"/>
+      </activity>
+
+      
+      
+  </subsection>
