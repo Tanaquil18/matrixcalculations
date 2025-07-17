@@ -108,7 +108,7 @@
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
     <css
-        theme="salem" palette="ice-fire"
+        theme="salem"
       />
       
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search

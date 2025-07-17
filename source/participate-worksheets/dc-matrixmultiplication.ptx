@@ -30,7 +30,7 @@
 				</md>.
 			</p>
 		</introduction>
-		<task workspace=".2in">
+		<task>
 			<statement>
 				<p>
 					Is <m>AB</m> defined, and if so, what size is it?  
@@ -42,7 +42,7 @@
 				</p>
 			</answer>
 		</task>
-		<task workspace=".2in">
+		<task>
 			<statement>
 				<p>
 					Is <m>BA</m> defined, and if so, what size is it?  
@@ -230,7 +230,7 @@
 		<task workspace=".2in">
 			<statement>
 				<p>
-					Compute <m>AC</m>, and then <m>AB+AC</m> (recall you computed <m>AB</m> in <xref ref="task_computeAB" text="global"/>).
+					Compute <m>AC</m>, and then <m>AB+AC</m> (recall you computed <m>AB</m> in <xref ref="task_computeAB" text="local">Part</xref>).
 				</p>
 			</statement>
 		</task>
