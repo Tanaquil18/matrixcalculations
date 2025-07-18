@@ -7,8 +7,7 @@
    <introduction>
       <p>
         In the following exercises, a matrix <m>A</m> is given.
-        Find <m>A^{-1}</m> using <xref ref="thm_2by2">Theorem</xref>,
-        if it exists.
+        Calculate <m>A^{-1}</m>, if it exists.
       </p>
    </introduction>
   <exercise>
@@ -360,9 +359,8 @@
  <exercisegroup>
   <introduction>
       <p>
-        In the following exercises,
-          a coefficient matrix <m>A</m> and column matrix <m>B</m> are given.
-        Solve the equation <m>A X = B</m> using <xref ref="thm_inverse_solution">Theorem</xref>.
+        In the following exercises, a coefficient matrix <m>A</m> and column matrix <m>B</m>
+         are given. Solve the equation <m>A X = B</m>.
       </p>
   </introduction>
   <exercise>

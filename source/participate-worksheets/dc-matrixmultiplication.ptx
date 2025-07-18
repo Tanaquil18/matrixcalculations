@@ -68,7 +68,7 @@
 			</answer>
 		</task>
 	 </exercise>
-	 <exercise><title>Diagonal Matrices and the Identity Matrix</title>
+	 <exercise xml:id="identityexercise"><title>Diagonal Matrices and the Identity Matrix</title>
 		<introduction>
 			<p>
 				Consider the matrices
@@ -134,7 +134,7 @@
 	 </exercise>
 	</page>
 	<page>
-	 <exercise><title>Properties of Zero and Cancellation</title>
+	 <exercise xml:id="exercisenoninvertibleA"><title>Properties of Zero and Cancellation</title>
 		<introduction>
 			<p>
 				Define

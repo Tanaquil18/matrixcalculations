@@ -5,7 +5,7 @@
   <introduction>
     <p>
         We have been learning how to perform arithmetic with matrices, including matrix multiplication.
-        Now we learn how matrix multiplication connects to linear systems, and we learn how to
+        Now we learn how matrix multiplication connects to linear systems and how to
         solve two variable linear systems using the inverse of a matrix.  
     </p>
   </introduction>
@@ -13,57 +13,111 @@
   <subsection xml:id="subsec-matrixinverse2vars-bc">
     <title>Prepare</title>
     <p>
-        Once again we visit the old algebra equation, <m>ax=b</m>.
-        How do we solve for <m>x</m>?
-        We know that, as long as <m>a\neq 0</m>,
-        <me>
-        x = \frac{b}{a}, \ \text{ or, stated in another way, }  \ x = a^{-1}b
-        </me>
+      Let's start by seeing how a two-variable linear system can viewed in terms of matrix multiplication.
     </p>
     <p>
-        What is <m>a^{-1}</m>?
-        It is the number that, when multiplied by <m>a</m>, returns 1.
-        That is,
-        <me>
-        a^{-1}a = 1
-        </me>
+      Consider the linear system
+      <md>
+        <mrow>x_1+x_2 \amp=-1 </mrow>
+        <mrow>2x_1-3x_2 \amp=8 </mrow>
+      </md>.
+      Previously, we would have solved this system by forming an augmented matrix with the coefficients and constants,
+      row reduce, and interpret the solutions from the reduced row echelon form.
     </p>
     <p>
-        Let us now think in terms of matrices.
-        We have learned of the identity matrix <m>I</m> that
-        <q>acts like the number 1.</q>
+      However, now that we know about matrix multiplication, let's try something different.  Form a
+      matrix from the coefficents, 
+      <me>
+        A=\begin{bmatrix} 1 \amp 1 \\ 2 \amp -3 \end{bmatrix}
+      </me>,
+      a column matrix from the variables,
+      <me>
+        X=\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
+      </me>,
+      and a column matrix from the constants,
+      <me>
+        B=\begin{bmatrix} -1 \\ 8 \end{bmatrix}
+      </me>.
+    </p>
+    <p>
+      Notice what we get when we multiply <m>AX</m>:
+      <me>
+        AX=\begin{bmatrix} 1 \amp 1 \\ 2 \amp -3 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
+        =\begin{bmatrix}x_1+x_2 \\ 2x_1-3x_2 \end{bmatrix}
+      </me>.
+      Recall that two matrices are equal exactly when they are the same size and their corresponding entries are equal.
+      So the matrix equation <m>AX=B</m> is
+      <me>
+        \begin{bmatrix}x_1+x_2 \\ 2x_1-3x_2 \end{bmatrix}=\begin{bmatrix} -1 \\ 8 \end{bmatrix}
+      </me>,
+      and setting the first entries equal to each other and the second entries equal to each other gives
+      <md>
+        <mrow>x_1+x_2 \amp=-1 </mrow>
+        <mrow>2x_1-3x_2 \amp=8 </mrow>
+      </md>.
+      But this is precisely the linear system we started with!
+      This result is not an coincidence: we can always rewrite linear systems using matrix multiplication.  Let's practice. 
+    </p>
+    <!-- interactive question needed here.  matching of different matrices to the linear systems?  can have 2 or three
+     with same A and or same b.  and all same X if they're 2b2, but could also do 3by3, and make one distractor the augmented matrix -->
+    <p>
+      Writing linear systems in terms of matrix multiplication raises a new question: how can we solve a linear system that is written
+      in the form <m>AX=B</m>?
+    </p>
+     <p>
+        We take our inspiration from the usual algebra of numbers.  If <m>a, b</m> and <m>x</m> 
+        are numbers and <m>a\neq 0</m>, 
+        then we solve the equation <m>ax=b</m> by
+        dividing both sides by <m>a</m>, or by multiplying both sides by <m>\frac{1}{a}</m>,
+        <me>
+        x = \frac{b}{a}
+        </me>.
+        We do this precisely because <m>\frac{1}{a}\cdot a=1</m>, so writing out more details would give us
+        <md>
+          <mrow>ax \amp= b </mrow>
+          <mrow>\frac{1}{a}\cdot ax \amp= \frac{1}{a}\cdot b </mrow>
+          <mrow>1x \amp= \frac{1}{a}\cdot b </mrow>
+          <mrow>x \amp= \frac{1}{a}\cdot b = \frac{b}{a}</mrow>
+        </md>.
+        The key feature is that <m>\frac{1}{a}</m> is the thing we multiply by <m>a</m> to get <m>1</m>, 
+        and to solve a linear system <m>AX=B</m>, we'll want to do something analogous for matrices. 
+        We sometimes call <m>\frac{1}{a}</m> the <em>multiplicative inverse</em> of <m>a</m>, and we know
+        that <m>\frac{1}{a}=a^{-1}</m> if written as an exponent; this is the same language and notation we
+        will use for matrices as well.  
+    </p>
+    <p>
+        In <xref ref="identityexercise"/>, we learned about the identity matrix <m>I</m> that
+        acts like the number <m>1</m> for square matrices, even though matrix multiplication is not commutative in general.
         That is, if <m>A</m> is a square matrix, then
         <me>
         I A =  A I =  A
         </me>.
-        If we had a matrix,
-        which we'll call <m>A^{-1}</m>, where <m>A^{-1} A= I</m>,
+        If we had a matrix <m>A^{-1}</m> such that <m>A^{-1} A= I</m>,
         then by analogy to our algebra example above it seems like we might be able to solve the linear system
-        <m>A \vec{x} = \vec{b}</m> for <m>\vec{x}</m> by multiplying both sides of the equation by <m>A^{-1}</m>.
-        That is, perhaps
-        <me>
-        \vec{x} =  A^{-1}\vec{b}
-        </me>
+        <m>A X = B</m> for <m>X</m> by multiplying both sides of the equation by <m>A^{-1}</m>.
+        That is, 
+        <md>
+          <mrow>AX \amp= B \amp \amp </mrow>
+          <mrow>A^{-1} \cdot AX \amp= A^{-1}\cdot B \amp \amp \amp \amp \text{multiply both sides on the left by }A^{-1} </mrow>
+          <mrow>(A^{-1} \cdot A)X \amp= A^{-1}\cdot B \amp \amp \amp \amp\text{matrix multiplication is associative} </mrow>
+          <mrow>IX \amp= A^{-1}\cdot B \amp \amp \amp \amp\text{because }A^{-1}A=I</mrow>
+          <mrow>X \amp= A^{-1}\cdot B \amp \amp \amp \amp\text{because }IX=X</mrow>
+        </md>.
+        It seems that we might be able to solve linear systems using matrix multiplication and inverses
+        instead of row reducing.
     </p>
     <p>
-        Of course, there is a lot of speculation here.
-        We don't know that such a matrix like <m>A^{-1}</m> exists.
-        However, we do know how to solve the matrix equation <m>A X = B</m>,
-        so we can use that technique to solve the equation <m>A X = I</m> for <m>X</m>. This seems like it will get us close to what we want.
-        Let's practice this once and then study our results.
+        Of course, there are some differences between matrix multiplication and number multiplication,
+        as we explored throughout <xref ref="ws-matrixmultiplication" text="custom">Matrix Multiplication Participate</xref>, and so we 
+        aren't guaranteed that a matrix acting like <m>A^{-1}</m> exists for every square matrix <m>A</m>.
+        For the <m>2\times 2</m> matrices that arise from two-variable linear systems, the story is simpler.  
     </p>
-    <p>
-    So given a square matrix <m>A</m>,
-    if we can find a matrix <m>X</m> where <m>A X= I</m>,
-    then we know that <m>X A = I</m> and that <m>X</m> is the only matrix that does this.
-    This makes <m>X</m> special, so we give it a special name.
-  </p>
   <definition xml:id="def_inverse"><title>Invertible Matrices and the Inverse of A</title><idx><h>matrix</h><h>inverse</h></idx>
             <idx><h>inverse</h><h>definition</h></idx>
     <statement>
       <p>
-        Let <m>A</m> and <m>X</m> be
-        <m>n\times n</m> matrices where <m>A X = I = X A</m>.
+        Suppose that <m>A</m> and <m>C</m> are
+        <m>n\times n</m> matrices such that <m>A C = I = C A</m>.
         Then:
         <ol>
           <li>
@@ -73,8 +127,20 @@
           </li>
           <li>
             <p>
-              <m>X</m> is the <em>inverse</em>
+              <m>C</m> is the <em>multiplicative inverse</em>, or just <em>inverse</em>,
               of <m>A</m>, denoted by <m>A^{-1}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Furthermore, if <m>A</m> is a <m>2 \times 2</m> matrix
+              <me>
+                A = \left[\begin{array}{cc} a\amp b\\c\amp d \end{array} \right]
+              </me>
+              then <m>A^{-1}</m> exists precisely when <m>ad-bc\neq 0</m> and
+              <me>
+                A^{-1} = \frac{1}{ad-bc}\left[\begin{array}{cc} d\amp -b\\-c\amp a \end{array} \right]
+              </me>.
             </p>
           </li>
         </ol>
@@ -82,49 +148,39 @@
     </statement>
   </definition>
 
-  <theorem xml:id="thm_2by2"><title>The Inverse of a <m>2\times 2</m> Matrix</title>
+  <p>
+    We can't divide by <m>0</m>, so if <m>ad-bc=0</m>, we don't have an inverse.
+  </p>
+  <example><title>A Matrix Without An Inverse</title>
     <statement>
       <p>
-        Let
+        Recall <xref ref="exercisenoninvertibleA"/>, where
         <me>
-          A = \left[\begin{array}{cc} a\amp b\\c\amp d \end{array} \right]
+          A = \left[\begin{array}{cc} 1\amp 2\\-2\amp -4 \end{array} \right]
         </me>.
-        <m>A</m> is invertible if and only if <m>ad-bc\neq 0</m>.
+        Here, <m>ad-bc = 1(-4) - 2(-2) = 0</m> and so <m>A</m> doesn't have an inverse.
       </p>
       <p>
-        If <m>ad-bc \neq 0</m>, then
-        <me>
-          A^{-1} = \frac{1}{ad-bc}\left[\begin{array}{cc} d\amp -b\\-c\amp a \end{array} \right]
-        </me>
+        This is why multiplying by <m>A</m> in that exercise didn't act like multiplying by a number does;
+        every nonzero number <m>a</m> has an inverse <m>\frac{1}{a}</m>.
       </p>
     </statement>
-  </theorem>
+  </example>
   <p>
-    We can't divide by 0, so if <m>ad-bc=0</m>, we don't have an inverse.
-    Recall <xref ref="ex_inverse_2">Example</xref>, where
-    <me>
-      A = \left[\begin{array}{cc} 1\amp 2\\2\amp 4 \end{array} \right]
-    </me>.
-    Here, <m>ad-bc = 1(4) - 2(2) = 0</m>,
-    which is why <m>A</m> didn't have an inverse.
-  </p>
-  <p>
-    Although this idea is simple, we should practice it.
+    Let's see another example.
   </p>
     <example xml:id="ex_inverse_4"><title>Using the formula for <m>2\times 2</m> inverses </title>
     <statement>
       <p>
-        Use <xref ref="thm_2by2">Theorem</xref> to find the inverse of
+        Calculate the inverse, if it exists, of
         <me>
           A = \left[\begin{array}{cc} 3 \amp  2\\-1 \amp  9 \end{array} \right]
-        </me>
-        if it exists.
+        </me>.
       </p>
     </statement>
     <solution>
       <p>
-        Since <m>ad-bc = 29 \neq 0</m>, <m>A^{-1}</m> exists.
-        By the Theorem,
+        Since <m>ad-bc = 29 \neq 0</m>, we know <m>A^{-1}</m> exists and we calculate
         <md>
           <mrow>A^{-1} \amp = \frac{1}{3(9)-2(-1)}\left[\begin{array}{cc} 9\amp -2</mrow>
           <mrow>1\amp 3\end{array}\right]</mrow>
@@ -133,80 +189,14 @@
         </md>
       </p>
       <p>
-        We can leave our answer in this form, or we could
-        <q>simplify</q>
-        it as
+        We can leave our answer in this form, or we could multiply it out and get
         <me>
           A^{-1} = \frac{1}{29}\left[\begin{array}{cc} 9\amp -2\\1\amp 3 \end{array} \right] = \left[\begin{array}{cc}  9/29 \amp  -2/29\\1/29 \amp  3/29 \end{array} \right]
-        </me>
+        </me>.
       </p>
     </solution>
   </example>
-  <p>
-    We started this section out by speculating that just as we solved algebraic equations of the form <m>ax=b</m> by computing <m>x = a^{-1}b</m>,
-    we might be able to solve matrix equations of the form
-    <m>A \vec{x} = \vec{b}</m> by computing <m>\vec{x} =  A^{-1}\vec{b}</m>.
-    If <m>A^{-1}</m> does exist,
-    then we <em>can</em> solve the equation <m>A \vec{x} = \vec{b}</m> this way.
-    Consider:
-    <md>
-      <mrow>A \vec{x} \amp = \vec{b} \amp  \amp  \textsf{(original equation)}</mrow>
-      <mrow>A^{-1} A\vec{x} \amp =  A^{-1}\vec{b} \amp  \amp \textsf{ (multiply both sides \textit{on the left} by  A^{-1})}</mrow>
-      <mrow>I\vec{x} \amp =  A^{-1}\vec{b} \amp  \amp \textsf{ (since $ A^{-1} A= I$)}</mrow>
-      <mrow>\vec{x} \amp =  A^{-1}\vec{b} \amp  \amp \textsf{ (since $ I\vec{x} = \vec{x}$)}</mrow>
-    </md>
-  </p>
-  <p>
-    Let's step back and think about this for a moment.
-    The only thing we know about the equation
-    <m>A \vec{x} = \vec{b}</m> is that <m>A</m> is invertible.
-    We also know that solutions to
-    <m>A \vec{x} = \vec{b}</m> come in three forms:
-    exactly one solution, infinite solutions, and no solution.
-    We just showed that if <m>A</m> is invertible,
-    then <m>A \vec{x} = \vec{b}</m> has
-    <em>at least</em> one solution.
-      We showed that by setting <m>\vec{x}</m> equal to <m>A^{-1}\vec{b}</m>, we have a solution.
-    Is it possible that more solutions exist?
-  </p>
-  <p>
-    No.
-    Suppose we are told that a known vector <m>\vec{v}</m> is a solution to the equation <m>A \vec{x} = \vec{b}</m>;
-    that is, we know that <m>A\vec{v}=\vec{b}</m>.
-    We can repeat the above steps:
-    <md>
-      <mrow>A\vec{v} \amp =\vec{b}</mrow>
-      <mrow>A^{-1} A\vec{v} \amp = A^{-1}\vec{b}</mrow>
-      <mrow>I\vec{v} \amp =  A^{-1}\vec{b}</mrow>
-      <mrow>\vec{v} \amp =  A^{-1}\vec{b}</mrow>
-    </md>.
-  </p>
-  <p>
-    This shows that <em>all</em> solutions to <m>A \vec{x} = \vec{b}</m> are exactly
-    <m>\vec{x} = A^{-1}\vec{b}</m> when <m>A</m> is invertible.
-    We have just proved the following theorem.
-  </p>
-  <theorem xml:id="thm_inverse_solution"><title>Invertible Matrices and Solutions to <m>A \vec{x} = \vec{b}</m></title><idx><h>solution</h><h>unique</h></idx>
-    <statement>
-      <p>
-        Let <m>A</m> be an invertible <m>n\times n</m> matrix,
-          and let <m>\vec{b}</m> be any <m>n\times 1</m> column vector.
-        Then the equation <m>A \vec{x} = \vec{b}</m> has exactly one solution, namely
-        <me>
-          \vec{x} =  A^{-1}\vec{b}
-        </me>
-      </p>
-    </statement>
-  </theorem>
-  <p>
-    A corollary<fn>
-    a <em>corollary</em> is an idea that follows directly from a theorem
-    </fn> to this theorem is: If <m>A</m> is not invertible,
-    then <m>A \vec{x} = \vec{b}</m> does not have exactly one solution.
-    It may have infinite solutions or it may have no solution,
-    and we would need to examine the reduced row echelon form of the augmented matrix
-    <m>\left[\begin{array}{cc} A \amp \vec{b} \end{array} \right]</m> to see which case applies.
-  </p>
+  <!-- another example for solving a system, comparing it to the rref method -->
       
   
       
@@ -248,17 +238,19 @@
       <ul>
         <li>
           <p>
-              
+            Linear systems can be rewritten in terms of matrix multiplication, <m>AX=B</m>.
           </p>
         </li>
         <li>
           <p>
-            
+            Some square matrices have <em>multiplicative inverses</em>, denoted <m>A^{-1}</m>,
+            and there is a formula for calculating <m>A^{-1}</m> when <m>A</m> is <m>2\times 2</m>.
           </p>
         </li>
         <li>
           <p>
-            
+            We can solve linear systems <m>AX=B</m> when <m>A</m> is <em>invertible</em> by calculating
+            <m>X=A^{-1}B</m>.
           </p>
         </li>
       </ul>
