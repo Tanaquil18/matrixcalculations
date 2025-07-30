@@ -6,7 +6,7 @@
     <p>
         We have been learning how to perform arithmetic with matrices, including matrix multiplication.
         Now we learn how matrix multiplication connects to linear systems and how to
-        solve two variable linear systems using the inverse of a matrix.  
+        solve two variable linear systems using the <em>inverse</em> of a matrix.  
     </p>
   </introduction>
 
@@ -26,7 +26,7 @@
     </p>
     <p>
       However, now that we know about matrix multiplication, let's try something different.  Form a
-      matrix from the coefficents, 
+      matrix from the coefficients, 
       <me>
         A=\begin{bmatrix} 1 \amp 1 \\ 2 \amp -3 \end{bmatrix}
       </me>,
@@ -68,7 +68,7 @@
         We take our inspiration from the usual algebra of numbers.  If <m>a, b</m> and <m>x</m> 
         are numbers and <m>a\neq 0</m>, 
         then we solve the equation <m>ax=b</m> by
-        dividing both sides by <m>a</m>, or by multiplying both sides by <m>\frac{1}{a}</m>,
+        dividing both sides by <m>a</m> and get
         <me>
         x = \frac{b}{a}
         </me>.
@@ -79,38 +79,45 @@
           <mrow>1x \amp= \frac{1}{a}\cdot b </mrow>
           <mrow>x \amp= \frac{1}{a}\cdot b = \frac{b}{a}</mrow>
         </md>.
-        The key feature is that <m>\frac{1}{a}</m> is the thing we multiply by <m>a</m> to get <m>1</m>, 
-        and to solve a linear system <m>AX=B</m>, we'll want to do something analogous for matrices. 
+        The key feature is that <m>\frac{1}{a}</m> is the thing we multiply by <m>a</m> to get <m>1</m>; 
+        to solve a linear system <m>AX=B</m>, we'll want to do something analogous for matrices. 
         We sometimes call <m>\frac{1}{a}</m> the <em>multiplicative inverse</em> of <m>a</m>, and we know
-        that <m>\frac{1}{a}=a^{-1}</m> if written as an exponent; this is the same language and notation we
-        will use for matrices as well.  
+        that <m>\frac{1}{a}=a^{-1}</m> if written as an exponent. We will use this same language and notation
+        for matrices as well.  
     </p>
     <p>
         In <xref ref="identityexercise"/>, we learned about the identity matrix <m>I</m> that
-        acts like the number <m>1</m> for square matrices, even though matrix multiplication is not commutative in general.
-        That is, if <m>A</m> is a square matrix, then
+        acts like the number <m>1</m> for square matrices.  For example, the identity matrix of size <m>3</m>
+        is <m>\begin{bmatrix}1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{bmatrix}</m>, and then
+        if <m>A</m> is any <m>3\times 3</m> matrix, then
         <me>
         I A =  A I =  A
         </me>.
+        Similarly for the identity matrix of size <m>2</m>, which is <m>\begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}</m>
+        and any <m>2\times 2</m> matrix.
+      </p> 
+      <p>
         If we had a matrix <m>A^{-1}</m> such that <m>A^{-1} A= I</m>,
         then by analogy to our algebra example above it seems like we might be able to solve the linear system
         <m>A X = B</m> for <m>X</m> by multiplying both sides of the equation by <m>A^{-1}</m>.
-        That is, 
+        That is,
         <md>
           <mrow>AX \amp= B \amp \amp </mrow>
-          <mrow>A^{-1} \cdot AX \amp= A^{-1}\cdot B \amp \amp \amp \amp \text{multiply both sides on the left by }A^{-1} </mrow>
-          <mrow>(A^{-1} \cdot A)X \amp= A^{-1}\cdot B \amp \amp \amp \amp\text{matrix multiplication is associative} </mrow>
-          <mrow>IX \amp= A^{-1}\cdot B \amp \amp \amp \amp\text{because }A^{-1}A=I</mrow>
-          <mrow>X \amp= A^{-1}\cdot B \amp \amp \amp \amp\text{because }IX=X</mrow>
+          <mrow>A^{-1} \cdot AX \amp= A^{-1} B \amp \amp \amp \amp \text{multiply both sides on the left by }A^{-1} </mrow>
+          <mrow>(A^{-1} \cdot A)X \amp= A^{-1} B \amp \amp \amp \amp\text{matrix multiplication is associative} </mrow>
+          <mrow>IX \amp= A^{-1}B \amp \amp \amp \amp\text{because }A^{-1}A=I</mrow>
+          <mrow>X \amp= A^{-1}B \amp \amp \amp \amp\text{because }IX=X</mrow>
         </md>.
         It seems that we might be able to solve linear systems using matrix multiplication and inverses
         instead of row reducing.
     </p>
     <p>
         Of course, there are some differences between matrix multiplication and number multiplication,
-        as we explored throughout <xref ref="ws-matrixmultiplication" text="custom">Matrix Multiplication Participate</xref>, and so we 
+        as we explored throughout <xref ref="ws-matrixmultiplication" text="custom">Matrix Multiplication Participate</xref>, 
+        and one consequence is that we 
         aren't guaranteed that a matrix acting like <m>A^{-1}</m> exists for every square matrix <m>A</m>.
-        For the <m>2\times 2</m> matrices that arise from two-variable linear systems, the story is simpler.  
+        For the <m>2\times 2</m> matrices that arise from two-variable linear systems, it is straightforward to tell
+        when <m>A^{-1}</m> exists.  
     </p>
   <definition xml:id="def_inverse"><title>Invertible Matrices and the Inverse of A</title><idx><h>matrix</h><h>inverse</h></idx>
             <idx><h>inverse</h><h>definition</h></idx>
@@ -166,6 +173,259 @@
       </p>
     </statement>
   </example>
+  <!-- interactive question.  Give matrix, ask for entries, a, d, then b, c, then ad-bc, then [d -b \\ -c a] -->
+   <exercise label="partsof2by2matrix"><title>Identifying Key Parts for a <m>2\times 2</m> Inverse</title>
+    <introduction>
+      <p>
+        Recall that the formula for the inverse of <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m> is
+        <me>
+          A^{-1} = \frac{1}{ad-bc}\left[\begin{array}{cc} d\amp -b\\-c\amp a \end{array} \right]
+        </me>.
+        Let <me>A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}</me>.
+      </p>
+    </introduction>
+    <task label="partsof2by2matrix-a">>
+      <statement>
+        <p>
+          Identify the values of <m>a</m> and <m>d</m> for the matrix <m>A</m>.
+        </p>
+      </statement>
+      <choices>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>a=1</m> and <m>d=2</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              For a matrix described by <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>, 
+              the entry <m>a</m> is the entry in the top left and <m>d</m> is the entry in the bottom right.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>a=1</m> and <m>d=4</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>a=4</m> and <m>d=1</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              For a matrix described by <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>, 
+              the entry <m>a</m> is the entry in the top left and <m>d</m> is the entry in the bottom right.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>a=4</m> and <m>d=3</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              For a matrix described by <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>, 
+              the entry <m>a</m> is the entry in the top left and <m>d</m> is the entry in the bottom right.
+            </p>
+          </feedback>
+        </choice>
+      
+      </choices>
+    </task>
+    <task label="partsof2by2matrix-b">>
+      <statement>
+        <p>
+          Identify the values of <m>b</m> and <m>c</m> for the matrix <m>A</m>.
+        </p>
+      </statement>
+      <choices>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>b=1</m> and <m>c=2</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              For a matrix described by <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>, 
+              the entry <m>b</m> is the entry in the top right and <m>c</m> is the entry in the bottom left.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>b=3</m> and <m>c=2</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              For a matrix described by <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>, 
+              the entry <m>b</m> is the entry in the top right and <m>c</m> is the entry in the bottom left.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>b=2</m> and <m>c=3</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>b=-2</m> and <m>c=-3</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Don't multiply them by <m>-1</m> like in the inverse, just identify what <m>b</m> and <m>c</m> are to start with.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </task>
+    <task label="partsof2by2matrix-c">>
+      <statement>
+        <p>
+          What is the value of <m>ad-bc</m> for the matrix <m>A</m>?
+        </p>
+      </statement>
+      <choices>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>-2</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct! <m>a=1</m>, <m>d=4</m>, <m>b=2</m>, and <m>c=3</m>, so 
+              <me>ad-bc=1\cdot 4 - 2\cdot 3 = 4-6 = -2</me>
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>2</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              <m>a=1</m>, <m>d=4</m>, <m>b=2</m>, and <m>c=3</m>, so 
+              <me>ad-bc=1\cdot 4 - 2\cdot 3</me>
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>10</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              <m>a=1</m>, <m>d=4</m>, <m>b=2</m>, and <m>c=3</m>, so 
+              <me>ad-bc=1\cdot 4 - 2\cdot 3</me>
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>\frac{-1}{2}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              <m>a=1</m>, <m>d=4</m>, <m>b=2</m>, and <m>c=3</m>, so 
+              <me>ad-bc=1\cdot 4 - 2\cdot 3</me>
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </task>
+    <task label="partsof2by2matrix-d">>
+      <statement>
+        <p>
+          Which matrix below is <m>\begin{bmatrix} d \amp -b \\ -c \amp a \end{bmatrix}</m> for the matrix <m>A</m>?
+        </p>
+      </statement>
+      <choices>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>\begin{bmatrix} -1 \amp 3 \\ 2 \amp -4 \end{bmatrix}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              To calculate <m>\begin{bmatrix} d \amp -b \\ -c \amp a \end{bmatrix}</m>,
+              you swap entries <m>a</m> and <m>d</m> and multiply entries <m>b</m> and <m>c</m> by negative 1.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>\begin{bmatrix} -4 \amp -2 \\ -3 \amp -1 \end{bmatrix}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              To calculate <m>\begin{bmatrix} d \amp -b \\ -c \amp a \end{bmatrix}</m>,
+              you swap entries <m>a</m> and <m>d</m> and multiply entries <m>b</m> and <m>c</m> by negative 1.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>\begin{bmatrix} 4 \amp -2 \\ -3 \amp 1 \end{bmatrix}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>\begin{bmatrix} 4 \amp -3 \\ -2 \amp 1 \end{bmatrix}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              To calculate <m>\begin{bmatrix} d \amp -b \\ -c \amp a \end{bmatrix}</m>,
+              you swap entries <m>a</m> and <m>d</m> and multiply entries <m>b</m> and <m>c</m> by negative 1.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </task>
+   </exercise>
   <p>
     Let's see another example.
   </p>
