@@ -14,7 +14,7 @@
     <!-- Include chapters -->
     <xi:include href="./ch-augmentedmatrices.ptx" />
     <xi:include href="./ch-matrixoperations.ptx" />
-    <xi:include href="./ch-testing-things.ptx" />
+    <!-- <xi:include href="./ch-testing-things.ptx"/> -->
 
 
     <!-- Include backmatter -->

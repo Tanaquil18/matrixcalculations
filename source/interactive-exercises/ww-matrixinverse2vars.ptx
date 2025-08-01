@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ww-" ><title>Practice</title>
+
+    <activity label="ww-matrixinv2by2-1"><title>Is a Matrix Invertible?</title>
+        <webwork source="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg"/> 
+    </activity>
+
+    <activity label="ww-matrixinv2by2-2"><title>Multiply to Obtain Identity</title>
+        <webwork source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg"/> 
+    </activity>
+
+    <activity label="ww-matrixinv2by2-3"><title>Condition for Invertibility</title>
+        <webwork source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg"/> 
+    </activity>
+
+    <activity label="ww-matrixinv2by2-4"><title>Solve Two Systems with the Inverse</title>
+        <webwork source="Library/ASU-topics/set119MatrixAlgebra/p13.pg"/> 
+    </activity>
+
+    <activity label="ww-matrixinv2by2-5"><title>Solve a System with the Inverse</title>
+        <webwork source="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg"/> 
+    </activity>
+    
+</subsection>

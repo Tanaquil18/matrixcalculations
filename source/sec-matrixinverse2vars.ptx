@@ -143,8 +143,8 @@
               Furthermore, if <m>A</m> is a <m>2 \times 2</m> matrix
               <me>
                 A = \left[\begin{array}{cc} a\amp b\\c\amp d \end{array} \right]
-              </me>
-              then <m>A^{-1}</m> exists precisely when <m>ad-bc\neq 0</m> and
+              </me>,
+              the matrix <m>A^{-1}</m> exists precisely when <m>ad-bc\neq 0</m> and then
               <me>
                 A^{-1} = \frac{1}{ad-bc}\left[\begin{array}{cc} d\amp -b\\-c\amp a \end{array} \right]
               </me>.
@@ -174,13 +174,11 @@
     </statement>
   </example>
   <!-- interactive question.  Give matrix, ask for entries, a, d, then b, c, then ad-bc, then [d -b \\ -c a] -->
-   <exercise label="partsof2by2matrix"><title>Identifying Key Parts for a <m>2\times 2</m> Inverse</title>
+   <exercise label="partsof2by2matrix"><title>Identifying Key Parts for an Inverse</title>
     <introduction>
       <p>
-        Recall that the formula for the inverse of <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m> is
-        <me>
-          A^{-1} = \frac{1}{ad-bc}\left[\begin{array}{cc} d\amp -b\\-c\amp a \end{array} \right]
-        </me>.
+        The formula for the inverse of any <m>2\times 2</m> matrix depends on viewing the matrix in the form
+        <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>.
         Let <me>A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}</me>.
       </p>
     </introduction>
@@ -425,6 +423,63 @@
         </choice>
       </choices>
     </task>
+    <task label="partsof2by2matrix-e">>
+      <statement>
+        <p>
+          Which of the matrices below is <m>A^{-1}</m>?
+        </p>
+      </statement>
+      <choices>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>\begin{bmatrix} -2 \amp 1 \\ \frac{3}{2} \amp \frac{-1}{2} \end{bmatrix}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>\begin{bmatrix} 4 \amp -2 \\ -3 \amp 1 \end{bmatrix}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Don't forget to multiply by <m>\frac{1}{ad-bc}</m>.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>\frac{-1}{2}\begin{bmatrix} 4 \amp -2 \\ -3 \amp 1 \end{bmatrix}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct!
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>-2\begin{bmatrix} 4 \amp -2 \\ -3 \amp 1 \end{bmatrix}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Multiply by <m>\frac{1}{ad-bc}</m>, not <m>ad-bc</m>.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </task>
    </exercise>
   <p>
     Let's see another example.
@@ -436,6 +491,11 @@
         <me>
           A = \left[\begin{array}{cc} 3 \amp  2\\-1 \amp  9 \end{array} \right]
         </me>.
+        If <m>A^{-1}</m> exists, use it to solve the linear system
+        <md>
+          <mrow>3x + 2y \amp= 29 </mrow>
+          <mrow>-x + 9y \amp= -29 </mrow>
+        </md>
       </p>
     </statement>
     <solution>
@@ -454,36 +514,115 @@
           A^{-1} = \frac{1}{29}\left[\begin{array}{cc} 9\amp -2\\1\amp 3 \end{array} \right] = \left[\begin{array}{cc}  9/29 \amp  -2/29\\1/29 \amp  3/29 \end{array} \right]
         </me>.
       </p>
+      <p>
+        To solve the system 
+        <md>
+          <mrow>3x + 2y \amp= 29 </mrow>
+          <mrow>-x + 9y \amp= -29 </mrow>
+        </md>,
+        we write 
+        <md>
+          <mrow> \left[\begin{array}{cc} 3 \amp  2\\-1 \amp  9 \end{array} \right] \begin{bmatrix}x \\ y \end{bmatrix} \amp = \begin{bmatrix} 29 \\ -29 \end{bmatrix} \amp \amp \text{rewrite as a matrix equation} </mrow>
+          <mrow> A \begin{bmatrix}x \\ y \end{bmatrix} \amp = \begin{bmatrix} 29 \\ -29 \end{bmatrix} \amp \amp \text{the matrix of coefficients is }A </mrow>
+          <mrow> A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -29 \end{bmatrix} \amp \amp \text{multiply on the left by }A^{-1}</mrow>
+          <mrow> \begin{bmatrix}x \\ y \end{bmatrix} \amp = \left[\begin{array}{cc}  9/29 \amp  -2/29\\1/29 \amp  3/29 \end{array} \right]\begin{bmatrix} 29 \\ -29 \end{bmatrix} \amp \amp \text{use what we calculated for } A^{-1} </mrow>
+          <mrow> \begin{bmatrix}x \\ y \end{bmatrix} \amp = \begin{bmatrix} 11 \\ -2 \end{bmatrix} \amp \amp \text{multiply the matrices together}</mrow>
+        </md>.
+        We check that
+        <md>
+          <mrow>3\cdot 11 + 2(-2) \amp= 29 </mrow>
+          <mrow>-11 + 9(-2) \amp= -29 </mrow>
+        </md>
+        and see that <m>x=11</m>, <m>y=-2</m> is indeed a solution to the given linear system.
+      </p>
     </solution>
   </example>
-  <!-- another example for solving a system, comparing it to the rref method -->
       
   
       
     <reading-questions xml:id="rqs-matrixinverse2vars">
-      <exercise label="rq-matrixinverse2vars-questions"><title>Reflection</title>
+
+      <exercise label="rq-matrixinv2-invertornot"><title>Invertible or Not?</title>
         <statement>
           <p>
-            Enter a response to both of the following tasks:
-            <ol>
-              <li>
-                <p>
-                  Ask a question about the material, either about something you're not sure you fully understand, 
-                  or a <q>what if</q> question.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Give a percentage from 0 to 100 that reflects how confident you are with the material you 
-                  just read about, and give one sentence as to why you feel that way.  0 means you didn't 
-                  actually do the reading and 100 means that everything makes sense so far and you think you are 
-                  completely ready to engage with the material more deeply.  
-                </p>
-              </li>
-            </ol>
+            Match the correct matrices and properties.
           </p>
         </statement>
-        <response/>
+        <cardsort>
+          <match>
+            <premise order="5"><m>\begin{bmatrix} 2 \amp -1 \\ 0 \amp 1 \end{bmatrix}</m></premise>
+            <premise order="2"><m>\begin{bmatrix} 3 \amp 1 \\ 1 \amp 3 \end{bmatrix}</m></premise>
+            <response>Invertible</response>
+          </match>
+          <match>
+            <premise order="3"><m>\begin{bmatrix} 3 \amp 1 \\ 0 \amp 0 \end{bmatrix}</m></premise>
+            <premise order="4"><m>\begin{bmatrix} 3 \amp 1 \\ 6 \amp 2 \end{bmatrix}</m></premise>
+            <premise order="6">A matrix <m>A</m> such that <m>AB=AC</m> when <m>B\neq C</m></premise>
+            <response>Not Invertible</response>
+          </match>
+          <match>
+            <premise order="1"><m>\begin{bmatrix} 3 \amp 1 \amp 6 \\ 0 \amp 1 \amp 4 \\  -2 \amp 1 \amp 0\end{bmatrix}</m></premise>
+            <response>Can't Tell (Yet)</response>
+          </match> 
+        </cardsort> 
+      </exercise>
+
+      <exercise label="rq-matrixinv2-questions-poll"><title>Reflection</title>
+        <task label="rq-matrixinv2-confidencepoll-task">
+          <query label="rq-matrixinv2-confidencepoll" visibility="instructor">
+            <statement>
+              <p>
+                How confident do you feel with the material you just read about?
+              </p>
+            </statement>
+            <choices>
+              <choice>
+                <statement>
+                  <p>
+                    Not at all confident or didn't do the reading.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Not very confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Somewhat confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Mostly confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Confident so far and ready to engage more deeply.
+                  </p>
+                </statement>
+              </choice>
+            </choices>
+          </query>
+          </task>
+          <task label="rq-matrixinv2-confidenceresponse">
+            <statement>
+              <p>
+                Ask a question about the material.  What additional information do you think
+                someone would need to become more confident in their understanding?
+              </p>
+            </statement>
+            <response/>
+          </task>
       </exercise>
     </reading-questions>
 
@@ -519,7 +658,7 @@
   
 
 
-  <!-- <xi:include href="interactive-exercises/ww-matrixinverse2vars.ptx" /> -->
+  <xi:include href="interactive-exercises/ww-matrixinverse2vars.ptx" />
 
   <xi:include href="noninteractive-exercises/exer-matrixinverse2vars.ptx" />
 
