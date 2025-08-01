@@ -519,30 +519,63 @@
       <response />
     </exercise>
 
-    <exercise label="rq-matrices-questions"><title>Reflection</title>
-      <statement>
-        <p>
-          Enter a response to both of the following tasks:
-          <ol>
-            <li>
+    <exercise label="rq-matrices-elim-questions-poll"><title>Reflection</title>
+        <task label="rq-matrices-elim-confidencepoll-task">
+          <query label="rq-matrices-elim-confidencepoll" visibility="instructor">
+            <statement>
               <p>
-                Ask a question about the material, either about something you're not sure you fully understand, 
-          or a <q>what if</q> question.
+                How confident do you feel with the material you just read about?
               </p>
-            </li>
-            <li>
+            </statement>
+            <choices>
+              <choice>
+                <statement>
+                  <p>
+                    Not at all confident or didn't do the reading.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Not very confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Somewhat confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Mostly confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Confident so far and ready to engage more deeply.
+                  </p>
+                </statement>
+              </choice>
+            </choices>
+          </query>
+          </task>
+          <task label="rq-matrices-elim-confidenceresponse">
+            <statement>
               <p>
-                Give a percentage from 0 to 100 that reflects how confident you are with the material you 
-                just read about, and give one sentence as to why you feel that way.  0 means you didn't 
-                actually do the reading and 100 means that everything makes sense so far and you think you are 
-                completely ready to engage with the material more deeply.  
+                Ask a question about the material.  What additional information do you think
+                someone would need to become more confident in their understanding?
               </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <response />
-    </exercise>
+            </statement>
+            <response/>
+          </task>
+      </exercise>
   </reading-questions>
 
   </subsection>

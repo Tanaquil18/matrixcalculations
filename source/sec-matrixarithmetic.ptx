@@ -469,29 +469,62 @@
       
         
       </exercise>
-      <exercise label="rq-matrixarithmetic-questions"><title>Reflection</title>
-        <statement>
-          <p>
-            Enter a response to both of the following tasks:
-            <ol>
-              <li>
-                <p>
-                  Ask a question about the material, either about something you're not sure you fully understand, 
-                  or a <q>what if</q> question.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Give a percentage from 0 to 100 that reflects how confident you are with the material you 
-                  just read about, and give one sentence as to why you feel that way.  0 means you didn't 
-                  actually do the reading and 100 means that everything makes sense so far and you think you are 
-                  completely ready to engage with the material more deeply.  
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <response/>
+      <exercise label="rq-matrixarith-questions-poll"><title>Reflection</title>
+        <task label="rq-matrixarith-confidencepoll-task">
+          <query label="rq-matrixarith-confidencepoll" visibility="instructor">
+            <statement>
+              <p>
+                How confident do you feel with the material you just read about?
+              </p>
+            </statement>
+            <choices>
+              <choice>
+                <statement>
+                  <p>
+                    Not at all confident or didn't do the reading.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Not very confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Somewhat confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Mostly confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Confident so far and ready to engage more deeply.
+                  </p>
+                </statement>
+              </choice>
+            </choices>
+          </query>
+          </task>
+          <task label="rq-matrixarith-confidenceresponse">
+            <statement>
+              <p>
+                Ask a question about the material.  What additional information do you think
+                someone would need to become more confident in their understanding?
+              </p>
+            </statement>
+            <response/>
+          </task>
       </exercise>
     </reading-questions>
 
