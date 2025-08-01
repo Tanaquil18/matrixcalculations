@@ -1,0 +1,76 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T19:39:10Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.1.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserMultiAnswer.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a = 1;
+$b = 1;
+$multians = MultiAnswer($a, $b)->with(
+  singleResult => 0,
+  checker => sub {
+    my ($correct, $student, $self) = @_;
+    my ($astu, $bstu) = @{$student};
+    my ($acor, $bcor) = @{$correct};
+    if ($astu == $bstu && $astu == 2) {
+      return [1,1];
+    } else {
+      return [0,0];
+    }
+  }
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Enter two numbers that are equal, and the first one must be a 2: [_]{$multians}{5} [` = `] [_]{$multians}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

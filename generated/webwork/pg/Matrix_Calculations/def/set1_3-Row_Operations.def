@@ -1,0 +1,27 @@
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/1_3-Row_Operations.pg
+screenHeaderFile  = Matrix_Calculations/header/1_3-Row_Operations.pg
+description       = Row Operations
+problemListV2
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/1_3_1-Some_row_operations.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/1_3_2-A_sequence_of_row_operations.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/1_3_3-Identify_the_row_operation_performed.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/1_3_4-Identify_the_row_operation_performed.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/1_3_5-Identify_the_row_operation_performed.pg
+problem_id = 
+problem_end

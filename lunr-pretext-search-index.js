@@ -2536,7 +2536,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Matrix Multiplication",
-  "body": " Matrix Multiplication   Last section, we learned how to add and subtract matrices of the same size and how to multiply a matrix of any size by a number. In this section, we learn how to multiply two matrices together when their sizes allow for multiplication.   Prepare  Matrices of the same size are added by adding corresponding entries together, but we do not multiply matrices by multiplying corresponding entries together. This is confusing at first, but there are very good reasons for defining matrix multiplication differently. Unfortunately, most of those reasons do not become understandable until much, much later.  To start, two matrices can be multiplied together only if the number of columns in the first matrix equals the number of rows in the second matrix . This means that a matrix can be multiplied by a matrix, or a matrix, or a or etc. matrix, but a matrix cannot be multiplied by another matrix.  That's already pretty surprising, so let's check our understanding.    Define matrices , , and by      Can matrix be multiplied by matrix ? In other words, is defined?      Yes    No, because the first matrix, , has columns, but the second matrix, , does not have rows.      No    Correct! The first matrix, , has columns, but the second matrix, , has rows.        Can matrix be multiplied by matrix ? In other words, is defined?      Yes    Correct! The first matrix, , has columns, and the second matrix, , has rows.      No    The first matrix, , has columns, and the second matrix, , has rows. These are equal.        Can matrix be multiplied by matrix ? In other words, is defined?      Yes    No, because the first matrix, , has columns, but the second matrix, , does not have rows.      No    Correct! The first matrix, , has columns, but the second matrix, , has rows.        Consider the two statements below.    is defined.     is defined.   Which of the following choices is correct?      Both statements are true.     is the same as . The first matrix, , has columns, but the second matrix, , does not have rows.      1. is true but 2. is false     is the same as . The first matrix, , has columns, but the second matrix, , does not have rows.      1. is false and 2. is true    Correct! Any square matrix can be multiplied by itself, since the number of columns equals the number of rows.      Both statements are false.    Any square matrix can be multiplied by itself, since the number of columns equals the number of rows.       To begin to understand why the number of columns of the first matrix must equal the number of rows of the second matrix, we demonstrate how to multiply a matrix by a matrix.   Multiplying on the right by a column matrix   Suppose we have the matrices and below: . Their product is defined by multiplying the first column of by the first number in , and multiplying the second column of by the second number in , and adding the results.   If we look at the first entry, we see it came from , and we note that the first row of is . Looking at the second entry of we have , and the second row of is . The third entry of is , and the third row of is .  This means that we can view matrix multiplication entry-wise as multiplying the numbers in a row of the first matrix by the numbers in a column of the second matrix and adding them up.    Note that in the matrix has two columns and so we needed to contain two numbers in its column, which means has two rows. On the other hand, since has three rows, the result of multiplying a column of by a number still has three rows, and adding matrices keeps the size the same, which is why the product has three rows.  This generalizes to when the second matrix of the product has more columns than . The product is defined when is an matrix and is an matrix, and the matrix will have size . Let's see this in action in an example.  Matrix Multiplication, More than One Column   Let's calculate .   Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . Finishing the first row with , we use the first row of the first matrix and the third column of the second matrix and obtain . So far we have .  To compute the second row, we use the second row of the first matrix with the first, then second, and finally third columns of the second matrix. We calculate . Putting it all together, we have .    Let's check to see that we understand how to compute the entries of a product of two matrices.   Entries in Matrix Multiplication   Match each entry of a matrix product to which things need to be multiplied together and added up, if applicable.       first row of  second row of  third row of  first column of  second column of  third column of  first entry of  first entry of      Another Matrix Multiplication   Calculate .    Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . So far we have .  To compute , we use the second row of the first matrix with the first column of the second matrix , and calculate . To compute , we use the second row of the first matrix with the second column of the second matrix , and calculate .  Putting it all together, we have .     Matrix multiplication is a lot more complicated than addition or multiplication by a number, but it turns out to be very useful and connected to solving linear systems.    Sizes of Matrix Products   Define matrices , , and by Matrix the matrix products to their correct sizes.        Product is not defined       Addition versus Multiplication   Match the correct statements and methods.     Add corresponding entries              Matrices can't be added because the number of rows of the first does not equal the number of columns of the second.  Matrices can't be multiplied because they aren't the same size.  Multiply corresponding entries      Reflection     How confident do you feel with the material you just read about?      Not at all confident or didn't do the reading.      Not very confident.      Somewhat confident.      Mostly confident.      Confident so far and ready to engage more deeply.         If you're not fully confident, what additional information would you need to become more confident? What is confusing you?  If you are confident, ask a what if? or extension question.         Participate     Be able to perform matrix multiplication when it is possible.    Explore ways in which matrix multiplication acts like multiplication of numbers, and ways in which matrix multiplication is different.      Is Matrix Multiplication Commutative in General?   Consider the matrices .     Is defined, and if so, what size is it?           Is defined, and if so, what size is it?           We are used to multiplication of numbers being commutative , that is, that the order in which we multiply numbers together does not matter, for all numbers and . What do your answers above mean for the commutativity of matrix multiplication in general?    In general, matrix multiplication is not commutative, that is, it is not usually true that .     Diagonal Matrices and the Identity Matrix   Consider the matrices .     Calculate and .     ,       Examine the rows of and the rows of . What do you notice about the diagonal entries of and the effect of multiplying by on the left?    The corresponding row is multiplied by the number on the diagonal.      Examine the columns of and the columns of . What do you notice about the diagonal entries of and the effect of multiplying by on the right?    The corresponding column is multiplied by the number on the diagonal.      The number is called the multiplicative identity because multiplying any number by equals the same number you started with, . Given an matrix , what is the identity matrix , that is, the matrix such that multiplying on both the left and the right leaves unchanged, ?    A diagonal matrix of size with every diagonal entry equal to .       Properties of Zero and Cancellation   Define      With numbers, we know that if , then either or .  Compute . With matrices, if , is it necessarily true that either or ?     while neither nor equalled the zero matrix.      When we are dealing with numbers, we know that if and , then .  Compute both and . With matrices, if and , is it necessarily true that ?     Is Matrix Multiplication Associative? Distributive?   Consider the matrices . Here is a sage cell to perform (or check) the required computations.      Compute and then , and record your answers.      Compute and then and record your answers.      What does this suggest about the associativity of matrix multiplication?    Matrix multiplication is associative (when matrices are of the appropriate sizes).      Compute and then and record your answers.      Compute , and then (recall you computed in ).      What does this suggest about the distributive property of matrix multiplication?    Matrix multiplication is distributive (when matrices are of the appropriate sizes).          Summary     Matrix multiplication can be performed only when the number of columns in the first matrix equals the number of rows in the second matrix.    If matrix multiplication can be performed, the entries come from multiplying rows of the first matrix by columns of the second matrix. We multiply the corresponding numbers and add them up to get one entry of the product.    Some properties of multiplication of numbers also hold for multiplication of matrices, and some don't. Perhaps the most surprising or important of these properties is that matrix multiplication is not commutative in general.      Practice  Properties of Matrix Multiplication    Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)    If A is a square matrix such that equals the 0 matrix, then A must equal the 0 matrix.    If A has size and B has size , then AB has size .    If A has size and B has size , then the 3rd row, 2nd column entry of AB is obtained by multiplying the 3rd column of A by the 2nd row of B.          Matrix Multiplication Commutativity    Give an example of two matrices and such that .            More Commutativity    Give an example of two matrices and , neither of which is the zero matrix or the identity matrix, such that .            Multiplying Matrices   Many programming languages, including Python and Sage, use a list of lists to enter matrices. We use that notation in this problem instead of the usual array answer box notation to avoid giving away information about the size of the matrix or whether such a matrix exists at all.     Let   If possible, compute the following. If an answer does not exist, enter DNE .                      More Multiplying Matrices    Determine the value(s) of such that   =  Note: If there is more than one value separate them by commas.              Additional Practice    We explore whether or not .     Let and let . Compute .           Find by using your answer from the first part.           Compute .           Are the results from the second and third parts the same?    No.      Carefully expand the expression and show why this is not equal to .     .       In the following exercises, matrices and are defined. Give the dimensions of and . If the dimensions properly match, give the dimensions of and . Find the products and , if possible.                                            is not possible.               is not possible.            is not possible.                                                                              is not possible.               is not possible.                                                                   In the following exercises, a diagonal matrix and a matrix are given. Find the products and , where possible.                                                                                                        \\        Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;      "
+  "body": " Matrix Multiplication   Last section, we learned how to add and subtract matrices of the same size and how to multiply a matrix of any size by a number. In this section, we learn how to multiply two matrices together when their sizes allow for multiplication.   Prepare  Matrices of the same size are added by adding corresponding entries together, but we do not multiply matrices by multiplying corresponding entries together. This is confusing at first, but there are very good reasons for defining matrix multiplication differently. Unfortunately, most of those reasons do not become understandable until much, much later.  To start, two matrices can be multiplied together only if the number of columns in the first matrix equals the number of rows in the second matrix . This means that a matrix can be multiplied by a matrix, or a matrix, or a or etc. matrix, but a matrix cannot be multiplied by another matrix.  That's already pretty surprising, so let's check our understanding.    Define matrices , , and by      Can matrix be multiplied by matrix ? In other words, is defined?      Yes    No, because the first matrix, , has columns, but the second matrix, , does not have rows.      No    Correct! The first matrix, , has columns, but the second matrix, , has rows.        Can matrix be multiplied by matrix ? In other words, is defined?      Yes    Correct! The first matrix, , has columns, and the second matrix, , has rows.      No    The first matrix, , has columns, and the second matrix, , has rows. These are equal.        Can matrix be multiplied by matrix ? In other words, is defined?      Yes    No, because the first matrix, , has columns, but the second matrix, , does not have rows.      No    Correct! The first matrix, , has columns, but the second matrix, , has rows.        Consider the two statements below.    is defined.     is defined.   Which of the following choices is correct?      Both statements are true.     is the same as . The first matrix, , has columns, but the second matrix, , does not have rows.      1. is true but 2. is false     is the same as . The first matrix, , has columns, but the second matrix, , does not have rows.      1. is false and 2. is true    Correct! Any square matrix can be multiplied by itself, since the number of columns equals the number of rows.      Both statements are false.    Any square matrix can be multiplied by itself, since the number of columns equals the number of rows.       To begin to understand why the number of columns of the first matrix must equal the number of rows of the second matrix, we demonstrate how to multiply a matrix by a matrix.   Multiplying on the right by a column matrix   Suppose we have the matrices and below: . Their product is defined by multiplying the first column of by the first number in , and multiplying the second column of by the second number in , and adding the results.   If we look at the first entry, we see it came from , and we note that the first row of is . Looking at the second entry of we have , and the second row of is . The third entry of is , and the third row of is .  This means that we can view matrix multiplication entry-wise as multiplying the numbers in a row of the first matrix by the numbers in a column of the second matrix and adding them up.    Note that in the matrix has two columns and so we needed to contain two numbers in its column, which means has two rows. On the other hand, since has three rows, the result of multiplying a column of by a number still has three rows, and adding matrices keeps the size the same, which is why the product has three rows.  This generalizes to when the second matrix of the product has more columns than . The product is defined when is an matrix and is an matrix, and the matrix will have size . Let's see this in action in an example.  Matrix Multiplication, More than One Column   Let's calculate .   Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . Finishing the first row with , we use the first row of the first matrix and the third column of the second matrix and obtain . So far we have .  To compute the second row, we use the second row of the first matrix with the first, then second, and finally third columns of the second matrix. We calculate . Putting it all together, we have .    Let's check to see that we understand how to compute the entries of a product of two matrices.   Entries in Matrix Multiplication   Match each entry of a matrix product to which things need to be multiplied together and added up, if applicable.       first row of  second row of  third row of  first column of  second column of  third column of  first entry of  first entry of      Another Matrix Multiplication   Calculate .    Since the first matrix has columns and the second matrix has rows, this multiplication can be performed. The product will be a matrix because the first matrix has rows and the second matrix has columns.  We form a matrix , and we will now calculate the value of each of the entries.  The entry is in the first row and first column, so we use the first row of the first matrix and the first column of the second matrix , multiply corresponding number entries and add them up. Thus . We now know that the product looks like .  Moving to the next entry to the right , we still use the first row of the first matrix , now with the second column of the second matrix , giving us . So far we have .  To compute , we use the second row of the first matrix with the first column of the second matrix , and calculate . To compute , we use the second row of the first matrix with the second column of the second matrix , and calculate .  Putting it all together, we have .     Matrix multiplication is a lot more complicated than addition or multiplication by a number, but it turns out to be very useful and connected to solving linear systems.    Sizes of Matrix Products   Define matrices , , and by Matrix the matrix products to their correct sizes.        Product is not defined       Addition versus Multiplication   Match the correct statements and methods.     Add corresponding entries              Matrices can't be added because the number of rows of the first does not equal the number of columns of the second.  Matrices can't be multiplied because they aren't the same size.  Multiply corresponding entries      Reflection     How confident do you feel with the material you just read about?      Not at all confident or didn't do the reading.      Not very confident.      Somewhat confident.      Mostly confident.      Confident so far and ready to engage more deeply.         If you're not fully confident, what additional information would you need to become more confident? What is confusing you?  If you are confident, ask a what if? or extension question.         Participate     Be able to perform matrix multiplication when it is possible.    Explore ways in which matrix multiplication acts like multiplication of numbers, and ways in which matrix multiplication is different.      Is Matrix Multiplication Commutative in General?   Consider the matrices .     Is defined, and if so, what size is it?           Is defined, and if so, what size is it?           We are used to multiplication of numbers being commutative , that is, that the order in which we multiply numbers together does not matter, for all numbers and . What do your answers above mean for the commutativity of matrix multiplication in general?    In general, matrix multiplication is not commutative, that is, it is not usually true that .     Diagonal Matrices and the Identity Matrix   Consider the matrices .     Calculate and .     ,       Examine the rows of and the rows of . What do you notice about the diagonal entries of and the effect of multiplying by on the left?    The corresponding row is multiplied by the number on the diagonal.      Examine the columns of and the columns of . What do you notice about the diagonal entries of and the effect of multiplying by on the right?    The corresponding column is multiplied by the number on the diagonal.      The number is called the multiplicative identity because multiplying any number by equals the same number you started with, . Given an matrix , what is the identity matrix , that is, the matrix such that multiplying on both the left and the right leaves unchanged, ?    A diagonal matrix of size with every diagonal entry equal to .       Properties of Zero and Cancellation   Define      With numbers, we know that if , then either or .  Compute . With matrices, if , is it necessarily true that either or ?     while neither nor equalled the zero matrix.      When we are dealing with numbers, we know that if and , then .  Compute both and . With matrices, if and , is it necessarily true that ?     Is Matrix Multiplication Associative? Distributive?   Consider the matrices . Here is a sage cell to perform (or check) the required computations.      Compute and then , and record your answers.      Compute and then and record your answers.      What does this suggest about the associativity of matrix multiplication?    Matrix multiplication is associative (when matrices are of the appropriate sizes).      Compute and then and record your answers.      Compute , and then (recall you computed in Part ).      What does this suggest about the distributive property of matrix multiplication?    Matrix multiplication is distributive (when matrices are of the appropriate sizes).          Summary     Matrix multiplication can be performed only when the number of columns in the first matrix equals the number of rows in the second matrix.    If matrix multiplication can be performed, the entries come from multiplying rows of the first matrix by columns of the second matrix. We multiply the corresponding numbers and add them up to get one entry of the product.    Some properties of multiplication of numbers also hold for multiplication of matrices, and some don't. Perhaps the most surprising or important of these properties is that matrix multiplication is not commutative in general.      Practice  Properties of Matrix Multiplication    Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)    If A is a square matrix such that equals the 0 matrix, then A must equal the 0 matrix.    If A has size and B has size , then AB has size .    If A has size and B has size , then the 3rd row, 2nd column entry of AB is obtained by multiplying the 3rd column of A by the 2nd row of B.          Matrix Multiplication Commutativity    Give an example of two matrices and such that .            More Commutativity    Give an example of two matrices and , neither of which is the zero matrix or the identity matrix, such that .            Multiplying Matrices   Many programming languages, including Python and Sage, use a list of lists to enter matrices. We use that notation in this problem instead of the usual array answer box notation to avoid giving away information about the size of the matrix or whether such a matrix exists at all.     Let   If possible, compute the following. If an answer does not exist, enter DNE .                      More Multiplying Matrices    Determine the value(s) of such that   =  Note: If there is more than one value separate them by commas.              Additional Practice    We explore whether or not .     Let and let . Compute .           Find by using your answer from the first part.           Compute .           Are the results from the second and third parts the same?    No.      Carefully expand the expression and show why this is not equal to .     .       In the following exercises, matrices and are defined. Give the dimensions of and . If the dimensions properly match, give the dimensions of and . Find the products and , if possible.                                            is not possible.               is not possible.            is not possible.                                                                              is not possible.               is not possible.                                                                   In the following exercises, a diagonal matrix and a matrix are given. Find the products and , where possible.                                                                                                        \\        Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;       Let . Find and .     ;      "
 },
 {
   "id": "canmatricesbemultiplied",
@@ -2629,18 +2629,18 @@ var ptx_lunr_docs = [
   "body": "Is Matrix Multiplication Commutative in General?   Consider the matrices .     Is defined, and if so, what size is it?           Is defined, and if so, what size is it?           We are used to multiplication of numbers being commutative , that is, that the order in which we multiply numbers together does not matter, for all numbers and . What do your answers above mean for the commutativity of matrix multiplication in general?    In general, matrix multiplication is not commutative, that is, it is not usually true that .    "
 },
 {
-  "id": "ws-matrixmultiplication-3-2",
+  "id": "identityexercise",
   "level": "2",
-  "url": "sec-matrixmult.html#ws-matrixmultiplication-3-2",
+  "url": "sec-matrixmult.html#identityexercise",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Diagonal Matrices and the Identity Matrix.",
   "body": "Diagonal Matrices and the Identity Matrix   Consider the matrices .     Calculate and .     ,       Examine the rows of and the rows of . What do you notice about the diagonal entries of and the effect of multiplying by on the left?    The corresponding row is multiplied by the number on the diagonal.      Examine the columns of and the columns of . What do you notice about the diagonal entries of and the effect of multiplying by on the right?    The corresponding column is multiplied by the number on the diagonal.      The number is called the multiplicative identity because multiplying any number by equals the same number you started with, . Given an matrix , what is the identity matrix , that is, the matrix such that multiplying on both the left and the right leaves unchanged, ?    A diagonal matrix of size with every diagonal entry equal to .    "
 },
 {
-  "id": "ws-matrixmultiplication-4-1",
+  "id": "exercisenoninvertibleA",
   "level": "2",
-  "url": "sec-matrixmult.html#ws-matrixmultiplication-4-1",
+  "url": "sec-matrixmult.html#exercisenoninvertibleA",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "Properties of Zero and Cancellation.",
@@ -2653,7 +2653,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "Is Matrix Multiplication Associative? Distributive?",
-  "body": "Is Matrix Multiplication Associative? Distributive?   Consider the matrices . Here is a sage cell to perform (or check) the required computations.      Compute and then , and record your answers.      Compute and then and record your answers.      What does this suggest about the associativity of matrix multiplication?    Matrix multiplication is associative (when matrices are of the appropriate sizes).      Compute and then and record your answers.      Compute , and then (recall you computed in ).      What does this suggest about the distributive property of matrix multiplication?    Matrix multiplication is distributive (when matrices are of the appropriate sizes).    "
+  "body": "Is Matrix Multiplication Associative? Distributive?   Consider the matrices . Here is a sage cell to perform (or check) the required computations.      Compute and then , and record your answers.      Compute and then and record your answers.      What does this suggest about the associativity of matrix multiplication?    Matrix multiplication is associative (when matrices are of the appropriate sizes).      Compute and then and record your answers.      Compute , and then (recall you computed in Part ).      What does this suggest about the distributive property of matrix multiplication?    Matrix multiplication is distributive (when matrices are of the appropriate sizes).    "
 },
 {
   "id": "ww-matrixmult1",
@@ -2944,265 +2944,220 @@ var ptx_lunr_docs = [
   "body": "  Let . Find and .     ;    "
 },
 {
-  "id": "sec-testing-things",
+  "id": "sec-matrixinverse2vars",
   "level": "1",
-  "url": "sec-testing-things.html",
+  "url": "sec-matrixinverse2vars.html",
   "type": "Section",
-  "number": "3.1",
-  "title": "Testing things",
-  "body": " Testing things      Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed. The time, (measured in hours), it takes to drive 50 miles depends on the constant rate, (measured in miles per hour) at which you are driving. Since   it follows that   and thus we know that  For instance, observe that so it takes of an hour to drive miles at miles per hour, and the point lies on the graph of    Give three points which lie on the graph of separated by commas.  Which of the following statements and explanations is true about the graph of    The function is concave up because as speed goes up, travel time goes up.    The function is concave down because as speed goes up, travel time goes down.    The function is increasing because as speed goes up, travel time goes up.    The function is decreasing because as speed goes up, travel time goes down.                 What is the value of Include units on your answer.  Which of the following is the best explanation of the meaning of this value in context?    is the speed, mph.    is the distance, miles.    is the time it takes to travel miles at a speed of mph.    is how fast the travel time is changing when the car is traveling at a speed of mph.                 Recall the average rate of change of a function on an interval as stated in [cross-reference to target(s) \"def-1-3-aroc\" missing or not unique] , Determine the average rate of on the interval  Include units on your answer.          The sign of is   positive   negative   This sign makes sense because    is increasing from to mph.    is decreasing from to mph.    is concave up from to mph.    is concave down from to mph.                 Which of the following explains the meaning of the value of    is the amount of hours has changed from to mph.    is the change in speed from to mph.    is the average change in hours the trip takes when the speed changes from to mph.                 Optional Lab   Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra     Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                    Play with other examples until you get a feel for these functions.      demonstrating new domains and ranges improvements      f(x)=-x^2\/2 + 2  g(x)=exp(x\/2)     b = intersect((g, tan), -1)   c = intersect(f, -1)        demonstrating new domains and ranges improvements    a=1  s(x) = x^2  f(x) = exp(x^2\/2-3*x)  g(x) = 1\/x  h(x) = sqrt(2-x)  r(x) = 1\/((x-2)*(x+2))               demonstrating new domains and ranges improvements    a=1  s(x) = x^2  f(x) = exp(x^2\/2-3*x)  g(x) = 1\/x  h(x) = sqrt(2-x)  r(x) = 1\/((x-2)*(x+2))                       a number line     labels=['0','1','2','3','4','5','6','7','8','9','10']      ${labels[k]}          Testing Interactive and Response together   Some text.   Solutions to the equation       Testing tabs and prefigure   testing the intro     With annotations   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                         With annotations and dimensions changed to (200,200).   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                         Without annotations   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                  Participate     Identify matrices in reduced row echelon form and row echelon form    Use Gauss-Jordan elimination to put matrices into reduced row echelon form       Why rref?   Write the associated system of linear equations for each of the matrices below.          Which system of equations would you prefer to be asked to solve on an exam?                2. Gauss-Jordan algorithm   Use Gauss-Jordan elimination to put each of the matrices below into reduced row echelon form.                                          3. Form of matrices   For each of the following matrices, say if it is in reduced row echelon form. If it isn't, say whether it is in row echelon form or if it's in neither form.          rref           rref           ref           neither           neither           neither           rref           rref       Write down the associated linear system of equations for part , part and part . What observations and questions do you have about these systems?                    Non 1-1 Matching Problem, Function Types  matching function types   Sort the following functions into their correct categories.    Review Active Prelude to Calculus url.     Linear       Quadratic       Exponential     Power        How a matrix is indexed, old markup   In the matrix what is ?        The entry in the second row and third column is 6.      The row number comes first, then the column number.      Incorrect. If you're stuck, try reviewing the definition of matrix .        How a matrix is indexed, new markup   In the matrix what is ?         The number in the second row and third column is .       You gave the entry in the third row and second column, but is the number in the second row and third column.      Incorrect. If you're stuck, try reviewing the definition of matrix .         Solve a fruit puzzle, image child of paragraph     an algebra puzzle involving food, claiming most people can't solve it    The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.        Solve a fruit puzzle, image child of figure     an algebra puzzle involving food, claiming most people can't solve it    The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.        Solve a fruit puzzle, image child of statement    an algebra puzzle involving food, claiming most people can't solve it   The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.       MultiAnswer, and the logical and   This problem uses a MultiAnswer, where multiple blanks are needed for the right answer. Since the checking of these problems often involves logic, we also demonstrate how to replace the perl and in the pretext source, since ampersands are reserved characters.     Enter two numbers that are equal, and the first one must be a 2:                    "
+  "number": "2.3",
+  "title": "Matrix Inverses and Two Variable Systems",
+  "body": " Matrix Inverses and Two Variable Systems   We have been learning how to perform arithmetic with matrices, including matrix multiplication. Now we learn how matrix multiplication connects to linear systems and how to solve two variable linear systems using the inverse of a matrix.    Prepare  Let's start by seeing how a two-variable linear system can viewed in terms of matrix multiplication.  Consider the linear system . Previously, we would have solved this system by forming an augmented matrix with the coefficients and constants, row reduce, and interpret the solutions from the reduced row echelon form.  However, now that we know about matrix multiplication, let's try something different. Form a matrix from the coefficients, , a column matrix from the variables, , and a column matrix from the constants, .  Notice what we get when we multiply : . Recall that two matrices are equal exactly when they are the same size and their corresponding entries are equal. So the matrix equation is , and setting the first entries equal to each other and the second entries equal to each other gives . But this is precisely the linear system we started with! This result is not an coincidence: we can always rewrite linear systems using matrix multiplication. Let's practice.   Writing linear systems in terms of matrix multiplication raises a new question: how can we solve a linear system that is written in the form ?  We take our inspiration from the usual algebra of numbers. If and are numbers and , then we solve the equation by dividing both sides by and get . We do this precisely because , so writing out more details would give us . The key feature is that is the thing we multiply by to get ; to solve a linear system , we'll want to do something analogous for matrices. We sometimes call the multiplicative inverse of , and we know that if written as an exponent. We will use this same language and notation for matrices as well.  In , we learned about the identity matrix that acts like the number for square matrices. For example, the identity matrix of size is , and then if is any matrix, then . Similarly for the identity matrix of size , which is and any matrix.  If we had a matrix such that , then by analogy to our algebra example above it seems like we might be able to solve the linear system for by multiplying both sides of the equation by . That is, . It seems that we might be able to solve linear systems using matrix multiplication and inverses instead of row reducing.  Of course, there are some differences between matrix multiplication and number multiplication, as we explored throughout Matrix Multiplication Participate , and one consequence is that we aren't guaranteed that a matrix acting like exists for every square matrix . For the matrices that arise from two-variable linear systems, it is straightforward to tell when exists.  Invertible Matrices and the Inverse of A matrix inverse  inverse definition   Suppose that and are matrices such that . Then:    is invertible .     is the multiplicative inverse , or just inverse , of , denoted by .    Furthermore, if is a matrix , the matrix exists precisely when and then .       We can't divide by , so if , we don't have an inverse.  A Matrix Without An Inverse   Recall , where . Here, and so doesn't have an inverse.  This is why multiplying by in that exercise didn't act like multiplying by a number does; every nonzero number has an inverse .     Identifying Key Parts for an Inverse   The formula for the inverse of any matrix depends on viewing the matrix in the form . Let .   >  Identify the values of and for the matrix .       and     For a matrix described by , the entry is the entry in the top left and is the entry in the bottom right.       and     Correct!       and     For a matrix described by , the entry is the entry in the top left and is the entry in the bottom right.       and     For a matrix described by , the entry is the entry in the top left and is the entry in the bottom right.      >  Identify the values of and for the matrix .       and     For a matrix described by , the entry is the entry in the top right and is the entry in the bottom left.       and     For a matrix described by , the entry is the entry in the top right and is the entry in the bottom left.       and     Correct!       and     Don't multiply them by like in the inverse, just identify what and are to start with.      >  What is the value of for the matrix ?           Correct! , , , and , so             , , , and , so             , , , and , so             , , , and , so       >  Which matrix below is for the matrix ?           To calculate , you swap entries and and multiply entries and by negative 1.           To calculate , you swap entries and and multiply entries and by negative 1.           Correct!           To calculate , you swap entries and and multiply entries and by negative 1.      >  Which of the matrices below is ?           Correct!           Don't forget to multiply by .           Correct!           Multiply by , not .       Let's see another example.  Using the formula for inverses   Calculate the inverse, if it exists, of . If exists, use it to solve the linear system     Since , we know exists and we calculate   We can leave our answer in this form, or we could multiply it out and get .  To solve the system , we write . We check that and see that , is indeed a solution to the given linear system.     Invertible or Not?   Match the correct matrices and properties.       Invertible      A matrix such that when  Not Invertible     Can't Tell (Yet)     Reflection     How confident do you feel with the material you just read about?      Not at all confident or didn't do the reading.      Not very confident.      Somewhat confident.      Mostly confident.      Confident so far and ready to engage more deeply.         Ask a question about the material. What additional information do you think someone would need to become more confident in their understanding?          Summary     Linear systems can be rewritten in terms of matrix multiplication, .    Some square matrices have multiplicative inverses , denoted , and there is a formula for calculating when is .    We can solve linear systems when is invertible by calculating .      Practice  Is a Matrix Invertible?    Given the matrix  (a) does the inverse of the matrix exist?  Choose   Yes   No   (b) if your answer is yes, write the inverse here.             Multiply to Obtain Identity    Find a matrix such that    .        Condition for Invertibility    The matrix is invertible if and only if  .             Solve Two Systems with the Inverse    Consider the following two systems.  (a)  (b)  (i) Find the inverse of the (common) coefficient matrix of the two systems.              (ii) Find the solutions to the two systems by using the inverse, i.e. by evaluating where represents the right hand side (i.e. for system (a) and for system (b)).  Solution to system (a):  , =  Solution to system (b):  , =                                                Solve a System with the Inverse    Solve the system of equations by converting to a matrix equation and using the inverse of the coefficient matrix.                       Additional Practice    In the following exercises, a matrix is given. Calculate , if it exists.                                                           does not exist.                                            In the following exercises, a coefficient matrix and column matrix are given. Solve the equation .      ,             ,             ,             ,             "
 },
 {
-  "id": "1-5a_Preview_traveltime_as_functionofspeed",
+  "id": "def_inverse",
   "level": "2",
-  "url": "sec-testing-things.html#1-5a_Preview_traveltime_as_functionofspeed",
-  "type": "Exploration",
-  "number": "3.1.1",
-  "title": "",
-  "body": "   Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed. The time, (measured in hours), it takes to drive 50 miles depends on the constant rate, (measured in miles per hour) at which you are driving. Since   it follows that   and thus we know that  For instance, observe that so it takes of an hour to drive miles at miles per hour, and the point lies on the graph of    Give three points which lie on the graph of separated by commas.  Which of the following statements and explanations is true about the graph of    The function is concave up because as speed goes up, travel time goes up.    The function is concave down because as speed goes up, travel time goes down.    The function is increasing because as speed goes up, travel time goes up.    The function is decreasing because as speed goes up, travel time goes down.                 What is the value of Include units on your answer.  Which of the following is the best explanation of the meaning of this value in context?    is the speed, mph.    is the distance, miles.    is the time it takes to travel miles at a speed of mph.    is how fast the travel time is changing when the car is traveling at a speed of mph.                 Recall the average rate of change of a function on an interval as stated in [cross-reference to target(s) \"def-1-3-aroc\" missing or not unique] , Determine the average rate of on the interval  Include units on your answer.          The sign of is   positive   negative   This sign makes sense because    is increasing from to mph.    is decreasing from to mph.    is concave up from to mph.    is concave down from to mph.                 Which of the following explains the meaning of the value of    is the amount of hours has changed from to mph.    is the change in speed from to mph.    is the average change in hours the trip takes when the speed changes from to mph.               "
+  "url": "sec-matrixinverse2vars.html#def_inverse",
+  "type": "Definition",
+  "number": "2.3.1",
+  "title": "Invertible Matrices and the Inverse of A.",
+  "body": "Invertible Matrices and the Inverse of A matrix inverse  inverse definition   Suppose that and are matrices such that . Then:    is invertible .     is the multiplicative inverse , or just inverse , of , denoted by .    Furthermore, if is a matrix , the matrix exists precisely when and then .      "
 },
 {
-  "id": "sec_optionallab-alt2-2",
+  "id": "subsec-matrixinverse2vars-bc-13",
   "level": "2",
-  "url": "sec-testing-things.html#sec_optionallab-alt2-2",
-  "type": "Worksheet Exercise",
-  "number": "3.1.1",
-  "title": "",
-  "body": " Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra   "
+  "url": "sec-matrixinverse2vars.html#subsec-matrixinverse2vars-bc-13",
+  "type": "Example",
+  "number": "2.3.2",
+  "title": "A Matrix Without An Inverse.",
+  "body": "A Matrix Without An Inverse   Recall , where . Here, and so doesn't have an inverse.  This is why multiplying by in that exercise didn't act like multiplying by a number does; every nonzero number has an inverse .   "
 },
 {
-  "id": "sec_optionallab-alt2-3",
+  "id": "partsof2by2matrix",
   "level": "2",
-  "url": "sec-testing-things.html#sec_optionallab-alt2-3",
-  "type": "Worksheet Exercise",
-  "number": "3.1.2",
-  "title": "",
-  "body": " Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.  "
-},
-{
-  "id": "sec_optionallab-alt2-4",
-  "level": "2",
-  "url": "sec-testing-things.html#sec_optionallab-alt2-4",
-  "type": "Worksheet Exercise",
-  "number": "3.1.3",
-  "title": "",
-  "body": " Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                 "
-},
-{
-  "id": "sec_optionallab-alt2-5",
-  "level": "2",
-  "url": "sec-testing-things.html#sec_optionallab-alt2-5",
-  "type": "Worksheet Exercise",
-  "number": "3.1.4",
-  "title": "",
-  "body": "  Play with other examples until you get a feel for these functions.   "
-},
-{
-  "id": "test-response",
-  "level": "2",
-  "url": "sec-testing-things.html#test-response",
+  "url": "sec-matrixinverse2vars.html#partsof2by2matrix",
   "type": "Activity",
-  "number": "3.1.1",
-  "title": "Testing Interactive and Response together.",
-  "body": "Testing Interactive and Response together   Some text.   Solutions to the equation      "
+  "number": "2.3.3",
+  "title": "Identifying Key Parts for an Inverse.",
+  "body": "Identifying Key Parts for an Inverse   The formula for the inverse of any matrix depends on viewing the matrix in the form . Let .   >  Identify the values of and for the matrix .       and     For a matrix described by , the entry is the entry in the top left and is the entry in the bottom right.       and     Correct!       and     For a matrix described by , the entry is the entry in the top left and is the entry in the bottom right.       and     For a matrix described by , the entry is the entry in the top left and is the entry in the bottom right.      >  Identify the values of and for the matrix .       and     For a matrix described by , the entry is the entry in the top right and is the entry in the bottom left.       and     For a matrix described by , the entry is the entry in the top right and is the entry in the bottom left.       and     Correct!       and     Don't multiply them by like in the inverse, just identify what and are to start with.      >  What is the value of for the matrix ?           Correct! , , , and , so             , , , and , so             , , , and , so             , , , and , so       >  Which matrix below is for the matrix ?           To calculate , you swap entries and and multiply entries and by negative 1.           To calculate , you swap entries and and multiply entries and by negative 1.           Correct!           To calculate , you swap entries and and multiply entries and by negative 1.      >  Which of the matrices below is ?           Correct!           Don't forget to multiply by .           Correct!           Multiply by , not .      "
 },
 {
-  "id": "sec-testing-things-9",
+  "id": "ex_inverse_4",
   "level": "2",
-  "url": "sec-testing-things.html#sec-testing-things-9",
-  "type": "Activity",
-  "number": "3.1.3",
-  "title": "Testing tabs and prefigure.",
-  "body": "Testing tabs and prefigure   testing the intro     With annotations   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                         With annotations and dimensions changed to (200,200).   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                         Without annotations   Graph of two lines and their point of intersection    a=1\/3  f(x) = 2-x  g(x) = (15-15*x)\/6                 "
+  "url": "sec-matrixinverse2vars.html#ex_inverse_4",
+  "type": "Example",
+  "number": "2.3.4",
+  "title": "Using the formula for <span class=\"process-math\">\\(2\\times 2\\)<\/span> inverses.",
+  "body": "Using the formula for inverses   Calculate the inverse, if it exists, of . If exists, use it to solve the linear system     Since , we know exists and we calculate   We can leave our answer in this form, or we could multiply it out and get .  To solve the system , we write . We check that and see that , is indeed a solution to the given linear system.   "
 },
 {
-  "id": "ws-rrefa-2",
+  "id": "rq-matrixinv2-invertornot",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-2",
-  "type": "Objectives",
-  "number": "3.1",
-  "title": "",
-  "body": "   Identify matrices in reduced row echelon form and row echelon form    Use Gauss-Jordan elimination to put matrices into reduced row echelon form    "
+  "url": "sec-matrixinverse2vars.html#rq-matrixinv2-invertornot",
+  "type": "Reading Question",
+  "number": "1",
+  "title": "Invertible or Not?",
+  "body": "Invertible or Not?   Match the correct matrices and properties.       Invertible      A matrix such that when  Not Invertible     Can't Tell (Yet)    "
 },
 {
-  "id": "ws-rrefa-3-1",
+  "id": "rq-matrixinv2-questions-poll",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-3-1",
-  "type": "Worksheet Exercise",
-  "number": "3.1.1",
-  "title": "Why rref?",
-  "body": "Why rref?   Write the associated system of linear equations for each of the matrices below.          Which system of equations would you prefer to be asked to solve on an exam?               "
+  "url": "sec-matrixinverse2vars.html#rq-matrixinv2-questions-poll",
+  "type": "Reading Question",
+  "number": "2",
+  "title": "Reflection.",
+  "body": "Reflection     How confident do you feel with the material you just read about?      Not at all confident or didn't do the reading.      Not very confident.      Somewhat confident.      Mostly confident.      Confident so far and ready to engage more deeply.         Ask a question about the material. What additional information do you think someone would need to become more confident in their understanding?     "
 },
 {
-  "id": "ws-rrefa-3-2-3",
+  "id": "ww-matrixinv2by2-1",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-3-2-3",
-  "type": "Worksheet Exercise",
-  "number": "3.1.a",
+  "url": "sec-matrixinverse2vars.html#ww-matrixinv2by2-1",
+  "type": "Exercise",
+  "number": "2.3.1",
+  "title": "Is a Matrix Invertible?",
+  "body": "Is a Matrix Invertible?    Given the matrix  (a) does the inverse of the matrix exist?  Choose   Yes   No   (b) if your answer is yes, write the inverse here.            "
+},
+{
+  "id": "ww-matrixinv2by2-2",
+  "level": "2",
+  "url": "sec-matrixinverse2vars.html#ww-matrixinv2by2-2",
+  "type": "Exercise",
+  "number": "2.3.2",
+  "title": "Multiply to Obtain Identity.",
+  "body": "Multiply to Obtain Identity    Find a matrix such that    .       "
+},
+{
+  "id": "ww-matrixinv2by2-3",
+  "level": "2",
+  "url": "sec-matrixinverse2vars.html#ww-matrixinv2by2-3",
+  "type": "Exercise",
+  "number": "2.3.3",
+  "title": "Condition for Invertibility.",
+  "body": "Condition for Invertibility    The matrix is invertible if and only if  .            "
+},
+{
+  "id": "ww-matrixinv2by2-4",
+  "level": "2",
+  "url": "sec-matrixinverse2vars.html#ww-matrixinv2by2-4",
+  "type": "Exercise",
+  "number": "2.3.4",
+  "title": "Solve Two Systems with the Inverse.",
+  "body": "Solve Two Systems with the Inverse    Consider the following two systems.  (a)  (b)  (i) Find the inverse of the (common) coefficient matrix of the two systems.              (ii) Find the solutions to the two systems by using the inverse, i.e. by evaluating where represents the right hand side (i.e. for system (a) and for system (b)).  Solution to system (a):  , =  Solution to system (b):  , =                                               "
+},
+{
+  "id": "ww-matrixinv2by2-5",
+  "level": "2",
+  "url": "sec-matrixinverse2vars.html#ww-matrixinv2by2-5",
+  "type": "Exercise",
+  "number": "2.3.5",
+  "title": "Solve a System with the Inverse.",
+  "body": "Solve a System with the Inverse    Solve the system of equations by converting to a matrix equation and using the inverse of the coefficient matrix.                     "
+},
+{
+  "id": "exer-matrixinvers2vars-2-2",
+  "level": "2",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-2-2",
+  "type": "Exercise",
+  "number": "1",
   "title": "",
   "body": "           "
 },
 {
-  "id": "ws-rrefa-3-2-4",
+  "id": "exer-matrixinvers2vars-2-3",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-3-2-4",
-  "type": "Worksheet Exercise",
-  "number": "3.1.b",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-2-3",
+  "type": "Exercise",
+  "number": "2",
   "title": "",
   "body": "           "
 },
 {
-  "id": "ws-rrefa-3-2-5",
+  "id": "exer-matrixinvers2vars-2-4",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-3-2-5",
-  "type": "Worksheet Exercise",
-  "number": "3.1.c",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-2-4",
+  "type": "Exercise",
+  "number": "3",
   "title": "",
   "body": "           "
 },
 {
-  "id": "ws-rrefa-4-1-3",
+  "id": "exer-matrixinvers2vars-2-5",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-4-1-3",
-  "type": "Worksheet Exercise",
-  "number": "3.1.a",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-2-5",
+  "type": "Exercise",
+  "number": "4",
   "title": "",
-  "body": "       rref   "
+  "body": "           "
 },
 {
-  "id": "ws-rrefa-4-1-4",
+  "id": "exer-matrixinvers2vars-2-6",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-4-1-4",
-  "type": "Worksheet Exercise",
-  "number": "3.1.b",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-2-6",
+  "type": "Exercise",
+  "number": "5",
   "title": "",
-  "body": "       rref   "
+  "body": "        does not exist.   "
 },
 {
-  "id": "rrefsys1a",
+  "id": "exer-matrixinvers2vars-2-7",
   "level": "2",
-  "url": "sec-testing-things.html#rrefsys1a",
-  "type": "Worksheet Exercise",
-  "number": "3.1.c",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-2-7",
+  "type": "Exercise",
+  "number": "6",
   "title": "",
-  "body": "       ref   "
+  "body": "           "
 },
 {
-  "id": "ws-rrefa-4-1-6",
+  "id": "exer-matrixinvers2vars-2-8",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-4-1-6",
-  "type": "Worksheet Exercise",
-  "number": "3.1.d",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-2-8",
+  "type": "Exercise",
+  "number": "7",
   "title": "",
-  "body": "       neither   "
+  "body": "           "
 },
 {
-  "id": "ws-rrefa-4-1-7",
+  "id": "exer-matrixinvers2vars-2-9",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-4-1-7",
-  "type": "Worksheet Exercise",
-  "number": "3.1.e",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-2-9",
+  "type": "Exercise",
+  "number": "8",
   "title": "",
-  "body": "       neither   "
+  "body": "           "
 },
 {
-  "id": "ws-rrefa-4-1-8",
+  "id": "exer-matrixinvers2vars-3-2",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-4-1-8",
-  "type": "Worksheet Exercise",
-  "number": "3.1.f",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-3-2",
+  "type": "Exercise",
+  "number": "9",
   "title": "",
-  "body": "       neither   "
+  "body": "   ,         "
 },
 {
-  "id": "rrefsys2a",
+  "id": "exer-matrixinvers2vars-3-3",
   "level": "2",
-  "url": "sec-testing-things.html#rrefsys2a",
-  "type": "Worksheet Exercise",
-  "number": "3.1.g",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-3-3",
+  "type": "Exercise",
+  "number": "10",
   "title": "",
-  "body": "       rref   "
+  "body": "   ,         "
 },
 {
-  "id": "rrefsys3a",
+  "id": "exer-matrixinvers2vars-3-4",
   "level": "2",
-  "url": "sec-testing-things.html#rrefsys3a",
-  "type": "Worksheet Exercise",
-  "number": "3.1.h",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-3-4",
+  "type": "Exercise",
+  "number": "11",
   "title": "",
-  "body": "       rref   "
+  "body": "   ,         "
 },
 {
-  "id": "ws-rrefa-4-2",
+  "id": "exer-matrixinvers2vars-3-5",
   "level": "2",
-  "url": "sec-testing-things.html#ws-rrefa-4-2",
-  "type": "Worksheet Exercise",
-  "number": "3.1.4",
+  "url": "sec-matrixinverse2vars.html#exer-matrixinvers2vars-3-5",
+  "type": "Exercise",
+  "number": "12",
   "title": "",
-  "body": "  Write down the associated linear system of equations for part , part and part . What observations and questions do you have about these systems?                "
-},
-{
-  "id": "matching-function-types",
-  "level": "2",
-  "url": "sec-testing-things.html#matching-function-types",
-  "type": "Activity",
-  "number": "3.1.4",
-  "title": "Non 1-1 Matching Problem, Function Types.",
-  "body": " Non 1-1 Matching Problem, Function Types  matching function types   Sort the following functions into their correct categories.    Review Active Prelude to Calculus url.     Linear       Quadratic       Exponential     Power      "
-},
-{
-  "id": "matrix-indices1",
-  "level": "2",
-  "url": "sec-testing-things.html#matrix-indices1",
-  "type": "Activity",
-  "number": "3.1.5",
-  "title": "How a matrix is indexed, old markup.",
-  "body": " How a matrix is indexed, old markup   In the matrix what is ?        The entry in the second row and third column is 6.      The row number comes first, then the column number.      Incorrect. If you're stuck, try reviewing the definition of matrix .      "
-},
-{
-  "id": "matrix-indices2",
-  "level": "2",
-  "url": "sec-testing-things.html#matrix-indices2",
-  "type": "Activity",
-  "number": "3.1.6",
-  "title": "How a matrix is indexed, new markup.",
-  "body": " How a matrix is indexed, new markup   In the matrix what is ?         The number in the second row and third column is .       You gave the entry in the third row and second column, but is the number in the second row and third column.      Incorrect. If you're stuck, try reviewing the definition of matrix .       "
-},
-{
-  "id": "fruit-puzzle1",
-  "level": "2",
-  "url": "sec-testing-things.html#fruit-puzzle1",
-  "type": "Activity",
-  "number": "3.1.7",
-  "title": "Solve a fruit puzzle, image child of paragraph.",
-  "body": " Solve a fruit puzzle, image child of paragraph     an algebra puzzle involving food, claiming most people can't solve it    The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.      "
-},
-{
-  "id": "fruit-puzzle2",
-  "level": "2",
-  "url": "sec-testing-things.html#fruit-puzzle2",
-  "type": "Activity",
-  "number": "3.1.8",
-  "title": "Solve a fruit puzzle, image child of figure.",
-  "body": " Solve a fruit puzzle, image child of figure     an algebra puzzle involving food, claiming most people can't solve it    The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.      "
-},
-{
-  "id": "fruit-puzzle3",
-  "level": "2",
-  "url": "sec-testing-things.html#fruit-puzzle3",
-  "type": "Activity",
-  "number": "3.1.10",
-  "title": "Solve a fruit puzzle, image child of statement.",
-  "body": " Solve a fruit puzzle, image child of statement    an algebra puzzle involving food, claiming most people can't solve it   The image above says that three apples total 18, while an apple plus two bunches of bananas total 14, and a bunch of bananas minus cherries equals 2.  Then it asks a question: how much does cherries plus an apple plus a bunch of bananas equal? The answer is         Each apple is worth 6, each bunch of 4 bananas is worth 4, so each banana is worth 1, and each group of cherries is worth 2. There are only 3 bananas in the question to answer, so 2+6+3=11.       You did the algebra correctly! But this puzzle also contains a visual trick, designed to make people get the question wrong. Earlier on, there are 4 bananas in each bunch of bananas, so each banana is worth 1. But in the question you are asked to answer, the bunch of bananas picture has changed and contains 3 bananas, not 4.      "
-},
-{
-  "id": "testmultianswer",
-  "level": "2",
-  "url": "sec-testing-things.html#testmultianswer",
-  "type": "Activity",
-  "number": "3.1.11",
-  "title": "MultiAnswer, and the logical “and”.",
-  "body": "MultiAnswer, and the logical and   This problem uses a MultiAnswer, where multiple blanks are needed for the right answer. Since the checking of these problems often involves logic, we also demonstrate how to replace the perl and in the pretext source, since ampersands are reserved characters.     Enter two numbers that are equal, and the first one must be a 2:                   "
+  "body": "   ,         "
 },
 {
   "id": "backmatter-2",

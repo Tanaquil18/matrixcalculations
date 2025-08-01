@@ -1,0 +1,27 @@
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/1_5-Consistent_and_Inconsistent_Systems.pg
+screenHeaderFile  = Matrix_Calculations/header/1_5-Consistent_and_Inconsistent_Systems.pg
+description       = Consistent and Inconsistent Systems
+problemListV2
+problem_start
+source_file = Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_RowReduction/problem14.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_RowReduction/problem15.pg
+problem_id = 
+problem_end
+problem_start
+source_file = matrixtheory/consistency_prob4.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119LinearSystems/p10.pg
+problem_id = 
+problem_end

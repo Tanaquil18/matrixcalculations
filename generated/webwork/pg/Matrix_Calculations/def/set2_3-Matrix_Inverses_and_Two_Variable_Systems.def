@@ -1,0 +1,27 @@
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/2_3-Matrix_Inverses_and_Two_Variable_Systems.pg
+screenHeaderFile  = Matrix_Calculations/header/2_3-Matrix_Inverses_and_Two_Variable_Systems.pg
+description       = Matrix Inverses and Two Variable Systems
+problemListV2
+problem_start
+source_file = Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119MatrixAlgebra/p13.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg
+problem_id = 
+problem_end

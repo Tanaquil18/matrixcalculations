@@ -1,0 +1,27 @@
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/1_1-Linear_Equations_and_Substitution.pg
+screenHeaderFile  = Matrix_Calculations/header/1_1-Linear_Equations_and_Substitution.pg
+description       = Linear Equations and Substitution
+problemListV2
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/1_1_1-Find_the_point_of_intersection.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/1_1_2-Two_variable_substitution.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/1_1_3-Marbles_in_a_Jar.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/1_1_4-Substitution_in_a_3variable_system.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/1_1_5-Another_3variable_system.pg
+problem_id = 
+problem_end

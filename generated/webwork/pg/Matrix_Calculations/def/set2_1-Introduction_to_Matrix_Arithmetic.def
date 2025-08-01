@@ -1,0 +1,27 @@
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/2_1-Introduction_to_Matrix_Arithmetic.pg
+screenHeaderFile  = Matrix_Calculations/header/2_1-Introduction_to_Matrix_Arithmetic.pg
+description       = Introduction to Matrix Arithmetic
+problemListV2
+problem_start
+source_file = Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/2_1_2-Matrix_Addition_Application.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/TCNJ/TCNJ_MatrixOperations/problem4.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg
+problem_id = 
+problem_end
+problem_start
+source_file = matrixtheory/matrixarithmetic5.pg
+problem_id = 
+problem_end

@@ -1,0 +1,27 @@
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/2_2-Matrix_Multiplication.pg
+screenHeaderFile  = Matrix_Calculations/header/2_2-Matrix_Multiplication.pg
+description       = Matrix Multiplication
+problemListV2
+problem_start
+source_file = matrixtheory/matrixmult1.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/ASU-topics/set119MatrixAlgebra/p14.pg
+problem_id = 
+problem_end

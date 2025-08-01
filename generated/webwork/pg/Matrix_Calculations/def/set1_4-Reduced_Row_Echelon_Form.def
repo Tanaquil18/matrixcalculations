@@ -1,0 +1,27 @@
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/1_4-Reduced_Row_Echelon_Form.pg
+screenHeaderFile  = Matrix_Calculations/header/1_4-Reduced_Row_Echelon_Form.pg
+description       = Reduced Row Echelon Form
+problemListV2
+problem_start
+source_file = matrixtheory/rrefprob1.pg
+problem_id = 
+problem_end
+problem_start
+source_file = matrixtheory/rrefprob2.pg
+problem_id = 
+problem_end
+problem_start
+source_file = matrixtheory/rrefprob3a.pg
+problem_id = 
+problem_end
+problem_start
+source_file = matrixtheory/rrefprob3.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg
+problem_id = 
+problem_end

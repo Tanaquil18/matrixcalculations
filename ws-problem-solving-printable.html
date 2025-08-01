@@ -10,7 +10,7 @@
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
 <!--*  Theme: salem                          *-->
-<!--*  Palette: ice-fire                     *-->
+<!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,8 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<link href="_static/pretext/css/theme.css" media="screen" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/print-worksheet.css" media="print" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/print-worksheet.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="external/custom-styles.css">
 <script>
@@ -121,19 +120,19 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.4';
+eBookConfig.runestone_version = '7.9.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
-<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
-<body id="matrixcalculations" class="pretext book ignore-math standalone worksheet letter">
+<body id="matrixcalculations" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Matrix Calculations</span> <span class="subtitle">An introduction to parts of linear algebra</span></a></h1>
 <p class="byline">Chrissy Safranski</p>
@@ -305,28 +304,35 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixmult.html#exer-" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrixinverse2vars.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Matrix Inverses and Two Variable Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrixinverse2vars.html#subsec-matrixinverse2vars-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrixinverse2vars.html#rqs-matrixinverse2vars" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrixinverse2vars.html#ww-" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixinverse2vars.html#exer-matrixinvers2vars" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ch-testing-things.html" class="internal"><span class="codenumber">3</span> <span class="title">Testing Things</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-testing-things.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Testing things</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-testing-things.html#sec_optionallab-alt2" class="internal"><span class="codenumber">3.1</span> <span class="title">Optional Lab</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-testing-things.html#ws-rrefa" class="internal"><span class="codenumber">3.1</span> <span class="title">Participate</span></a></div></li>
 </ul>
-</li></ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
-<div class="ws-page-controls">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
 <form class="papersize-select" id="papersize-select">
 <span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div>
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
 </div>
 <section class="worksheet" id="ws-problem-solving"><h3 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Participate</span><div class="print-links"><a href="ws-problem-solving-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
@@ -334,26 +340,26 @@ eBookConfig.enable_chatcodes =  false;
 <article class="objectives goal-like" id="ws-problem-solving-2"><h4 class="heading"><span class="type">Objectives</span></h4>
 <ul class="disc" id="ws-problem-solving-2-1">
 <li id="ws-problem-solving-2-1-1">
-<div class="para" id="ws-problem-solving-2-1-1-1">Be able to use linear systems and reduced row echelon form to solve problems in different contexts where the linear system is not immediately apparent.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-problem-solving-2-1-1-1">Be able to use linear systems and reduced row echelon form to solve problems in different contexts where the linear system is not immediately apparent.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#ws-problem-solving-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-problem-solving-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="ws-problem-solving-2-1-2">
-<div class="para" id="ws-problem-solving-2-1-2-1">Be able to identify <em class="emphasis">unknowns</em> and <em class="emphasis">constraints</em>, or in other words, variables and equations involving those variables.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-problem-solving-2-1-2-1">Be able to identify <em class="emphasis">unknowns</em> and <em class="emphasis">constraints</em>, or in other words, variables and equations involving those variables.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#ws-problem-solving-2-1-2" title="Copy heading and permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-problem-solving-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="ws-problem-solving-2-1-3">
-<div class="para" id="ws-problem-solving-2-1-3-1">Build on our past work interpreting solutions to a linear system from the reduced row echelon form by further restricting to solutions which make sense in the context of a given problem.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-problem-solving-2-1-3-1">Build on our past work interpreting solutions to a linear system from the reduced row echelon form by further restricting to solutions which make sense in the context of a given problem.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#ws-problem-solving-2-1-3" title="Copy heading and permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#ws-problem-solving-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Objectives"><a href="#ws-problem-solving-2" title="Copy heading and permalink for Objectives">🔗</a></div></article><section class="onepage" id="ws-problem-solving-3"><article class="exercise exercise-like" id="ws-problem-solving-3-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="para" id="ws-problem-solving-3-1-1-1">Suppose we know that in a football game there were <span class="process-math">\(24\)</span> points scored from <span class="process-math">\(8\)</span> scoring occasions and also that the number of successful extra point kicks was equal to the number of successful two point conversions. Find all ways in which the points may have been scored in this game.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Objectives"><a href="#ws-problem-solving-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div></article><section class="onepage" id="ws-problem-solving-3"><article class="exercise exercise-like" id="ws-problem-solving-3-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="ws-problem-solving-3-1-1-1">Suppose we know that in a football game there were <span class="process-math">\(24\)</span> points scored from <span class="process-math">\(8\)</span> scoring occasions and also that the number of successful extra point kicks was equal to the number of successful two point conversions. Find all ways in which the points may have been scored in this game.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#ws-problem-solving-3-1" title="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ws-problem-solving-3-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#ws-problem-solving-3-1" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ws-problem-solving-3-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="para logical" id="ws-problem-solving-3-2-1-1">
 <div class="para">Pure elemental phosphorous and hypochlorous acid <span class="process-math">\(HClO\)</span> react in water to make phosphoric acid <span class="process-math">\(H_3PO_4\)</span> and hydrochloric acid <span class="process-math">\(HCl\text{.}\)</span>  Balance the chemical equation</div>
 <div class="displaymath process-math">
@@ -361,25 +367,25 @@ eBookConfig.enable_chatcodes =  false;
 \fillinmath{X} P_4 + \fillinmath{X} HClO+\fillinmath{X} H_2 O \longrightarrow \fillinmath{X}  H_3PO_4+\fillinmath{X} HCl\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#ws-problem-solving-3-2" title="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article></section><section class="onepage" id="ws-problem-solving-4"><article class="exercise exercise-like" id="ws-problem-solving-4-1"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="introduction" id="ws-problem-solving-4-1-1"><div class="para" id="ws-problem-solving-4-1-1-1">You might know that two points determine a line. That’s because in a line <span class="process-math">\(y=mx+b\)</span> there are two unknowns: the coefficient of the <span class="process-math">\(x\)</span> term and the constant term.  Note that in <a href="sec-problem-solving.html#parsons-quadratic-through-3-pts" class="xref" data-knowl="./knowl/xref/parsons-quadratic-through-3-pts.html" data-reveal-label="Reveal" data-close-label="Close" title="Reading Question 1: Parsons Problem, Equation of a Quadratic Through 3 Points">Reading Question 1</a> we needed three points to determine a specific quadratic function because there were three unknowns: the coefficient of the <span class="process-math">\(x^2\)</span> term, the coefficient of the <span class="process-math">\(x\)</span> term and the coefficient of the constant term.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-4-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#ws-problem-solving-3-2" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article></section><section class="onepage" id="ws-problem-solving-4"><article class="exercise exercise-like" id="ws-problem-solving-4-1"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="introduction" id="ws-problem-solving-4-1-1"><div class="para" id="ws-problem-solving-4-1-1-1">You might know that two points determine a line. That’s because in a line <span class="process-math">\(y=mx+b\)</span> there are two unknowns: the coefficient of the <span class="process-math">\(x\)</span> term and the constant term.  Note that in <a href="sec-problem-solving.html#parsons-quadratic-through-3-pts" class="xref" data-knowl="./knowl/xref/parsons-quadratic-through-3-pts.html" data-reveal-label="Reveal" data-close-label="Close" title="Reading Question 1: Parsons Problem, Equation of a Quadratic Through 3 Points">Reading Question 1</a> we needed three points to determine a specific quadratic function because there were three unknowns: the coefficient of the <span class="process-math">\(x^2\)</span> term, the coefficient of the <span class="process-math">\(x\)</span> term and the coefficient of the constant term.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ws-problem-solving-4-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ws-problem-solving-4-1-2-1-1">Find the smallest degree polynomial which goes through the points <span class="process-math">\((-2,15)\text{,}\)</span> <span class="process-math">\((-1,4)\text{,}\)</span> <span class="process-math">\((1,0)\)</span> and <span class="process-math">\((2,-5)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-4-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-problem-solving-4-1-2-1-1">Find the smallest degree polynomial which goes through the points <span class="process-math">\((-2,15)\text{,}\)</span> <span class="process-math">\((-1,4)\text{,}\)</span> <span class="process-math">\((1,0)\)</span> and <span class="process-math">\((2,-5)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-4-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2.5in"></div>
-<div class="autopermalink" data-description="Task 3.a"><a href="#ws-problem-solving-4-1-2" title="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ws-problem-solving-4-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="ws-problem-solving-4-1-3-1-1">Go through the same steps to attempt to find a quadratic function through the points <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((1,1)\text{,}\)</span> and <span class="process-math">\((2,2)\text{.}\)</span>  What do you get, and why does the answer make sense?<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-4-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#ws-problem-solving-4-1-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ws-problem-solving-4-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ws-problem-solving-4-1-3-1-1">Go through the same steps to attempt to find a quadratic function through the points <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((1,1)\text{,}\)</span> and <span class="process-math">\((2,2)\text{.}\)</span>  What do you get, and why does the answer make sense?<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-4-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 3.b"><a href="#ws-problem-solving-4-1-3" title="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#ws-problem-solving-4-1" title="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ws-problem-solving-4-2"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div class="para" id="ws-problem-solving-4-2-1-1">In a basketball game, where points are scored either by a <span class="process-math">\(3\)</span> point shot, a <span class="process-math">\(2\)</span> point shot or a <span class="process-math">\(1\)</span> point free throw, there were <span class="process-math">\(80\)</span> points scored from <span class="process-math">\(30\)</span> successful shots. Find all ways in which the points may have been scored in this game.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-4-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#ws-problem-solving-4-1-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#ws-problem-solving-4-1" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ws-problem-solving-4-2"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="ws-problem-solving-4-2-1-1">In a basketball game, where points are scored either by a <span class="process-math">\(3\)</span> point shot, a <span class="process-math">\(2\)</span> point shot or a <span class="process-math">\(1\)</span> point free throw, there were <span class="process-math">\(80\)</span> points scored from <span class="process-math">\(30\)</span> successful shots. Find all ways in which the points may have been scored in this game.<div class="autopermalink" data-description="Paragraph"><a href="#ws-problem-solving-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-problem-solving-4-2" title="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-problem-solving" title="Copy heading and permalink for Worksheet: Participate">🔗</a></div></section>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-problem-solving-4-2" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Participate"><a href="#ws-problem-solving" title="Copy heading and permalink for Worksheet: Participate" aria-label="Copy heading and permalink for Worksheet: Participate">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-problem-solving.html#subsec-problem-solving-bc" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-matrixoperations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
@@ -388,6 +394,5 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="feedback-link" href="mailto:csafranski@franciscan.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
-<script>diagcess.Base.init()</script>
 </body>
 </html>

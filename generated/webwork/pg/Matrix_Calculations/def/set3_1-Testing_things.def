@@ -1,0 +1,15 @@
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/3_1-Testing_things.pg
+screenHeaderFile  = Matrix_Calculations/header/3_1-Testing_things.pg
+description       = Testing things
+problemListV2
+problem_start
+source_file = Matrix_Calculations/3-Testing_Things/3_1-Testing_things/3_1_1.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/3-Testing_Things/3_1-Testing_things/3_1_9-MultiAnswer_and_the_logical_and.pg
+problem_id = 9
+problem_end
