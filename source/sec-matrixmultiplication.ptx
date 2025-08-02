@@ -497,12 +497,12 @@
       <matching>
         <premise ref="cantdo"><m>AB</m></premise>
         <premise ref="cantdo"><m>AC</m></premise>
-        <premise ref="2by3"><m>CA</m></premise>
-        <premise ref="2by2"><m>C^2</m></premise>
+        <premise ref="twoby3"><m>CA</m></premise>
+        <premise ref="twoby2"><m>C^2</m></premise>
         <response xml:id="cantdo" order="1">Product is not defined</response>
-        <response xml:id="2by3" order="2"><m>2 \times 3</m></response>
-        <response xml:id="3by2" order="3"><m>3 \times 2</m></response>
-        <response xml:id="2by2" order="4"><m>2 \times 2</m></response>
+        <response xml:id="twoby3" order="2"><m>2 \times 3</m></response>
+        <response xml:id="threeby2" order="3"><m>3 \times 2</m></response>
+        <response xml:id="twoby2" order="4"><m>2 \times 2</m></response>
       </matching>
     </exercise>
 
