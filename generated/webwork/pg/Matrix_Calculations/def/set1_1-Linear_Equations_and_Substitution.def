@@ -1,6 +1,6 @@
-openDate          = 08/01/2025 at 12:00am
-dueDate           = 02/01/2026 at 10:00pm
-answerDate        = 02/01/2026 at 10:00pm
+openDate          = 08/08/2025 at 12:00am
+dueDate           = 02/08/2026 at 10:00pm
+answerDate        = 02/08/2026 at 10:00pm
 paperHeaderFile   = Matrix_Calculations/header/1_1-Linear_Equations_and_Substitution.pg
 screenHeaderFile  = Matrix_Calculations/header/1_1-Linear_Equations_and_Substitution.pg
 description       = Linear Equations and Substitution

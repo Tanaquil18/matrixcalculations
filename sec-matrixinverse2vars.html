@@ -10,7 +10,7 @@
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
 <!--*  Theme: salem                          *-->
-<!--*  Palette:                              *-->
+<!--*  Palette: ice-fire                     *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -120,16 +120,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.4';
+eBookConfig.runestone_version = '7.9.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.21df2a4c52b86839.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2./pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="matrixcalculations" class="pretext book ignore-math">
@@ -385,9 +385,29 @@ x_1+x_2 \amp=-1 \\
 <div class="para">But this is precisely the linear system we started with! This result is not an coincidence: we can always rewrite linear systems using matrix multiplication.  Let’s practice.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrixinverse2vars-bc-6">Writing linear systems in terms of matrix multiplication raises a new question: how can we solve a linear system that is written in the form <span class="process-math">\(AX=B\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="linsys-as-matrixmult"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Viewing Linear Systems as Matrix Multiplication.</span>
+</h4>
+<div class="ptx-runestone-container"><div data-component="matching" class="runestone" id="rs-linsys-as-matrixmult"><script type="text/xml"><matching><statement><div class="para" id="linsys-as-matrixmult-2-1">Consider the linear systems on the left, and write them in terms of matrix multiplication as <span class="process-math">\(AX=B\)</span> for the correct choices of <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(X\text{,}\)</span> and <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#linsys-as-matrixmult-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></statement><feedback></feedback><premise><id>linsys-as-matrixmult-p1</id><label><div class="displaymath process-math" id="linsys-as-matrixmult-3-1-1">
+\begin{align*}
+2x-y\amp=0\\
+-3x+y\amp=0
+\end{align*}
+</div></label></premise><premise><id>linsys-as-matrixmult-p2</id><label><div class="displaymath process-math" id="linsys-as-matrixmult-3-2-1">
+\begin{align*}
+2x-y\amp=5\\
+-3x+y\amp=2
+\end{align*}
+</div></label></premise><premise><id>linsys-as-matrixmult-p3</id><label><div class="displaymath process-math" id="linsys-as-matrixmult-3-3-1">
+\begin{align*}
+2x_1-x_2\amp=5\\
+-3x_1+x_2\amp=2
+\end{align*}
+</div></label></premise><response><id>linsys-as-matrixmult-r1</id><label><span class="process-math">\(A=\begin{bmatrix}2 \amp -1 \\ -3 \amp 1 \end{bmatrix}\)</span></label></response><response><id>linsys-as-matrixmult-r2</id><label><span class="process-math">\(X=\begin{bmatrix}x\\y\end{bmatrix}\)</span></label></response><response><id>linsys-as-matrixmult-r3</id><label><span class="process-math">\(X=\begin{bmatrix}x_1\\x_2\end{bmatrix}\)</span></label></response><response><id>linsys-as-matrixmult-r4</id><label><span class="process-math">\(A=\begin{bmatrix}2 \amp -1 \amp 5 \\ -3 \amp 1\amp 2 \end{bmatrix}\)</span></label></response><response><id>linsys-as-matrixmult-r5</id><label><span class="process-math">\(B=\begin{bmatrix}0\\0\end{bmatrix}\)</span></label></response><response><id>linsys-as-matrixmult-r6</id><label><span class="process-math">\(B=\begin{bmatrix}5\\2\end{bmatrix}\)</span></label></response><edge><label>linsys-as-matrixmult-p1</label><label>linsys-as-matrixmult-r1</label></edge><edge><label>linsys-as-matrixmult-p1</label><label>linsys-as-matrixmult-r2</label></edge><edge><label>linsys-as-matrixmult-p1</label><label>linsys-as-matrixmult-r5</label></edge><edge><label>linsys-as-matrixmult-p2</label><label>linsys-as-matrixmult-r1</label></edge><edge><label>linsys-as-matrixmult-p2</label><label>linsys-as-matrixmult-r2</label></edge><edge><label>linsys-as-matrixmult-p2</label><label>linsys-as-matrixmult-r6</label></edge><edge><label>linsys-as-matrixmult-p3</label><label>linsys-as-matrixmult-r1</label></edge><edge><label>linsys-as-matrixmult-p3</label><label>linsys-as-matrixmult-r3</label></edge><edge><label>linsys-as-matrixmult-p3</label><label>linsys-as-matrixmult-r6</label></edge></matching></script></div></div>
+<div class="autopermalink" data-description="Activity 2.3.1: Viewing Linear Systems as Matrix Multiplication"><a href="#linsys-as-matrixmult" title="Copy heading and permalink for Activity 2.3.1: Viewing Linear Systems as Matrix Multiplication" aria-label="Copy heading and permalink for Activity 2.3.1: Viewing Linear Systems as Matrix Multiplication">🔗</a></div></article><div class="para" id="subsec-matrixinverse2vars-bc-7">Writing linear systems in terms of matrix multiplication raises a new question: how can we solve a linear system that is written in the form <span class="process-math">\(AX=B\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-matrixinverse2vars-bc-7">
+<div class="para logical" id="subsec-matrixinverse2vars-bc-8">
 <div class="para">We take our inspiration from the usual algebra of numbers.  If <span class="process-math">\(a, b\)</span> and <span class="process-math">\(x\)</span> are numbers and <span class="process-math">\(a\neq 0\text{,}\)</span> then we solve the equation <span class="process-math">\(ax=b\)</span> by dividing both sides by <span class="process-math">\(a\)</span> and get</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -395,7 +415,7 @@ x = \frac{b}{a}\text{.}
 \end{equation*}
 </div>
 <div class="para">We do this precisely because <span class="process-math">\(\frac{1}{a}\cdot a=1\text{,}\)</span> so writing out more details would give us</div>
-<div class="displaymath process-math" id="subsec-matrixinverse2vars-bc-7-8">
+<div class="displaymath process-math" id="subsec-matrixinverse2vars-bc-8-8">
 \begin{align*}
 ax \amp= b \\
 \frac{1}{a}\cdot ax \amp= \frac{1}{a}\cdot b \\
@@ -404,9 +424,9 @@ x \amp= \frac{1}{a}\cdot b = \frac{b}{a}\text{.}
 \end{align*}
 </div>
 <div class="para">The key feature is that <span class="process-math">\(\frac{1}{a}\)</span> is the thing we multiply by <span class="process-math">\(a\)</span> to get <span class="process-math">\(1\text{;}\)</span> to solve a linear system <span class="process-math">\(AX=B\text{,}\)</span> we’ll want to do something analogous for matrices. We sometimes call <span class="process-math">\(\frac{1}{a}\)</span> the <em class="emphasis">multiplicative inverse</em> of <span class="process-math">\(a\text{,}\)</span> and we know that <span class="process-math">\(\frac{1}{a}=a^{-1}\)</span> if written as an exponent. We will use this same language and notation for matrices as well.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-matrixinverse2vars-bc-8">
+<div class="para logical" id="subsec-matrixinverse2vars-bc-9">
 <div class="para">In <a href="sec-matrixmult.html#identityexercise" class="xref" data-knowl="./knowl/xref/identityexercise.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2: Diagonal Matrices and the Identity Matrix">Worksheet Exercise 2</a>, we learned about the identity matrix <span class="process-math">\(I\)</span> that acts like the number <span class="process-math">\(1\)</span> for square matrices.  For example, the identity matrix of size <span class="process-math">\(3\)</span> is <span class="process-math">\(\begin{bmatrix}1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{bmatrix}\text{,}\)</span> and then if <span class="process-math">\(A\)</span> is any <span class="process-math">\(3\times 3\)</span> matrix, then</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/identityexercise.html">
 \begin{equation*}
@@ -414,11 +434,11 @@ I A =  A I =  A\text{.}
 \end{equation*}
 </div>
 <div class="para">Similarly for the identity matrix of size <span class="process-math">\(2\text{,}\)</span> which is <span class="process-math">\(\begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}\)</span> and any <span class="process-math">\(2\times 2\)</span> matrix.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-matrixinverse2vars-bc-9">
+<div class="para logical" id="subsec-matrixinverse2vars-bc-10">
 <div class="para">If we had a matrix <span class="process-math">\(A^{-1}\)</span> such that <span class="process-math">\(A^{-1} A= I\text{,}\)</span> then by analogy to our algebra example above it seems like we might be able to solve the linear system <span class="process-math">\(A X = B\)</span> for <span class="process-math">\(X\)</span> by multiplying both sides of the equation by <span class="process-math">\(A^{-1}\text{.}\)</span> That is,</div>
-<div class="displaymath process-math" id="subsec-matrixinverse2vars-bc-9-6">
+<div class="displaymath process-math" id="subsec-matrixinverse2vars-bc-10-6">
 \begin{align*}
 AX \amp= B \amp \amp \\
 A^{-1} \cdot AX \amp= A^{-1} B \amp \amp \amp \amp \text{multiply both sides on the left by }A^{-1} \\
@@ -428,12 +448,12 @@ X \amp= A^{-1}B \amp \amp \amp \amp\text{because }IX=X\text{.}
 \end{align*}
 </div>
 <div class="para">It seems that we might be able to solve linear systems using matrix multiplication and inverses instead of row reducing.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-matrixinverse2vars-bc-10">Of course, there are some differences between matrix multiplication and number multiplication, as we explored throughout <a href="sec-matrixmult.html#ws-matrixmultiplication" class="internal" title="Worksheet: Participate">Matrix Multiplication Participate</a>, and one consequence is that we aren’t guaranteed that a matrix acting like <span class="process-math">\(A^{-1}\)</span> exists for every square matrix <span class="process-math">\(A\text{.}\)</span> For the <span class="process-math">\(2\times 2\)</span> matrices that arise from two-variable linear systems, it is straightforward to tell when <span class="process-math">\(A^{-1}\)</span> exists.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-matrixinverse2vars-bc-11">Of course, there are some differences between matrix multiplication and number multiplication, as we explored throughout <a href="sec-matrixmult.html#ws-matrixmultiplication" class="internal" title="Worksheet: Participate">Matrix Multiplication Participate</a>, and one consequence is that we aren’t guaranteed that a matrix acting like <span class="process-math">\(A^{-1}\)</span> exists for every square matrix <span class="process-math">\(A\text{.}\)</span> For the <span class="process-math">\(2\times 2\)</span> matrices that arise from two-variable linear systems, it is straightforward to tell when <span class="process-math">\(A^{-1}\)</span> exists.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def_inverse"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Invertible Matrices and the Inverse of A.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Invertible Matrices and the Inverse of A.</span>
 </h4>
 <div class="para logical" id="def_inverse-4-1">
 <div class="para">Suppose that <span class="process-math">\(A\)</span> and <span class="process-math">\(C\)</span> are <span class="process-math">\(n\times n\)</span> matrices such that <span class="process-math">\(A C = I = C A\text{.}\)</span> Then:</div>
@@ -471,12 +491,12 @@ A^{-1} = \frac{1}{ad-bc}\left[\begin{array}{cc} d\amp -b\\-c\amp a \end{array} \
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#def_inverse-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 2.3.1: Invertible Matrices and the Inverse of A"><a href="#def_inverse" title="Copy heading and permalink for Definition 2.3.1: Invertible Matrices and the Inverse of A" aria-label="Copy heading and permalink for Definition 2.3.1: Invertible Matrices and the Inverse of A">🔗</a></div></article><div class="para" id="subsec-matrixinverse2vars-bc-12">We can’t divide by <span class="process-math">\(0\text{,}\)</span> so if <span class="process-math">\(ad-bc=0\text{,}\)</span> we don’t have an inverse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 2.3.2: Invertible Matrices and the Inverse of A"><a href="#def_inverse" title="Copy heading and permalink for Definition 2.3.2: Invertible Matrices and the Inverse of A" aria-label="Copy heading and permalink for Definition 2.3.2: Invertible Matrices and the Inverse of A">🔗</a></div></article><div class="para" id="subsec-matrixinverse2vars-bc-13">We can’t divide by <span class="process-math">\(0\text{,}\)</span> so if <span class="process-math">\(ad-bc=0\text{,}\)</span> we don’t have an inverse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="subsec-matrixinverse2vars-bc-13"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Matrix Without An Inverse.</span>
+<article class="example example-like" id="subsec-matrixinverse2vars-bc-14"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Matrix Without An Inverse.</span>
 </h4>
-<div class="para logical" id="subsec-matrixinverse2vars-bc-13-2-1">
+<div class="para logical" id="subsec-matrixinverse2vars-bc-14-2-1">
 <div class="para">Recall <a href="sec-matrixmult.html#exercisenoninvertibleA" class="xref" data-knowl="./knowl/xref/exercisenoninvertibleA.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 3: Properties of Zero and Cancellation">Worksheet Exercise 3</a>, where</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/exercisenoninvertibleA.html">
 \begin{equation*}
@@ -484,11 +504,11 @@ A = \left[\begin{array}{cc} 1\amp 2\\-2\amp -4 \end{array} \right]\text{.}
 \end{equation*}
 </div>
 <div class="para">Here, <span class="process-math">\(ad-bc = 1(-4) - 2(-2) = 0\)</span> and so <span class="process-math">\(A\)</span> doesn’t have an inverse.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="subsec-matrixinverse2vars-bc-13-2-2">This is why multiplying by <span class="process-math">\(A\)</span> in that exercise didn’t act like multiplying by a number does; every nonzero number <span class="process-math">\(a\)</span> has an inverse <span class="process-math">\(\frac{1}{a}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-13-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="subsec-matrixinverse2vars-bc-14-2-2">This is why multiplying by <span class="process-math">\(A\)</span> in that exercise didn’t act like multiplying by a number does; every nonzero number <span class="process-math">\(a\)</span> has an inverse <span class="process-math">\(\frac{1}{a}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-14-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 2.3.2: A Matrix Without An Inverse"><a href="#subsec-matrixinverse2vars-bc-13" title="Copy heading and permalink for Example 2.3.2: A Matrix Without An Inverse" aria-label="Copy heading and permalink for Example 2.3.2: A Matrix Without An Inverse">🔗</a></div></article><article class="exercise exercise-like" id="partsof2by2matrix"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Identifying Key Parts for an Inverse.</span>
+<div class="autopermalink" data-description="Example 2.3.3: A Matrix Without An Inverse"><a href="#subsec-matrixinverse2vars-bc-14" title="Copy heading and permalink for Example 2.3.3: A Matrix Without An Inverse" aria-label="Copy heading and permalink for Example 2.3.3: A Matrix Without An Inverse">🔗</a></div></article><article class="exercise exercise-like" id="partsof2by2matrix"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Identifying Key Parts for an Inverse.</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone tabbed_section">
 <div class="tabs-introduction exercise-leadin"><div class="introduction" id="partsof2by2matrix-2"><div class="para logical" id="partsof2by2matrix-2-1">
@@ -524,7 +544,7 @@ A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}\text{.}
 <li data-component="feedback" id="rs-partsof2by2matrix-a_opt_d"><div class="para" id="partsof2by2matrix-a-2-4-2-1">For a matrix described by <span class="process-math">\(\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}\text{,}\)</span> the entry <span class="process-math">\(a\)</span> is the entry in the top left and <span class="process-math">\(d\)</span> is the entry in the bottom right.</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.3.3.a"><a href="#partsof2by2matrix-a" title="Copy heading and permalink for Task 2.3.3.a" aria-label="Copy heading and permalink for Task 2.3.3.a">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.3.4.a"><a href="#partsof2by2matrix-a" title="Copy heading and permalink for Task 2.3.4.a" aria-label="Copy heading and permalink for Task 2.3.4.a">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(b)"><article class="task exercise-like" id="partsof2by2matrix-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para" id="partsof2by2matrix-b-1-1">Identify the values of <span class="process-math">\(b\)</span> and <span class="process-math">\(c\)</span> for the matrix <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#partsof2by2matrix-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -548,7 +568,7 @@ A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}\text{.}
 <li data-component="feedback" id="rs-partsof2by2matrix-b_opt_d"><div class="para" id="partsof2by2matrix-b-2-4-2-1">Don’t multiply them by <span class="process-math">\(-1\)</span> like in the inverse, just identify what <span class="process-math">\(b\)</span> and <span class="process-math">\(c\)</span> are to start with.</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.3.3.b"><a href="#partsof2by2matrix-b" title="Copy heading and permalink for Task 2.3.3.b" aria-label="Copy heading and permalink for Task 2.3.3.b">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.3.4.b"><a href="#partsof2by2matrix-b" title="Copy heading and permalink for Task 2.3.4.b" aria-label="Copy heading and permalink for Task 2.3.4.b">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(c)"><article class="task exercise-like" id="partsof2by2matrix-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para" id="partsof2by2matrix-c-1-1">What is the value of <span class="process-math">\(ad-bc\)</span> for the matrix <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#partsof2by2matrix-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -603,7 +623,7 @@ ad-bc=1\cdot 4 - 2\cdot 3
 </div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.3.3.c"><a href="#partsof2by2matrix-c" title="Copy heading and permalink for Task 2.3.3.c" aria-label="Copy heading and permalink for Task 2.3.3.c">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.3.4.c"><a href="#partsof2by2matrix-c" title="Copy heading and permalink for Task 2.3.4.c" aria-label="Copy heading and permalink for Task 2.3.4.c">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(d)"><article class="task exercise-like" id="partsof2by2matrix-d"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para" id="partsof2by2matrix-d-1-1">Which matrix below is <span class="process-math">\(\begin{bmatrix} d \amp -b \\ -c \amp a \end{bmatrix}\)</span> for the matrix <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#partsof2by2matrix-d-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -627,7 +647,7 @@ ad-bc=1\cdot 4 - 2\cdot 3
 <li data-component="feedback" id="rs-partsof2by2matrix-d_opt_d"><div class="para" id="partsof2by2matrix-d-2-4-2-1">To calculate <span class="process-math">\(\begin{bmatrix} d \amp -b \\ -c \amp a \end{bmatrix}\text{,}\)</span> you swap entries <span class="process-math">\(a\)</span> and <span class="process-math">\(d\)</span> and multiply entries <span class="process-math">\(b\)</span> and <span class="process-math">\(c\)</span> by negative 1.</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.3.3.d"><a href="#partsof2by2matrix-d" title="Copy heading and permalink for Task 2.3.3.d" aria-label="Copy heading and permalink for Task 2.3.3.d">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.3.4.d"><a href="#partsof2by2matrix-d" title="Copy heading and permalink for Task 2.3.4.d" aria-label="Copy heading and permalink for Task 2.3.4.d">🔗</a></div></article></div>
 <div data-component="tab" data-tabname="(e)"><article class="task exercise-like" id="partsof2by2matrix-e"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para" id="partsof2by2matrix-e-1-1">Which of the matrices below is <span class="process-math">\(A^{-1}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#partsof2by2matrix-e-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -653,13 +673,13 @@ ad-bc=1\cdot 4 - 2\cdot 3
 </div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Task 2.3.3.e"><a href="#partsof2by2matrix-e" title="Copy heading and permalink for Task 2.3.3.e" aria-label="Copy heading and permalink for Task 2.3.3.e">🔗</a></div></article></div>
+<div class="autopermalink" data-description="Task 2.3.4.e"><a href="#partsof2by2matrix-e" title="Copy heading and permalink for Task 2.3.4.e" aria-label="Copy heading and permalink for Task 2.3.4.e">🔗</a></div></article></div>
 </div>
 </div></div>
-<div class="autopermalink" data-description="Activity 2.3.3: Identifying Key Parts for an Inverse"><a href="#partsof2by2matrix" title="Copy heading and permalink for Activity 2.3.3: Identifying Key Parts for an Inverse" aria-label="Copy heading and permalink for Activity 2.3.3: Identifying Key Parts for an Inverse">🔗</a></div></article><div class="para" id="subsec-matrixinverse2vars-bc-15">Let’s see another example.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Activity 2.3.4: Identifying Key Parts for an Inverse"><a href="#partsof2by2matrix" title="Copy heading and permalink for Activity 2.3.4: Identifying Key Parts for an Inverse" aria-label="Copy heading and permalink for Activity 2.3.4: Identifying Key Parts for an Inverse">🔗</a></div></article><div class="para" id="subsec-matrixinverse2vars-bc-16">Let’s see another example.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-matrixinverse2vars-bc-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="ex_inverse_4"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using the formula for <span class="process-math">\(2\times 2\)</span> inverses.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using the formula for <span class="process-math">\(2\times 2\)</span> inverses.</span>
 </h4>
 <div class="para logical" id="ex_inverse_4-2-1">
 <div class="para">Calculate the inverse, if it exists, of</div>
@@ -727,9 +747,9 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <div class="para">and see that <span class="process-math">\(x=11\text{,}\)</span> <span class="process-math">\(y=-2\)</span> is indeed a solution to the given linear system.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ex_inverse_4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 2.3.4.1"><a href="#ex_inverse_4-3" title="Copy heading and permalink for Solution 2.3.4.1" aria-label="Copy heading and permalink for Solution 2.3.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 2.3.5.1"><a href="#ex_inverse_4-3" title="Copy heading and permalink for Solution 2.3.5.1" aria-label="Copy heading and permalink for Solution 2.3.5.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 2.3.4: Using the formula for 2\times 2 inverses"><a href="#ex_inverse_4" title="Copy heading and permalink for Example 2.3.4: Using the formula for 2\times 2 inverses" aria-label="Copy heading and permalink for Example 2.3.4: Using the formula for 2\times 2 inverses">🔗</a></div></article><section class="reading-questions" id="rqs-matrixinverse2vars"><h4 class="heading hide-type">
+<div class="autopermalink" data-description="Example 2.3.5: Using the formula for 2\times 2 inverses"><a href="#ex_inverse_4" title="Copy heading and permalink for Example 2.3.5: Using the formula for 2\times 2 inverses" aria-label="Copy heading and permalink for Example 2.3.5: Using the formula for 2\times 2 inverses">🔗</a></div></article><section class="reading-questions" id="rqs-matrixinverse2vars"><h4 class="heading hide-type">
 <span class="type">Reading Questions</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Reading Questions</span>
 </h4>
 <article class="exercise exercise-like" id="rq-matrixinv2-invertornot"><h5 class="heading">
@@ -748,8 +768,13 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <li data-subcomponent="draggable" id="rs-rq-matrixinv2-invertornot_drag6" data-category="3"><span class="process-math">\(\begin{bmatrix} 3 \amp 1 \amp 6 \\ 0 \amp 1 \amp 4 \\  -2 \amp 1 \amp 0\end{bmatrix}\)</span></li>
 <li data-subcomponent="dropzone" for="rs-rq-matrixinv2-invertornot_drag3" data-category="3">Can’t Tell (Yet)</li>
 </ul></div></div>
-<div class="autopermalink" data-description="Reading Question 1: Invertible or Not?"><a href="#rq-matrixinv2-invertornot" title="Copy heading and permalink for Reading Question 1: Invertible or Not?" aria-label="Copy heading and permalink for Reading Question 1: Invertible or Not?">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrixinv2-questions-poll"><h5 class="heading">
-<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Reflection.</span>
+<div class="autopermalink" data-description="Reading Question 1: Invertible or Not?"><a href="#rq-matrixinv2-invertornot" title="Copy heading and permalink for Reading Question 1: Invertible or Not?" aria-label="Copy heading and permalink for Reading Question 1: Invertible or Not?">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrixinv2-explain"><h5 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What Are Inverses, Anyway?</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrixinv2-explain" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para" id="rq-matrixinv2-explain-2-1">In your own words, explain what you understand about the relationship between the identity matrix, the inverse of a square matrix if the inverse exists, and the solution to a linear system of equations.<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixinv2-explain-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></div></div>
+<div class="autopermalink" data-description="Reading Question 2: What Are Inverses, Anyway?"><a href="#rq-matrixinv2-explain" title="Copy heading and permalink for Reading Question 2: What Are Inverses, Anyway?" aria-label="Copy heading and permalink for Reading Question 2: What Are Inverses, Anyway?">🔗</a></div></article><article class="exercise exercise-like" id="rq-matrixinv2-questions-poll"><h5 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Reflection.</span>
 </h5>
 <article class="task exercise-like" id="rq-matrixinv2-confidencepoll-task"><h6 class="heading"><span class="codenumber">(a)</span></h6>
 <div class="ptx-runestone-container"><div class="runestone"><ul data-component="poll" id="rs-rq-matrixinv2-confidencepoll" data-results="instructor">
@@ -771,10 +796,10 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 </div>
 </li>
 </ul></div></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#rq-matrixinv2-confidencepoll-task" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="rq-matrixinv2-confidenceresponse"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="autopermalink" data-description="Task 3.a"><a href="#rq-matrixinv2-confidencepoll-task" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="rq-matrixinv2-confidenceresponse"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-matrixinv2-confidenceresponse" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para" id="rq-matrixinv2-confidenceresponse-1-1">Ask a question about the material.  What additional information do you think someone would need to become more confident in their understanding?<div class="autopermalink" data-description="Paragraph"><a href="#rq-matrixinv2-confidenceresponse-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#rq-matrixinv2-confidenceresponse" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><div class="autopermalink" data-description="Reading Question 2: Reflection"><a href="#rq-matrixinv2-questions-poll" title="Copy heading and permalink for Reading Question 2: Reflection" aria-label="Copy heading and permalink for Reading Question 2: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-matrixinverse2vars" title="Copy heading and permalink for Reading Questions" aria-label="Copy heading and permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-matrixinverse2vars-bc" title="Copy heading and permalink for Subsection: Prepare" aria-label="Copy heading and permalink for Subsection: Prepare">🔗</a></div></section><section class="conclusion" id="subsec-matrixinverse2vars-summary"><h3 class="heading">Summary.<span></span>
+<div class="autopermalink" data-description="Task 3.b"><a href="#rq-matrixinv2-confidenceresponse" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Reading Question 3: Reflection"><a href="#rq-matrixinv2-questions-poll" title="Copy heading and permalink for Reading Question 3: Reflection" aria-label="Copy heading and permalink for Reading Question 3: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-matrixinverse2vars" title="Copy heading and permalink for Reading Questions" aria-label="Copy heading and permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-matrixinverse2vars-bc" title="Copy heading and permalink for Subsection: Prepare" aria-label="Copy heading and permalink for Subsection: Prepare">🔗</a></div></section><section class="conclusion" id="subsec-matrixinverse2vars-summary"><h3 class="heading">Summary.<span></span>
 </h3>
 <div class="para logical" id="subsec-matrixinverse2vars-summary-2">
 <ul class="disc" id="subsec-matrixinverse2vars-summary-2-1">
@@ -801,7 +826,7 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <article class="activity project-like" id="ww-matrixinv2by2-1"><h4 class="heading">
 <span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Is a Matrix Invertible?</span>
 </h4>
-<div id="webwork-37" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="37" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="" data-courseID="" data-userID="" data-coursePassword="" aria-live="polite">
+<div id="webwork-37" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="37" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-37')">Activate</button></div>
 <div class="problem-contents">
 <div class="para logical" id="extracted-webwork-37-1-1-1">
@@ -842,7 +867,7 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <div class="autopermalink" data-description="Exercise 2.3.1: Is a Matrix Invertible?"><a href="#ww-matrixinv2by2-1" title="Copy heading and permalink for Exercise 2.3.1: Is a Matrix Invertible?" aria-label="Copy heading and permalink for Exercise 2.3.1: Is a Matrix Invertible?">🔗</a></div></article><article class="activity project-like" id="ww-matrixinv2by2-2"><h4 class="heading">
 <span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiply to Obtain Identity.</span>
 </h4>
-<div id="webwork-38" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="38" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="" data-courseID="" data-userID="" data-coursePassword="" aria-live="polite">
+<div id="webwork-38" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="38" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-38')">Activate</button></div>
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-38-1-1-1">Find a <span class="process-math">\(2 \times 2\)</span> matrix such that<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-38-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -860,7 +885,7 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <div class="autopermalink" data-description="Exercise 2.3.2: Multiply to Obtain Identity"><a href="#ww-matrixinv2by2-2" title="Copy heading and permalink for Exercise 2.3.2: Multiply to Obtain Identity" aria-label="Copy heading and permalink for Exercise 2.3.2: Multiply to Obtain Identity">🔗</a></div></article><article class="activity project-like" id="ww-matrixinv2by2-3"><h4 class="heading">
 <span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Condition for Invertibility.</span>
 </h4>
-<div id="webwork-39" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="39" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="" data-courseID="" data-userID="" data-coursePassword="" aria-live="polite">
+<div id="webwork-39" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="39" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-39')">Activate</button></div>
 <div class="problem-contents"><div class="para" id="extracted-webwork-39-1-1-1">The matrix <span class="process-math">\(\left[\begin{array}{cc}
 4 \amp 1\cr
@@ -871,7 +896,7 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <div class="autopermalink" data-description="Exercise 2.3.3: Condition for Invertibility"><a href="#ww-matrixinv2by2-3" title="Copy heading and permalink for Exercise 2.3.3: Condition for Invertibility" aria-label="Copy heading and permalink for Exercise 2.3.3: Condition for Invertibility">🔗</a></div></article><article class="activity project-like" id="ww-matrixinv2by2-4"><h4 class="heading">
 <span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solve Two Systems with the Inverse.</span>
 </h4>
-<div id="webwork-40" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="40" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="" data-courseID="" data-userID="" data-coursePassword="" aria-live="polite">
+<div id="webwork-40" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="40" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p13.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-40')">Activate</button></div>
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-40-1-1-1">Consider the following two systems.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-40-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -899,7 +924,7 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-40-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-40-1-1-4">(i) Find the inverse of the (common) coefficient matrix of the two systems.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-40-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-40-1-1-5">
-<figure class="table table-like" id="extracted-webwork-40-1-1-5-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 5"><a href="#extracted-webwork-40-1-1-5-1" title="Copy heading and permalink for Table 5" aria-label="Copy heading and permalink for Table 5">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-40-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="table table-like" id="extracted-webwork-40-1-1-5-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 6"><a href="#extracted-webwork-40-1-1-5-1" title="Copy heading and permalink for Table 6" aria-label="Copy heading and permalink for Table 6">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-40-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span></td>
@@ -918,7 +943,7 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <div class="autopermalink" data-description="Exercise 2.3.4: Solve Two Systems with the Inverse"><a href="#ww-matrixinv2by2-4" title="Copy heading and permalink for Exercise 2.3.4: Solve Two Systems with the Inverse" aria-label="Copy heading and permalink for Exercise 2.3.4: Solve Two Systems with the Inverse">🔗</a></div></article><article class="activity project-like" id="ww-matrixinv2by2-5"><h4 class="heading">
 <span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solve a System with the Inverse.</span>
 </h4>
-<div id="webwork-41" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="41" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="" data-courseID="" data-userID="" data-coursePassword="" aria-live="polite">
+<div id="webwork-41" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="41" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-41')">Activate</button></div>
 <div class="problem-contents">
 <div class="para logical" id="extracted-webwork-41-1-1-1">
@@ -1036,7 +1061,7 @@ A^{-1}A \begin{bmatrix}x \\ y \end{bmatrix} \amp = A^{-1}\begin{bmatrix} 29 \\ -
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
 <div class="introduction" id="exer-matrixinvers2vars-3-1"><div class="para" id="exer-matrixinvers2vars-3-1-1">In the following exercises, a coefficient matrix <span class="process-math">\(A\)</span> and column matrix <span class="process-math">\(B\)</span> are given. Solve the equation <span class="process-math">\(A X = B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixinvers2vars-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<div class="exercisegroup-exercises">
+<div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="exer-matrixinvers2vars-3-2"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exer-matrixinvers2vars-3-2-1-1">
 <span class="process-math">\(A = \left[\begin{array}{cc} 3\amp 5\\ 2\amp 3 \end{array} \right]\text{,}\)</span> <span class="process-math">\(B = \left[\begin{array}{c} 21\\ 13 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-matrixinvers2vars-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

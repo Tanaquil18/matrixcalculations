@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-representations>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-1" ww-id="webwork-1">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-1" ww-id="webwork-1">
     <static seed="1">
       <statement><p>Find the point of intersection of the lines <m>y = x + 1</m> and <m>2x+3y=14\text{.}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
@@ -18,11 +18,11 @@
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdncmFwaG1hY3Jvcy5wbCIsIlBHY291cnNlLnBsIiwpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzSW5lcnQ9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwokYSA9IC0xOwokYiA9IDE7CiRjID0gMjsKJGQgPSAzOwokZSA9IHJhbmRvbSgxLDMsMSk7CiRmID0gcmFuZG9tKDEwLDE1LDEpOwokeG51bSA9ICRkICogJGUgLSAkYiAqICRmOwokeW51bSA9IC0oJGMpKiRlICsgJGEgKiAkZjsKJGRlbiA9ICRhICogJGQgLSAkYiAqICRjOwokeCA9IENvbXB1dGUoIiR4bnVtIC8gJGRlbiIpOwokeSA9IENvbXB1dGUoIiR5bnVtIC8gJGRlbiIpOwoKJHhtaW4gPSAtMTsKJHhtYXggPSAgOTsKJHltaW4gPSAtMTsKJHltYXggPSAgOTsgCiRncmFwaCA9IGluaXRfZ3JhcGgoJHhtaW4sJHltaW4sJHhtYXgsJHltYXgsJ2F4ZXMnPT5bMCwwXSk7CiRncmFwaC0+bGIoJ3Jlc2V0Jyk7CiRncmFwaC0+bGIobmV3IExhYmVsKCR4bWF4LTAuMSwwLjA1LCJ4IiwnYmxhY2snLCdyaWdodCcsJ2JvdHRvbScpKTsKJGdyYXBoLT5sYihuZXcgTGFiZWwoMC4wNSwkeW1heC0wLjEsInkiLCdibGFjaycsJ2xlZnQnLCd0b3AnKSk7CgokZ3JhcGgtPm1vdmVUbygwLDEpOwokZ3JhcGgtPmxpbmVUbyg4LDksJ3JlZCcsNCk7CgokZ3JhcGgtPm1vdmVUbyg4LDApOwokZ3JhcGgtPmxpbmVUbygwLDUsJ2JsdWUnLDQpOwoKQkVHSU5fUEdNTApGaW5kIHRoZSBwb2ludCBvZiBpbnRlcnNlY3Rpb24gb2YgdGhlIGxpbmVzIFtgeSA9IHggKyBbJGVdYF0gYW5kIFtgMngrM3k9WyRmXVx0ZXh0ey59YF0KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoKSwgd2lkdGg9PjMwMCwgYWx0PT5xcSJhIGdyYXBoIHdpdGggYXhlcyBkZXBpY3RpbmcgdHdvIGludGVyc2VjdGluZyBsaW5lcyIpQF0qICA8PAoKVGhlIHBvaW50IG9mIGludGVyc2VjdGlvbiBpcyBbYCh4LHkpYF0gd2hlcmUgW2B4PWBdW19deyR4fXs1fSBhbmQgW2B5PWBdW19deyR5fXs1fS4KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -113,7 +113,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-2" ww-id="webwork-2">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-2" ww-id="webwork-2">
     <static seed="2">
       <statement><p>The solution of the linear system</p>
 <p><me>\begin{aligned}
@@ -134,11 +134,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTgsOCwxKSk7CiR5ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTgsOCwxKSk7CiRhPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRiPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjb25zdDE9JGEqJHgrJHk7CiRjb25zdDI9JGIqJHgtJGMqJHk7CgpCRUdJTl9QR01MClRoZSBzb2x1dGlvbiBvZiB0aGUgbGluZWFyIHN5c3RlbQoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGFdeCt5IFxhbXAgPSBbJGNvbnN0MV1cXApbJGJdeC1bJGNdeSBcYW1wID0gWyRjb25zdDJdClxlbmR7YWxpZ25lZH0KYGBgXQoKaXMKCltgeD1gXVtfXXskeH17Mn0gYW5kIFtgeT1gXVtfXXskeX17Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -216,7 +216,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-3" ww-id="webwork-3">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-3" ww-id="webwork-3">
     <static seed="3">
       <statement><p>Suppose a jar contains red, blue and green marbles. You are told that there are a total of <m>{48}</m> marbles in the jar; there are twice as many red marbles as green ones; the number of blue marbles is the same as the sum of the red and green marbles. How many marbles of each color are there?</p>
 <p><m>g=</m><fillin characters="2" name="AnSwEr0001"/></p>
@@ -239,11 +239,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKJGcgPSBDb21wdXRlKHJhbmRvbSgzLDIwKSk7CiRyPTIqJGc7CiRiPTMqJGc7CgokdG90YWwgPSA2KiRnOwoKQkVHSU5fUEdNTApTdXBwb3NlIGEgamFyIGNvbnRhaW5zIHJlZCwgYmx1ZSBhbmQgZ3JlZW4gbWFyYmxlcy4gWW91IGFyZSB0b2xkIHRoYXQgdGhlcmUgYXJlIGEgdG90YWwgb2YgW2BbJHRvdGFsXWBdIG1hcmJsZXMgaW4gdGhlIGphcjsgdGhlcmUgYXJlIHR3aWNlIGFzIG1hbnkgcmVkIG1hcmJsZXMgYXMgZ3JlZW4gb25lczsgdGhlIG51bWJlciBvZiBibHVlIG1hcmJsZXMgaXMgdGhlIHNhbWUgYXMgdGhlIHN1bSBvZiB0aGUgcmVkIGFuZCBncmVlbiBtYXJibGVzLiBIb3cgbWFueSBtYXJibGVzIG9mIGVhY2ggY29sb3IgYXJlIHRoZXJlPwoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVXNlIFtgcmBdIGZvciB0aGUgbnVtYmVyIG9mIHJlZCBtYXJibGVzLCBbYGJgXSBmb3IgdGhlIG51bWJlciBvZiBibHVlIG1hcmJsZXMsIGFuZCBbYGdgXSBmb3IgdGhlIG51bWJlciBvZiBncmVlbiBtYXJibGVzLicpQF0qKgoKW2BnPWBdW19deyRnfXsyfQoKW2ByPWBdW19deyRyfXsyfQoKW2BiPWBdW19deyRifXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -317,7 +317,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-4" ww-id="webwork-4">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-4" ww-id="webwork-4">
     <static seed="4">
       <statement><p>Solve the system:</p>
 <p><me>\begin{aligned}
@@ -343,11 +343,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZvcm0ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZCh4XzEgPT4gJ1JlYWwnLCB4XzI9PiAnUmVhbCcsIHhfMz0+J1JlYWwnKTsKQ29udGV4dCgpLT5yZWR1Y3Rpb24tPnNldCgnKC14KSt5Jz0+MCwgJygteCkteSc9PjApOwokeDEgPSBub25femVyb19yYW5kb20oLTUsNSwxKTsKJHgyID0gbm9uX3plcm9fcmFuZG9tKC01LDUsMSk7CiR4MyA9IG5vbl96ZXJvX3JhbmRvbSgtNSw1LDEpOwokYTEgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRjMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokZDEgPSAkYTEqJHgxKyRiMSokeDIrJGMxKiR4MzsKJGEyID0gMDsKJGIyID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRjMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokZDIgPSAkYTIqJHgxKyRiMiokeDIrJGMyKiR4MzsKJGEzID0gMDsKJGIzID0gMDsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC01LDUsMSk7CiRkMyA9ICRhMyokeDErJGIzKiR4MiskYzMqJHgzOwokY29lZmYxPUZvcm11bGEoIiRhMSp4XzErJGIxKnhfMiskYzEqeF8zIiktPnJlZHVjZTsKJGNvZWZmMj1Gb3JtdWxhKCIkYTIqeF8xKyRiMip4XzIrJGMyKnhfMyIpLT5yZWR1Y2U7CiRjb2VmZjM9Rm9ybXVsYSgiJGEzKnhfMSskYjMqeF8yKyRjMyp4XzMiKS0+cmVkdWNlOwoKQkVHSU5fUEdNTApTb2x2ZSB0aGUgc3lzdGVtOgoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGNvZWZmMV0gXGFtcCA9IFskZDFdXFwKWyRjb2VmZjJdIFxhbXAgPSBbJGQyXVxcClskY29lZmYzXSBcYW1wID0gWyRkM10KXGVuZHthbGlnbmVkfQpgYGBdCgoKCltgKHhfMSwgeF8yLCB4XzMpID0gXGJpZ2coIGBdIFtfXXskeDF9ezJ9ICwgW19deyR4Mn17Mn0gLCBbX117JHgzfXsyfSBbYFxiaWdnKSBgXQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -438,7 +438,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-5" ww-id="webwork-5">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-5" ww-id="webwork-5">
     <static seed="5">
       <statement><p>Solve the system:</p>
 <p><me>\begin{aligned}
@@ -464,11 +464,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZvcm0ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZCh4XzEgPT4gJ1JlYWwnLCB4XzI9PiAnUmVhbCcsIHhfMz0+J1JlYWwnKTsKQ29udGV4dCgpLT5yZWR1Y3Rpb24tPnNldCgnKC14KSt5Jz0+MCwgJygteCkteSc9PjApOwokeDEgPSBub25femVyb19yYW5kb20oLTUsNSwxKTsKJHgyID0gbm9uX3plcm9fcmFuZG9tKC01LDUsMSk7CiR4MyA9IG5vbl96ZXJvX3JhbmRvbSgtNSw1LDEpOwokYTEgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRjMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokZDEgPSAkYTEqJHgxKyRiMSokeDIrJGMxKiR4MzsKJGEyID0gMDsKJGIyID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRjMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokZDIgPSAkYTIqJHgxKyRiMiokeDIrJGMyKiR4MzsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMyA9IDA7CiRjMyA9IG5vbl96ZXJvX3JhbmRvbSgtNSw1LDEpOwokZDMgPSAkYTMqJHgxKyRiMyokeDIrJGMzKiR4MzsKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeF8xKyRiMSp4XzIrJGMxKnhfMyIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKnhfMSskYjIqeF8yKyRjMip4XzMiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4XzErJGIzKnhfMiskYzMqeF8zIiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKU29sdmUgdGhlIHN5c3RlbToKCltgYGBcYmVnaW57YWxpZ25lZH0KWyRjb2VmZjFdIFxhbXAgPSBbJGQxXVxcClskY29lZmYyXSBcYW1wID0gWyRkMl1cXApbJGNvZWZmM10gXGFtcCA9IFskZDNdClxlbmR7YWxpZ25lZH0KYGBgXQoKCgpbYCh4XzEsIHhfMiwgeF8zKSA9IFxiaWdnKCBgXSBbX117JHgxfXsyfSAsIFtfXXskeDJ9ezJ9ICwgW19deyR4M317Mn0gW2BcYmlnZykgYF0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -559,7 +559,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-6" ww-id="webwork-6">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-6" ww-id="webwork-6">
     <static seed="6">
       <statement><p>Use the method of elimination to solve the linear system:</p>
 <p><me>\begin{aligned}
@@ -579,11 +579,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTUsNSwxKSk7CiR5ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTUsNSwxKSk7CiRhPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRkPTIqJGE7CiRiPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjPUNvbXB1dGUocmFuZG9tKDIsNSwxKSk7CiRjb25zdDE9JGEqJHgrJGQqJHk7CiRjb25zdDI9JGIqJHgtJGMqJHk7CgpCRUdJTl9QR01MClVzZSB0aGUgbWV0aG9kIG9mIGVsaW1pbmF0aW9uIHRvIHNvbHZlIHRoZSBsaW5lYXIgc3lzdGVtOgoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGFdeCtbJGRdeSBcYW1wID0gWyRjb25zdDFdXFwKWyRiXXgtWyRjXXkgXGFtcCA9IFskY29uc3QyXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKVGhlIHNvbHV0aW9uIGlzIFtgeD1gXVtfXXskeH17Mn0gYW5kIFtgeT1gXVtfXXskeX17Mn0uCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -660,7 +660,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-7" ww-id="webwork-7">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-7" ww-id="webwork-7">
     <static seed="7">
       <statement><p>Use the method of elimination to solve the linear system:</p>
 <p><me>\begin{aligned}
@@ -686,11 +686,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZvcm0ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFyZSh4XzEgPT4gJ1JlYWwnLCB4XzI9PiAnUmVhbCcsIHhfMz0+ICdSZWFsJyk7CkNvbnRleHQoKS0+cmVkdWN0aW9uLT5zZXQoJygteCkreSc9PjAsICcoLXgpLXknPT4wKTsKJHgxID0gQ29tcHV0ZShub25femVyb19yYW5kb20oMiw5LDEpKTsKJHgyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTcsNywxKSk7CiR4MyA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC03LDcsMSkpOwokYTEgPSBub25femVyb19yYW5kb20oLTEsMSwxKSpub25femVyb19yYW5kb20oMiwzLDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMSA9IENvbXB1dGUoIiRhMSokeDErJGIxKiR4MiskYzEqJHgzIik7CiRhMiA9IDA7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtMywzLDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTcsNywxKTsKJGQyID0gQ29tcHV0ZSgiJGEyKiR4MSskYjIqJHgyKyRjMiokeDMiKTsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC03LDcsMSk7CiRiMyA9IG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpOwokYzMgPSByYW5kb20oMiw5LDEpOwokZDMgPSBDb21wdXRlKCIkYTMqJHgxKyRiMyokeDIrJGMzKiR4MyIpOwoKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeF8xKyRiMSp4XzIrJGMxKnhfMyIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKnhfMSskYjIqeF8yKyRjMip4XzMiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4XzErJGIzKnhfMiskYzMqeF8zIiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKVXNlIHRoZSBtZXRob2Qgb2YgZWxpbWluYXRpb24gdG8gc29sdmUgdGhlIGxpbmVhciBzeXN0ZW06CgpbYGBgXGJlZ2lue2FsaWduZWR9ClskY29lZmYxXSBcYW1wID0gWyRkMV1cXApbJGNvZWZmMl0gXGFtcCA9IFskZDJdXFwKWyRjb2VmZjNdIFxhbXAgPSBbJGQzXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKVGhlIHNvbHV0aW9uIGlzIFtgeF8xPWBdW19deyR4fXsyfSwgW2B4XzI9YF1bX117JHl9ezJ9IGFuZCBbYHhfMz1gXVtfXXsken17Mn0uCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -782,7 +782,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-8" ww-id="webwork-8">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-8" ww-id="webwork-8">
     <static seed="8">
       <statement><p>Write the augmented matrix of the system</p>
 <p><me>\begin{aligned}
@@ -867,11 +867,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpURVhUKE1PREVTKFBUWD0+JycsSFRNTD0+JzxkaXYgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPlwoXG5ld2NvbW1hbmR7XGFtcH17Jn1cKTwvZGl2PicpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHgxID0+ICdSZWFsJywgeDI9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtMSwxLDEpKnJhbmRvbSgyLDIwLDEpOwokYjEgPSByYW5kb20oMiwyNywxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC0yNywyNywxKTsKJGEyID0gbm9uX3plcm9fcmFuZG9tKC0xLDEsMSkqcmFuZG9tKDIsMjAsMSk7CiRiMiA9IHJhbmRvbSgyLDI3LDEpOwokYjJhbnMgPSAtMSokYjI7CiRjMiA9IG5vbl96ZXJvX3JhbmRvbSgtMjcsMjcsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtMSwxLDEpKnJhbmRvbSgyLDIwLDEpOwokYjMgPSByYW5kb20oMiwyNywxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC0yNywyNywxKTsKCkJFR0lOX1BHTUwKV3JpdGUgdGhlIGF1Z21lbnRlZCBtYXRyaXggb2YgdGhlIHN5c3RlbQoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGExXXhfMSsgWyRiMV14XzJcYW1wID0gWyRjMV1cXApbJGEyXXhfMS0gWyRiMl14XzJcYW1wID0gWyRjMl1cXApbJGEzXXhfMSsgWyRiM114XzJcYW1wID0gWyRjM10KXGVuZHthbGlnbmVkfQpgYGBdCgoKCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhMX17Mn0nKSxQR01MKCdbX117JGIxfXsyfScpLFBHTUwoJ1tfXXskYzF9ezJ9JyksXSxbUEdNTCgnW19deyRhMn17Mn0nKSxQR01MKCdbX117JGIyYW5zfXsyfScpLFBHTUwoJ1tfXXskYzJ9ezJ9JyksXSxbUEdNTCgnW19deyRhM317Mn0nKSxQR01MKCdbX117JGIzfXsyfScpLFBHTUwoJ1tfXXskYzN9ezJ9JyksXSxdLGFsaWduPT4nbGwhe1x2cnVsZSB3aWR0aCAwLjA3ZW19bCcsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -970,7 +970,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-9" ww-id="webwork-9">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-9" ww-id="webwork-9">
     <static seed="9">
       <statement><p>Write the augmented matrix of the system</p>
 <p><me>\begin{aligned}
@@ -1077,11 +1077,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsImNvbnRleHRGb3JtLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+dmFyaWFibGVzLT5hZGQoeSA9PiAnUmVhbCcsIHo9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokZDEgPSByYW5kb20oLTk5LDk5LDEpOwokYTIgPSAwOwokYjIgPSBub25femVyb19yYW5kb20oLTk5LDk5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gcmFuZG9tKC05LDksMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtOTksOTksMSk7CiRiMyA9IDA7CiRjMyA9IHJhbmRvbSgyLDk5LDEpOwokZDMgPSByYW5kb20oLTk5LDk5LDEpOwokY29lZmYxPUZvcm11bGEoIiRhMSp4KyRiMSp5KyRjMSp6IiktPnJlZHVjZTsKJGNvZWZmMj1Gb3JtdWxhKCIkYTIqeCskYjIqeSskYzIqeiIpLT5yZWR1Y2U7CiRjb2VmZjM9Rm9ybXVsYSgiJGEzKngrJGIzKnkrJGMzKnoiKS0+cmVkdWNlOwoKQkVHSU5fUEdNTApXcml0ZSB0aGUgYXVnbWVudGVkIG1hdHJpeCBvZiB0aGUgc3lzdGVtCgpbYGBgXGJlZ2lue2FsaWduZWR9ClskY29lZmYxXSBcYW1wID0gWyRkMV1cXApbJGNvZWZmMl0gXGFtcCA9IFskZDJdXFwKWyRjb2VmZjNdIFxhbXAgPSBbJGQzXQpcZW5ke2FsaWduZWR9CmBgYF0KCgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbX117JGExfXsyfScpLFBHTUwoJ1tfXXskYjF9ezJ9JyksUEdNTCgnW19deyRjMX17Mn0nKSxQR01MKCdbX117JGQxfXsyfScpLF0sW1BHTUwoJ1tfXXskYTJ9ezJ9JyksUEdNTCgnW19deyRiMn17Mn0nKSxQR01MKCdbX117JGMyfXsyfScpLFBHTUwoJ1tfXXskZDJ9ezJ9JyksXSxbUEdNTCgnW19deyRhM317Mn0nKSxQR01MKCdbX117JGIzfXsyfScpLFBHTUwoJ1tfXXskYzN9ezJ9JyksUEdNTCgnW19deyRkM317Mn0nKSxdLF0sYWxpZ249PidsbGwhe1x2cnVsZSB3aWR0aCAwLjA3ZW19bCcsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1189,7 +1189,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-10" ww-id="webwork-10">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-10" ww-id="webwork-10">
     <static seed="10">
       <statement><p><ol label="a.">
 <li>
@@ -1230,11 +1230,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCdOdW1lcmljJyk7JHJhZGlvID0gUmFkaW9CdXR0b25zKFtbCiAgIlRoZSBtYXRyaXggaXMgJHtCTX0zXHRpbWVzIDUke0VNfSwgd2l0aCAzIHJvd3MgYW5kIDUgY29sdW1ucy4iLAogICJUaGUgbWF0cml4IGlzICR7Qk19M1x0aW1lcyA1JHtFTX0sIHdpdGggMyBjb2x1bW5zIGFuZCA1IHJvd3MuIiwKICAiVGhlIG1hdHJpeCBpcyAke0JNfTVcdGltZXMgMyR7RU19LCB3aXRoIDUgcm93cyBhbmQgMyBjb2x1bW5zLiIsCiAgIlRoZSBtYXRyaXggaXMgJHtCTX01XHRpbWVzIDMke0VNfSwgd2l0aCA1IGNvbHVtbnMgYW5kIDMgcm93cy4iLAogIF1dLCAwCik7CgokbiA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDUsMTAsMSkpOwokbSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKDEsMywxKSk7CiRudW12YXJzID0gJG4tMTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYjEgPSByYW5kb20oLTksOSwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRkMSA9IENvbXB1dGUobm9uX3plcm9fcmFuZG9tKC05LDksMSkpOwokZTEgPSBDb21wdXRlKHJhbmRvbSgtOSw5LDEpKTsKJGEyID0gcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZShub25femVyb19yYW5kb20oLTksOSwxKSk7CiRlMiA9IENvbXB1dGUocmFuZG9tKC05LDksMSkpOwokYTMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGIzID0gcmFuZG9tKC05LDksMSk7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGUzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CgpCRUdJTl9QR01MCmEuICBDb25zaWRlciB0aGUgbWF0cml4LgoKICAgIFtgYGBBPQogICAgICAgICAgICAgICAgXGJlZ2lue2JtYXRyaXh9IFskYTFdIFxhbXAgWyRiMV0gXGFtcCBbJGMxXSBcYW1wIFskZDFdIFxhbXAgWyRlMV0gXFwKICAgICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxhbXAgWyRlMl1cXAogICAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGFtcCBbJGUzXSBcZW5ke2JtYXRyaXh9CiAgICAgICAgICAgICAgYGBgXQoKICAgIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29ycmVjdGx5IGRlc2NyaWJlcyB0aGUgbWF0cml4IGFib3ZlPwoKICAgIFtfXXskcmFkaW99ezV9CgoKYS4gIE5vdyBjb25zaWRlciBhbiBbYFskbV0gXHRpbWVzIFskbl1gXSBtYXRyaXggW2BCXHRleHR7Ln1gXSAgSWYgW2BCYF0gaXMgYW4gYXVnbWVudGVkIG1hdHJpeCwgdGhlIGNvcnJlc3BvbmRpbmcgbGluZWFyIHN5c3RlbSBoYXMgaG93IG1hbnkgdmFyaWFibGVzPyBbX117JG51bXZhcnN9ezJ9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:23Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1334,7 +1334,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-11" ww-id="webwork-11">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-11" ww-id="webwork-11">
     <static seed="11">
       <statement><p>Convert the augmented matrix below to the associated linear system.</p>
 <p><me>\begin{bmatrix} -7 \amp 5 \amp -3 \amp {-30} \\
@@ -1345,7 +1345,7 @@ ENDDOCUMENT();
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
-<col width="62.5%"/>
+<col width="13.2849%"/>
 <col/>
 <row>
 <cell>Expression containing the variables</cell>
@@ -1406,11 +1406,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsImNvbnRleHRGb3JtLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY+JykpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+dmFyaWFibGVzLT5hcmUoeCA9PiAnUmVhbCcsIHk9PiAnUmVhbCcsIHo9PiAnUmVhbCcpOwpDb250ZXh0KCktPnJlZHVjdGlvbi0+c2V0KCcoLXgpK3knPT4wLCAnKC14KS15Jz0+MCk7CiR4ID0gQ29tcHV0ZShub25femVyb19yYW5kb20oMiw5LDEpKTsKJHkgPSBDb21wdXRlKG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpKTsKJHogPSBDb21wdXRlKG5vbl96ZXJvX3JhbmRvbSgtNyw3LDEpKTsKJGExID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMSA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQxID0gQ29tcHV0ZSgiJGExKiR4KyRiMSokeSskYzEqJHoiKTsKJGEyID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwokYzIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGQyID0gQ29tcHV0ZSgiJGEyKiR4KyRiMiokeSskYzIqJHoiKTsKJGEzID0gbm9uX3plcm9fcmFuZG9tKC05LDksMSk7CiRiMyA9IDA7CiRjMyA9IHJhbmRvbSgtOSw5LDEpOwokZDMgPSBDb21wdXRlKCIkYTMqJHgrJGIzKiR5KyRjMyokeiIpOwoKJGNvZWZmMT1Gb3JtdWxhKCIkYTEqeCskYjEqeSskYzEqeiIpLT5yZWR1Y2U7CiRjb2VmZjI9Rm9ybXVsYSgiJGEyKngrJGIyKnkrJGMyKnoiKS0+cmVkdWNlOwokY29lZmYzPUZvcm11bGEoIiRhMyp4KyRiMyp5KyRjMyp6IiktPnJlZHVjZTsKCkJFR0lOX1BHTUwKQ29udmVydCB0aGUgYXVnbWVudGVkIG1hdHJpeCBiZWxvdyB0byB0aGUgYXNzb2NpYXRlZCBsaW5lYXIgc3lzdGVtLgoKW2BgYAogICAgICAgICAgICAgIFxiZWdpbntibWF0cml4fSBbJGExXSBcYW1wIFskYjFdIFxhbXAgWyRjMV0gXGFtcCBbJGQxXSBcXAogICAgICAgICAgICAgIFskYTJdIFxhbXAgWyRiMl0gXGFtcCBbJGMyXSBcYW1wIFskZDJdIFxcCiAgICAgICAgICAgICAgWyRhM10gXGFtcCBbJGIzXSBcYW1wIFskYzNdIFxhbXAgWyRkM10gXGVuZHtibWF0cml4fQogICAgICAgICAgICBgYGBdCgpVc2UgW2B4XHRleHR7LH1gXSBbYHlcdGV4dHssfWBdIGFuZCBbYHpgXSBmb3IgdGhlIHZhcmlhYmxlcy4KClRoZSBhc3NvY2lhdGVkIGxpbmVhciBzeXN0ZW0gaXM6Cgo+PiBbQERhdGFUYWJsZShbW1BHTUwoJ0V4cHJlc3Npb24gY29udGFpbmluZyB0aGUgdmFyaWFibGVzJyksUEdNTCgnW2A9YF0nKSxQR01MKCdDb25zdGFudHMnKSxdLFtQR01MKCdbX117JGNvZWZmMX17OH0nKSxQR01MKCdbYD1gXScpLFBHTUwoJ1tfXXskZDF9ezJ9JyksXSxbUEdNTCgnW19deyRjb2VmZjJ9ezh9JyksUEdNTCgnW2A9YF0nKSxQR01MKCdbX117JGQyfXsyfScpLF0sW1BHTUwoJ1tfXXskY29lZmYzfXs4fScpLFBHTUwoJ1tgPWBdJyksUEdNTCgnW19deyRkM317Mn0nKSxdLF0sYWxpZ249PidycHswLjYyNX1sJyx2YWxpZ249PidtaWRkbGUnLCk7QF0qIDw8CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:24Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1513,7 +1513,7 @@ The associated linear system is:
      PGML('[_]{$d3}{2}'),
     ],
   ],
-      align => 'rp{0.625}l',
+      align => 'rp{0.625in}l',
       valign => 'middle',);@]* <<
 
 END_PGML
@@ -1525,7 +1525,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-12" ww-id="webwork-12">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-12" ww-id="webwork-12">
     <static seed="12">
       <statement><p>Given the matrix</p>
 <p><me>A={\left[\begin{array}{cccc}
@@ -1731,11 +1731,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJNYXRyaXgiKTsKJGExID0gbm9uX3plcm9fcmFuZG9tKC01LDUsMSk7CiRiMSA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGQxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9ICRhMSsyOwokYjIgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYTMgPSAkYTEtMTsKJGIzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRjMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokZDMgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKCiRBPU1hdHJpeChbWyRhMSwkYjEsJGMxLCRkMV0sWyRhMiwkYjIsJGMyLCRkMl0sWyRhMywkYjMsJGMzLCRkM11dKTsKCiRhbnMxPU1hdHJpeChbWyRhMSwkYjEsJGMxLCRkMV0sWyRhMywkYjMsJGMzLCRkM10sWyRhMiwkYjIsJGMyLCRkMl1dKTsKCiRhbnMyYTEgPSAkYTEvJGExOwokYW5zMmIxID0gJGIxLyRhMTsKJGFuczJjMSA9ICRjMS8kYTE7CiRhbnMyZDEgPSAkZDEvJGExOwoKJGFuczI9TWF0cml4KFtbJGFuczJhMSwkYW5zMmIxLCRhbnMyYzEsJGFuczJkMV0sWyRhMiwkYjIsJGMyLCRkMl0sWyRhMywkYjMsJGMzLCRkM11dKTsKCkJFR0lOX1BHTUwKR2l2ZW4gdGhlIG1hdHJpeAoKW2BgYAogICAgICAgICAgICAgIEE9WyRBXQogICAgICAgICAgICBgYGBdCgpwZXJmb3JtIHRoZSByb3cgb3BlcmF0aW9uIFtgUl8yIFxsZWZ0cmlnaHRhcnJvdyBSXzNgXSBvbiBbYEFgXSBhbmQgZW50ZXIgdGhlIHJlc3VsdC4KCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhMX17Mn0nKSxQR01MKCdbX117JGIxfXsyfScpLFBHTUwoJ1tfXXskYzF9ezJ9JyksUEdNTCgnW19deyRkMX17Mn0nKSxdLFtQR01MKCdbX117JGEzfXsyfScpLFBHTUwoJ1tfXXskYjN9ezJ9JyksUEdNTCgnW19deyRjM317Mn0nKSxQR01MKCdbX117JGQzfXsyfScpLF0sW1BHTUwoJ1tfXXskYTJ9ezJ9JyksUEdNTCgnW19deyRiMn17Mn0nKSxQR01MKCdbX117JGMyfXsyfScpLFBHTUwoJ1tfXXskZDJ9ezJ9JyksXSxdLGFsaWduPT4nKns0fXtsfScsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKUGVyZm9ybSB0aGUgcm93IG9wZXJhdGlvbiBbYFxmcmFjezF9e1skYTFdfVJfMSBccmlnaHRhcnJvdyBSXzFgXSBvbiBbYEFgXSBhbmQgZW50ZXIgdGhlIHJlc3VsdC4KCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhbnMyYTF9ezJ9JyksUEdNTCgnW19deyRhbnMyYjF9ezJ9JyksUEdNTCgnW19deyRhbnMyYzF9ezJ9JyksUEdNTCgnW19deyRhbnMyZDF9ezJ9JyksXSxbUEdNTCgnW19deyRhMn17Mn0nKSxQR01MKCdbX117JGIyfXsyfScpLFBHTUwoJ1tfXXskYzJ9ezJ9JyksUEdNTCgnW19deyRkMn17Mn0nKSxdLFtQR01MKCdbX117JGEzfXsyfScpLFBHTUwoJ1tfXXskYjN9ezJ9JyksUEdNTCgnW19deyRjM317Mn0nKSxQR01MKCdbX117JGQzfXsyfScpLF0sXSxhbGlnbj0+Jyp7NH17bH0nLHZhbGlnbj0+J21pZGRsZScsKTtAXSogPDwKCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:24Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1869,7 +1869,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-13" ww-id="webwork-13">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-13" ww-id="webwork-13">
     <static seed="13">
       <statement><p>Given the matrix</p>
 <p><me>A={\left[\begin{array}{cccc}
@@ -1982,11 +1982,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpURVhUKE1PREVTKFBUWD0+JycsSFRNTD0+JzxkaXYgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPlwoXG5ld2NvbW1hbmR7XGFtcH17Jn1cKTwvZGl2PicpKTsKQ29udGV4dCgiTWF0cml4Iik7CiRtID0gcmFuZG9tKDIsNCwxKTsKJG4gPSByYW5kb20oMiw0LDEpOwokcCA9IHJhbmRvbSgyLDQsMSk7CiRhMSA9IDE7CiRiMSA9IG5vbl96ZXJvX3JhbmRvbSgtMywzLDEpOwokYzEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGQxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9ICRtOwokYjIgPSAxKyRtKiRiMTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYTMgPSAtJG47CiRiMyA9ICgtJHApLSRuKiRiMTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRkMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwoKCiRhbnNhMSA9IDE7CiRhbnNiMSA9ICRiMTsKJGFuc2MxID0gJGMxOwokYW5zZDEgPSAkZDE7CiRhbnNhMiA9IDA7CiRhbnNiMiA9IDE7CiRhbnNjMiA9ICgtJG0pKiRjMSskYzI7IAokYW5zZDIgPSAoLSRtKSokZDErJGQyOwokYW5zYTMgPSAwOwokYW5zYjMgPSAwOwokYW5zYzMgPSAoJHAqKC0kbSkrJG4pKiRjMSskcCokYzIrJGMzOwokYW5zZDMgPSAoJHAqKC0kbSkrJG4pKiRkMSskcCokZDIrJGQzOwoKJEEgPSBNYXRyaXgoWwpbJGExLCRiMSwkYzEsJGQxXSwKWyRhMiwkYjIsJGMyLCRkMl0sClskYTMsJGIzLCRjMywkZDNdLApdKTsKCiRhbnN3ZXIgPSBNYXRyaXgoWwpbJGFuc2ExLCRhbnNiMSwkYW5zYzEsJGFuc2QxXSwKWyRhbnNhMiwkYW5zYjIsJGFuc2MyLCRhbnNkMl0sClskYW5zYTMsJGFuc2IzLCRhbnNjMywkYW5zZDNdLApdKTsKCiRtZGlzcGxheSA9IENvbXB1dGUoIi0kbSIpOwoKQkVHSU5fUEdNTApHaXZlbiB0aGUgbWF0cml4CgpbYGBgQT1bJEFdXHRleHR7LH1gYGBdCgpwZXJmb3JtIHRoZSByb3cgb3BlcmF0aW9ucyBiZWxvdyBpbiB0aGUgb3JkZXIgZ2l2ZW4gYW5kIGVudGVyIHRoZSBmaW5hbCByZXN1bHQuCgpbYGBgXGJlZ2lue2FsaWduZWR9ClskbWRpc3BsYXldIFJfMSArUl8yIFxhbXAgXHJpZ2h0YXJyb3cgUl8yXFwKWyRuXSBSXzEgK1JfMyBcYW1wIFxyaWdodGFycm93IFJfM1xcClskcF0gUl8yICtSXzMgXGFtcCBccmlnaHRhcnJvdyBSXzMKXGVuZHthbGlnbmVkfQpgYGBdCgoKCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW19deyRhbnNhMX17Mn0nKSxQR01MKCdbX117JGFuc2IxfXsyfScpLFBHTUwoJ1tfXXskYW5zYzF9ezJ9JyksUEdNTCgnW19deyRhbnNkMX17Mn0nKSxdLFtQR01MKCdbX117JGFuc2EyfXsyfScpLFBHTUwoJ1tfXXskYW5zYjJ9ezJ9JyksUEdNTCgnW19deyRhbnNjMn17Mn0nKSxQR01MKCdbX117JGFuc2QyfXsyfScpLF0sW1BHTUwoJ1tfXXskYW5zYTN9ezJ9JyksUEdNTCgnW19deyRhbnNiM317Mn0nKSxQR01MKCdbX117JGFuc2MzfXsyfScpLFBHTUwoJ1tfXXskYW5zZDN9ezJ9JyksXSxdLGFsaWduPT4nKns0fXtsfScsdmFsaWduPT4nbWlkZGxlJywpO0BdKiA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:24Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2122,7 +2122,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-14" ww-id="webwork-14">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-14" ww-id="webwork-14">
     <static seed="14">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2159,11 +2159,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJjb250ZXh0Rm9ybS5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJNYXRyaXgiKTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjIgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjMgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7ICAgICAgICAgICAKCiRBID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sIFskYTIsJGIyLCRjMl0sIFskYTMsJGIzLCRjM11dKTsKJHJvdyA9IHJhbmRvbSgxLDMsMSk7CiRjID0gcmFuZG9tKDIsNCkqcmFuZG9tKC0xLDEsMik7CgppZiAoJHJvdz09MSl7CiAgJGExPSRjKiRhMTsKICAkYjE9JGMqJGIxOwogICRjMT0kYyokYzE7Cn0KZWxzaWYgKCRyb3c9PTIpewogICRhMj0kYyokYTI7CiAgJGIyPSRjKiRiMjsKICAkYzI9JGMqJGMyOwp9CmVsc2UgewogICRhMz0kYyokYTM7CiAgJGIzPSRjKiRiMzsKICAkYzM9JGMqJGMzOwp9CgokQiA9IE1hdHJpeChbWyRhMSwgJGIxLCAkYzFdLCBbJGEyLCRiMiwkYzJdLCBbJGEzLCRiMywkYzNdXSk7CgoKCkNvbnRleHQoKS0+dmFyaWFibGVzLT5hcmUoUjEgPT4gWyJSZWFsIiwgVGVYPT4iUl8xIl0sIFIyID0+IFsiUmVhbCIsIFRlWD0+IlJfMiJdLCBSMyA9PiBbIlJlYWwiLCBUZVg9PiJSXzMiXSk7CiRyZCA9ICJSIi4kcm93OwokcnN0cmxocyA9IG5pY2VzdHJpbmcoWyRjXSxbJHJkXSk7CiRsaHMgPSBGb3JtdWxhKCRyc3RybGhzKTsKJHJocyA9IEZvcm11bGEoJHJkKTsKCiRwb3AgPSBQb3BVcChbInNlbGVjdCIsICItPiIsICI8LS0+Il0sICItPiIpOwoKQkVHSU5fUEdNTApUaGUgbWF0cml4IG9uIHRoZSByaWdodCByZXN1bHRzIGFmdGVyIHBlcmZvcm1pbmcgYSBzaW5nbGUgcm93IG9wZXJhdGlvbiBvbiB0aGUgbWF0cml4IG9uIHRoZSBsZWZ0LgoKW2BgYFskQV0gXHJpZ2h0YXJyb3cgWyRCXWBgYF0KCgoKSWRlbnRpZnkgdGhlIHJvdyBvcGVyYXRpb24uIFVzZSAqUjEqLCAqUjIqLCBhbmQgKlIzKiB0byByZXByZXNlbnQgdGhlIHJvd3MgW2BSXzFcdGV4dHssfWBdIFtgUl8yXHRleHR7LH1gXSBhbmQgW2BSXzNcdGV4dHsufWBdCgpBbnN3ZXI6ICBbX117JGxoc317Mn0gICBbX117JHBvcH17NX0gICBbX117JHJoc317Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:24Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2271,7 +2271,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-15" ww-id="webwork-15">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-15" ww-id="webwork-15">
     <static seed="15">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2308,11 +2308,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJjb250ZXh0Rm9ybS5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJNYXRyaXgiKTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjIgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjMgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7ICAgICAgICAgICAKCiRBID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sIFskYTIsJGIyLCRjMl0sIFskYTMsJGIzLCRjM11dKTsKJHJvdzEgPSByYW5kb20oMSwzLDEpOwokcm93MiA9ICRyb3cxOwp3aGlsZSAoJHJvdzE9PSRyb3cyKXsKICAkcm93Mj1yYW5kb20oMSwzLDEpOwp9CiRjID0gcmFuZG9tKDIsNCkqcmFuZG9tKC0xLDEsMik7CgppZiAoJHJvdzE9PTEpewogIGlmICgkcm93Mj09MikgewogICAgJGEyPSRjKiRhMSskYTI7CiAgICAkYjI9JGMqJGIxKyRiMjsKICAgICRjMj0kYyokYzErJGMyOwogIH0KICBlbHNlIHsKICAgICRhMz0kYyokYTErJGEzOwogICAgJGIzPSRjKiRiMSskYjM7CiAgICAkYzM9JGMqJGMxKyRjMzsKICB9Cn0KZWxzaWYgKCRyb3cxPT0yKXsKICBpZiAoJHJvdzI9PTEpIHsKICAgICRhMT0kYyokYTIrJGExOwogICAgJGIxPSRjKiRiMiskYjE7CiAgICAkYzE9JGMqJGMyKyRjMTsKICB9CiAgZWxzZSB7CiAgICAkYTM9JGMqJGEyKyRhMzsKICAgICRiMz0kYyokYjIrJGIzOwogICAgJGMzPSRjKiRjMiskYzM7CiAgfQp9CmVsc2UgewogIGlmICgkcm93Mj09MikgewogICAgJGEyPSRjKiRhMyskYTI7CiAgICAkYjI9JGMqJGIzKyRiMjsKICAgICRjMj0kYyokYzMrJGMyOwogIH0KICBlbHNlIHsKICAgICRhMT0kYyokYTMrJGExOwogICAgJGIxPSRjKiRiMyskYjE7CiAgICAkYzE9JGMqJGMzKyRjMTsKICB9Cn0KCiRCID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sIFskYTIsJGIyLCRjMl0sIFskYTMsJGIzLCRjM11dKTsKCkNvbnRleHQoKS0+dmFyaWFibGVzLT5hcmUoUjEgPT4gWyJSZWFsIiwgVGVYPT4iUl8xIl0sIFIyID0+IFsiUmVhbCIsIFRlWD0+IlJfMiJdLCBSMyA9PiBbIlJlYWwiLCBUZVg9PiJSXzMiXSk7CiRyZDEgPSAiUiIuJHJvdzE7CiRyZDIgPSAiUiIuJHJvdzI7CiRyc3RybGhzID0gbmljZXN0cmluZyhbJGNdLFskcmQxXSk7CiRsaHMgPSBGb3JtdWxhKCIkcnN0cmxocyskcmQyIik7CiRyaHMgPSBGb3JtdWxhKCRyZDIpOwoKJHBvcCA9IFBvcFVwKFsic2VsZWN0IiwgIi0+IiwgIjwtLT4iXSwgIi0+Iik7CgpCRUdJTl9QR01MClRoZSBtYXRyaXggb24gdGhlIHJpZ2h0IHJlc3VsdHMgYWZ0ZXIgcGVyZm9ybWluZyBhIHNpbmdsZSByb3cgb3BlcmF0aW9uIG9uIHRoZSBtYXRyaXggb24gdGhlIGxlZnQuCgpbYGBgWyRBXSBccmlnaHRhcnJvdyBbJEJdYGBgXQoKCgpJZGVudGlmeSB0aGUgcm93IG9wZXJhdGlvbi4gVXNlICpSMSosICpSMiosIGFuZCAqUjMqIHRvIHJlcHJlc2VudCB0aGUgcm93cyBbYFJfMVx0ZXh0eyx9YF0gW2BSXzJcdGV4dHssfWBdIGFuZCBbYFJfM1x0ZXh0ey59YF0KCkFuc3dlcjogIFtfXXskbGhzfXsyfSAgIFtfXXskcG9wfXs1fSAgIFtfXXskcmhzfXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:24Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2446,7 +2446,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-16" ww-id="webwork-16">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-16" ww-id="webwork-16">
     <static seed="16">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2483,11 +2483,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJjb250ZXh0Rm9ybS5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJNYXRyaXgiKTsKCiRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjEgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMxID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMiA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjIgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMyID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7CiRhMyA9IG5vbl96ZXJvX3JhbmRvbSgtNiw2LDEpOwokYjMgPSBub25femVyb19yYW5kb20oLTYsNiwxKTsKJGMzID0gbm9uX3plcm9fcmFuZG9tKC02LDYsMSk7ICAgICAgICAgICAKCiRBID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sIFskYTIsJGIyLCRjMl0sIFskYTMsJGIzLCRjM11dKTsKJHJvdzEgPSByYW5kb20oMSwyLDEpOwokcm93MiA9ICRyb3cxOwp3aGlsZSAoJHJvdzE9PSRyb3cyKXsKICAkcm93Mj1yYW5kb20oMiwzLDEpOwp9CgoKCmlmICgkcm93MT09MSl7CiAgaWYgKCRyb3cyPT0yKSB7CiAgICAkQiA9IE1hdHJpeChbWyRhMiwkYjIsJGMyXSxbJGExLCAkYjEsICRjMV0sWyRhMywkYjMsJGMzXV0pOwogIH0KICBlbHNlIHsKICAgICRCID0gTWF0cml4KFtbJGEzLCRiMywkYzNdLFskYTIsJGIyLCRjMl0sWyRhMSwgJGIxLCAkYzFdXSk7CiAgfQp9CmVsc2lmICgkcm93MT09Mil7CiAgaWYgKCRyb3cyPT0xKSB7CiAgICAkQiA9IE1hdHJpeChbWyRhMiwkYjIsJGMyXSxbJGExLCAkYjEsICRjMV0sWyRhMywkYjMsJGMzXV0pOwogIH0KICBlbHNlIHsKICAgICRCID0gTWF0cml4KFtbJGExLCAkYjEsICRjMV0sWyRhMywkYjMsJGMzXSxbJGEyLCRiMiwkYzJdXSk7CiAgfQp9CmVsc2UgewogIGlmICgkcm93Mj09MikgewogICAgJEIgPSBNYXRyaXgoW1skYTEsICRiMSwgJGMxXSxbJGEzLCRiMywkYzNdLFskYTIsJGIyLCRjMl1dKTsKICB9CiAgZWxzZSB7CiAgICAkQiA9IE1hdHJpeChbWyRhMywkYjMsJGMzXSxbJGEyLCRiMiwkYzJdLFskYTEsICRiMSwgJGMxXV0pOwogIH0KfQoKCgpDb250ZXh0KCktPnZhcmlhYmxlcy0+YXJlKFIxID0+IFsiUmVhbCIsIFRlWD0+IlJfMSJdLCBSMiA9PiBbIlJlYWwiLCBUZVg9PiJSXzIiXSwgUjMgPT4gWyJSZWFsIiwgVGVYPT4iUl8zIl0pOwokcmQxID0gIlIiLiRyb3cxOwokcmQyID0gIlIiLiRyb3cyOwokcnN0cmxocyA9IG5pY2VzdHJpbmcoWyRjXSxbJHJkMV0pOwokbGhzID0gRm9ybXVsYSgiJHJkMSIpOwokcmhzID0gRm9ybXVsYSgiJHJkMiIpOwoKCgoKJHBvcCA9IFBvcFVwKFsic2VsZWN0IiwgIi0+IiwgIjwtLT4iXSwgIjwtLT4iKTsKCkJFR0lOX1BHTUwKVGhlIG1hdHJpeCBvbiB0aGUgcmlnaHQgcmVzdWx0cyBhZnRlciBwZXJmb3JtaW5nIGEgc2luZ2xlIHJvdyBvcGVyYXRpb24gb24gdGhlIG1hdHJpeCBvbiB0aGUgbGVmdC4KCltgYGBbJEFdIFxyaWdodGFycm93IFskQl1gYGBdCgoKCklkZW50aWZ5IHRoZSByb3cgb3BlcmF0aW9uLiBVc2UgKlIxKiwgKlIyKiwgYW5kICpSMyogdG8gcmVwcmVzZW50IHRoZSByb3dzIFtgUl8xXHRleHR7LH1gXSBbYFJfMlx0ZXh0eyx9YF0gYW5kIFtgUl8zXHRleHR7Ln1gXQoKQW5zd2VyOiAgW19deyRsaHN9ezJ9ICAgW19deyRwb3B9ezV9ICAgW19deyRyaHN9ezJ9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:24Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2606,7 +2606,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-17" ww-id="webwork-17">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-17" ww-id="webwork-17">
     <static seed="17" source="matrixtheory/rrefprob1.pg">
       <statement><p>Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</p>
 <p>a. 
@@ -2686,10 +2686,10 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="matrixtheory/rrefprob1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="matrixtheory/rrefprob1.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="matrixtheory/rrefprob1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-18" ww-id="webwork-18">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-18" ww-id="webwork-18">
     <static seed="18" source="matrixtheory/rrefprob2.pg">
       <statement><p>Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</p>
 <p>a. 
@@ -2769,10 +2769,10 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="matrixtheory/rrefprob2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="matrixtheory/rrefprob2.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="matrixtheory/rrefprob2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-19" ww-id="webwork-19">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-19" ww-id="webwork-19">
     <static seed="19" source="matrixtheory/rrefprob3a.pg">
       <statement><p>Solve the following system using augmented matrix methods:
 <me>\begin{array}{c}
@@ -2967,10 +2967,10 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="matrixtheory/rrefprob3a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="matrixtheory/rrefprob3a.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="matrixtheory/rrefprob3a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-20" ww-id="webwork-20">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-20" ww-id="webwork-20">
     <static seed="20" source="matrixtheory/rrefprob3.pg">
       <statement><p>Reduce the matrix <me>A= \left[\begin{array}{cccc}
 -3 \amp -6 \amp -3 \amp -24\cr
@@ -3001,10 +3001,10 @@ Next, do <m>8 R_2+R_3 \to R_3</m>, resulting in
 <p>Now we can multiply <m>R_3</m> by a constant to create the leading 1, and then do the backwards steps.</p>
 </hint>
     </static>
-    <server-data sourceFilePath="matrixtheory/rrefprob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="matrixtheory/rrefprob3.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="matrixtheory/rrefprob3.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-21" ww-id="webwork-21">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-21" ww-id="webwork-21">
     <static seed="21" source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg">
       <statement><p>Reduce the matrix <me>A= \left[\begin{array}{cccc}
 3 \amp -3 \amp 4 \amp -15\cr
@@ -3015,10 +3015,10 @@ to reduced row-echelon form.</p>
 <p><fillin cols="4" rows="3"/></p>
 </statement>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-22" ww-id="webwork-22">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-22" ww-id="webwork-22">
     <static seed="22" source="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg">
       <statement><p>The reduced row-echelon forms of the augmented matrices of four systems are given below. How
 many solutions does each system have?</p>
@@ -3094,10 +3094,10 @@ many solutions does each system have?</p>
 <p/>
 </statement>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-23" ww-id="webwork-23">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-23" ww-id="webwork-23">
     <static seed="23" source="Library/TCNJ/TCNJ_RowReduction/problem14.pg">
       <statement><p>How many free variables does each augmented matrix have?</p>
 <p><OL TYPE="a"/></p>
@@ -3199,10 +3199,10 @@ many solutions does each system have?</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem14.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem14.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/TCNJ/TCNJ_RowReduction/problem14.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-24" ww-id="webwork-24">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-24" ww-id="webwork-24">
     <static seed="24" source="Library/TCNJ/TCNJ_RowReduction/problem15.pg">
       <statement><p>How many determined (basic) variables does each augmented matrix have?</p>
 <p><OL TYPE="a"/></p>
@@ -3311,10 +3311,10 @@ many solutions does each system have?</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem15.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/TCNJ/TCNJ_RowReduction/problem15.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-25" ww-id="webwork-25">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-25" ww-id="webwork-25">
     <static seed="25" source="matrixtheory/consistency_prob4.pg">
       <statement><p>Convert the system</p>
 <p><me>\begin{array}{rcrcrcr}-4 x_1 \amp  - \amp  7 x_{2} \amp  = \amp  2 \\4 x_1 \amp  + \amp  9 x_{2} \amp  = \amp  -6 \\ x_1  \amp  + \amp  2 x_{2} \amp  = \amp  -1\end{array}</me></p>
@@ -3340,10 +3340,10 @@ many solutions does each system have?</p>
 <p>Row 2 <m>\Rightarrow x_2 = -2</m>. Row 1 <m>\Rightarrow x_1+ 2 (-2) = -1 \Rightarrow x_1 = 3</m>.</p>
 </solution>
     </static>
-    <server-data sourceFilePath="matrixtheory/consistency_prob4.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="matrixtheory/consistency_prob4.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="matrixtheory/consistency_prob4.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-26" ww-id="webwork-26">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-26" ww-id="webwork-26">
     <static seed="26" source="Library/ASU-topics/set119LinearSystems/p10.pg">
       <statement><p>Solve the system by finding the reduced row-echelon form of the augmented
 matrix.
@@ -3479,10 +3479,10 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p10.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p10.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/ASU-topics/set119LinearSystems/p10.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-27" ww-id="webwork-27">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-27" ww-id="webwork-27">
     <static seed="27" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg">
       <statement><p>Let <m>A</m> and <m>B</m> be the following matrices.</p>
 <p><me>A = \left[\begin{array}{ccc}
@@ -3500,10 +3500,10 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
 <p><m>2 A - 5 B =</m> <fillin cols="3" rows="3"/></p>
 </statement>
     </static>
-    <server-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-28" ww-id="webwork-28">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-28" ww-id="webwork-28">
     <static seed="28">
       <statement><p>During the month of January, <lq/>ABC Appliances<rq/> sold <m>33</m> microwaves, <m>17</m> refrigerators, and <m>33</m> stoves, while <lq/>XYZ Appliances<rq/> sold <m>57</m> microwaves, <m>27</m> refrigerators and <m>31</m> stoves.</p>
 <p>During the month of February, <lq/>ABC Appliances<rq/> sold <m>38</m> microwaves, <m>27</m> refrigerators, and <m>40</m> stoves, while <lq/>XYZ Appliances<rq/> sold <m>51</m> microwaves, <m>20</m> refrigerators and <m>34</m> stoves.</p>
@@ -3512,11 +3512,11 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
 <p>Using matrix addition, write a <m>2 \times 3</m> matrix summarizing the total sales for the months of January and February. <fillin cols="3" rows="2"/></p>
 </statement>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIk1hdHJpeCIpOwokbWljcm9BMSA9IHJhbmRvbSgzMCw2MCk7CiRmcmlkZ2VBMSA9IHJhbmRvbSgxMCwzMCk7CiRzdG92ZUExID0gcmFuZG9tKDIwLDUwKTsKJG1pY3JvQTIgPSByYW5kb20oMjUsNTUpOwokZnJpZGdlQTIgPSByYW5kb20oMTIsNDApOwokc3RvdmVBMiA9IHJhbmRvbSgxNSw0NSk7CgokbWljcm9YMSA9IHJhbmRvbSgzMCw2MCk7CiRmcmlkZ2VYMSA9IHJhbmRvbSgxMCwzMCk7CiRzdG92ZVgxID0gcmFuZG9tKDIwLDUwKTsKJG1pY3JvWDIgPSByYW5kb20oMjUsNTUpOwokZnJpZGdlWDIgPSByYW5kb20oMTIsNDApOwokc3RvdmVYMiA9IHJhbmRvbSgxNSw0NSk7CgokSmFuPU1hdHJpeChbWyRtaWNyb0ExLCRmcmlkZ2VBMSwkc3RvdmVBMV0sWyRtaWNyb1gxLCRmcmlkZ2VYMSwkc3RvdmVYMV1dKTsKCiRGZWI9TWF0cml4KFtbJG1pY3JvQTIsJGZyaWRnZUEyLCRzdG92ZUEyXSxbJG1pY3JvWDIsJGZyaWRnZVgyLCRzdG92ZVgyXV0pOwoKJEphbnBsdXNGZWIgPSAkSmFuKyRGZWI7CgpCRUdJTl9QR01MCkR1cmluZyB0aGUgbW9udGggb2YgSmFudWFyeSwgIkFCQyBBcHBsaWFuY2VzIiBzb2xkIFtgWyRtaWNyb0ExXWBdIG1pY3Jvd2F2ZXMsIFtgWyRmcmlkZ2VBMV1gXSByZWZyaWdlcmF0b3JzLCBhbmQgW2BbJHN0b3ZlQTFdYF0gc3RvdmVzLCB3aGlsZSAiWFlaIEFwcGxpYW5jZXMiIHNvbGQgW2BbJG1pY3JvWDFdYF0gbWljcm93YXZlcywgW2BbJGZyaWRnZVgxXWBdIHJlZnJpZ2VyYXRvcnMgYW5kIFtgWyRzdG92ZVgxXWBdIHN0b3Zlcy4KCkR1cmluZyB0aGUgbW9udGggb2YgRmVicnVhcnksICJBQkMgQXBwbGlhbmNlcyIgc29sZCBbYFskbWljcm9BMl1gXSBtaWNyb3dhdmVzLCBbYFskZnJpZGdlQTJdYF0gcmVmcmlnZXJhdG9ycywgYW5kIFtgWyRzdG92ZUEyXWBdIHN0b3Zlcywgd2hpbGUgIlhZWiBBcHBsaWFuY2VzIiBzb2xkIFtgWyRtaWNyb1gyXWBdIG1pY3Jvd2F2ZXMsIFtgWyRmcmlkZ2VYMl1gXSByZWZyaWdlcmF0b3JzIGFuZCBbYFskc3RvdmVYMl1gXSBzdG92ZXMuCgpXcml0ZSBhIFtgMiBcdGltZXMgMyBgXSBtYXRyaXggc3VtbWFyaXppbmcgdGhlIHNhbGVzIGZvciB0aGUgbW9udGggb2YgSmFudWFyeS4gKEtlZXAgdGhlIG9yZGVyIG9mIGluZm9ybWF0aW9uKS4gW19dKnskSmFufXs1fQoKV3JpdGUgYSBbYDIgXHRpbWVzIDMgYF0gbWF0cml4IHN1bW1hcml6aW5nIHRoZSBzYWxlcyBmb3IgdGhlIG1vbnRoIG9mIEZlYnJ1YXJ5LiAoS2VlcCB0aGUgb3JkZXIgb2YgaW5mb3JtYXRpb24pLiBbX10qeyRGZWJ9ezV9CgpVc2luZyBtYXRyaXggYWRkaXRpb24sIHdyaXRlIGEgW2AyIFx0aW1lcyAzIGBdIG1hdHJpeCBzdW1tYXJpemluZyB0aGUgdG90YWwgc2FsZXMgZm9yIHRoZSBtb250aHMgb2YgSmFudWFyeSBhbmQgRmVicnVhcnkuIFtfXSp7JEphbnBsdXNGZWJ9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T19:45:24Z       
+###       on 2025-08-08T14:09:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -3603,7 +3603,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-29" ww-id="webwork-29">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-29" ww-id="webwork-29">
     <static seed="29" source="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg">
       <statement><p>Solve for <m>X</m>.</p>
 <p><me>\left[\begin{array}{cc}
@@ -3616,10 +3616,10 @@ ENDDOCUMENT();
 <p><m>X=</m> <fillin cols="2" rows="2"/></p>
 </statement>
     </static>
-    <server-data sourceFilePath="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-30" ww-id="webwork-30">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-30" ww-id="webwork-30">
     <static seed="30" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg">
       <statement><p>Let 
 <me>A = \left[\begin{array}{cc}
@@ -3653,10 +3653,10 @@ If an answer does not exist, enter <alert>DNE</alert>.</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-31" ww-id="webwork-31">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-31" ww-id="webwork-31">
     <static seed="31" source="matrixtheory/matrixarithmetic5.pg">
       <statement><p>Enter T or F depending on whether the statement is true or false.
 (You must enter T or F -- True and False will not work.)</p>
@@ -3673,10 +3673,10 @@ If an answer does not exist, enter <alert>DNE</alert>.</p>
 </ol></p>
 </statement>
     </static>
-    <server-data sourceFilePath="matrixtheory/matrixarithmetic5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="matrixtheory/matrixarithmetic5.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="matrixtheory/matrixarithmetic5.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-32" ww-id="webwork-32">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-32" ww-id="webwork-32">
     <static seed="32" source="matrixtheory/matrixmult1.pg">
       <statement><p>Enter T or F depending on whether the statement is true or false.
 (You must enter T or F -- True and False will not work.)</p>
@@ -3696,10 +3696,10 @@ by the 2nd row of B.</p>
 </ol></p>
 </statement>
     </static>
-    <server-data sourceFilePath="matrixtheory/matrixmult1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="matrixtheory/matrixmult1.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="matrixtheory/matrixmult1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-33" ww-id="webwork-33">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-33" ww-id="webwork-33">
     <static seed="33" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg">
       <statement><p>Give an example of two <m>2 \times 2</m> matrices <m>A</m> and <m>B</m>
 such that <m>AB \ne BA</m>.</p>
@@ -3709,10 +3709,10 @@ such that <m>AB \ne BA</m>.</p>
 <fillin cols="2" rows="2"/></p>
 </statement>
     </static>
-    <server-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-34" ww-id="webwork-34">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-34" ww-id="webwork-34">
     <static seed="34" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg">
       <statement><p>Give an example of two <m>2 \times 2</m> matrices <m>A</m> and <m>B</m>,
 neither of which is the zero matrix or the identity matrix,
@@ -3723,10 +3723,10 @@ such that <m>AB = BA</m>.</p>
 <fillin cols="2" rows="2"/></p>
 </statement>
     </static>
-    <server-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-35" ww-id="webwork-35">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-35" ww-id="webwork-35">
     <static seed="35" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg">
       <statement><p>Let 
 <me>A = \left[\begin{array}{cc}
@@ -3760,10 +3760,10 @@ If an answer does not exist, enter <alert>DNE</alert>.</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-36" ww-id="webwork-36">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-36" ww-id="webwork-36">
     <static seed="36" source="Library/ASU-topics/set119MatrixAlgebra/p14.pg">
       <statement><p>Determine the value(s) of  <m>x</m>  such that</p>
 <p><m>\left[\begin{array}{ccc}
@@ -3787,10 +3787,10 @@ If there is more than one value separate them by commas.</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p14.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p14.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/ASU-topics/set119MatrixAlgebra/p14.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-37" ww-id="webwork-37">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-37" ww-id="webwork-37">
     <static seed="37" source="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg">
       <statement><p>Given the matrix
 <me>\left[\begin{array}{cc}
@@ -3813,10 +3813,10 @@ If there is more than one value separate them by commas.</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-38" ww-id="webwork-38">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-38" ww-id="webwork-38">
     <static seed="38" source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg">
       <statement><p>Find a <m>2 \times 2</m> matrix such that</p>
 <p><m>\left[\begin{array}{cc}
@@ -3828,10 +3828,10 @@ If there is more than one value separate them by commas.</p>
 \end{array}\right]</m>.</p>
 </statement>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-39" ww-id="webwork-39">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-39" ww-id="webwork-39">
     <static seed="39" source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg">
       <statement><p>The matrix <m>\left[\begin{array}{cc}
 4 \amp 1\cr
@@ -3844,10 +3844,10 @@ If there is more than one value separate them by commas.</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-40" ww-id="webwork-40">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-40" ww-id="webwork-40">
     <static seed="40" source="Library/ASU-topics/set119MatrixAlgebra/p13.pg">
       <statement><p>Consider the following two systems.</p>
 <p>(a) 
@@ -3921,10 +3921,10 @@ If there is more than one value separate them by commas.</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p13.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p13.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/ASU-topics/set119MatrixAlgebra/p13.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-41" ww-id="webwork-41">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-41" ww-id="webwork-41">
     <static seed="41" source="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg">
       <statement><p>Solve the system of equations 
 <me>\begin{array}{l}
@@ -3947,7 +3947,7 @@ the inverse of the coefficient matrix.</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg"/>
   </webwork-reps>
 </webwork-representations>
