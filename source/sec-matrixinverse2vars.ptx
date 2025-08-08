@@ -58,8 +58,47 @@
       But this is precisely the linear system we started with!
       This result is not an coincidence: we can always rewrite linear systems using matrix multiplication.  Let's practice. 
     </p>
-    <!-- interactive question needed here.  matching of different matrices to the linear systems?  can have 2 or three
-     with same A and or same b.  and all same X if they're 2b2, but could also do 3by3, and make one distractor the augmented matrix -->
+
+    <!-- <exercise label="linsys-as-matrixmult"><title>Viewing Linear Systems as Matrix Multiplication</title>
+      <statement>
+        <p>
+          Consider the linear systems on the right, and write them in terms of 
+          matrix multiplication as <m>AX=B</m> for the correct choices of <m>A</m>, <m>X</m>, 
+          and <m>B</m>.
+        </p>
+      </statement>
+      <matching>
+        <premise ref="sys1 sys2"><m>A=\begin{bmatrix}2 \amp -1 \\ -3 \amp 1 \end{bmatrix}</m></premise>
+        <premise ref="sys1 sys2"><m>X=\begin{bmatrix}x\\y\end{bmatrix}</m></premise>
+        <premise ref="sys3"><m>X=\begin{bmatrix}x_1\\x_2\end{bmatrix}</m></premise>
+        <premise ref=""><m>A=\begin{bmatrix}2 \amp -1 \amp 5 \\ -3 \amp 1\amp 2 \end{bmatrix}</m></premise>
+        <premise ref="sys1"><m>B=\begin{bmatrix}0\\0\end{bmatrix}</m></premise>
+        <premise ref="sys2 sys3"><m>B=\begin{bmatrix}5\\2\end{bmatrix}</m></premise>
+        <response xml:id="sys1" order="1"><md><mrow>2x-y\amp=0</mrow><mrow>-3x+y\amp=0</mrow></md></response>
+        <response xml:id="sys2" order="2"><md><mrow>2x-y\amp=5</mrow><mrow>-3x+y\amp=2</mrow></md></response>
+        <response xml:id="sys3" order="3"><md><mrow>2x_1-x_2\amp=5</mrow><mrow>-3x_1+x_2\amp=2</mrow></md></response>
+      </matching>
+    </exercise> -->
+    <exercise label="linsys-as-matrixmult"><title>Viewing Linear Systems as Matrix Multiplication</title>
+      <statement>
+        <p>
+          Consider the linear systems on the left, and write them in terms of 
+          matrix multiplication as <m>AX=B</m> for the correct choices of <m>A</m>, <m>X</m>, 
+          and <m>B</m>.
+        </p>
+      </statement>
+      <matching>
+        <premise ref="A X B1"><md><mrow>2x-y\amp=0</mrow><mrow>-3x+y\amp=0</mrow></md></premise>
+        <premise ref="A X B2"><md><mrow>2x-y\amp=5</mrow><mrow>-3x+y\amp=2</mrow></md></premise>
+        <premise ref="A X1 B2"><md><mrow>2x_1-x_2\amp=5</mrow><mrow>-3x_1+x_2\amp=2</mrow></md></premise>
+        <response xml:id="A" order="2"><m>A=\begin{bmatrix}2 \amp -1 \\ -3 \amp 1 \end{bmatrix}</m></response>
+        <response xml:id="X" order="5"><m>X=\begin{bmatrix}x\\y\end{bmatrix}</m></response>
+        <response xml:id="X1" order="6"><m>X=\begin{bmatrix}x_1\\x_2\end{bmatrix}</m></response>
+        <response xml:id="Arref" order="4"><m>A=\begin{bmatrix}2 \amp -1 \amp 5 \\ -3 \amp 1\amp 2 \end{bmatrix}</m></response>
+        <response xml:id="B1" order="3"><m>B=\begin{bmatrix}0\\0\end{bmatrix}</m></response>
+        <response xml:id="B2" order="1"><m>B=\begin{bmatrix}5\\2\end{bmatrix}</m></response>
+      </matching>
+    </exercise>
     <p>
       Writing linear systems in terms of matrix multiplication raises a new question: how can we solve a linear system that is written
       in the form <m>AX=B</m>?
@@ -566,6 +605,20 @@
           </match> 
         </cardsort> 
       </exercise>
+
+      <exercise label="rq-matrixinv2-explain"><title>What Are Inverses, Anyway?</title>
+        <statement>
+          <p>
+            In your own words, explain what you understand about the relationship between 
+            the identity matrix, the inverse of a square matrix if the inverse exists, 
+            and the solution to a linear system of equations.
+          </p>
+        </statement>
+        <response/>
+        </exercise>
+
+      <!-- multiple select which of the following is true... all matrices have inverse, 
+       commutative property, what identity matrix is, X=BA^-1 -->
 
       <exercise label="rq-matrixinv2-questions-poll"><title>Reflection</title>
         <task label="rq-matrixinv2-confidencepoll-task">
