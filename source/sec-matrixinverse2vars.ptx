@@ -142,8 +142,8 @@
         That is,
         <md>
           <mrow>AX \amp= B \amp \amp </mrow>
-          <mrow>A^{-1} \cdot AX \amp= A^{-1} B \amp \amp \amp \amp \text{multiply both sides on the left by }A^{-1} </mrow>
-          <mrow>(A^{-1} \cdot A)X \amp= A^{-1} B \amp \amp \amp \amp\text{matrix multiplication is associative} </mrow>
+          <mrow>A^{-1} AX \amp= A^{-1} B \amp \amp \amp \amp \text{multiply both sides on the left by }A^{-1} </mrow>
+          <mrow>(A^{-1} A)X \amp= A^{-1} B \amp \amp \amp \amp\text{matrix multiplication is associative} </mrow>
           <mrow>IX \amp= A^{-1}B \amp \amp \amp \amp\text{because }A^{-1}A=I</mrow>
           <mrow>X \amp= A^{-1}B \amp \amp \amp \amp\text{because }IX=X</mrow>
         </md>.
@@ -162,18 +162,17 @@
             <idx><h>inverse</h><h>definition</h></idx>
     <statement>
       <p>
-        Suppose that <m>A</m> and <m>C</m> are
-        <m>n\times n</m> matrices such that <m>A C = I = C A</m>.
-        Then:
+        Let <m>A</m> be an <m>n\times n</m> matrix.  If there exists an
+        <m>n\times n</m> matrix <m>C</m> such that <m>A C = I = C A</m>, then
         <ol>
           <li>
             <p>
-              <m>A</m> is <em>invertible</em>.
+              <m>A</m> is <term>invertible</term>.
             </p>
           </li>
           <li>
             <p>
-              <m>C</m> is the <em>multiplicative inverse</em>, or just <em>inverse</em>,
+              <m>C</m> is the <term>multiplicative inverse</term>, or just <term>inverse</term>,
               of <m>A</m>, denoted by <m>A^{-1}</m>.
             </p>
           </li>
@@ -190,6 +189,9 @@
             </p>
           </li>
         </ol>
+        Note that there are many matrices <m>A</m> where there is no matrix that
+        can be multiplied by <m>A</m> to get the identity matrix; in this case, we 
+        say that <m>A</m> is <em>not invertible.</em>
       </p>
     </statement>
   </definition>
@@ -681,7 +683,7 @@
 
   </subsection>
 
-   <!-- <xi:include href="participate-worksheets/dc-matrixinverse2vars.ptx" /> -->
+   <xi:include href="participate-worksheets/dc-matrixinverse2vars.ptx" />
   
 
   <conclusion xml:id="subsec-matrixinverse2vars-summary">

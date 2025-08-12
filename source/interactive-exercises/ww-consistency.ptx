@@ -19,67 +19,13 @@
     <webwork source="matrixtheory/consistency_prob4.pg"/>
   </activity>
 
+  <!-- <exercise label="consistency_solve_consistentornot_prob1a">
+    <webwork><xi:include parse="text" href="../webworkfiles/consistency_prob4.pg"/></webwork>
+  </exercise> -->
+
   <activity label="consistency_solvesystem_prob1">
     <webwork source="Library/ASU-topics/set119LinearSystems/p10.pg"/>
   </activity>
 
-
-  <!-- <activity label="rref_prob5">
-    <webwork source="Library/Hope/Multi1/02-04-Row-reduction/Row_reduction_01.pg"/>
-  </activity> -->
-
-
-
-
-
-  
-
-    <!-- <activity label="ww-"><title></title>
-        <webwork>
-          <pg-code>
-            Context("Matrix");
-            $a1 = non_zero_random(-5,5,1);
-            $b1 = non_zero_random(-6,6,1);
-            $c1 = non_zero_random(-6,6,1);
-            $d1 = non_zero_random(-6,6,1);
-            $a2 = $a1+2;
-            $b2 = non_zero_random(-6,6,1);
-            $c2 = non_zero_random(-6,6,1);
-            $d2 = non_zero_random(-6,6,1);
-            $a3 = $a1-1;
-            $b3 = non_zero_random(-6,6,1);
-            $c3 = non_zero_random(-6,6,1);
-            $d3 = non_zero_random(-6,6,1);
-
-            $A=Matrix([[$a1,$b1,$c1,$d1],[$a2,$b2,$c2,$d2],[$a3,$b3,$c3,$d3]]);
-
-            $ans1=Matrix([[$a1,$b1,$c1,$d1],[$a3,$b3,$c3,$d3],[$a2,$b2,$c2,$d2]]);
-
-            $ans2a1 = $a1/$a1;
-            $ans2b1 = $b1/$a1;
-            $ans2c1 = $c1/$a1;
-            $ans2d1 = $d1/$a1;
-
-            $ans2=Matrix([[$ans2a1,$ans2b1,$ans2c1,$ans2d1],[$a2,$b2,$c2,$d2],[$a3,$b3,$c3,$d3]]);
-
-          </pg-code>
-        
-          <statement>
-            <p>Given the matrix
-            <me>
-              A=<var name="$A"/>
-            </me>
-            
-            perform the row operation <m>R_2 \leftrightarrow R_3</m> on <m>A</m> and enter the result.</p>
-
-            <p>
-            <var name="$ans1" form="array"/>
-            </p>
-            
-            </statement>
-        </webwork>
-      </activity> -->
-
-      
       
   </subsection>
