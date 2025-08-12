@@ -1,6 +1,6 @@
-openDate          = 08/08/2025 at 12:00am
-dueDate           = 02/08/2026 at 10:00pm
-answerDate        = 02/08/2026 at 10:00pm
+openDate          = 08/12/2025 at 12:00am
+dueDate           = 02/12/2026 at 10:00pm
+answerDate        = 02/12/2026 at 10:00pm
 paperHeaderFile   = Matrix_Calculations/header/2_2-Matrix_Multiplication.pg
 screenHeaderFile  = Matrix_Calculations/header/2_2-Matrix_Multiplication.pg
 description       = Matrix Multiplication
