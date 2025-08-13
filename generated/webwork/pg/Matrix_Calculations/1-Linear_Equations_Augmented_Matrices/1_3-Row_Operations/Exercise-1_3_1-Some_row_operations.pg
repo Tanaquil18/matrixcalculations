@@ -1,0 +1,94 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Matrix");
+$a1 = non_zero_random(-5,5,1);
+$b1 = non_zero_random(-6,6,1);
+$c1 = non_zero_random(-6,6,1);
+$d1 = non_zero_random(-6,6,1);
+$a2 = $a1+2;
+$b2 = non_zero_random(-6,6,1);
+$c2 = non_zero_random(-6,6,1);
+$d2 = non_zero_random(-6,6,1);
+$a3 = $a1-1;
+$b3 = non_zero_random(-6,6,1);
+$c3 = non_zero_random(-6,6,1);
+$d3 = non_zero_random(-6,6,1);
+
+$A=Matrix([[$a1,$b1,$c1,$d1],[$a2,$b2,$c2,$d2],[$a3,$b3,$c3,$d3]]);
+
+$ans1=Matrix([[$a1,$b1,$c1,$d1],[$a3,$b3,$c3,$d3],[$a2,$b2,$c2,$d2]]);
+
+$ans2a1 = $a1/$a1;
+$ans2b1 = $b1/$a1;
+$ans2c1 = $c1/$a1;
+$ans2d1 = $d1/$a1;
+
+$ans2=Matrix([[$ans2a1,$ans2b1,$ans2c1,$ans2d1],[$a2,$b2,$c2,$d2],[$a3,$b3,$c3,$d3]]);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Given the matrix
+
+[```
+              A=[$A]
+            ```]
+
+perform the row operation [`R_2 \leftrightarrow R_3`] on [`A`] and enter the result.
+
+[_]*{$ans1}{5}
+
+Perform the row operation [`\frac{1}{[$a1]}R_1 \rightarrow R_1`] on [`A`] and enter the result.
+
+[_]*{$ans2}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

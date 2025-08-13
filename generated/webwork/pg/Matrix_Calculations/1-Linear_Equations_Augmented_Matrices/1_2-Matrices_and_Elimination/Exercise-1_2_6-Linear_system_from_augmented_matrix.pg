@@ -1,0 +1,114 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x => 'Real', y=> 'Real', z=> 'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$x = Compute(non_zero_random(2,9,1));
+$y = Compute(non_zero_random(-7,7,1));
+$z = Compute(non_zero_random(-7,7,1));
+$a1 = non_zero_random(-9,9,1);
+$b1 = non_zero_random(-9,9,1);
+$c1 = non_zero_random(-9,9,1);
+$d1 = Compute("$a1*$x+$b1*$y+$c1*$z");
+$a2 = non_zero_random(-9,9,1);
+$b2 = non_zero_random(-9,9,1);
+$c2 = non_zero_random(-9,9,1);
+$d2 = Compute("$a2*$x+$b2*$y+$c2*$z");
+$a3 = non_zero_random(-9,9,1);
+$b3 = 0;
+$c3 = random(-9,9,1);
+$d3 = Compute("$a3*$x+$b3*$y+$c3*$z");
+
+$coeff1=Formula("$a1*x+$b1*y+$c1*z")->reduce;
+$coeff2=Formula("$a2*x+$b2*y+$c2*z")->reduce;
+$coeff3=Formula("$a3*x+$b3*y+$c3*z")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert the augmented matrix below to the associated linear system.
+
+[```\newcommand{\amp}{&}
+              \begin{bmatrix} [$a1] \amp [$b1] \amp [$c1] \amp [$d1] \\
+              [$a2] \amp [$b2] \amp [$c2] \amp [$d2] \\
+              [$a3] \amp [$b3] \amp [$c3] \amp [$d3] \end{bmatrix}
+            ```]
+
+Use [`x\text{,}`] [`y\text{,}`] and [`z`] for the variables.
+
+The associated linear system is:
+
+>> [@DataTable(
+  [
+    [PGML('Expression containing the variables'),
+     PGML('[`=`]'),
+     PGML('Constants'),
+    ],
+    [PGML('[_]{$coeff1}{8}'),
+     PGML('[`=`]'),
+     PGML('[_]{$d1}{2}'),
+    ],
+    [PGML('[_]{$coeff2}{8}'),
+     PGML('[`=`]'),
+     PGML('[_]{$d2}{2}'),
+    ],
+    [PGML('[_]{$coeff3}{8}'),
+     PGML('[`=`]'),
+     PGML('[_]{$d3}{2}'),
+    ],
+  ],
+      align => 'rp{0.625in}l',
+      valign => 'middle',);@]* <<
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

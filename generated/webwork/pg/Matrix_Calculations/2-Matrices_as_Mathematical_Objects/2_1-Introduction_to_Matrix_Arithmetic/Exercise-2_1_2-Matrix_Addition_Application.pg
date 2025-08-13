@@ -1,0 +1,86 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Matrix");
+$microA1 = random(30,60);
+$fridgeA1 = random(10,30);
+$stoveA1 = random(20,50);
+$microA2 = random(25,55);
+$fridgeA2 = random(12,40);
+$stoveA2 = random(15,45);
+
+$microX1 = random(30,60);
+$fridgeX1 = random(10,30);
+$stoveX1 = random(20,50);
+$microX2 = random(25,55);
+$fridgeX2 = random(12,40);
+$stoveX2 = random(15,45);
+
+$Jan=Matrix([[$microA1,$fridgeA1,$stoveA1],[$microX1,$fridgeX1,$stoveX1]]);
+
+$Feb=Matrix([[$microA2,$fridgeA2,$stoveA2],[$microX2,$fridgeX2,$stoveX2]]);
+
+$JanplusFeb = $Jan+$Feb;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+During the month of January, "ABC Appliances" sold [`[$microA1]`] microwaves, [`[$fridgeA1]`] refrigerators, and [`[$stoveA1]`] stoves, while "XYZ Appliances" sold [`[$microX1]`] microwaves, [`[$fridgeX1]`] refrigerators and [`[$stoveX1]`] stoves.
+
+During the month of February, "ABC Appliances" sold [`[$microA2]`] microwaves, [`[$fridgeA2]`] refrigerators, and [`[$stoveA2]`] stoves, while "XYZ Appliances" sold [`[$microX2]`] microwaves, [`[$fridgeX2]`] refrigerators and [`[$stoveX2]`] stoves.
+
+Write a [`2 \times 3 `] matrix summarizing the sales for the month of January. (Keep the order of information). [_]*{$Jan}{5}
+
+Write a [`2 \times 3 `] matrix summarizing the sales for the month of February. (Keep the order of information). [_]*{$Feb}{5}
+
+Using matrix addition, write a [`2 \times 3 `] matrix summarizing the total sales for the months of January and February. [_]*{$JanplusFeb}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

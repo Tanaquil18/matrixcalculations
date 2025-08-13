@@ -1,31 +1,31 @@
-openDate          = 08/12/2025 at 12:00am
-dueDate           = 02/12/2026 at 10:00pm
-answerDate        = 02/12/2026 at 10:00pm
+openDate          = 08/13/2025 at 12:00am
+dueDate           = 02/13/2026 at 10:00pm
+answerDate        = 02/13/2026 at 10:00pm
 paperHeaderFile   = Matrix_Calculations/header/1_2-Matrices_and_Elimination.pg
 screenHeaderFile  = Matrix_Calculations/header/1_2-Matrices_and_Elimination.pg
 description       = Matrices and Elimination
 problemListV2
 problem_start
-source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/1_2_1-Two_variable_elimination.pg
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_1-Two_variable_elimination.pg
 problem_id = 
 problem_end
 problem_start
-source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/1_2_2-Three_variable_elimination.pg
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_2-Three_variable_elimination.pg
 problem_id = 
 problem_end
 problem_start
-source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/1_2_3-Augmented_matrix_from_2variable_system.pg
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_3-Augmented_matrix_from_2variable_system.pg
 problem_id = 
 problem_end
 problem_start
-source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/1_2_4-Augmented_matrix_from_3variable_system.pg
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_4-Augmented_matrix_from_3variable_system.pg
 problem_id = 
 problem_end
 problem_start
-source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/1_2_5-About_matrices_and_augmented_matrices.pg
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_5-About_matrices_and_augmented_matrices.pg
 problem_id = 
 problem_end
 problem_start
-source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/1_2_6-Linear_system_from_augmented_matrix.pg
+source_file = Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_6-Linear_system_from_augmented_matrix.pg
 problem_id = 
 problem_end

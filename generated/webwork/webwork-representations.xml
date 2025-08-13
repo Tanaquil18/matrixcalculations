@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-representations>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-1" ww-id="webwork-1">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-1" ww-id="webwork-1">
     <static seed="1">
       <statement><p>Find the point of intersection of the lines <m>y = x + 1</m> and <m>2x+3y=14\text{.}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-1-image-1.png" width="50%"><description>a graph with axes depicting two intersecting lines</description></image>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-1-image-1.png" width="50%">
+<shortdescription>a graph with axes depicting two intersecting lines</shortdescription>
+</image>
 <p>The point of intersection is <m>(x,y)</m> where <m>x=</m><fillin characters="5" name="AnSwEr0001"/> and <m>y=</m><fillin characters="5" name="AnSwEr0002"/>.</p>
 </statement>
       <answer>
@@ -18,11 +20,11 @@
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/Exercise-1_1_1-Find_the_point_of_intersection.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -38,7 +40,6 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -113,7 +114,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-2" ww-id="webwork-2">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-2" ww-id="webwork-2">
     <static seed="2">
       <statement><p>The solution of the linear system</p>
 <p><me>\begin{aligned}
@@ -134,11 +135,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/Exercise-1_1_2-Two_variable_substitution.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -154,7 +155,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -216,7 +216,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-3" ww-id="webwork-3">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-3" ww-id="webwork-3">
     <static seed="3">
       <statement><p>Suppose a jar contains red, blue and green marbles. You are told that there are a total of <m>{48}</m> marbles in the jar; there are twice as many red marbles as green ones; the number of blue marbles is the same as the sum of the red and green marbles. How many marbles of each color are there?</p>
 <p><m>g=</m><fillin characters="2" name="AnSwEr0001"/></p>
@@ -239,11 +239,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/Exercise-1_1_3-Marbles_in_a_Jar.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -259,7 +259,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -317,7 +316,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-4" ww-id="webwork-4">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-4" ww-id="webwork-4">
     <static seed="4">
       <statement><p>Solve the system:</p>
 <p><me>\begin{aligned}
@@ -343,11 +342,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/Exercise-1_1_4-Substitution_in_a_3variable_system.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -363,7 +362,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -438,7 +436,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-5" ww-id="webwork-5">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-5" ww-id="webwork-5">
     <static seed="5">
       <statement><p>Solve the system:</p>
 <p><me>\begin{aligned}
@@ -464,11 +462,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_1-Linear_Equations_and_Substitution/Exercise-1_1_5-Another_3variable_system.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -484,7 +482,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -559,7 +556,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-6" ww-id="webwork-6">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-6" ww-id="webwork-6">
     <static seed="6">
       <statement><p>Use the method of elimination to solve the linear system:</p>
 <p><me>\begin{aligned}
@@ -579,11 +576,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_1-Two_variable_elimination.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -599,7 +596,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -660,7 +656,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-7" ww-id="webwork-7">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-7" ww-id="webwork-7">
     <static seed="7">
       <statement><p>Use the method of elimination to solve the linear system:</p>
 <p><me>\begin{aligned}
@@ -686,11 +682,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_2-Three_variable_elimination.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -706,7 +702,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -782,7 +777,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-8" ww-id="webwork-8">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-8" ww-id="webwork-8">
     <static seed="8">
       <statement><p>Write the augmented matrix of the system</p>
 <p><me>\begin{aligned}
@@ -867,11 +862,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_3-Augmented_matrix_from_2variable_system.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -887,7 +882,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -970,7 +964,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-9" ww-id="webwork-9">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-9" ww-id="webwork-9">
     <static seed="9">
       <statement><p>Write the augmented matrix of the system</p>
 <p><me>\begin{aligned}
@@ -1077,11 +1071,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_4-Augmented_matrix_from_3variable_system.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1097,7 +1091,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -1189,7 +1182,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-10" ww-id="webwork-10">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-10" ww-id="webwork-10">
     <static seed="10">
       <statement><p><ol label="a.">
 <li>
@@ -1230,11 +1223,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_5-About_matrices_and_augmented_matrices.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1250,7 +1243,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -1334,7 +1326,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-11" ww-id="webwork-11">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-11" ww-id="webwork-11">
     <static seed="11">
       <statement><p>Convert the augmented matrix below to the associated linear system.</p>
 <p><me>\begin{bmatrix} -7 \amp 5 \amp -3 \amp {-30} \\
@@ -1406,11 +1398,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_2-Matrices_and_Elimination/Exercise-1_2_6-Linear_system_from_augmented_matrix.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1426,7 +1418,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -1525,7 +1516,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-12" ww-id="webwork-12">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-12" ww-id="webwork-12">
     <static seed="12">
       <statement><p>Given the matrix</p>
 <p><me>A={\left[\begin{array}{cccc}
@@ -1534,208 +1525,16 @@ ENDDOCUMENT();
 -3 \amp -2 \amp 2 \amp -4
 \end{array}\right]}</me></p>
 <p>perform the row operation <m>R_2 \leftrightarrow R_3</m> on <m>A</m> and enter the result.</p>
-<!-- PTX:WARNING: PGML wanted to center align here. -->
-<tabular>
-<col/>
-<col/>
-<col/>
-<col/>
-<row>
-<cell><fillin characters="2" name="AnSwEr0001"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0002"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0003"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0004"/>
-</cell>
-</row>
-<row>
-<cell><fillin characters="2" name="AnSwEr0005"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0006"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0007"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0008"/>
-</cell>
-</row>
-<row>
-<cell><fillin characters="2" name="AnSwEr0009"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0010"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0011"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0012"/>
-</cell>
-</row>
-</tabular>
+<p><fillin cols="4" rows="3"/></p>
 <p>Perform the row operation <m>\frac{1}{-2}R_1 \rightarrow R_1</m> on <m>A</m> and enter the result.</p>
-<!-- PTX:WARNING: PGML wanted to center align here. -->
-<tabular>
-<col/>
-<col/>
-<col/>
-<col/>
-<row>
-<cell><fillin characters="2" name="AnSwEr0013"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0014"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0015"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0016"/>
-</cell>
-</row>
-<row>
-<cell><fillin characters="2" name="AnSwEr0017"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0018"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0019"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0020"/>
-</cell>
-</row>
-<row>
-<cell><fillin characters="2" name="AnSwEr0021"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0022"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0023"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0024"/>
-</cell>
-</row>
-</tabular>
+<p><fillin cols="4" rows="3"/></p>
 </statement>
-      <answer>
-        <p>
-          <m>-2</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>6</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>3</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-3</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-2</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-4</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>3</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-3</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-1.5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-2.5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>3</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-3</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-2</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-4</m>
-        </p>
-      </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/Exercise-1_3_1-Some_row_operations.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1751,7 +1550,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -1764,7 +1562,6 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "PGML.pl",
-  "niceTables.pl",
   "AnswerFormatHelp.pl",
   "PGcourse.pl",
 );
@@ -1816,49 +1613,11 @@ Given the matrix
 
 perform the row operation [`R_2 \leftrightarrow R_3`] on [`A`] and enter the result.
 
->> [@DataTable(
-  [
-    [PGML('[_]{$a1}{2}'),
-     PGML('[_]{$b1}{2}'),
-     PGML('[_]{$c1}{2}'),
-     PGML('[_]{$d1}{2}'),
-    ],
-    [PGML('[_]{$a3}{2}'),
-     PGML('[_]{$b3}{2}'),
-     PGML('[_]{$c3}{2}'),
-     PGML('[_]{$d3}{2}'),
-    ],
-    [PGML('[_]{$a2}{2}'),
-     PGML('[_]{$b2}{2}'),
-     PGML('[_]{$c2}{2}'),
-     PGML('[_]{$d2}{2}'),
-    ],
-  ],
-      align => '*{4}{l}',
-      valign => 'middle',);@]* <<
+[_]*{$ans1}{5}
 
 Perform the row operation [`\frac{1}{[$a1]}R_1 \rightarrow R_1`] on [`A`] and enter the result.
 
->> [@DataTable(
-  [
-    [PGML('[_]{$ans2a1}{2}'),
-     PGML('[_]{$ans2b1}{2}'),
-     PGML('[_]{$ans2c1}{2}'),
-     PGML('[_]{$ans2d1}{2}'),
-    ],
-    [PGML('[_]{$a2}{2}'),
-     PGML('[_]{$b2}{2}'),
-     PGML('[_]{$c2}{2}'),
-     PGML('[_]{$d2}{2}'),
-    ],
-    [PGML('[_]{$a3}{2}'),
-     PGML('[_]{$b3}{2}'),
-     PGML('[_]{$c3}{2}'),
-     PGML('[_]{$d3}{2}'),
-    ],
-  ],
-      align => '*{4}{l}',
-      valign => 'middle',);@]* <<
+[_]*{$ans2}{5}
 
 END_PGML
 
@@ -1869,7 +1628,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-13" ww-id="webwork-13">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-13" ww-id="webwork-13">
     <static seed="13">
       <statement><p>Given the matrix</p>
 <p><me>A={\left[\begin{array}{cccc}
@@ -1883,110 +1642,14 @@ ENDDOCUMENT();
 3 R_1 +R_3 \amp \rightarrow R_3\\
 2 R_2 +R_3 \amp \rightarrow R_3
 \end{aligned}</me></p>
-<!-- PTX:WARNING: PGML wanted to center align here. -->
-<tabular>
-<col/>
-<col/>
-<col/>
-<col/>
-<row>
-<cell><fillin characters="2" name="AnSwEr0001"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0002"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0003"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0004"/>
-</cell>
-</row>
-<row>
-<cell><fillin characters="2" name="AnSwEr0005"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0006"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0007"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0008"/>
-</cell>
-</row>
-<row>
-<cell><fillin characters="2" name="AnSwEr0009"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0010"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0011"/>
-</cell>
-<cell><fillin characters="2" name="AnSwEr0012"/>
-</cell>
-</row>
-</tabular>
+<p><fillin cols="4" rows="3"/></p>
 </statement>
-      <answer>
-        <p>
-          <m>1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>3</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-2</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-8</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>9</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-3</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>6</m>
-        </p>
-      </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/Exercise-1_3_2-A_sequence_of_row_operations.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2002,7 +1665,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -2015,7 +1677,6 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "PGML.pl",
-  "niceTables.pl",
   "AnswerFormatHelp.pl",
   "PGcourse.pl",
 );
@@ -2092,26 +1753,7 @@ perform the row operations below in the order given and enter the final result.
 \end{aligned}
 ```]
 
->> [@DataTable(
-  [
-    [PGML('[_]{$ansa1}{2}'),
-     PGML('[_]{$ansb1}{2}'),
-     PGML('[_]{$ansc1}{2}'),
-     PGML('[_]{$ansd1}{2}'),
-    ],
-    [PGML('[_]{$ansa2}{2}'),
-     PGML('[_]{$ansb2}{2}'),
-     PGML('[_]{$ansc2}{2}'),
-     PGML('[_]{$ansd2}{2}'),
-    ],
-    [PGML('[_]{$ansa3}{2}'),
-     PGML('[_]{$ansb3}{2}'),
-     PGML('[_]{$ansc3}{2}'),
-     PGML('[_]{$ansd3}{2}'),
-    ],
-  ],
-      align => '*{4}{l}',
-      valign => 'middle',);@]* <<
+[_]*{$answer}{5}
 
 END_PGML
 
@@ -2122,7 +1764,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-14" ww-id="webwork-14">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-14" ww-id="webwork-14">
     <static seed="14">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2159,11 +1801,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/Exercise-1_3_3-Identify_the_row_operation_performed.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2179,7 +1821,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -2271,7 +1912,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-15" ww-id="webwork-15">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-15" ww-id="webwork-15">
     <static seed="15">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2308,11 +1949,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/Exercise-1_3_4-Identify_the_row_operation_performed.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2328,7 +1969,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -2446,7 +2086,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-16" ww-id="webwork-16">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-16" ww-id="webwork-16">
     <static seed="16">
       <statement><p>The matrix on the right results after performing a single row operation on the matrix on the left.</p>
 <p><me>{\left[\begin{array}{ccc}
@@ -2465,11 +2105,11 @@ ENDDOCUMENT();
 <p>-&gt;</p>
 </li><li>
 <p>&lt;--&gt;</p>
-</li></ul>   <fillin characters="2" name="AnSwEr0003"/></p>
+</li></ul>   <fillin characters="2" name="MuLtIaNsWeR_AnSwEr0001_1"/></p>
 </statement>
       <answer>
         <p>
-          <m>R_1</m>
+          <m>R_1;\,R_3</m>
         </p>
       </answer>
       <answer>
@@ -2477,17 +2117,12 @@ ENDDOCUMENT();
           <m>{\verb!&lt;--&gt;!}</m>
         </p>
       </answer>
-      <answer>
-        <p>
-          <m>R_3</m>
-        </p>
-      </answer>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_3-Row_Operations/Exercise-1_3_5-Identify_the_row_operation_performed.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2503,7 +2138,6 @@ ENDDOCUMENT();
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -2517,6 +2151,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "parserMultiAnswer.pl",
   "parserPopUp.pl",
   "contextForm.pl",
   "PGcourse.pl",
@@ -2582,6 +2217,24 @@ $rstrlhs = nicestring([$c],[$rd1]);
 $lhs = Formula("$rd1");
 $rhs = Formula("$rd2");
 
+$multians = MultiAnswer($lhs, $rhs)->with(
+  singleResult => 1,
+  checker => sub {
+    my ($correct, $student, $self) = @_;
+    my ($astu, $bstu) = @{$student};
+    my ($acor, $bcor) = @{$correct};
+    if ($astu == $lhs && $bstu == $rhs) {
+      return 1;
+    }
+    elsif ($astu == $rhs && $bstu == $lhs) {
+      return 1;
+    }
+    else {
+      return 0;
+    }
+  }
+);
+
 $pop = PopUp(["select", "->", "<-->"], "<-->");
 
 ############################################################
@@ -2595,7 +2248,7 @@ The matrix on the right results after performing a single row operation on the m
 
 Identify the row operation. Use *R1*, *R2*, and *R3* to represent the rows [`R_1\text{,}`] [`R_2\text{,}`] and [`R_3\text{.}`]
 
-Answer:  [_]{$lhs}{2}   [_]{$pop}{5}   [_]{$rhs}{2}
+Answer:  [_]{$multians}{2}   [_]{$pop}{5}   [_]{$multians}{2}
 
 END_PGML
 
@@ -2606,8 +2259,8 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-17" ww-id="webwork-17">
-    <static seed="17" source="matrixtheory/rrefprob1.pg">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-17" ww-id="webwork-17">
+    <static seed="17">
       <statement><p>Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</p>
 <p>a. 
 <ul form="popup" name="AnSwEr0001"><li>
@@ -2686,11 +2339,128 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="matrixtheory/rrefprob1.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
-    <pg source="matrixtheory/rrefprob1.pg"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_4-Reduced_Row_Echelon_Form/Exercise-1_4_1.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+## DESCRIPTION
+## Linear Algebra
+## ENDDESCRIPTION
+
+## Tagged by tda2d
+
+## DBsubject(Linear algebra)
+## DBchapter(Matrices)
+## DBsection(Echelon form)
+## Date(July 2013)
+## Institution(TCNJ and Hope College)
+## Author(Paul Pearson)
+## Level(3)
+## MO(1)
+## TitleText1('Linear Algebra with Applications')
+## AuthorText1('Jeffrey Holt')
+## EditionText1('1')
+## Section1('1.2')
+## Problem1('')
+## KEYWORDS('matrix' 'augmented' 'Echelon')
+
+DOCUMENT();        # This should be the first executable line in the problem.
+
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGchoicemacros.pl",
+"unionLists.pl",
+"parserPopUp.pl",
+"PGcourse.pl",
+);
+
+TEXT(beginproblem());
+$showPartialCorrectAnswers = 0;
+
+Context('Matrix');
+
+$NO_SPACE = '@{}';
+
+$a = random(2,10,1)*random(-1,1,2);
+$b = random(2,10,1)*random(-1,1,2);
+$c = random(2,10,1)*random(-1,1,2);
+$d = random(2,10,1)*random(-1,1,2);
+$e = random(2,10,1)*random(-1,1,2);
+$f = random(2,10,1)*random(-1,1,2);
+$g = random(2,10,1)*random(-1,1,2);
+$h = random(2,10,1)*random(-1,1,2);
+$i = random(2,10,1)*random(-1,1,2);
+$j = random(2,10,1)*random(-1,1,2);
+$k = random(2,10,1)*random(-1,1,2);
+$l = random(2,10,1)*random(-1,1,2);
+$m = random(2,10,1)*random(-1,1,2);
+$n = random(2,10,1)*random(-1,1,2);
+$o = random(2,10,1)*random(-1,1,2);
+
+@matrices = (Matrix([[$a, 1, 1], [1, $c, $d], [0, 0, 1]]),
+             
+             Matrix([[1, 1, 1, 0], [0, 1, $f, 0], [0, 0, 0, 1]]),
+
+	     Matrix([[0, 1, 0, $h], [0, 0, 1, $i]]),
+ 
+	     Matrix([[1, 0, 1], [0, 1, 1], [0, 0, 1]]),
+ 
+             Matrix([[1, 0, $k, 0], [0, 0, 0, 0], [0, 1, 0, $l], [0, 0, 1, 0]]),
+ 
+             Matrix([[1, 0, 0, $m], [0, 1, 0, $n], [0, 0, 1, $o]])
+
+);
+
+
+@corans = ('Not in Echelon Form', 'Echelon Form',
+	   'Reduced Echelon Form', 'Echelon Form',
+   'Not in Echelon Form', 'Reduced Echelon Form',
+);
+
+$three = random(0,1,1);
+$fourth = random(0,2,1);
+@which = (3*$three, 3*$three+1, 3*$three+2, 3*(1-$three)+$fourth);
+
+@slice=NchooseK(4,4);
+
+@swhich = @which[@slice];
+
+@smatrices = @matrices[@swhich];
+@scorans = @corans[@swhich];
+
+foreach my $i (0..3) {
+$popup[$i] = PopUp(['Choose','Echelon Form','Reduced Echelon Form','Not in Echelon Form'],$scorans[$i]);
+}
+
+Context()->texStrings;
+BEGIN_TEXT
+Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.
+$BR
+$BR
+a. 
+\{ $popup[0]->menu \} \( $smatrices[0] \)
+$BR$BR
+b.
+\{ $popup[1]->menu \} \( $smatrices[1] \)
+$BR$BR
+c.
+\{ $popup[2]->menu \} \( $smatrices[2] \)
+$BR$BR
+d.
+\{ $popup[3]->menu \} \( $smatrices[3] \)
+
+END_TEXT
+Context()->normalStrings;
+
+install_problem_grader(~~&std_problem_grader);
+
+foreach my $i (0..3) {
+ANS($popup[$i]->cmp);
+}
+;
+ENDDOCUMENT();       # This should be the last executable line in the problem.]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-18" ww-id="webwork-18">
-    <static seed="18" source="matrixtheory/rrefprob2.pg">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-18" ww-id="webwork-18">
+    <static seed="18">
       <statement><p>Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.</p>
 <p>a. 
 <ul form="popup" name="AnSwEr0001"><li>
@@ -2769,11 +2539,128 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="matrixtheory/rrefprob2.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
-    <pg source="matrixtheory/rrefprob2.pg"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_4-Reduced_Row_Echelon_Form/Exercise-1_4_2.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+## DESCRIPTION
+## Linear Algebra
+## ENDDESCRIPTION
+
+## Tagged by tda2d
+
+## DBsubject(Linear algebra)
+## DBchapter(Matrices)
+## DBsection(Echelon form)
+## Date(July 2013)
+## Institution(TCNJ and Hope College)
+## Author(Paul Pearson)
+## Level(3)
+## MO(1)
+## TitleText1('Linear Algebra with Applications')
+## AuthorText1('Jeffrey Holt')
+## EditionText1('1')
+## Section1('1.2')
+## Problem1('')
+## KEYWORDS('matrix' 'augmented' 'Echelon')
+
+DOCUMENT();        # This should be the first executable line in the problem.
+
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGchoicemacros.pl",
+"unionLists.pl",
+"parserPopUp.pl",
+"PGcourse.pl",
+);
+
+TEXT(beginproblem());
+$showPartialCorrectAnswers = 0;
+
+Context('Matrix');
+
+$NO_SPACE = '@{}';
+
+$a = random(2,10,1)*random(-1,1,2);
+$b = random(2,10,1)*random(-1,1,2);
+$c = random(2,10,1)*random(-1,1,2);
+$d = random(2,10,1)*random(-1,1,2);
+$e = random(2,10,1)*random(-1,1,2);
+$f = random(2,10,1)*random(-1,1,2);
+$g = random(2,10,1)*random(-1,1,2);
+$h = random(2,10,1)*random(-1,1,2);
+$i = random(2,10,1)*random(-1,1,2);
+$j = random(2,10,1)*random(-1,1,2);
+$k = random(2,10,1)*random(-1,1,2);
+$l = random(2,10,1)*random(-1,1,2);
+$m = random(2,10,1)*random(-1,1,2);
+$n = random(2,10,1)*random(-1,1,2);
+$o = random(2,10,1)*random(-1,1,2);
+
+@matrices = (Matrix([[1, $b, $c, $d, $e], [0, 1, 1, 1, 1], [0, 0, 1, 0, $g], [0, 0, 0, 1, 0]]),
+             
+             Matrix([[1, 1, $h], [1, 0, $i]]),
+
+	     Matrix([[1, 0, 0, $j], [0, 1, 0, $k], [0, 0, 0, 0]]),
+ 
+	     Matrix([[1, 0, 0, $l], [0, 0, 0, 0], [0, 1, 0, $m]]),
+ 
+             Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 0]]),
+ 
+             Matrix([[1, $n, 2], [0, 1, 0]])
+
+);
+
+
+@corans = ('Echelon Form', 'Not in Echelon Form',
+	   'Reduced Echelon Form', 'Not in Echelon Form',
+   'Reduced Echelon Form', 'Echelon Form',
+);
+
+$three = random(0,1,1);
+$fourth = random(0,2,1);
+@which = (3*$three, 3*$three+1, 3*$three+2, 3*(1-$three)+$fourth);
+
+@slice=NchooseK(4,4);
+
+@swhich = @which[@slice];
+
+@smatrices = @matrices[@swhich];
+@scorans = @corans[@swhich];
+
+foreach my $i (0..3) {
+$popup[$i] = PopUp(['Choose','Echelon Form','Reduced Echelon Form','Not in Echelon Form'],$scorans[$i]);
+}
+
+Context()->texStrings;
+BEGIN_TEXT
+Determine whether the following matrices are in echelon form, reduced echelon form or not in echelon form.
+$BR
+$BR
+a. 
+\{ $popup[0]->menu \} \( $smatrices[0] \)
+$BR$BR
+b.
+\{ $popup[1]->menu \} \( $smatrices[1] \)
+$BR$BR
+c.
+\{ $popup[2]->menu \} \( $smatrices[2] \)
+$BR$BR
+d.
+\{ $popup[3]->menu \} \( $smatrices[3] \)
+
+END_TEXT
+Context()->normalStrings;
+
+install_problem_grader(~~&std_problem_grader);
+
+foreach my $i (0..3) {
+ANS($popup[$i]->cmp);
+}
+;
+ENDDOCUMENT();       # This should be the last executable line in the problem.]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-19" ww-id="webwork-19">
-    <static seed="19" source="matrixtheory/rrefprob3a.pg">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-19" ww-id="webwork-19">
+    <static seed="19">
       <statement><p>Solve the following system using augmented matrix methods:
 <me>\begin{array}{c}
 3 x  - 6 y = -15
@@ -2967,11 +2854,191 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="matrixtheory/rrefprob3a.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
-    <pg source="matrixtheory/rrefprob3a.pg"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_4-Reduced_Row_Echelon_Form/Exercise-1_4_3.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#DESCRIPTION
+##  Augmented Matrices
+##ENDDESCRIPTION
+
+ 
+## Author1('David Covert')
+## Author2('Jason Aubrey')
+## DBsubject(Linear algebra)
+## DBchapter(Systems of linear equations)
+## DBsection(Augmented matrices)
+## Date(Spring 2012)
+## Institution(University of Missouri)
+## Level(2)
+## KEYWORDS('linear algebra', 'augmented', 'row operation')
+
+
+DOCUMENT();        # This should be the first executable line in the problem.
+
+loadMacros(
+  "PGstandard.pl",
+  "PGchoicemacros.pl",
+  "PGgraphmacros.pl",
+  "PGmatrixmacros.pl",
+  "PGnumericalmacros.pl",
+  "MathObjects.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl"
+);
+
+TEXT(beginproblem());
+$showPartialCorrectAnswers = 0;
+
+Context("Numeric");
+Context()->variables->add(t=>'Real');
+
+$x = Real(random(-6,6,1));
+$y = Real(random(-6,6,1));
+$a = Real(list_random(-5,-4,-3,-2,2,3,4,5));
+$b = -2*$a;
+$c = Real(non_zero_random(-5,5,1));
+$e = $a*$x + $b*$y;
+$x1 = Formula("$e/$a + 2*t");
+$y1 = Formula("t");
+
+$d = -2*$c+1;
+$f = $c*$x + $d*$y;
+$ans1a = $a;
+$ans2a = $b;
+$ans3a = $e;
+$ans4a = $c;
+$ans5a = $d;
+$ans6a = $f;
+
+$ans1b = 1;
+$ans2b = $b/$a;
+$ans3b = $e/$a;
+$ans4b = $c;
+$ans5b = $d;
+$ans6b = $f;
+
+$ans1c = 1;
+$ans2c = $b/$a;
+$ans3c = $e/$a;
+$ans4c = 0;
+$ans5c = -($b*$c)/$a +$d;
+$ans6c = -($c*$e)/$a +$f;
+
+$ans1d = 1;
+$ans2d = 0;
+$ans3d = $x;
+$ans4d = 0;
+$ans5d = 1;
+$ans6d = $y;
+
+ANS(Compute($ans1a)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans2a)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans3a)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans4a)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans5a)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans6a)->with(tolerance=>0.01)->cmp);
+
+ANS(Compute($ans1b)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans2b)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans3b)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans4b)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans5b)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans6b)->with(tolerance=>0.01)->cmp);
+
+ANS(Compute($ans1c)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans2c)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans3c)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans4c)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans5c)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans6c)->with(tolerance=>0.01)->cmp);
+
+ANS(Compute($ans1d)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans2d)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans3d)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans4d)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans5d)->with(tolerance=>0.01)->cmp);
+ANS(Compute($ans6d)->with(tolerance=>0.01)->cmp);
+
+ANS($x->cmp);
+ANS($y->cmp);
+
+
+
+
+BEGIN_TEXT
+
+$PAR
+Solve the following system using augmented matrix methods:
+\[
+\begin{array}{c}
+$a x + $b y = $e
+\\
+$c x + $d y = $f
+\end{array}
+\]
+
+$PAR
+
+(a) The initial matrix is:
+
+$PAR
+
+$BCENTER
+\{ display_matrix([ [ans_rule(5),ans_rule(5),ans_rule(5)], [ans_rule(5),ans_rule(5),ans_rule(5)] ], align=>'rrvr') \}
+$ECENTER
+
+$PAR
+
+(b) First, perform the Row Operation \(\frac{1}{$a} R_1 \to R_1\).  The resulting matrix is:
+
+$PAR
+
+$BCENTER
+\{ display_matrix([ [ans_rule(5),ans_rule(5),ans_rule(5)], [ans_rule(5),ans_rule(5),ans_rule(5)] ], align=>'rrvr') \}
+$ECENTER
+
+$PAR
+
+(c) Next, perform the operation \(-$c R_1 + R_2 \to R_2\).  The resulting matrix is:
+
+$PAR
+
+$BCENTER
+\{ display_matrix([ [ans_rule(5),ans_rule(5),ans_rule(5)], [ans_rule(5),ans_rule(5),ans_rule(5)] ], align=>'rrvr') \}
+$ECENTER
+
+$PAR
+
+(d) Finish simplifying the augmented matrix.  The reduced matrix is:
+
+$PAR
+
+$BCENTER
+\{ display_matrix([ [ans_rule(5),ans_rule(5),ans_rule(5)], [ans_rule(5),ans_rule(5),ans_rule(5)] ], align=>'rrvr') \}
+$ECENTER
+
+$PAR
+
+(e) What are the solutions to the system?  
+
+$PAR
+$BCENTER
+\(x=\) \{ans_rule(25) \}
+$BR
+\(y=\) \{ans_rule(25) \}
+$PAR
+$ECENTER
+
+END_TEXT
+
+
+
+
+
+ENDDOCUMENT();       # This should be the last executable line in the problem.
+]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-20" ww-id="webwork-20">
-    <static seed="20" source="matrixtheory/rrefprob3.pg">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-20" ww-id="webwork-20">
+    <static seed="20">
       <statement><p>Reduce the matrix <me>A= \left[\begin{array}{cccc}
 -3 \amp -6 \amp -3 \amp -24\cr
 0 \amp -4 \amp -6 \amp -20\cr
@@ -3001,10 +3068,124 @@ Next, do <m>8 R_2+R_3 \to R_3</m>, resulting in
 <p>Now we can multiply <m>R_3</m> by a constant to create the leading 1, and then do the backwards steps.</p>
 </hint>
     </static>
-    <rendering-data sourceFilePath="matrixtheory/rrefprob3.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
-    <pg source="matrixtheory/rrefprob3.pg"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_4-Reduced_Row_Echelon_Form/Exercise-1_4_4.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+## DESCRIPTION
+## Linear Algebra
+## ENDDESCRIPTION
+
+## Tagged by cmd6a 5/3/06
+
+## DBsubject(Linear algebra)
+## DBchapter(Matrices)
+## DBsection(Echelon form)
+## Date(July 2013)
+## Institution(Rochester and Hope College)
+## Author(Paul Pearson)
+## MLT(reduce_to_reform)
+## MLTleader(1)
+## Level(3)
+## MO(1)
+## TitleText1('Linear Algebra with Applications')
+## AuthorText1('Jeffrey Holt')
+## EditionText1('1')
+## Section1('1.2')
+## Problem1('')
+## KEYWORDS('linear algebra','matrix','echelon')
+
+DOCUMENT() ;        
+
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"parserVectorUtils.pl",
+"PGcourse.pl"
+) ;
+
+$showPartialCorrectAnswers = 1 ;
+
+############
+
+TEXT(beginproblem());
+
+Context('Matrix');
+
+$a = non_zero_random(-4,4,1);
+$b = non_zero_random(-3,3,1);
+$c = non_zero_random(-5,5,1);
+$d=non_zero_random(-5,5,1);
+
+$A = Matrix([[$a*1, $a*2, $a*1, $a*4*$d],[$b*0, $b*2, $b*3, $b*5*$d], [$c*0, $c*2, $c*4, $c*6*$d]]);
+
+#1/$a * R1 -> R1.
+$A1 = Matrix([[1, 2, 1, 4*$d],[$b*0, $b*2, $b*3, $b*5*$d], [$c*0, $c*2, $c*4, $c*6*$d]]);
+# 1/(2*$b) R2 -> R2
+$A2 = Matrix([[1, 2, 1, 4*$d],[0, 1, 3/2, 5/2*$d], [$c*0, $c*2, $c*4, $c*6*$d]]);
+# -2*$c*R2+R3 -> R3
+$A3 = Matrix([[1, 2, 1, 4*$d],[0, 1, 3/2, 5/2*$d], [0, 0, $c, $c*$d]]);
+# 1/$c *R3 -> R3
+$A4 = Matrix([[1, 2, 1, 4*$d],[0, 1, 3/2, 5/2*$d], [0, 0, 1, $d]]);
+# -3/2 *R3+R2 -> R2
+$A5 = Matrix([[1, 2, 1, 4*$d],[0, 1, 0, $d], [0, 0, 1, $d]]);
+# -R3+R1 -> R1
+$A6 = Matrix([[1, 2, 0, 3*$d],[0, 1, 0, $d], [0, 0, 1, $d]]);
+# -2 *R2+R1 -> R1
+$A7 = Matrix([[1, 0, 0, $d],[0, 1, 0, $d], [0, 0, 1, $d]]);
+
+
+
+
+# reduced row echelon form of A
+$answer = Matrix([
+[1,0,0,$d],
+[0,1,0,$d],
+[0,0,1,$d],
+]);
+
+
+Context()->texStrings;
+BEGIN_TEXT
+Reduce the matrix \[ A= $A\]
+to reduced row-echelon form.
+$BR
+$BR
+
+
+$BCENTER
+\{ $answer->ans_array() \} 
+$ECENTER
+END_TEXT
+Context()->normalStrings;
+
+
+ANS( $answer->cmp() );
+
+Context()->texStrings;
+$showHint=2;
+
+$bb = 2*$b;
+$cc = -2*$c;
+BEGIN_HINT
+
+First, do \(\frac{1}{$a} R_1 \to R_1 \), resulting in
+\[$A1 \]
+
+Then, do \(\frac{1}{$bb} R_2 \to R_2 \), resulting in
+\[$A2 \]
+Next, do \( $cc R_2+R_3 \to R_3 \), resulting in
+\[$A3 \]
+
+Now we can multiply \(R_3\) by a constant to create the leading 1, and then do the backwards steps.  
+
+
+END_HINT
+
+
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-21" ww-id="webwork-21">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-21" ww-id="webwork-21">
     <static seed="21" source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg">
       <statement><p>Reduce the matrix <me>A= \left[\begin{array}{cccc}
 3 \amp -3 \amp 4 \amp -15\cr
@@ -3015,10 +3196,10 @@ to reduced row-echelon form.</p>
 <p><fillin cols="4" rows="3"/></p>
 </statement>
     </static>
-    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_32.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-22" ww-id="webwork-22">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-22" ww-id="webwork-22">
     <static seed="22" source="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg">
       <statement><p>The reduced row-echelon forms of the augmented matrices of four systems are given below. How
 many solutions does each system have?</p>
@@ -3094,10 +3275,10 @@ many solutions does each system have?</p>
 <p/>
 </statement>
     </static>
-    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra1Systems/ur_la_1_22.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-23" ww-id="webwork-23">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-23" ww-id="webwork-23">
     <static seed="23" source="Library/TCNJ/TCNJ_RowReduction/problem14.pg">
       <statement><p>How many free variables does each augmented matrix have?</p>
 <p><OL TYPE="a"/></p>
@@ -3199,10 +3380,10 @@ many solutions does each system have?</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem14.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem14.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/TCNJ/TCNJ_RowReduction/problem14.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-24" ww-id="webwork-24">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-24" ww-id="webwork-24">
     <static seed="24" source="Library/TCNJ/TCNJ_RowReduction/problem15.pg">
       <statement><p>How many determined (basic) variables does each augmented matrix have?</p>
 <p><OL TYPE="a"/></p>
@@ -3311,11 +3492,11 @@ many solutions does each system have?</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem15.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_RowReduction/problem15.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/TCNJ/TCNJ_RowReduction/problem15.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-25" ww-id="webwork-25">
-    <static seed="25" source="matrixtheory/consistency_prob4.pg">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-25" ww-id="webwork-25">
+    <static seed="25">
       <statement><p>Convert the system</p>
 <p><me>\begin{array}{rcrcrcr}-4 x_1 \amp  - \amp  7 x_{2} \amp  = \amp  2 \\4 x_1 \amp  + \amp  9 x_{2} \amp  = \amp  -6 \\ x_1  \amp  + \amp  2 x_{2} \amp  = \amp  -1\end{array}</me></p>
 <p>to an augmented matrix. Then reduce the system to echelon form and determine if the system is consistent.</p>
@@ -3340,10 +3521,228 @@ many solutions does each system have?</p>
 <p>Row 2 <m>\Rightarrow x_2 = -2</m>. Row 1 <m>\Rightarrow x_1+ 2 (-2) = -1 \Rightarrow x_1 = 3</m>.</p>
 </solution>
     </static>
-    <rendering-data sourceFilePath="matrixtheory/consistency_prob4.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
-    <pg source="matrixtheory/consistency_prob4.pg"/>
+    <rendering-data problemSource="Matrix_Calculations/1-Linear_Equations_Augmented_Matrices/1_5-Consistent_and_Inconsistent_Systems/Exercise-1_5_4.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+# DESCRIPTION
+# Find echelon form and then solve the system.
+# ENDDESCRIPTION
+
+## DBsubject(Linear algebra)
+## DBchapter(Systems of linear equations)
+## DBsection(Augmented matrices)
+## Institution(University of Missouri-Columbia)
+## Author(Rick Lynch)
+## MLT(convert_aug_sys)
+## MLTleader(1)
+## Level(3)
+## MO(1)
+## TitleText1('Linear Algebra')
+## AuthorText1('Holt')
+## EditionText1('1e')
+## Section1('1.2')
+## Problem1('24')
+## KEYWORDS('linear equations', 'system', 'systems', 'matrices')
+
+
+###########################################################################
+# initialization 
+###########################################################################
+DOCUMENT();
+loadMacros(  
+  "MathObjects.pl",
+  "PGstandard.pl",
+  "parserPopUp.pl", 
+  "parserMultiAnswer.pl",
+);
+
+TEXT(beginproblem());
+$showPartialCorrectAnswers = 1;
+
+
+###########################################################################
+# setup contexts and variables 
+###########################################################################
+Context("Matrix");
+sub dispMat {
+  my $A = shift;
+  my @d = $A->dimensions;
+  my @a = ();
+  my $dA = "\left[\begin{array}{";
+  for (my $i = 0; $i < $d[1]; $i++) {
+    $dA = $dA."r";
+  }
+  $dA = $dA."}";
+  for (my $i = 0; $i < $d[0]; $i++) {
+    for (my $j = 0; $j < $d[1]; $j++) {
+      $a[$i][$j] = $A->element($i+1,$j+1);
+      if ($j != $d[1] - 1) {
+        $dA = $dA." $a[$i][$j] & ";
+      } elsif ($j == $d[1] - 1 && $i != $d[0] -1) {
+        $dA = $dA." $a[$i][$j] \\";
+      } else {
+        $dA = $dA." $a[$i][$j]";
+      }
+    }
+  }
+  $dA = $dA."\end{array}\right]";
+  return ($dA, @a);
+}
+
+sub dispSyst {
+  my $A = shift;
+  my $b = shift;
+  my @d = @_;
+  my $dS = "\begin{array}{";
+  for (my $i = 0; $i < $d[0]; $i++) {
+    $dS = $dS."rc";
+  }
+  $dS = $dS."r}";
+  for (my $i = 0; $i < $d[0]; $i++) {
+    my $jnonzero = 0;
+    for (my $j = 0; $j < $d[1]; $j++) {
+      $a[$i][$j] = $A->element($i+1,$j+1);
+      if ($j == 0) {
+        if ($a[$i][$j] == 1) {
+          $dS = $dS." x_1 ";   $jnonzero = 1;
+        } elsif ($a[$i][$j] == -1) {
+          $dS = $dS."-x_1 ";  $jnonzero = 1;
+        } elsif ($a[$i][$j] != 0) {
+          $dS = $dS."$a[$i][$j] x_1";  $jnonzero = 1;
+        }
+        if ($d[1] == 1) {
+          if ($j == $d[1] - 1 && $i != $d[0] - 1) {
+            $dS = $dS." & = & ".$b->element($i+1,1)." \\";
+          } elsif ($j == $d[1] - 1 && $i == $d[0] - 1) {
+            $dS = $dS." & = & ".$b->element($i+1,1);
+          }
+        }
+      } else {
+        if ($a[$i][$j] == 0) {
+          $dS = $dS." & & ";
+        } else {
+          my $pm = ($a[$i][$j] > 0) ? "+" : "-";
+          if ($jnonzero == 0 && $a[$i][$j] > 0) { $pm = "" };
+          my $tmp = ($a[$i][$j] < 0) ? -$a[$i][$j] : $a[$i][$j];
+          my $subsc = $j+1;
+          if ($tmp == 1) {
+            $dS = $dS." & $pm & x_{$subsc}";
+          } else {
+            $dS = $dS." & $pm & $tmp x_{$subsc}";
+          }
+          $jnonzero = 1;
+        }
+        if ($j == $d[1] - 1 && $i != $d[0] - 1) {
+          $dS = $dS." & = & ".$b->element($i+1,1)." \\";
+        } elsif ($j == $d[1] - 1 && $i == $d[0] - 1) {
+          $dS = $dS." & = & ".$b->element($i+1,1);
+        }
+      }
+    }
+  }
+  $dS = $dS."\end{array}";
+  return $dS;
+}
+
+do {
+  $ech = Matrix([[1,non_zero_random(-3,3),non_zero_random(-3,3)],[0,1,non_zero_random(-3,3)],[0,0,0]]);
+  $E1 = Matrix([[1,0,0],[0,1,0],[0,random(-1,1,2),1]]);
+  $B1 = ($E1->inverse)*$ech;
+  $E2 = Matrix([[1,0,0],[random(2,5)*random(-1,1,2),1,0],[random(2,5)*random(-1,1,2),0,1]]);
+  $B2 = ($E2->inverse)*$B1;
+  $E3 = Matrix([[0,0,1],[0,1,0],[1,0,0]]);
+  $B = ($E3->inverse)*$B2;
+  ($dB, @b) = dispMat($B);
+  
+  ($dEch, @e) = dispMat($ech);
+  $x[1] = $e[1][2]/$e[1][1];
+  $x[0] = ($e[0][2] - $e[0][1]*$x[1])/$e[0][0];
+} until ($b[0][0] == floor($b[0][0]) && $b[0][1] == floor($b[0][1]) && $b[0][2] == floor($b[0][2]) && $b[1][0] == floor($b[1][0]) && $b[1][1] == floor($b[1][1]) && $b[1][2] == floor($b[1][2])  && $b[2][0] == floor($b[2][0]) && $b[2][1] == floor($b[2][1]) && $b[2][2] == floor($b[2][2]) && floor($x[1]) == $x[1] && floor($x[0]) == $x[0] && abs($b[0][0]) != abs($b[0][1]) && abs($b[1][0]) != abs($b[1][1]) && abs($x[0]) < 20 && abs($x[1]) < 20 && $x[0] != 0 && $x[1] != 0);
+
+$dS = dispSyst(Matrix([$b[0][0], $b[0][1]], [$b[1][0], $b[1][1]], [$b[2][0], $b[2][1]]), Matrix([$b[0][2]],[$b[1][2]], [$b[2][2]]), (3,2));
+$pop = PopUp(["select", "yes", "no"], "yes");
+$soln = MultiAnswer($x[0],0,$x[1],0)->with(
+  singleResult=>0,
+  allowBlankAnswers => 1,
+  checker => sub {
+    my ($cor, $stud, $self) = @_;
+    my ($c1,$c2,$c3,$c4) = @{$cor};
+    my ($s1,$s2,$s3,$s4) = @{$stud};
+    my ($a1,$a2,$a3,$a4) = ($c1 == $s1, $c2 == $s2, $c3 == $s3, $c4 == $s4);
+    return [$a1,$a2,$a3,$a4];
+  }
+);
+
+
+###########################################################################
+# state the problem 
+###########################################################################
+Context()->texStrings;
+BEGIN_TEXT
+Convert the system
+$PAR \[ $dS \] $PAR
+to an augmented matrix. Then reduce the system to echelon form and determine if the system is consistent. 
+$PAR
+Augmented matrix: \{$B->ans_array\}
+$PAR
+Echelon form: \{$ech->ans_array\}
+$PAR
+Is the system consistent? \{$pop->menu()\}
+$PAR
+
+END_TEXT
+Context()->normalStrings;
+
+
+###########################################################################
+# check the answer  
+###########################################################################
+ANS($B->cmp());
+
+ANS($ech->cmp(
+  checker => sub {
+    ($correct,$student,$ans) = @_;
+    my @d = $student->dimensions;
+    return 0 unless $d[0] == 3 && $d[1] == 3;
+    return 0 unless $student->element(2,1) == 0;
+    return 0 unless ($student->element(2,2) != 0 && $student->element(1,1) != 0);
+    for ($i = 0; $i < $d[1]; $i++) {
+      return 0 if $student->element(3,$i) != 0;
+    }
+    my $x2 = $student->element(2,3)/$student->element(2,2);
+    my $x1 = ($student->element(1,3) - $x2*$student->element(1,2))/$student->element(1,1);
+    return 0 unless ($x1 == $x[0] && $x2 == $x[1]);
+    return 1;
+  }
+));
+
+ANS($pop->cmp());
+
+
+
+###########################################################################
+# solution
+###########################################################################
+Context()->texStrings;
+($dB1, @b1) = dispMat($B1);
+($dB2, @b2) = dispMat($B2);
+$p1 = $E2->element(2,1);
+$p2 = $E2->element(3,1);
+$p3 = nicestring([$E1->element(3,2)],["R_2"]);
+$eq1 = nicestring([$e[0][0],$e[0][1]],["x_1","($x[1])"]);
+BEGIN_SOLUTION
+${BBOLD}SOLUTION:${EBOLD} $PAR
+\(\begin{array}{ccc} $dB & \overset{R_1 \Leftrightarrow R_3}{\sim} & $dB2 \\
+& \overset{\begin{align*}$p1 R_1 + R_2 &\Rightarrow R_2 \\ $p2 R_1 + R_3 &\Rightarrow R_3\end{align*}}{\sim} & $dB1 \\ & \overset{$p3 + R_3 \Rightarrow R_3}{\sim} & $dEch \end{array}\) $PAR
+Row 2 \(\Rightarrow x_2 = $x[1]\). Row 1 \(\Rightarrow $eq1 = $e[0][2] \Rightarrow x_1 = $x[0]\).
+END_SOLUTION
+Context()->normalStrings;
+
+COMMENT('Created in 2013.
+$BR
+Desc: Find echelon form and then solve the system.');
+ENDDOCUMENT();]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-26" ww-id="webwork-26">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-26" ww-id="webwork-26">
     <static seed="26" source="Library/ASU-topics/set119LinearSystems/p10.pg">
       <statement><p>Solve the system by finding the reduced row-echelon form of the augmented
 matrix.
@@ -3479,10 +3878,10 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p10.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119LinearSystems/p10.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/ASU-topics/set119LinearSystems/p10.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-27" ww-id="webwork-27">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-27" ww-id="webwork-27">
     <static seed="27" source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg">
       <statement><p>Let <m>A</m> and <m>B</m> be the following matrices.</p>
 <p><me>A = \left[\begin{array}{ccc}
@@ -3500,10 +3899,10 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
 <p><m>2 A - 5 B =</m> <fillin cols="3" rows="3"/></p>
 </statement>
     </static>
-    <rendering-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/MultipleOperations(3x3).pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-28" ww-id="webwork-28">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-28" ww-id="webwork-28">
     <static seed="28">
       <statement><p>During the month of January, <lq/>ABC Appliances<rq/> sold <m>33</m> microwaves, <m>17</m> refrigerators, and <m>33</m> stoves, while <lq/>XYZ Appliances<rq/> sold <m>57</m> microwaves, <m>27</m> refrigerators and <m>31</m> stoves.</p>
 <p>During the month of February, <lq/>ABC Appliances<rq/> sold <m>38</m> microwaves, <m>27</m> refrigerators, and <m>40</m> stoves, while <lq/>XYZ Appliances<rq/> sold <m>51</m> microwaves, <m>20</m> refrigerators and <m>34</m> stoves.</p>
@@ -3512,11 +3911,11 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
 <p>Using matrix addition, write a <m>2 \times 3</m> matrix summarizing the total sales for the months of January and February. <fillin cols="3" rows="2"/></p>
 </statement>
     </static>
-    <rendering-data problemSource="Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/.pg" origin="generated" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data problemSource="Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/Exercise-2_1_2-Matrix_Addition_Application.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-12T19:57:46Z       
+###       on 2025-08-13T14:32:39Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -3532,7 +3931,6 @@ enter a formula for <m>x</m> in terms of <m>z</m> in the answer blank for <m>x</
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -3603,7 +4001,7 @@ END_PGML
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-29" ww-id="webwork-29">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-29" ww-id="webwork-29">
     <static seed="29" source="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg">
       <statement><p>Solve for <m>X</m>.</p>
 <p><me>\left[\begin{array}{cc}
@@ -3616,10 +4014,10 @@ ENDDOCUMENT();
 <p><m>X=</m> <fillin cols="2" rows="2"/></p>
 </statement>
     </static>
-    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/TCNJ/TCNJ_MatrixOperations/problem4.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-30" ww-id="webwork-30">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-30" ww-id="webwork-30">
     <static seed="30" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg">
       <statement><p>Let 
 <me>A = \left[\begin{array}{cc}
@@ -3653,11 +4051,11 @@ If an answer does not exist, enter <alert>DNE</alert>.</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-31" ww-id="webwork-31">
-    <static seed="31" source="matrixtheory/matrixarithmetic5.pg">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-31" ww-id="webwork-31">
+    <static seed="31">
       <statement><p>Enter T or F depending on whether the statement is true or false.
 (You must enter T or F -- True and False will not work.)</p>
 <p><ol>
@@ -3673,11 +4071,85 @@ If an answer does not exist, enter <alert>DNE</alert>.</p>
 </ol></p>
 </statement>
     </static>
-    <rendering-data sourceFilePath="matrixtheory/matrixarithmetic5.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
-    <pg source="matrixtheory/matrixarithmetic5.pg"/>
+    <rendering-data problemSource="Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/Exercise-2_1_5-TrueFalse_Matrix_Properties.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+## DESCRIPTION
+## Matrix Algebra
+## ENDDESCRIPTION
+
+## Tagged by tda2d
+## edited by Chrissy Safranski
+
+## DBsubject(Linear algebra)
+## DBchapter(Matrices)
+## DBsection(Matrix algebra)
+## Institution(ASU)
+## Level(2)
+## KEYWORDS('Algebra' 'Matrix' 'Matrices' 'True' 'False')
+
+DOCUMENT();      
+loadMacros(
+  "PGstandard.pl",
+  "PGchoicemacros.pl",
+  "PGcourse.pl"
+);
+TEXT(beginproblem());
+# Since this is a true questions, we do not usually wish to tell students which
+# parts of the matching question have been answered correctly and which are
+# incorrect.  That is too easy.  To accomplish this we set the following flag to
+# zero.
+$showPartialCorrectAnswers = 0;
+
+# True false questions are a special case of a "select list"
+# Make a new select list
+$tf = new_select_list();
+# $tf now "contains" the select list object.
+# Insert some  questions and whether or not they are true.
+
+$tf -> qa ( # each entry has to end with a comma
+"An \(m \times 1\) matrix is called a column matrix.",
+"T",
+"An \(m \times n\) matrix has \(m\) columns and \(n\) rows.",
+"F",
+"For any matrix \(A\), there exists a matrix \(B\) so that \(A + B = 0\).",
+"T",
+"For any matrix \(A\), \(2A + 3A = 5A\).",
+"T",
+"For any matrices \(A, B\) of the same size, \(2A + 3B = 5(A+B)\).",
+"F",
+"For any matrices \(A\) and \(B\), \(3A+3B=3(A + B)\).",
+"T",
+"If matrices \(A\) and \(B\) have the same size, then \(A + B = B + A\) is known as the Associative Property for Addition of Matrices.",
+"F",
+);   # every statement has to end with a semi-colon.
+
+# Choose two of the question and answer pairs at random.
+$tf ->choose(3);
+
+# Now print the text using $ml->print_q for the questions
+# and $ml->print_a to print the answers.
+
+BEGIN_TEXT
+$PAR
+
+Enter T or F depending on whether the statement is true or false.
+(You must enter T or F -- True and False will not work.)$BR
+
+\{ $tf-> print_q \}
+
+$PAR
+
+END_TEXT
+
+# Enter the correct answers to be checked against the answers to the students.
+
+ANS(str_cmp( $tf->ra_correct_ans )   ) ;
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.
+]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-32" ww-id="webwork-32">
-    <static seed="32" source="matrixtheory/matrixmult1.pg">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-32" ww-id="webwork-32">
+    <static seed="32">
       <statement><p>Enter T or F depending on whether the statement is true or false.
 (You must enter T or F -- True and False will not work.)</p>
 <p><ol>
@@ -3696,10 +4168,85 @@ by the 2nd row of B.</p>
 </ol></p>
 </statement>
     </static>
-    <rendering-data sourceFilePath="matrixtheory/matrixmult1.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
-    <pg source="matrixtheory/matrixmult1.pg"/>
+    <rendering-data problemSource="Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_2-Matrix_Multiplication/Exercise-2_2_1-Properties_of_Matrix_Multiplication.pg" origin="generated" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+## DESCRIPTION
+## Matrix Algebra
+## ENDDESCRIPTION
+
+## Tagged by tda2d
+
+## DBsubject(Linear algebra)
+## DBchapter(Matrices)
+## DBsection(Matrix algebra)
+## Institution(ASU)
+## Level(2)
+## KEYWORDS('Algebra' 'Matrix' 'Matrices' 'True' 'False')
+
+DOCUMENT();      
+loadMacros(
+  "PGstandard.pl",
+  "PGchoicemacros.pl",
+  "PGcourse.pl"
+);
+TEXT(beginproblem(), $BR,$BBOLD, "True False Problem", $EBOLD, $BR,$BR);
+# Since this is a true questions, we do not usually wish to tell students which
+# parts of the matching question have been answered correctly and which are
+# incorrect.  That is too easy.  To accomplish this we set the following flag to
+# zero.
+$showPartialCorrectAnswers = 0;
+
+# True false questions are a special case of a "select list"
+# Make a new select list
+$tf = new_select_list();
+# $tf now "contains" the select list object.
+# Insert some  questions and whether or not they are true.
+
+$tf -> qa ( # each entry has to end with a comma
+"If A has size \( m  \times r \) and B has size  \(r \times  n\) , then AB 
+has size  \( r \times n \).",
+"F",
+"If A has size \(m \times n\) and B has size \(n \times r \), 
+then AB has size \(m \times r \).",
+"T",
+"If A has size \(5 \times 4\) and B has size \(4 \times 3\), 
+then the 3rd row, 2nd column entry of AB is obtained by multiplying the 3rd column of A 
+by the 2nd row of B.",
+"F",
+"If AB is defined, then BA is also defined.",
+"F",
+"If AB has size \(k \times p\), then the number of rows of A is p.",
+"F",
+"If A is a square matrix such that \(A^2\) equals the 0 matrix, then A must equal the 0 matrix.",
+"F",
+);   # every statement has to end with a semi-colon.
+
+# Choose two of the question and answer pairs at random.
+$tf ->choose(3);
+
+# Now print the text using $ml->print_q for the questions
+# and $ml->print_a to print the answers.
+
+BEGIN_TEXT
+$PAR
+
+Enter T or F depending on whether the statement is true or false.
+(You must enter T or F -- True and False will not work.)$BR
+
+\{ $tf-> print_q \}
+
+$PAR
+
+END_TEXT
+
+# Enter the correct answers to be checked against the answers to the students.
+
+ANS(str_cmp( $tf->ra_correct_ans )   ) ;
+
+ENDDOCUMENT();        # This should be the last executa
+]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-33" ww-id="webwork-33">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-33" ww-id="webwork-33">
     <static seed="33" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg">
       <statement><p>Give an example of two <m>2 \times 2</m> matrices <m>A</m> and <m>B</m>
 such that <m>AB \ne BA</m>.</p>
@@ -3709,10 +4256,10 @@ such that <m>AB \ne BA</m>.</p>
 <fillin cols="2" rows="2"/></p>
 </statement>
     </static>
-    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-34" ww-id="webwork-34">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-34" ww-id="webwork-34">
     <static seed="34" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg">
       <statement><p>Give an example of two <m>2 \times 2</m> matrices <m>A</m> and <m>B</m>,
 neither of which is the zero matrix or the identity matrix,
@@ -3723,10 +4270,10 @@ such that <m>AB = BA</m>.</p>
 <fillin cols="2" rows="2"/></p>
 </statement>
     </static>
-    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-35" ww-id="webwork-35">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-35" ww-id="webwork-35">
     <static seed="35" source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg">
       <statement><p>Let 
 <me>A = \left[\begin{array}{cc}
@@ -3760,10 +4307,10 @@ If an answer does not exist, enter <alert>DNE</alert>.</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-36" ww-id="webwork-36">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-36" ww-id="webwork-36">
     <static seed="36" source="Library/ASU-topics/set119MatrixAlgebra/p14.pg">
       <statement><p>Determine the value(s) of  <m>x</m>  such that</p>
 <p><m>\left[\begin{array}{ccc}
@@ -3787,10 +4334,10 @@ If there is more than one value separate them by commas.</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p14.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p14.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/ASU-topics/set119MatrixAlgebra/p14.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-37" ww-id="webwork-37">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-37" ww-id="webwork-37">
     <static seed="37" source="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg">
       <statement><p>Given the matrix
 <me>\left[\begin{array}{cc}
@@ -3813,10 +4360,10 @@ If there is more than one value separate them by commas.</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-38" ww-id="webwork-38">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-38" ww-id="webwork-38">
     <static seed="38" source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg">
       <statement><p>Find a <m>2 \times 2</m> matrix such that</p>
 <p><m>\left[\begin{array}{cc}
@@ -3828,10 +4375,10 @@ If there is more than one value separate them by commas.</p>
 \end{array}\right]</m>.</p>
 </statement>
     </static>
-    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra3Matrices/ur_la_3_35.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-39" ww-id="webwork-39">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-39" ww-id="webwork-39">
     <static seed="39" source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg">
       <statement><p>The matrix <m>\left[\begin{array}{cc}
 4 \amp 1\cr
@@ -3844,10 +4391,10 @@ If there is more than one value separate them by commas.</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-40" ww-id="webwork-40">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-40" ww-id="webwork-40">
     <static seed="40" source="Library/ASU-topics/set119MatrixAlgebra/p13.pg">
       <statement><p>Consider the following two systems.</p>
 <p>(a) 
@@ -3921,10 +4468,10 @@ If there is more than one value separate them by commas.</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p13.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/ASU-topics/set119MatrixAlgebra/p13.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/ASU-topics/set119MatrixAlgebra/p13.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="19" xml:id="extracted-webwork-41" ww-id="webwork-41">
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-41" ww-id="webwork-41">
     <static seed="41" source="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg">
       <statement><p>Solve the system of equations 
 <me>\begin{array}{l}
@@ -3947,7 +4494,7 @@ the inverse of the coefficient matrix.</p>
         </p>
       </answer>
     </static>
-    <rendering-data sourceFilePath="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg" origin="webwork2" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <rendering-data sourceFilePath="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg" origin="webwork2" domain="https://webwork.runestone.academy" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setAlgebra35SystemMatrices/sw7_5_19.pg"/>
   </webwork-reps>
 </webwork-representations>

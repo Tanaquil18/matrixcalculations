@@ -1,0 +1,137 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserMultiAnswer.pl",
+  "parserPopUp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Matrix");
+
+$a1 = non_zero_random(-6,6,1);
+$b1 = non_zero_random(-6,6,1);
+$c1 = non_zero_random(-6,6,1);
+$a2 = non_zero_random(-6,6,1);
+$b2 = non_zero_random(-6,6,1);
+$c2 = non_zero_random(-6,6,1);
+$a3 = non_zero_random(-6,6,1);
+$b3 = non_zero_random(-6,6,1);
+$c3 = non_zero_random(-6,6,1);           
+
+$A = Matrix([[$a1, $b1, $c1], [$a2,$b2,$c2], [$a3,$b3,$c3]]);
+$row1 = random(1,2,1);
+$row2 = $row1;
+while ($row1==$row2){
+  $row2=random(2,3,1);
+}
+
+if ($row1==1){
+  if ($row2==2) {
+    $B = Matrix([[$a2,$b2,$c2],[$a1, $b1, $c1],[$a3,$b3,$c3]]);
+  }
+  else {
+    $B = Matrix([[$a3,$b3,$c3],[$a2,$b2,$c2],[$a1, $b1, $c1]]);
+  }
+}
+elsif ($row1==2){
+  if ($row2==1) {
+    $B = Matrix([[$a2,$b2,$c2],[$a1, $b1, $c1],[$a3,$b3,$c3]]);
+  }
+  else {
+    $B = Matrix([[$a1, $b1, $c1],[$a3,$b3,$c3],[$a2,$b2,$c2]]);
+  }
+}
+else {
+  if ($row2==2) {
+    $B = Matrix([[$a1, $b1, $c1],[$a3,$b3,$c3],[$a2,$b2,$c2]]);
+  }
+  else {
+    $B = Matrix([[$a3,$b3,$c3],[$a2,$b2,$c2],[$a1, $b1, $c1]]);
+  }
+}
+
+Context()->variables->are(R1 => ["Real", TeX=>"R_1"], R2 => ["Real", TeX=>"R_2"], R3 => ["Real", TeX=>"R_3"]);
+$rd1 = "R".$row1;
+$rd2 = "R".$row2;
+$rstrlhs = nicestring([$c],[$rd1]);
+$lhs = Formula("$rd1");
+$rhs = Formula("$rd2");
+
+$multians = MultiAnswer($lhs, $rhs)->with(
+  singleResult => 1,
+  checker => sub {
+    my ($correct, $student, $self) = @_;
+    my ($astu, $bstu) = @{$student};
+    my ($acor, $bcor) = @{$correct};
+    if ($astu == $lhs && $bstu == $rhs) {
+      return 1;
+    }
+    elsif ($astu == $rhs && $bstu == $lhs) {
+      return 1;
+    }
+    else {
+      return 0;
+    }
+  }
+);
+
+$pop = PopUp(["select", "->", "<-->"], "<-->");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The matrix on the right results after performing a single row operation on the matrix on the left.
+
+[```[$A] \rightarrow [$B]```]
+
+Identify the row operation. Use *R1*, *R2*, and *R3* to represent the rows [`R_1\text{,}`] [`R_2\text{,}`] and [`R_3\text{.}`]
+
+Answer:  [_]{$multians}{2}   [_]{$pop}{5}   [_]{$multians}{2}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

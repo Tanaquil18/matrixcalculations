@@ -1,6 +1,6 @@
-openDate          = 08/12/2025 at 12:00am
-dueDate           = 02/12/2026 at 10:00pm
-answerDate        = 02/12/2026 at 10:00pm
+openDate          = 08/13/2025 at 12:00am
+dueDate           = 02/13/2026 at 10:00pm
+answerDate        = 02/13/2026 at 10:00pm
 paperHeaderFile   = Matrix_Calculations/header/1_5-Consistent_and_Inconsistent_Systems.pg
 screenHeaderFile  = Matrix_Calculations/header/1_5-Consistent_and_Inconsistent_Systems.pg
 description       = Consistent and Inconsistent Systems
@@ -15,10 +15,6 @@ problem_id =
 problem_end
 problem_start
 source_file = Library/TCNJ/TCNJ_RowReduction/problem15.pg
-problem_id = 
-problem_end
-problem_start
-source_file = matrixtheory/consistency_prob4.pg
 problem_id = 
 problem_end
 problem_start

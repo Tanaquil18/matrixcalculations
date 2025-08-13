@@ -1,0 +1,98 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(x1 => 'Real', x2=> 'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$a1 = non_zero_random(-1,1,1)*random(2,20,1);
+$b1 = random(2,27,1);
+$c1 = non_zero_random(-27,27,1);
+$a2 = non_zero_random(-1,1,1)*random(2,20,1);
+$b2 = random(2,27,1);
+$b2ans = -1*$b2;
+$c2 = non_zero_random(-27,27,1);
+$a3 = non_zero_random(-1,1,1)*random(2,20,1);
+$b3 = random(2,27,1);
+$c3 = non_zero_random(-27,27,1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write the augmented matrix of the system
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$a1]x_1+ [$b1]x_2\amp = [$c1]\\
+[$a2]x_1- [$b2]x_2\amp = [$c2]\\
+[$a3]x_1+ [$b3]x_2\amp = [$c3]
+\end{aligned}
+```]
+
+>> [@DataTable(
+  [
+    [PGML('[_]{$a1}{2}'),
+     PGML('[_]{$b1}{2}'),
+     PGML('[_]{$c1}{2}'),
+    ],
+    [PGML('[_]{$a2}{2}'),
+     PGML('[_]{$b2ans}{2}'),
+     PGML('[_]{$c2}{2}'),
+    ],
+    [PGML('[_]{$a3}{2}'),
+     PGML('[_]{$b3}{2}'),
+     PGML('[_]{$c3}{2}'),
+    ],
+  ],
+      align => 'll!{\vrule width 0.07em}l',
+      valign => 'middle',);@]* <<
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

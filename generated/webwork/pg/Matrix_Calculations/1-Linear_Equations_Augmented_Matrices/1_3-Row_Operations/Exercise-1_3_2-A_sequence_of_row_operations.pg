@@ -1,0 +1,115 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Matrix");
+$m = random(2,4,1);
+$n = random(2,4,1);
+$p = random(2,4,1);
+$a1 = 1;
+$b1 = non_zero_random(-3,3,1);
+$c1 = non_zero_random(-6,6,1);
+$d1 = non_zero_random(-6,6,1);
+$a2 = $m;
+$b2 = 1+$m*$b1;
+$c2 = non_zero_random(-6,6,1);
+$d2 = non_zero_random(-6,6,1);
+$a3 = -$n;
+$b3 = (-$p)-$n*$b1;
+$c3 = non_zero_random(-6,6,1);
+$d3 = non_zero_random(-6,6,1);
+
+$ansa1 = 1;
+$ansb1 = $b1;
+$ansc1 = $c1;
+$ansd1 = $d1;
+$ansa2 = 0;
+$ansb2 = 1;
+$ansc2 = (-$m)*$c1+$c2; 
+$ansd2 = (-$m)*$d1+$d2;
+$ansa3 = 0;
+$ansb3 = 0;
+$ansc3 = ($p*(-$m)+$n)*$c1+$p*$c2+$c3;
+$ansd3 = ($p*(-$m)+$n)*$d1+$p*$d2+$d3;
+
+$A = Matrix([
+[$a1,$b1,$c1,$d1],
+[$a2,$b2,$c2,$d2],
+[$a3,$b3,$c3,$d3],
+]);
+
+$answer = Matrix([
+[$ansa1,$ansb1,$ansc1,$ansd1],
+[$ansa2,$ansb2,$ansc2,$ansd2],
+[$ansa3,$ansb3,$ansc3,$ansd3],
+]);
+
+$mdisplay = Compute("-$m");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Given the matrix
+
+[```A=[$A]\text{,}```]
+
+perform the row operations below in the order given and enter the final result.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$mdisplay] R_1 +R_2 \amp \rightarrow R_2\\
+[$n] R_1 +R_3 \amp \rightarrow R_3\\
+[$p] R_2 +R_3 \amp \rightarrow R_3
+\end{aligned}
+```]
+
+[_]*{$answer}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,107 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Matrix");
+
+$a1 = non_zero_random(-6,6,1);
+$b1 = non_zero_random(-6,6,1);
+$c1 = non_zero_random(-6,6,1);
+$a2 = non_zero_random(-6,6,1);
+$b2 = non_zero_random(-6,6,1);
+$c2 = non_zero_random(-6,6,1);
+$a3 = non_zero_random(-6,6,1);
+$b3 = non_zero_random(-6,6,1);
+$c3 = non_zero_random(-6,6,1);           
+
+$A = Matrix([[$a1, $b1, $c1], [$a2,$b2,$c2], [$a3,$b3,$c3]]);
+$row = random(1,3,1);
+$c = random(2,4)*random(-1,1,2);
+
+if ($row==1){
+  $a1=$c*$a1;
+  $b1=$c*$b1;
+  $c1=$c*$c1;
+}
+elsif ($row==2){
+  $a2=$c*$a2;
+  $b2=$c*$b2;
+  $c2=$c*$c2;
+}
+else {
+  $a3=$c*$a3;
+  $b3=$c*$b3;
+  $c3=$c*$c3;
+}
+
+$B = Matrix([[$a1, $b1, $c1], [$a2,$b2,$c2], [$a3,$b3,$c3]]);
+
+Context()->variables->are(R1 => ["Real", TeX=>"R_1"], R2 => ["Real", TeX=>"R_2"], R3 => ["Real", TeX=>"R_3"]);
+$rd = "R".$row;
+$rstrlhs = nicestring([$c],[$rd]);
+$lhs = Formula($rstrlhs);
+$rhs = Formula($rd);
+
+$pop = PopUp(["select", "->", "<-->"], "->");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The matrix on the right results after performing a single row operation on the matrix on the left.
+
+[```[$A] \rightarrow [$B]```]
+
+Identify the row operation. Use *R1*, *R2*, and *R3* to represent the rows [`R_1\text{,}`] [`R_2\text{,}`] and [`R_3\text{.}`]
+
+Answer:  [_]{$lhs}{2}   [_]{$pop}{5}   [_]{$rhs}{2}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

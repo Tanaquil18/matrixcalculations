@@ -1,0 +1,73 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$g = Compute(random(3,20));
+$r=2*$g;
+$b=3*$g;
+
+$total = 6*$g;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose a jar contains red, blue and green marbles. You are told that there are a total of [`[$total]`] marbles in the jar; there are twice as many red marbles as green ones; the number of blue marbles is the same as the sum of the red and green marbles. How many marbles of each color are there?
+
+[@KeyboardInstructions('Use [`r`] for the number of red marbles, [`b`] for the number of blue marbles, and [`g`] for the number of green marbles.')@]**
+
+[`g=`][_]{$g}{2}
+
+[`r=`][_]{$r}{2}
+
+[`b=`][_]{$b}{2}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

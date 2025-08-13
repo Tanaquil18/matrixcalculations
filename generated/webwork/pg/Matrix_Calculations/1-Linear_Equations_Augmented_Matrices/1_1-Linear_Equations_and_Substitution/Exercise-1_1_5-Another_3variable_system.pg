@@ -1,0 +1,90 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(x_1 => 'Real', x_2=> 'Real', x_3=>'Real');
+Context()->reduction->set('(-x)+y'=>0, '(-x)-y'=>0);
+$x1 = non_zero_random(-5,5,1);
+$x2 = non_zero_random(-5,5,1);
+$x3 = non_zero_random(-5,5,1);
+$a1 = non_zero_random(-9,9,1);
+$b1 = non_zero_random(-9,9,1);
+$c1 = non_zero_random(-9,9,1);
+$d1 = $a1*$x1+$b1*$x2+$c1*$x3;
+$a2 = 0;
+$b2 = non_zero_random(-9,9,1);
+$c2 = non_zero_random(-9,9,1);
+$d2 = $a2*$x1+$b2*$x2+$c2*$x3;
+$a3 = non_zero_random(-9,9,1);
+$b3 = 0;
+$c3 = non_zero_random(-5,5,1);
+$d3 = $a3*$x1+$b3*$x2+$c3*$x3;
+$coeff1=Formula("$a1*x_1+$b1*x_2+$c1*x_3")->reduce;
+$coeff2=Formula("$a2*x_1+$b2*x_2+$c2*x_3")->reduce;
+$coeff3=Formula("$a3*x_1+$b3*x_2+$c3*x_3")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the system:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$coeff1] \amp = [$d1]\\
+[$coeff2] \amp = [$d2]\\
+[$coeff3] \amp = [$d3]
+\end{aligned}
+```]
+
+[`(x_1, x_2, x_3) = \bigg( `] [_]{$x1}{2} , [_]{$x2}{2} , [_]{$x3}{2} [`\bigg) `]
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

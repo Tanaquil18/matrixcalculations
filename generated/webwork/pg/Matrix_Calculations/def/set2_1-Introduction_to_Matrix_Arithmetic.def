@@ -1,6 +1,6 @@
-openDate          = 08/12/2025 at 12:00am
-dueDate           = 02/12/2026 at 10:00pm
-answerDate        = 02/12/2026 at 10:00pm
+openDate          = 08/13/2025 at 12:00am
+dueDate           = 02/13/2026 at 10:00pm
+answerDate        = 02/13/2026 at 10:00pm
 paperHeaderFile   = Matrix_Calculations/header/2_1-Introduction_to_Matrix_Arithmetic.pg
 screenHeaderFile  = Matrix_Calculations/header/2_1-Introduction_to_Matrix_Arithmetic.pg
 description       = Introduction to Matrix Arithmetic
@@ -10,7 +10,7 @@ source_file = Library/Mizzou/Finite_Math/Linear_Algebra_Matrix_Operations/Multip
 problem_id = 
 problem_end
 problem_start
-source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/2_1_2-Matrix_Addition_Application.pg
+source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/Exercise-2_1_2-Matrix_Addition_Application.pg
 problem_id = 
 problem_end
 problem_start
@@ -19,9 +19,5 @@ problem_id =
 problem_end
 problem_start
 source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg
-problem_id = 
-problem_end
-problem_start
-source_file = matrixtheory/matrixarithmetic5.pg
 problem_id = 
 problem_end

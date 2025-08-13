@@ -1,0 +1,76 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$x = Compute(non_zero_random(-5,5,1));
+$y = Compute(non_zero_random(-5,5,1));
+$a=Compute(random(2,5,1));
+$d=2*$a;
+$b=Compute(random(2,5,1));
+$c=Compute(random(2,5,1));
+$const1=$a*$x+$d*$y;
+$const2=$b*$x-$c*$y;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the method of elimination to solve the linear system:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$a]x+[$d]y \amp = [$const1]\\
+[$b]x-[$c]y \amp = [$const2]
+\end{aligned}
+```]
+
+The solution is [`x=`][_]{$x}{2} and [`y=`][_]{$y}{2}.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

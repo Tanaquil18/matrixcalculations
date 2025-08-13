@@ -1,0 +1,90 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-13T14:32:40Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$a = -1;
+$b = 1;
+$c = 2;
+$d = 3;
+$e = random(1,3,1);
+$f = random(10,15,1);
+$xnum = $d * $e - $b * $f;
+$ynum = -($c)*$e + $a * $f;
+$den = $a * $d - $b * $c;
+$x = Compute("$xnum / $den");
+$y = Compute("$ynum / $den");
+
+$xmin = -1;
+$xmax =  9;
+$ymin = -1;
+$ymax =  9; 
+$graph = init_graph($xmin,$ymin,$xmax,$ymax,'axes'=>[0,0]);
+$graph->lb('reset');
+$graph->lb(new Label($xmax-0.1,0.05,"x",'black','right','bottom'));
+$graph->lb(new Label(0.05,$ymax-0.1,"y",'black','left','top'));
+
+$graph->moveTo(0,1);
+$graph->lineTo(8,9,'red',4);
+
+$graph->moveTo(8,0);
+$graph->lineTo(0,5,'blue',4);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the point of intersection of the lines [`y = x + [$e]`] and [`2x+3y=[$f]\text{.}`]
+
+>> [@image(insertGraph($graph), width=>300, alt=>qq"a graph with axes depicting two intersecting lines")@]*  <<
+
+The point of intersection is [`(x,y)`] where [`x=`][_]{$x}{5} and [`y=`][_]{$y}{5}.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
