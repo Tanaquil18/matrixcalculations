@@ -16,12 +16,9 @@
   </activity>
 
   <activity label="consistency_solve_consistentornot_prob1">
-    <webwork source="matrixtheory/consistency_prob4.pg"/>
-  </activity>
-
-  <!-- <exercise label="consistency_solve_consistentornot_prob1a">
+    <!-- <webwork source="matrixtheory/consistency_prob4.pg"/> -->
     <webwork><xi:include parse="text" href="../webworkfiles/consistency_prob4.pg"/></webwork>
-  </exercise> -->
+  </activity>
 
   <activity label="consistency_solvesystem_prob1">
     <webwork source="Library/ASU-topics/set119LinearSystems/p10.pg"/>

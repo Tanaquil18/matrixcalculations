@@ -4,19 +4,23 @@
 
 
   <activity label="rref_matrixforms_prob1">
-    <webwork source="matrixtheory/rrefprob1.pg"/>
+    <!-- <webwork source="matrixtheory/rrefprob1.pg"/> -->
+    <webwork><xi:include parse="text" href="../webworkfiles/rrefprob1.pg"/></webwork>
   </activity>
 
   <activity label="rref_matrixforms_prob2">
-    <webwork source="matrixtheory/rrefprob2.pg"/>
+    <!-- <webwork source="matrixtheory/rrefprob2.pg"/> -->
+    <webwork><xi:include parse="text" href="../webworkfiles/rrefprob2.pg"/></webwork>
   </activity>
 
   <activity label="rref_performgauss1">
-    <webwork source="matrixtheory/rrefprob3a.pg"/>
+    <!-- <webwork source="matrixtheory/rrefprob3a.pg"/> -->
+    <webwork><xi:include parse="text" href="../webworkfiles/rrefprob3a.pg"/></webwork>
   </activity>
 
   <activity label="rref_performgauss2">
-    <webwork source="matrixtheory/rrefprob3.pg"/>
+    <!-- <webwork source="matrixtheory/rrefprob3.pg"/> -->
+    <webwork><xi:include parse="text" href="../webworkfiles/rrefprob3.pg"/></webwork>
   </activity>
 
   <activity label="rref_performgauss3">

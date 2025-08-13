@@ -4,7 +4,8 @@
 
 
     <activity label="ww-matrixmult1"><title>Properties of Matrix Multiplication</title>
-        <webwork source="matrixtheory/matrixmult1.pg"/> 
+        <!-- <webwork source="matrixtheory/matrixmult1.pg"/> -->
+        <webwork><xi:include parse="text" href="../webworkfiles/matrixmult1.pg"/></webwork> 
     </activity>
     
     <activity label="ww-matrixmult2"><title>Matrix Multiplication Commutativity</title>

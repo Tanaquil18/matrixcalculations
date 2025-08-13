@@ -80,7 +80,8 @@
       </activity>
 
       <activity label="ww-matrixarithmetic5"><title>True/False Matrix Properties</title>
-        <webwork source="matrixtheory/matrixarithmetic5.pg"/>
+        <!-- <webwork source="matrixtheory/matrixarithmetic5.pg"/> -->
+        <webwork><xi:include parse="text" href="../webworkfiles/matrixarithmetic5.pg"/></webwork>
       </activity>
 
       

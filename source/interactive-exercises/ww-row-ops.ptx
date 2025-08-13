@@ -41,64 +41,16 @@
             
             perform the row operation <m>R_2 \leftrightarrow R_3</m> on <m>A</m> and enter the result.</p>
 
-            <!-- <p>
+            <p>
             <var name="$ans1" form="array"/>
-            </p> -->
-            <!-- I don't like how the above currently functions - if anything is incorrect, only the 
-             first entry shows in red, whether that entry is correct or not. I would want to either make it all red, or show which entries are incorrect.-->
+            </p>
+
+            <p>Perform the row operation <m>\frac{1}{<var name="$a1"/>}R_1 \rightarrow R_1</m> on 
+              <m>A</m> and enter the result.</p>
             
-            <!-- Ugly as heck, but the answer checking and display functions how I want it to. -->
-            <tabular>
-            <row>
-            <cell><var name="$a1" width="2" /></cell>
-            <cell><var name="$b1" width="2" /></cell>
-            <cell><var name="$c1" width="2" /></cell>
-            <cell><var name="$d1" width="2" /></cell>
-            </row>
-            <row>
-              <cell><var name="$a3" width="2" /></cell>
-              <cell><var name="$b3" width="2" /></cell>
-              <cell><var name="$c3" width="2" /></cell>
-              <cell><var name="$d3" width="2" /></cell>
-            </row>
-            <row>
-              <cell><var name="$a2" width="2" /></cell>
-              <cell><var name="$b2" width="2" /></cell>
-              <cell><var name="$c2" width="2" /></cell>
-              <cell><var name="$d2" width="2" /></cell>
-            </row>
-            </tabular>
-
-            <p>Perform the row operation <m>\frac{1}{<var name="$a1"/>}R_1 \rightarrow R_1</m> on <m>A</m> and enter the result.</p>
-
-            <!-- <p>
+            <p>
             <var name="$ans2" form="array"/>
-            </p> -->
-            <!-- I don't like how the above currently functions - if anything is incorrect, only the 
-             first entry shows in red, whether that entry is correct or not. I would want to either make it all red, or show which entries are incorrect.-->
-            
-            <!-- Ugly as heck, but the answer checking and display functions how I want it to. -->
-            <tabular>
-            <row>
-            <cell><var name="$ans2a1" width="2" /></cell>
-            <cell><var name="$ans2b1" width="2" /></cell>
-            <cell><var name="$ans2c1" width="2" /></cell>
-            <cell><var name="$ans2d1" width="2" /></cell>
-            </row>
-            <row>
-              <cell><var name="$a2" width="2" /></cell>
-              <cell><var name="$b2" width="2" /></cell>
-              <cell><var name="$c2" width="2" /></cell>
-              <cell><var name="$d2" width="2" /></cell>
-            </row>
-            <row>
-              <cell><var name="$a3" width="2" /></cell>
-              <cell><var name="$b3" width="2" /></cell>
-              <cell><var name="$c3" width="2" /></cell>
-              <cell><var name="$d3" width="2" /></cell>
-            </row>
-            </tabular>
-
+            </p>
             </statement>
         </webwork>
       </activity>
@@ -162,33 +114,9 @@
               <mrow><var name="$p"/> R_2 +R_3 \amp \rightarrow R_3</mrow>
             </md>
           </p>
-          <!-- <p>
+          <p>
             <var name="$answer" form="array"/>
-            </p> -->
-            <!-- I don't like how the above currently functions - if anything is incorrect, only the 
-             first entry shows in red, whether that entry is correct or not. I would want to either make it all red, or show which entries are incorrect.-->
-            
-            <!-- Ugly as heck, but the answer checking and display functions how I want it to. -->
-            <tabular>
-              <row>
-              <cell><var name="$ansa1" width="2" /></cell>
-              <cell><var name="$ansb1" width="2" /></cell>
-              <cell><var name="$ansc1" width="2" /></cell>
-              <cell><var name="$ansd1" width="2" /></cell>
-              </row>
-              <row>
-                <cell><var name="$ansa2" width="2" /></cell>
-                <cell><var name="$ansb2" width="2" /></cell>
-                <cell><var name="$ansc2" width="2" /></cell>
-                <cell><var name="$ansd2" width="2" /></cell>
-              </row>
-              <row>
-                <cell><var name="$ansa3" width="2" /></cell>
-                <cell><var name="$ansb3" width="2" /></cell>
-                <cell><var name="$ansc3" width="2" /></cell>
-                <cell><var name="$ansd3" width="2" /></cell>
-              </row>
-              </tabular>
+          </p>
             
           </statement>
         </webwork>
@@ -390,24 +318,24 @@
             $lhs = Formula("$rd1");
             $rhs = Formula("$rd2");
             <!-- $eitherorder = UNORDERED_ANS($lhs->cmp,$rhs->cmp); -->
-            <!-- above doesn't compile.  below does, but has weird green gox behavior.  might get better in 2.19 -->
-            <!-- $multians = MultiAnswer($lhs, $rhs)->with(
-        singleResult => 1,
-        checker => sub {
-          my ($correct, $student, $self) = @_;
-          my ($astu, $bstu) = @{$student};
-          my ($acor, $bcor) = @{$correct};
-          if ($astu == $lhs &amp;&amp; $bstu == $rhs) {
-            return 1;
-          }
-          elsif ($astu == $rhs &amp;&amp; $bstu == $lhs) {
-            return 1;
-          }
-          else {
-            return 0;
-          }
-        }
-      ); -->
+            <!-- the above used as an evaluator doesn't compile.   -->
+            $multians = MultiAnswer($lhs, $rhs)->with(
+              singleResult => 1,
+              checker => sub {
+                my ($correct, $student, $self) = @_;
+                my ($astu, $bstu) = @{$student};
+                my ($acor, $bcor) = @{$correct};
+                if ($astu == $lhs &amp;&amp; $bstu == $rhs) {
+                  return 1;
+                }
+                elsif ($astu == $rhs &amp;&amp; $bstu == $lhs) {
+                  return 1;
+                }
+                else {
+                  return 0;
+                }
+              }
+            );
             
             $pop = PopUp(["select", "-&gt;", "&lt;--&gt;"], "&lt;--&gt;");
           </pg-code>
@@ -416,7 +344,7 @@
             <p>The matrix on the right results after performing a single row operation on the matrix on the left.
             <me><var name="$A"/> \rightarrow <var name="$B"/></me></p>
             <p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1</m>, <m>R_2</m>, and <m>R_3</m>.</p>
-            <p>Answer:  <var name="$lhs" width="2"/>   <var name="$pop" form="popup"/>   <var name="$rhs" width="2"/> </p>   
+            <p>Answer:  <var name="$lhs" evaluator="$multians" width="2"/>   <var name="$pop" form="popup"/>   <var name="$rhs" evaluator="$multians" width="2"/> </p>   
           </statement>
         </webwork>
       </activity>
