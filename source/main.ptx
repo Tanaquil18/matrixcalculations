@@ -6,7 +6,7 @@
 
   <book xml:id="my-great-book">
     <title>Matrix Calculations</title>
-    <subtitle>An introduction to parts of linear algebra</subtitle>
+    <subtitle>A subspace of linear algebra</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
