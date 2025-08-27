@@ -147,9 +147,11 @@
 
   <!-- To use WeBWorK, you need a server.  -->
   <!-- <webwork server="https://webwork-ptx.aimath.org"/> -->
-  <webwork server="https://webwork-dev.uleth.ca"
+  <!-- <webwork server="https://webwork-dev.uleth.ca"
     course="chrissy-playground" userpassword="anonymous"
     user="anonymous"
     task-reveal="all"
+  /> -->
+  <webwork server="https://webwork.runestone.academy"
   />
 </publication>
