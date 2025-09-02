@@ -69,7 +69,7 @@
             </md>
           </p>
           <p>
-            The solution is <m>x_1=</m><var name="$x" width="2" />, <m>x_2=</m><var name="$y" width="2" /> and <m>x_3=</m><var name="$z" width="2" />.
+            The solution is <m>x_1=</m><var name="$x1" width="2" />, <m>x_2=</m><var name="$x2" width="2" /> and <m>x_3=</m><var name="$x3" width="2" />.
           </p>
             
           </statement>
