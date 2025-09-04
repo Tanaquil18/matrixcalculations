@@ -11,5 +11,6 @@
     <target name="runestone" format="html" publication="publication-runestone.ptx" output-dir="published/matrixcalculations">
       <stringparams html.css.extra="external/custom-styles.css" />
     </target>
+    <target name="worksheets-instructor" format="pdf" source="worksheets.ptx" publication="publication-worksheets-instructor.ptx"/>
   </targets>
 </project>
