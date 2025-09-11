@@ -64,7 +64,7 @@
   <!-- for printing; set @sides="two" if the printing woudl be two- -->
   <!-- sided.  @pageref="yes/no" controls whether page number are   -->
   <!-- included in cross-references                                 -->
-  <latex print="yes" sides="two" font-size="10" draft="no" pageref="no">
+  <latex print="yes" sides="two" font-size="11" draft="no" pageref="no">
     <!-- Control text justification and bottom page behavior: -->
     <!-- <page right-alignment="flush" bottom-alignment="ragged" /> -->
     <!-- Add content to \geometry{}: -->

@@ -24,14 +24,12 @@
         </me>.
       We know how to find the inverse of <m>A</m> using the formula in <xref ref="def_inverse"/>,
         <md>
-          <mrow> A^{-1}\amp = \frac{1}{ad-bc}\begin{bmatrix} d\amp -b\\-c\amp a \end{bmatrix}</mrow>
-          <mrow> \amp = \frac{1}{(1)(5)-(2)(3)}\begin{bmatrix} 5\amp -2\\-3\amp 1 \end{bmatrix} </mrow>
-          <mrow> \amp = \begin{bmatrix} -5\amp 2\\3\amp -1 \end{bmatrix} </mrow>
+          <mrow> A^{-1}\amp = \frac{1}{ad-bc}\left[\begin{array}{rr|rr} d\amp -b\\-c\amp a \end{array}\right]</mrow>
+          <mrow> \amp = \frac{1}{(1)(5)-(2)(3)}\left[\begin{array}{rr|rr} 5\amp -2\\-3\amp 1 \end{array}\right] </mrow>
+          <mrow> \amp = \left[\begin{array}{rr|rr} -5\amp 2\\3\amp -1 \end{array}\right] </mrow>
         </md>.
       Let's now find <m>A^{-1}</m> in another way, using a method that will also work on larger matrices.
-    </p>
-    <p>
-      Let 
+      Let
       <me>A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix}
       </me>. 
       Calculating <m>A^{-1}</m> means we need to solve for the values of <m>x_1, y_1, x_2, y_2</m>.
@@ -53,12 +51,12 @@
     </p>
     <p>
       This looks like two linear systems of equations, one with variables <m>x_1, x_2</m> and another one with variables <m>y_1, y_2</m>.
-      We know how to solve a system of linear equations: use an augmented matrix and row reduce.  
+      We know how to solve a system of linear equations: use an augmented matrix and row reduce.  Let's solve the first system first.
       <!-- <md>
         <mrow>\amp \amp \amp \amp \amp \left[\begin{array}{cc|c} 1 \amp 2 \amp 1 \\ 3 \amp 5 \amp 0 \end{array}\right] \amp \amp \amp \left[\begin{array}{cc|c} 1 \amp 2 \amp 0 \\ 3 \amp 5 \amp 1 \end{array}\right] </mrow>
         <mrow>-3R_1+R_2\amp \rightarrow R_2 \amp \amp \amp \amp \left[\begin{array}{cc|c} 1 \amp 2 \amp 1 \\ 0 \amp -1 \amp -3 \end{array}\right] \amp \amp \amp \left[\begin{array}{cc|c} 1 \amp 2 \amp 0 \\ 0 \amp -1 \amp 1 \end{array}\right] </mrow>
       </md>. -->
-    <sidebyside widths="47.5% 47.5%" margins="0% 0%" valign="middle">
+    <!-- <sidebyside widths="47.5% 47.5%" margins="0% 0%" valign="middle">
       <p>
       <md>
         <mrow>\amp \amp \amp \left[\begin{array}{cc|c} 1 \amp 2 \amp 1 \\ 3 \amp 5 \amp 0 \end{array}\right] </mrow>
@@ -75,14 +73,193 @@
         <mrow>-2R_2+R_1\amp \rightarrow R_1 \amp \amp \left[\begin{array}{cc|c} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -1 \end{array}\right] </mrow>
       </md>
     </p>
-    </sidebyside>
-    We see from the first system that <m>x_1=-5</m> and <m>x_2=3</m>, and from the second system that <m>y_1=2</m> and <m>y_2=-1</m>. 
-    Thus,
-    <me>
-      A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \begin{bmatrix} -5 \amp 2 \\ 3 \amp -1 \end{bmatrix}
-    </me>.
+    </sidebyside> -->
+
+      <md>
+        <mrow>\amp \amp \amp \left[\begin{array}{rr|r} 1 \amp 2 \amp 1 \\ 3 \amp 5 \amp 0 \end{array}\right] </mrow>
+        <mrow>-3R_1+R_2\amp \rightarrow R_2 \amp \amp \left[\begin{array}{rr|r} 1 \amp 2 \amp 1 \\ 0 \amp -1 \amp -3 \end{array}\right] </mrow>
+        <mrow>-R_2\amp \rightarrow R_2 \amp \amp \left[\begin{array}{rr|r} 1 \amp 2 \amp 1 \\ 0 \amp 1 \amp 3 \end{array}\right] </mrow>
+        <mrow>-2R_2+R_1\amp \rightarrow R_1 \amp \amp \left[\begin{array}{rr|r} 1 \amp 0 \amp -5 \\ 0 \amp 1 \amp 3 \end{array}\right] </mrow>
+      </md> 
+    This means that <m>x_1=-5</m> and <m>x_2=3</m>.
     </p>
-  
+    <p>
+      Now let's solve the second system.  
+      <md>
+        <mrow>\amp \amp \amp \left[\begin{array}{rr|r} 1 \amp 2 \amp 0 \\ 3 \amp 5 \amp 1 \end{array}\right] </mrow>
+        <mrow>-3R_1+R_2\amp \rightarrow R_2  \amp \amp \left[\begin{array}{rr|r} 1 \amp 2 \amp 0 \\ 0 \amp -1 \amp 1 \end{array}\right] </mrow>
+        <mrow>-R_2\amp \rightarrow R_2 \amp \amp \left[\begin{array}{rr|r} 1 \amp 2 \amp 0 \\ 0 \amp 1 \amp -1 \end{array}\right] </mrow>
+        <mrow>-2R_2+R_1\amp \rightarrow R_1 \amp \amp \left[\begin{array}{rr|r} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -1 \end{array}\right] </mrow>
+      </md>.
+    This means that <m>y_1=2</m> and <m>y_2=-1</m>.
+    </p>
+    <p>
+    Putting those values we calculated together results in
+    <me>
+      A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \left[\begin{array}{rr|rr} -5 \amp 2 \\ 3 \amp -1 \end{array}\right]
+    </me>,
+    and this is indeed the same matrix we had calculated using the formula for <m>2\times 2</m>
+    inverses.  
+    </p>
+    <exercise label="mc-inverseobervations"><title>What do you notice?</title>
+      <statement>
+        <p>
+          We solved for the inverse of <m>A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}</m> by setting up
+          <me>
+            \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}
+          </me>,
+          and multiplying out and setting corresponding entries equal led to 2 systems of equations to solve:
+          <md>
+            <mrow>1x_1+2x_2 \amp =1 \amp \amp \amp 1y_1+2y_2 \amp =0 </mrow>
+            <mrow>3x_1+5x_2 \amp =0 \amp \amp \amp 3y_1+5y_2 \amp =1 </mrow>
+          </md>.
+          What do you notice about these 2 systems and the process of solving them?
+        </p>
+      </statement>
+      <choices>
+        <choice correct="yes">
+          <statement>
+            <p>
+              The two systems have the same coefficients.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              The two systems have the different coefficients.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              The two systems have the same constants.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              The two systems have the different constants.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              We used the same sequence of row operations on the augmented matrices to solve the system.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              We used a different sequence of row operations on the augmented matrices to solve the system.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              The two systems have the same solutions.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              The two systems have different solutions.
+            </p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
+
+    <p>
+      The way it worked out in this example is not a coincidence, and the same things are true for larger matrices:
+      <ul>
+        <li>
+          <p>
+            Calculating <m>AA^{-1}=I</m>, where <m>A</m> is a known matrix and <m>A^{-1}</m> is a matrix of unknowns, 
+            leads to multiple linear systems that all have coefficient matrix <m>A</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            In each system, the column matrix corresponding to the constants will be a column of the identity matrix.
+          </p>
+        </li>
+        <li>
+          <p>
+            Since the coefficient matrices are all the same, we will need the exact same row operations to solve each of the systems.  
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Since we did the exact same row operations and put the answers into the columns of <m>A^{-1}</m>, 
+      we could have been more efficient and solved both systems at the same time.  
+      <md>
+        <mrow>\amp \amp \amp \left[\begin{array}{rr|rr} 1 \amp 2 \amp 1 \amp 0 \\ 3 \amp 5 \amp 0 \amp 1 \end{array}\right] </mrow>
+        <mrow>-3R_1+R_2\amp \rightarrow R_2 \amp \amp \left[\begin{array}{rr|rr} 1 \amp 2 \amp 1 \amp 0 \\ 0 \amp -1 \amp -3 \amp 1\end{array}\right] </mrow>
+        <mrow>-R_2\amp \rightarrow R_2 \amp \amp \left[\begin{array}{rr|rr} 1 \amp 2 \amp 1 \amp 0 \\ 0 \amp 1 \amp 3 \amp -1\end{array}\right] </mrow>
+        <mrow>-2R_2+R_1\amp \rightarrow R_1 \amp \amp \left[\begin{array}{rr|rr} 1 \amp 0 \amp -5 \amp 2\\ 0 \amp 1 \amp 3 \amp -1\end{array}\right] </mrow>
+      </md> 
+      Note that we started with <m>A</m> on the left and the identity matrix on the right.  After row reducing, 
+      the left side turned into the identity matrix, and the right side turned into <m>A^{-1}</m>. 
+    </p>
+    <p> 
+      In math notation,
+      <me>
+        \bigg[\begin{array}{c|c} A \amp I \end{array}\bigg] \rrefarrow \bigg[\begin{array}{c|c} I \amp A^{-1} \end{array}\bigg]
+      </me>.
+    </p>
+    <p>
+      Let's see if that happens again with another example, using Sage to help with the calculations.
+    </p>
+    <example><title>Calculating the inverse of a larger matrix</title>
+      <p>
+        We calculate <m>A^{-1}</m> for <m>A = \left[\begin{array}{ccc} 1\amp 1\amp -1\\1\amp -1\amp 1\\1\amp 2\amp 3 \end{array} \right]</m>.
+      </p>
+      <p>
+        We're trying to find an unknown matrix <m>A^{-1}</m> such that <m>AA^{-1}=I</m>. So we set up three
+        augmented systems of equations to solve at the same time, resulting in
+        <me>
+          \left[\begin{array}{ccc|ccc} 1\amp 1\amp -1\amp 1\amp 0\amp 0\\1\amp -1\amp 1\amp 0\amp 1\amp 0\\1\amp 2\amp 3\amp 0\amp 0\amp 1 \end{array} \right]
+        </me>.
+        Let's let Sage row reduce this for us.  
+        <!-- <me>
+            \left[\begin{array}{cccccc} 1\amp 0\amp 0\amp 0.5\amp 0.5\amp 0\\0\amp 1\amp 0\amp 0.2\amp -0.4\amp 0.2\\0\amp 0\amp 1\amp -0.3\amp 0.1\amp 0.2 \end{array} \right]
+        </me> -->
+        <sage>
+          <input>
+              A=matrix(QQ,3,3,[[1,1,-1],[1,-1,1],[1,2,3]])
+              AI=A.augment(identity_matrix(3))
+              show(AI,"-->",AI.rref())
+          </input>
+        </sage>
+        Then let's check that the matrix in the last 3 columns really is the inverse of <m>A</m>, by extracting the last
+        three columns of the reduced echelon form, and then multiplying that matrix by <m>A</m> to
+        make sure we get the identity matrix.
+      </p>
+      <p>
+        Be sure you've already hit <q>Evaluate(Sage)</q> above.  
+        <sage>
+          <input>
+              rrefAI=AI.rref()
+              invA=rrefAI.matrix_from_columns([3, 4, 5])
+              show(invA)
+              show(A*invA)
+              show(invA*A)
+          </input>
+        </sage>
+      </p>
+    </example>
+    <!-- still need discussion of when there isn't an inverse, and the assemblage for the general method.-->
+     <!-- next section will be elementary matrices and properties of matrices. -->
+    <!-- do two matching within tasks? have A, A^-1, I, inverse does not exist. give A.augment(I) and the rref of this-->
+  <!-- do a parsons with the steps to solving for inverse. for reading question. still need one more rq  -->
       
   
       
