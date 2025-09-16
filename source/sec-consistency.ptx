@@ -916,7 +916,7 @@
     </cardsort>
     </exercise>
 
-    <exercise>
+    <exercise label="rq-systems-3-solns"><title>Exactly 3 Solutions?</title>
       <statement>
         <p>
           Can there be a linear system which has exactly 3 solutions?  Why or why not?
