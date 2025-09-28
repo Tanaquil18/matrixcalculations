@@ -806,7 +806,7 @@
   
 
 
-  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+  <xi:include href="interactive-exercises/ww-problem-solving.ptx" />
 
   <xi:include href="noninteractive-exercises/exer-problem-solving.ptx" />
 

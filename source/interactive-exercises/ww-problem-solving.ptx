@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ww-problem-solving" ><title>Practice</title>
+
+
+    <activity label="ww-problemsolving1"><title>Quadratic through 3 points</title>
+        <webwork source="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_2.pg"/> 
+    </activity>
+    
+    <activity label="ww-problemsolving2"><title>Quartic through 5 points</title>
+        <webwork source="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_3.pg"/> 
+    </activity>
+
+      <activity label="ww-problemsolving3"><title>Balancing a chemical reaction</title>
+        <webwork source="Library/Rochester/setLinearAlgebra2SystemsApplications/ur_la_2_5.pg"/>
+      </activity>
+
+      <activity label="ww-problemsolving4"><title>Balancing another chemical reaction</title>
+        <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_012.pg"/>
+      </activity>
+
+      <activity label="ww-problemsolving5"><title>Weighted ranking from a table</title>
+        <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_030.pg"/>
+      </activity>
+
+      <activity label="ww-problemsolving6"><title>Weighted ranking from another table</title>
+        <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_032.pg"/>
+      </activity>
+
+</subsection>
