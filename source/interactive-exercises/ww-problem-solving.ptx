@@ -23,8 +23,9 @@
         <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_030.pg"/>
       </activity>
 
-      <activity label="ww-problemsolving6"><title>Weighted ranking from another table</title>
+      <!-- <activity label="ww-problemsolving6"><title>Weighted ranking from another table</title>
         <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/holt_01_04_032.pg"/>
-      </activity>
+      </activity> -->
+      <!-- liked the problem, but seems not clear or impossible to solve. -->
 
 </subsection>
