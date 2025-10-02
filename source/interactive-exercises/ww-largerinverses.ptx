@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ww-" ><title>Practice</title>
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ww-largerinverses" ><title>Practice</title>
+
+    <activity label="ww-matrixinv3by3-1"><title>Inverse of a matrix</title>
+        <webwork><xi:include parse="text" href="../webworkfiles/largerinversesprob1.pg"/></webwork> 
+    </activity>
+    
+    <activity label="ww-matrixinv3by3-2"><title>Inverse of an upper triangular matrix</title>
+        <webwork source="Library/Rochester/setLinearAlgebra4InverseMatrix/ur_la_4_3.pg"/> 
+    </activity>
+
+    <activity label="ww-matrixinv3by3-3"><title>Solving a linear system with an inverse</title>
+        <webwork source="Library/TCNJ/TCNJ_MatrixInverse/problem2.pg"/> 
+    </activity>
+
+    <!-- <activity label="ww-matrixinv3by3-4"><title>Another linear system with an inverse</title>
+        <webwork source="Library/Mizzou/Matrix_Theory/HW_1/prob_3.pg"/> 
+    </activity> -->
+
+    <activity label="ww-largerinverses-notinv"><title>Not invertible?</title>
+        <webwork source="Contrib/MountAllison/2-2_Elementary_Matrices_and_Matrix_Inverses/find_x_invertible_3x3.pg"/> 
+    </activity>
+
+    <activity label="ww-largerinversesTF"><title>True/False Inverses</title>
+        <webwork><xi:include parse="text" href="../webworkfiles/largerinversesTF.pg"/></webwork>
+    </activity>
+
+    
+
+    
+
+    <!-- Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.3.80.pg -->
+     <!-- For the encrpytion section -->
 
 
     <!-- <activity label="ww-"><title></title>
@@ -47,14 +78,6 @@
             
             </statement>
         </webwork>
-      </activity> -->
-
-      <!-- <activity label="ww-matrixinv2by2-1"><title>Is a Matrix Invertible?</title>
-        <webwork source="Library/Rochester/setAlgebra34Matrices/inverse2x2a.pg"/> 
-      </activity> -->
-
-      <!-- <activity label="ww-matrixarithmetic5"><title>True/False Matrix Properties</title>
-        <webwork><xi:include parse="text" href="../webworkfiles/matrixarithmetic5.pg"/></webwork>
       </activity> -->
 
       

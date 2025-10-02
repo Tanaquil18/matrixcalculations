@@ -220,13 +220,13 @@
     </p>
     <example><title>Calculating the inverse of a larger matrix</title>
       <p>
-        We calculate <m>A^{-1}</m> for <m>A = \left[\begin{array}{ccc} 1\amp 1\amp -1\\1\amp -1\amp 1\\1\amp 2\amp 3 \end{array} \right]</m>.
+        We calculate <m>A^{-1}</m> for <m>A = \left[\begin{array}{rrr} 1\amp 1\amp -1\\1\amp -1\amp 1\\1\amp 2\amp 3 \end{array} \right]</m>.
       </p>
       <p>
         We're trying to find an unknown matrix <m>A^{-1}</m> such that <m>AA^{-1}=I</m>. So we set up three
         augmented systems of equations to solve at the same time, resulting in
         <me>
-          \left[\begin{array}{ccc|ccc} 1\amp 1\amp -1\amp 1\amp 0\amp 0\\1\amp -1\amp 1\amp 0\amp 1\amp 0\\1\amp 2\amp 3\amp 0\amp 0\amp 1 \end{array} \right]
+          \left[\begin{array}{rrr|rrr} 1\amp 1\amp -1\amp 1\amp 0\amp 0\\1\amp -1\amp 1\amp 0\amp 1\amp 0\\1\amp 2\amp 3\amp 0\amp 0\amp 1 \end{array} \right]
         </me>.
         Let's let Sage row reduce this for us.  
         <!-- <me>
@@ -256,14 +256,345 @@
         </sage>
       </p>
     </example>
+
+    <p>
+      What happens if we row reduce <m>\big[\begin{array}{c|c} A \amp I \end{array}\big]</m>
+      and don't get the identity matrix appearing on the left?
+    </p>
+
+    <example><title>When an inverse doesn't exist</title>
+      <p>
+        We attempt to calculate <m>A^{-1}</m> for <m>A = \left[\begin{array}{ccc} 1\amp 1\amp -1\\1\amp -1\amp 1\\3\amp -1\amp 1 \end{array} \right]</m>.
+      </p>
+      <p>
+        We're trying to find an unknown matrix <m>A^{-1}</m> such that <m>AA^{-1}=I</m>. So we set up three
+        augmented systems of equations to solve at the same time, resulting in
+        <me>
+          \left[\begin{array}{ccc|ccc} 1\amp 1\amp -1\amp 1\amp 0\amp 0\\1\amp -1\amp 1\amp 0\amp 1\amp 0\\3\amp -1\amp 1\amp 0\amp 0\amp 1 \end{array} \right]
+        </me>.
+        Let's let Sage row reduce this for us.  
+        <!-- <me>
+            \left[\begin{array}{cccccc} 1\amp 0\amp 0\amp 0.5\amp 0.5\amp 0\\0\amp 1\amp 0\amp 0.2\amp -0.4\amp 0.2\\0\amp 0\amp 1\amp -0.3\amp 0.1\amp 0.2 \end{array} \right]
+        </me> -->
+        <sage>
+          <input>
+              A=matrix(QQ,3,3,[[1,1,-1],[1,-1,1],[3,-1,1]])
+              AI=A.augment(identity_matrix(3))
+              show(AI,"-->",AI.rref())
+          </input>
+        </sage>
+        We don't see <m>I</m> in the first 3 columns.  Let's check that the matrix in the last 3 columns is 
+        <em>not</em> the inverse of <m>A</m>, by extracting the last
+        three columns of the reduced echelon form, and then multiplying that matrix by <m>A</m> to
+        see if we get the identity matrix.
+      </p>
+      <p>
+        Be sure you've already hit <q>Evaluate(Sage)</q> above.  
+        <sage>
+          <input>
+              rrefAI=AI.rref()
+              invA=rrefAI.matrix_from_columns([3, 4, 5])
+              show(invA)
+              show(A*invA)
+              show(invA*A)
+          </input>
+        </sage>
+
+        We did not get the identity matrix.  
+      </p>
+      <p>
+        In fact, there is no possible inverse of <m>A</m>.  We can see this is true by observing that 
+        <me>
+          \left[\begin{array}{rrr} 1\amp 1\amp -1\\1\amp -1\amp 1\\3\amp -1\amp 1 \end{array} \right]\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]
+        </me>
+        If <m>A^{-1}</m> exists, then we could multiply both sides on the left by <m>A^{-1}</m> and get
+        <me>
+          A^{-1}A\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=A^{-1}\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]
+        </me>
+        and since <m>A^{-1}\mathbf{0}=\mathbf{0}</m>, this would mean that 
+        <me>
+          \left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]
+        </me>,
+        which is not true.  Thus, there is <em>no possible</em> matrix which is the inverse of <m>A</m>.
+      </p>
+    </example>
+    <p>
+      Let's summarize what we've learned about calculating larger inverses.
+    </p>
+
+    <assemblage xml:id="calculating_larger_inverses"><title>Calculating inverses of any size</title>
+      <idx><h>inverse</h><h>computing</h></idx>
+      <idx><h>matrix</h><h>inverse</h></idx>
+    <p>
+      Let <m>A</m> be an <m>n \times n</m> matrix.
+      To calculate <m>A^{-1}</m>, augment the matrix <m>A</m> by the <m>n\times n</m> identity
+      matrix <m>I</m>
+      <me>
+        \big[\begin{array}{c|c}   A \amp  I \end{array} \big]
+      </me>
+       and put the resulting <m>n\times 2n</m> matrix into reduced row echelon form.
+       <ul>
+        <li>
+          <p>
+            If the reduced row echelon form is of the form
+            <me>
+              \big[\begin{array}{c|c}  I \amp   X \end{array} \big]
+            </me>,
+            then <m>A^{-1} =  X</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If the first <m>n</m> columns of the reduced row echelon form are not <m>I</m>, 
+            then <m>A</m> is not invertible.
+          </p>
+        </li>
+       </ul>
+    </p>
+  </assemblage>
+
+  <exercise xml:id="exer_inverse-interpretation" label="interpret-inverse">
+      <title>Interpreting the rref of <m>\big[\begin{array}{c|c}   A \amp  I \end{array} \big]</m></title>
+      <introduction>
+        <p>
+          Interpret the given information to answer the following questions about inverses.
+        </p>
+      </introduction>
+      <task label="interpret-inverse-a">
+        <statement>
+            <p>
+              Suppose that 
+              <me>
+                A=\left[\begin{array}{rrr} 1\amp 2\amp -1\\2\amp 0\amp -1\\-2\amp -3\amp 2 \end{array} \right]
+              </me>
+              and
+              <me>
+                \left[\begin{array}{rrr|rrr} 1\amp 2\amp -1\amp 1\amp 0\amp 0\\2\amp 0\amp -1\amp 0\amp 1\amp 0\\-2\amp -3\amp 2\amp 0\amp 0\amp 1 \end{array} \right]
+                \rrefarrow \left[\begin{array}{rrr|rrr} 1\amp 0\amp 0\amp 3\amp 1\amp 2\\0\amp 1\amp 0\amp 2\amp 0\amp 1\\0\amp 0\amp 1\amp 6\amp 1\amp 4 \end{array} \right]
+              </me>.
+              Which of the following is true?
+            </p>
+        </statement>
+        <choices>
+          <choice correct="no">
+            <statement>
+              <p>
+                The matrix <m>A</m> doesn't have an inverse.
+              </p>
+            </statement>
+            <feedback>
+                <p>
+                    After row reducing <m>\big[A | I \big]</m> we see the identity matrix appear on the left.  
+                </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                The inverse of <m>A</m> is <m>I</m>.
+              </p>
+            </statement>
+            <feedback>
+                <p>
+                  The inverse of a matrix <m>A</m> is the matrix we multiply <m>A</m> by in order to get <m>I</m>.
+                </p>
+                <p>
+                  But <m>AI=IA=A</m>, not <m>I</m>.
+                </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+              <statement>
+                  <p>
+                    The inverse of <m>A</m> is <m>\left[\begin{array}{rrr} 3\amp 1\amp 2\\2\amp 0\amp 1\\6\amp 1\amp 4 \end{array} \right]</m>
+                  </p>
+              </statement>
+              <feedback>
+                  <p>
+                    Correct!
+                  </p>
+              </feedback>
+          </choice>
+        </choices>
+      </task>
+      <task label="interpret-inverse-b">
+        <statement>
+            <p>
+              Suppose that 
+              <me>
+                A=\left[\begin{array}{rrrr} 1\amp 2\amp -1\amp 5\\2\amp 0\amp -1\amp 2\\-2\amp -3\amp 2 \amp 1 \\1\amp -1\amp 0 \amp 8\end{array} \right]
+              </me>
+              and
+              <me>
+                \left[\begin{array}{rrrr|rrrr} 1\amp 2\amp -1\amp 5 \amp 1\amp 0\amp 0 \amp 0\\2\amp 0\amp -1 \amp 2 \amp 0\amp 1\amp 0 \amp 0\\-2\amp -3\amp 2 \amp 1 \amp 0\amp 0\amp 1 \amp 0 \\ 1\amp -1\amp 0 \amp 8 \amp 0 \amp 0 \amp 0 \amp 1\end{array} \right]
+                \rrefarrow \left[\begin{array}{rrrrrrrr} 1\amp 0\amp 0\amp 19\amp 0 \amp -2\amp -1\amp 3\\0\amp 1\amp 0 \amp 11 \amp 0\amp -2\amp -1 \amp 2\\0\amp 0\amp 1 \amp 36\amp 0 \amp -5\amp -2\amp 6 \\ 0\amp 0\amp 0 \amp 0\amp 1 \amp 1\amp 1\amp -1  \end{array} \right]
+              </me>.
+              Which of the following is true?
+            </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                The matrix <m>A</m> doesn't have an inverse.
+              </p>
+            </statement>
+            <feedback>
+                <p>
+                    After row reducing <m>\big[A | I \big]</m> we don't see the <m>4 \times 4</m> identity matrix appear on the left.  
+                </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                The inverse of <m>A</m> is <m>\left[\begin{array}{rrrr} 0\amp -2\amp -1\amp 3\\0\amp -2\amp -1 \amp 2 \\ 0\amp -5\amp -2\amp 6\\1\amp 1\amp 1 \amp -1\end{array} \right]</m>.
+              </p>
+            </statement>
+            <feedback>
+                <p>
+                  We don't see the <m>4 \times 4</m> identity matrix appear on the left.
+                </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+              <statement>
+                  <p>
+                    The inverse of <m>A</m> is <m>\left[\begin{array}{rrr} 19\amp 0\amp -2 \\ 11\amp 0\amp -2\\36\amp 0\amp -5 \end{array} \right]</m>.
+                  </p>
+              </statement>
+              <feedback>
+                  <p>
+                    We don't see the <m>4 \times 4</m> identity matrix appear on the left.
+                  </p>
+              </feedback>
+          </choice>
+        </choices>
+      </task>
+      <task label="interpret-inverse-c">
+        <statement>
+            <p>
+              Suppose that <m>A</m> is a matrix such that
+              <me>
+                A \rrefarrow \left[\begin{array}{rrrr} 1\amp 0\amp 0\amp 0\\0\amp 1\amp 0\amp 0\\0\amp 0\amp 1 \amp 0 \\0\amp 0\amp 0 \amp 1\end{array} \right]
+              </me>.
+              Which of the following is true?
+            </p>
+        </statement>
+        <choices>
+          <choice correct="no">
+            <statement>
+              <p>
+                The matrix <m>A</m> doesn't have an inverse.
+              </p>
+            </statement>
+            <feedback>
+                <p>
+                    After row reducing <m>\big[A | I \big]</m> the identity would appear on the left, using the 
+                    same row operations used to row reduce <m>A</m> by itself. 
+                </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                The matrix <m>A</m> has an inverse.
+              </p>
+            </statement>
+            <feedback>
+                <p>
+                    After row reducing <m>\big[A | I \big]</m> the identity would appear on the left, using the 
+                    same row operations used to row reduce <m>A</m> by itself.
+                </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+              <statement>
+                  <p>
+                    Without knowing what <m>A</m> is, we can't tell whether or not <m>A</m> has an inverse.
+                  </p>
+              </statement>
+              <feedback>
+                  <p>
+                    We don't know what the inverse is without knowing what <m>A</m> is, but the same sequence of row operations that
+                    turns <m>A</m> into <m>I</m> would turn <m>\big[A | I \big]</m> into <m>\big[I | X \big]</m>, and <m>X</m>
+                    would be the inverse of <m>A</m>.
+                </p>
+              </feedback>
+          </choice>
+        </choices>
+      </task>
+      </exercise>
+
+    
+
+    
     <!-- still need discussion of when there isn't an inverse, and the assemblage for the general method.-->
-     <!-- next section will be elementary matrices and properties of matrices. -->
+     <!-- next section will be elementary matrices and properties of inverses. -->
     <!-- do two matching within tasks? have A, A^-1, I, inverse does not exist. give A.augment(I) and the rref of this-->
   <!-- do a parsons with the steps to solving for inverse. for reading question. still need one more rq  -->
       
   
       
     <reading-questions xml:id="rqs-largerinverses">
+      <exercise label="parsons-calculate-inverse" adaptive="yes"><title>Parsons Problem, Calculate inverse</title>
+        <statement>
+          <p>
+            Put the correct steps in the correct order to calculate the inverse of a square matrix <m>A</m> of any size.  
+          </p>
+        </statement>
+        <blocks>
+        <block order="2" correct="no">
+        <p>
+          Make sure <m>ad-bc \neq 0</m>.
+        </p>
+        </block>
+        <block order="5" name="augment">
+          <p>
+            Augment the matrix <m>A</m> by the same size identity matrix <m>I</m> on right.  
+          </p>
+        </block>
+        <block order="7" name="GJ" depends="augment">
+          <p>
+            Perform Gauss-Jordan elimination on <m>\big[\begin{array}{c|c}   A \amp  I \end{array} \big]</m>
+          </p>
+        </block>
+        <block order="4" correct="no">
+          <p>
+            Row reduce <m>A</m>.
+          </p>
+        </block>
+        <block order="1" correct="no">
+          <p>
+            The inverse of <m>A</m> will appear on the right.
+          </p>
+        </block>
+        <block order="3" depends="augment GJ">
+          <p>
+            If the identity matrix appears on the left, the inverse of <m>A</m> is on the right.
+          </p>
+        </block>
+        <block order="6" depends="augment GJ">
+          <p>
+            If the identity matrix does not appear on the left, the inverse of <m>A</m> does not exist.
+          </p>
+        </block>
+        </blocks>
+      </exercise>
+
+      <exercise label="rq-inverses-unique"><title>How many inverses?</title>
+        <statement>
+          <p>
+            For a square matrix <m>A</m>, we know it's possible that <m>A</m> doesn't have an inverse, or that
+            we can calculate <m>A^{-1}</m> using the method in this section.  Is it possible that <m>A</m> could have <em>more than one</em> inverse?
+            That is, that there could be two different matrices <m>X</m> and <m>Y</m> such that <m>AX=XA=I</m> and 
+            <m>AY=YA=I</m>?  Explain why or why not.
+          </p>
+        </statement>
+        <response />
+      </exercise>
+
+
       <exercise label="rq-largerinverses-questions-poll"><title>Reflection</title>
         <task label="rq-largerinverses-confidencepoll-task">
           <query label="rq-largerinverses-confidencepoll" visibility="instructor">
@@ -325,7 +656,7 @@
 
   </subsection>
 
-   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+   <xi:include href="participate-worksheets/dc-largerinverses.ptx" />
   
 
   <conclusion xml:id="subsec-largerinverses-summary">
@@ -334,17 +665,21 @@
       <ul>
         <li>
           <p>
-              
+            Solving for the inverse of a matrix requires setting up several systems of equations whose coefficient
+            matrix are all the same.
           </p>
         </li>
         <li>
           <p>
-            
+            We can find the inverse of any size square matrix (or show that an inverse doesn't exist) by augmenting
+            the matrix by the identity matrix and putting the result into reduced row echelon form.
           </p>
         </li>
         <li>
           <p>
-            
+            The formula given in <xref ref="def_inverse"/> gives the inverse of a <m>2\times 2</m> matrix, 
+            and <xref ref="calculating_larger_inverses" text="title"/> enables us to calculate the inverse 
+            (or show its nonexistence) of any size square matrix.
           </p>
         </li>
       </ul>
@@ -353,7 +688,7 @@
   
 
 
-  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+  <xi:include href="interactive-exercises/ww-largerinverses.ptx" />
 
   <xi:include href="noninteractive-exercises/exer-largerinverses.ptx" />
 

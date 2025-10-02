@@ -108,7 +108,7 @@
                     <m>M=\begin{bmatrix} 1 \amp -2 \\ -1 \amp 2 \end{bmatrix}</m>.
                 </p>
             </introduction>
-            <task workspace="1.5in">
+            <task workspace="1in">
                 <statement>
                     <p>
                         Calculate <m>D^{-1}</m>.
@@ -120,7 +120,7 @@
                     </p>
                 </answer>
             </task>
-            <task workspace="1in">
+            <task workspace=".5in">
                 <statement>
                     <p>
                         Say why we can't calculate <m>M^{-1}</m>.
@@ -132,7 +132,7 @@
                     </p>
                 </answer>
             </task>
-            <task workspace="2in">
+            <task workspace="1.5in">
                 <statement>
                     <p>
                         Use matrix multiplication and the matrix <m>A</m> defined in 
@@ -146,7 +146,7 @@
                     </p>
                 </answer>
             </task>
-            <task workspace="2in">
+            <task workspace="1.5in">
                 <statement>
                     <p>
                         Use matrix multiplication and the matrix <m>A</m> defined in 
@@ -162,6 +162,42 @@
                 </answer>
             </task>
         </exercise>
+        <exercise>
+            <introduction>
+                <p>
+                    Recall that the inverse of <m>A</m> (if it exists) is the matrix <m>X</m> such that 
+                    <me>
+                        AX=XA=I
+                    </me>.
+                </p>
+            </introduction>
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Without doing any calculations, what is the inverse of <m>I</m>?  Explain. 
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>I</m> times <m>I</m> equals <m>I</m>, so <m>I</m> is its own inverse.
+                    </p>
+                </answer>
+            </task>
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Without doing any calculations, explain why the inverse of <m>\mathbf{0}</m> can't exist.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        The zero matrix multiplied by anything equals the zero matrix, so there is nothing
+                        that could be multiplied by <m>\mathbf{0}</m> to equal <m>I</m>.
+                    </p>
+                </answer>
+            </task>
+        </exercise>
+
       </page>
     
     </worksheet>

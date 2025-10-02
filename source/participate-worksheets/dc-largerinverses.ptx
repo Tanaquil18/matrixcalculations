@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    
+    <worksheet xml:id="ws-largerinverses" margin="1in" bottom="1.25cm"><title component="print-worksheets">Participate: Calculating Larger Inverses</title><title component="online-worksheets">Participate</title>
+      <objectives>
+        <ul>
+          <li>
+            <p>
+              Practice the method of row reducing a certain related matrix in order to calculate the inverse of a given matrix.
+            </p>
+          </li>
+          <li>
+            <p>
+              Discover some properties of inverses and row operations.  
+            </p>
+          </li>
+        </ul>
+      </objectives>
+      <page>
+        <exercise workspace="1.5in"><title>Inverse and row operations, diagonal matrix</title>
+            <!-- <introduction>
+                <p>
+                    Complete the following problems by hand, without using Sage or another matrix calculator.
+                </p>
+            </introduction> -->
+            <!-- <ol cols="2">
+                <li>
+                    <p>
+                         Use row reducing to calculate <m>A^{-1}</m> for 
+                        <m>
+                            A=\left[\begin{array}{rrrr}2 \amp 0 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]
+                        </m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Use row reducing to calculate <m>B^{-1}</m> for 
+                        <m>
+                            B=\left[\begin{array}{rrrr}\frac{1}{2} \amp 0 \amp 0 \amp 0 \\ 0 \amp -\frac{1}{3} \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{3}{2} \end{array}\right]
+                        </m>.
+                    </p>
+                </li>
+            </ol> -->
+            <p>
+                Use row reducing to calculating the inverses of the following two matrices. What do you notice about the matrices <m>A^{-1}</m> and <m>B</m>?  What about <m>A</m> and <m>B^{-1}</m>?
+                <md>
+                    <mrow> A=\left[\begin{array}{rrrr}2 \amp 0 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]
+                         \amp \amp \amp \amp \amp \amp \amp \amp
+                         B=\left[\begin{array}{rrrr}\frac{1}{2} \amp 0 \amp 0 \amp 0 \\ 0 \amp -\frac{1}{3} \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{3}{2} \end{array}\right]
+                         \amp \amp \amp \amp \amp \amp \amp \amp 
+                    </mrow>
+                </md>
+            </p>
+            
+            <!-- <task workspace=".5in">
+                <statement>
+                    <p>
+                        Use row reducing to calculate <m>A^{-1}</m> for 
+                        <m>
+                            A=\left[\begin{array}{rrrr}2 \amp 0 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]
+                        </m>.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <me>
+                            A^{-1}=\left[\begin{array}{rrrr}\frac{1}{2} \amp 0 \amp 0 \amp 0 \\ 0 \amp -\frac{1}{3} \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{3}{2} \end{array}\right]
+                        </me>,
+                        which was accomplished by performing the row operations
+                        <md>
+                            <mrow> \frac{1}{2}R_1\amp \rightarrow R_1</mrow>
+                            <mrow> -\frac{1}{3}R_2\amp \rightarrow R_2</mrow>
+                            <mrow> -\frac{3}{2}R_4\amp \rightarrow R_4</mrow>
+                        </md>.
+                    </p>
+                </answer>
+            </task>
+            <task workspace=".5in">
+                <statement>
+                    <p>
+                        Use row reducing to calculate <m>B^{-1}</m> for 
+                        <m>
+                            B=\left[\begin{array}{rrrr}\frac{1}{2} \amp 0 \amp 0 \amp 0 \\ 0 \amp -\frac{1}{3} \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{3}{2} \end{array}\right]
+                        </m>.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <me>
+                            B^{-1}=\left[\begin{array}{rrrr}2 \amp 0 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]
+                        </me>,
+                        which was accomplished by performing the row operations
+                        <md>
+                            <mrow> 2R_1\amp \rightarrow R_1</mrow>
+                            <mrow> -3R_2\amp \rightarrow R_2</mrow>
+                            <mrow> -\frac{2}{3}R_4\amp \rightarrow R_4</mrow>
+                        </md>.
+                    </p>
+                </answer>
+            </task> -->
+            <!-- <task workspace=".3in">
+                <statement>
+                    <p>
+                        What do you notice about the matrices <m>A</m> and <m>B</m>?  What about <m>A^{-1}</m> and <m>B^{-1}</m>?
+                    </p>
+                </statement>
+            </task> -->
+        </exercise>
+        <exercise><title>Inverse and row operations, lower triangular matrix</title>
+            <!-- <introduction>
+                <p>
+                    Complete the following problems by hand, without using Sage or another matrix calculator.
+                </p>
+            </introduction> -->
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Use row reducing to calculate the inverse of the matrix below. Be sure to write down which row operations you did.
+                    </p>
+                    <p>
+                        <m>
+                            C=\left[\begin{array}{rrr}2 \amp 0 \amp 0 \\ 3 \amp -3 \amp 0 \\ -2 \amp 1 \amp 1  \end{array}\right]
+                        </m>
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <me>
+                            C^{-1}=\left[\begin{array}{rrr}\frac{1}{2} \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \\ \frac{1}{2} \amp \frac{1}{3} \amp 1  \end{array}\right]
+                        </me>,
+                        which was accomplished by performing the row operations
+                        <md>
+                            <mrow> \frac{1}{2}R_1\amp \rightarrow R_1</mrow>
+                            <mrow> -3R_1+R_2\amp \rightarrow R_2</mrow>
+                            <mrow> 2R_1+R_3\amp \rightarrow R_3</mrow>
+                            <mrow> -\frac{1}{3}R_2\amp \rightarrow R_2</mrow>
+                            <mrow> -R_2+R_3\amp \rightarrow R_3</mrow>
+                        </md>.
+                    </p>
+                </answer>
+            </task>
+            <task workspace="1in">
+                <statement>
+                    <!-- <p>
+                        Augment the matrix below by the identity matrix.
+                    </p>
+                    <p>
+                        <m>
+                            D=\left[\begin{array}{rrr}\frac{1}{2} \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 1 \end{array}\right]
+                        </m>   
+                    </p> -->
+                        <!-- <me>
+                            D=\left[\begin{array}{rrr}\frac{1}{2} \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 1 \end{array}\right]
+                        </me>. -->
+                    <p>
+                        Even though this is not our usual Gauss-Jordan algorithm, perform the following row operations
+                         in order on the matrix <m>D</m>. What does the result tell you about <m>D^{-1}</m>?  What do you notice 
+                         about the row operations compared to the row operations done on <m>C</m>?
+                    </p>
+                    <sidebyside widths="25% 70%">
+                        <p>
+                            <md>
+                                <mrow> R_2+R_3\amp \rightarrow R_3</mrow>
+                                <mrow> -3R_2\amp \rightarrow R_2</mrow>
+                                <mrow> -2R_1+R_3\amp \rightarrow R_3</mrow>
+                                <mrow> 3R_1+R_2\amp \rightarrow R_2</mrow>
+                                <mrow> 2R_1\amp \rightarrow R_1</mrow>
+                            </md>
+                        </p>
+                        <p>
+                            <m>
+                        D=\left[\begin{array}{rrr|rrr}\frac{1}{2} \amp 0 \amp 0 \amp 1 \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \amp 0 \amp 1 \amp 0\\ \frac{1}{2} \amp -\frac{1}{3} \amp 1\amp 0 \amp 0 \amp 1\end{array}\right]
+                    </m>
+                        </p>
+                    </sidebyside>
+                        
+
+                        <!-- <md>
+                            <mrow> R_2+R_3\amp \rightarrow R_3</mrow>
+                            <mrow> -3R_2\amp \rightarrow R_2</mrow>
+                            <mrow> -2R_1+R_3\amp \rightarrow R_3</mrow>
+                            <mrow> 3R_1+R_2\amp \rightarrow R_2</mrow>
+                            <mrow> 2R_1\amp \rightarrow R_1</mrow>
+                        </md>. -->
+                        
+                </statement>
+                <answer>
+                    <p>
+                        <me>
+                            D^{-1}=\left[\begin{array}{rrr} 2 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]
+                        </me>,
+                       and <m>D=C^{-1}</m>, <m>D^{-1}=C</m>.  The inverse of <m>C^{-1}</m> is <m>C</m>.
+                    </p>
+                    <p>
+                        The row operations are the inverse operations, done in reverse order.  The inverse of scaling is scaling by the reciprocal.
+                        The inverse of <q>multiply Row 1 by <m>k</m> and add to Row 2</q> is <q>multiply Row 1 by <m>-k</m> and add</q> to Row 2.
+                        Prompt students to think about the inverse of swapping two rows (perform the same swap again to swap them back).
+                    </p>
+                </answer>
+            </task>
+            <!-- <task workspace=".5in">
+                <statement>
+                    <p>
+                        What do you observe about the relationship between the row operations we did to <m>D</m> compared with the ones you did to <m>C</m>?
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        They are the inverse operations, done in reverse order.  The inverse of scaling is scaling by the reciprocal.
+                        The inverse of <q>multiply Row 1 by <m>k</m> and add to Row 2</q> is <q>multiply Row 1 by <m>-k</m> and add</q> to Row 2.
+                        Prompt students to think about the inverse of swapping two rows (perform the same swap again to swap them back).
+                    </p>
+                </answer>
+            </task> -->
+        </exercise>
+    </page>
+    <page>
+        <exercise><title>Investigating properties of the inverse</title>
+            <introduction>
+                <p>
+                    For this problem, use Sage or another matrix inverse calculator. 
+                    Note that once you've defined the matrix <m>A</m> in Sage, Sage can find the inverse without needing to augment and row reduce
+                    using <c>A.inverse()</c> or <c>A^-1</c>.
+                </p>
+                <sage>
+                    <input>
+                    </input>
+                </sage>
+                <p>
+                    Consider the square matrices
+                    <md>
+                        <mrow> A = \begin{bmatrix}
+                        1 \amp 0 \amp 2 \\
+                        2 \amp 2 \amp 1 \\
+                        1 \amp 1 \amp 1 \\
+                        \end{bmatrix} \amp \amp \amp \amp \amp \amp
+                        B = \left[\begin{array}{rrr}
+                        1 \amp -2 \amp -1 \\
+                        -1 \amp 5 \amp 6 \\
+                        5 \amp -4 \amp 6 \\
+                        \end{array}\right]</mrow>
+                    </md>
+                </p>
+                <!-- <sidebyside widths="30% 30%" margins="0% 30%">
+                <p>
+                    <m>A=\left[\begin{array}{rrrr}2 \amp 0 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]</m>
+                </p>
+                <p>
+                    <m>B=\left[\begin{array}{rrrr}\frac{1}{2} \amp 0 \amp 0 \amp 0 \\ 0 \amp -\frac{1}{3} \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{3}{2} \end{array}\right]</m>
+                </p>
+            </sidebyside> -->
+            </introduction>
+            <task workspace="1.2in">
+                <p>
+                    Calculate <m>A^{-1}</m> and <m>B^{-1}</m>.
+                </p>
+            </task>
+            <task workspace=".7in">
+                <p>
+                    Show that <m>AB</m> is invertible by finding a matrix <m>X</m>
+                    such that <m>(AB)X=I</m>. 
+                </p>
+            </task>
+            <task workspace="1in">
+                <p>
+                    Use Sage to calculate <m>AB</m>, <m>(AB)^{-1}</m>, <m>A^{-1}B^{-1}</m>, and <m>B^{-1}A^{-1}</m>. What do you notice?
+                </p>
+            </task>
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Consider the product
+                        <me>
+                        (EF)(E^{-1}F^{-1})
+                        </me>
+                        and use associativity to regroup the products so
+                        that the middle two terms are multiplied first.
+                        Do the same for 
+                        <me>
+                        (F^{-1}E^{-1})(EF)
+                        </me>.
+                        What do you get?
+                    </p>
+                </statement>
+            </task>
+            <task workspace=".5in">
+                <statement>
+                    <p>
+                        What is the inverse of <m>B^2</m> in terms of <m>B^{-1}</m>?  What about the inverse of <m>B^5</m>? Use Sage to verify your conjectures.
+                    </p>
+                </statement>
+            </task>
+            <task workspace=".5in">
+                <statement>
+                    <p>
+                        Calculate <m>A+B</m>, <m>(A+B)^{-1}</m> and <m>A^{-1}+B^{-1}</m>. What do you observe?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+
+        <!-- <solution>
+        <p><ol marker="a.">
+        <li><p>
+            Constructing the augmented matrix, we see that
+            <me>
+            \left[\begin{array}{rrr|r}
+            1 \amp 0 \amp 2 \amp 3 \\
+            2 \amp 2 \amp 1 \amp 4 \\
+            1 \amp 1 \amp 1 \amp 3
+            \end{array}\right]
+            \sim
+            \left[\begin{array}{rrr|r}
+            1 \amp 0 \amp 0 \amp -1 \\
+            0 \amp 1 \amp 0 \amp 2 \\
+            0 \amp 0 \amp 1 \amp 2
+            \end{array}\right],
+            </me>
+            which says that there is a unique solution <m>\xvec =
+            \threevec{-1}22</m>.
+        </p>
+        </li>
+
+        <li>
+            <p>
+            Our work in part a shows that <m>A\sim I</m> from which
+            we conclude that <m>A</m> is invertible.  To find the
+            inverse,
+            <me>
+            \left[\begin{array}{rrr|rrr}
+            1 \amp 0 \amp 2 \amp 1 \amp 0 \amp 0 \\
+            2 \amp 2 \amp 1 \amp 0 \amp 1 \amp 0 \\
+            1 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1
+            \end{array}\right]
+            \sim
+            \left[\begin{array}{rrr|rrr}
+            1 \amp 0 \amp 0 \amp 1 \amp 2 \amp -4 \\
+            0 \amp 1 \amp 0 \amp -1 \amp -1 \amp 3 \\
+            0 \amp 0 \amp 1 \amp 0 \amp -1 \amp 2
+            \end{array}\right],
+            </me>
+            which says that
+            <me>
+            A^{-1} = \begin{bmatrix}
+            1 \amp 2 \amp -4 \\
+            -1 \amp -1 \amp 3 \\
+            0 \amp -1 \amp 2 \\
+            \end{bmatrix}.
+            </me>
+            </p>
+        </li>
+        <li>
+            <p>
+            We see that <m>A^{-1}\threevec343 = \threevec{-1}22</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+            Sage tells us that <m>B^{-1}\threevec{8}3{36} =
+            \threevec4{-1}2</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+            Sage helps us see that <m>(AB)\sim I</m>, which tells us
+            that <m>AB</m> is invertible.
+            </p>
+        </li>
+
+        <li><p>
+            We find that <m>(AB)^{-1} = B^{-1}A^{-1}</m>.
+        </p></li>
+
+        <li>
+            <p>
+            We see that
+            <me>
+            (AB)(B^{-1}A^{-1}) = A(BB^{-1})A^{-1} = AIA^{-1} =
+            AA^{-1} = I.
+            </me>
+            </p>
+        </li>
+        </ol></p>
+        </solution> -->
+      
+      </page>
+    </worksheet>
