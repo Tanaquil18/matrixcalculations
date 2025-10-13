@@ -524,18 +524,8 @@
           </choice>
         </choices>
       </task>
-      </exercise>
-
-    
-
-    
-    <!-- still need discussion of when there isn't an inverse, and the assemblage for the general method.-->
-     <!-- next section will be elementary matrices and properties of inverses. -->
-    <!-- do two matching within tasks? have A, A^-1, I, inverse does not exist. give A.augment(I) and the rref of this-->
-  <!-- do a parsons with the steps to solving for inverse. for reading question. still need one more rq  -->
-      
+    </exercise>
   
-      
     <reading-questions xml:id="rqs-largerinverses">
       <exercise label="parsons-calculate-inverse" adaptive="yes"><title>Parsons Problem, Calculate inverse</title>
         <statement>
