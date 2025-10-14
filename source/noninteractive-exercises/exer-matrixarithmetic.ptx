@@ -20,7 +20,7 @@
     </statement>
     <answer>
       <p>
-        <m>\left[\begin{array}{cc} -2\amp -1\\12 \amp 13 \end{array} \right]</m>
+        <m>\left[\begin{array}{cc} -2\amp 1\\12 \amp 13 \end{array} \right]</m>
       </p>
     </answer>
   </exercise>
