@@ -25,7 +25,8 @@
                 about the size of the matrix or whether such a matrix exists at all.  
             </p>
         </introduction>
-        <webwork source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg"/>
+        <!-- <webwork source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg"/> -->
+        <webwork><xi:include parse="text" href="../webworkfiles/matrixmult4.pg"/></webwork>
       </activity>
 
       <activity label="ww-matrixmult5"><title>More Multiplying Matrices</title>
