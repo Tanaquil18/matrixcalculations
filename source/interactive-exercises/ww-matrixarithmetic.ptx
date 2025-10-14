@@ -76,8 +76,10 @@
                 about the size of the matrix or whether such a matrix exists at all.  
             </p>
         </introduction>
-        <webwork source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg"/>
+        <!-- <webwork source="Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg"/> -->
+        <webwork><xi:include parse="text" href="../webworkfiles/matrixarithmetic4.pg"/></webwork>
       </activity>
+      
 
       <activity label="ww-matrixarithmetic5"><title>True/False Matrix Properties</title>
         <!-- <webwork source="matrixtheory/matrixarithmetic5.pg"/> -->
