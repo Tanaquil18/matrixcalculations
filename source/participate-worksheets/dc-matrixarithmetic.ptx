@@ -125,9 +125,9 @@
         <exercise>
           <introduction>
             <p>
-              Consider the list of proposed properties below.  For each one, say whether it is True, False, or 
-              Insufficient Information.  Note that these are all statements you might be used to thinking about with 
-              numbers, and the goal is to think about how matrices and numbers are similar in some ways and different in some ways.   
+              For each of the proposed properties below, say whether it is True, False, or 
+              Insufficient Information and give a sentence or two of explanation/reasoning.  Note that these are all statements 
+              you might be used to using with numbers, and the goal is to think about how matrices and numbers are similar in some ways and different in some ways.   
             </p>
             <p>
               Let <m>A</m>, <m>B</m>, and <m>X</m> be matrices of the same size, and let <m>k</m> and <m>n</m>
