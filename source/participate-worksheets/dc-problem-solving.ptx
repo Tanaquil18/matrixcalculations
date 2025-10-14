@@ -38,7 +38,8 @@
             <p>
                 Suppose we know that in a football game there were <m>24</m> points scored from <m>8</m> scoring occasions
                 and also that the number of successful extra point kicks was equal to the number of successful two point conversions.
-                Find all ways in which the points may have been scored in this game.
+                Find all ways in which the points may have been scored in this game. (Recall that points can be scored via 6-point touchdowns,
+                3-point field goals,  2-point conversions, and 1-point extra point kicks.)
             </p>
           </statement>
           <answer>
