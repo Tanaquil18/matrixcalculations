@@ -329,7 +329,7 @@
           </li>
           <li>
             <p>
-              For any matrix <m>X</m> with <m>n</m> rows, if <m>AX=\mathbf{0}</m>, then <m>X=\mathbf{0}</m>.
+              For any column matrix <m>X</m> with <m>n</m> rows, if <m>AX=\mathbf{0}</m>, then <m>X=\mathbf{0}</m>.
             </p>
           </li>
           <li>
@@ -466,7 +466,7 @@
 
   </subsection>
 
-   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+   <xi:include href="participate-worksheets/dc-elementarymatrices.ptx" />
   
 
   <conclusion xml:id="subsec-elementarymatrices-summary">

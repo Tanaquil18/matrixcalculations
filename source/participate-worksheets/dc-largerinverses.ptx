@@ -223,6 +223,8 @@
                 </p>
                 <sage>
                     <input>
+                        A=matrix(QQ,3,3,[[1,0,0],[0,1,0],[0,0,1]])
+                        show(A)
                     </input>
                 </sage>
                 <p>
@@ -249,12 +251,12 @@
                 </p>
             </sidebyside> -->
             </introduction>
-            <task workspace="1.2in">
+            <task workspace="1in">
                 <p>
                     Calculate <m>A^{-1}</m> and <m>B^{-1}</m>.
                 </p>
             </task>
-            <task workspace=".7in">
+            <task workspace=".5in">
                 <p>
                     Show that <m>AB</m> is invertible by finding a matrix <m>X</m>
                     such that <m>(AB)X=I</m>. 

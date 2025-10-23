@@ -25,6 +25,8 @@
       <xi:include href="participate-worksheets/dc-matrixarithmetic.ptx" />
       <xi:include href="participate-worksheets/dc-matrixmultiplication.ptx" />
       <xi:include href="participate-worksheets/dc-matrixinverse2vars.ptx" />
+      <xi:include href="participate-worksheets/dc-largerinverses.ptx" />
+      <xi:include href="participate-worksheets/dc-elementarymatrices.ptx" />
       <!-- <xi:include href="participate-worksheets/sec_optionallab-alt2.ptx" /> -->
     </section>
 

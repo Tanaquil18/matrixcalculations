@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-name-dc"> 
+    <title>Participate</title> -->
+    
+    <worksheet xml:id="ws-elementarymatrices" margin="1in" bottom="1.25cm"><title component="print-worksheets">Participate: Elementary Inverses and Invertibility</title><title component="online-worksheets">Participate</title>
+      <objectives>
+        <ul>
+          <li>
+            <p>
+              Practice calculating with <em>elementary matrices</em>, including multiplication and inverses.
+            </p>
+          </li>
+          <li>
+            <p>
+              Observe and deepen understanding of connections between solutions of linear systems, invertibility, and elementary matrices.
+            </p>
+          </li>
+        </ul>
+</objectives>
+      <!-- <introduction>
+        <p>
+          something else to say?
+        </p>
+      </introduction> -->
+      <page>
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the matrix <m>A=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -1 \\ -3 \amp 0 \amp -7 \end{array}\right]</m>.
+                    Note that performing Gauss-Jordan elimination requires performing in order   
+                </p>
+                <sidebyside widths="30% 70%">
+                  <p>
+                    <md>
+                        <mrow>3R_1+R_3 \amp \rightarrow R_3 </mrow>
+                        <mrow> -R_3 \amp \rightarrow R_3 </mrow>
+                        <mrow>R_3+R_2 \amp \rightarrow R_2 </mrow>
+                        <mrow>-2R_3+R_1 \amp \rightarrow R_1 </mrow>
+                    </md>.
+                  </p>
+                  <p>
+                    
+                  </p>  
+                </sidebyside>
+            </introduction>
+            <task workspace="2in">
+                <statement>
+                    <p>
+                        Calculate <m>E_1</m>, <m>E_2</m>, <m>E_3</m>, and <m>E_4</m> without using technology. What is the inverse of each matrix you found?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Use the sage cell below and modify it to use what you got for <m>E_1</m> and verify that <m>E_1A</m> performs <m>3R_1+R_3 \rightarrow R_3</m> on <m>A</m>.
+                    </p>
+                    <sage>
+                      <input>
+                          A=matrix(QQ,3,3,[[1,0,2],[0,1,-1],[-3,0,-7]])
+                          E1=matrix(QQ,3,3,[[1,0,0],[0,1,0],[0,0,1]])
+                          show(E1*A)
+                      </input>
+                    </sage>
+                </statement>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  Now similarly modify the sage cell below with what you found for <m>E_2</m>, <m>E_3</m>, and <m>E_4</m> and verify that <m>E_4E_3E_2E_1A=I</m>.
+                </p>
+                <sage>
+                    <input>show(E4*E3*E2*E1*A)</input>
+                    <!-- E2=matrix(QQ,3,3,[[1,0,0],[0,1,0],[0,0,1]])
+                        E3=matrix(QQ,3,3,[[1,0,0],[0,1,0],[0,0,1]])
+                        E4=matrix(QQ,3,3,[[1,0,0],[0,1,0],[0,0,1]]) -->
+                </sage>
+              </statement>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  What do the calculations in the cell below tell us about <m>A^{-1}</m> and elementary matrices?  
+                </p>
+                <sage>
+                  <input>
+                      show(E4*E3*E2*E1)
+                      show(A^(-1))
+                  </input>
+                </sage>
+              </statement>
+            </task> 
+            <task>
+              <statement>
+                <p>
+                  Use sage to verify your calculations of the inverses in the first part, and to verify that 
+                  <me>A=E_1^{-1}E_2^{-1}E_3^{-1}E_4^{-1}</me>.
+                </p>
+              </statement>
+            </task>
+        </exercise>
+      </page>
+      <page>
+        <exercise>
+          <introduction>
+            <p>
+              The theorem containing various things equivalent to the property of being invertible is sometimes called <q>The Invertible Matrix Theorem</q>.
+              But the star of the show is really the property of the reduced row echelon form of 
+              <m>A</m> being <m>I</m>.  Let's explore a bit how some of the various properties are related.  
+            </p>
+          </introduction>
+          <task workspace="1in">
+            <statement>
+              <p>
+                Suppose you know that <m>A</m> is an <m>n\times n</m> matrix whose reduced row echelon form is <m>I</m>.  
+                Set up the augmented matrix <m>\big[A | I \big]</m>.  What happens after you row reduce this matrix?
+                What does mean for the invertibility of <m>A</m>?
+              </p>
+            </statement>
+          </task>
+          <task workspace="1in">
+            <statement>
+              <p>
+                Suppose you know that <m>A</m> is an <m>n\times n</m> matrix whose reduced row echelon form is <m>I</m>.  
+                Now we know that performing a row operation is the same as multiplying by an elementary matrix.  Performing a row operation on
+                <m>\big[A | I \big]</m> has the same result as <m>\big[E_1A | E_1I \big]</m>. The reduced row echelon form of <m>A</m>
+                being <m>I</m> means that there is a sequence of elementary matrices <m>E_1, E_2, \ldots E_m</m> such that 
+                <m>E_m\cdots E_2 E_1A=I</m>.  What does this mean about <m>E_m\cdots E_2 E_1</m>?
+              </p>
+            </statement>
+          </task>
+          <task workspace="1in">
+            <statement>
+              <p>
+                Suppose you know that <m>A</m> is an invertible <m>n\times n</m> matrix and you have a linear system with <m>A</m>
+                as its coefficient matrix.  Then you can write <m>AX=B</m> where <m>X</m> is a column matrix of variables and <m>B</m> is your column matrix
+                of constants.  How many solutions are there for <m>X</m>?  How do you know?
+              </p>
+            </statement>
+          </task>
+          <task workspace="1in">
+            <statement>
+              <p>
+                Suppose you know that <m>A</m> is an invertible <m>n\times n</m> matrix and that <m>X</m> is a matrix with
+                <m>n</m> rows such that <m>AX=\mathbf{0}</m>.  What does <m>X</m> have to equal?  How do you know?
+              </p>
+            </statement>
+          </task>
+          <task workspace="1in">
+            <statement>
+              <p>
+                Suppose that <m>A</m> is an <m>n\times n</m> matrix and <m>X</m> is a column matrix with
+                <m>n</m> rows.  Now suppose that the only solution to <m>AX=\mathbf{0}</m> is that <m>X=\mathbf{0}</m>. (Why isn't it possible that there are no solutions?) 
+                Set up <m>\big[A | \mathbf{0} \big]</m>.  After row reducing to solve the system, how many free variables can there be?  What does the reduced row echelon form have to look like?
+              </p>
+            </statement>
+          </task>
+        </exercise>
+      </page>
+    </worksheet>
+    <!-- </subsection> -->
