@@ -14,9 +14,10 @@
     <p>
         Matrices of the same size are added by adding corresponding entries together, but
         we do <em>not</em> multiply matrices by multiplying corresponding entries together.  
-        This is confusing at first, but there are very good reasons for defining matrix 
-        multiplication differently.  Unfortunately, most of those reasons do not become 
-        understandable until much, much later.
+        There are very good reasons for defining matrix multiplication differently.  Unfortunately, most of those reasons do not become 
+        understandable until much later, but matrix multiplication can be viewed
+        as performing a function on objects in space.  Rotations, dilations, reflections, and many other operations can be accomplished by 
+        matrix multiplication, which is very useful for computer graphics, physics, aerospace navigation, machine learning, and more.  
     </p>
     <p>
       To start, two matrices can be multiplied together only if <em>the number of columns in the 
