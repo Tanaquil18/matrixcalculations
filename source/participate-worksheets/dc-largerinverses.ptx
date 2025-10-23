@@ -43,9 +43,9 @@
             <p>
                 Use row reducing to calculating the inverses of the following two matrices. What do you notice about the matrices <m>A^{-1}</m> and <m>B</m>?  What about <m>A</m> and <m>B^{-1}</m>?
                 <md>
-                    <mrow> A=\left[\begin{array}{rrrr}2 \amp 0 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]
+                    <mrow> A=\left[\begin{array}{rrrr} 2 \amp 0 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]
                          \amp \amp \amp \amp \amp \amp \amp \amp
-                         B=\left[\begin{array}{rrrr}\frac{1}{2} \amp 0 \amp 0 \amp 0 \\ 0 \amp -\frac{1}{3} \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{3}{2} \end{array}\right]
+                         B=\left[\begin{array}{rrrr} \frac{1}{2} \amp 0 \amp 0 \amp 0 \\ 0 \amp -\frac{1}{3} \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{3}{2} \end{array}\right]
                          \amp \amp \amp \amp \amp \amp \amp \amp 
                     </mrow>
                 </md>
@@ -118,14 +118,14 @@
                     </p>
                     <p>
                         <m>
-                            C=\left[\begin{array}{rrr}2 \amp 0 \amp 0 \\ 3 \amp -3 \amp 0 \\ -2 \amp 1 \amp 1  \end{array}\right]
+                            C=\left[\begin{array}{rrr} 2 \amp 0 \amp 0 \\ 3 \amp -3 \amp 0 \\ -2 \amp 1 \amp 1  \end{array}\right]
                         </m>
                     </p>
                 </statement>
                 <answer>
                     <p>
                         <me>
-                            C^{-1}=\left[\begin{array}{rrr}\frac{1}{2} \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \\ \frac{1}{2} \amp \frac{1}{3} \amp 1  \end{array}\right]
+                            C^{-1}=\left[\begin{array}{rrr} \frac{1}{2} \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \\ \frac{1}{2} \amp \frac{1}{3} \amp 1  \end{array}\right]
                         </me>,
                         which was accomplished by performing the row operations
                         <md>
@@ -186,7 +186,7 @@
                 <answer>
                     <p>
                         <me>
-                            D^{-1}=\left[\begin{array}{rrr} 2 \amp 0 \amp 0 \\ 0 \amp -3 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0 \amp -\frac{2}{3} \end{array}\right]
+                            D^{-1}=\left[\begin{array}{rrr} 2 \amp 0 \amp 0 \\ 3 \amp -3 \amp 0 \\ -2 \amp 1 \amp 1  \end{array}\right]
                         </me>,
                        and <m>D=C^{-1}</m>, <m>D^{-1}=C</m>.  The inverse of <m>C^{-1}</m> is <m>C</m>.
                     </p>
