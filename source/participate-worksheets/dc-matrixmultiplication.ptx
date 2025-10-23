@@ -187,9 +187,11 @@
 						\amp C\amp= \begin{bmatrix} -1 \amp 3 \\ 4 \amp 3 \end{bmatrix}
 					</mrow>
 				</md>.
-				Here is a sage cell to perform (or check) the required computations.
+				Here is a sage cell to help you perform (or check) the required computations.
 				<sage>
 					<input>
+						A=matrix(QQ,2,2,[[1,2],[3,-2]])
+						show(A*A)
 					</input>
 				</sage>
 			</p>
