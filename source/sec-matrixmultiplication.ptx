@@ -586,10 +586,8 @@
           <task label="rq-matrixmult-confidenceresponse">
             <statement>
               <p>
-                If you're not fully confident, what additional information would you need to become more confident?  What is confusing you?
-              </p>
-              <p>
-                If you are confident, ask a <q>what if?</q> or extension question.
+                Ask a question about the material.  What additional information do you think
+                someone would need to become more confident in their understanding?
               </p>
             </statement>
             <response/>
