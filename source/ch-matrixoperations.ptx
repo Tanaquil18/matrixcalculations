@@ -13,6 +13,7 @@
   <xi:include href="sec-matrixmultiplication.ptx" />
   <xi:include href="sec-matrixinverse2vars.ptx" />
   <xi:include href="sec-largerinverses.ptx"/>
+  <xi:include href="sec-elementarymatrices.ptx"/>
 
 
 </chapter>

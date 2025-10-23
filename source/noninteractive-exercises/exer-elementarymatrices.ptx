@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exer-elementarymatrices" ><title>Additional Practice</title>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider the matrix 
+                <me>
+                    A = \left[\begin{array}{rrr}
+                    1 \amp 3 \amp -2 \\
+                    -3 \amp -6 \amp 3 \\
+                    2 \amp 0 \amp -2 \\
+                    \end{array}\right]
+                </me>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Calculate the elementary matrix <m>E_1</m> which performs <m>3R_1+R_2\rightarrow R_2</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>E_1=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 3 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate the elementary matrix <m>E_2</m> which performs <m>-2R_1+R_3\rightarrow R_3</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>E_2=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -2 \amp 0 \amp 1 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate the elementary matrix <m>E_3</m> which performs <m>2R_2+R_3\rightarrow R_3</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>E_3=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate the elementary matrix <m>E_4</m> which performs <m>-\frac{1}{4}R_3\rightarrow R_3</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>E_4=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp -\frac{1}{4} \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate the elementary matrix <m>E_5</m> which performs <m>3R_3+R_2\rightarrow R_2</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>E_5=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 3 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate the elementary matrix <m>E_6</m> which performs <m>2R_3+R_1\rightarrow R_1</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>E_6=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate the elementary matrix <m>E_7</m> which performs <m>\frac{1}{3}R_2\rightarrow R_2</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>E_7=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp \frac{1}{3} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate the elementary matrix <m>E_8</m> which performs <m>-3R_2+R_1\rightarrow R_1</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>E_8=\left[\begin{array}{rrr} 1 \amp -3 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+    </exercise>
+
+    <exercise>
+        <task>
+            <statement>
+                <p>
+                    Calculate <m>B^{-1}</m> for <m>B=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp -4 \end{array}\right]</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>B^{-1}=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp -\frac{1}{4}\end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate <m>C^{-1}</m> for <m>C=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 3 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>C^{-1}=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ -3 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate <m>D^{-1}</m> for <m>D=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \end{array}\right]</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>D^{-1}=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \end{array}\right]</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    True or False? <m>(BCD)^{-1}=B^{-1}C^{-1}D^{-1}</m>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    False.  <m>(BCD)^{-1}BCD=I</m>, which means <m>(BCD)^{-1}=D^{-1}C^{-1}B^{-1}</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate <m>(BCD)^{-1}</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>=</m>
+                    <md>
+                        <mrow> (BCD)^{-1}\amp = D^{-1}C^{-1}B^{-1} </mrow>
+                        <mrow> \amp = \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \end{array}\right]
+                            \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ -3 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]
+                            \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp -\frac{1}{4}\end{array}\right]
+                        </mrow>
+                        <mrow> \amp = \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp -\frac{1}{4} \\ -3 \amp 1 \amp 0\end{array}\right] </mrow>
+                    </md>
+                </p>
+            </answer>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose you know that <m>E_8E_7E_6E_5E_4E_3E_2E_1A=I</m> where each <m>E_i</m> is an elementary matrix.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    What is <m>A^{-1}</m>?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>A^{-1}=E_8E_7E_6E_5E_4E_3E_2E_1</m>.
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write <m>A</m> as a product of elementary matrices.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>A=E_1^{-1}E_2^{-1}E_3^{-1}E_4^{-1}E_5^{-1}E_6^{-1}E_7^{-1}E_8^{-1}</m>
+                </p>
+            </answer>
+        </task>
+    </exercise>
+
+    
+    
+</exercises>

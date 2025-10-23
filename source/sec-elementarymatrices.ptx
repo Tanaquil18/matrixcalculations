@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-elementarymatrices" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Elementary matrices and invertibility</title>
+  <introduction>
+    <p>
+        We have seen how the matrix inverse can be used to solve systems of equations and how 
+        systems of equations can arise in many different scenarios and contexts.  The examples we've used
+        had only a few unknowns, at most 4 or 5.
+    </p>
+    <p>
+      However, many of the most useful linear systems, in areas like machine learning and data analysis, have tens or 
+      hundreds of variables. It becomes very important to maximize efficiency, and the material we are learning now lays
+      a foundation for that which will continue to the next section also.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-elementary-bc">
+    <title>Prepare</title>
+    <p>
+        We'll start by seeing how performing an elementary row operation can be done via matrix multiplication.
+    </p>
+    <example xml:id="ex-rowops-matrixmult"><title>Row operation and matrix multiplication</title>
+        <statement>
+            <p>
+                Consider the matrix <m>\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}</m>.
+            </p>
+            <p>
+                The first step in Gauss-Jordan elimination is <m>-3R_1+R_2 \rightarrow R_2</m>, 
+                <md>
+                  <mrow>\amp \amp \amp \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}</mrow>
+                  <mrow>-3R_1+R_2 \amp\rightarrow R_2 \amp \amp \begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}</mrow>
+                </md>.
+            </p>
+            <p>
+                However, we want to perform this row operation by finding a matrix to multiply by <m>A</m>.  If we instead 
+                perform that same row operation on the <m>2\times 2</m> identity matrix, we get 
+                <md>
+                  <mrow>\amp \amp \amp \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}</mrow>
+                  <mrow>-3R_1+R_2 \amp\rightarrow R_2 \amp \amp \begin{bmatrix} 1 \amp 0 \\ -3 \amp 1 \end{bmatrix}</mrow>
+                </md>.
+                Call this matrix, <m>E_1</m>, so <m>E_1=\begin{bmatrix} 1 \amp 0 \\ -3 \amp 1 \end{bmatrix}</m>.
+              </p>
+              <p>
+                Now check that multiplying <m>E_1</m> by <m>A</m> gives us
+                <md>
+                    <mrow> E_1A\amp =\begin{bmatrix} 1 \amp 0 \\ -3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}</mrow>
+                    <mrow> \amp = \begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix} </mrow>
+                </md>,
+                which is the exact same effect as performing <m>-3R_1+R_2\rightarrow R_2</m> on <m>A</m> directly.      
+            </p>
+        </statement>
+    </example>
+    <p>
+        We just turned an operation on rows of a matrix into a matrix multiplication. 
+        You might be wondering, <q>Does this work for other elementary row operations?</q> The answer is, <q>Yes!</q>
+        We can turn row operations into matrix multiplication by performing the row operation on the appropriately sized identity matrix.
+    </p>
+
+    <exercise label="elem-matrices-matching"><title>Row operations and matrix multiplication</title>
+      <statement>
+        <p>
+          Consider the elementary row operations on the left and match them to the matrix on the right
+          which performs the operation via matrix multiplication.
+        </p>
+      </statement>
+      <matching>
+        <premise ref=""><m>2R_1+R_2 \rightarrow R_2</m></premise>
+        <premise ref="TwoR3plusR2"><m>2R_3+R_2 \rightarrow R_2</m></premise>
+        <premise ref="R1R2a R1R2b"><m>R_1 \leftrightarrow R_2</m></premise>
+        <premise ref=""><m>2R_2 \rightarrow R_2</m></premise>
+        <premise ref="TwoR3"><m>2R_3 \rightarrow R_3</m></premise>
+        <response xml:id="R1R2a" order="2"><m>\begin{bmatrix}0 \amp 1 \\ 1 \amp 0 \end{bmatrix}</m></response>
+        <response xml:id="TwoR3" order="5"><m>\begin{bmatrix}1 \amp 0 \amp 0 \\ 0 \amp 1\amp 0 \\ 0 \amp 0 \amp 2 \end{bmatrix}</m></response>
+        <response xml:id="TwoI" order="6"><m>\begin{bmatrix}2 \amp 0 \amp 0 \\ 0 \amp 2\amp 0 \\ 0 \amp 0 \amp 2 \end{bmatrix}</m></response>
+        <response xml:id="R1R2b" order="4"><m>\begin{bmatrix}0 \amp 1 \amp 0 \\ 1 \amp 0\amp 0 \\ 0 \amp 0 \amp 1 \end{bmatrix}</m></response>
+        <response xml:id="TwoR3plusR2" order="3"><m>\begin{bmatrix}1 \amp 0 \amp 0 \\ 0 \amp 1\amp 2 \\ 0 \amp 0 \amp 1 \end{bmatrix}</m></response>
+        <response xml:id="TwoR3plusR2a" order="1"><m>\begin{bmatrix}1 \amp 0 \amp 0 \\ 0 \amp 1\amp 2 \\ 0 \amp 0 \amp 2 \end{bmatrix}</m></response>
+      </matching>
+    </exercise>
+
+    <p>
+      There is a name for the kinds of matrices we have been considering.
+    </p>
+
+    <definition xml:id="def-elem-matrices"><title>Elementary Matrices</title>
+      <statement>
+        <p>
+          Matrices which are obtained by performing one elementary row operation to the identity matrix are called
+          <term>elementary matrices</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example><title>Continuing Gauss-Jordan with matrix multiplication</title>
+      <statement>
+        <p>
+          Let's return to the matrix in <xref ref="ex-rowops-matrixmult"/> and continue our row reducing process. 
+          We already defined <m>E_1</m> and calculated 
+          <me>
+            E_1A = \left[\begin{array}{rrr} 1 \amp 2 \\ 0 \amp -1 \end{array}\right]
+          </me> 
+          The next step in Gauss-Jordan elimination is <m>-R_2\rightarrow R_2</m>.
+          Doing this operation to the <m>2 \times 2</m> identity matrix yields 
+          <md>
+            <mrow>\amp \amp \amp \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}</mrow>
+            <mrow>-R_2 \amp\rightarrow R_2 \amp \amp \begin{bmatrix} 1 \amp 0 \\ 0 \amp -1 \end{bmatrix}</mrow>
+          </md>.
+          If we let <m>E_2=\begin{bmatrix}1 \amp 0 \\ 0 \amp -1 \end{bmatrix}</m>, 
+          and multiply <m>E_2</m> by the matrix we already had after multiplying by <m>E_1</m>, we get
+          <md>
+            <mrow> E_2 (E_1A) \amp = \begin{bmatrix}1 \amp 0 \\ 0 \amp -1 \end{bmatrix} \begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix} </mrow>
+            <mrow> \amp = \begin{bmatrix} 1 \amp 2 \\ 0 \amp 1 \end{bmatrix} </mrow>
+          </md>.
+        </p>
+        <p>
+          There's one more row operation we need to do to finish row reducing <m>A</m>.  
+          Let's create <m>E_3</m> by performing <m>-2R_2+R_1 \rightarrow R_1</m> on the <m>2\times 2</m>
+          identity matrix
+          <md>
+            <mrow>\amp \amp \amp \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}</mrow>
+            <mrow>-2R_2+R_1 \amp\rightarrow R_1 \amp \amp \begin{bmatrix} 1 \amp -2 \\ 0 \amp 1 \end{bmatrix}</mrow>
+          </md>,
+          and multiplying <m>E_3</m> by the matrix we had gives us
+          <md>
+            <mrow> E_3 (E_2E_1A) \amp = \begin{bmatrix}1 \amp -2 \\ 0 \amp 1 \end{bmatrix} \begin{bmatrix} 1 \amp 2 \\ 0 \amp 1 \end{bmatrix} </mrow>
+            <mrow> \amp = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix} </mrow>
+          </md>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      To recap what we just did: we row reduced the matrix <m>A</m> by multiplying on the left by 
+      three matrices in turn.  In this case, the reduced row echelon form was the identity matrix, so
+      we also found matrices whose product is the identity.  Associativity means that 
+      <me>
+        (E_3E_2E_1)A=I
+      </me>,
+      which means that <m>A</m> is invertible and <m>A^{-1}=E_3E_2E_1</m>.
+    </p>
+    <p>
+      This is kind of a big deal.  We said in <xref ref="calculating_larger_inverses" text="title"/> that
+      in order to calculate inverses we augment by the identity matrix and then row reduce.  If a matrix
+      row reduces to <m>I</m> on the left then the inverse appears on the right.  Now we see another connection 
+      between inverses and row reducing: if a matrix row reduces to the identity, the inverse is the product of 
+      the elementary matrices which perform the row reduction.
+    </p>
+    <p>
+      It is possible to show that since the product <m>E_3E_2E_1</m> is invertible (and it is since its inverse is <m>A</m>) 
+      it is the case that <m>E_3</m>, <m>E_2</m>, and <m>E_1</m> are all invertible, too.  Instead, let's try to see
+      why that has to be the case based on properties of elementary matrices. 
+    </p>
+
+    <exercise label="ex-elem-inverses"><title>Inverses of elementary matrices</title>
+      <introduction>
+        <p>
+          There are 3 kinds of elementary row operations and so there are 3 kinds of elementary matrices: 
+          ones which result from 1) scaling a row, 2) from interchanging two rows,
+          and 3) from adding a multiple of a row to another row.    
+        </p>
+      </introduction>
+      <task label="ex-elem-inverses-a"><title>Scaling operation inverses</title>
+        <statement>
+          <p>
+            Drag each matrix below to its inverse. You can do this by multiplying and seeing which pairs
+            have <m>I</m> as their product, or by using an inverse solver, but pay attention to the patterns.
+            What is true about the inverse of a matrix which scales a row by a number <m>c</m>?
+          </p>
+        </statement>
+        <cardsort>
+          <match>
+            <premise order="2"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] </m></response>
+          </match>
+          <match>
+            <premise order="3"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp -2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m></premise>
+            <premise order="5"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ \frac{1}{2} \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m></premise>
+            <premise order="6"><m>\left[\begin{array}{rr} \frac{1}{5} \amp 0\\ 0 \amp 1 \end{array}\right]</m></premise>
+          </match>
+          <match>
+            <premise order="1"><m>\left[\begin{array}{rr} -5 \amp 0 \\ 0 \amp 1 \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rr} -\frac{1}{5} \amp 0 \\ 0 \amp 1 \end{array}\right] </m></response>
+          </match>
+          <match>
+            <premise order="4"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp \frac{1}{3} \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 3 \end{array}\right] </m></response>
+          </match>
+        </cardsort>
+      </task>
+      <task label="ex-elem-inverses-b"><title>Scaling inverse generally</title>
+        <statement>
+          <p>
+            Say in your own words what the inverse (or opposite) is of scaling a row by a number <m>c</m>.
+          </p>
+        </statement>
+        <response/>
+      </task>
+      <task label="ex-elem-inverses-c"><title>Interchanging operation inverses</title>
+        <statement>
+          <p>
+            Drag each matrix below to its inverse. You can do this by multiplying and seeing which pairs
+            have <m>I</m> as their product, or by using an inverse solver, but pay attention to the patterns.
+            What is true about the inverse of a matrix which swaps two rows?
+          </p>
+        </statement>
+        <cardsort>
+          <match>
+            <premise order="5"><m>\left[\begin{array}{rrr} 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 0 \\  0 \amp 0 \amp 1 \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rrr} 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 0 \\  0 \amp 0 \amp 1 \end{array}\right] </m></response>
+          </match>
+          <match>
+            <premise order="1"><m>\left[\begin{array}{rrr} 0 \amp -1 \amp 0 \\ -1 \amp 0 \amp 0 \\  0 \amp 0 \amp 1 \end{array}\right]</m></premise>
+            <premise order="4"><m>\left[\begin{array}{rrr} 0 \amp -1 \amp 0 \\ 1 \amp 0 \amp 0 \\  0 \amp 0 \amp 1 \end{array}\right]</m></premise>
+          </match>
+          <match>
+            <premise order="2"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0  \\ 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0  \\ 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \end{array}\right] </m></response>
+          </match>
+          <match>
+            <premise order="3"><m>\left[\begin{array}{rrr} 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 0 \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rrr} 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 0 \end{array}\right] </m></response>
+          </match>
+        </cardsort>
+      </task>
+      <task label="ex-elem-inverses-d"><title>Interchanging inverse generally</title>
+        <statement>
+          <p>
+            Say in your own words what the inverse is of interchanging two rows.
+          </p>
+        </statement>
+        <response/>
+      </task>
+      <task label="ex-elem-inverses-e"><title>Multiply-and-add operation inverses</title>
+        <statement>
+          <p>
+            Drag each matrix below to its inverse. You can do this by multiplying and seeing which pairs
+            have <m>I</m> as their product, or by using an inverse solver, but pay attention to the patterns.
+            What is true about the inverse of a matrix which multiplies a row by a number <m>c</m> and adds the
+            result to another row?
+          </p>
+        </statement>
+        <cardsort>
+          <match>
+            <premise order="3"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ -2 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 2 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] </m></response>
+          </match>
+          <match>
+            <premise order="1"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ \frac{1}{2} \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m></premise>
+          </match>
+          <match>
+            <premise order="4"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 1 \amp 1 \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -1 \amp 1 \end{array}\right] </m></response>
+          </match>
+          <match>
+            <premise order="2"><m>\left[\begin{array}{rrr} 1 \amp 0 \amp \frac{1}{2} \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] </m></premise>
+            <response><m>\left[\begin{array}{rrr} 1 \amp 0 \amp -\frac{1}{2} \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] </m></response>
+          </match>
+        </cardsort>
+      </task>
+      <task label="ex-elem-inverses-f"><title>Multiply-and-add inverse generally</title>
+        <statement>
+          <p>
+            Say in your own words what the inverse is of multiplying a row by <m>c</m> and adding to another row.
+          </p>
+        </statement>
+        <response/>
+      </task>
+    </exercise>
+
+    <p>
+      Let's return to our running example of this section.  We started with
+      <me>
+        A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}
+      </me>
+      and through row reducing by multiplying by elementary matrices we found that
+      <me>
+        E_3E_2E_1A=I
+      </me>.
+      We've seen that elementary row operations can be undone by another elementary row operation, which means
+      that every elementary matrix is invertible, and the inverse is another elementary matrix.  Thus we can multiply
+      both sides of the above equation by <m>E_3^{-1}</m> and get that
+      <md>
+        <mrow> E_3^{-1}(E_3E_2E_1A)\amp = E_3^{-1}I </mrow>
+        <mrow> (E_3^{-1}E_3)E_2E_1A\amp = E_3^{-1} </mrow>
+        <mrow> E_2E_1A\amp = E_3^{-1} </mrow>
+      </md>.
+      Next we undo <m>E_2</m> by multiplying both sides by <m>E_2^{-1}</m> to get
+      <md>
+        <mrow> E_2^{-1}(E_2E_1A)\amp = E_2^{-1}E_3^{-1} </mrow>
+        <mrow> E_1A\amp = E_2^{-1}E_3^{-1} </mrow>
+      </md>.
+      Finally, we undo <m>E_1</m> in the same way and get
+      <md>
+        <mrow> E_1^{-1}E_1A\amp = E_1^{-1}E_2^{-1}E_3^{-1} </mrow>
+        <mrow> A\amp = E_1^{-1}E_2^{-1}E_3^{-1} </mrow>
+      </md>.
+    </p>
+    <p>
+      Since the inverse of an elementary matrix is also an elementary matrix, we just wrote 
+      <m>A</m> as a product of elementary matrices.  Moreover, there wasn't anything special about this example;
+      the fact that the reduced row echelon form of <m>A</m> is <m>I</m> meant that we could multiply <m>A</m>
+      by elementary matrices to get <m>I</m>, which meant that <m>A</m> is invertible and also that <m>A</m> 
+      can be expressed as the product of elementary matrices.  
+    </p>
+    <p>
+      We have now seen a lot of different things that are equivalent to a matrix having an inverse (and there will be still more
+      in the future). Let's collect what we know so far.
+    </p>
+
+    <theorem xml:id="theorem-invertible-matrix-theorem">
+      <title>Equivalent to being invertible</title>
+      <p>
+        Let <m>A</m> be an <m>n\times n</m> matrix.  The following are equivalent:
+        <ol>
+          <li>
+            <p>
+              <m>A</m> is invertible.
+            </p>
+          </li>
+          <li>
+            <p>
+              The reduced row echelon form of <m>A</m> is <m>I</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              There is exactly one solution (not 0 and not infinitely many) to any linear system that has <m>A</m> as its coefficient matrix.
+            </p>
+          </li>
+          <li>
+            <p>
+              For any matrix <m>X</m> with <m>n</m> rows, if <m>AX=\mathbf{0}</m>, then <m>X=\mathbf{0}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A</m> is the product of elementary matrices.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </theorem>
+    <p>
+      A <em>theorem</em> in math is a statement which has a proof that it's true.  We don't get into full proofs, 
+      but we can still explore and understand some of the reasons for each of the above equivalences.  We did a little of that just
+      above the theorem, when we were seeing how row reducing to the identity led to invertibility and being able to be written
+      as a product of elementary matrices, and we'll explore more during the Participate activities.
+    </p>
+
+  
+      
+    <reading-questions xml:id="rqs-elementarymatrices">
+      <exercise label="rq-elementarymatrices-orderofmult"><title>Order of multiplication</title>
+        <statement>
+          <p>
+            If you have found elementary matrices <m>E_1</m> and <m>E_2</m> which perform row operations, and you want to perform
+            <m>E_1</m> first on a matrix <m>M</m> and then to the result perform <m>E_2</m>, which product do you calculate?
+          </p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>
+                <m>E_1E_2M</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Just like with functions <m>f(g(x))</m>, the <m>g(x)</m> comes second as we read left-to-right, 
+                but that means perform <m>g(x)</m> first and plug the result into <m>f(x)</m>. 
+              </p>
+              <p>
+                So too with matrix multiplication.  By associativity, <m>E_1E_2M</m> is the same as <m>E_1(E_2M)</m>, which means multiply
+                <m>E_2M</m> and then multiply <m>E_1</m> by the result. 
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>E_2E_1M</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct!
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+      </exercise>
+
+      <exercise label="rq-elementarymatrices-eleminvert"><title>Elementary matrices and invertibility</title>
+        <statement correct="yes">
+          <p>
+            Every elementary matrix is invertible, and the inverse of an elementary matrix is also an elementary matrix.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            The inverse of scaling is scaling by the reciprocal; the inverse of swapping two rows is swapping the same two rows again;
+            the inverse of multiplying a row by <m>c</m> and adding to another row is multiplying the row by <m>-c</m> and adding.
+          </p>
+        </feedback>
+      </exercise>
+
+
+      <exercise label="rq-elementarymatrices-questions-poll"><title>Reflection</title>
+        <task label="rq-elementarymatrices-confidencepoll-task">
+          <query label="rq-elementarymatrices-confidencepoll" visibility="instructor">
+            <statement>
+              <p>
+                How confident do you feel with the material you just read about?
+              </p>
+            </statement>
+            <choices>
+              <choice>
+                <statement>
+                  <p>
+                    Not at all confident or didn't do the reading.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Not very confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Somewhat confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Mostly confident.
+                  </p>
+                </statement>
+              </choice>
+              <choice>
+                <statement>
+                  <p>
+                    Confident so far and ready to engage more deeply.
+                  </p>
+                </statement>
+              </choice>
+            </choices>
+          </query>
+          </task>
+          <task label="rq-elementarymatrices-confidenceresponse">
+            <statement>
+              <p>
+                Ask a question about the material.  What additional information do you think
+                someone would need to become more confident in their understanding?
+              </p>
+            </statement>
+            <response/>
+          </task>
+      </exercise>
+    </reading-questions>
+
+  </subsection>
+
+   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+  
+
+  <conclusion xml:id="subsec-elementarymatrices-summary">
+    <title>Summary</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+              <em>Elementary matrices</em> are the result of performing one elementary row
+              operation on the identity matrix.  Multiplying a matrix on the left by an elementary
+              matrix has the same result as performing that row operation on the matrix.
+          </p>
+        </li>
+        <li>
+          <p>
+            We have a list of conditions that are all equivalent to a square matrix being invertible, including
+            row reducing to the identity matrix and having exactly one solution to a linear system (not 0, not infinitely many solutions).
+          </p>
+        </li>
+        <li>
+          <p>
+            This material is setting us up to learn more about how computers are programmed to calculate with matrices, 
+            to be efficient and fast when there are hundreds, or even thousands, of numbers to add and multiply.   
+          </p>
+        </li>
+      </ul>
+    </p>
+  </conclusion>
+  
+
+
+  <xi:include href="interactive-exercises/ww-elementarymatrices.ptx" />
+
+  <xi:include href="noninteractive-exercises/exer-elementarymatrices.ptx" />
+
+</section>
