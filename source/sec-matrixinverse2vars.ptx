@@ -624,6 +624,9 @@
 
       <exercise label="rq-matrixinv2-questions-poll"><title>Reflection</title>
         <task label="rq-matrixinv2-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-matrixinv2-confidencepoll" visibility="instructor">
             <statement>
               <p>

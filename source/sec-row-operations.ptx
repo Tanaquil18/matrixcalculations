@@ -906,6 +906,9 @@
 
     <exercise label="rq-row-ops-questions-poll"><title>Reflection</title>
         <task label="rq-row-ops-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-row-ops-confidencepoll" visibility="instructor">
             <statement>
               <p>
@@ -950,16 +953,16 @@
               </choice>
             </choices>
           </query>
-          </task>
-          <task label="rq-row-ops-confidenceresponse">
-            <statement>
-              <p>
-                Ask a question about the material.  What additional information do you think
-                someone would need to become more confident in their understanding?
-              </p>
-            </statement>
-            <response/>
-          </task>
+        </task>
+        <task label="rq-row-ops-confidenceresponse">
+          <statement>
+            <p>
+              Ask a question about the material.  What additional information do you think
+              someone would need to become more confident in their understanding?
+            </p>
+          </statement>
+          <response/>
+        </task>
       </exercise>
   </reading-questions>
 

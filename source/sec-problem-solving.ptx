@@ -717,6 +717,9 @@
        would basketball solution make sense with a negative point value? give math and then context-->
       <exercise label="rq-probsolv-questions-poll"><title>Reflection</title>
         <task label="rq-probsolv-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-probsolv-confidencepoll" visibility="instructor">
             <statement>
               <p>

@@ -22,6 +22,9 @@
     <reading-questions xml:id="rqs-">
       <exercise label="rq--questions-poll"><title>Reflection</title>
         <task label="rq--confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq--confidencepoll" visibility="instructor">
             <statement>
               <p>

@@ -587,6 +587,9 @@
 
       <exercise label="rq-largerinverses-questions-poll"><title>Reflection</title>
         <task label="rq-largerinverses-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-largerinverses-confidencepoll" visibility="instructor">
             <statement>
               <p>

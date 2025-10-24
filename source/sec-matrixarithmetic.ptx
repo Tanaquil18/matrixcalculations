@@ -471,6 +471,9 @@
       </exercise>
       <exercise label="rq-matrixarith-questions-poll"><title>Reflection</title>
         <task label="rq-matrixarith-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-matrixarith-confidencepoll" visibility="instructor">
             <statement>
               <p>

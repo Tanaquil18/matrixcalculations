@@ -928,6 +928,9 @@
 
     <exercise label="rq-consistency-questions-poll"><title>Reflection</title>
         <task label="rq-consistency-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-consistency-confidencepoll" visibility="instructor">
             <statement>
               <p>

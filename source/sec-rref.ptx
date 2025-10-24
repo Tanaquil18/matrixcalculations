@@ -1160,6 +1160,9 @@
 
     <exercise label="rq-rref-questions-poll"><title>Reflection</title>
         <task label="rq-rref-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-rref-confidencepoll" visibility="instructor">
             <statement>
               <p>

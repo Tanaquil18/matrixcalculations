@@ -521,6 +521,9 @@
 
     <exercise label="rq-matrices-elim-questions-poll"><title>Reflection</title>
         <task label="rq-matrices-elim-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-matrices-elim-confidencepoll" visibility="instructor">
             <statement>
               <p>
@@ -529,39 +532,29 @@
             </statement>
             <choices>
               <choice>
-                <statement>
                   <p>
                     Not at all confident or didn't do the reading.
                   </p>
-                </statement>
               </choice>
               <choice>
-                <statement>
                   <p>
                     Not very confident.
                   </p>
-                </statement>
               </choice>
               <choice>
-                <statement>
                   <p>
                     Somewhat confident.
                   </p>
-                </statement>
               </choice>
               <choice>
-                <statement>
                   <p>
                     Mostly confident.
                   </p>
-                </statement>
               </choice>
               <choice>
-                <statement>
                   <p>
                     Confident so far and ready to engage more deeply.
                   </p>
-                </statement>
               </choice>
             </choices>
           </query>

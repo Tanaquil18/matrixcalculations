@@ -407,6 +407,9 @@
 
       <exercise label="rq-elementarymatrices-questions-poll"><title>Reflection</title>
         <task label="rq-elementarymatrices-confidencepoll-task">
+          <p>
+            Reflect on your confidence level.
+          </p>
           <query label="rq-elementarymatrices-confidencepoll" visibility="instructor">
             <statement>
               <p>
