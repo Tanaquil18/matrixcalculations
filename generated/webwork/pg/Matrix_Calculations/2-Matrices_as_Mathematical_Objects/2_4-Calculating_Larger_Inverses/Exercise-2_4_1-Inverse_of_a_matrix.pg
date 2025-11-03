@@ -1,0 +1,129 @@
+## DESCRIPTION
+## Linear Algebra
+## ENDDESCRIPTION
+
+## Tagged by cmd6a 4/30/06
+
+## DBsubject(Linear algebra)
+## DBchapter(Matrices)
+## DBsection(Inverses)
+## Date(July 2013)
+## Institution(Rochester and Hope College)
+## Author(Paul Pearson)
+## Edited by Chrissy Safranski in 2025 to add steps for the row reduction
+## MLT(3x3generic)
+## MLTleader(1)
+## Level(3)
+## MO(1)
+## TitleText1('Elementary Linear Algebra')
+## AuthorText1('Larson, Edwards, Falvo')
+## EditionText1('5')
+## Section1('2.3')
+## Problem1('10')
+## TitleText2('Linear Algebra with Applications')
+## AuthorText2('Jeffrey Holt')
+## EditionText2('1')
+## Section2('3.3')
+## Problem2('')
+## KEYWORDS('matrices', 'matrix operations', 'inverse','Algebra' 'Matrix' 'Matrices' 'Inverse')
+
+DOCUMENT() ;        
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserVectorUtils.pl",
+  "PGcourse.pl"
+);
+
+$showPartialCorrectAnswers = 1 ;
+
+TEXT(beginproblem());
+
+Context('Matrix');
+
+# choosing the coefficients in such a way that the determinant is either 1 or -1
+
+$a11 = non_zero_random(-5,5,1);
+$a21 = random(-5,5,1); 
+$a31 = random(-1,1,2);
+
+$b = non_zero_random(-3,3,1);
+$a12 = $b * $a11;
+$m = random(-1,1,2);
+$a22 = $b * $a21 + $m;
+$a32 = $b * $a31;
+
+$c = random(-3,3,1);
+$d = random(-3,3,1);
+$n = random(-1,1,2);
+$a13 = $c * $a11 + $d * $a12 + $n;
+$a23 = $c * $a21 + $d * $a22;
+$a33 = $c * $a31 + $d * $a32;
+
+#$det = - $a31 * $m * $n;
+
+#$ans11 = ($a22 * $a33 - $a23 * $a32)/$det;
+#$ans12 = - ($a12 * $a33 - $a13 * $a32)/$det;
+#$ans13 = ($a12 * $a23 - $a13 * $a22)/$det;
+#$ans21 = - ($a21 * $a33 - $a23 * $a31)/$det;
+#$ans22 = ($a11 * $a33 - $a13 * $a31)/$det;
+#$ans23 = - ($a11 * $a23 - $a13 * $a21)/$det;
+#$ans31 = ($a21 * $a32 - $a22 * $a31)/$det;
+#$ans32 = - ($a11 * $a32 - $a12 * $a31)/$det;
+#$ans33 = ($a11 * $a22 - $a12 * $a21)/$det;
+
+$A = Matrix([
+[$a11,$a12,$a13],
+[$a21,$a22,$a23],
+[$a31,$a32,$a33],
+]);
+
+$ans1 = Matrix([
+[$a11,$a12,$a13,1,0,0],
+[$a21,$a22,$a23,0,1,0],
+[$a31,$a32,$a33,0,0,1],
+]);
+$ans2 = Matrix([
+[1,$a12/$a11,$a13/$a11,1/$a11,0,0],
+[$a21,$a22,$a23,0,1,0],
+[$a31,$a32,$a33,0,0,1],
+]);
+$coeff1 = -$a21;
+$coeff2 = -$a31;
+
+$ans3 = Matrix([
+[1,$a12/$a11,$a13/$a11,1/$a11,0,0],
+[0,$a22-$a21*$a12/$a11,$a23-$a21*$a13/$a11,-$a21/$a11,1,0],
+[0,$a32-$a31*$a12/$a11,$a33-$a31*$a13/$a11,-$a31/$a11,0,1],
+]);
+
+$answer = $A->inverse();
+
+Context()->texStrings;
+BEGIN_TEXT
+Let \( A = $A \). Augment \(A\) by the identity matrix.
+$BR
+\{ $ans1->ans_array() \}
+$BR
+Perform the row operation \(\frac{1}{$a11}R_1 \rightarrow R_1\).
+$BR
+\{ $ans2->ans_array() \}
+$BR
+Perform both the row operations \($coeff1 R_1 +R_2 \rightarrow R_2\) and \($coeff2 R_1 +R_3 \rightarrow R_3\).
+$BR
+\{ $ans3->ans_array() \}
+$BR
+Continue the process and enter the final answer for the inverse of \(A\).
+$BR
+\( A^{-1} = \) \{ $answer->ans_array() \}.
+END_TEXT
+Context()->normalStrings;
+
+ANS($ans1->cmp());
+ANS($ans2->cmp());
+ANS($ans3->cmp());
+ANS( $answer->cmp() );
+
+COMMENT('Matrix entries in the answer are always integers (i.e., the matrix is unimodular).');
+ENDDOCUMENT();

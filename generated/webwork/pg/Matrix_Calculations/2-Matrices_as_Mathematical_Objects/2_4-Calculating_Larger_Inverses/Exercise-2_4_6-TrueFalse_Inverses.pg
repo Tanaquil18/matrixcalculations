@@ -1,0 +1,93 @@
+## DESCRIPTION
+## Four true/false questions about elementary matrices and matrix inverses, randomly chosen from a larger pool of true/false questions.
+## ENDDESCRIPTION
+
+## DBsubject('Linear algebra')
+## DBchapter('Matrices')
+## DBsection('Inverses')
+## Date('October 8, 2019')
+## Author('Nathaniel Johnston')
+## Editor('Christina Safranski')
+## Institution('Mount Allison University')
+## TitleText1('Introduction to Linear and Matrix Algebra')
+## EditionText1('1')
+## AuthorText1('Nathaniel Johnston')
+## Section1('2.2: Elementary Matrices and Matrix Inverses')
+## Problem1('')
+## KEYWORDS('matrices','matrix inverse','elementary matrices')
+## http://www.njohnston.ca/publications/introduction-to-linear-and-matrix-algebra/
+
+##############################################################
+#  Initialization
+##############################################################
+
+DOCUMENT();      
+
+loadMacros(
+    "PGstandard.pl",
+    "MathObjects.pl",
+    "PGchoicemacros.pl",
+);
+
+TEXT(beginproblem());
+
+##############################################################
+#  Problem Setup
+##############################################################
+
+Context("Numeric");
+
+$a = random(2,7);
+$b = random(2,7);
+
+# Create and use pop up lists 
+$tf = new_select_list();
+$tf->rf_print_q(~~&pop_up_list_print_q);
+
+# Choices presented to students
+$tf->ra_pop_up_list( [ 
+    "No answer" => "Choose", 
+    "True"  => "True", 
+    "False" => "False",
+]);
+	
+# Questions and answers
+$tf -> qa ( 
+    "A nonsquare matrix could have an inverse.", "False",
+    "Every square matrix has an inverse.","False",
+    "The \( \displaystyle n \times n \) identity matrix is invertible.","True",
+    "The \( \displaystyle n \times n \) zero matrix is invertible.","False",
+    "If \( \displaystyle A \) and \( \displaystyle B \) are invertible matrices, then \( \displaystyle (AB)^{-1} = A^{-1}B^{-1} \) .","False",
+    "If \( \displaystyle A \) and \( \displaystyle B \) are invertible matrices, then \( \displaystyle (AB)^{-1} = B^{-1}A^{-1} \) .","True",
+    "If \( \displaystyle A \) and \( \displaystyle B \) are invertible matrices, then so is \( \displaystyle A+B \) .","False",
+    "If \( \displaystyle A^$a = I \) then \( \displaystyle A \) is invertible.","True",
+    "If \( \displaystyle A^$b = O \) then \( \displaystyle A \) is not invertible.","True",
+    "If \( \displaystyle A \) and \( \displaystyle B \) are square matrices such that \( \displaystyle AB = O \) and \( \displaystyle A \) is invertible, then \( \displaystyle B = O \) .","True",
+    "If \( \displaystyle A \), \( \displaystyle B \), and \( \displaystyle X \) are matrices such that \( \displaystyle AX = B \), and \( \displaystyle A \) is invertible, then \( \displaystyle X = A^{-1}B \).","True",
+    "If \( \displaystyle A \), \( \displaystyle B \), and \( \displaystyle X \) are matrices such that \( \displaystyle AX = B \), and \( \displaystyle A \) is invertible, then \( \displaystyle X = BA^{-1}\).","False",
+);
+
+# How many questions to use
+$tf->choose(4);
+
+##############################################################
+#  Text
+##############################################################
+
+Context()->texStrings;
+BEGIN_TEXT
+Determine which of the following statements are true and which are false.
+$BR
+\{ $tf -> print_q() \}
+END_TEXT
+Context()->normalStrings;
+
+##############################################################
+#  Answers and Solutions
+##############################################################
+
+$showPartialCorrectAnswers = 0;
+
+ANS( str_cmp( $tf->ra_correct_ans() ) );
+
+ENDDOCUMENT();

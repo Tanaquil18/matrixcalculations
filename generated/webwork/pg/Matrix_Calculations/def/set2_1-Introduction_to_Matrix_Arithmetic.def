@@ -1,6 +1,6 @@
-openDate          = 08/13/2025 at 12:00am
-dueDate           = 02/13/2026 at 10:00pm
-answerDate        = 02/13/2026 at 10:00pm
+openDate          = 10/23/2025 at 12:00am
+dueDate           = 04/23/2026 at 10:00pm
+answerDate        = 04/23/2026 at 10:00pm
 paperHeaderFile   = Matrix_Calculations/header/2_1-Introduction_to_Matrix_Arithmetic.pg
 screenHeaderFile  = Matrix_Calculations/header/2_1-Introduction_to_Matrix_Arithmetic.pg
 description       = Introduction to Matrix Arithmetic
@@ -18,6 +18,10 @@ source_file = Library/TCNJ/TCNJ_MatrixOperations/problem4.pg
 problem_id = 
 problem_end
 problem_start
-source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_add_05.pg
+source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/Exercise-2_1_4-Adding_Matrices_List_of_Lists_Notation.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_1-Introduction_to_Matrix_Arithmetic/Exercise-2_1_5-TrueFalse_Matrix_Properties.pg
 problem_id = 
 problem_end

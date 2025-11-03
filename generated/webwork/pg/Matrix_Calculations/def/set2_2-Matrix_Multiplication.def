@@ -1,10 +1,14 @@
-openDate          = 08/13/2025 at 12:00am
-dueDate           = 02/13/2026 at 10:00pm
-answerDate        = 02/13/2026 at 10:00pm
+openDate          = 10/23/2025 at 12:00am
+dueDate           = 04/23/2026 at 10:00pm
+answerDate        = 04/23/2026 at 10:00pm
 paperHeaderFile   = Matrix_Calculations/header/2_2-Matrix_Multiplication.pg
 screenHeaderFile  = Matrix_Calculations/header/2_2-Matrix_Multiplication.pg
 description       = Matrix Multiplication
 problemListV2
+problem_start
+source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_2-Matrix_Multiplication/Exercise-2_2_1-Properties_of_Matrix_Multiplication.pg
+problem_id = 
+problem_end
 problem_start
 source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_10.pg
 problem_id = 
@@ -14,7 +18,7 @@ source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_11.pg
 problem_id = 
 problem_end
 problem_start
-source_file = Library/Hope/Multi1/02-01-Matrix-operations/Matrix_mult_06.pg
+source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_2-Matrix_Multiplication/Exercise-2_2_4-Multiplying_Matrices.pg
 problem_id = 
 problem_end
 problem_start

@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-13T14:32:40Z       
+###       on 2025-10-23T22:42:14Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -80,7 +80,7 @@ Use the method of elimination to solve the linear system:
 \end{aligned}
 ```]
 
-The solution is [`x_1=`][_]{$x}{2}, [`x_2=`][_]{$y}{2} and [`x_3=`][_]{$z}{2}.
+The solution is [`x_1=`][_]{$x1}{2}, [`x_2=`][_]{$x2}{2} and [`x_3=`][_]{$x3}{2}.
 
 END_PGML
 
