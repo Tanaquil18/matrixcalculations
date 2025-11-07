@@ -145,7 +145,7 @@
                     </p>
                     <p>
                         <m>
-                            D=\left[\begin{array}{rrr}\frac{1}{2} \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 1 \end{array}\right]
+                            D=\left[\begin{array}{rrr}\frac{1}{2} \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \\ \frac{1}{2} \amp \frac{1}{3} \amp 1 \end{array}\right]
                         </m>   
                     </p> -->
                         <!-- <me>
@@ -168,7 +168,7 @@
                         </p>
                         <p>
                             <m>
-                        D=\left[\begin{array}{rrr|rrr}\frac{1}{2} \amp 0 \amp 0 \amp 1 \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \amp 0 \amp 1 \amp 0\\ \frac{1}{2} \amp -\frac{1}{3} \amp 1\amp 0 \amp 0 \amp 1\end{array}\right]
+                        D=\left[\begin{array}{rrr|rrr}\frac{1}{2} \amp 0 \amp 0 \amp 1 \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \amp 0 \amp 1 \amp 0\\ \frac{1}{2} \amp \frac{1}{3} \amp 1\amp 0 \amp 0 \amp 1\end{array}\right]
                     </m>
                         </p>
                     </sidebyside>
