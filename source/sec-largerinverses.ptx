@@ -39,7 +39,7 @@
       </me>,
       and using matrix multiplication on the two matrices above means that
       <me>
-        \begin{bmatrix} 1x_1+2x_2 \amp 1y_2+2y_2 \\ 3x_1+5x_2 \amp 3y_1+5y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}
+        \begin{bmatrix} 1x_1+2x_2 \amp 1y_1+2y_2 \\ 3x_1+5x_2 \amp 3y_1+5y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}
       </me>.
     </p>
     <p>
