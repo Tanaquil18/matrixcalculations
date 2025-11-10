@@ -573,11 +573,6 @@
 
   </subsection>
 
-  <!-- the worksheet can be its own subsection-like thing titled Participate.  But then Participate shows up in the printed
-   worksheet itself.  Maybe I do want that, if I could change it to say 1.2 Participate only in the printed worksheet,
-   not in the html? I don't think I do though - I might sometimes want non-worksheet material in Participate, like in
-   Section 1.1, for example. Maybe upcoming sections that are sage heavy, too. -->
-
    <xi:include href="participate-worksheets/dc-matrices-elim.ptx" />
 
     <conclusion xml:id="sec-matrices-summary">
