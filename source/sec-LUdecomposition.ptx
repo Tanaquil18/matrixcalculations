@@ -5,8 +5,8 @@
   <introduction>
     <p> 
       In this section, we see some issues that can arise when computers use the 
-      <xref ref="def_gaussian_elimination" text="title"/> we learned before, and we
-      and learn some of what computers do to compute solutions more efficiently, 
+      <xref ref="def_gaussian_elimination" text="title"/> algorithm, and we learn 
+      some of what computers do to compute solutions more efficiently, 
       especially when we want to solve equations <m>AX = B</m> for several different
       column matrices <m>B</m>.  
     </p>
@@ -30,7 +30,7 @@
     </listing>
 
     <p>
-      Running the code above shows that internally the computer does not have the same answer for 
+      Running the code above shows that internally, when using Python, the computer does not have the same answer for 
       <c>0.1 + 0.2</c> and <c>0.3</c>. Computers perform arithmetic using base 2 numbers, which means
        that numbers we enter in decimal form, such as <m>0.1</m>, must be converted to base 2.  Even 
        though 0.1 has a simple decimal (base 10) form, its representation in base 2 is the repeating decimal 
@@ -56,8 +56,8 @@
     </p>
     <p>
       There are a few things computers do to mitigate the issue of numerical errors.  You may have noticed that when we 
-      perform Gauss-Jordan elimination by hand, we primarily use only two of the three row operations: scaling and
-      multiply-and-add.  We swap rows only during the forward steps and only if there was a <m>0</m> in a position 
+      perform Gauss-Jordan elimination by hand, we primarily use only two of the three row operations: <em>scaling</em> and
+      <em>multiply-and-add</em>.  We swap rows only during the forward steps and only if there was a <m>0</m> in a position 
       we needed to use to eliminate nonzero numbers still appearing in the same column.
     </p>
     <p>
@@ -356,8 +356,70 @@
         </choices>
       </task>
     </exercise>
-    <!-- interactive question - what are triangular matrices and what aren't? 
-     matching? cardsort, multiple choice because of the feedback?  use diagonal? -->
+
+    <!-- <exercise label="triangularmatrices-dtest">
+        <statement>
+          <p>
+            Choose the best description of the matrix <m>\begin{bmatrix} 2 \amp 0 \amp 0 \\ -1 \amp 0 \amp 0 \\ 3 \amp 5 \amp -4 \end{bmatrix}</m>.
+          </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                Lower triangular
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                A <em>lower triangular</em> matrix must have 0's in the entries above the main diagonal.  It can have 
+                any number, zero or nonzero, in the other positions.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                Upper triangular
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                There is a nonzero entry below the main diagonal, in the second row and first column, for example.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                Both upper and lower triangular.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                There is a nonzero entry below the main diagonal, in the second row and first column, for example.
+              </p>
+            </feedback>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                Neither upper nor lower triangular.
+              </p>
+            </statement>
+            <feedback>
+            <p>
+              There are 0's above the main diagonal so this is some kind of triangular.  The entries on the main diagonal can be zero or nonzero.
+            </p>
+            <p>
+              <me>
+                \begin{bmatrix} 2 \amp \boxed{0} \amp \boxed{0} \\ -1 \amp 0 \amp \boxed{0} \\ 3 \amp 5 \amp -4 \end{bmatrix}
+              </me>
+            </p>
+          </feedback>
+          </choice>
+        </choices>
+      </exercise> -->
 
      <p>
       Recall <xref ref="ex-rowops-matrixmult"/> and <xref ref="ex-rowops-matrixmult-cont"/> where
@@ -491,6 +553,67 @@
       
       
     <reading-questions xml:id="rqs-LUdecomposition">
+      <exercise label="rq-LU-triangularforms"><title>Triangular forms</title>
+      <statement>
+        <p>
+          Match each matrix below to all the descriptions that apply to it.  
+        </p>
+      </statement>
+      <matching>
+        <premise ref="upper lower"><m>\left[\begin{array}{rr}1\amp 0  \\ 0 \amp 1  \end{array}\right]</m></premise>
+        <premise ref="lower"><m>\left[\begin{array}{rrr}-3\amp 0 \amp 0 \\ 2 \amp 2 \amp 0 \\ 3 \amp -4 \amp 1 \end{array}\right]</m></premise>
+        <premise ref="nottriang"><m>\left[\begin{array}{rrr}1\amp 2 \amp 0 \\ 2 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m></premise>
+        <premise ref="upper"><m>\left[\begin{array}{rrr}1\amp 2 \amp 3 \\ 0 \amp 0 \amp 2 \\ 0 \amp 0 \amp -1 \end{array}\right]</m></premise>
+        <response xml:id="upper" order="1">Upper triangular</response>
+        <response xml:id="lower" order="2">Lower triangular</response>
+        <response xml:id="nottriang" order="3">Not triangular</response>
+      </matching>
+    </exercise>
+
+    <exercise label="parsons-LU-decomp" adaptive="yes"><title>Parsons Problem, LU-decomposition</title>
+        <statement>
+          <p>
+            Put the correct steps in the correct order to find an LU-decomposition of 
+            <me>
+              A=\left[ \begin{array}{rrr} 1 \amp 2 \amp 3 \\ 0 \amp 2 \amp -2 \\ 1 \amp 2 \amp 2 \end{array}\right]
+            </me>.  
+          </p>
+        </statement>
+        <blocks>
+        <block order="2">
+          <p>
+            The forward steps of Gauss-Jordan elimination are <m>-R_1+R_3 \rightarrow R_3</m>, then
+            <m>\frac{1}{2}R_2 \rightarrow R_2</m>, then <m>-2R_2+R_3 \rightarrow R_3</m>.
+          </p>
+        </block>
+        <block order="5">
+          <p>
+             Using elementary matrices to perform the row operations means that
+            <me>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]A=U</me>. 
+          </p>
+        </block>
+        <block order="1" correct="no">
+          <p>
+            Using elementary matrices to perform the row operations means that
+            <me>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]A=U</me>. 
+          </p>
+        </block>
+        <block order="3">
+          <p>
+            Solving for <m>A</m> gives
+            <me>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]U</me>,
+            and the product of lower triangular matrices is still lower triangular, so <m>A=LU</m>.
+          </p>
+        </block>
+        <block order="4" correct="no">
+          <p>
+            Solving for <m>A</m> gives
+            <me>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]U</me>,
+            and the product of lower triangular matrices is still lower triangular, so <m>A=LU</m>.
+          </p>
+        </block>
+        </blocks>
+      </exercise>
       <!-- cardsort on triangular types, different sizes.  Parsons on LU factorization to solve systems? -->
       <exercise label="rq-LUdecomposition-questions-poll"><title>Reflection</title>
         <task label="rq-LUdecomposition-confidencepoll-task">
@@ -565,8 +688,8 @@
       <ul>
         <li>
           <p>
-              Computers are fast and have a lot of memory, but they are prone to numerical errors due to 
-              binary representations and the use of finite digits. We can mitigate the effect of numerical errors
+              Computers are fast and can store lots of information, but they are prone to numerical errors due to 
+              binary representations and the use of finitely many digits. We can mitigate the effect of numerical errors
               using <em>partial pivoting</em> and by reducing the number of operations needed where errors could spread.
           </p>
         </li>
@@ -578,7 +701,7 @@
         </li>
         <li>
           <p>
-            Computers tend to solve systems using LU decomposition for both efficiency and the reduction of numerical errors.
+            Computers tend to solve linear systems using LU decomposition for both computational efficiency and the reduction of numerical errors.
           </p>
         </li>
       </ul>
