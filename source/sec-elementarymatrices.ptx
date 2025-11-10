@@ -92,7 +92,7 @@
       </statement>
     </definition>
 
-    <example><title>Continuing Gauss-Jordan with matrix multiplication</title>
+    <example xml:id="ex-rowops-matrixmult-cont"><title>Continuing Gauss-Jordan with matrix multiplication</title>
       <statement>
         <p>
           Let's return to the matrix in <xref ref="ex-rowops-matrixmult"/> and continue our row reducing process. 
@@ -151,7 +151,7 @@
       why that has to be the case based on properties of elementary matrices. 
     </p>
 
-    <exercise label="ex-elem-inverses"><title>Inverses of elementary matrices</title>
+    <exercise xml:id="ex-elem-inverses" label="ex-elem-inverses"><title>Inverses of elementary matrices</title>
       <introduction>
         <p>
           There are 3 kinds of elementary row operations and so there are 3 kinds of elementary matrices: 

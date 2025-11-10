@@ -36,7 +36,7 @@
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
     <!-- <version include=" "/> -->
-    <version include="responses online-worksheets"/>
+    <version include="responses online-worksheets interactive"/>
   </source>
 
   <numbering>

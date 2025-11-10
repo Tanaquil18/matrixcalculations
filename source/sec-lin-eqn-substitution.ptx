@@ -618,33 +618,6 @@
       </md>
   </p>
 
-
-  
-  
-
-  <!-- <p>
-    The following are examples of linear equations:
-    <md>
-      <mrow>2x+3y-7z\amp =29</mrow>
-      <mrow>x_1+\frac72x_2+x_3-x_4+17x_5\amp =\sqrt[3]{-10}</mrow>
-      <mrow>y_1+14^2y_4+4\amp =y_2+13-y_1</mrow>
-      <mrow>\sqrt{7}r+\pi s +\frac{3t}{5}\amp = \cos(45^\circ)</mrow>
-    </md>
-  </p>
-  <p>
-    Notice that the coefficients and constants can be fractions and irrational numbers (like <m>\pi</m>, <m>\sqrt[3]{-10}</m> and
-    <m>\cos(45^\circ)</m>).
-    The variables only come in the form of <m>a_ix_i</m>;
-    that is, just one variable multiplied by a coefficient.
-    (Note that <m>\frac{3t}{5} = \frac{3}{5}t</m>, just a variable multiplied by a coefficient.)
-    Also, it doesn't really matter what side of the equation we put the variables and the constants,
-    although most of the time we write them with the variables on the left and the constants on the right.
-  </p>
-  <p>
-    We would not regard the above collection of equations to constitute a system of equations,
-    since each equation uses differently named variables.
-  </p>-->
-
   <p>
     Another example of a system of linear equations is
     <md>
@@ -660,26 +633,6 @@
     We could have had fewer, even just one,
     and we could have had more.
   </p>
-  <!--<p>
-    To get a better feel for what a linear equation is,
-    we point out some examples of what are
-    <em>not</em> linear equations.
-    <md>
-      <mrow>2xy+z\amp =1</mrow>
-      <mrow>5x^2+2y^5\amp =100</mrow>
-      <mrow>\frac1x+\sqrt{y}+24z\amp =3</mrow>
-      <mrow>\sin^2x_1+\cos^2x_2 \amp = 29</mrow>
-      <mrow>2^{x_1} + \ln x_2 \amp = 13</mrow>
-    </md>
-  </p>
-  <p>
-    The first example is not a linear equation since the variables <m>x</m> and <m>y</m> are multiplied together.
-    The second is not a linear equation because the variables are raised to powers other than 1;
-    that is also a problem in the third equation
-    (remember that <m>1/x = x^{-1}</m> and <m>\sqrt{x} = x^{1/2}</m>).
-    Our variables cannot be the argument of function like <m>\sin</m>,
-    <m>\cos</m> or <m>\ln</m>, nor can our variables be raised as an exponent.
-  </p> -->
 
   <p>
     At this stage, we have yet to discuss how to <em>efficiently</em> find a solution to a system of linear equations.

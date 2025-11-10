@@ -14,6 +14,7 @@
   <xi:include href="sec-matrixinverse2vars.ptx" />
   <xi:include href="sec-largerinverses.ptx"/>
   <xi:include href="sec-elementarymatrices.ptx"/>
+  <xi:include href="sec-LUdecomposition.ptx"/>
 
 
 </chapter>
