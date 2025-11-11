@@ -30,7 +30,7 @@
     </listing>
 
     <p>
-      Running the code above shows that internally, when using Python, the computer does not have the same answer for 
+      Running the code above shows that when using Python, the computer does not have the same answer for 
       <c>0.1 + 0.2</c> and <c>0.3</c>. Computers perform arithmetic using base 2 numbers, which means
        that numbers we enter in decimal form, such as <m>0.1</m>, must be converted to base 2.  Even 
        though 0.1 has a simple decimal (base 10) form, its representation in base 2 is the repeating decimal 
@@ -547,10 +547,7 @@
     <p>
       We will practice the method more and explore what happens if we do need to swap rows during the Participate material.
     </p>
-
-     <!-- David's 3x3 for participate, and PA=LU.  Maybe also why triangular times triangular is still triangular? -->
-
-      
+     
       
     <reading-questions xml:id="rqs-LUdecomposition">
       <exercise label="rq-LU-triangularforms"><title>Triangular forms</title>
@@ -570,7 +567,7 @@
       </matching>
     </exercise>
 
-    <exercise label="parsons-LU-decomp" adaptive="yes"><title>Parsons Problem, LU-decomposition</title>
+    <exercise label="parsons-LU-decomp2" adaptive="yes"><title>Parsons Problem, LU-decomposition</title>
         <statement>
           <p>
             Put the correct steps in the correct order to find an LU-decomposition of 
@@ -586,31 +583,35 @@
             <m>\frac{1}{2}R_2 \rightarrow R_2</m>, then <m>-2R_2+R_3 \rightarrow R_3</m>.
           </p>
         </block>
-        <block order="5">
-          <p>
-             Using elementary matrices to perform the row operations means that
-            <me>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]A=U</me>. 
-          </p>
-        </block>
-        <block order="1" correct="no">
-          <p>
-            Using elementary matrices to perform the row operations means that
-            <me>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]A=U</me>. 
-          </p>
+        <block order="1">
+          <choice correct="yes">
+            <p>
+              Using elementary matrices to perform the row operations means that
+              <me>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]A=U</me>. 
+            </p>
+          </choice>
+          <choice correct="no">
+            <p>
+              Using elementary matrices to perform the row operations means that
+              <me>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]A=U</me>. 
+            </p>
+          </choice>
         </block>
         <block order="3">
-          <p>
-            Solving for <m>A</m> gives
-            <me>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]U</me>,
-            and the product of lower triangular matrices is still lower triangular, so <m>A=LU</m>.
-          </p>
-        </block>
-        <block order="4" correct="no">
-          <p>
-            Solving for <m>A</m> gives
-            <me>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]U</me>,
-            and the product of lower triangular matrices is still lower triangular, so <m>A=LU</m>.
-          </p>
+          <choice correct="yes">
+              <p>
+                Solving for <m>A</m> gives
+                <me>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]U</me>,
+                and the product of lower triangular matrices is still lower triangular, so <m>A=LU</m>.
+              </p>
+          </choice>
+          <choice correct="no">
+              <p>
+                Solving for <m>A</m> gives
+                <me>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]U</me>,
+                and the product of lower triangular matrices is still lower triangular, so <m>A=LU</m>.
+              </p>
+          </choice>
         </block>
         </blocks>
       </exercise>
@@ -707,6 +708,11 @@
       </ul>
     </p>
   </conclusion>
+
+  <!-- David's 3x3 for participate, and PA=LU.  
+   Going over the solving part.
+   Maybe also why triangular times triangular is still triangular? 
+   And how LU isn't unique.  -->
   
 
 
