@@ -558,10 +558,11 @@
             </p>
           </sidebyside>
           <p>
-            This means that <me>
+            We could perform one more row operation to scale the third row and put a 1 in the last position, but this is already an upper triangular matrix
+            so we can just stop here and then <me>
               U=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp 0 \amp -4 \end{array}\right]
-            </me>
-            and 
+            </me>.
+            Then using elementary matrices to perform the row operations would result in
             <me>
               E_3E_2E_1 A = U
             </me>, 
@@ -569,7 +570,7 @@
             <md>
               <mrow>E_1=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ -1 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] \amp \amp E_2=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 3 \amp 0 \amp 1 \end{array}\right] \amp \amp E_3=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 1 \amp 1 \end{array}\right] </mrow>
             </md>.
-            Then 
+            This means that
             <md>
               <mrow> L \amp = E_1^{-1}E_2^{-1}E_3^{-1} </mrow>
               <mrow> \amp = \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -3 \amp 0 \amp 1 \end{array}\right] \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -1 \amp 1 \end{array}\right] </mrow>
