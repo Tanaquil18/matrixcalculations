@@ -432,9 +432,16 @@
             <p>
               Suppose we are trying to solve the system 
               <md>
-                <mrow>x + 2y \amp = -1</mrow>
-                <mrow>3x + 5y \amp = -2</mrow>
-              </md>.
+                <mrow>x_1 + 2x_2 \amp = -1</mrow>
+                <mrow>3x_1 + 5x_2 \amp = -2</mrow>
+              </md>,
+              which we can view as <me>
+                AX=B
+              </me>,
+              for <m>A=\begin{bmatrix}1 \amp 2 \\ 3 \amp 5 \end{bmatrix}</m>, <m>X=\begin{bmatrix}x_1 \\ x_2 \end{bmatrix}</m>,
+              and <m>B=\begin{bmatrix}-1 \\ -2 \end{bmatrix}</m>.
+            </p>
+            <p>
               We know we could do this by augmenting and row reducing, or by calculating the inverse 
               of the coefficient matrix.  Let's see yet another way to solve this system.
             </p>
@@ -465,31 +472,39 @@
               a lower-triangular matrix multiplied by an upper-triangular matrix.
             </p>
             <p>
-              How has this helped us? We were trying to solve the linear system <m>AX=B</m>, and 
-              we can rewrite <m>A</m> as <m>LU</m>, so we are now trying to solve <m>LUX=B</m>. We know that 
-              both <m>L</m> and <m>U</m> are <m>2\times 2</m> matrices, and both <m>X</m> and <m>B</m> are
-              <m>2\times 1</m> matrices. That means that <m>UX</m> is also a <m>2\times 1</m> matrix. For the moment,
+              How has this helped us? A linear system with a triangular coefficient matrix does not need to be row reduced any further.  
+              It is more efficient to solve such a system with substitution, 
+              coming full-circle to what we did back in <xref ref="sec-lin-eqn-substitution"/> before we ever learned about
+              elimination and row operations.  
+            </p>
+            <p>
+              We are trying to solve the linear system <m>AX=B</m>, and
+              we have seen how to rewrite <m>A</m> as <m>LU</m>, so we are now trying to solve <m>LUX=B</m>. We know 
+              that <m>U</m> is a <m>2\times 2</m> matrix and <m>X</m> is a
+              <m>2\times 1</m> matrix. That means that <m>UX</m> is also a <m>2\times 1</m> matrix. For the moment,
               let's define that <m>Y=UX=\begin{bmatrix} y_1 \\ y_2 \end{bmatrix}</m>, so that the system we're trying to solve
               is 
               <md>
-                <mrow> AX \amp = B \amp \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \amp = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
-                <mrow> LUX \amp = B \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \amp = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
-                <mrow> LY \amp = B \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} \amp = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
+                <mrow> \amp \amp AX \amp = B \amp \amp \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
+                <mrow> \text{replace }A \text{ with } LU \amp \amp LUX \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
+                <mrow> \text{replace }UX \text{ with } Y  \amp \amp LY \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
               </md>
-              Look at the first row of <m>LY=B</m>.  We can immediately see that <m>y_1=-1</m>, and then we can substitute into the equation
-              from the second row to get that <me>3y_1+y_2=-2</me>, so <me>3(-1)+y_2=-2</me> and thus <m>y_2=1</m>.
+              To see how this is easier to solve, look at the first row of <m>LY=B</m>.  
+              We see that <m>y_1+0y_2=-1</m>, which means that <m>y_1=-1</m>.  The equation from the 
+              second row is <me>3y_1+y_2=-2</me>, and we can substitute the value of <m>y_1</m> we just found
+               <me>3(-1)+y_2=-2</me> and thus <m>y_2=1</m>.
             </p>
             <p>
-              But remember that we defined <m>UX=Y</m>, which means that
+              We are trying to solve for <m>X</m> and we now know what <m>Y</m> equals, but remember that we defined <m>UX=Y</m>, which means that
               <me>
                 \begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix}x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix}-1 \\ 1 \end{bmatrix}
               </me>.
-              Looking at the second row, we can read off that <m>x_2=-1</m>, and then substituting into the equation from the first row
-              gives us that 
+              Looking at the second row, we can see that <m>x_2=-1</m>, and then substituting into the equation from the first row
+              gives us
               <me>
                 x_1+2x_2=-1
               </me>,
-              so <me>x_1+2(-1)=-1</me>, which means that <m>x_1=1</m>.  The solution to the original system is
+              so <me>x_1+2(-1)=-1</me>, which means that <m>x_1=1</m>.  Then the solution to <m>AX=B</m> is
               <me>
                 X=\begin{bmatrix} 1 \\ -1 \end{bmatrix}
               </me>.
@@ -505,6 +520,78 @@
       instead of another billion to perform all of Gauss-Jordan elimination again on the second system.  That is a significant time and memory 
       savings, and also there's orders of magnitude fewer opportunities for numerical errors to propagate.   
     </p>
+    <p>
+      Let's see another example for a larger matrix.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Find an <m>LU</m>-decomposition for <me>A=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 1 \amp 1 \amp -1 \\ -3 \amp -1 \amp -7 \end{array}\right]</me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The row operations we need to perform are
+        </p>
+        <sidebyside widths="25% 50%" margins="25% 0%" valign="middle">
+            <p>
+                <m>-R_1+R_2\rightarrow R_2</m>
+            </p>
+            <p>
+                <m>\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ -3 \amp -1 \amp -7 \end{array}\right]</m>
+            </p>
+        </sidebyside>
+        <sidebyside widths="25% 50%" margins="25% 0%" valign="middle">
+            <p>
+                <m>3R_1+R_3\rightarrow R_3</m>
+            </p>
+            <p>
+                <m>\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp -1 \amp -1 \end{array}\right]</m>
+            </p>
+          </sidebyside>
+          <sidebyside widths="25% 50%" margins="25% 0%" valign="middle">
+            <p>
+                <m>R_2+R_3\rightarrow R_3</m>
+            </p>
+            <p>
+                <m>\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp 0 \amp -4 \end{array}\right]</m>
+            </p>
+          </sidebyside>
+          <p>
+            This means that <me>
+              U=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp 0 \amp -4 \end{array}\right]
+            </me>
+            and 
+            <me>
+              E_3E_2E_1 A = U
+            </me>, 
+            where <m>E_1, E_2</m>, and <m>E_3</m> are the elementary matrices
+            <md>
+              <mrow>E_1=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ -1 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] \amp \amp E_2=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 3 \amp 0 \amp 1 \end{array}\right] \amp \amp E_3=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 1 \amp 1 \end{array}\right] </mrow>
+            </md>.
+            Then 
+            <md>
+              <mrow> L \amp = E_1^{-1}E_2^{-1}E_3^{-1} </mrow>
+              <mrow> \amp = \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -3 \amp 0 \amp 1 \end{array}\right] \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -1 \amp 1 \end{array}\right] </mrow>
+              <mrow> \amp = \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \\ -3 \amp -1 \amp 1 \end{array}\right]</mrow>
+            </md>.
+
+            We can use Sage to verify our computations.
+          </p>
+          <sage>
+            <input>
+              A=matrix(QQ,3,3,[[1,0,2],[1,1,-1],[-3,-1,-7]])
+              show(A)
+              E1=matrix(QQ,3,3,[[1,0,0],[-1,1,0],[0,0,1]])
+              E2=matrix(QQ,3,3,[[1,0,0],[0,1,0],[3,0,1]])
+              E3=matrix(QQ,3,3,[[1,0,0],[0,1,0],[0,1,1]])
+              U=E3*E2*E1*A
+              L=E1^(-1)*E2^(-1)*E3^(-1)
+              show(L*U)
+            </input>
+          </sage>
+      </solution>
+    </example>
     <p>
       Let's put it all together and summarize the process.
     </p>
@@ -560,6 +647,7 @@
         <premise ref="upper lower"><m>\left[\begin{array}{rr}1\amp 0  \\ 0 \amp 1  \end{array}\right]</m></premise>
         <premise ref="lower"><m>\left[\begin{array}{rrr}-3\amp 0 \amp 0 \\ 2 \amp 2 \amp 0 \\ 3 \amp -4 \amp 1 \end{array}\right]</m></premise>
         <premise ref="nottriang"><m>\left[\begin{array}{rrr}1\amp 2 \amp 0 \\ 2 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m></premise>
+        <premise ref="nottriang"><m>\left[\begin{array}{rrr}0\amp 0 \amp 1 \\ 0 \amp 1 \amp 2 \\ 2 \amp 3 \amp 1 \end{array}\right]</m></premise>
         <premise ref="upper"><m>\left[\begin{array}{rrr}1\amp 2 \amp 3 \\ 0 \amp 0 \amp 2 \\ 0 \amp 0 \amp -1 \end{array}\right]</m></premise>
         <response xml:id="upper" order="1">Upper triangular</response>
         <response xml:id="lower" order="2">Lower triangular</response>
