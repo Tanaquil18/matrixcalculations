@@ -120,16 +120,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.17';
+eBookConfig.runestone_version = '7.9.18';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.3ea59cc2563cc8e9.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.29d986501a531379.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.cefb0224014f3333.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c50cdcad467c8d3e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
@@ -353,6 +353,13 @@ sagecell.makeSagecell({
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-elementarymatrices.html#exer-elementarymatrices" class="internal"><span class="title">Additional Practice</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-LUdecomposition.html" class="internal"><span class="codenumber">2.6</span> <span class="title">LU-decomposition</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-LUdecomposition.html#subsec-LUdecomposition-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-LUdecomposition.html#rqs-LUdecomposition" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
@@ -429,7 +436,7 @@ R_2+R_3\amp \rightarrow R_3\\
 <div class="autopermalink" data-description="Paragraph"><a href="#ws-largerinverses-3-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para" id="ws-largerinverses-3-2-3-1-2-2">
-<span class="process-math">\(D=\left[\begin{array}{rrr|rrr}\frac{1}{2} \amp 0 \amp 0 \amp 1 \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \amp 0 \amp 1 \amp 0\\ \frac{1}{2} \amp -\frac{1}{3} \amp 1\amp 0 \amp 0 \amp 1\end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-largerinverses-3-2-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(D=\left[\begin{array}{rrr|rrr}\frac{1}{2} \amp 0 \amp 0 \amp 1 \amp 0 \amp 0 \\ \frac{1}{2} \amp -\frac{1}{3} \amp 0 \amp 0 \amp 1 \amp 0\\ \frac{1}{2} \amp \frac{1}{3} \amp 1\amp 0 \amp 0 \amp 1\end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-largerinverses-3-2-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 </div></div> <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 2.b"><a href="#ws-largerinverses-3-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2: Inverse and row operations, lower triangular matrix"><a href="#ws-largerinverses-3-2" title="Copy heading and permalink for Worksheet Exercise 2: Inverse and row operations, lower triangular matrix" aria-label="Copy heading and permalink for Worksheet Exercise 2: Inverse and row operations, lower triangular matrix">🔗</a></div></article></section><section class="onepage" id="ws-largerinverses-4"><article class="exercise exercise-like" id="ws-largerinverses-4-1"><h4 class="heading">

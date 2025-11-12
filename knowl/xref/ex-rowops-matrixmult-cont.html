@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: salem                          *-->
+<!--*  Palette: ice-fire                     *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Continuing Gauss-Jordan with matrix multiplication.</span>
+</h4>
+<div class="para logical">
+<div class="para">Let’s return to the matrix in <a href="sec-elementarymatrices.html#ex-rowops-matrixmult" class="xref" data-knowl="./knowl/xref/ex-rowops-matrixmult.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.5.1: Row operation and matrix multiplication">Example 2.5.1</a> and continue our row reducing process. We already defined <span class="process-math">\(E_1\)</span> and calculated</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-rowops-matrixmult.html">
+\begin{equation*}
+E_1A = \left[\begin{array}{rrr} 1 \amp 2 \\ 0 \amp -1 \end{array}\right]
+\end{equation*}
+</div>
+<div class="para">The next step in Gauss-Jordan elimination is <span class="process-math">\(-R_2\rightarrow R_2\text{.}\)</span> Doing this operation to the <span class="process-math">\(2 \times 2\)</span> identity matrix yields</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-rowops-matrixmult.html">
+\begin{align*}
+\amp \amp \amp \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}\\
+-R_2 \amp\rightarrow R_2 \amp \amp \begin{bmatrix} 1 \amp 0 \\ 0 \amp -1 \end{bmatrix}\text{.}
+\end{align*}
+</div>
+<div class="para">If we let <span class="process-math">\(E_2=\begin{bmatrix}1 \amp 0 \\ 0 \amp -1 \end{bmatrix}\text{,}\)</span> and multiply <span class="process-math">\(E_2\)</span> by the matrix we already had after multiplying by <span class="process-math">\(E_1\text{,}\)</span> we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-rowops-matrixmult.html">
+\begin{align*}
+E_2 (E_1A) \amp = \begin{bmatrix}1 \amp 0 \\ 0 \amp -1 \end{bmatrix} \begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix} \\
+\amp = \begin{bmatrix} 1 \amp 2 \\ 0 \amp 1 \end{bmatrix} \text{.}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-rowops-matrixmult-cont-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical">
+<div class="para">There’s one more row operation we need to do to finish row reducing <span class="process-math">\(A\text{.}\)</span> Let’s create <span class="process-math">\(E_3\)</span> by performing <span class="process-math">\(-2R_2+R_1 \rightarrow R_1\)</span> on the <span class="process-math">\(2\times 2\)</span> identity matrix</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \amp \amp \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}\\
+-2R_2+R_1 \amp\rightarrow R_1 \amp \amp \begin{bmatrix} 1 \amp -2 \\ 0 \amp 1 \end{bmatrix}\text{,}
+\end{align*}
+</div>
+<div class="para">and multiplying <span class="process-math">\(E_3\)</span> by the matrix we had gives us</div>
+<div class="displaymath process-math">
+\begin{align*}
+E_3 (E_2E_1A) \amp = \begin{bmatrix}1 \amp -2 \\ 0 \amp 1 \end{bmatrix} \begin{bmatrix} 1 \amp 2 \\ 0 \amp 1 \end{bmatrix} \\
+\amp = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix} \text{.}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-rowops-matrixmult-cont-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.5.4: Continuing Gauss-Jordan with matrix multiplication"><a href="#ex-rowops-matrixmult-cont" title="Copy heading and permalink for Example 2.5.4: Continuing Gauss-Jordan with matrix multiplication" aria-label="Copy heading and permalink for Example 2.5.4: Continuing Gauss-Jordan with matrix multiplication">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-elementarymatrices.html#ex-rowops-matrixmult-cont">in-context</a></span>
+</body>
+</html>

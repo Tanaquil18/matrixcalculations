@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: salem                          *-->
+<!--*  Palette: ice-fire                     *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>LU-decomposition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Matrix Calculations">
+<meta property="book:author" content="Chrissy Safranski">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.18';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cefb0224014f3333.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c50cdcad467c8d3e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
+</head>
+<body id="matrixcalculations" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Matrix Calculations</span> <span class="subtitle">A subspace of linear algebra</span></a></h1>
+<p class="byline">Chrissy Safranski</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-elementarymatrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrixoperations.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\newcommand{\N}{\mathbb N} 
+\newcommand{\Z}{\mathbb Z} 
+\newcommand{\Q}{\mathbb Q} 
+\newcommand{\R}{\mathbb R}
+\newcommand{\lambd}{\lambda}
+\newcommand{\rrefarrow}{\xrightarrow{\mathrm{rref}}}
+\newcommand{\tr}[1]{\mathrm{tr}#1} 
+\newcommand{\colvector}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\complex}[1]{\mathbb{C}^{#1}}
+\newcommand{\spn}[1]{\left\langle#1\right\rangle}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\leading}[1]{\boxed{#1}}
+\newcommand{\nullity}[1]{n\left(#1\right)}
+\newcommand{\dimension}[1]{\dim\left(#1\right)}
+\newcommand{\nsp}[1]{\mathcal{N}\!\left(#1\right)}
+\newcommand{\rank}[1]{r\left(#1\right)}
+\newcommand{\csp}[1]{\mathcal{C}\!\left(#1\right)}
+\newcommand{\rsp}[1]{\mathcal{R}\!\left(#1\right)}
+\newcommand{\lns}[1]{\mathcal{L}\!\left(#1\right)}
+\newcommand{\linearsystem}[2]{\mathcal{LS}\!\left(#1,\,#2\right)}
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\lteval}[2]{#1\left(#2\right)}
+\newcommand{\ltdefn}[3]{#1\colon #2\rightarrow#3}
+\newcommand{\zerovector}{\vect{0}}
+\newcommand{\homosystem}[1]{\linearsystem{#1}{\zerovector}}
+\newcommand{\eigenspace}[2]{\mathcal{E}_{#1}\left(#2\right)}
+\newcommand{\matrixrep}[3]{M^{#1}_{#2,#3}}
+\newcommand{\vectrepname}[1]{\rho_{#1}}
+\newcommand{\vectrep}[2]{\lteval{\vectrepname{#1}}{#2}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-lineqnandaugmentedmatrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations, Augmented Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-lin-eqn-substitution.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Equations and Substitution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lin-eqn-substitution.html#subsec-lin-eqn-dc" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lin-eqn-substitution.html#ww-lin-eqn-subs" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-lin-eqn-substitution.html#exer-lin-eqn-subs" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrices-elimination.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrices and Elimination</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrices-elimination.html#subsec-matrices-elim-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrices-elimination.html#rqs-matrices-elim" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrices-elimination.html#ws-matrices-elim" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrices-elimination.html#ww-matrices-elim" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrices-elimination.html#exer-matrices-elim" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-row-ops.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-row-ops.html#subsec-row-ops-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-row-ops.html#rqs-row-ops" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-row-ops.html#ws-row-ops" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-row-ops.html#ww-row-ops" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-row-ops.html#exer-row-ops" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-rref.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Reduced Row Echelon Form</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-rref.html#subsec-rref-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-rref.html#rqs-rref" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-rref.html#ws-rref" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-rref.html#ww-rref" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-rref.html#exer-rref" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-consistency.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Consistent and Inconsistent Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-consistency.html#subsec-consistency-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-consistency.html#subsubsec-typesofsolutions" class="internal"><span class="title">Types of solutions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-consistency.html#subsubsec-consistent-or-inconsistent" class="internal"><span class="title">Determining Consistency</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-consistency.html#subsubsec-infinitesolutions" class="internal"><span class="title">More on Infinite Solutions</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-consistency.html#rqs-consistency" class="internal"><span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-consistency.html#ws-consistency" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-consistency.html#ww-consistency" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-consistency.html#exer-consistency" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Problem Solving with Linear Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-problem-solving.html#subsec-problem-solving-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-problem-solving.html#rqs-problem-solving" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-problem-solving.html#ws-problem-solving" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-problem-solving.html#ww-problem-solving" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-problem-solving.html#exer-problem-solving" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-matrixoperations.html" class="internal"><span class="codenumber">2</span> <span class="title">Matrices as Mathematical Objects</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrixarithmetic.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Matrix Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrixarithmetic.html#subsec-matrixarithmetic-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#rqs-matrixarithmetic" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#ws-matrixarithmetic" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#ww-matrixarithmetic" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixarithmetic.html#exer-matrixarithmetic" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrixmult.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Matrix Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrixmult.html#subsec-matrixmult-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrixmult.html#rqs-matrixmult" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrixmult.html#ws-matrixmultiplication" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrixmult.html#ww-matrixmult" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixmult.html#exer-" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-matrixinverse2vars.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Matrix Inverses and Two Variable Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-matrixinverse2vars.html#subsec-matrixinverse2vars-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-matrixinverse2vars.html#rqs-matrixinverse2vars" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-matrixinverse2vars.html#ws-matrixinverse2vars" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-matrixinverse2vars.html#ww-matrixinverse2vars" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-matrixinverse2vars.html#exer-matrixinvers2vars" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-largerinverses.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Calculating Larger Inverses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-largerinverses.html#subsec-largerinverses-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-largerinverses.html#rqs-largerinverses" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-largerinverses.html#ws-largerinverses" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-largerinverses.html#ww-largerinverses" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-largerinverses.html#exer-largerinverses" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-elementarymatrices.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Elementary matrices and invertibility</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-elementarymatrices.html#subsec-elementary-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-elementarymatrices.html#rqs-elementarymatrices" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-elementarymatrices.html#ws-elementarymatrices" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-elementarymatrices.html#ww-elementarymatrices" class="internal"><span class="title">Practice</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-elementarymatrices.html#exer-elementarymatrices" class="internal"><span class="title">Additional Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-LUdecomposition.html" class="internal"><span class="codenumber">2.6</span> <span class="title">LU-decomposition</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-LUdecomposition.html#subsec-LUdecomposition-bc" class="internal"><span class="title">Prepare</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-LUdecomposition.html#rqs-LUdecomposition" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
+</li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-LUdecomposition"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">LU-decomposition</span>
+</h2>
+<section class="introduction" id="sec-LUdecomposition-2"><div class="para" id="sec-LUdecomposition-2-1">In this section, we see some issues that can arise when computers use the <a href="sec-rref.html#def_gaussian_elimination" class="xref" data-knowl="./knowl/xref/def_gaussian_elimination.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Gauss-Jordan Elimination">Gauss-Jordan Elimination</a> algorithm, and we learn some of what computers do to compute solutions more efficiently, especially when we want to solve equations <span class="process-math">\(AX = B\)</span> for several different column matrices <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-LUdecomposition-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-LUdecomposition-bc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Prepare</span>
+</h3>
+<div class="para" id="subsec-LUdecomposition-bc-2">Computers are very fast at performing computations, but sometimes our brains are still better.  For instance, we know that <span class="process-math">\(0.1 + 0.2 = 0.3\text{,}\)</span> but execute the code below to see what Python says.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="listing figure-like" id="active-code-python-add"><figcaption><span class="type">Listing</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Adding two decimals<div class="autopermalink" data-description="Listing 2.6.1: Adding two decimals"><a href="#active-code-python-add" title="Copy heading and permalink for Listing 2.6.1: Adding two decimals" aria-label="Copy heading and permalink for Listing 2.6.1: Adding two decimals">🔗</a></div></figcaption><div class="listing__contents"><div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-add-two-decimals"><textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-add-two-decimals_editor" data-question_label="" data-codelens="true" data-timelimit="25000">print(0.1+0.2 == 0.3)
+print(f"The value of 0.1+0.2 to 25 decimal places is: {0.1+0.2:.25f}")
+</textarea></div></div></div></div></figure><div class="para logical" id="subsec-LUdecomposition-bc-4">
+<div class="para">Running the code above shows that when using Python, the computer does not have the same answer for <code class="code-inline tex2jax_ignore">0.1 + 0.2</code> and <code class="code-inline tex2jax_ignore">0.3</code>. Computers perform arithmetic using base 2 numbers, which means that numbers we enter in decimal form, such as <span class="process-math">\(0.1\text{,}\)</span> must be converted to base 2.  Even though 0.1 has a simple decimal (base 10) form, its representation in base 2 is the repeating decimal</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.000110011001100110011001100110011001100110011\ldots\text{.}\text{,}
+\end{equation*}
+</div>
+<div class="para">To accurately represent this number inside a computer would require infinitely many digits, but a computer can only hold a finite number of digits.  Thus, computers are necessarily using an approximation when internally storing most numbers.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LUdecomposition-bc-5">To see this phenomenon in another way, modify and run the code above to display <code class="code-inline tex2jax_ignore">0.3</code> itself to 15 decimal places, and then to 25 decimal places.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LUdecomposition-bc-6">Because computers use a finite number of digits to approximate numbers, they are also prone to <em class="emphasis">round off errors</em>. Gauss-Jordan elimination, when applied to an <span class="process-math">\(n\times n\)</span> matrix, requires approximately <span class="process-math">\(\frac 23 n^3\)</span> operations of multiplying and adding numbers.  The examples we have seen are small enough to do by hand, but applications in computer graphics, machine learning, and many others can easily have hundreds or thousands of variables.  If we have a <span class="process-math">\(1000\times1000\)</span> matrix, performing the Gauss-Jordan algorithm would take roughly a billion operations, and any errors introduced in an operation early on could accumulate and compound as we use that erroneous number in the next operation, and the next, and the next.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LUdecomposition-bc-7">There are a few things computers do to mitigate the issue of numerical errors.  You may have noticed that when we perform Gauss-Jordan elimination by hand, we primarily use only two of the three row operations: <em class="emphasis">scaling</em> and <em class="emphasis">multiply-and-add</em>.  We swap rows only during the forward steps and only if there was a <span class="process-math">\(0\)</span> in a position we needed to use to eliminate nonzero numbers still appearing in the same column.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LUdecomposition-bc-8">However, when computers perform the forward steps, they swap rows so that they are using the number with the largest absolute value to eliminate the other entries in the same column.  This is called <em class="emphasis">partial pivoting</em>, and it helps to reduce the number and magnitude of round off errors.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LUdecomposition-bc-9">Another thing computers do to mitigate operational errors is rewrite the coefficient matrix as a product of matrices which are easier to work with, not unlike in algebra when we solve a quadratic equation by factoring it. We are going to use triangular matrices in this section, but there are many other ways to factor, or <em class="emphasis">decompose</em>, a matrix and each factorization is useful in various different applications and objectives.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LUdecomposition-bc-10">Since we are talking about triangular matrices, let’s make sure we know what those are.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="triangularmatrices"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What are triangular matrices?</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone tabbed_section"><div data-component="tabbedStuff" id="rs-triangularmatrices">
+<div data-component="tab" data-tabname="(a)"><article class="task exercise-like" id="triangularmatrices-a"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="triangularmatrices-a-1-1">Choose the best description of the matrix <span class="process-math">\(\begin{bmatrix} 1 \amp 2 \amp 3 \\ 0 \amp -2 \amp 5 \\ 0 \amp 0 \amp 1 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-triangularmatrices-a" data-multipleanswers="false">
+<li data-component="answer" id="rs-triangularmatrices-a_opt_a"><div class="para" id="triangularmatrices-a-2-1-1-1">Lower triangular<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-a-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-a_opt_a">
+<div class="para" id="triangularmatrices-a-2-1-2-1">A <em class="emphasis">lower triangular</em> matrix must have 0’s in the entries above the main diagonal.  It can have any number, zero or nonzero, in the other positions.</div> <div class="para logical" id="triangularmatrices-a-2-1-2-2">
+<div class="para">Lower triangular matrices have the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} * \amp 0 \amp 0 \\ * \amp * \amp 0 \amp \\ * \amp * \amp * \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+</li>
+<li data-component="answer" id="rs-triangularmatrices-a_opt_b" data-correct=""><div class="para" id="triangularmatrices-a-2-2-1-1">Upper triangular<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-a-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-a_opt_b">
+<div class="para" id="triangularmatrices-a-2-2-2-1">An <em class="emphasis">upper triangular</em> matrix must have 0’s in the entries below the main diagonal.  It can have any number, zero or nonzero, in the other positions.</div> <div class="para logical" id="triangularmatrices-a-2-2-2-2">
+<div class="para">Upper triangular matrices have the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} * \amp * \amp * \\ 0 \amp * \amp * \amp \\ 0 \amp 0 \amp * \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+</li>
+<li data-component="answer" id="rs-triangularmatrices-a_opt_c"><div class="para" id="triangularmatrices-a-2-3-1-1">Both upper and lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-a-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-a_opt_c">
+<div class="para" id="triangularmatrices-a-2-3-2-1">A matrix which is both <em class="emphasis">lower triangular</em> and <em class="emphasis">upper triangular</em> matrix must have 0’s in the entries below and above the main diagonal.  It can have any number, zero or nonzero, in the other positions.</div> <div class="para logical" id="triangularmatrices-a-2-3-2-2">
+<div class="para">Matrices that are both upper and lower triangular have the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} * \amp 0 \amp 0 \\ 0 \amp * \amp 0 \amp \\ 0 \amp 0 \amp * \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+</li>
+<li data-component="answer" id="rs-triangularmatrices-a_opt_d"><div class="para" id="triangularmatrices-a-2-4-1-1">Neither upper nor lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-a-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-a_opt_d"><div class="para" id="triangularmatrices-a-2-4-2-1">There are 0’s below the main diagonal so this is some kind of triangular.</div></li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Task 2.6.2.a"><a href="#triangularmatrices-a" title="Copy heading and permalink for Task 2.6.2.a" aria-label="Copy heading and permalink for Task 2.6.2.a">🔗</a></div></article></div>
+<div data-component="tab" data-tabname="(b)"><article class="task exercise-like" id="triangularmatrices-b"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="triangularmatrices-b-1-1">Choose the best description of the matrix <span class="process-math">\(\begin{bmatrix} 1 \amp 0 \amp 3 \\ 2 \amp -2 \amp 0 \\ 3 \amp 5 \amp -1 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-triangularmatrices-b" data-multipleanswers="false">
+<li data-component="answer" id="rs-triangularmatrices-b_opt_a"><div class="para" id="triangularmatrices-b-2-1-1-1">Lower triangular<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-b-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-b_opt_a">
+<div class="para" id="triangularmatrices-b-2-1-2-1">A <em class="emphasis">lower triangular</em> matrix must have 0’s in the entries above the main diagonal.  It can have any number, zero or nonzero, in the other positions.</div> <div class="para logical" id="triangularmatrices-b-2-1-2-2">
+<div class="para">Lower triangular matrices have the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} * \amp 0 \amp 0 \\ * \amp * \amp 0 \amp \\ * \amp * \amp * \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+</li>
+<li data-component="answer" id="rs-triangularmatrices-b_opt_b"><div class="para" id="triangularmatrices-b-2-2-1-1">Upper triangular<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-b-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-b_opt_b">
+<div class="para" id="triangularmatrices-b-2-2-2-1">An <em class="emphasis">upper triangular</em> matrix must have 0’s in the entries below the main diagonal.  It can have any number, zero or nonzero, in the other positions.</div> <div class="para logical" id="triangularmatrices-b-2-2-2-2">
+<div class="para">Upper triangular matrices have the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} * \amp * \amp * \\ 0 \amp * \amp * \amp \\ 0 \amp 0 \amp * \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+</li>
+<li data-component="answer" id="rs-triangularmatrices-b_opt_c"><div class="para" id="triangularmatrices-b-2-3-1-1">Both upper and lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-b-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-b_opt_c">
+<div class="para" id="triangularmatrices-b-2-3-2-1">A matrix which is both <em class="emphasis">lower triangular</em> and <em class="emphasis">upper triangular</em> matrix must have 0’s in the entries below and above the main diagonal.  It can have any number, zero or nonzero, in the other positions.</div> <div class="para logical" id="triangularmatrices-b-2-3-2-2">
+<div class="para">Matrices that are both upper and lower triangular have the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} * \amp 0 \amp 0 \\ 0 \amp * \amp 0 \amp \\ 0 \amp 0 \amp * \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div>
+</li>
+<li data-component="answer" id="rs-triangularmatrices-b_opt_d" data-correct=""><div class="para" id="triangularmatrices-b-2-4-1-1">Neither upper nor lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-b-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-b_opt_d"><div class="para" id="triangularmatrices-b-2-4-2-1">There is a nonzero entry above the main diagonal, in the first row and third column, and also below the main diagonal in the second row and first column.  This matrix is not triangular.</div></li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Task 2.6.2.b"><a href="#triangularmatrices-b" title="Copy heading and permalink for Task 2.6.2.b" aria-label="Copy heading and permalink for Task 2.6.2.b">🔗</a></div></article></div>
+<div data-component="tab" data-tabname="(c)"><article class="task exercise-like" id="triangularmatrices-c"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="triangularmatrices-c-1-1">Choose the best description of the matrix <span class="process-math">\(\begin{bmatrix} 3 \amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-triangularmatrices-c" data-multipleanswers="false">
+<li data-component="answer" id="rs-triangularmatrices-c_opt_a"><div class="para" id="triangularmatrices-c-2-1-1-1">Lower triangular<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-c-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-c_opt_a"><div class="para" id="triangularmatrices-c-2-1-2-1">There are zeros above the main diagonal, but there’s a better choice.</div></li>
+<li data-component="answer" id="rs-triangularmatrices-c_opt_b"><div class="para" id="triangularmatrices-c-2-2-1-1">Upper triangular<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-c-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-c_opt_b"><div class="para" id="triangularmatrices-c-2-2-2-1">There are zeros below the main diagonal, but there’s a better choice.</div></li>
+<li data-component="answer" id="rs-triangularmatrices-c_opt_c" data-correct=""><div class="para" id="triangularmatrices-c-2-3-1-1">Both upper and lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-c-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-c_opt_c"><div class="para" id="triangularmatrices-c-2-3-2-1">There are zeros both above and below the main diagonal. We also call such a matrix <em class="emphasis">diagonal</em>.</div></li>
+<li data-component="answer" id="rs-triangularmatrices-c_opt_d"><div class="para" id="triangularmatrices-c-2-4-1-1">Neither upper nor lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-c-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-c_opt_d"><div class="para" id="triangularmatrices-c-2-4-2-1">There are 0’s below (and above) the main diagonal, so this is some kind of triangular.</div></li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Task 2.6.2.c"><a href="#triangularmatrices-c" title="Copy heading and permalink for Task 2.6.2.c" aria-label="Copy heading and permalink for Task 2.6.2.c">🔗</a></div></article></div>
+<div data-component="tab" data-tabname="(d)"><article class="task exercise-like" id="triangularmatrices-d"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="triangularmatrices-d-1-1">Choose the best description of the matrix <span class="process-math">\(\begin{bmatrix} 2 \amp 0 \amp 0 \\ -1 \amp 0 \amp 0 \\ 3 \amp 5 \amp -4 \end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-d-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-triangularmatrices-d" data-multipleanswers="false">
+<li data-component="answer" id="rs-triangularmatrices-d_opt_a" data-correct=""><div class="para" id="triangularmatrices-d-2-1-1-1">Lower triangular<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-d-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-d_opt_a"><div class="para" id="triangularmatrices-d-2-1-2-1">A <em class="emphasis">lower triangular</em> matrix must have 0’s in the entries above the main diagonal.  It can have any number, zero or nonzero, in the other positions.</div></li>
+<li data-component="answer" id="rs-triangularmatrices-d_opt_b"><div class="para" id="triangularmatrices-d-2-2-1-1">Upper triangular<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-d-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-d_opt_b"><div class="para" id="triangularmatrices-d-2-2-2-1">There is a nonzero entry below the main diagonal, in the second row and first column, for example.</div></li>
+<li data-component="answer" id="rs-triangularmatrices-d_opt_c"><div class="para" id="triangularmatrices-d-2-3-1-1">Both upper and lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-d-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-d_opt_c"><div class="para" id="triangularmatrices-d-2-3-2-1">There is a nonzero entry below the main diagonal, in the second row and first column, for example.</div></li>
+<li data-component="answer" id="rs-triangularmatrices-d_opt_d"><div class="para" id="triangularmatrices-d-2-4-1-1">Neither upper nor lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#triangularmatrices-d-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
+<li data-component="feedback" id="rs-triangularmatrices-d_opt_d">
+<div class="para" id="triangularmatrices-d-2-4-2-1">There are 0’s above the main diagonal so this is some kind of triangular.  The entries on the main diagonal can be zero or nonzero.</div> <div class="para logical" id="triangularmatrices-d-2-4-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 2 \amp \boxed{0} \amp \boxed{0} \\ -1 \amp 0 \amp \boxed{0} \\ 3 \amp 5 \amp -4 \end{bmatrix}
+\end{equation*}
+</div></div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Task 2.6.2.d"><a href="#triangularmatrices-d" title="Copy heading and permalink for Task 2.6.2.d" aria-label="Copy heading and permalink for Task 2.6.2.d">🔗</a></div></article></div>
+</div></div></div>
+<div class="autopermalink" data-description="Activity 2.6.2: What are triangular matrices?"><a href="#triangularmatrices" title="Copy heading and permalink for Activity 2.6.2: What are triangular matrices?" aria-label="Copy heading and permalink for Activity 2.6.2: What are triangular matrices?">🔗</a></div></article><div class="para" id="subsec-LUdecomposition-bc-12">Recall <a href="sec-elementarymatrices.html#ex-rowops-matrixmult" class="xref" data-knowl="./knowl/xref/ex-rowops-matrixmult.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.5.1: Row operation and matrix multiplication">Example 2.5.1</a> and <a href="sec-elementarymatrices.html#ex-rowops-matrixmult-cont" class="xref" data-knowl="./knowl/xref/ex-rowops-matrixmult-cont.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.5.4: Continuing Gauss-Jordan with matrix multiplication">Example 2.5.4</a> where we used elementary matrices to row reduce a matrix.  In LU-decomposition, we are going to stop after the forward steps and not continue to full reduced row echelon form.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="ex-LU-decomp1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving a system with an LU factorization.</span>
+</h4>
+<div class="para logical" id="ex-LU-decomp1-2-1">
+<div class="para">Suppose we are trying to solve the system</div>
+<div class="displaymath process-math" id="ex-LU-decomp1-2-1-1">
+\begin{align*}
+x_1 + 2x_2 \amp = -1\\
+3x_1 + 5x_2 \amp = -2\text{,}
+\end{align*}
+</div>
+<div class="para">which we can view as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+AX=B\text{,}
+\end{equation*}
+</div>
+<div class="para">for <span class="process-math">\(A=\begin{bmatrix}1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\text{,}\)</span> <span class="process-math">\(X=\begin{bmatrix}x_1 \\ x_2 \end{bmatrix}\text{,}\)</span> and <span class="process-math">\(B=\begin{bmatrix}-1 \\ -2 \end{bmatrix}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LU-decomp1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-LU-decomp1-2-2">We know we could do this by augmenting and row reducing, or by calculating the inverse of the coefficient matrix.  Let’s see yet another way to solve this system.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LU-decomp1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="ex-LU-decomp1-2-3">
+<div class="para">Take the coefficient matrix <span class="process-math">\(A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\)</span> and use an elementary matrix to perform the first step in Gauss-Jordan elimination, which is <span class="process-math">\(-3R_1+R_2 \rightarrow R_2\text{.}\)</span> Then <span class="process-math">\(E_1=\begin{bmatrix} 1 \amp 0 \\ -3 \amp 1 \end{bmatrix}\)</span> and <span class="process-math">\(E_1A\)</span> is</div>
+<div class="displaymath process-math" id="ex-LU-decomp1-2-3-5">
+\begin{align*}
+E_1A\amp =\begin{bmatrix} 1 \amp 0 \\ -3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\\
+\amp = \begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix} \text{.}
+\end{align*}
+</div>
+<div class="para">Notice that <span class="process-math">\(E_1\)</span> is lower-triangular and <span class="process-math">\(E_1A\)</span> is upper-triangular.  Define <span class="process-math">\(U=E_1A=\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LU-decomp1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-LU-decomp1-2-4">In our work in <a href="sec-elementarymatrices.html" class="internal" title="Section 2.5: Elementary matrices and invertibility">Section 2.5</a> as a whole and in <a href="sec-elementarymatrices.html#ex-elem-inverses" class="xref" data-knowl="./knowl/xref/ex-elem-inverses.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.5.5: Inverses of elementary matrices">Activity 2.5.5</a> in particular, we saw that every elementary matrix is invertible. In fact, <span class="process-math">\(E_1^{-1}=\begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\text{,}\)</span> which is also lower-triangular. Define <span class="process-math">\(L=E_1^{-1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LU-decomp1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="ex-LU-decomp1-2-5">
+<div class="para">Then</div>
+<div class="displaymath process-math" id="ex-LU-decomp1-2-5-1">
+\begin{align*}
+A \amp =\big(E_1^{-1}E_1\big)A  = \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix} \begin{bmatrix} 1 \amp 0 \\ -3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\\
+\amp =E_1^{-1}\big(E_1 A\big)  = \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix} \begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\\
+\amp =LU \text{,}
+\end{align*}
+</div>
+<div class="para">a lower-triangular matrix multiplied by an upper-triangular matrix.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LU-decomp1-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-LU-decomp1-2-6">How has this helped us? A linear system with a triangular coefficient matrix does not need to be row reduced any further. It is more efficient to solve such a system with substitution, coming full-circle to what we did back in <a href="sec-lin-eqn-substitution.html" class="internal" title="Section 1.1: Linear Equations and Substitution">Section 1.1</a> before we ever learned about elimination and row operations.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LU-decomp1-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="ex-LU-decomp1-2-7">
+<div class="para">We are trying to solve the linear system <span class="process-math">\(AX=B\text{,}\)</span> and we have seen how to rewrite <span class="process-math">\(A\)</span> as <span class="process-math">\(LU\text{,}\)</span> so we are now trying to solve <span class="process-math">\(LUX=B\text{.}\)</span> We know that <span class="process-math">\(U\)</span> is a <span class="process-math">\(2\times 2\)</span> matrix and <span class="process-math">\(X\)</span> is a <span class="process-math">\(2\times 1\)</span> matrix. That means that <span class="process-math">\(UX\)</span> is also a <span class="process-math">\(2\times 1\)</span> matrix. For the moment, let’s define that <span class="process-math">\(Y=UX=\begin{bmatrix} y_1 \\ y_2 \end{bmatrix}\text{,}\)</span> so that the system we’re trying to solve is</div>
+<div class="displaymath process-math" id="ex-LU-decomp1-2-7-12">
+\begin{align*}
+\amp \amp AX \amp = B \amp \amp \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \\
+\text{replace }A \text{ with } LU \amp \amp LUX \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \\
+\text{replace }UX \text{ with } Y  \amp \amp LY \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} 
+\end{align*}
+</div>
+<div class="para">To see how this is easier to solve, look at the first row of <span class="process-math">\(LY=B\text{.}\)</span> We see that <span class="process-math">\(y_1+0y_2=-1\text{,}\)</span> which means that <span class="process-math">\(y_1=-1\text{.}\)</span>  The equation from the second row is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3y_1+y_2=-2\text{,}
+\end{equation*}
+</div>
+<div class="para">and we can substitute the value of <span class="process-math">\(y_1\)</span> we just found</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3(-1)+y_2=-2
+\end{equation*}
+</div>
+<div class="para">and thus <span class="process-math">\(y_2=1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LU-decomp1-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="ex-LU-decomp1-2-8">
+<div class="para">We are trying to solve for <span class="process-math">\(X\)</span> and we now know what <span class="process-math">\(Y\)</span> equals, but remember that we defined <span class="process-math">\(UX=Y\text{,}\)</span> which means that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix}x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix}-1 \\ 1 \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+<div class="para">Looking at the second row, we can see that <span class="process-math">\(x_2=-1\text{,}\)</span> and then substituting into the equation from the first row gives us</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_1+2x_2=-1\text{,}
+\end{equation*}
+</div>
+<div class="para">so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_1+2(-1)=-1\text{,}
+\end{equation*}
+</div>
+<div class="para">which means that <span class="process-math">\(x_1=1\text{.}\)</span>  Then the solution to <span class="process-math">\(AX=B\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X=\begin{bmatrix} 1 \\ -1 \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LU-decomp1-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.3: Solving a system with an LU factorization"><a href="#ex-LU-decomp1" title="Copy heading and permalink for Example 2.6.3: Solving a system with an LU factorization" aria-label="Copy heading and permalink for Example 2.6.3: Solving a system with an LU factorization">🔗</a></div></article><div class="para" id="subsec-LUdecomposition-bc-14">Why would we want to do this when we already have multiple other ways to solve a linear system?  For small systems, we wouldn’t.  However, computers tend to use LU-decomposition when you ask them to solve matrix systems for the following reason. Suppose we had an <span class="process-math">\(1000\times 1000\)</span> matrix <span class="process-math">\(A\)</span> and needed to solve two systems <span class="process-math">\(AX=B_1\)</span> and <span class="process-math">\(AX=B_2\text{.}\)</span> Solving the first system would take about a billion operations, no matter whether we used Gauss-Jordan elimination or LU-decomposition. But if we used LU-decomposition and already had <span class="process-math">\(A=LU\text{,}\)</span> then solving the second system would only take about a million more operations, instead of another billion to perform all of Gauss-Jordan elimination again on the second system.  That is a significant time and memory savings, and also there’s orders of magnitude fewer opportunities for numerical errors to propagate.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LUdecomposition-bc-15">Let’s see another example for a larger matrix.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-LUdecomposition-bc-16"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-LUdecomposition-bc-16-1-1">
+<div class="para">Find an <span class="process-math">\(LU\)</span>-decomposition for</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 1 \amp 1 \amp -1 \\ -3 \amp -1 \amp -7 \end{array}\right]\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-LUdecomposition-bc-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-LUdecomposition-bc-16-2-1">The row operations we need to perform are<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:0%;grid-template-columns:33.3333333333333% 66.6666666666667%;column-gap:0%;">
+<div class="sbspanel sbspanel--middle middle" style=""><div class="para" id="subsec-LUdecomposition-bc-16-2-2-1">
+<span class="process-math">\(-R_1+R_2\rightarrow R_2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--middle middle" style=""><div class="para" id="subsec-LUdecomposition-bc-16-2-2-2">
+<span class="process-math">\(\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ -3 \amp -1 \amp -7 \end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:0%;grid-template-columns:33.3333333333333% 66.6666666666667%;column-gap:0%;">
+<div class="sbspanel sbspanel--middle middle" style=""><div class="para" id="subsec-LUdecomposition-bc-16-2-3-1">
+<span class="process-math">\(3R_1+R_3\rightarrow R_3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--middle middle" style=""><div class="para" id="subsec-LUdecomposition-bc-16-2-3-2">
+<span class="process-math">\(\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp -1 \amp -1 \end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:0%;grid-template-columns:33.3333333333333% 66.6666666666667%;column-gap:0%;">
+<div class="sbspanel sbspanel--middle middle" style=""><div class="para" id="subsec-LUdecomposition-bc-16-2-4-1">
+<span class="process-math">\(R_2+R_3\rightarrow R_3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--middle middle" style=""><div class="para" id="subsec-LUdecomposition-bc-16-2-4-2">
+<span class="process-math">\(\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp 0 \amp -4 \end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para logical" id="subsec-LUdecomposition-bc-16-2-5">
+<div class="para">We could perform one more row operation to scale the third row and put a 1 in the last position, but this is already an upper triangular matrix so we can just stop here and then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp 0 \amp -4 \end{array}\right]\text{.}
+\end{equation*}
+</div>
+<div class="para">Then using elementary matrices to perform the row operations would result in</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_3E_2E_1 A = U\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(E_1, E_2\text{,}\)</span> and <span class="process-math">\(E_3\)</span> are the elementary matrices</div>
+<div class="displaymath process-math" id="subsec-LUdecomposition-bc-16-2-5-5">
+\begin{align*}
+E_1=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ -1 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] \amp \amp E_2=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 3 \amp 0 \amp 1 \end{array}\right] \amp \amp E_3=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 1 \amp 1 \end{array}\right] \text{.}
+\end{align*}
+</div>
+<div class="para">This means that</div>
+<div class="displaymath process-math" id="subsec-LUdecomposition-bc-16-2-5-6">
+\begin{align*}
+L \amp = E_1^{-1}E_2^{-1}E_3^{-1} \\
+\amp = \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -3 \amp 0 \amp 1 \end{array}\right] \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -1 \amp 1 \end{array}\right] \\
+\amp = \left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \\ -3 \amp -1 \amp 1 \end{array}\right]\text{.}
+\end{align*}
+</div>
+<div class="para">We can use Sage to verify our computations.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-16-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="subsec-LUdecomposition-bc-16-2-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">A=matrix(QQ,3,3,[[1,0,2],[1,1,-1],[-3,-1,-7]])
+show(A)
+E1=matrix(QQ,3,3,[[1,0,0],[-1,1,0],[0,0,1]])
+E2=matrix(QQ,3,3,[[1,0,0],[0,1,0],[3,0,1]])
+E3=matrix(QQ,3,3,[[1,0,0],[0,1,0],[0,1,1]])
+U=E3*E2*E1*A
+L=E1^(-1)*E2^(-1)*E3^(-1)
+show(L*U)
+</script></div>
+<div class="autopermalink" data-description="Solution 2.6.4.1"><a href="#subsec-LUdecomposition-bc-16-2" title="Copy heading and permalink for Solution 2.6.4.1" aria-label="Copy heading and permalink for Solution 2.6.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.6.4"><a href="#subsec-LUdecomposition-bc-16" title="Copy heading and permalink for Example 2.6.4" aria-label="Copy heading and permalink for Example 2.6.4">🔗</a></div></article><div class="para" id="subsec-LUdecomposition-bc-17">Let’s put it all together and summarize the process.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="assemblage assemblage-like" id="assemblage-LU-solving"><h4 class="heading"><span class="title">Solving systems with LU-decomposition.</span></h4>
+<div class="para logical" id="assemblage-LU-solving-2">
+<div class="para">If a square matrix doesn’t require any interchanging of rows to put it into reduced row echelon form, then</div>
+<ul class="disc" id="assemblage-LU-solving-2-1">
+<li id="assemblage-LU-solving-2-1-1">
+<div class="para" id="assemblage-LU-solving-2-1-1-1">Use elementary matrices <span class="process-math">\(E_1, E_2, \ldots E_k\)</span> to perform the forward steps of Gauss-Jordan elimination. This means you’ll have something of the form <span class="process-math">\(E_k\cdots E_2E_1A=U\text{,}\)</span> where <span class="process-math">\(U\)</span> is upper triangular.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-LU-solving-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-LU-solving-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-LU-solving-2-1-2">
+<div class="para" id="assemblage-LU-solving-2-1-2-1">Elementary matrices which perform the forward steps of Gauss-Jordan elimination (scale or multiply-and-add) are all lower-triangular, and so are their inverses.  The product of lower triangular matrices is still lower triangular.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-LU-solving-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-LU-solving-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-LU-solving-2-1-3">
+<div class="para logical" id="assemblage-LU-solving-2-1-3-1">
+<div class="para">Multiply by the inverses in reverse order to obtain</div>
+<div class="displaymath process-math" id="assemblage-LU-solving-2-1-3-1-1">
+\begin{align*}
+A \amp =E_1^{-1}E_2^{-1}\cdots E_k^{-1}U\\
+\amp = LU \text{,}
+\end{align*}
+</div>
+<div class="para">where <span class="process-math">\(L\)</span> is a lower triangular matrix.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-LU-solving-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-LU-solving-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-LU-solving-2-1-4">
+<div class="para" id="assemblage-LU-solving-2-1-4-1">To solve <span class="process-math">\(AX=B\text{,}\)</span> we replace <span class="process-math">\(A\)</span> with <span class="process-math">\(LU\)</span> and then <span class="process-math">\(UX\)</span> with <span class="process-math">\(Y\text{.}\)</span>  We can then solve the simpler systems <span class="process-math">\(LY=B\)</span> and <span class="process-math">\(UX=Y\)</span> with substitution.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-LU-solving-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-LU-solving-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-LU-solving-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Solving systems with LU-decomposition"><a href="#assemblage-LU-solving" title="Copy heading and permalink for Assemblage: Solving systems with LU-decomposition" aria-label="Copy heading and permalink for Assemblage: Solving systems with LU-decomposition">🔗</a></div></article><div class="para" id="subsec-LUdecomposition-bc-19">We will practice the method more and explore what happens if we do need to swap rows during the Participate material.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-bc-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="reading-questions" id="rqs-LUdecomposition"><h4 class="heading hide-type">
+<span class="type">Reading Questions</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Reading Questions</span>
+</h4>
+<article class="exercise exercise-like" id="rq-LU-triangularforms"><h5 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Triangular forms.</span>
+</h5>
+<div class="ptx-runestone-container"><div data-component="matching" class="runestone" id="rs-rq-LU-triangularforms"><script type="text/xml"><matching><statement><div class="para" id="rq-LU-triangularforms-2-1">Match each matrix below to all the descriptions that apply to it.<div class="autopermalink" data-description="Paragraph"><a href="#rq-LU-triangularforms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></statement><feedback></feedback><premise><id>rq-LU-triangularforms-p1</id><label><span class="process-math">\(\left[\begin{array}{rr}1\amp 0  \\ 0 \amp 1  \end{array}\right]\)</span></label></premise><premise><id>rq-LU-triangularforms-p2</id><label><span class="process-math">\(\left[\begin{array}{rrr}-3\amp 0 \amp 0 \\ 2 \amp 2 \amp 0 \\ 3 \amp -4 \amp 1 \end{array}\right]\)</span></label></premise><premise><id>rq-LU-triangularforms-p3</id><label><span class="process-math">\(\left[\begin{array}{rrr}1\amp 2 \amp 0 \\ 2 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\)</span></label></premise><premise><id>rq-LU-triangularforms-p4</id><label><span class="process-math">\(\left[\begin{array}{rrr}0\amp 0 \amp 1 \\ 0 \amp 1 \amp 2 \\ 2 \amp 3 \amp 1 \end{array}\right]\)</span></label></premise><premise><id>rq-LU-triangularforms-p5</id><label><span class="process-math">\(\left[\begin{array}{rrr}1\amp 2 \amp 3 \\ 0 \amp 0 \amp 2 \\ 0 \amp 0 \amp -1 \end{array}\right]\)</span></label></premise><response><id>rq-LU-triangularforms-r1</id><label>Upper triangular</label></response><response><id>rq-LU-triangularforms-r2</id><label>Lower triangular</label></response><response><id>rq-LU-triangularforms-r3</id><label>Not triangular</label></response><edge><label>rq-LU-triangularforms-p1</label><label>rq-LU-triangularforms-r1</label></edge><edge><label>rq-LU-triangularforms-p1</label><label>rq-LU-triangularforms-r2</label></edge><edge><label>rq-LU-triangularforms-p2</label><label>rq-LU-triangularforms-r2</label></edge><edge><label>rq-LU-triangularforms-p3</label><label>rq-LU-triangularforms-r3</label></edge><edge><label>rq-LU-triangularforms-p4</label><label>rq-LU-triangularforms-r3</label></edge><edge><label>rq-LU-triangularforms-p5</label><label>rq-LU-triangularforms-r1</label></edge></matching></script></div></div>
+<div class="autopermalink" data-description="Reading Question 1: Triangular forms"><a href="#rq-LU-triangularforms" title="Copy heading and permalink for Reading Question 1: Triangular forms" aria-label="Copy heading and permalink for Reading Question 1: Triangular forms">🔗</a></div></article><article class="exercise exercise-like" id="parsons-LU-decomp2"><h5 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parsons Problem, LU-decomposition.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="rs-parsons-LU-decomp2">
+<div class="parsons_question parsons-text"><div class="para logical" id="parsons-LU-decomp2-2-1">
+<div class="para">Put the correct steps in the correct order to find an LU-decomposition of</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\left[ \begin{array}{rrr} 1 \amp 2 \amp 3 \\ 0 \amp 2 \amp -2 \\ 1 \amp 2 \amp 2 \end{array}\right]\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-LU-decomp2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-adaptive="true" data-noindent="true"><div class="para" id="parsons-LU-decomp2-3-1-1">The forward steps of Gauss-Jordan elimination are <span class="process-math">\(-R_1+R_3 \rightarrow R_3\text{,}\)</span> then <span class="process-math">\(\frac{1}{2}R_2 \rightarrow R_2\text{,}\)</span> then <span class="process-math">\(-2R_2+R_3 \rightarrow R_3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#parsons-LU-decomp2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para logical" id="parsons-LU-decomp2-3-2-1-1">
+<div class="para">Using elementary matrices to perform the row operations means that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]A=U\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-LU-decomp2-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para logical" id="parsons-LU-decomp2-3-2-2-1">
+<div class="para">Using elementary matrices to perform the row operations means that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]A=U\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-LU-decomp2-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> #paired
+---
+<div class="para logical" id="parsons-LU-decomp2-3-3-1-1">
+<div class="para">Solving for <span class="process-math">\(A\)</span> gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]U\text{,}
+\end{equation*}
+</div>
+<div class="para">and the product of lower triangular matrices is still lower triangular, so <span class="process-math">\(A=LU\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-LU-decomp2-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+---
+<div class="para logical" id="parsons-LU-decomp2-3-3-2-1">
+<div class="para">Solving for <span class="process-math">\(A\)</span> gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]U\text{,}
+\end{equation*}
+</div>
+<div class="para">and the product of lower triangular matrices is still lower triangular, so <span class="process-math">\(A=LU\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#parsons-LU-decomp2-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> #paired</pre>
+</div></div></div>
+<div class="autopermalink" data-description="Reading Question 2: Parsons Problem, LU-decomposition"><a href="#parsons-LU-decomp2" title="Copy heading and permalink for Reading Question 2: Parsons Problem, LU-decomposition" aria-label="Copy heading and permalink for Reading Question 2: Parsons Problem, LU-decomposition">🔗</a></div></article><article class="exercise exercise-like" id="rq-LUdecomposition-questions-poll"><h5 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Reflection.</span>
+</h5>
+<article class="task exercise-like" id="rq-LUdecomposition-confidencepoll-task"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="rq-LUdecomposition-confidencepoll-task-1">Reflect on your confidence level.<div class="autopermalink" data-description="Paragraph"><a href="#rq-LUdecomposition-confidencepoll-task-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="ptx-runestone-container"><div class="runestone"><ul data-component="poll" id="rs-rq-LUdecomposition-confidencepoll" data-results="instructor">
+<div class="para" id="rq-LUdecomposition-confidencepoll-1-1">How confident do you feel with the material you just read about?<div class="autopermalink" data-description="Paragraph"><a href="#rq-LUdecomposition-confidencepoll-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<li>1. <div class="para" id="rq-LUdecomposition-confidencepoll-2-1-1-1">Not at all confident or didn’t do the reading.<div class="autopermalink" data-description="Paragraph"><a href="#rq-LUdecomposition-confidencepoll-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</li>
+<li>2. <div class="para" id="rq-LUdecomposition-confidencepoll-2-2-1-1">Not very confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-LUdecomposition-confidencepoll-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</li>
+<li>3. <div class="para" id="rq-LUdecomposition-confidencepoll-2-3-1-1">Somewhat confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-LUdecomposition-confidencepoll-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</li>
+<li>4. <div class="para" id="rq-LUdecomposition-confidencepoll-2-4-1-1">Mostly confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-LUdecomposition-confidencepoll-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</li>
+<li>5. <div class="para" id="rq-LUdecomposition-confidencepoll-2-5-1-1">Confident so far and ready to engage more deeply.<div class="autopermalink" data-description="Paragraph"><a href="#rq-LUdecomposition-confidencepoll-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</li>
+</ul></div></div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#rq-LUdecomposition-confidencepoll-task" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="rq-LUdecomposition-confidenceresponse"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-LUdecomposition-confidenceresponse" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para" id="rq-LUdecomposition-confidenceresponse-1-1">Ask a question about the material.  What additional information do you think someone would need to become more confident in their understanding?<div class="autopermalink" data-description="Paragraph"><a href="#rq-LUdecomposition-confidenceresponse-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></div></div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#rq-LUdecomposition-confidenceresponse" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Reading Question 3: Reflection"><a href="#rq-LUdecomposition-questions-poll" title="Copy heading and permalink for Reading Question 3: Reflection" aria-label="Copy heading and permalink for Reading Question 3: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-LUdecomposition" title="Copy heading and permalink for Reading Questions" aria-label="Copy heading and permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-LUdecomposition-bc" title="Copy heading and permalink for Subsection: Prepare" aria-label="Copy heading and permalink for Subsection: Prepare">🔗</a></div></section><section class="conclusion" id="subsec-LUdecomposition-summary"><h3 class="heading">Summary.<span></span>
+</h3>
+<div class="para logical" id="subsec-LUdecomposition-summary-2">
+<ul class="disc" id="subsec-LUdecomposition-summary-2-1">
+<li id="subsec-LUdecomposition-summary-2-1-1">
+<div class="para" id="subsec-LUdecomposition-summary-2-1-1-1">Computers are fast and can store lots of information, but they are prone to numerical errors due to binary representations and the use of finitely many digits. We can mitigate the effect of numerical errors using <em class="emphasis">partial pivoting</em> and by reducing the number of operations needed where errors could spread.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-summary-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LUdecomposition-summary-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-LUdecomposition-summary-2-1-2">
+<div class="para" id="subsec-LUdecomposition-summary-2-1-2-1">Every square matrix which doesn’t need any row swap operations to perform Gauss-Jordan elimination can be expressed as the product of a <em class="emphasis">lower triangular</em> matrix with an <em class="emphasis">upper triangular</em> matrix.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-summary-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LUdecomposition-summary-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-LUdecomposition-summary-2-1-3">
+<div class="para" id="subsec-LUdecomposition-summary-2-1-3-1">Computers tend to solve linear systems using LU decomposition for both computational efficiency and the reduction of numerical errors.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-summary-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LUdecomposition-summary-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-summary-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Section 2.6: LU-decomposition"><a href="#sec-LUdecomposition" title="Copy heading and permalink for Section 2.6: LU-decomposition" aria-label="Copy heading and permalink for Section 2.6: LU-decomposition">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-elementarymatrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:csafranski@franciscan.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
