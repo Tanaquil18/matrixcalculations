@@ -97,7 +97,7 @@
               <p>
                 Lower triangular matrices have the form
                 <me>
-                  \begin{bmatrix} * \amp 0 \amp 0 \\ * \amp * \amp 0 \amp \\ * \amp * \amp * \end{bmatrix}
+                  \begin{bmatrix} * \amp 0 \amp 0 \\ * \amp * \amp 0 \\ * \amp * \amp * \end{bmatrix}
                 </me>.
               </p>
             </feedback>
@@ -116,7 +116,7 @@
               <p>
                 Upper triangular matrices have the form
                 <me>
-                  \begin{bmatrix} * \amp * \amp * \\ 0 \amp * \amp * \amp \\ 0 \amp 0 \amp * \end{bmatrix}
+                  \begin{bmatrix} * \amp * \amp * \\ 0 \amp * \amp * \\ 0 \amp 0 \amp * \end{bmatrix}
                 </me>.
               </p>
             </feedback>
@@ -136,7 +136,7 @@
               <p>
                 Matrices that are both upper and lower triangular have the form
                 <me>
-                  \begin{bmatrix} * \amp 0 \amp 0 \\ 0 \amp * \amp 0 \amp \\ 0 \amp 0 \amp * \end{bmatrix}
+                  \begin{bmatrix} * \amp 0 \amp 0 \\ 0 \amp * \amp 0 \\ 0 \amp 0 \amp * \end{bmatrix}
                 </me>.
               </p>
             </feedback>
@@ -176,7 +176,7 @@
               <p>
                 Lower triangular matrices have the form
                 <me>
-                  \begin{bmatrix} * \amp 0 \amp 0 \\ * \amp * \amp 0 \amp \\ * \amp * \amp * \end{bmatrix}
+                  \begin{bmatrix} * \amp 0 \amp 0 \\ * \amp * \amp 0 \\ * \amp * \amp * \end{bmatrix}
                 </me>.
               </p>
             </feedback>
@@ -195,7 +195,7 @@
               <p>
                 Upper triangular matrices have the form
                 <me>
-                  \begin{bmatrix} * \amp * \amp * \\ 0 \amp * \amp * \amp \\ 0 \amp 0 \amp * \end{bmatrix}
+                  \begin{bmatrix} * \amp * \amp * \\ 0 \amp * \amp * \\ 0 \amp 0 \amp * \end{bmatrix}
                 </me>.
               </p>
             </feedback>
@@ -215,7 +215,7 @@
               <p>
                 Matrices that are both upper and lower triangular have the form
                 <me>
-                  \begin{bmatrix} * \amp 0 \amp 0 \\ 0 \amp * \amp 0 \amp \\ 0 \amp 0 \amp * \end{bmatrix}
+                  \begin{bmatrix} * \amp 0 \amp 0 \\ 0 \amp * \amp 0 \\ 0 \amp 0 \amp * \end{bmatrix}
                 </me>.
               </p>
             </feedback>
