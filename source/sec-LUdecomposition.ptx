@@ -357,70 +357,6 @@
       </task>
     </exercise>
 
-    <!-- <exercise label="triangularmatrices-dtest">
-        <statement>
-          <p>
-            Choose the best description of the matrix <m>\begin{bmatrix} 2 \amp 0 \amp 0 \\ -1 \amp 0 \amp 0 \\ 3 \amp 5 \amp -4 \end{bmatrix}</m>.
-          </p>
-        </statement>
-        <choices>
-          <choice correct="yes">
-            <statement>
-              <p>
-                Lower triangular
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                A <em>lower triangular</em> matrix must have 0's in the entries above the main diagonal.  It can have 
-                any number, zero or nonzero, in the other positions.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                Upper triangular
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                There is a nonzero entry below the main diagonal, in the second row and first column, for example.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                Both upper and lower triangular.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                There is a nonzero entry below the main diagonal, in the second row and first column, for example.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="no">
-            <statement>
-              <p>
-                Neither upper nor lower triangular.
-              </p>
-            </statement>
-            <feedback>
-            <p>
-              There are 0's above the main diagonal so this is some kind of triangular.  The entries on the main diagonal can be zero or nonzero.
-            </p>
-            <p>
-              <me>
-                \begin{bmatrix} 2 \amp \boxed{0} \amp \boxed{0} \\ -1 \amp 0 \amp \boxed{0} \\ 3 \amp 5 \amp -4 \end{bmatrix}
-              </me>
-            </p>
-          </feedback>
-          </choice>
-        </choices>
-      </exercise> -->
-
      <p>
       Recall <xref ref="ex-rowops-matrixmult"/> and <xref ref="ex-rowops-matrixmult-cont"/> where
       we used elementary matrices to row reduce a matrix.  In LU-decomposition, we are going
@@ -704,7 +640,7 @@
         </block>
         </blocks>
       </exercise>
-      <!-- cardsort on triangular types, different sizes.  Parsons on LU factorization to solve systems? -->
+      
       <exercise label="rq-LUdecomposition-questions-poll"><title>Reflection</title>
         <task label="rq-LUdecomposition-confidencepoll-task">
           <p>
@@ -769,7 +705,12 @@
 
   </subsection>
 
-   <!-- <xi:include href="participate-worksheets/dc-.ptx" /> -->
+  <!-- David's 3x3 for participate, and PA=LU.  
+   Going over the solving part.
+   Maybe also why triangular times triangular is still triangular? 
+   And how LU isn't unique.  -->
+
+   <xi:include href="participate-worksheets/dc-LUdecomposition.ptx" />
   
 
   <conclusion xml:id="subsec-LUdecomposition-summary">
@@ -798,10 +739,7 @@
     </p>
   </conclusion>
 
-  <!-- David's 3x3 for participate, and PA=LU.  
-   Going over the solving part.
-   Maybe also why triangular times triangular is still triangular? 
-   And how LU isn't unique.  -->
+  
   
 
 

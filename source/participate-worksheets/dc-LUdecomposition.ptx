@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-name-dc"> 
+    <title>Participate</title> -->
+    
+    <worksheet xml:id="ws-LUdecomposition" margin="1in" bottom="1.25cm"><title component="print-worksheets">Participate: LU-decomposition</title><title component="online-worksheets">Participate</title>
+      <objectives>
+        <ul>
+          <li>
+            <p>
+              Find and use an LU decomposition of a matrix to solve a linear system.  
+            </p>
+          </li>
+          <li>
+            <p>
+              Explore properties related to LU decomposition, including uniqueness, invertibility, and the effect of swapping rows.  
+            </p>
+          </li>
+        </ul>
+</objectives>
+      <page>
+        <exercisegroup cols="2" workspace="0.5in"><title>Triangular coefficient matrix</title>
+            <introduction>
+                <p>
+                    Solve the linear systems <m>AX=B</m> using substitution.  
+                </p>
+            </introduction>
+            <exercise workspace="1in">
+                <statement>
+                    <p>
+                        <m>A=\begin{bmatrix} 1 \amp 0 \amp 0 \\ 2 \amp 2 \amp 0 \\ -3 \amp 1 \amp -2 \end{bmatrix}</m>, <m>B=\begin{bmatrix} 3 \\ 5 \\ -6 \end{bmatrix}</m>
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>X=\begin{bmatrix} 3 \\ 1 \\ -1 \end{bmatrix}</m>
+                    </p>
+                </answer>
+            </exercise>
+            <exercise workspace="1in">
+                <statement>
+                    <p>
+                        <m>A=\begin{bmatrix} 2 \amp -2 \amp 3 \\ 0 \amp -1 \amp 4 \\ 0 \amp 0 \amp -5 \end{bmatrix}</m>, <m>B=\begin{bmatrix} -8 \\ -10 \\ 10 \end{bmatrix}</m>
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>X=\begin{bmatrix} 1 \\ 2 \\ -2 \end{bmatrix}</m>
+                    </p>
+                </answer>
+            </exercise>
+            
+            <conclusion>
+                <p>
+                    Would you prefer using elimination or substitution to solve these systems? What if the linear system
+                    did not have a triangular coefficient matrix?
+                </p>
+                <p workspace=".5in">
+                    
+                </p>
+            </conclusion>
+        </exercisegroup>
+
+        <exercise workspace="1.5in"><title>Products of triangular matrices</title>
+        
+        
+            <statement>
+                <p>
+                    Consider two lower triangular matrices,
+                    <md>
+                        <mrow>L_1=\begin{bmatrix} a \amp 0 \amp 0 \\ b \amp c \amp 0 \\ d \amp e \amp f \end{bmatrix}, \amp \amp \amp \amp L_2=\begin{bmatrix} g \amp 0 \amp 0 \\ h \amp i \amp 0 \\ j \amp k \amp l \end{bmatrix} </mrow>
+                    </md>.
+                    Calculate the product <m>L_1L_2</m> (or enough of it) and explain why <m>L_1L_2</m> is lower triangular.
+                </p>
+            </statement>
+            
+        </exercise>
+        <exercise><title>Uniqueness?</title>
+            <statement>
+                <p workspace=".8in">
+                    In an earlier example, we showed that 
+                    <me>
+                       \underbrace{\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 1 \amp 1 \amp -1 \\ -3 \amp -1 \amp -7 \end{array}\right]}_A = \underbrace{\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \\ -3 \amp -1 \amp 1 \end{array}\right]}_L\underbrace{\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp 0 \amp -4 \end{array}\right]}_U
+                    </me>.
+                    Consider a diagonal matrix, <m>D=\left[\begin{array}{rrr} 2 \amp 0 \amp 0 \\ 0 \amp -1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>. Calculate <m>LD</m> and <m>D^{-1}U</m>.   
+                </p>
+                <p workspace=".2in">
+                    What does <m>\big(LD\big)\big(D^{-1}U\big)</m> equal?  What does this tell you about the uniqueness of LU factorizations?
+                </p>
+            </statement>
+        </exercise>
+    </page>
+    <page>
+        
+        <exercise workspace="2in" xml:id="LU-part-system">
+            <statement>
+                <p>
+                    Solve <m>AX=B</m> using LU decomposition for 
+                    <md>
+                        <mrow>
+                        A=\begin{bmatrix}
+                        2 \amp -3 \amp 1 \\
+                        -4 \amp 5 \amp 0 \\
+                        2 \amp -2 \amp 2
+                        \end{bmatrix},
+                        \amp \amp B= \begin{bmatrix}8 \\ -13 \\ 8 \end{bmatrix}
+                        </mrow>
+                    </md>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>LU=\begin{bmatrix}
+                            1 \amp 0 \amp 0 \\
+                            -2 \amp 1 \amp 0 \\
+                            1 \amp -1 \amp 1
+                            \end{bmatrix}
+                            \begin{bmatrix}
+                            2 \amp -3 \amp 1 \\
+                            0 \amp -1 \amp 2 \\
+                            0 \amp 0 \amp 3
+                            \end{bmatrix}
+                    </m>, so <m>UX=\begin{bmatrix} 8 \\ 3 \\ 3 \end{bmatrix}</m> and <m>X=\begin{bmatrix} 2 \\ -1 \\ 1 \end{bmatrix} </m>
+                </p>
+            </answer>
+        </exercise>
+        <exercise>
+            <introduction>
+                <p>
+                    Recall we define <m>L</m> in terms of elementary matrices which are invertible, but all we've said about <m>U</m> 
+                    is that <m>U</m> is the result of applying some row operations.  
+                </p>
+            </introduction>
+            <task workspace=".7in">
+                <statement>
+                    <p>
+                        Suppose <m>U=\begin{bmatrix} 1 \amp -1 \\ 0 \amp 0 \end{bmatrix}</m>. Calculate
+                        <m>
+                            A=\begin{bmatrix} 2 \amp 0 \\ 1 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp -1 \\ 0 \amp 0 \end{bmatrix}
+                        </m>
+                        and determine whether or not <m>A</m> is invertible.  Will <m>LU</m> be invertible for any lower triangular matrix <m>L</m>?
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>
+                            A=\begin{bmatrix} 2 \amp -2\\ 1 \amp -1 \end{bmatrix}
+                        </m>, and no, you always get something like <m>
+                            \begin{bmatrix} a \amp 0 \\ b \amp c \end{bmatrix}\begin{bmatrix} 1 \amp -1 \\ 0 \amp 0 \end{bmatrix}=\begin{bmatrix} a \amp -a \\ b \amp -b \end{bmatrix}</m>
+                    </p>
+                </answer>
+            </task>
+            <task workspace=".7in">
+                <statement>
+                    <p>
+                        Determine whether or not <m>A</m> is invertible if
+                        <m>A=\begin{bmatrix} 2 \amp 0 \amp 0\\ 1 \amp 1 \amp 0 \\ -1 \amp 3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 0 \amp 1 \\ 0 \amp 3 \amp 1 \\ 0 \amp 0 \amp 0 \end{bmatrix}
+                        </m>.
+                        Does <m>AX=B</m> have exactly one solution for any possible <m>B</m>?
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        Guide them through thinking about how you need to solve <m>UX=Y</m> and what the form of <m>U</m> means for that.
+                    </p>
+                </answer>
+            </task>
+        </exercise>
+        <exercise workspace=".5in">
+            <statement>
+                <p>
+                    A matrix obtained from the identity matrix by swapping rows some number of times is called a <em>permutation</em> matrix, and 
+                    it's always invertible (perform the same swaps in the reverse order). 
+                    When computers solve <m>AX=B</m> they often perform a permutation <m>P</m> and find an LU decomposition for <m>PA</m> so that they are solving
+                    <m>PAX=PB</m> by solving <m>LUX=PB</m>. 
+                </p>
+                <p>
+                    Solve the system in <xref ref="LU-part-system" text="local">Exercise</xref> above again, this time by using Sage to calculate <m>P,L</m>, and <m>U</m>.  
+                    Then by hand, calculate <m>PB</m> and 
+                    use substitution to solve <m>LY=PB</m> and <m>UX=Y</m>. Verify that you get the same answer you got before.
+                </p>
+                <sage>
+                    <input>
+                        A=matrix(QQ,3,3,[[2,-3,1],[-4,5,0],[2,-2,2]])
+                        P,L,U=A.LU()
+                        show(P, L, U)
+                    </input>
+                </sage>
+            </statement>
+        </exercise>
+      </page>
+    </worksheet>
+    <!-- </subsection> -->
