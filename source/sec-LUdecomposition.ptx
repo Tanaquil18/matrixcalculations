@@ -743,7 +743,7 @@
   
 
 
-  <!-- <xi:include href="interactive-exercises/ww-.ptx" /> -->
+  <xi:include href="interactive-exercises/ww-LUdecomposition.ptx" />
 
   <!-- <xi:include href="noninteractive-exercises/exer-.ptx" /> -->
 
