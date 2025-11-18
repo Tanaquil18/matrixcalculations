@@ -421,9 +421,9 @@
               let's define that <m>Y=UX=\begin{bmatrix} y_1 \\ y_2 \end{bmatrix}</m>, so that the system we're trying to solve
               is 
               <md>
-                <mrow> \amp \amp AX \amp = B \amp \amp \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
-                <mrow> \text{replace }A \text{ with } LU \amp \amp LUX \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
-                <mrow> \text{replace }UX \text{ with } Y  \amp \amp LY \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} </mrow>
+                <mrow> \amp \amp AX \amp = B \amp \amp \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ -2 \end{bmatrix} </mrow>
+                <mrow> \text{replace }A \text{ with } LU \amp \amp LUX \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ -2 \end{bmatrix} </mrow>
+                <mrow> \text{replace }UX \text{ with } Y  \amp \amp LY \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = \begin{bmatrix} -1 \\ -2 \end{bmatrix} </mrow>
               </md>
               To see how this is easier to solve, look at the first row of <m>LY=B</m>.  
               We see that <m>y_1+0y_2=-1</m>, which means that <m>y_1=-1</m>.  The equation from the 
