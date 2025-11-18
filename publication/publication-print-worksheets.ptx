@@ -73,7 +73,7 @@
     <!-- links the html version of asymptote graphics.    -->
     <asymptote links="no" />
     <!-- Set @formatted to "no" to remove formatting on worksheets: -->
-    <worksheets formatted="no" />
+    <!-- <worksheet formatted="no" /> -->
   </latex>
 
   <html short-answer-responses="always">
