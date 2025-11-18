@@ -120,14 +120,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.18';
+eBookConfig.runestone_version = '7.9.19';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cefb0224014f3333.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c50cdcad467c8d3e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.5c6d23c3bf7decb7.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.296eb9cf978e3bdb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
@@ -361,6 +361,7 @@ sagecell.makeSagecell({
 <ul class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-LUdecomposition.html#rqs-LUdecomposition" class="internal"><span class="title">Reading Questions</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-LUdecomposition.html#ws-LUdecomposition" class="internal"><span class="title">Participate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LUdecomposition.html#ww-LUdecomposition" class="internal"><span class="title">Practice</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -596,9 +597,9 @@ A \amp =\big(E_1^{-1}E_1\big)A  = \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmat
 <div class="para">We are trying to solve the linear system <span class="process-math">\(AX=B\text{,}\)</span> and we have seen how to rewrite <span class="process-math">\(A\)</span> as <span class="process-math">\(LU\text{,}\)</span> so we are now trying to solve <span class="process-math">\(LUX=B\text{.}\)</span> We know that <span class="process-math">\(U\)</span> is a <span class="process-math">\(2\times 2\)</span> matrix and <span class="process-math">\(X\)</span> is a <span class="process-math">\(2\times 1\)</span> matrix. That means that <span class="process-math">\(UX\)</span> is also a <span class="process-math">\(2\times 1\)</span> matrix. For the moment, let’s define that <span class="process-math">\(Y=UX=\begin{bmatrix} y_1 \\ y_2 \end{bmatrix}\text{,}\)</span> so that the system we’re trying to solve is</div>
 <div class="displaymath process-math" id="ex-LU-decomp1-2-7-12">
 \begin{align*}
-\amp \amp AX \amp = B \amp \amp \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \\
-\text{replace }A \text{ with } LU \amp \amp LUX \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} \\
-\text{replace }UX \text{ with } Y  \amp \amp LY \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = \begin{bmatrix} -1 \\ 2 \end{bmatrix} 
+\amp \amp AX \amp = B \amp \amp \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ -2 \end{bmatrix} \\
+\text{replace }A \text{ with } LU \amp \amp LUX \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} -1 \\ -2 \end{bmatrix} \\
+\text{replace }UX \text{ with } Y  \amp \amp LY \amp = B \amp \amp \begin{bmatrix} 1 \amp 0 \\ 3 \amp 1 \end{bmatrix}\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = \begin{bmatrix} -1 \\ -2 \end{bmatrix} 
 \end{align*}
 </div>
 <div class="para">To see how this is easier to solve, look at the first row of <span class="process-math">\(LY=B\text{.}\)</span> We see that <span class="process-math">\(y_1+0y_2=-1\text{,}\)</span> which means that <span class="process-math">\(y_1=-1\text{.}\)</span>  The equation from the second row is</div>
@@ -882,7 +883,7 @@ A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \
 <div class="exercisegroup-exercises cols2 multicolumn">
 <article class="exercise exercise-like" id="ws-LUdecomposition-3-1-3"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="ws-LUdecomposition-3-1-3-1-1">
-<span class="process-math">\(A=\begin{bmatrix} 1 \amp 0 \amp 0 \\ 2 \amp 2 \amp 0 \\ -3 \amp 1 \amp -2 \end{bmatrix}\text{,}\)</span> <span class="process-math">\(B=\begin{bmatrix} 3 \\ 5 \\ -6 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-LUdecomposition-3-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A=\begin{bmatrix} 1 \amp 0 \amp 0 \\ 2 \amp 2 \amp 0 \\ -3 \amp 1 \amp -2 \end{bmatrix}\text{,}\)</span> <span class="process-math">\(B=\begin{bmatrix} 3 \\ 8 \\ -6 \end{bmatrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ws-LUdecomposition-3-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#ws-LUdecomposition-3-1-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ws-LUdecomposition-3-1-4"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
@@ -990,7 +991,137 @@ show(P, L, U)
 </li>
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-LUdecomposition-summary-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 2.6: LU-decomposition"><a href="#sec-LUdecomposition" title="Copy heading and permalink for Section 2.6: LU-decomposition" aria-label="Copy heading and permalink for Section 2.6: LU-decomposition">🔗</a></div></section></div>
+</div></section><section class="subsection" id="ww-LUdecomposition"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice</span>
+</h3>
+<article class="activity project-like" id="ww-LUsolvesystem"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Use LU decomposition to solve a system.</span>
+</h4>
+<div id="webwork-57" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="57" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.4.6.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-57')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-57-1-1-1">Use the given LU factorization to find all solutions to <span class="process-math">\(\textrm{A}\textbf{x} = \textbf{b}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-57-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-57-1-1-2">
+<span class="process-math">\(\textrm{A} = \left[\begin{array}{cc}
+1 \amp 0\cr
+-4 \amp 1
+\end{array}\right] \left[\begin{array}{cc}
+1 \amp -4\cr
+0 \amp -2
+\end{array}\right]\text{,}\)</span> <span class="process-math">\(\textbf{b}=\left[\begin{array}{c}
+14\cr
+-46
+\end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-57-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-57-1-1-3">
+<span class="process-math">\(\textbf{x}=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 1 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-57-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.6.1: Use LU decomposition to solve a system"><a href="#ww-LUsolvesystem" title="Copy heading and permalink for Exercise 2.6.1: Use LU decomposition to solve a system" aria-label="Copy heading and permalink for Exercise 2.6.1: Use LU decomposition to solve a system">🔗</a></div></article><article class="activity project-like" id="ww-LUdecomp2by2"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find an LU decomposition.</span>
+</h4>
+<div id="webwork-58" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="58" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/Rochester/setLinearAlgebra5LUfactorization/ur_la_5_1.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-58')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-58-1-1-1">
+<div class="para">Find the <span class="process-math">\(LU\)</span> factorization of</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A= \left[\begin{array}{cc}
+5 \amp 5\cr
+-5 \amp -9
+\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">That is, write <span class="process-math">\(A=LU\)</span> where <span class="process-math">\(L\)</span> is a lower triangular matrix with ones on the diagonal, and <span class="process-math">\(U\)</span> is an upper triangular matrix.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-58-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-58-1-1-2">
+<span class="process-math">\(A=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array) <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-58-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.6.2: Find an LU decomposition"><a href="#ww-LUdecomp2by2" title="Copy heading and permalink for Exercise 2.6.2: Find an LU decomposition" aria-label="Copy heading and permalink for Exercise 2.6.2: Find an LU decomposition">🔗</a></div></article><article class="activity project-like" id="ww-LUdecomp3by3"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find an LU decomposition.</span>
+</h4>
+<div id="webwork-59" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="59" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="webwork2" data-sourceFilePath="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.4.15.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-59')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-59-1-1-1">For this problem enter matrices using bracket notation. So the matrix<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-59-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-59-1-1-2">
+<span class="process-math">\(\left[\begin{array}{ccc}
+2 \amp 3 \amp -1\cr
+-2 \amp -5 \amp 6
+\end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-59-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-59-1-1-3">would be entered as [[2,3,-1],[-2,-5,6]].<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-59-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-59-1-1-4">Find an LU factorization for<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-59-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-59-1-1-5">
+<span class="process-math">\(\left[\begin{array}{ccc}
+6 \amp -7 \amp -5\cr
+6 \amp -4 \amp -6\cr
+12 \amp -23 \amp -1
+\end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-59-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-59-1-1-6">
+<span class="process-math">\(L =\)</span><span class="fillin underline" role="img" aria-label="90-character blank" style="width: 40.9090909090909em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-59-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-59-1-1-7">
+<span class="process-math">\(U =\)</span><span class="fillin underline" role="img" aria-label="90-character blank" style="width: 40.9090909090909em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-59-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.6.3: Find an LU decomposition"><a href="#ww-LUdecomp3by3" title="Copy heading and permalink for Exercise 2.6.3: Find an LU decomposition" aria-label="Copy heading and permalink for Exercise 2.6.3: Find an LU decomposition">🔗</a></div></article><article class="activity project-like" id="ww-LUinverse"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Use LU decomposition to find an inverse.</span>
+</h4>
+<div id="webwork-60" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="60" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_6-LUdecomposition/Exercise-2_6_4-Use_LU_decomposition_to_find_an_inverse.pg" data-documentID="matrixcalculations" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-60')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-60-1-1-1">If L and U are invertible, then <span class="process-math">\((LU)^{−1}\)</span> = <span class="process-math">\(U^{−1}L^{−1}\text{.}\)</span> Find <span class="process-math">\(A^{−1}\)</span> from the given LU factorization:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-60-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-60-1-1-2">
+<span class="process-math">\(A = LU = \left[\begin{array}{cc}
+1 \amp 0\cr
+3 \amp 1
+\end{array}\right]\left[\begin{array}{cc}
+-5 \amp -5\cr
+0 \amp 5
+\end{array}\right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-60-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-60-1-1-3">
+<span class="process-math">\(A^{-1} =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array)<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array) <span class="process-math">\(=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-60-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.6.4: Use LU decomposition to find an inverse"><a href="#ww-LUinverse" title="Copy heading and permalink for Exercise 2.6.4: Use LU decomposition to find an inverse" aria-label="Copy heading and permalink for Exercise 2.6.4: Use LU decomposition to find an inverse">🔗</a></div></article><article class="activity project-like" id="ww-LUtruefalse"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">True/False LU Decomposition Properties.</span>
+</h4>
+<div id="webwork-61" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="61" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_6-LUdecomposition/Exercise-2_6_5-TrueFalse_LU_Decomposition_Properties.pg" data-documentID="matrixcalculations" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-61')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-61-1-1-1">Determine which of the following statements are true and which are false.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-61-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-61-1-1-2">
+<ol class="decimal" id="extracted-webwork-61-1-1-2-1">
+<li id="extracted-webwork-61-1-1-2-1-1">
+<div class="para" id="extracted-webwork-61-1-1-2-1-1-1">Every square matrix has a PLU decomposition.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-61-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#extracted-webwork-61-1-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="extracted-webwork-61-1-1-2-1-2">
+<div class="para" id="extracted-webwork-61-1-1-2-1-2-1">Every matrix that is in row echelon form is upper triangular.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-61-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#extracted-webwork-61-1-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="extracted-webwork-61-1-1-2-1-3">
+<div class="para" id="extracted-webwork-61-1-1-2-1-3-1">Every square matrix has an LU decomposition.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-61-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#extracted-webwork-61-1-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="extracted-webwork-61-1-1-2-1-4">
+<div class="para" id="extracted-webwork-61-1-1-2-1-4-1">The upper triangular matrix in an LU decomposition is always invertible.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-61-1-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#extracted-webwork-61-1-1-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-61-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.6.5: True/False LU Decomposition Properties"><a href="#ww-LUtruefalse" title="Copy heading and permalink for Exercise 2.6.5: True/False LU Decomposition Properties" aria-label="Copy heading and permalink for Exercise 2.6.5: True/False LU Decomposition Properties">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Practice"><a href="#ww-LUdecomposition" title="Copy heading and permalink for Subsection: Practice" aria-label="Copy heading and permalink for Subsection: Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 2.6: LU-decomposition"><a href="#sec-LUdecomposition" title="Copy heading and permalink for Section 2.6: LU-decomposition" aria-label="Copy heading and permalink for Section 2.6: LU-decomposition">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-elementarymatrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

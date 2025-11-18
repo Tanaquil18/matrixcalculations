@@ -1,0 +1,27 @@
+openDate          = 11/16/2025 at 12:00am
+dueDate           = 05/16/2026 at 10:00pm
+answerDate        = 05/16/2026 at 10:00pm
+paperHeaderFile   = Matrix_Calculations/header/2_6-LUdecomposition.pg
+screenHeaderFile  = Matrix_Calculations/header/2_6-LUdecomposition.pg
+description       = LU-decomposition
+problemListV2
+problem_start
+source_file = Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.4.6.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/Rochester/setLinearAlgebra5LUfactorization/ur_la_5_1.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/3.4.15.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_6-LUdecomposition/Exercise-2_6_4-Use_LU_decomposition_to_find_an_inverse.pg
+problem_id = 
+problem_end
+problem_start
+source_file = Matrix_Calculations/2-Matrices_as_Mathematical_Objects/2_6-LUdecomposition/Exercise-2_6_5-TrueFalse_LU_Decomposition_Properties.pg
+problem_id = 
+problem_end

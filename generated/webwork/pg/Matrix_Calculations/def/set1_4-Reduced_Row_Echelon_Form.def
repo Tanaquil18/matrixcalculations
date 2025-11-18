@@ -1,6 +1,6 @@
-openDate          = 10/23/2025 at 12:00am
-dueDate           = 04/23/2026 at 10:00pm
-answerDate        = 04/23/2026 at 10:00pm
+openDate          = 11/16/2025 at 12:00am
+dueDate           = 05/16/2026 at 10:00pm
+answerDate        = 05/16/2026 at 10:00pm
 paperHeaderFile   = Matrix_Calculations/header/1_4-Reduced_Row_Echelon_Form.pg
 screenHeaderFile  = Matrix_Calculations/header/1_4-Reduced_Row_Echelon_Form.pg
 description       = Reduced Row Echelon Form
