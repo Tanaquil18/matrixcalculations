@@ -81,7 +81,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -98,7 +98,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Matrix Calculations">
 <meta property="book:author" content="Chrissy Safranski">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -120,16 +120,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.19';
+eBookConfig.runestone_version = '7.11.17';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.5c6d23c3bf7decb7.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.296eb9cf978e3bdb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.86a1bdf80f338ffc.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="matrixcalculations" class="pretext book ignore-math">
@@ -356,7 +356,40 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-row-ops"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options">
+<div class="hide-option">
+<label for="hide-answer-checkbox">Hide answers</label><input type="checkbox" id="hide-answer-checkbox">
+</div>
+<div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div>
+</div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="section" id="sec-row-ops"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Row Operations</span>
 </h2>
 <section class="introduction" id="sec-row-ops-2"><div class="para" id="sec-row-ops-2-1">We’ve now seen how to solve linear systems using substitution and elimination, and how to create an augmented matrix representing a linear system. In this section, we see how to perform the variable elimination steps directly on the matrix and interpret the results to give the solution to the corresponding linear system.<div class="autopermalink" data-description="Paragraph"><a href="#sec-row-ops-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -375,7 +408,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="sbsgroup">
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-1-1-1">
 \begin{equation*}
 \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\
 \amp -\amp 2g\amp +\amp r\amp =\amp 0\\
@@ -386,7 +419,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-row-ops-bc-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-1-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp -2\amp 1\amp 0\\-1\amp 1\amp 1\amp 0
 \end{array} \right]
@@ -403,7 +436,7 @@ eBookConfig.enable_chatcodes =  false;
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-3-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-3-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 b\amp +\amp g\amp +\amp r\amp =\amp 30\\
@@ -415,7 +448,7 @@ b\amp +\amp g\amp +\amp r\amp =\amp 30\\
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-row-ops-bc-3-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-3-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-3-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp -2\amp 1\amp 0\\0\amp 2\amp 2\amp 30
 \end{array} \right]
@@ -432,7 +465,7 @@ b\amp +\amp g\amp +\amp r\amp =\amp 30\\
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-5-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-5-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 b\amp +\amp g\amp +\amp r\amp =\amp 30\\
@@ -444,7 +477,7 @@ b\amp +\amp g\amp +\amp r\amp =\amp 30\\
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-row-ops-bc-3-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-5-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-5-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp 1\amp -\frac12\amp 0\\0\amp 2\amp 2\amp 30
 \end{array} \right]
@@ -461,7 +494,7 @@ b\amp +\amp g\amp +\amp r\amp =\amp 30\\
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-7-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-7-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 b\amp +\amp  \amp  \amp 3/2r\amp =\amp 30\\
@@ -473,7 +506,7 @@ b\amp +\amp  \amp  \amp 3/2r\amp =\amp 30\\
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-row-ops-bc-3-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-7-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-7-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 0\amp \frac32\amp 30\\0\amp 1\amp -\frac12\amp 0\\0\amp 0\amp 3\amp 30
 \end{array} \right]
@@ -490,7 +523,7 @@ b\amp +\amp  \amp  \amp 3/2r\amp =\amp 30\\
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-9-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-9-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 b\amp +\amp  \amp  \amp 3/2r\amp =\amp 30\\
@@ -502,7 +535,7 @@ b\amp +\amp  \amp  \amp 3/2r\amp =\amp 30\\
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-row-ops-bc-3-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-9-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-9-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 0\amp \frac32\amp 30\\0\amp 1\amp -\frac12\amp 0\\0\amp 0\amp 1\amp 10
 \end{array} \right]
@@ -519,7 +552,7 @@ b\amp +\amp  \amp  \amp 3/2r\amp =\amp 30\\
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-11-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-11-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 b\amp  \amp  \amp  \amp  \amp =\amp 15\\
@@ -531,7 +564,7 @@ b\amp  \amp  \amp  \amp  \amp =\amp 15\\
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-row-ops-bc-3-4-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="subsec-row-ops-bc-3-4-11-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-row-ops-bc-3-4-11-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 15\\0\amp 1\amp 0\amp 5\\0\amp 0\amp 1\amp 10
 \end{array} \right]
@@ -556,7 +589,7 @@ b\amp  \amp  \amp  \amp  \amp =\amp 15\\
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="row-ops-practice-a-1-1">
 <div class="para">Consider the matrix</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-practice-a-1-1-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\text{.}
 \end{equation*}
@@ -565,21 +598,13 @@ b\amp  \amp  \amp  \amp  \amp =\amp 15\\
 <div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-row-ops-practice-a" data-multipleanswers="false" data-random="">
-<li data-component="answer" id="rs-row-ops-practice-a_opt_a"><div class="para" id="row-ops-practice-a-2-1-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-a-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-a_opt_a"><div class="para" id="row-ops-practice-a-2-1-1-1"><span class="process-math">\(\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-a_opt_a"><div class="para" id="row-ops-practice-a-2-1-2-1">This multiplied Row 1 by <span class="process-math">\(-2\)</span> and replaced Row 1.  It didn’t do anything to Row 3.</div></li>
-<li data-component="answer" id="rs-row-ops-practice-a_opt_b" data-correct=""><div class="para" id="row-ops-practice-a-2-2-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ -2\amp -7\amp -1\amp \frac{-7}{2}\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-a-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-a_opt_b" data-correct=""><div class="para" id="row-ops-practice-a-2-2-1-1"><span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ -2\amp -7\amp -1\amp \frac{-7}{2}\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-a_opt_b"><div class="para" id="row-ops-practice-a-2-2-2-1">Correct!</div></li>
-<li data-component="answer" id="rs-row-ops-practice-a_opt_c"><div class="para" id="row-ops-practice-a-2-3-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ -2\amp -7\amp -1\amp \frac{-7}{2}\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-a-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-a_opt_c"><div class="para" id="row-ops-practice-a-2-3-1-1"><span class="process-math">\(\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ -2\amp -7\amp -1\amp \frac{-7}{2}\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-a_opt_c"><div class="para" id="row-ops-practice-a-2-3-2-1">In the “multiply and add” row operation, you don’t change the row you multiplied by a number; you only change the row you added to.</div></li>
-<li data-component="answer" id="rs-row-ops-practice-a_opt_d"><div class="para" id="row-ops-practice-a-2-4-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ -2\amp -5\amp -3 \amp \frac{1}{2}\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-a-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-a_opt_d"><div class="para" id="row-ops-practice-a-2-4-1-1"><span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ -2\amp -5\amp -3 \amp \frac{1}{2}\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-a_opt_d"><div class="para" id="row-ops-practice-a-2-4-2-1">We have to do the operation to the entire row, not just the first entry.</div></li>
 </ul>
 </div></div>
@@ -588,7 +613,7 @@ b\amp  \amp  \amp  \amp  \amp =\amp 15\\
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="row-ops-practice-b-1-1">
 <div class="para">Consider the matrix</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-practice-b-1-1-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\text{.}
 \end{equation*}
@@ -598,18 +623,12 @@ b\amp  \amp  \amp  \amp  \amp =\amp 15\\
 <div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-row-ops-practice-b" data-multipleanswers="false" data-random="">
-<li data-component="answer" id="rs-row-ops-practice-b_opt_a" data-correct=""><div class="para" id="row-ops-practice-b-2-1-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-b-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-b_opt_a" data-correct=""><div class="para" id="row-ops-practice-b-2-1-1-1"><span class="process-math">\(\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-b_opt_a"><div class="para" id="row-ops-practice-b-2-1-2-1">Correct!</div></li>
-<li data-component="answer" id="rs-row-ops-practice-b_opt_b"><div class="para" id="row-ops-practice-b-2-2-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp 10\amp 6\amp -1\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-b-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-b_opt_b"><div class="para" id="row-ops-practice-b-2-2-1-1"><span class="process-math">\(\left[\begin{array}{cccc} -2\amp -2\amp 2\amp -4\\ 2\amp 1\amp 5\amp 7\\ 0\amp 10\amp 6\amp -1\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-b_opt_b"><div class="para" id="row-ops-practice-b-2-2-2-1">This multiplied both Row 1 and Row 3 by <span class="process-math">\(-2\text{.}\)</span>
 </div></li>
-<li data-component="answer" id="rs-row-ops-practice-b_opt_c"><div class="para" id="row-ops-practice-b-2-3-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ -2\amp -1\amp -5\amp -7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-b-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-b_opt_c"><div class="para" id="row-ops-practice-b-2-3-1-1"><span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ -2\amp -1\amp -5\amp -7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-b_opt_c"><div class="para" id="row-ops-practice-b-2-3-2-1">This multiplied Row 2 by <span class="process-math">\(-1\text{.}\)</span>
 </div></li>
 </ul>
@@ -619,7 +638,7 @@ b\amp  \amp  \amp  \amp  \amp =\amp 15\\
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="row-ops-practice-c-1-1">
 <div class="para">Consider the matrix</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-practice-c-1-1-1">
 \begin{equation*}
 \left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\text{.}
 \end{equation*}
@@ -628,17 +647,11 @@ b\amp  \amp  \amp  \amp  \amp =\amp 15\\
 <div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-row-ops-practice-c" data-multipleanswers="false" data-random="">
-<li data-component="answer" id="rs-row-ops-practice-c_opt_a" data-correct=""><div class="para" id="row-ops-practice-c-2-1-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ 2\amp 1\amp 5\amp 7\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-c-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-c_opt_a" data-correct=""><div class="para" id="row-ops-practice-c-2-1-1-1"><span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ 2\amp 1\amp 5\amp 7\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-c_opt_a"><div class="para" id="row-ops-practice-c-2-1-2-1">Correct!</div></li>
-<li data-component="answer" id="rs-row-ops-practice-c_opt_b"><div class="para" id="row-ops-practice-c-2-2-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} 2\amp 1\amp 5\amp 7\\ 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-c-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-c_opt_b"><div class="para" id="row-ops-practice-c-2-2-1-1"><span class="process-math">\(\left[\begin{array}{cccc} 2\amp 1\amp 5\amp 7\\ 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-c_opt_b"><div class="para" id="row-ops-practice-c-2-2-2-1">This interchanged Row 1 and Row 2.</div></li>
-<li data-component="answer" id="rs-row-ops-practice-c_opt_c"><div class="para" id="row-ops-practice-c-2-3-1-1">
-<span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-practice-c-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-practice-c_opt_c"><div class="para" id="row-ops-practice-c-2-3-1-1"><span class="process-math">\(\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-practice-c_opt_c"><div class="para" id="row-ops-practice-c-2-3-2-1">This replaced Row 2 with a copy of Row 3, but didn’t replace Row 3 with a copy of Row 2.</div></li>
 </ul>
 </div></div>
@@ -684,7 +697,7 @@ b\amp  \amp  \amp  \amp  \amp =\amp 15\\
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para" id="row-ops-notation-practice-a-1-1">Consider the matrices <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="row-ops-notation-practice-a-1-1-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-notation-practice-a-1-1-1-1-1">
 \begin{equation*}
 A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]
 \end{equation*}
@@ -692,7 +705,7 @@ A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -
 <div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-a-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="row-ops-notation-practice-a-1-1-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-notation-practice-a-1-1-1-2-1">
 \begin{equation*}
 B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -1\amp 7\amp 3\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]
 \end{equation*}
@@ -702,17 +715,11 @@ B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -1\amp 7\amp 3\\ 0\amp 
 </div></div> Which row operation was done to <span class="process-math">\(A\)</span> to obtain <span class="process-math">\(B\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-row-ops-notation-practice-a" data-multipleanswers="false" data-random="">
-<li data-component="answer" id="rs-row-ops-notation-practice-a_opt_a" data-correct=""><div class="para" id="row-ops-notation-practice-a-2-1-1-1">
-<span class="process-math">\(-2R_1+R_2 \rightarrow R_2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-a-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-a_opt_a" data-correct=""><div class="para" id="row-ops-notation-practice-a-2-1-1-1"><span class="process-math">\(-2R_1+R_2 \rightarrow R_2\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-a_opt_a"><div class="para" id="row-ops-notation-practice-a-2-1-2-1">Multiply Row 1 by <span class="process-math">\(-2\)</span> and add to Row 2, replacing Row 2.</div></li>
-<li data-component="answer" id="rs-row-ops-notation-practice-a_opt_b"><div class="para" id="row-ops-notation-practice-a-2-2-1-1">
-<span class="process-math">\(-2R_1+R_2 \rightarrow R_1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-a-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-a_opt_b"><div class="para" id="row-ops-notation-practice-a-2-2-1-1"><span class="process-math">\(-2R_1+R_2 \rightarrow R_1\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-a_opt_b"><div class="para" id="row-ops-notation-practice-a-2-2-2-1">This says to multiply Row 1 by <span class="process-math">\(-2\text{,}\)</span> add to Row 2, and replace <em class="emphasis">Row 1</em>.  Row 1 was not changed. This is also not one of the three elementary row operations: we replace the row we added to, not the row we multiplied by a number.</div></li>
-<li data-component="answer" id="rs-row-ops-notation-practice-a_opt_c"><div class="para" id="row-ops-notation-practice-a-2-3-1-1">
-<span class="process-math">\(2R_1-R_2 \rightarrow R_2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-a-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-a_opt_c"><div class="para" id="row-ops-notation-practice-a-2-3-1-1"><span class="process-math">\(2R_1-R_2 \rightarrow R_2\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-a_opt_c"><div class="para" id="row-ops-notation-practice-a-2-3-2-1">This would make the second row <span class="process-math">\(\begin{bmatrix} 0 \amp 1 \amp -7 \amp -3 \end{bmatrix}\text{.}\)</span> This is also not one of the elementary row operations - we multiply and add, never multiply and subtract.</div></li>
 </ul>
 </div></div>
@@ -721,7 +728,7 @@ B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -1\amp 7\amp 3\\ 0\amp 
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para" id="row-ops-notation-practice-b-1-1">Consider the matrices <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="row-ops-notation-practice-b-1-1-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-notation-practice-b-1-1-1-1-1">
 \begin{equation*}
 A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]
 \end{equation*}
@@ -729,7 +736,7 @@ A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -
 <div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-b-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="row-ops-notation-practice-b-1-1-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-notation-practice-b-1-1-1-2-1">
 \begin{equation*}
 B=\left[\begin{array}{cccc} 0\amp -5\amp -3\amp \frac{1}{2}\\ 2\amp 1\amp 5\amp 7\\ 1\amp 1\amp -1\amp 2\\ \end{array} \right]
 \end{equation*}
@@ -739,17 +746,11 @@ B=\left[\begin{array}{cccc} 0\amp -5\amp -3\amp \frac{1}{2}\\ 2\amp 1\amp 5\amp 
 </div></div> Which row operation was done to <span class="process-math">\(A\)</span> to obtain <span class="process-math">\(B\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-row-ops-notation-practice-b" data-multipleanswers="false" data-random="">
-<li data-component="answer" id="rs-row-ops-notation-practice-b_opt_a" data-correct=""><div class="para" id="row-ops-notation-practice-b-2-1-1-1">
-<span class="process-math">\(R_1 \leftrightarrow R_3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-b-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-b_opt_a" data-correct=""><div class="para" id="row-ops-notation-practice-b-2-1-1-1"><span class="process-math">\(R_1 \leftrightarrow R_3\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-b_opt_a"><div class="para" id="row-ops-notation-practice-b-2-1-2-1">Correct!</div></li>
-<li data-component="answer" id="rs-row-ops-notation-practice-b_opt_b"><div class="para" id="row-ops-notation-practice-b-2-2-1-1">
-<span class="process-math">\(R_1 \leftrightarrow R_2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-b-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-b_opt_b"><div class="para" id="row-ops-notation-practice-b-2-2-1-1"><span class="process-math">\(R_1 \leftrightarrow R_2\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-b_opt_b"><div class="para" id="row-ops-notation-practice-b-2-2-2-1">This says Row 1 and Row 2 were swapped.</div></li>
-<li data-component="answer" id="rs-row-ops-notation-practice-b_opt_c"><div class="para" id="row-ops-notation-practice-b-2-3-1-1">
-<span class="process-math">\(R_1 \rightarrow R_3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-b-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-b_opt_c"><div class="para" id="row-ops-notation-practice-b-2-3-1-1"><span class="process-math">\(R_1 \rightarrow R_3\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-b_opt_c"><div class="para" id="row-ops-notation-practice-b-2-3-2-1">This says Row 1 replaces Row 3, but we need the arrow to go both ways to say that Row 3 also replaces Row 1. This is also not one of the three elementary row operations.</div></li>
 </ul>
 </div></div>
@@ -758,7 +759,7 @@ B=\left[\begin{array}{cccc} 0\amp -5\amp -3\amp \frac{1}{2}\\ 2\amp 1\amp 5\amp 
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para" id="row-ops-notation-practice-c-1-1">Consider the matrices <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="row-ops-notation-practice-c-1-1-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-notation-practice-c-1-1-1-1-1">
 \begin{equation*}
 A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]
 \end{equation*}
@@ -766,7 +767,7 @@ A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -
 <div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-c-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="row-ops-notation-practice-c-1-1-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-ops-notation-practice-c-1-1-1-2-1">
 \begin{equation*}
 B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -10\amp -6\amp 1\\ \end{array} \right]
 \end{equation*}
@@ -776,17 +777,11 @@ B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -
 </div></div> Which row operation was done to <span class="process-math">\(A\)</span> to obtain <span class="process-math">\(B\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-row-ops-notation-practice-c" data-multipleanswers="false" data-random="">
-<li data-component="answer" id="rs-row-ops-notation-practice-c_opt_a" data-correct=""><div class="para" id="row-ops-notation-practice-c-2-1-1-1">
-<span class="process-math">\(2R_3 \rightarrow R_3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-c-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-c_opt_a" data-correct=""><div class="para" id="row-ops-notation-practice-c-2-1-1-1"><span class="process-math">\(2R_3 \rightarrow R_3\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-c_opt_a"><div class="para" id="row-ops-notation-practice-c-2-1-2-1">Correct!</div></li>
-<li data-component="answer" id="rs-row-ops-notation-practice-c_opt_b"><div class="para" id="row-ops-notation-practice-c-2-2-1-1">
-<span class="process-math">\(-2R_3 \rightarrow R_3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-c-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-c_opt_b"><div class="para" id="row-ops-notation-practice-c-2-2-1-1"><span class="process-math">\(-2R_3 \rightarrow R_3\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-c_opt_b"><div class="para" id="row-ops-notation-practice-c-2-2-2-1">This says Row 3 was multiplied by <span class="process-math">\(-2\text{.}\)</span>  Check again.</div></li>
-<li data-component="answer" id="rs-row-ops-notation-practice-c_opt_c"><div class="para" id="row-ops-notation-practice-c-2-3-1-1">
-<span class="process-math">\(2R_3 \rightarrow R_2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#row-ops-notation-practice-c-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-row-ops-notation-practice-c_opt_c"><div class="para" id="row-ops-notation-practice-c-2-3-1-1"><span class="process-math">\(2R_3 \rightarrow R_2\)</span></div></li>
 <li data-component="feedback" id="rs-row-ops-notation-practice-c_opt_c"><div class="para" id="row-ops-notation-practice-c-2-3-2-1">This says Row 3 was multiplied by <span class="process-math">\(2\)</span> and the result replaced <em class="emphasis">Row 2</em>. This is not one of the three elementary row operations.</div></li>
 </ul>
 </div></div>
@@ -800,7 +795,7 @@ B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -
 </h4>
 <div class="para logical" id="ex_eq_mat-2-1">
 <div class="para">Find a solution to the following system of linear equations by simultaneously manipulating the equations and the corresponding augmented matrices.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-2-1-1">
 \begin{equation*}
 \begin{array}{ccccccc} x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\ 2x_1\amp +\amp 2x_2\amp +\amp x_3\amp =\amp 0\\ -x_1\amp +\amp x_2\amp -\amp 2x_3\amp =\amp 2 \end{array}
 \end{equation*}
@@ -819,7 +814,7 @@ B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-2-2-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-2-2-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
@@ -831,7 +826,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 <div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-2-2-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-2-2-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc}
 1\amp 1\amp 1\amp 0\\ 2\amp 2\amp 1\amp 0\\ -1\amp 1\amp -2\amp 2\\
@@ -860,7 +855,7 @@ R_1+R_3 \amp \rightarrow R_3
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-4-2-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-4-2-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
@@ -872,7 +867,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 <div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-4-2-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-4-2-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc}
 1\amp 1\amp 1\amp 0\\ 0\amp 0\amp -1\amp 0\\ 0\amp 2\amp -1\amp 2\\
@@ -890,7 +885,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 <div class="sbspanel sbspanel--top top" style=""><div class="para" id="ex_eq_mat-3-6-1-1">Interchange equations 2 and 3.<div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-1-2-1">
 \begin{equation*}
 R_2\leftrightarrow R_3
 \end{equation*}
@@ -900,7 +895,7 @@ R_2\leftrightarrow R_3
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-2-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-2-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
@@ -912,7 +907,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 <div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-2-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-2-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc}
 1\amp 1\amp 1\amp 0\\ 0\amp 2\amp -1\amp 2\\ 0\amp 0\amp -1\amp 0\\
@@ -926,7 +921,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 <div class="sbspanel sbspanel--top top" style=""><div class="para" id="ex_eq_mat-3-6-3-1">Multiply equation 2 by <span class="process-math">\(\frac12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-3-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-3-2-1">
 \begin{equation*}
 \frac12 R_2\rightarrow R_2
 \end{equation*}
@@ -936,7 +931,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-4-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-4-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
@@ -948,7 +943,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 <div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-4-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-4-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc}
 1\amp 1\amp 1\amp 0\\ 0\amp 1\amp -\frac12\amp 1\\ 0\amp 0\amp -1\amp 0\\
@@ -962,7 +957,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 <div class="sbspanel sbspanel--top top" style=""><div class="para" id="ex_eq_mat-3-6-5-1">Multiply equation 3 by <span class="process-math">\(-1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-6-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-5-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-5-2-1">
 \begin{equation*}
 -1 R_3\rightarrow R_3
 \end{equation*}
@@ -972,7 +967,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-6-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-6-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
@@ -984,7 +979,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 <div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-6-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-6-6-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-6-6-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc}
 1\amp 1\amp 1\amp 0\\ 0\amp 1\amp -\frac12\amp 1\\ 0\amp 0\amp 1\amp 0\\
@@ -1013,7 +1008,7 @@ x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-8-2-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-8-2-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 x_1\amp +\amp x_2\amp \amp \amp =\amp 0\\
@@ -1025,7 +1020,7 @@ x_1\amp +\amp x_2\amp \amp \amp =\amp 0\\
 <div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-8-2-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-8-2-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc}
 1\amp 1\amp 0\amp 0\\ 0\amp 1\amp 0\amp 1\\ 0\amp 0\amp 1\amp 0\\
@@ -1043,7 +1038,7 @@ x_1\amp +\amp x_2\amp \amp \amp =\amp 0\\
 <div class="sbspanel sbspanel--top top" style=""><div class="para" id="ex_eq_mat-3-10-1-1">Replace equation 1 with the sum of <span class="process-math">\((-1)\)</span> times equation 2 plus equation 1.<div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-10-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-10-1-2-1">
 \begin{equation*}
 -R_2+R_1\rightarrow R_1
 \end{equation*}
@@ -1053,7 +1048,7 @@ x_1\amp +\amp x_2\amp \amp \amp =\amp 0\\
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:45% 45%;column-gap:10%;">
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-10-2-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-10-2-1-1">
 \begin{equation*}
 \begin{array}{ccccccc}
 x_1\amp  \amp    \amp \amp \amp =\amp -1\\
@@ -1065,7 +1060,7 @@ x_1\amp  \amp    \amp \amp \amp =\amp -1\\
 <div class="autopermalink" data-description="Paragraph"><a href="#ex_eq_mat-3-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="ex_eq_mat-3-10-2-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ex_eq_mat-3-10-2-2-1">
 \begin{equation*}
 \left[\begin{array}{cccc}
 1\amp 0\amp 0\amp -1\\ 0\amp 1\amp 0\amp 1\\ 0\amp 0\amp 1\amp 0\\
@@ -1110,7 +1105,7 @@ x_1\amp  \amp    \amp \amp \amp =\amp -1\\
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="rs-parsons-row-ops-sequence">
 <div class="parsons_question parsons-text"><div class="para logical" id="parsons-row-ops-sequence-2-1">
 <div class="para">Start with matrix <span class="process-math">\(A\)</span> and perform these row operations one after another. Give the matrix that results from doing each operation in order.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="parsons-row-ops-sequence-2-1-2">
 \begin{equation*}
 A=\begin{bmatrix} 0 \amp 1 \amp 2\amp 3 \\ 1 \amp 2\amp 3\amp 4 \\ -1 \amp -1 \amp -1 \amp -1 \end{bmatrix} 
 \end{equation*}
@@ -1124,37 +1119,37 @@ R_1+R_3 \amp \rightarrow R_3 \\
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#parsons-row-ops-sequence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-adaptive="true" data-noindent="true"><div class="para logical" id="parsons-row-ops-sequence-3-1-1"><div class="displaymath process-math">
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-adaptive="true" data-noindent="true"><div class="para logical" id="parsons-row-ops-sequence-3-1-1"><div class="displaymath process-math" id="parsons-row-ops-sequence-3-1-1-1">
 \begin{equation*}
 \begin{bmatrix} 1 \amp 2\amp 3\amp 4 \\ 0 \amp 1 \amp 2\amp 3 \\  -1 \amp -1 \amp -1 \amp -1 \end{bmatrix} 
 \end{equation*}
 </div></div>
 ---
-<div class="para logical" id="parsons-row-ops-sequence-3-2-1"><div class="displaymath process-math">
+<div class="para logical" id="parsons-row-ops-sequence-3-2-1"><div class="displaymath process-math" id="parsons-row-ops-sequence-3-2-1-1">
 \begin{equation*}
 \begin{bmatrix} 0 \amp 1 \amp 2\amp 3 \\ 1 \amp 2\amp 3\amp 4 \\ -1 \amp -1 \amp -1 \amp -1 \end{bmatrix} 
 \end{equation*}
 </div></div> #distractor
 ---
-<div class="para logical" id="parsons-row-ops-sequence-3-3-1"><div class="displaymath process-math">
+<div class="para logical" id="parsons-row-ops-sequence-3-3-1"><div class="displaymath process-math" id="parsons-row-ops-sequence-3-3-1-1">
 \begin{equation*}
 \begin{bmatrix} 1 \amp 2\amp 3\amp 4 \\ 0 \amp 1 \amp 2\amp 3 \\  0 \amp 1 \amp 2 \amp 3 \end{bmatrix} 
 \end{equation*}
 </div></div>
 ---
-<div class="para logical" id="parsons-row-ops-sequence-3-4-1"><div class="displaymath process-math">
+<div class="para logical" id="parsons-row-ops-sequence-3-4-1"><div class="displaymath process-math" id="parsons-row-ops-sequence-3-4-1-1">
 \begin{equation*}
 \begin{bmatrix} 1 \amp 2\amp 3\amp 4 \\ 0 \amp 1 \amp 2\amp 3 \\  0 \amp 0 \amp 0 \amp 0 \end{bmatrix} 
 \end{equation*}
 </div></div>
 ---
-<div class="para logical" id="parsons-row-ops-sequence-3-5-1"><div class="displaymath process-math">
+<div class="para logical" id="parsons-row-ops-sequence-3-5-1"><div class="displaymath process-math" id="parsons-row-ops-sequence-3-5-1-1">
 \begin{equation*}
 \begin{bmatrix} 1 \amp 2\amp 3\amp 4 \\ 0 \amp 1 \amp 2\amp 3 \\  -1 \amp -2 \amp -3 \amp -4 \end{bmatrix} 
 \end{equation*}
 </div></div> #distractor
 ---
-<div class="para logical" id="parsons-row-ops-sequence-3-6-1"><div class="displaymath process-math">
+<div class="para logical" id="parsons-row-ops-sequence-3-6-1"><div class="displaymath process-math" id="parsons-row-ops-sequence-3-6-1-1">
 \begin{equation*}
 \begin{bmatrix} 0 \amp 1 \amp 2\amp 3 \\ 1 \amp 2\amp 3\amp 4 \\ 0 \amp 0 \amp 0 \amp 0 \end{bmatrix} 
 \end{equation*}
@@ -1169,27 +1164,22 @@ R_1+R_3 \amp \rightarrow R_3 \\
 <div class="ptx-runestone-container"><div class="runestone"><ul data-component="poll" id="rs-rq-row-ops-confidencepoll" data-results="instructor">
 <div class="para" id="rq-row-ops-confidencepoll-1-1">How confident do you feel with the material you just read about?<div class="autopermalink" data-description="Paragraph"><a href="#rq-row-ops-confidencepoll-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<li>1. <div class="para" id="rq-row-ops-confidencepoll-2-1-1-1">Not at all confident or didn’t do the reading.<div class="autopermalink" data-description="Paragraph"><a href="#rq-row-ops-confidencepoll-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>1. <div class="para" id="rq-row-ops-confidencepoll-2-1-1-1">Not at all confident or didn’t do the reading.</div>
 </li>
-<li>2. <div class="para" id="rq-row-ops-confidencepoll-2-2-1-1">Not very confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-row-ops-confidencepoll-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>2. <div class="para" id="rq-row-ops-confidencepoll-2-2-1-1">Not very confident.</div>
 </li>
-<li>3. <div class="para" id="rq-row-ops-confidencepoll-2-3-1-1">Somewhat confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-row-ops-confidencepoll-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>3. <div class="para" id="rq-row-ops-confidencepoll-2-3-1-1">Somewhat confident.</div>
 </li>
-<li>4. <div class="para" id="rq-row-ops-confidencepoll-2-4-1-1">Mostly confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-row-ops-confidencepoll-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>4. <div class="para" id="rq-row-ops-confidencepoll-2-4-1-1">Mostly confident.</div>
 </li>
-<li>5. <div class="para" id="rq-row-ops-confidencepoll-2-5-1-1">Confident so far and ready to engage more deeply.<div class="autopermalink" data-description="Paragraph"><a href="#rq-row-ops-confidencepoll-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>5. <div class="para" id="rq-row-ops-confidencepoll-2-5-1-1">Confident so far and ready to engage more deeply.</div>
 </li>
 </ul></div></div>
 <div class="autopermalink" data-description="Task 3.a"><a href="#rq-row-ops-confidencepoll-task" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="rq-row-ops-confidenceresponse"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-row-ops-confidenceresponse" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para" id="rq-row-ops-confidenceresponse-1-1">Ask a question about the material.  What additional information do you think someone would need to become more confident in their understanding?<div class="autopermalink" data-description="Paragraph"><a href="#rq-row-ops-confidenceresponse-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
 <div class="autopermalink" data-description="Task 3.b"><a href="#rq-row-ops-confidenceresponse" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Reading Question 3: Reflection"><a href="#rq-row-ops-questions-poll" title="Copy heading and permalink for Reading Question 3: Reflection" aria-label="Copy heading and permalink for Reading Question 3: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-row-ops" title="Copy heading and permalink for Reading Questions" aria-label="Copy heading and permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-row-ops-bc" title="Copy heading and permalink for Subsection: Prepare" aria-label="Copy heading and permalink for Subsection: Prepare">🔗</a></div></section><section class="worksheet" id="ws-row-ops" data-margins="1in 1in 1.25cm 1in"><h3 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Participate</span><div class="print-links"><a href="ws-row-ops-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Participate</span><div class="print-links"><a href="?printpreview=ws-row-ops" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h3>
 <article class="objectives goal-like" id="ws-row-ops-2"><h4 class="heading"><span class="type">Objectives</span></h4>
 <ul class="disc" id="ws-row-ops-2-1">
@@ -1209,7 +1199,7 @@ R_1+R_3 \amp \rightarrow R_3 \\
 </h4>
 <div class="introduction" id="ws-row-ops-3-1-2"><div class="para logical" id="ws-row-ops-3-1-2-1">
 <div class="para">For the matrix</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ws-row-ops-3-1-2-1-1">
 \begin{equation*}
 A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]\text{,}
 \end{equation*}
@@ -1247,7 +1237,7 @@ A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \en
 <div class="autopermalink" data-description="Paragraph"><a href="#row-op-ws-matrix-sys-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <div class="sbspanel sbspanel--bottom bottom" style=""><div class="para logical" id="row-op-ws-matrix-sys-2-2-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="row-op-ws-matrix-sys-2-2-2-1">
 \begin{equation*}
 \begin{bmatrix} 2 \amp 4 \amp -6 \\ 5 \amp -5 \amp 15 \\ \end{bmatrix}
 \end{equation*}
@@ -1260,7 +1250,7 @@ A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \en
 <h4 class="heading"><span class="title">What row operation was done?</span></h4>
 <div class="introduction" id="ws-row-ops-4-1-2"><div class="para logical" id="ws-row-ops-4-1-2-1">
 <div class="para">Write down the row operation that transforms <span class="process-math">\(A\)</span> into the matrix given in each exercise.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ws-row-ops-4-1-2-1-2">
 \begin{equation*}
 A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]
 \end{equation*}
@@ -1270,7 +1260,7 @@ A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \en
 <div class="exercisegroup-exercises cols3 multicolumn">
 <article class="exercise exercise-like" id="ws-row-ops-4-1-3"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="ws-row-ops-4-1-3-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ws-row-ops-4-1-3-1-1-1">
 \begin{equation*}
 \left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ 2\amp -2\amp -2\\ \end{array} \right]
 \end{equation*}
@@ -1280,7 +1270,7 @@ A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \en
 <div class="workspace" data-space=".2in"></div>
 <div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#ws-row-ops-4-1-3" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ws-row-ops-4-1-4"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="ws-row-ops-4-1-4-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ws-row-ops-4-1-4-1-1-1">
 \begin{equation*}
 \left[\begin{array}{ccc} 0\amp 1\amp 3\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]
 \end{equation*}
@@ -1290,7 +1280,7 @@ A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \en
 <div class="workspace" data-space=".2in"></div>
 <div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#ws-row-ops-4-1-4" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="ws-row-ops-4-1-5"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="ws-row-ops-4-1-5-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ws-row-ops-4-1-5-1-1-1">
 \begin{equation*}
 \left[\begin{array}{ccc} 2\amp -1\amp 1\\  -1\amp 1\amp 1\\ 4\amp 0\amp 5\\ \end{array} \right]
 \end{equation*}
@@ -1355,7 +1345,7 @@ A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \en
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-12-1-1-1">Given the matrix<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-12-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-12-1-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="extracted-webwork-12-1-1-2-1">
 \begin{equation*}
 A={\left[\begin{array}{cccc}
 -2 \amp 6 \amp 3 \amp 5\cr
@@ -1378,7 +1368,7 @@ A={\left[\begin{array}{cccc}
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-13-1-1-1">Given the matrix<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-13-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-13-1-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="extracted-webwork-13-1-1-2-1">
 \begin{equation*}
 A={\left[\begin{array}{cccc}
 1 \amp 1 \amp 3 \amp -2\cr
@@ -1390,7 +1380,7 @@ A={\left[\begin{array}{cccc}
 <div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-13-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-13-1-1-3">perform the row operations below in the order given and enter the final result.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-13-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-13-1-1-4">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="extracted-webwork-13-1-1-4-1">
 \begin{equation*}
 \begin{aligned}
 {-3} R_1 +R_2 \amp \rightarrow R_2\\
@@ -1411,7 +1401,7 @@ A={\left[\begin{array}{cccc}
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-14-1-1-1">The matrix on the right results after performing a single row operation on the matrix on the left.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-14-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-14-1-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="extracted-webwork-14-1-1-2-1">
 \begin{equation*}
 {\left[\begin{array}{ccc}
 1 \amp -3 \amp 1\cr
@@ -1458,7 +1448,7 @@ A={\left[\begin{array}{cccc}
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-15-1-1-1">The matrix on the right results after performing a single row operation on the matrix on the left.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-15-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-15-1-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="extracted-webwork-15-1-1-2-1">
 \begin{equation*}
 {\left[\begin{array}{ccc}
 2 \amp 5 \amp -6\cr
@@ -1505,7 +1495,7 @@ A={\left[\begin{array}{cccc}
 <div class="problem-contents">
 <div class="para" id="extracted-webwork-16-1-1-1">The matrix on the right results after performing a single row operation on the matrix on the left.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-16-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="extracted-webwork-16-1-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="extracted-webwork-16-1-1-2-1">
 \begin{equation*}
 {\left[\begin{array}{ccc}
 4 \amp 1 \amp -1\cr
@@ -1551,7 +1541,7 @@ A={\left[\begin{array}{cccc}
 <h4 class="heading"><span class="title">Perform row operations.</span></h4>
 <div class="introduction" id="exer-row-ops-2-2"><div class="para logical" id="exer-row-ops-2-2-1">
 <div class="para">In the following exercises, perform the given row operations on <span class="process-math">\(A\text{,}\)</span> where</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exer-row-ops-2-2-1-2">
 \begin{equation*}
 A = \left[\begin{array}{ccc} 2\amp -1\amp 7\\0\amp 4\amp -2\\5\amp 0\amp 3 \end{array} \right]
 \end{equation*}
@@ -1628,7 +1618,7 @@ A = \left[\begin{array}{ccc} 2\amp -1\amp 7\\0\amp 4\amp -2\\5\amp 0\amp 3 \end{
 <div class="introduction" id="exer-row-ops-3-2"><div class="para logical" id="exer-row-ops-3-2-1">
 <div class="para">A matrix <span class="process-math">\(A\)</span> is given below. In the following exercises, a matrix <span class="process-math">\(B\)</span> is given. Give the row operation that transforms <span class="process-math">\(A\)</span> into <span class="process-math">\(B\text{.}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exer-row-ops-3-2-1-5">
 \begin{equation*}
 A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{array} \right]
 \end{equation*}
@@ -1697,7 +1687,7 @@ A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{ar
 <div class="exercisegroup-exercises cols2 multicolumn">
 <article class="exercise exercise-like" id="exer-row-ops-4-3"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exer-row-ops-4-3-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exer-row-ops-4-3-1-1-1">
 \begin{equation*}
 \begin{array}{ccccc} x\amp +\amp y\amp =\amp 3\\ 2x\amp -\amp 3y\amp =\amp 1 \end{array}
 \end{equation*}
@@ -1712,7 +1702,7 @@ A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{ar
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 12"><a href="#exer-row-ops-4-3" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div></article><article class="exercise exercise-like" id="exer-row-ops-4-4"><h5 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exer-row-ops-4-4-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exer-row-ops-4-4-1-1-1">
 \begin{equation*}
 \begin{array}{ccccc} 2x\amp +\amp 4y\amp =\amp 10\\ -x\amp +\amp y\amp =\amp 4 \end{array}
 \end{equation*}
@@ -1727,7 +1717,7 @@ A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{ar
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 13"><a href="#exer-row-ops-4-4" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div></article><article class="exercise exercise-like" id="exer-row-ops-4-5"><h5 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exer-row-ops-4-5-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exer-row-ops-4-5-1-1-1">
 \begin{equation*}
 \begin{array}{ccccc} -2x\amp +\amp 3y\amp =\amp 2\\ -x\amp +\amp y\amp =\amp 1 \end{array}
 \end{equation*}
@@ -1742,7 +1732,7 @@ A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{ar
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 14"><a href="#exer-row-ops-4-5" title="Copy heading and permalink for Exercise 14" aria-label="Copy heading and permalink for Exercise 14">🔗</a></div></article><article class="exercise exercise-like" id="exer-row-ops-4-6"><h5 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exer-row-ops-4-6-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exer-row-ops-4-6-1-1-1">
 \begin{equation*}
 \begin{array}{ccccccc} 2x\amp +\amp 3y\amp =\amp 2\\ -2x\amp +\amp 6y\amp =\amp 1 \end{array}
 \end{equation*}
@@ -1757,7 +1747,7 @@ A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{ar
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 15"><a href="#exer-row-ops-4-6" title="Copy heading and permalink for Exercise 15" aria-label="Copy heading and permalink for Exercise 15">🔗</a></div></article><article class="exercise exercise-like" id="exer-row-ops-4-7"><h5 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exer-row-ops-4-7-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exer-row-ops-4-7-1-1-1">
 \begin{equation*}
 \begin{array}{ccccccc} -5x_1\amp \amp \amp +\amp 2x_3\amp =\amp 14\\ \amp \amp x_2\amp \amp \amp =\amp 1\\ -3x_1\amp \amp \amp +\amp x_3\amp =\amp 8 \end{array}
 \end{equation*}
@@ -1772,7 +1762,7 @@ A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{ar
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 16"><a href="#exer-row-ops-4-7" title="Copy heading and permalink for Exercise 16" aria-label="Copy heading and permalink for Exercise 16">🔗</a></div></article><article class="exercise exercise-like" id="exer-row-ops-4-8"><h5 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exer-row-ops-4-8-1-1">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="exer-row-ops-4-8-1-1-1">
 \begin{equation*}
 \begin{array}{ccccccc} \amp -\amp 5x_2\amp +\amp 2x_3\amp =\amp -11\\ x_1\amp \amp \amp +\amp 2x_3\amp =\amp 15\\ \amp -\amp 3x_2\amp +\amp x_3\amp =\amp -8 \end{array}
 \end{equation*}
@@ -1789,7 +1779,8 @@ A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{ar
 </div>
 <div class="autopermalink" data-description="Exercise Group 12–17: Equations and matrices together"><a href="#exer-row-ops-4" title="Copy heading and permalink for Exercise Group 12–17: Equations and matrices together" aria-label="Copy heading and permalink for Exercise Group 12–17: Equations and matrices together">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercises: Additional Practice"><a href="#exer-row-ops" title="Copy heading and permalink for Exercises: Additional Practice" aria-label="Copy heading and permalink for Exercises: Additional Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 1.3: Row Operations"><a href="#sec-row-ops" title="Copy heading and permalink for Section 1.3: Row Operations" aria-label="Copy heading and permalink for Section 1.3: Row Operations">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercises: Additional Practice"><a href="#exer-row-ops" title="Copy heading and permalink for Exercises: Additional Practice" aria-label="Copy heading and permalink for Exercises: Additional Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 1.3: Row Operations"><a href="#sec-row-ops" title="Copy heading and permalink for Section 1.3: Row Operations" aria-label="Copy heading and permalink for Section 1.3: Row Operations">🔗</a></div></section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-matrices-elimination.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-rref.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
@@ -1797,5 +1788,6 @@ A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{ar
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="feedback-link" href="mailto:csafranski@franciscan.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
+<script>diagcess.Base.init()</script>
 </body>
 </html>

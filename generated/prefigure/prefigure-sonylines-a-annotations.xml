@@ -1,0 +1,76 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-sonylines-a-figure" speech2="The graph of two lines and their point of intersection">
+      <grouped>prefigure-sonylines-a-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-sonylines-a-grid-axes</active>
+        <active>prefigure-sonylines-a-graph-f</active>
+        <active>prefigure-sonylines-a-graph-g</active>
+        <active>prefigure-sonylines-a-point</active>
+      </children>
+      <components>
+        <active>prefigure-sonylines-a-grid-axes</active>
+        <active>prefigure-sonylines-a-graph-f</active>
+        <active>prefigure-sonylines-a-graph-g</active>
+        <active>prefigure-sonylines-a-point</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-sonylines-a-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-sonylines-a-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-sonylines-a-grid</active>
+        <active>prefigure-sonylines-a-axes</active>
+      </children>
+      <components>
+        <active>prefigure-sonylines-a-grid</active>
+        <active>prefigure-sonylines-a-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-sonylines-a-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-sonylines-a-grid" speech2="The coordinate grid">
+      <active>prefigure-sonylines-a-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-sonylines-a-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-sonylines-a-axes" speech2="The coordinate axes">
+      <active>prefigure-sonylines-a-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-sonylines-a-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-sonylines-a-graph-f" speech2="The graph of x+y=2" sonify="yes">
+      <active>prefigure-sonylines-a-graph-f</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-sonylines-a-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-sonylines-a-graph-f</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-sonylines-a-graph-g" speech2="The graph of 15x+6y=15" sonify="yes">
+      <active>prefigure-sonylines-a-graph-g</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-sonylines-a-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-sonylines-a-graph-g</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-sonylines-a-point" speech2="The point of intersection">
+      <active>prefigure-sonylines-a-point</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-sonylines-a-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

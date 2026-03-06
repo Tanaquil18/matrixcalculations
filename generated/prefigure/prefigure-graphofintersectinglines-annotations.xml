@@ -1,0 +1,36 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-graphofintersectinglines-figure" speech2="The graph of two lines which have a point of intersection">
+      <grouped>prefigure-graphofintersectinglines-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-graphofintersectinglines-graph-f</active>
+        <active>prefigure-graphofintersectinglines-graph-g</active>
+      </children>
+      <components>
+        <active>prefigure-graphofintersectinglines-graph-f</active>
+        <active>prefigure-graphofintersectinglines-graph-g</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-graphofintersectinglines-graph-f" speech2="The graph of y equals x" sonify="yes">
+      <active>prefigure-graphofintersectinglines-graph-f</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-graphofintersectinglines-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-graphofintersectinglines-graph-f</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-graphofintersectinglines-graph-g" speech2="The graph of y equals negative x plus 2" sonify="yes">
+      <active>prefigure-graphofintersectinglines-graph-g</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-graphofintersectinglines-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-graphofintersectinglines-graph-g</ACTIVE>
+      </sonification>
+    </annotation>
+  </annotations>
+</diagram>

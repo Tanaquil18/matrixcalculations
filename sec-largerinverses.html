@@ -81,7 +81,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -98,7 +98,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Matrix Calculations">
 <meta property="book:author" content="Chrissy Safranski">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -120,16 +120,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.19';
+eBookConfig.runestone_version = '7.11.17';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.5c6d23c3bf7decb7.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.296eb9cf978e3bdb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.86a1bdf80f338ffc.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
@@ -368,7 +368,35 @@ sagecell.makeSagecell({
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-largerinverses"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-answer-checkbox">Hide answers</label><input type="checkbox" id="hide-answer-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="section" id="sec-largerinverses"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Larger Inverses</span>
 </h2>
 <section class="introduction" id="sec-largerinverses-2"><div class="para" id="sec-largerinverses-2-1">We learned in the previous section what the inverse of a square matrix is and how to calculate the inverse of a <span class="process-math">\(2\times 2\)</span> matrix.  Then we used the matrix inverse to solve a linear system with 2 variables.<div class="autopermalink" data-description="Paragraph"><a href="#sec-largerinverses-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -379,7 +407,7 @@ sagecell.makeSagecell({
 </h3>
 <div class="para logical" id="subsec-largerinverses-bc-2">
 <div class="para">Consider the matrix</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_inverse.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_inverse.html" id="subsec-largerinverses-bc-2-1">
 \begin{equation*}
 A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\text{.}
 \end{equation*}
@@ -393,19 +421,19 @@ A^{-1}\amp = \frac{1}{ad-bc}\left[\begin{array}{rr|rr} d\amp -b\\-c\amp a \end{a
 \end{align*}
 </div>
 <div class="para">Let’s now find <span class="process-math">\(A^{-1}\)</span> in another way, using a method that will also work on larger matrices. Let</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_inverse.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_inverse.html" id="subsec-largerinverses-bc-2-6">
 \begin{equation*}
 A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix}\text{.}
 \end{equation*}
 </div>
 <div class="para">Calculating <span class="process-math">\(A^{-1}\)</span> means we need to solve for the values of <span class="process-math">\(x_1, y_1, x_2, y_2\text{.}\)</span> We know that <span class="process-math">\(A A^{-1}=I\text{,}\)</span> which means that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_inverse.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_inverse.html" id="subsec-largerinverses-bc-2-10">
 \begin{equation*}
 \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}\text{,}
 \end{equation*}
 </div>
 <div class="para">and using matrix multiplication on the two matrices above means that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_inverse.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_inverse.html" id="subsec-largerinverses-bc-2-11">
 \begin{equation*}
 \begin{bmatrix} 1x_1+2x_2 \amp 1y_1+2y_2 \\ 3x_1+5x_2 \amp 3y_1+5y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}\text{.}
 \end{equation*}
@@ -452,7 +480,7 @@ A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix}\text{.}
 </div>
 <div class="para logical" id="subsec-largerinverses-bc-6">
 <div class="para">Putting those values we calculated together results in</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-largerinverses-bc-6-1">
 \begin{equation*}
 A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \left[\begin{array}{rr|rr} -5 \amp 2 \\ 3 \amp -1 \end{array}\right]\text{,}
 \end{equation*}
@@ -466,7 +494,7 @@ A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \left[\begin
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="mc-inverseobervations-2-1">
 <div class="para">We solved for the inverse of <span class="process-math">\(A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\)</span> by setting up</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="mc-inverseobervations-2-1-2">
 \begin{equation*}
 \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}\text{,}
 \end{equation*}
@@ -537,7 +565,7 @@ A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \left[\begin
 </div>
 <div class="para logical" id="subsec-largerinverses-bc-10">
 <div class="para">In math notation,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-largerinverses-bc-10-1">
 \begin{equation*}
 \bigg[\begin{array}{c|c} A \amp I \end{array}\bigg] \rrefarrow \bigg[\begin{array}{c|c} I \amp A^{-1} \end{array}\bigg]\text{.}
 \end{equation*}
@@ -553,7 +581,7 @@ A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \left[\begin
 </div>
 <div class="para logical" id="subsec-largerinverses-bc-12-3">
 <div class="para">We’re trying to find an unknown matrix <span class="process-math">\(A^{-1}\)</span> such that <span class="process-math">\(AA^{-1}=I\text{.}\)</span> So we set up three augmented systems of equations to solve at the same time, resulting in</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-largerinverses-bc-12-3-3">
 \begin{equation*}
 \left[\begin{array}{rrr|rrr} 1\amp 1\amp -1\amp 1\amp 0\amp 0\\1\amp -1\amp 1\amp 0\amp 1\amp 0\\1\amp 2\amp 3\amp 0\amp 0\amp 1 \end{array} \right]\text{.}
 \end{equation*}
@@ -581,7 +609,7 @@ show(invA*A)
 </div>
 <div class="para logical" id="subsec-largerinverses-bc-14-3">
 <div class="para">We’re trying to find an unknown matrix <span class="process-math">\(A^{-1}\)</span> such that <span class="process-math">\(AA^{-1}=I\text{.}\)</span> So we set up three augmented systems of equations to solve at the same time, resulting in</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-largerinverses-bc-14-3-3">
 \begin{equation*}
 \left[\begin{array}{ccc|ccc} 1\amp 1\amp -1\amp 1\amp 0\amp 0\\1\amp -1\amp 1\amp 0\amp 1\amp 0\\3\amp -1\amp 1\amp 0\amp 0\amp 1 \end{array} \right]\text{.}
 \end{equation*}
@@ -601,19 +629,19 @@ show(invA*A)
 </div>
 <div class="para logical" id="subsec-largerinverses-bc-14-5">
 <div class="para">In fact, there is no possible inverse of <span class="process-math">\(A\text{.}\)</span>  We can see this is true by observing that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-largerinverses-bc-14-5-2">
 \begin{equation*}
 \left[\begin{array}{rrr} 1\amp 1\amp -1\\1\amp -1\amp 1\\3\amp -1\amp 1 \end{array} \right]\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]
 \end{equation*}
 </div>
 <div class="para">If <span class="process-math">\(A^{-1}\)</span> exists, then we could multiply both sides on the left by <span class="process-math">\(A^{-1}\)</span> and get</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-largerinverses-bc-14-5-5">
 \begin{equation*}
 A^{-1}A\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=A^{-1}\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]
 \end{equation*}
 </div>
 <div class="para">and since <span class="process-math">\(A^{-1}\mathbf{0}=\mathbf{0}\text{,}\)</span> this would mean that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-largerinverses-bc-14-5-7">
 \begin{equation*}
 \left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]\text{,}
 \end{equation*}
@@ -628,7 +656,7 @@ A^{-1}A\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=A^{-1}\left[\begin{
 <div class="para logical" id="calculating_larger_inverses-4">
 <div class="para">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(n \times n\)</span> matrix. To calculate <span class="process-math">\(A^{-1}\text{,}\)</span> augment the matrix <span class="process-math">\(A\)</span> by the <span class="process-math">\(n\times n\)</span> identity matrix <span class="process-math">\(I\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="calculating_larger_inverses-4-7">
 \begin{equation*}
 \big[\begin{array}{c|c}   A \amp  I \end{array} \big]
 \end{equation*}
@@ -638,7 +666,7 @@ A^{-1}A\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=A^{-1}\left[\begin{
 <li id="calculating_larger_inverses-4-9-1">
 <div class="para logical" id="calculating_larger_inverses-4-9-1-1">
 <div class="para">If the reduced row echelon form is of the form</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="calculating_larger_inverses-4-9-1-1-1">
 \begin{equation*}
 \big[\begin{array}{c|c}  I \amp   X \end{array} \big]\text{,}
 \end{equation*}
@@ -668,13 +696,13 @@ A^{-1}A\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=A^{-1}\left[\begin{
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="interpret-inverse-a-1-1">
 <div class="para">Suppose that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="interpret-inverse-a-1-1-1">
 \begin{equation*}
 A=\left[\begin{array}{rrr} 1\amp 2\amp -1\\2\amp 0\amp -1\\-2\amp -3\amp 2 \end{array} \right]
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="interpret-inverse-a-1-1-2">
 \begin{equation*}
 \left[\begin{array}{rrr|rrr} 1\amp 2\amp -1\amp 1\amp 0\amp 0\\2\amp 0\amp -1\amp 0\amp 1\amp 0\\-2\amp -3\amp 2\amp 0\amp 0\amp 1 \end{array} \right]
 \rrefarrow \left[\begin{array}{rrr|rrr} 1\amp 0\amp 0\amp 3\amp 1\amp 2\\0\amp 1\amp 0\amp 2\amp 0\amp 1\\0\amp 0\amp 1\amp 6\amp 1\amp 4 \end{array} \right]\text{.}
@@ -684,17 +712,16 @@ A=\left[\begin{array}{rrr} 1\amp 2\amp -1\\2\amp 0\amp -1\\-2\amp -3\amp 2 \end{
 <div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-interpret-inverse-a" data-multipleanswers="false">
-<li data-component="answer" id="rs-interpret-inverse-a_opt_a"><div class="para" id="interpret-inverse-a-2-1-1-1">The matrix <span class="process-math">\(A\)</span> doesn’t have an inverse.<div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-a-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-interpret-inverse-a_opt_a"><div class="para" id="interpret-inverse-a-2-1-1-1">The matrix <span class="process-math">\(A\)</span> doesn’t have an inverse.</div></li>
 <li data-component="feedback" id="rs-interpret-inverse-a_opt_a"><div class="para" id="interpret-inverse-a-2-1-2-1">After row reducing <span class="process-math">\(\big[A | I \big]\)</span> we see the identity matrix appear on the left.</div></li>
-<li data-component="answer" id="rs-interpret-inverse-a_opt_b"><div class="para" id="interpret-inverse-a-2-2-1-1">The inverse of <span class="process-math">\(A\)</span> is <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-a-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-interpret-inverse-a_opt_b"><div class="para" id="interpret-inverse-a-2-2-1-1">The inverse of <span class="process-math">\(A\)</span> is <span class="process-math">\(I\text{.}\)</span>
 </div></li>
 <li data-component="feedback" id="rs-interpret-inverse-a_opt_b">
 <div class="para" id="interpret-inverse-a-2-2-2-1">The inverse of a matrix <span class="process-math">\(A\)</span> is the matrix we multiply <span class="process-math">\(A\)</span> by in order to get <span class="process-math">\(I\text{.}\)</span>
 </div> <div class="para" id="interpret-inverse-a-2-2-2-2">But <span class="process-math">\(AI=IA=A\text{,}\)</span> not <span class="process-math">\(I\text{.}\)</span>
 </div>
 </li>
-<li data-component="answer" id="rs-interpret-inverse-a_opt_c" data-correct=""><div class="para" id="interpret-inverse-a-2-3-1-1">The inverse of <span class="process-math">\(A\)</span> is <span class="process-math">\(\left[\begin{array}{rrr} 3\amp 1\amp 2\\2\amp 0\amp 1\\6\amp 1\amp 4 \end{array} \right]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-a-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-interpret-inverse-a_opt_c" data-correct=""><div class="para" id="interpret-inverse-a-2-3-1-1">The inverse of <span class="process-math">\(A\)</span> is <span class="process-math">\(\left[\begin{array}{rrr} 3\amp 1\amp 2\\2\amp 0\amp 1\\6\amp 1\amp 4 \end{array} \right]\)</span>
 </div></li>
 <li data-component="feedback" id="rs-interpret-inverse-a_opt_c"><div class="para" id="interpret-inverse-a-2-3-2-1">Correct!</div></li>
 </ul>
@@ -704,13 +731,13 @@ A=\left[\begin{array}{rrr} 1\amp 2\amp -1\\2\amp 0\amp -1\\-2\amp -3\amp 2 \end{
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="interpret-inverse-b-1-1">
 <div class="para">Suppose that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="interpret-inverse-b-1-1-1">
 \begin{equation*}
 A=\left[\begin{array}{rrrr} 1\amp 2\amp -1\amp 5\\2\amp 0\amp -1\amp 2\\-2\amp -3\amp 2 \amp 1 \\1\amp -1\amp 0 \amp 8\end{array} \right]
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="interpret-inverse-b-1-1-2">
 \begin{equation*}
 \left[\begin{array}{rrrr|rrrr} 1\amp 2\amp -1\amp 5 \amp 1\amp 0\amp 0 \amp 0\\2\amp 0\amp -1 \amp 2 \amp 0\amp 1\amp 0 \amp 0\\-2\amp -3\amp 2 \amp 1 \amp 0\amp 0\amp 1 \amp 0 \\ 1\amp -1\amp 0 \amp 8 \amp 0 \amp 0 \amp 0 \amp 1\end{array} \right]
 \rrefarrow \left[\begin{array}{rrrrrrrr} 1\amp 0\amp 0\amp 19\amp 0 \amp -2\amp -1\amp 3\\0\amp 1\amp 0 \amp 11 \amp 0\amp -2\amp -1 \amp 2\\0\amp 0\amp 1 \amp 36\amp 0 \amp -5\amp -2\amp 6 \\ 0\amp 0\amp 0 \amp 0\amp 1 \amp 1\amp 1\amp -1  \end{array} \right]\text{.}
@@ -720,13 +747,12 @@ A=\left[\begin{array}{rrrr} 1\amp 2\amp -1\amp 5\\2\amp 0\amp -1\amp 2\\-2\amp -
 <div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-b-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-interpret-inverse-b" data-multipleanswers="false">
-<li data-component="answer" id="rs-interpret-inverse-b_opt_a" data-correct=""><div class="para" id="interpret-inverse-b-2-1-1-1">The matrix <span class="process-math">\(A\)</span> doesn’t have an inverse.<div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-b-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-interpret-inverse-b_opt_a" data-correct=""><div class="para" id="interpret-inverse-b-2-1-1-1">The matrix <span class="process-math">\(A\)</span> doesn’t have an inverse.</div></li>
 <li data-component="feedback" id="rs-interpret-inverse-b_opt_a"><div class="para" id="interpret-inverse-b-2-1-2-1">After row reducing <span class="process-math">\(\big[A | I \big]\)</span> we don’t see the <span class="process-math">\(4 \times 4\)</span> identity matrix appear on the left.</div></li>
-<li data-component="answer" id="rs-interpret-inverse-b_opt_b"><div class="para" id="interpret-inverse-b-2-2-1-1">The inverse of <span class="process-math">\(A\)</span> is <span class="process-math">\(\left[\begin{array}{rrrr} 0\amp -2\amp -1\amp 3\\0\amp -2\amp -1 \amp 2 \\ 0\amp -5\amp -2\amp 6\\1\amp 1\amp 1 \amp -1\end{array} \right]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-b-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-interpret-inverse-b_opt_b"><div class="para" id="interpret-inverse-b-2-2-1-1">The inverse of <span class="process-math">\(A\)</span> is <span class="process-math">\(\left[\begin{array}{rrrr} 0\amp -2\amp -1\amp 3\\0\amp -2\amp -1 \amp 2 \\ 0\amp -5\amp -2\amp 6\\1\amp 1\amp 1 \amp -1\end{array} \right]\text{.}\)</span>
 </div></li>
 <li data-component="feedback" id="rs-interpret-inverse-b_opt_b"><div class="para" id="interpret-inverse-b-2-2-2-1">We don’t see the <span class="process-math">\(4 \times 4\)</span> identity matrix appear on the left.</div></li>
-<li data-component="answer" id="rs-interpret-inverse-b_opt_c"><div class="para" id="interpret-inverse-b-2-3-1-1">The inverse of <span class="process-math">\(A\)</span> is <span class="process-math">\(\left[\begin{array}{rrr} 19\amp 0\amp -2 \\ 11\amp 0\amp -2\\36\amp 0\amp -5 \end{array} \right]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-b-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li data-component="answer" id="rs-interpret-inverse-b_opt_c"><div class="para" id="interpret-inverse-b-2-3-1-1">The inverse of <span class="process-math">\(A\)</span> is <span class="process-math">\(\left[\begin{array}{rrr} 19\amp 0\amp -2 \\ 11\amp 0\amp -2\\36\amp 0\amp -5 \end{array} \right]\text{.}\)</span>
 </div></li>
 <li data-component="feedback" id="rs-interpret-inverse-b_opt_c"><div class="para" id="interpret-inverse-b-2-3-2-1">We don’t see the <span class="process-math">\(4 \times 4\)</span> identity matrix appear on the left.</div></li>
 </ul>
@@ -736,7 +762,7 @@ A=\left[\begin{array}{rrrr} 1\amp 2\amp -1\amp 5\\2\amp 0\amp -1\amp 2\\-2\amp -
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para logical" id="interpret-inverse-c-1-1">
 <div class="para">Suppose that <span class="process-math">\(A\)</span> is a matrix such that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="interpret-inverse-c-1-1-2">
 \begin{equation*}
 A \rrefarrow \left[\begin{array}{rrrr} 1\amp 0\amp 0\amp 0\\0\amp 1\amp 0\amp 0\\0\amp 0\amp 1 \amp 0 \\0\amp 0\amp 0 \amp 1\end{array} \right]\text{.}
 \end{equation*}
@@ -745,14 +771,11 @@ A \rrefarrow \left[\begin{array}{rrrr} 1\amp 0\amp 0\amp 0\\0\amp 1\amp 0\amp 0\
 <div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-interpret-inverse-c" data-multipleanswers="false">
-<li data-component="answer" id="rs-interpret-inverse-c_opt_a"><div class="para" id="interpret-inverse-c-2-1-1-1">The matrix <span class="process-math">\(A\)</span> doesn’t have an inverse.<div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-c-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-interpret-inverse-c_opt_a"><div class="para" id="interpret-inverse-c-2-1-1-1">The matrix <span class="process-math">\(A\)</span> doesn’t have an inverse.</div></li>
 <li data-component="feedback" id="rs-interpret-inverse-c_opt_a"><div class="para" id="interpret-inverse-c-2-1-2-1">After row reducing <span class="process-math">\(\big[A | I \big]\)</span> the identity would appear on the left, using the same row operations used to row reduce <span class="process-math">\(A\)</span> by itself.</div></li>
-<li data-component="answer" id="rs-interpret-inverse-c_opt_b" data-correct=""><div class="para" id="interpret-inverse-c-2-2-1-1">The matrix <span class="process-math">\(A\)</span> has an inverse.<div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-c-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-interpret-inverse-c_opt_b" data-correct=""><div class="para" id="interpret-inverse-c-2-2-1-1">The matrix <span class="process-math">\(A\)</span> has an inverse.</div></li>
 <li data-component="feedback" id="rs-interpret-inverse-c_opt_b"><div class="para" id="interpret-inverse-c-2-2-2-1">After row reducing <span class="process-math">\(\big[A | I \big]\)</span> the identity would appear on the left, using the same row operations used to row reduce <span class="process-math">\(A\)</span> by itself.</div></li>
-<li data-component="answer" id="rs-interpret-inverse-c_opt_c"><div class="para" id="interpret-inverse-c-2-3-1-1">Without knowing what <span class="process-math">\(A\)</span> is, we can’t tell whether or not <span class="process-math">\(A\)</span> has an inverse.<div class="autopermalink" data-description="Paragraph"><a href="#interpret-inverse-c-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></li>
+<li data-component="answer" id="rs-interpret-inverse-c_opt_c"><div class="para" id="interpret-inverse-c-2-3-1-1">Without knowing what <span class="process-math">\(A\)</span> is, we can’t tell whether or not <span class="process-math">\(A\)</span> has an inverse.</div></li>
 <li data-component="feedback" id="rs-interpret-inverse-c_opt_c"><div class="para" id="interpret-inverse-c-2-3-2-1">We don’t know what the inverse is without knowing what <span class="process-math">\(A\)</span> is, but the same sequence of row operations that turns <span class="process-math">\(A\)</span> into <span class="process-math">\(I\)</span> would turn <span class="process-math">\(\big[A | I \big]\)</span> into <span class="process-math">\(\big[I | X \big]\text{,}\)</span> and <span class="process-math">\(X\)</span> would be the inverse of <span class="process-math">\(A\text{.}\)</span>
 </div></li>
 </ul>
@@ -800,27 +823,22 @@ A \rrefarrow \left[\begin{array}{rrrr} 1\amp 0\amp 0\amp 0\\0\amp 1\amp 0\amp 0\
 <div class="ptx-runestone-container"><div class="runestone"><ul data-component="poll" id="rs-rq-largerinverses-confidencepoll" data-results="instructor">
 <div class="para" id="rq-largerinverses-confidencepoll-1-1">How confident do you feel with the material you just read about?<div class="autopermalink" data-description="Paragraph"><a href="#rq-largerinverses-confidencepoll-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<li>1. <div class="para" id="rq-largerinverses-confidencepoll-2-1-1-1">Not at all confident or didn’t do the reading.<div class="autopermalink" data-description="Paragraph"><a href="#rq-largerinverses-confidencepoll-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>1. <div class="para" id="rq-largerinverses-confidencepoll-2-1-1-1">Not at all confident or didn’t do the reading.</div>
 </li>
-<li>2. <div class="para" id="rq-largerinverses-confidencepoll-2-2-1-1">Not very confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-largerinverses-confidencepoll-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>2. <div class="para" id="rq-largerinverses-confidencepoll-2-2-1-1">Not very confident.</div>
 </li>
-<li>3. <div class="para" id="rq-largerinverses-confidencepoll-2-3-1-1">Somewhat confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-largerinverses-confidencepoll-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>3. <div class="para" id="rq-largerinverses-confidencepoll-2-3-1-1">Somewhat confident.</div>
 </li>
-<li>4. <div class="para" id="rq-largerinverses-confidencepoll-2-4-1-1">Mostly confident.<div class="autopermalink" data-description="Paragraph"><a href="#rq-largerinverses-confidencepoll-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>4. <div class="para" id="rq-largerinverses-confidencepoll-2-4-1-1">Mostly confident.</div>
 </li>
-<li>5. <div class="para" id="rq-largerinverses-confidencepoll-2-5-1-1">Confident so far and ready to engage more deeply.<div class="autopermalink" data-description="Paragraph"><a href="#rq-largerinverses-confidencepoll-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<li>5. <div class="para" id="rq-largerinverses-confidencepoll-2-5-1-1">Confident so far and ready to engage more deeply.</div>
 </li>
 </ul></div></div>
 <div class="autopermalink" data-description="Task 3.a"><a href="#rq-largerinverses-confidencepoll-task" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="rq-largerinverses-confidenceresponse"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-rq-largerinverses-confidenceresponse" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded."><div class="para" id="rq-largerinverses-confidenceresponse-1-1">Ask a question about the material.  What additional information do you think someone would need to become more confident in their understanding?<div class="autopermalink" data-description="Paragraph"><a href="#rq-largerinverses-confidenceresponse-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div></div></div>
 <div class="autopermalink" data-description="Task 3.b"><a href="#rq-largerinverses-confidenceresponse" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Reading Question 3: Reflection"><a href="#rq-largerinverses-questions-poll" title="Copy heading and permalink for Reading Question 3: Reflection" aria-label="Copy heading and permalink for Reading Question 3: Reflection">🔗</a></div></article><div class="autopermalink" data-description="Reading Questions"><a href="#rqs-largerinverses" title="Copy heading and permalink for Reading Questions" aria-label="Copy heading and permalink for Reading Questions">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Prepare"><a href="#subsec-largerinverses-bc" title="Copy heading and permalink for Subsection: Prepare" aria-label="Copy heading and permalink for Subsection: Prepare">🔗</a></div></section><section class="worksheet" id="ws-largerinverses" data-margins="1in 1in 1.25cm 1in"><h3 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Participate</span><div class="print-links"><a href="ws-largerinverses-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Participate</span><div class="print-links"><a href="?printpreview=ws-largerinverses" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h3>
 <article class="objectives goal-like" id="ws-largerinverses-2"><h4 class="heading"><span class="type">Objectives</span></h4>
 <ul class="disc" id="ws-largerinverses-2-1">
@@ -922,13 +940,13 @@ B = \left[\begin{array}{rrr}
 <div class="autopermalink" data-description="Task 3.c"><a href="#ws-largerinverses-4-1-5" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="ws-largerinverses-4-1-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para logical" id="ws-largerinverses-4-1-6-1-1">
 <div class="para">Consider the product</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ws-largerinverses-4-1-6-1-1-1">
 \begin{equation*}
 (EF)(E^{-1}F^{-1})
 \end{equation*}
 </div>
 <div class="para">and use associativity to regroup the products so that the middle two terms are multiplied first. Do the same for</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="ws-largerinverses-4-1-6-1-1-2">
 \begin{equation*}
 (F^{-1}E^{-1})(EF)\text{.}
 \end{equation*}
@@ -1012,7 +1030,7 @@ B = \left[\begin{array}{rrr}
 <div class="problem-contents">
 <div class="para logical" id="extracted-webwork-49-1-1-1">
 <div class="para">If</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="extracted-webwork-49-1-1-1-1">
 \begin{equation*}
 A = \left[\begin{array}{ccc}
 -1 \amp -1 \amp -1\cr
@@ -1330,7 +1348,8 @@ A = \left[\begin{array}{ccc}
 </div>
 <div class="autopermalink" data-description="Exercise Group 19–22"><a href="#exer-largerinverses-3" title="Copy heading and permalink for Exercise Group 19–22" aria-label="Copy heading and permalink for Exercise Group 19–22">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercises: Additional Practice"><a href="#exer-largerinverses" title="Copy heading and permalink for Exercises: Additional Practice" aria-label="Copy heading and permalink for Exercises: Additional Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 2.4: Calculating Larger Inverses"><a href="#sec-largerinverses" title="Copy heading and permalink for Section 2.4: Calculating Larger Inverses" aria-label="Copy heading and permalink for Section 2.4: Calculating Larger Inverses">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercises: Additional Practice"><a href="#exer-largerinverses" title="Copy heading and permalink for Exercises: Additional Practice" aria-label="Copy heading and permalink for Exercises: Additional Practice">🔗</a></div></section><div class="autopermalink" data-description="Section 2.4: Calculating Larger Inverses"><a href="#sec-largerinverses" title="Copy heading and permalink for Section 2.4: Calculating Larger Inverses" aria-label="Copy heading and permalink for Section 2.4: Calculating Larger Inverses">🔗</a></div></section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-matrixinverse2vars.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-elementarymatrices.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
@@ -1338,5 +1357,6 @@ A = \left[\begin{array}{ccc}
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="feedback-link" href="mailto:csafranski@franciscan.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
+<script>diagcess.Base.init()</script>
 </body>
 </html>
