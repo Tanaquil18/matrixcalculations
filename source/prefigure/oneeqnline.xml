@@ -11,13 +11,13 @@
     </group>
     </coordinates>
 
-    <!-- <annotations>
+    <annotations>
     <annotation ref="figure"
-                text="The graph of the line y=x and three points on the line">
-        <annotation ref="graph-f" text="The graph of y=x" sonify="yes"/>
-        <annotation ref="point1" text="The point x=1 and y=1"/>
-        <annotation ref="point2" text="The point x=pi and y=pi"/>
-        <annotation ref="point3" text="The point x=-5 and y=-5"/>
+                text="The graph of the line y equals x and three points on the line">
+        <annotation ref="graph-f" text="The graph of y equals x" sonify="yes"/>
+        <annotation ref="point1" text="The point x equals 1, y equals 1"/>
+        <annotation ref="point2" text="The point x equals pi, y equals pi"/>
+        <annotation ref="point3" text="The point x equals -5, y equals -5"/>
     </annotation>
-    </annotations> -->
+    </annotations>
 </diagram>

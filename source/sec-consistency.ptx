@@ -58,6 +58,7 @@
         we know the lines will intersect somewhere, and that point of intersection is the only solution to the system. 
       </p>
       <image>
+        <shortdescription>Two lines which intersect at a point</shortdescription>
         <prefigure xmlns="https://prefigure.org" label="prefigure-graphofintersectinglines">
           <xi:include href="prefigure/twoeqns-intersectinglines.xml" />
         </prefigure>       
@@ -78,6 +79,7 @@
       just as if we only had the one equation <m>x-y=0</m>.
       </p>
       <image>
+        <shortdescription>One line which is thicker to represent two lines lying on top of each other</shortdescription>
         <prefigure xmlns="https://prefigure.org" label="prefigure-graphofsamelines">
           <xi:include href="prefigure/twoeqns-sameline.xml"/>
         </prefigure>       
@@ -96,6 +98,7 @@
         This linear system has no solution. We observe that the two lines are parallel and never intersect.
       </p>
       <image>
+        <shortdescription>Two parallel lines; they have the same slope but with a distance between them and don't intersect.</shortdescription>
         <prefigure xmlns="https://prefigure.org" label="prefigure-graphofparallellines">
           <xi:include href="prefigure/twoeqns-parallellines.xml" />
         </prefigure>       
