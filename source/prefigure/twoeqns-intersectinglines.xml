@@ -8,12 +8,12 @@
             <graph at="graph-f" function='f' stroke="blue"/>
             <graph at="graph-g" function='g' stroke="red"/>
         </group>
-        <annotations>
-            <annotation ref="figure"
-                        text="The graph of two lines which have a point of intersection">
-                <annotation ref="graph-f" text="The graph of y equals x" sonify="yes"/>
-                <annotation ref="graph-g" text="The graph of y equals negative x plus 2" sonify="yes"/>
-            </annotation>
-        </annotations>
     </coordinates>
+    <annotations>
+      <annotation ref="figure"
+                  text="The graph of two lines which have a point of intersection">
+        <annotation ref="graph-f" text="The graph of y equals x" sonify="yes"/>
+        <annotation ref="graph-g" text="The graph of y equals negative x plus 2" sonify="yes"/>
+      </annotation>
+    </annotations>
 </diagram>
