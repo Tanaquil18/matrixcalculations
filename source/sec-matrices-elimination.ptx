@@ -5,7 +5,7 @@
   <introduction>
     <p>
       We saw that substitution is one way of solving systems of linear equations, but the method of 
-      substituion is not very practical when there are more than 2 or 3 varibables. In this section, we start
+      substitution is not very practical when there are more than 2 or 3 varibables. In this section, we start
       learning a more generalizable and easy-to-automate way of solving systems of linear equations.  
     </p>
   </introduction>
@@ -16,11 +16,11 @@
       <p>
         Mathematicians often see solutions to given problems and ask <q>What if <m>\ldots</m>?</q> 
         What are the right kinds of <q>what if</q> questions to ask?
-        It's impossible to know at first, and so mathematicians very often ask <em>wrong</em> questions.
-        That is, they often ask questions and find that the answer isn't particularly interesting.
+        It's impossible to know at first, and so mathematicians often ask a lot of <em>wrong</em> questions.
+        That is, they often ask questions and find that the answer isn't particularly interesting or doesn't make sense.
         However, asking enough questions often will result in some good <em>right</em> questions.  The answers to 
         <q>right</q> questions help us see a bigger picture more clearly and usually lead to something applicable beyond
-         the initial problem. The moral of the story is: don't be afraid of doing something wrong because mathematicians do it all the time!
+         the initial problem. Don't be afraid to do something wrong; mathematicians see being wrong as an important step of doing something right!
       </p>
     </remark>
     
