@@ -58,6 +58,9 @@
     <projects level="2" />
     <equations level="2" />
     <footnotes level="2" />
+
+    <projects distinct="yes" />
+
   </numbering>
 
   <!-- LaTeX specific options: set @print="yes" to get pdf set up   -->
