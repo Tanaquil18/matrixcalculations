@@ -71,7 +71,7 @@
                     Use Gauss-Jordan elimination to put each of the matrices below into reduced row echelon form.
                 </p>
         <p>
-            <ol cols="3">
+            <ol cols="3" marker="a.">
                 <li>
                     <p>
                         <me>\begin{bmatrix} 2 \amp 5 \amp -3 \\ 5 \amp -5 \amp -25 \end{bmatrix} </me>
@@ -92,7 +92,7 @@
         </statement>
         <answer>
             <p>
-                <ol cols="3">
+                <ol cols="3" marker="a.">
                     <li>
                         <p>
                             <me>\begin{bmatrix} 1 \amp 0 \amp -4 \\ 0 \amp 1 \amp 1 \end{bmatrix} </me>
@@ -123,7 +123,7 @@
                     whether it is in row echelon form or if it's in neither form.
                 </p>
             <p>
-            <ol cols="2">
+            <ol cols="2" marker="a.">
                 <li>
                       <p>
                         <m>\left[\begin{array}{ccc} 1\amp 0 \amp -3\\0\amp 1 \amp 1\\ \end{array} \right]</m>
@@ -177,7 +177,7 @@
                 </statement>
                 <answer>
                   <p>
-                    <ol cols="2">
+                    <ol cols="2" marker="a.">
                       <li>
                         <p>
                           rref
