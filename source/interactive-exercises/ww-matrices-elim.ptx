@@ -218,6 +218,7 @@
 
           </pg-code>
           <statement>
+            <p>
             <ol>
               <li>
                 <p>
@@ -240,6 +241,7 @@
                 </p>
               </li>
             </ol>
+            </p>
           </statement>
         </webwork>
       </activity>
