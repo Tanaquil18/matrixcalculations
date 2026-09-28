@@ -21,10 +21,10 @@
   </p>
 
   <figure xml:id="fruit-collage">
+    <caption>A collage of different math problems using pictures of food</caption>
     <image width="60%" source="fruitpuzzlecollage1.jpg">
       <shortdescription>a collage of different math problems using pictures of food</shortdescription>
     </image>
-    <caption>A collage of different math problems using pictures of food</caption>
   </figure>
 
   <p>
@@ -33,11 +33,11 @@
   </p>
 
   <figure xml:id="yesnogirl-fruit">
+    <caption>Disguising math as food puzzles seems more palatable</caption>
     <image width="60%" source="yesnogirlfruit.jpg">
       <shortdescription>girl making a bad face at math with variables x, y, z, 
         and an interested face at doing math with food </shortdescription>
     </image>
-    <caption>Disguising math as food puzzles seems more palatable</caption>
   </figure>
 
   <p>
