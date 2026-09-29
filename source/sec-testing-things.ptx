@@ -153,13 +153,13 @@
           <p>
             Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed.  The time, <m>T</m> (measured in hours), it takes to drive 50 miles depends on the constant rate, 
             <m>s</m> (measured in miles per hour) at which you are driving.  Since 
-            <me>
+            <md>
               \mbox{distance} = \mbox{rate} \cdot \mbox{travel time}
-            </me>,
+            </md>,
             it follows that 
-            <me>
+            <md>
               \mbox{travel time} =  \frac{\mbox{distance}}{\mbox{rate}}
-            </me>,
+            </md>,
             and thus we know that <m>T(s) = \frac{50}{s}</m>.  
           </p>
           <p>  
@@ -290,7 +290,7 @@
       </statement>
       <cardsort>
         <match>
-          <premise order="3">By <xref ref="theorem-SLSLC"/>, since we are looking for solutions to the vector equation <me>a_1\colvector{2\\1\\0} + a_2\colvector{-3\\1\\2} = \colvector{1\\3\\2}</me>, 
+          <premise order="3">By <xref ref="theorem-SLSLC"/>, since we are looking for solutions to the vector equation <md>a_1\colvector{2\\1\\0} + a_2\colvector{-3\\1\\2} = \colvector{1\\3\\2}</md>, 
             which forms a linear system in the variables <m>a_1</m> and <m>a_2</m>.</premise>
           <response>Form the augmented matrix <m>\begin{bmatrix} 2 \amp -3 \amp 1 \\ 1 \amp 1 \amp 3 \\ 0 \amp 2 \amp 2 \end{bmatrix}</m></response>
         </match>
@@ -345,8 +345,8 @@
 	<title>Algorithm for finding a matrix representation</title>
 		<statement>
 			<p>The following are possible steps for finding the matrix representation <m>\matrixrep{T}{B}{C}</m> of the linear transformation 
-			<me>\ltdefn{T}{\complex{2}}{\complex{2}},\quad\lteval{T}{\colvector{x_1\\x_2}}=\colvector{2x_1-x_2\\3x_1+2x_2}
-			</me>
+			<md>\ltdefn{T}{\complex{2}}{\complex{2}},\quad\lteval{T}{\colvector{x_1\\x_2}}=\colvector{2x_1-x_2\\3x_1+2x_2}
+			</md>
 			relative to the bases
 			<md><mrow>B&amp;=\set{\colvector{2\\3},\,\colvector{-1\\2}}&amp;
                       C&amp;=\set{\colvector{1\\0},\,\colvector{1\\1}}
@@ -358,12 +358,12 @@
         <blocks>
           <block order="2" correct="no">
             <p>Evaluate <m>T</m> with each element of the basis <m>C</m> of the codomain, that is find
-            	<me>\lteval{T}{\colvector{1\\0}}, \quad \lteval{T}{\colvector{1\\1}}</me>.
+            	<md>\lteval{T}{\colvector{1\\0}}, \quad \lteval{T}{\colvector{1\\1}}</md>.
             </p>
           </block>
           <block order="3">
             <p>Evaluate <m>T</m> with each element of the basis <m>B</m> of the domain, that is find
-            	<me>\lteval{T}{\colvector{2\\3}}, \quad \lteval{T}{\colvector{-1\\2}}</me>.
+            	<md>\lteval{T}{\colvector{2\\3}}, \quad \lteval{T}{\colvector{-1\\2}}</md>.
             </p>
           </block>
           <block order="1" correct="no" >
@@ -402,25 +402,25 @@
         <blocks>
           <block order="2" correct="yes">
               <p>To find <m>\vectrep{B}{\vect{y}}</m>, we need to find scalars, <m>a_1,\,a_2,\,a_3</m> such that
-                <me>\vect{y}=a_1\vect{u}_1+a_2\vect{u}_2+a_3\vect{u}_3</me>.</p>
+                <md>\vect{y}=a_1\vect{u}_1+a_2\vect{u}_2+a_3\vect{u}_3</md>.</p>
           </block>
           <block order="5" correct="yes">
               <p>By Theorem SLSLC, the set of solutions to the vector equation
-              <me>a_1\colvector{2\\5\\-1} + a_2\colvector{-5\\3\\4} + a_3\colvector{-2\\5\\2}=\colvector{-2\\3\\2}</me>
+              <md>a_1\colvector{2\\5\\-1} + a_2\colvector{-5\\3\\4} + a_3\colvector{-2\\5\\2}=\colvector{-2\\3\\2}</md>
               is the set of solutions to the linear system with augmented matrix
-              <me>A = \begin{bmatrix}
+              <md>A = \begin{bmatrix}
               2 &amp; -5 &amp; -2 &amp; -2\\
               5 &amp; 3 &amp; 5 &amp; 3\\
               -1 &amp; 4 &amp; 2 &amp; 2
-              \end{bmatrix}</me>.</p>
+              \end{bmatrix}</md>.</p>
           </block>
           <block order="4" correct="yes">
               <p>The reduced row-echelon form of <m>A</m> is
-              <me>\begin{bmatrix}
+              <md>\begin{bmatrix}
               \leading{1} &amp; 0 &amp; 0 &amp;-4 \\
               0 &amp; \leading{1} &amp; 0 &amp; -4\\
               0 &amp; 0 &amp; \leading{1} &amp; 7
-              \end{bmatrix}</me>.</p>
+              \end{bmatrix}</md>.</p>
           </block>
           <block order="1" correct="yes">
               <p>The unique solution is 
@@ -430,15 +430,15 @@
               </p>
           </block>
           <block order="6" correct="yes">
-              <p>Then by Definition VR, we have <me>\vectrep{B}{\vect{y}}=\colvector{-4\\-4\\7}</me>.</p>
+              <p>Then by Definition VR, we have <md>\vectrep{B}{\vect{y}}=\colvector{-4\\-4\\7}</md>.</p>
           </block>
           <block order="3" correct="no">
               <p>Place the four vectors into a matrix and row-reduce.</p>
           </block>
           <block order="7" correct="no">
-              <p>We calculate that <me>
+              <p>We calculate that <md>
                 \vectrep{B}{\vect{y}} = -2\colvector{2\\5\\-1} + 3\colvector{-5\\3\\4} + 2\colvector{-2\\5\\2}=\colvector{-23\\9\\18}
-              </me>
+              </md>
               </p>
           </block>
         </blocks>
@@ -449,9 +449,9 @@
         <statement>
           <p>
             The following are possible steps for diagonalizing the matrix
-            <me>
+            <md>
               A=\begin{bmatrix} 3 \amp 1 \amp -2 \\ -4 \amp -2 \amp 2 \\ 0 \amp 0 \amp -1 \end{bmatrix}
-            </me>.
+            </md>.
             Put the correct steps in order.  
           </p>
         </statement>
@@ -502,13 +502,13 @@
         <statement>
           <p>
             Select all the matrices which are similar to the matrix
-            <me>
+            <md>
               A = \begin{bmatrix}
               5 &amp; -10 &amp; -5 \\
               2 &amp; 14 &amp; 2 \\
               -4&amp; -8 &amp; 6
               \end{bmatrix}
-            </me>.
+            </md>.
           </p>
         </statement>
         <choices>
@@ -708,13 +708,13 @@
     <title>Match matrix properties to their number</title>
     <statement>
         <p>Let <m>A</m> be a matrix whose reduced row echelon form is given below.
-        <me>
+        <md>
           \begin{bmatrix}
             \leading{1} \amp -2 \amp 0 \amp 1 \amp 4\\
             0 \amp 0  \amp \leading{1} \amp -2 \amp 3\\
             0 \amp 0 \amp 0 \amp 0 \amp 0 \\
           \end{bmatrix}
-        </me>
+        </md>
         </p>
     </statement>
     <cardsort>
@@ -980,7 +980,7 @@
       <title>How a matrix is indexed, old markup</title>
       <statement>
         <p>
-          In the matrix <me>A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 \amp 7 \amp 5   \end{bmatrix}</me>
+          In the matrix <md>A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 \amp 7 \amp 5   \end{bmatrix}</md>
           what is <m>a_{23}</m>? <var width="5" /> 
         </p>
       </statement>
@@ -1016,7 +1016,7 @@
       <title>How a matrix is indexed, new markup</title>
       <statement>
         <p>
-          In the matrix <me>A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 \amp 7 \amp 5   \end{bmatrix}</me>
+          In the matrix <md>A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 \amp 7 \amp 5   \end{bmatrix}</md>
           what is <m>a_{23}</m>? <fillin width="5" answer="6" /> 
         </p>
       </statement>

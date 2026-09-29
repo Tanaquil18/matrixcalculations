@@ -231,7 +231,7 @@
       <statement>
         <p>
         Suppose we have the matrices <m>A</m> and <m>B</m> below:
-        <me>
+        <md>
           A = \left[\begin{array}{rr}
           -2 \amp 3 \\
           0 \amp 2 \\
@@ -239,11 +239,11 @@
           \end{array}\right],~~~
           B = \left[\begin{array}{r}
           2 \\ 3 \\ \end{array}\right]
-        </me>.
+        </md>.
         Their product is defined by multiplying the first column of <m>A</m> by 
         the first number in <m>B</m>, and multiplying the second column of <m>A</m> by the second 
         number in <m>B</m>, and adding the results.
-        <me>
+        <md>
           \begin{aligned}
           AB = 
           \left[\begin{array}{rr}
@@ -262,23 +262,23 @@
           {}={} \amp
           \left[\begin{array}{r} 5 \\ 6 \\ 9 \\ \end{array}\right]. \\
           \end{aligned}
-        </me>
+        </md>
         </p>
         <p>
           If we look at the first entry, we see it came from
-          <me>
+          <md>
             -2\cdot 2 + 3 \cdot 3
-          </me>,
+          </md>,
           and we note that the first row of <m>A</m> is <m>\begin{bmatrix} -2 \amp 3 \end{bmatrix}</m>.
           Looking at the second entry of <m>AB</m> we have 
-          <me>
+          <md>
             0\cdot 2 + 2 \cdot 3
-          </me>,
+          </md>,
           and the second row of <m>A</m> is <m>\begin{bmatrix} 0 \amp 2 \end{bmatrix}</m>.
           The third entry of <m>AB</m> is
-          <me>
+          <md>
             3\cdot 2 + 1 \cdot 3
-          </me>, 
+          </md>, 
           and the third row of <m>A</m> is <m>\begin{bmatrix} 3 \amp 1 \end{bmatrix}</m>.
         </p>
         <p>
@@ -298,18 +298,18 @@
       This generalizes to when the second matrix of the product has more columns than <m>1</m>.
       The product <m>AB</m> is defined when <m>A</m> is an <m>m\times n</m> matrix and <m>B</m> is an 
       <m>n\times r</m> matrix, and the matrix <m>AB</m> will have size <m>m\times r</m>.
-      <me>
+      <md>
       (\underbrace{m\times \overbrace{n) \times (n}^{\mathclap{\text{these inner dimensions must match}}} \times r}_{\mathclap{\text{final dimensions are the outer dimensions}}})
-    </me>
+    </md>
     Let's see this in action in an example.
     </p>
     <example xml:id="ex_matrix_multiply_1"><title>Matrix Multiplication, More than One Column</title>
       <statement>
         <p>
           Let's calculate
-          <me>
+          <md>
             \left[\begin{array}{cc} 1\amp 2\\3\amp 4 \end{array} \right]\left[\begin{array}{ccc} 3\amp -1\amp 0\\1\amp 2\amp -1 \end{array} \right]
-          </me>.
+          </md>.
         </p>
       <!-- </statement>
       <solution> -->
@@ -320,35 +320,35 @@
         </p>
         <p>
           We form a <m>2\times 3</m> matrix
-          <me>
+          <md>
             \left[\begin{array}{ccc} m_{11} \amp  m_{12} \amp  m_{13}\\m_{21} \amp  m_{22} \amp  m_{23} \end{array} \right]
-          </me>,
+          </md>,
           and we will now calculate the value of each of the entries.
         </p>
         <p>
           The entry <m>m_{11}</m> is in the first row and first column, so
           we use the <em>first row of the first matrix</em> and the <em>first column of the second matrix</em>, multiply corresponding number entries and add them up. Thus
-          <me>
+          <md>
             m_{11} = \left[\begin{array}{cc}  1\amp 2 \end{array} \right]\left[\begin{array}{c} 3\\1 \end{array} \right] = 1\cdot 3+2 \cdot 1 = 5
-          </me>.
+          </md>.
           We now know that the product looks like
-          <me>
+          <md>
             \left[\begin{array}{ccc} 5 \amp  m_{12} \amp  m_{13}\\m_{21} \amp  m_{22} \amp  m_{23} \end{array} \right]
-          </me>.
+          </md>.
         </p>
         <p>
           Moving to the next entry to the right <m>m_{12}</m>, we still use the <em>first row of the first matrix</em>, now with the <em>second column of the second matrix</em>, giving us
-          <me>
+          <md>
             m_{12} = \left[\begin{array}{cc} 1\amp 2 \end{array} \right]\left[\begin{array}{c} -1\\2 \end{array} \right] = 1\cdot(-1)+2\cdot 2 = 3
-          </me>.
+          </md>.
           Finishing the first row with <m>m_{13}</m>, we use the <em>first row of the first matrix</em> and the <em>third column of the second matrix</em> and obtain
-          <me>
+          <md>
             m_{13} = \left[\begin{array}{cc} 1\amp 2 \end{array} \right]\left[\begin{array}{c} 0\\-1 \end{array} \right] = 1\cdot 0+2\cdot (-1) = -2
-          </me>. 
+          </md>. 
           So far we have
-          <me>
+          <md>
             \left[\begin{array}{ccc} 5 \amp  3 \amp  -2\\m_{21} \amp  m_{22} \amp  m_{23} \end{array} \right]
-          </me>.
+          </md>.
         </p>
         <p>
           To compute the second row, we use the <em>second row of the first matrix</em> with the first, then second, 
@@ -360,9 +360,9 @@
             <mrow> m_{23}\amp = \left[\begin{array}{cc} 3\amp 4 \end{array} \right]\left[\begin{array}{c} 0\\-1 \end{array} \right] = -4 </mrow>
           </md>.
           Putting it all together, we have
-          <me>
+          <md>
             \left[\begin{array}{cc} 1\amp 2\\3\amp 4 \end{array} \right]\left[\begin{array}{ccc} 1\amp -1\amp 0\\2\amp 2\amp -1 \end{array} \right] = \left[\begin{array}{ccc} 5 \amp  3 \amp  -2\\13 \amp  5 \amp  -4 \end{array} \right]
-          </me>.
+          </md>.
         </p>
       </statement>
     </example>
@@ -397,9 +397,9 @@
       <statement>
         <p>
           Calculate
-          <me>
+          <md>
             \left[\begin{array}{cc} -1\amp 0 \amp 3\\2 \amp 1 \amp -2 \end{array} \right]\left[\begin{array}{cc} 1\amp -1\\2 \amp 1 \\ 0 \amp 3 \end{array} \right]
-          </me>.
+          </md>.
         </p>
       </statement>
       <solution>
@@ -410,49 +410,49 @@
         </p>
         <p>
           We form a <m>2\times 2</m> matrix
-          <me>
+          <md>
             \left[\begin{array}{cc} m_{11} \amp  m_{12} \\m_{21} \amp  m_{22} \end{array} \right]
-          </me>,
+          </md>,
           and we will now calculate the value of each of the entries.
         </p>
         <p>
           The entry <m>m_{11}</m> is in the first row and first column, so
           we use the <em>first row of the first matrix</em> and the <em>first column of the second matrix</em>, multiply corresponding number entries and add them up. Thus
-          <me>
+          <md>
             m_{11} = \left[\begin{array}{ccc}  -1\amp 0 \amp 3 \end{array} \right]\left[\begin{array}{c} 1\\2 \\ 0 \end{array} \right] = -1\cdot 1+0 \cdot 2 + 3\cdot 0 = -1
-          </me>.
+          </md>.
           We now know that the product looks like
-          <me>
+          <md>
             \left[\begin{array}{cc} -1 \amp  m_{12} \\m_{21} \amp  m_{22} \end{array} \right]
-          </me>.
+          </md>.
         </p>
         <p>
           Moving to the next entry to the right <m>m_{12}</m>, we still use the <em>first row of the first matrix</em>, now with the <em>second column of the second matrix</em>, giving us
-          <me>
+          <md>
             m_{12} = \left[\begin{array}{ccc} -1\amp 0 \amp 3 \end{array} \right]\left[\begin{array}{c} -1\\1 \\ 3 \end{array} \right] = -1\cdot(-1)+0\cdot 1 + 3\cdot 3 = 10
-          </me>.
+          </md>.
           So far we have
-          <me>
+          <md>
             \left[\begin{array}{cc} -1 \amp  10 \\m_{21} \amp  m_{22} \end{array} \right]
-          </me>.
+          </md>.
         </p>
         <p>
           To compute <m>m_{21}</m>, we use the <em>second row of the first matrix</em> with the <em>first
           column of the second matrix</em>, and calculate
-          <me>
+          <md>
             m_{21} = \left[\begin{array}{ccc} 2\amp 1 \amp -2 \end{array} \right]\left[\begin{array}{c} 1\\2 \\ 0 \end{array} \right] = 2\cdot 1+1\cdot 2 + -2\cdot 0 = 4
-          </me>.
+          </md>.
           To compute <m>m_{22}</m>, we use the <em>second row of the first matrix</em> with the <em>second
           column of the second matrix</em>, and calculate
-          <me>
+          <md>
             m_{22} = \left[\begin{array}{ccc} 2\amp 1 \amp -2 \end{array} \right]\left[\begin{array}{c} -1\\1 \\ 3 \end{array} \right] = 2\cdot(-1)+1\cdot 1 + -2\cdot 3 = -7
-          </me>.
+          </md>.
         </p>
         <p>
           Putting it all together, we have
-          <me>
+          <md>
             \left[\begin{array}{cc} -1\amp 0 \amp 3\\2 \amp 1 \amp -2 \end{array} \right]\left[\begin{array}{cc} 1\amp -1\\2 \amp 1 \\ 0 \amp 3 \end{array} \right] = \left[\begin{array}{cc} -1 \amp  10 \\4\amp  -7 \end{array} \right]
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>

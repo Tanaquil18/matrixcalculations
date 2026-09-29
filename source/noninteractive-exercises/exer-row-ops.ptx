@@ -8,9 +8,9 @@
        <p>
          In the following exercises,
          perform the given row operations on <m>A</m>, where
-         <me>
+         <md>
            A = \left[\begin{array}{ccc} 2\amp -1\amp 7\\0\amp 4\amp -2\\5\amp 0\amp 3 \end{array} \right]
-         </me>
+         </md>
        </p>
        </introduction>
        <exercise>
@@ -90,9 +90,9 @@
           <introduction>
                <p>
                      A matrix <m>A</m> is given below. In the following exercises, a matrix <m>B</m> is given. Give the row operation that transforms <m>A</m> into <m>B</m>.
-         <me>
+         <md>
            A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{array} \right]
-         </me>
+         </md>
                </p>
            </introduction>
        <exercise>
@@ -166,7 +166,7 @@
        <exercise>
          <statement>
            <p>
-             <me>\begin{array}{ccccc} x\amp +\amp y\amp =\amp 3\\ 2x\amp -\amp 3y\amp =\amp 1 \end{array}</me>
+             <md>\begin{array}{ccccc} x\amp +\amp y\amp =\amp 3\\ 2x\amp -\amp 3y\amp =\amp 1 \end{array}</md>
            </p>
          </statement>
          <answer>
@@ -178,7 +178,7 @@
        <exercise>
          <statement>
            <p>
-             <me>\begin{array}{ccccc} 2x\amp +\amp 4y\amp =\amp 10\\ -x\amp +\amp y\amp =\amp 4 \end{array}</me>
+             <md>\begin{array}{ccccc} 2x\amp +\amp 4y\amp =\amp 10\\ -x\amp +\amp y\amp =\amp 4 \end{array}</md>
            </p>
          </statement>
          <answer>
@@ -190,7 +190,7 @@
        <exercise>
          <statement>
            <p>
-             <me>\begin{array}{ccccc} -2x\amp +\amp 3y\amp =\amp 2\\ -x\amp +\amp y\amp =\amp 1 \end{array}</me>
+             <md>\begin{array}{ccccc} -2x\amp +\amp 3y\amp =\amp 2\\ -x\amp +\amp y\amp =\amp 1 \end{array}</md>
            </p>
          </statement>
          <answer>
@@ -202,7 +202,7 @@
        <exercise>
          <statement>
            <p>
-             <me>\begin{array}{ccccccc} 2x\amp +\amp 3y\amp =\amp 2\\ -2x\amp +\amp 6y\amp =\amp 1 \end{array}</me>
+             <md>\begin{array}{ccccccc} 2x\amp +\amp 3y\amp =\amp 2\\ -2x\amp +\amp 6y\amp =\amp 1 \end{array}</md>
            </p>
          </statement>
          <answer>
@@ -214,7 +214,7 @@
        <exercise>
          <statement>
            <p>
-             <me>\begin{array}{ccccccc} -5x_1\amp \amp \amp +\amp 2x_3\amp =\amp 14\\ \amp \amp x_2\amp \amp \amp =\amp 1\\ -3x_1\amp \amp \amp +\amp x_3\amp =\amp 8 \end{array}</me>
+             <md>\begin{array}{ccccccc} -5x_1\amp \amp \amp +\amp 2x_3\amp =\amp 14\\ \amp \amp x_2\amp \amp \amp =\amp 1\\ -3x_1\amp \amp \amp +\amp x_3\amp =\amp 8 \end{array}</md>
            </p>
          </statement>
          <answer>
@@ -226,7 +226,7 @@
        <exercise>
          <statement>
            <p>
-             <me>\begin{array}{ccccccc} \amp -\amp 5x_2\amp +\amp 2x_3\amp =\amp -11\\ x_1\amp \amp \amp +\amp 2x_3\amp =\amp 15\\ \amp -\amp 3x_2\amp +\amp x_3\amp =\amp -8 \end{array}</me>
+             <md>\begin{array}{ccccccc} \amp -\amp 5x_2\amp +\amp 2x_3\amp =\amp -11\\ x_1\amp \amp \amp +\amp 2x_3\amp =\amp 15\\ \amp -\amp 3x_2\amp +\amp x_3\amp =\amp -8 \end{array}</md>
            </p>
          </statement>
          <answer>

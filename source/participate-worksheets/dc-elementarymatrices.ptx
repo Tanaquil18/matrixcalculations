@@ -95,7 +95,7 @@
               <statement>
                 <p>
                   Use sage to verify your calculations of the inverses in the first part, and to verify that 
-                  <me>A=E_1^{-1}E_2^{-1}E_3^{-1}E_4^{-1}</me>.
+                  <md>A=E_1^{-1}E_2^{-1}E_3^{-1}E_4^{-1}</md>.
                 </p>
               </statement>
             </task>

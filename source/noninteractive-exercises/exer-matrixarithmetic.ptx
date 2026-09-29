@@ -7,9 +7,9 @@
   <p>
     Matrices <m>A</m> and <m>B</m> are given below.
     In the following exercises, simplify the given expression.
-    <me>
+    <md>
       A = \left[\begin{array}{cc}  1 \amp  -1\\ 7 \amp  4 \end{array} \right] \quad  B = \left[\begin{array}{cc}  -3 \amp  2\\5 \amp  9 \end{array} \right]
-    </me>
+    </md>
   </p>
   </introduction>
   <exercise>
@@ -90,9 +90,9 @@
   <p>
     Matrices <m>A</m> and <m>B</m> are given below.
     In the following exercises, simplify the given expression.
-    <me>
+    <md>
       A = \left[\begin{array}{c}  3\\ 5 \end{array} \right] \quad  B = \left[\begin{array}{c}  -2\\4 \end{array} \right]
-    </me>
+    </md>
   </p>
   </introduction>
   <exercise>
@@ -149,9 +149,9 @@
   <p>
     Matrices <m>A</m> and <m>B</m> are given below.
     In the following exercises, find a matrix <m>X</m> that satisfies the equation.
-    <me>
+    <md>
       A = \left[\begin{array}{cc}  3 \amp  -1\\ 2 \amp  5 \end{array} \right] \quad  B = \left[\begin{array}{cc}  1 \amp  7\\3 \amp  -4 \end{array} \right]
-    </me>
+    </md>
   </p>
   </introduction>
   <exercise>

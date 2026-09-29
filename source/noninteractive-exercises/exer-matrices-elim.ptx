@@ -50,24 +50,24 @@
       <exercise>
         <statement>
            <p>
-             <me>\begin{array}{ccccccc} 3x\amp +\amp 4y\amp +\amp 5z\amp =\amp 7\\ -x\amp +\amp y\amp -\amp 3z\amp =\amp 1\\ 2x\amp -\amp 2y\amp +\amp 3z\amp =\amp 5 \end{array}</me>
+             <md>\begin{array}{ccccccc} 3x\amp +\amp 4y\amp +\amp 5z\amp =\amp 7\\ -x\amp +\amp y\amp -\amp 3z\amp =\amp 1\\ 2x\amp -\amp 2y\amp +\amp 3z\amp =\amp 5 \end{array}</md>
            </p>
          </statement>
          <answer>
            <p>
-             <me>\left[\begin{array}{cccc} 3\amp 4\amp 5\amp 7\\-1\amp 1\amp -3\amp 1\\2\amp -2\amp 3\amp 5\\ \end{array} \right]</me>
+             <md>\left[\begin{array}{cccc} 3\amp 4\amp 5\amp 7\\-1\amp 1\amp -3\amp 1\\2\amp -2\amp 3\amp 5\\ \end{array} \right]</md>
            </p>
          </answer>
        </exercise>
        <exercise>
          <statement>
            <p>
-             <me>\begin{array}{ccccccc} 2x\amp +\amp 5y\amp -\amp 6z\amp =\amp 2\\ 9x\amp \amp \amp -\amp 8z\amp =\amp 10\\ -2x\amp +\amp 4y\amp +\amp z\amp =\amp -7 \end{array}</me>
+             <md>\begin{array}{ccccccc} 2x\amp +\amp 5y\amp -\amp 6z\amp =\amp 2\\ 9x\amp \amp \amp -\amp 8z\amp =\amp 10\\ -2x\amp +\amp 4y\amp +\amp z\amp =\amp -7 \end{array}</md>
            </p>
          </statement>
          <answer>
            <p>
-             <me>\left[\begin{array}{cccc} 2\amp 5\amp -6\amp 2\\9\amp 0\amp -8\amp 10\\-2\amp 4\amp 1\amp -7\\ \end{array} \right]</me>
+             <md>\left[\begin{array}{cccc} 2\amp 5\amp -6\amp 2\\9\amp 0\amp -8\amp 10\\-2\amp 4\amp 1\amp -7\\ \end{array} \right]</md>
            </p>
          </answer>
        </exercise>
@@ -100,7 +100,7 @@
          </statement>
          <answer>
            <p>
-             <me>\left[\begin{array}{ccc} 3\amp -2\amp 4\\ 2\amp 0\amp 3\\-1\amp 9\amp 8\\5\amp -7\amp 13\\ \end{array} \right]</me>
+             <md>\left[\begin{array}{ccc} 3\amp -2\amp 4\\ 2\amp 0\amp 3\\-1\amp 9\amp 8\\5\amp -7\amp 13\\ \end{array} \right]</md>
            </p>
          </answer>
        </exercise>
@@ -180,9 +180,9 @@
        <p>
          In the following exercises,
          perform the given row operations on <m>A</m>, where
-         <me>
+         <md>
            A = \left[\begin{array}{ccc} 2\amp -1\amp 7\\0\amp 4\amp -2\\5\amp 0\amp 3 \end{array} \right]
-         </me>
+         </md>
        </p>
        </introduction>
        <exercise>
@@ -262,9 +262,9 @@
           <introduction>
                <p>
                      A matrix <m>A</m> is given below. In the following exercises, a matrix <m>B</m> is given. Give the row operation that transforms <m>A</m> into <m>B</m>.
-         <me>
+         <md>
            A = \left[\begin{array}{ccc} 1\amp 1\amp 1\\1\amp 0\amp 1\\1\amp 2\amp 3 \end{array} \right]
-         </me>
+         </md>
                </p>
            </introduction>
        <exercise>

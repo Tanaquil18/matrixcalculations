@@ -74,17 +74,17 @@
             <ol cols="3" marker="a.">
                 <li>
                     <p>
-                        <me>\begin{bmatrix} 2 \amp 5 \amp -3 \\ 5 \amp -5 \amp -25 \end{bmatrix} </me>
+                        <md>\begin{bmatrix} 2 \amp 5 \amp -3 \\ 5 \amp -5 \amp -25 \end{bmatrix} </md>
                     </p>
                 </li>
                 <li>
                     <p>
-                        <me>\begin{bmatrix} 2 \amp 5 \amp -3 \\ 2 \amp 5 \amp 1 \end{bmatrix} </me>
+                        <md>\begin{bmatrix} 2 \amp 5 \amp -3 \\ 2 \amp 5 \amp 1 \end{bmatrix} </md>
                     </p>
                 </li>
                 <li>
                     <p>
-                        <me>\begin{bmatrix} 1\amp 2 \amp 3 \amp 5 \\ 0 \amp 4 \amp 5 \amp 7 \\ 1 \amp 6 \amp 9 \amp 11 \end{bmatrix} </me>
+                        <md>\begin{bmatrix} 1\amp 2 \amp 3 \amp 5 \\ 0 \amp 4 \amp 5 \amp 7 \\ 1 \amp 6 \amp 9 \amp 11 \end{bmatrix} </md>
                     </p>
                 </li>
             </ol>
@@ -95,7 +95,7 @@
                 <ol cols="3" marker="a.">
                     <li>
                         <p>
-                            <me>\begin{bmatrix} 1 \amp 0 \amp -4 \\ 0 \amp 1 \amp 1 \end{bmatrix} </me>
+                            <md>\begin{bmatrix} 1 \amp 0 \amp -4 \\ 0 \amp 1 \amp 1 \end{bmatrix} </md>
                         </p>
                     </li>
                     <li>

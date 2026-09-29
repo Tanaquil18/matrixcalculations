@@ -27,29 +27,29 @@
     <p>
       However, now that we know about matrix multiplication, let's try something different.  Form a
       matrix from the coefficients, 
-      <me>
+      <md>
         A=\begin{bmatrix} 1 \amp 1 \\ 2 \amp -3 \end{bmatrix}
-      </me>,
+      </md>,
       a column matrix from the variables,
-      <me>
+      <md>
         X=\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
-      </me>,
+      </md>,
       and a column matrix from the constants,
-      <me>
+      <md>
         B=\begin{bmatrix} -1 \\ 8 \end{bmatrix}
-      </me>.
+      </md>.
     </p>
     <p>
       Notice what we get when we multiply <m>AX</m>:
-      <me>
+      <md>
         AX=\begin{bmatrix} 1 \amp 1 \\ 2 \amp -3 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
         =\begin{bmatrix}x_1+x_2 \\ 2x_1-3x_2 \end{bmatrix}
-      </me>.
+      </md>.
       Recall that two matrices are equal exactly when they are the same size and their corresponding entries are equal.
       So the matrix equation <m>AX=B</m> is
-      <me>
+      <md>
         \begin{bmatrix}x_1+x_2 \\ 2x_1-3x_2 \end{bmatrix}=\begin{bmatrix} -1 \\ 8 \end{bmatrix}
-      </me>,
+      </md>,
       and setting the first entries equal to each other and the second entries equal to each other gives
       <md>
         <mrow>x_1+x_2 \amp=-1 </mrow>
@@ -108,9 +108,9 @@
         are numbers and <m>a\neq 0</m>, 
         then we solve the equation <m>ax=b</m> by
         dividing both sides by <m>a</m> and get
-        <me>
+        <md>
         x = \frac{b}{a}
-        </me>.
+        </md>.
         We do this precisely because <m>\frac{1}{a}\cdot a=1</m>, so writing out more details would give us
         <md>
           <mrow>ax \amp= b </mrow>
@@ -129,9 +129,9 @@
         acts like the number <m>1</m> for square matrices.  For example, the identity matrix of size <m>3</m>
         is <m>\begin{bmatrix}1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{bmatrix}</m>, and then
         if <m>A</m> is any <m>3\times 3</m> matrix, then
-        <me>
+        <md>
         I A =  A I =  A
-        </me>.
+        </md>.
         Similarly for the identity matrix of size <m>2</m>, which is <m>\begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}</m>
         and any <m>2\times 2</m> matrix.
       </p> 
@@ -179,13 +179,13 @@
           <li>
             <p>
               Furthermore, if <m>A</m> is a <m>2 \times 2</m> matrix
-              <me>
+              <md>
                 A = \left[\begin{array}{cc} a\amp b\\c\amp d \end{array} \right]
-              </me>,
+              </md>,
               the matrix <m>A^{-1}</m> exists precisely when <m>ad-bc\neq 0</m> and then
-              <me>
+              <md>
                 A^{-1} = \frac{1}{ad-bc}\left[\begin{array}{cc} d\amp -b\\-c\amp a \end{array} \right]
-              </me>.
+              </md>.
             </p>
           </li>
         </ol>
@@ -203,9 +203,9 @@
     <statement>
       <p>
         Recall <xref ref="exercisenoninvertibleA"/>, where
-        <me>
+        <md>
           A = \left[\begin{array}{cc} 1\amp 2\\-2\amp -4 \end{array} \right]
-        </me>.
+        </md>.
         Here, <m>ad-bc = 1(-4) - 2(-2) = 0</m> and so <m>A</m> doesn't have an inverse.
       </p>
       <p>
@@ -220,7 +220,7 @@
       <p>
         The formula for the inverse of any <m>2\times 2</m> matrix depends on viewing the matrix in the form
         <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>.
-        Let <me>A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}</me>.
+        Let <md>A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 4 \end{bmatrix}</md>.
       </p>
     </introduction>
     <task label="partsof2by2matrix-a">>
@@ -359,7 +359,7 @@
           <feedback>
             <p>
               Correct! <m>a=1</m>, <m>d=4</m>, <m>b=2</m>, and <m>c=3</m>, so 
-              <me>ad-bc=1\cdot 4 - 2\cdot 3 = 4-6 = -2</me>
+              <md>ad-bc=1\cdot 4 - 2\cdot 3 = 4-6 = -2</md>
             </p>
           </feedback>
         </choice>
@@ -372,7 +372,7 @@
           <feedback>
             <p>
               <m>a=1</m>, <m>d=4</m>, <m>b=2</m>, and <m>c=3</m>, so 
-              <me>ad-bc=1\cdot 4 - 2\cdot 3</me>
+              <md>ad-bc=1\cdot 4 - 2\cdot 3</md>
             </p>
           </feedback>
         </choice>
@@ -385,7 +385,7 @@
           <feedback>
             <p>
               <m>a=1</m>, <m>d=4</m>, <m>b=2</m>, and <m>c=3</m>, so 
-              <me>ad-bc=1\cdot 4 - 2\cdot 3</me>
+              <md>ad-bc=1\cdot 4 - 2\cdot 3</md>
             </p>
           </feedback>
         </choice>
@@ -398,7 +398,7 @@
           <feedback>
             <p>
               <m>a=1</m>, <m>d=4</m>, <m>b=2</m>, and <m>c=3</m>, so 
-              <me>ad-bc=1\cdot 4 - 2\cdot 3</me>
+              <md>ad-bc=1\cdot 4 - 2\cdot 3</md>
             </p>
           </feedback>
         </choice>
@@ -529,9 +529,9 @@
     <statement>
       <p>
         Calculate the inverse, if it exists, of
-        <me>
+        <md>
           A = \left[\begin{array}{cc} 3 \amp  2\\-1 \amp  9 \end{array} \right]
-        </me>.
+        </md>.
         If <m>A^{-1}</m> exists, use it to solve the linear system
         <md>
           <mrow>3x + 2y \amp= 29 </mrow>
@@ -551,9 +551,9 @@
       </p>
       <p>
         We can leave our answer in this form, or we could multiply it out and get
-        <me>
+        <md>
           A^{-1} = \frac{1}{29}\left[\begin{array}{cc} 9\amp -2\\1\amp 3 \end{array} \right] = \left[\begin{array}{cc}  9/29 \amp  -2/29\\1/29 \amp  3/29 \end{array} \right]
-        </me>.
+        </md>.
       </p>
       <p>
         To solve the system 

@@ -29,15 +29,15 @@
       <sbsgroup margins="0% 0%" widths="45% 45%">
         <sidebyside>
             <p> 
-                <me>\begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\
+                <md>\begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\
             \amp -\amp 2g\amp +\amp r\amp =\amp 0\\
             -b\amp +\amp g\amp +\amp r\amp =\amp 0
-            \end{array}</me> 
+            \end{array}</md> 
             </p>
             
             <p> 
-                <me>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp -2\amp 1\amp 0\\-1\amp 1\amp 1\amp 0
-            \end{array} \right]</me>
+                <md>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp -2\amp 1\amp 0\\-1\amp 1\amp 1\amp 0
+            \end{array} \right]</md>
             </p>
           </sidebyside>
           
@@ -52,16 +52,16 @@
           
         <sidebyside>
           <p>
-              <me>\begin{array}{ccccccc}
+              <md>\begin{array}{ccccccc}
             b\amp +\amp g\amp +\amp r\amp =\amp 30\\
             \amp -\amp 2g\amp +\amp r\amp =\amp 0\\
             \amp  \amp 2g\amp +\amp 2r\amp =\amp 30
-            \end{array}</me>
+            \end{array}</md>
           </p>
           
           <p>
-              <me>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp -2\amp 1\amp 0\\0\amp 2\amp 2\amp 30
-            \end{array} \right]</me>
+              <md>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp -2\amp 1\amp 0\\0\amp 2\amp 2\amp 30
+            \end{array} \right]</md>
           </p>
         </sidebyside>
         
@@ -78,16 +78,16 @@
         
         <sidebyside>
             <p>
-                <me>\begin{array}{ccccccc}
+                <md>\begin{array}{ccccccc}
             b\amp +\amp g\amp +\amp r\amp =\amp 30\\
             \amp \amp g\amp +\amp -1/2r\amp =\amp 0\\
             \amp  \amp 2g\amp +\amp 2r\amp =\amp 30
-            \end{array}</me>
+            \end{array}</md>
             </p>
             
             <p>
-                <me>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp 1\amp -\frac12\amp 0\\0\amp 2\amp 2\amp 30
-            \end{array} \right]</me>
+                <md>\left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp 1\amp -\frac12\amp 0\\0\amp 2\amp 2\amp 30
+            \end{array} \right]</md>
             </p>
         </sidebyside>
           
@@ -106,16 +106,16 @@
         
         <sidebyside>
             <p>
-                <me>\begin{array}{ccccccc}
+                <md>\begin{array}{ccccccc}
             b\amp +\amp  \amp  \amp 3/2r\amp =\amp 30\\
             \amp  \amp g\amp -\amp 1/2r\amp =\amp 0\\
             \amp  \amp  \amp  \amp 3r\amp =\amp 30
-            \end{array}</me>
+            \end{array}</md>
             </p>
             
             <p>
-                <me>\left[\begin{array}{cccc} 1\amp 0\amp \frac32\amp 30\\0\amp 1\amp -\frac12\amp 0\\0\amp 0\amp 3\amp 30
-            \end{array} \right]</me>
+                <md>\left[\begin{array}{cccc} 1\amp 0\amp \frac32\amp 30\\0\amp 1\amp -\frac12\amp 0\\0\amp 0\amp 3\amp 30
+            \end{array} \right]</md>
             </p>
           </sidebyside>
         
@@ -132,16 +132,16 @@
         
         <sidebyside>
             <p>
-                <me>\begin{array}{ccccccc}
+                <md>\begin{array}{ccccccc}
             b\amp +\amp  \amp  \amp 3/2r\amp =\amp 30\\
             \amp  \amp g\amp -\amp 1/2r\amp =\amp 0\\
             \amp  \amp  \amp  \amp r\amp =\amp 10
-            \end{array}</me>
+            \end{array}</md>
             </p>
             
             <p>
-                <me>\left[\begin{array}{cccc} 1\amp 0\amp \frac32\amp 30\\0\amp 1\amp -\frac12\amp 0\\0\amp 0\amp 1\amp 10
-            \end{array} \right]</me>
+                <md>\left[\begin{array}{cccc} 1\amp 0\amp \frac32\amp 30\\0\amp 1\amp -\frac12\amp 0\\0\amp 0\amp 1\amp 10
+            \end{array} \right]</md>
             </p>
           </sidebyside>
         
@@ -160,16 +160,16 @@
         
         <sidebyside>
             <p>
-                <me>\begin{array}{ccccccc}
+                <md>\begin{array}{ccccccc}
             b\amp  \amp  \amp  \amp  \amp =\amp 15\\
             \amp  \amp g\amp  \amp  \amp =\amp 5\\
             \amp  \amp  \amp  \amp r\amp =\amp 10
-            \end{array}</me>
+            \end{array}</md>
             </p>
             
             <p>
-                <me>\left[\begin{array}{cccc} 1\amp 0\amp 0\amp 15\\0\amp 1\amp 0\amp 5\\0\amp 0\amp 1\amp 10
-            \end{array} \right]</me>
+                <md>\left[\begin{array}{cccc} 1\amp 0\amp 0\amp 15\\0\amp 1\amp 0\amp 5\\0\amp 0\amp 1\amp 10
+            \end{array} \right]</md>
             </p>
           </sidebyside>
       </sbsgroup>
@@ -199,7 +199,7 @@
         <statement>
           <p>
             Consider the matrix 
-            <me>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>.
+            <md>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</md>.
             Which matrix is the result of multiplying Row 1 by <m>-2</m> and adding to Row 3?
           </p>
         </statement>
@@ -258,7 +258,7 @@
         <statement>
           <p>
             Consider the matrix 
-            <me>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>.
+            <md>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</md>.
             Which matrix is the result of multiplying Row 1 by <m>-2</m>?
           </p>
         </statement>
@@ -305,7 +305,7 @@
         <statement>
           <p>
             Consider the matrix 
-            <me>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>.
+            <md>\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</md>.
             Which matrix is the result of interchanging Row 2 and Row 3?
           </p>
         </statement>
@@ -397,11 +397,11 @@
             Consider the matrices
             <sidebyside>
               <p>
-            <me>A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>
+            <md>A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</md>
               </p>
 
               <p>
-                <me>B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -1\amp 7\amp 3\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>
+                <md>B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 0\amp -1\amp 7\amp 3\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</md>
                   </p>
             </sidebyside>
             Which row operation was done to <m>A</m> to obtain <m>B</m>?
@@ -454,11 +454,11 @@
             Consider the matrices
             <sidebyside>
               <p>
-            <me>A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>
+            <md>A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</md>
               </p>
 
               <p>
-                <me>B=\left[\begin{array}{cccc} 0\amp -5\amp -3\amp \frac{1}{2}\\ 2\amp 1\amp 5\amp 7\\ 1\amp 1\amp -1\amp 2\\ \end{array} \right]</me>
+                <md>B=\left[\begin{array}{cccc} 0\amp -5\amp -3\amp \frac{1}{2}\\ 2\amp 1\amp 5\amp 7\\ 1\amp 1\amp -1\amp 2\\ \end{array} \right]</md>
                   </p>
             </sidebyside>
             Which row operation was done to <m>A</m> to obtain <m>B</m>?
@@ -510,11 +510,11 @@
             Consider the matrices
             <sidebyside>
               <p>
-            <me>A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</me>
+            <md>A=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -5\amp -3\amp \frac{1}{2}\\ \end{array} \right]</md>
               </p>
 
               <p>
-                <me>B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -10\amp -6\amp 1\\ \end{array} \right]</me>
+                <md>B=\left[\begin{array}{cccc} 1\amp 1\amp -1\amp 2\\ 2\amp 1\amp 5\amp 7\\ 0\amp -10\amp -6\amp 1\\ \end{array} \right]</md>
                   </p>
             </sidebyside>
             Which row operation was done to <m>A</m> to obtain <m>B</m>?
@@ -570,9 +570,9 @@
         <statement>
           <p>
             Find a solution to the following system of linear equations by simultaneously manipulating the equations and the corresponding augmented matrices.
-            <me>
+            <md>
               \begin{array}{ccccccc} x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\ 2x_1\amp +\amp 2x_2\amp +\amp x_3\amp =\amp 0\\ -x_1\amp +\amp x_2\amp -\amp 2x_3\amp =\amp 2 \end{array}
-            </me>
+            </md>
           </p>
         </statement>
         <solution>
@@ -587,15 +587,15 @@
             </sidebyside>
             
             <sidebyside>
-              <p><me>\begin{array}{ccccccc}
+              <p><md>\begin{array}{ccccccc}
                 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
                 2x_1\amp +\amp 2x_2\amp +\amp x_3\amp =\amp 0\\
                 -x_1\amp +\amp x_2\amp -\amp 2x_3\amp =\amp 2
-                \end{array}</me></p>
+                \end{array}</md></p>
             
-              <p><me>\left[\begin{array}{cccc}
+              <p><md>\left[\begin{array}{cccc}
                 1\amp 1\amp 1\amp 0\\ 2\amp 2\amp 1\amp 0\\ -1\amp 1\amp -2\amp 2\\
-                \end{array} \right]</me></p>
+                \end{array} \right]</md></p>
             </sidebyside>
           </sbsgroup>
           <p>
@@ -616,15 +616,15 @@
             </sidebyside>
             
             <sidebyside>
-              <p><me>\begin{array}{ccccccc}
+              <p><md>\begin{array}{ccccccc}
                 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
                 \amp  \amp    \amp  \amp -x_3\amp =\amp 0\\
                 \amp  \amp 2x_2\amp -\amp x_3\amp =\amp 2
-                \end{array}</me></p>
+                \end{array}</md></p>
             
-              <p><me>\left[\begin{array}{cccc}
+              <p><md>\left[\begin{array}{cccc}
                 1\amp 1\amp 1\amp 0\\ 0\amp 0\amp -1\amp 0\\ 0\amp 2\amp -1\amp 2\\
-                \end{array} \right]</me></p>
+                \end{array} \right]</md></p>
             </sidebyside>
           </sbsgroup>
             
@@ -638,55 +638,55 @@
             <sidebyside>
               <p>Interchange equations 2 and 3.</p>
           
-              <p><me>R_2\leftrightarrow R_3</me></p>
+              <p><md>R_2\leftrightarrow R_3</md></p>
             </sidebyside>
            
             <sidebyside>
-              <p><me>\begin{array}{ccccccc}
+              <p><md>\begin{array}{ccccccc}
                 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
                 \amp  \amp 2x_2\amp -\amp x_3\amp =\amp 2\\
                 \amp  \amp    \amp  \amp -x_3\amp =\amp 0
-                \end{array}</me></p>
+                \end{array}</md></p>
               
-              <p><me>\left[\begin{array}{cccc}
+              <p><md>\left[\begin{array}{cccc}
                 1\amp 1\amp 1\amp 0\\ 0\amp 2\amp -1\amp 2\\ 0\amp 0\amp -1\amp 0\\
-                \end{array} \right]</me></p>
+                \end{array} \right]</md></p>
             </sidebyside>
             
             <sidebyside>
               <p>Multiply equation 2 by <m>\frac12</m>.</p>
               
-              <p><me>\frac12 R_2\rightarrow R_2</me></p>
+              <p><md>\frac12 R_2\rightarrow R_2</md></p>
             </sidebyside>
             
             <sidebyside>
-              <p><me>\begin{array}{ccccccc}
+              <p><md>\begin{array}{ccccccc}
                 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
                 \amp  \amp x_2\amp -\amp \frac12x_3\amp =\amp 1\\
                 \amp  \amp    \amp  \amp -x_3\amp =\amp 0
-                \end{array}</me></p>
+                \end{array}</md></p>
               
-              <p><me>\left[\begin{array}{cccc}
+              <p><md>\left[\begin{array}{cccc}
                 1\amp 1\amp 1\amp 0\\ 0\amp 1\amp -\frac12\amp 1\\ 0\amp 0\amp -1\amp 0\\
-                \end{array} \right]</me></p>
+                \end{array} \right]</md></p>
             </sidebyside>
             
             <sidebyside>
               <p>Multiply equation 3 by <m>-1</m>.</p>
               
-              <p><me>-1 R_3\rightarrow R_3</me></p>
+              <p><md>-1 R_3\rightarrow R_3</md></p>
             </sidebyside>
             
             <sidebyside>
-              <p><me>\begin{array}{ccccccc}
+              <p><md>\begin{array}{ccccccc}
                 x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 0\\
                 \amp  \amp x_2\amp -\amp \frac12x_3\amp =\amp 1\\
                 \amp  \amp    \amp  \amp x_3\amp =\amp 0
-                \end{array}</me></p>
+                \end{array}</md></p>
               
-              <p><me>\left[\begin{array}{cccc}
+              <p><md>\left[\begin{array}{cccc}
                 1\amp 1\amp 1\amp 0\\ 0\amp 1\amp -\frac12\amp 1\\ 0\amp 0\amp 1\amp 0\\
-                \end{array} \right]</me></p>
+                \end{array} \right]</md></p>
             </sidebyside>
           </sbsgroup>
             
@@ -713,15 +713,15 @@
             </sidebyside>
             
             <sidebyside>
-              <p><me>\begin{array}{ccccccc}
+              <p><md>\begin{array}{ccccccc}
                 x_1\amp +\amp x_2\amp \amp \amp =\amp 0\\
                 \amp  \amp x_2\amp \amp \amp =\amp 1\\
                 \amp  \amp    \amp  \amp x_3\amp =\amp 0
-                \end{array}</me></p>
+                \end{array}</md></p>
               
-              <p><me>\left[\begin{array}{cccc}
+              <p><md>\left[\begin{array}{cccc}
                 1\amp 1\amp 0\amp 0\\ 0\amp 1\amp 0\amp 1\\ 0\amp 0\amp 1\amp 0\\
-                  \end{array} \right]</me></p>
+                  \end{array} \right]</md></p>
             </sidebyside>
           </sbsgroup>
             
@@ -733,19 +733,19 @@
             <sidebyside>
               <p>Replace equation 1 with the sum of <m>(-1)</m> times equation 2 plus equation 1.</p>
               
-              <p><me>-R_2+R_1\rightarrow R_1</me></p>
+              <p><md>-R_2+R_1\rightarrow R_1</md></p>
             </sidebyside>
             
             <sidebyside>
-              <p><me>\begin{array}{ccccccc}
+              <p><md>\begin{array}{ccccccc}
                 x_1\amp  \amp    \amp \amp \amp =\amp -1\\
                 \amp  \amp x_2\amp \amp \amp =\amp 1\\
                 \amp  \amp    \amp  \amp x_3\amp =\amp 0
-                \end{array}</me></p>
+                \end{array}</md></p>
               
-              <p><me>\left[\begin{array}{cccc}
+              <p><md>\left[\begin{array}{cccc}
                 1\amp 0\amp 0\amp -1\\ 0\amp 1\amp 0\amp 1\\ 0\amp 0\amp 1\amp 0\\
-                \end{array} \right]</me></p>
+                \end{array} \right]</md></p>
             </sidebyside>
           </sbsgroup>
             
@@ -848,9 +848,9 @@
         <p>
           Start with matrix <m>A</m> and perform these row operations one after another. 
           Give the matrix that results from doing each operation in order.
-          <me>
+          <md>
             A=\begin{bmatrix} 0 \amp 1 \amp 2\amp 3 \\ 1 \amp 2\amp 3\amp 4 \\ -1 \amp -1 \amp -1 \amp -1 \end{bmatrix} 
-          </me>
+          </md>
           <md>
             <mrow> R_1  \amp \leftrightarrow R_2 </mrow>
             <mrow> R_1+R_3 \amp \rightarrow R_3 </mrow>
@@ -861,44 +861,44 @@
       <blocks>
       <block order="2">
       <p>
-        <me>
+        <md>
           \begin{bmatrix} 1 \amp 2\amp 3\amp 4 \\ 0 \amp 1 \amp 2\amp 3 \\  -1 \amp -1 \amp -1 \amp -1 \end{bmatrix} 
-        </me>
+        </md>
       </p>
       </block>
       <block order="5" correct="no">
         <p>
-          <me>
+          <md>
             \begin{bmatrix} 0 \amp 1 \amp 2\amp 3 \\ 1 \amp 2\amp 3\amp 4 \\ -1 \amp -1 \amp -1 \amp -1 \end{bmatrix} 
-          </me>
+          </md>
         </p>
       </block>
       <block order="4">
         <p>
-          <me>
+          <md>
             \begin{bmatrix} 1 \amp 2\amp 3\amp 4 \\ 0 \amp 1 \amp 2\amp 3 \\  0 \amp 1 \amp 2 \amp 3 \end{bmatrix} 
-          </me>
+          </md>
         </p>
       </block>
       <block order="1">
         <p>
-          <me>
+          <md>
             \begin{bmatrix} 1 \amp 2\amp 3\amp 4 \\ 0 \amp 1 \amp 2\amp 3 \\  0 \amp 0 \amp 0 \amp 0 \end{bmatrix} 
-          </me>
+          </md>
         </p>
       </block>
       <block order="3" correct="no">
         <p>
-          <me>
+          <md>
             \begin{bmatrix} 1 \amp 2\amp 3\amp 4 \\ 0 \amp 1 \amp 2\amp 3 \\  -1 \amp -2 \amp -3 \amp -4 \end{bmatrix} 
-          </me>
+          </md>
         </p>
       </block>
       <block order="6" correct="no">
         <p>
-          <me>
+          <md>
             \begin{bmatrix} 0 \amp 1 \amp 2\amp 3 \\ 1 \amp 2\amp 3\amp 4 \\ 0 \amp 0 \amp 0 \amp 0 \end{bmatrix} 
-          </me>
+          </md>
         </p>
       </block>
       </blocks>

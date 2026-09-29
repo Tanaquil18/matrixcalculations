@@ -34,9 +34,9 @@
       <c>0.1 + 0.2</c> and <c>0.3</c>. Computers perform arithmetic using base 2 numbers, which means
        that numbers we enter in decimal form, such as <m>0.1</m>, must be converted to base 2.  Even 
        though 0.1 has a simple decimal (base 10) form, its representation in base 2 is the repeating decimal 
-      <me>
+      <md>
         0.000110011001100110011001100110011001100110011\ldots\text{.}
-      </me>,
+      </md>,
       To accurately represent this number inside a computer would require infinitely many digits, but a
       computer can only hold a finite number of digits.  Thus, computers are necessarily using an approximation 
       when internally storing most numbers. 
@@ -96,9 +96,9 @@
               </p>
               <p>
                 Lower triangular matrices have the form
-                <me>
+                <md>
                   \begin{bmatrix} * \amp 0 \amp 0 \\ * \amp * \amp 0 \\ * \amp * \amp * \end{bmatrix}
-                </me>.
+                </md>.
               </p>
             </feedback>
           </choice>
@@ -115,9 +115,9 @@
               </p>
               <p>
                 Upper triangular matrices have the form
-                <me>
+                <md>
                   \begin{bmatrix} * \amp * \amp * \\ 0 \amp * \amp * \\ 0 \amp 0 \amp * \end{bmatrix}
-                </me>.
+                </md>.
               </p>
             </feedback>
           </choice>
@@ -135,9 +135,9 @@
               </p>
               <p>
                 Matrices that are both upper and lower triangular have the form
-                <me>
+                <md>
                   \begin{bmatrix} * \amp 0 \amp 0 \\ 0 \amp * \amp 0 \\ 0 \amp 0 \amp * \end{bmatrix}
-                </me>.
+                </md>.
               </p>
             </feedback>
           </choice>
@@ -175,9 +175,9 @@
               </p>
               <p>
                 Lower triangular matrices have the form
-                <me>
+                <md>
                   \begin{bmatrix} * \amp 0 \amp 0 \\ * \amp * \amp 0 \\ * \amp * \amp * \end{bmatrix}
-                </me>.
+                </md>.
               </p>
             </feedback>
           </choice>
@@ -194,9 +194,9 @@
               </p>
               <p>
                 Upper triangular matrices have the form
-                <me>
+                <md>
                   \begin{bmatrix} * \amp * \amp * \\ 0 \amp * \amp * \\ 0 \amp 0 \amp * \end{bmatrix}
-                </me>.
+                </md>.
               </p>
             </feedback>
           </choice>
@@ -214,9 +214,9 @@
               </p>
               <p>
                 Matrices that are both upper and lower triangular have the form
-                <me>
+                <md>
                   \begin{bmatrix} * \amp 0 \amp 0 \\ 0 \amp * \amp 0 \\ 0 \amp 0 \amp * \end{bmatrix}
-                </me>.
+                </md>.
               </p>
             </feedback>
           </choice>
@@ -347,9 +347,9 @@
               There are 0's above the main diagonal so this is some kind of triangular.  The entries on the main diagonal can be zero or nonzero.
             </p>
             <p>
-              <me>
+              <md>
                 \begin{bmatrix} 2 \amp \boxed{0} \amp \boxed{0} \\ -1 \amp 0 \amp \boxed{0} \\ 3 \amp 5 \amp -4 \end{bmatrix}
-              </me>
+              </md>
             </p>
           </feedback>
           </choice>
@@ -371,9 +371,9 @@
                 <mrow>x_1 + 2x_2 \amp = -1</mrow>
                 <mrow>3x_1 + 5x_2 \amp = -2</mrow>
               </md>,
-              which we can view as <me>
+              which we can view as <md>
                 AX=B
-              </me>,
+              </md>,
               for <m>A=\begin{bmatrix}1 \amp 2 \\ 3 \amp 5 \end{bmatrix}</m>, <m>X=\begin{bmatrix}x_1 \\ x_2 \end{bmatrix}</m>,
               and <m>B=\begin{bmatrix}-1 \\ -2 \end{bmatrix}</m>.
             </p>
@@ -427,23 +427,23 @@
               </md>
               To see how this is easier to solve, look at the first row of <m>LY=B</m>.  
               We see that <m>y_1+0y_2=-1</m>, which means that <m>y_1=-1</m>.  The equation from the 
-              second row is <me>3y_1+y_2=-2</me>, and we can substitute the value of <m>y_1</m> we just found
-               <me>3(-1)+y_2=-2</me> and thus <m>y_2=1</m>.
+              second row is <md>3y_1+y_2=-2</md>, and we can substitute the value of <m>y_1</m> we just found
+               <md>3(-1)+y_2=-2</md> and thus <m>y_2=1</m>.
             </p>
             <p>
               We are trying to solve for <m>X</m> and we now know what <m>Y</m> equals, but remember that we defined <m>UX=Y</m>, which means that
-              <me>
+              <md>
                 \begin{bmatrix} 1 \amp 2 \\ 0 \amp -1 \end{bmatrix}\begin{bmatrix}x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix}-1 \\ 1 \end{bmatrix}
-              </me>.
+              </md>.
               Looking at the second row, we can see that <m>x_2=-1</m>, and then substituting into the equation from the first row
               gives us
-              <me>
+              <md>
                 x_1+2x_2=-1
-              </me>,
-              so <me>x_1+2(-1)=-1</me>, which means that <m>x_1=1</m>.  Then the solution to <m>AX=B</m> is
-              <me>
+              </md>,
+              so <md>x_1+2(-1)=-1</md>, which means that <m>x_1=1</m>.  Then the solution to <m>AX=B</m> is
+              <md>
                 X=\begin{bmatrix} 1 \\ -1 \end{bmatrix}
-              </me>.
+              </md>.
             </p>
         </statement>
     </example>
@@ -462,7 +462,7 @@
     <example>
       <statement>
         <p>
-          Find an <m>LU</m>-decomposition for <me>A=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 1 \amp 1 \amp -1 \\ -3 \amp -1 \amp -7 \end{array}\right]</me>.
+          Find an <m>LU</m>-decomposition for <md>A=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 1 \amp 1 \amp -1 \\ -3 \amp -1 \amp -7 \end{array}\right]</md>.
         </p>
       </statement>
       <solution>
@@ -495,13 +495,13 @@
           </sidebyside>
           <p>
             We could perform one more row operation to scale the third row and put a 1 in the last position, but this is already an upper triangular matrix
-            so we can just stop here and then <me>
+            so we can just stop here and then <md>
               U=\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp 0 \amp -4 \end{array}\right]
-            </me>.
+            </md>.
             Then using elementary matrices to perform the row operations would result in
-            <me>
+            <md>
               E_3E_2E_1 A = U
-            </me>, 
+            </md>, 
             where <m>E_1, E_2</m>, and <m>E_3</m> are the elementary matrices
             <md>
               <mrow>E_1=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ -1 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right] \amp \amp E_2=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 3 \amp 0 \amp 1 \end{array}\right] \amp \amp E_3=\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 1 \amp 1 \end{array}\right] </mrow>
@@ -596,9 +596,9 @@
         <statement>
           <p>
             Put the correct steps in the correct order to find an LU-decomposition of 
-            <me>
+            <md>
               A=\left[ \begin{array}{rrr} 1 \amp 2 \amp 3 \\ 0 \amp 2 \amp -2 \\ 1 \amp 2 \amp 2 \end{array}\right]
-            </me>.  
+            </md>.  
           </p>
         </statement>
         <blocks>
@@ -612,13 +612,13 @@
           <choice correct="yes">
             <p>
               Using elementary matrices to perform the row operations means that
-              <me>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]A=U</me>. 
+              <md>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]A=U</md>. 
             </p>
           </choice>
           <choice correct="no">
             <p>
               Using elementary matrices to perform the row operations means that
-              <me>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]A=U</me>. 
+              <md>\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ -1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp \frac{1}{2} \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -2 \amp 1 \end{array}\right]A=U</md>. 
             </p>
           </choice>
         </block>
@@ -626,14 +626,14 @@
           <choice correct="yes">
               <p>
                 Solving for <m>A</m> gives
-                <me>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]U</me>,
+                <md>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]U</md>,
                 and the product of lower triangular matrices is still lower triangular, so <m>A=LU</m>.
               </p>
           </choice>
           <choice correct="no">
               <p>
                 Solving for <m>A</m> gives
-                <me>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]U</me>,
+                <md>A=\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp 2 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 2 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]\left[\begin{array}{rrr}1\amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \end{array}\right]U</md>,
                 and the product of lower triangular matrices is still lower triangular, so <m>A=LU</m>.
               </p>
           </choice>

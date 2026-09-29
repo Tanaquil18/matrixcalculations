@@ -164,26 +164,26 @@
     Also, for a bit more consistency,
     let's list the variables in alphabetical order in each equation.
     Therefore we can write the equations as
-    <men xml:id="eq_before_matrix">
+    <md xml:id="eq_before_matrix" number="yes">
       \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\ \amp -\amp 2g\amp +\amp r\amp =\amp 0\\ -b\amp +\amp g\amp +\amp r\amp =\amp 0 \end{array}
-    </men>
+    </md>
   </p>
   <p>
     Now, let's add the first and last equations together,
     and write the result as a new third equation.
     This gives us:
-    <me>
+    <md>
       \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\ \amp -\amp 2g\amp +\amp r\amp =\amp 0\\ \amp  \amp 2g\amp +\amp 2r\amp =\amp 30 \end{array}
-    </me>.
+    </md>.
     A nice feature of this is that the only equation with a <m>b</m> in it is the first equation.  One could say
     that we <em>eliminated</em> the <m>b</m> from the third equation.
   </p>
   <p>
     Next let's multiply the second equation by <m>-\frac{1}{2}</m>.
     This gives
-    <me>
+    <md>
       \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\ \amp  \amp  g\amp -\amp \frac{1}{2}r\amp =\amp 0\\ \amp  \amp 2g\amp +\amp 2r\amp =\amp 30 \end{array}
-    </me>
+    </md>
   </p>
   
   <exercise label="mc-elimination-check"><title>Use equations to eliminate variables</title>
@@ -191,9 +191,9 @@
     <statement>
       <p>
         Consider the equations
-        <me>
+        <md>
           \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\ \amp  \amp  g\amp -\amp \frac{1}{2}r\amp =\amp 0 \end{array}
-        </me>
+        </md>
         We want to use the second equation to eliminate the variable <m>g</m> from the first equation.  What step should we take?
       </p>
     </statement>
@@ -240,9 +240,9 @@
       <statement>
         <p>
           Consider the equations
-          <me>
+          <md>
             \begin{array}{ccccccc}  \amp  \amp  g\amp -\amp \frac{1}{2}r\amp =\amp 0\\ \amp  \amp 2g\amp +\amp 2r\amp =\amp 30 \end{array}
-          </me>
+          </md>
           We want to use the top equation to eliminate the variable <m>g</m> from the bottom equation.  What step should we take?
         </p>
       </statement>
@@ -291,16 +291,16 @@
   <p>
     Let's now do both of those steps in a row to eliminate the <m>g</m> from the first and third equations; multiply the second equation by <m>-1</m> and add that to the first equation,
     replacing the first equation with that sum, and multiply the second equation by <m>-2</m> and add that to the third equation, replacing the third equation. Our new system of equations now becomes
-    <me>
+    <md>
       \begin{array}{ccccccc} b\amp +\amp  \amp  \amp \frac{3}{2}r\amp =\amp 30\\ \amp  \amp g\amp -\amp \frac{1}{2}r\amp =\amp 0\\ \amp  \amp  \amp  \amp 3r\amp =\amp 30 \end{array}
-    </me>
+    </md>
   </p>
   <p>
     We can now multiply the third equation by <m>\frac{1}{3}</m> and find that <m>r=10</m>;
     let's make this our new third equation, giving
-    <me>
+    <md>
       \begin{array}{ccccccc} b\amp +\amp  \amp  \amp \frac{3}{2}r\amp =\amp 30\\ \amp  \amp g\amp -\amp \frac{1}{2}r\amp =\amp 0\\ \amp  \amp  \amp  \amp r\amp =\amp 10 \end{array}
-    </me>
+    </md>
   </p>
   <p>
     Now let's eliminate the <m>r</m>'s in the first and second equation.
@@ -312,9 +312,9 @@
     we can multiply the third equation by <m>\frac{1}{2}</m> and add that to the second equation,
     replacing the second equation with that sum.
     This gives us:
-    <me>
+    <md>
       \begin{array}{ccccccc} b\amp  \amp  \amp  \amp  \amp =\amp 15\\ \amp  \amp g\amp  \amp  \amp =\amp 5\\ \amp  \amp  \amp  \amp r\amp =\amp 10 \end{array}
-    </me>.
+    </md>.
     We have arrived at the same result as when we solved this problem in <xref ref="ex_by_hand">Example</xref>, 
     even though our steps were different.
   </p>
@@ -354,7 +354,7 @@
     <choice>
     <p>
       Add <m>3x</m> to the other side of the first equation, getting <m>2y=3+3x</m>, and divide both sides by <m>2</m>,
-      resulting in <me> y = \frac{3+3x}{2}</me>.
+      resulting in <md> y = \frac{3+3x}{2}</md>.
     </p>
     </choice>
     </block>
@@ -363,7 +363,7 @@
         <p>
           Substitute the expression for <m>y</m> from the first equation into the second equation, 
           yielding <m>6x + 3\left(\frac{3+3x}{2}\right) = 8</m>, which simplifies to
-          <me> 6x + \frac{9}{2}x+\frac{9}{2} = 8 </me>.
+          <md> 6x + \frac{9}{2}x+\frac{9}{2} = 8 </md>.
         </p>
       </choice>
       <choice correct="yes">
@@ -377,14 +377,14 @@
     <choice>
       <p>
         Substitute the value of <m>y</m> from the second equation into the first equation, resulting in
-        <m>-3x+2\cdot 2 = 3</m>, so <m>-3x+4=3</m>, which means that <me>x=\frac{1}{3}</me>.
+        <m>-3x+2\cdot 2 = 3</m>, so <m>-3x+4=3</m>, which means that <md>x=\frac{1}{3}</md>.
       </p>
     </choice>
     <choice correct="yes">
       <p>
         Multiply the second equation by <m>-2</m> and add the result to the first equation, resulting in 
         <m>-3x+0y=-1</m>, and multiplying both sides by <m>\frac{-1}{3}</m> yields 
-        <me>\begin{array}{cccc}x \amp \amp \amp= \frac{1}{3} \\ \amp \amp y \amp=2 \end{array} </me>.
+        <md>\begin{array}{cccc}x \amp \amp \amp= \frac{1}{3} \\ \amp \amp y \amp=2 \end{array} </md>.
       </p>
     </choice>
     </block>
@@ -403,9 +403,9 @@
   <p>
     Let's look again at our system of equations in <xref ref="eq_before_matrix"/> and write the coefficients
      and the constants in a rectangular array. If any variables are missing from any equations, we write that the coefficient is <m>0</m>.
-    <me>
+    <md>
       \begin{array}{ccccccc} b\amp +\amp g\amp +\amp r\amp =\amp 30\\ \amp -\amp 2g\amp +\amp r\amp =\amp 0\\ -b\amp +\amp g\amp +\amp r\amp =\amp 0 \end{array} \quad \Longleftrightarrow \quad \left[\begin{array}{cccc} 1\amp 1\amp 1\amp 30\\ 0\amp -2\amp 1\amp 0\\ -1\amp 1\amp 1\amp 0 \end{array} \right]
-    </me>
+    </md>
   </p>
   <p>
     Notice how even the equal signs are gone; we don't need them, for we know that the last entry
@@ -438,9 +438,9 @@
       </p>
       <p>
         All the entries of an <m>m\times n</m> matrix <m>A</m> would appear like this:
-        <me>
+        <md>
           A=\begin{bmatrix} a_{11}\amp a_{12}\amp a_{13}\amp \cdots\amp a_{1n}\\ a_{21}\amp a_{22}\amp a_{23}\amp \cdots\amp a_{2n}\\ a_{31}\amp a_{32}\amp a_{33}\amp \cdots\amp a_{3n}\\ \vdots\amp \vdots\amp \vdots\amp \ddots\amp \vdots\\ a_{m1}\amp a_{m2}\amp a_{m3}\amp \cdots\amp a_{mn} \end{bmatrix}
-        </me>
+        </md>
       </p>
       
     </statement>
@@ -462,7 +462,7 @@
       <title>How a matrix is indexed</title>
       <statement>
         <p>
-          In the matrix <me>A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 \amp 7 \amp 5   \end{bmatrix}</me>
+          In the matrix <md>A=\begin{bmatrix} 2 \amp -1 \amp 3 \amp 5 \\ 0 \amp 3\amp 6\amp -3 \\ 4 \amp -2 \amp 7 \amp 5   \end{bmatrix}</md>
           what is <m>a_{23}</m>? <var width="5" /> 
         </p>
       </statement>

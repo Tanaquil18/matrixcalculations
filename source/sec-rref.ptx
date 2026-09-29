@@ -80,8 +80,8 @@
           <task label="rref-or-not-a">
             <statement>
                 <p>
-                    <me>\left[\begin{array}{cc} 1\amp 0\\0\amp 1
-                        \end{array} \right]</me>
+                    <md>\left[\begin{array}{cc} 1\amp 0\\0\amp 1
+                        \end{array} \right]</md>
                 </p>
             </statement>
             <choices>
@@ -114,8 +114,8 @@
           <task label="rref-or-not-b">
             <statement>
                 <p>
-                    <me>\left[\begin{array}{ccc}  1\amp 0\amp 1\\0\amp 1\amp 2
-                        \end{array} \right]</me>
+                    <md>\left[\begin{array}{ccc}  1\amp 0\amp 1\\0\amp 1\amp 2
+                        \end{array} \right]</md>
                 </p>
             </statement>
             <choices>
@@ -151,8 +151,8 @@
           <task label="rref-or-not-c">
             <statement>
                 <p>
-                    <me>\left[\begin{array}{cc} 0\amp 0\\0\amp 0
-                        \end{array} \right]</me>
+                    <md>\left[\begin{array}{cc} 0\amp 0\\0\amp 0
+                        \end{array} \right]</md>
                 </p>
             </statement>
             <choices>
@@ -185,8 +185,8 @@
           <task label="rref-or-not-d">
             <statement>
                 <p>
-                    <me>\left[\begin{array}{ccc}  1\amp 1\amp 0\\0\amp 0\amp 1
-                        \end{array} \right]</me>
+                    <md>\left[\begin{array}{ccc}  1\amp 1\amp 0\\0\amp 0\amp 1
+                        \end{array} \right]</md>
                 </p>
             </statement>
             <choices>
@@ -211,8 +211,8 @@
                     <feedback>
                         <p>
                             The second column does not have a leading 1 in it, but that's okay; the conditions for rref don't say that every column has to contain a leading 1. 
-                            <me>\left[\begin{array}{ccc}  \fbox{1}\amp 1\amp 0\\0\amp 0\amp \fbox{1}
-                                \end{array} \right]</me>
+                            <md>\left[\begin{array}{ccc}  \fbox{1}\amp 1\amp 0\\0\amp 0\amp \fbox{1}
+                                \end{array} \right]</md>
                         </p>
                     </feedback>
                 </choice>
@@ -221,8 +221,8 @@
           <task label="rref-or-not-e">
             <statement>
                 <p>
-                    <me>\left[\begin{array}{cccc} 1\amp 0\amp 0\amp 1\\0\amp 0\amp 0\amp 0\\0\amp 0\amp 1\amp 3
-                        \end{array} \right]</me>
+                    <md>\left[\begin{array}{cccc} 1\amp 0\amp 0\amp 1\\0\amp 0\amp 0\amp 0\\0\amp 0\amp 1\amp 3
+                        \end{array} \right]</md>
                 </p>
             </statement>
             <choices>
@@ -255,8 +255,8 @@
           <task label="rref-or-not-f">
             <statement>
                 <p>
-                    <me>\left[\begin{array}{cccc} 1\amp 2\amp 0\amp 0 \\0\amp 0\amp 3\amp 0\\0\amp 0\amp 0\amp 4
-                        \end{array} \right]</me>
+                    <md>\left[\begin{array}{cccc} 1\amp 2\amp 0\amp 0 \\0\amp 0\amp 3\amp 0\\0\amp 0\amp 0\amp 4
+                        \end{array} \right]</md>
                 </p>
             </statement>
             <choices>
@@ -289,8 +289,8 @@
           <task label="rref-or-not-g">
             <statement>
                 <p>
-                    <me>\left[\begin{array}{cccccc} 0\amp 1\amp 2\amp 3\amp 0\amp 4\\ 
-                        0\amp 0\amp 0\amp 0\amp 1\amp 5\\0\amp 0\amp 0\amp 0\amp 0\amp 0 \end{array} \right]</me>
+                    <md>\left[\begin{array}{cccccc} 0\amp 1\amp 2\amp 3\amp 0\amp 4\\ 
+                        0\amp 0\amp 0\amp 0\amp 1\amp 5\\0\amp 0\amp 0\amp 0\amp 0\amp 0 \end{array} \right]</md>
                 </p>
             </statement>
             <choices>
@@ -323,7 +323,7 @@
           <task label="rref-or-not-h">
             <statement>
                 <p>
-                    <me>\left[\begin{array}{ccc} 1\amp 1\amp 0\\ 0\amp 1\amp 0\\0\amp 0\amp 1 \end{array} \right]</me>
+                    <md>\left[\begin{array}{ccc} 1\amp 1\amp 0\\ 0\amp 1\amp 0\\0\amp 0\amp 1 \end{array} \right]</md>
                 </p>
             </statement>
             <choices>
@@ -409,15 +409,15 @@
           <title>Gauss-Jordan Elimination Demonstrated</title>
           <p>
             Put the augmented matrix of the following system of linear equations into reduced row echelon form.
-            <me>
+            <md>
               \begin{array}{ccccccc} -3x_1\amp -\amp 3x_2\amp +\amp 9x_3\amp =\amp 12\\ 2x_1\amp +\amp 2x_2\amp -\amp 4x_3\amp =\amp -2\\ \amp \amp -2x_2\amp -\amp 4x_3\amp =\amp -8 \end{array}
-            </me>
+            </md>
           </p>
           <p>
             We start by converting the linear system into an augmented matrix.
-            <me>
+            <md>
               \left[\begin{array}{cccc} \fbox{-3}\amp -3\amp 9\amp 12\\ 2\amp 2\amp -4\amp -2\\0\amp -2\amp -4\amp -8 \end{array} \right]
-            </me>
+            </md>
           </p>
           <p>
             Our first step is to make the first entry in the first row a <m>1</m>.  We do this by multiplying Row 1 by <m>-\frac13</m>. (This row operation is also called <q>scaling.</q>)
@@ -624,9 +624,9 @@
         <statement>
             <p>
               Given the matrix
-              <me>
+              <md>
                 A=\begin{bmatrix} \fbox{2} \amp 4 \amp 6\amp -2 \\ 1 \amp -1 \amp -1 \amp -1 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-              </me>
+              </md>
               the Gauss-Jordan algorithm starts by turning the <m>2</m> that is entry <m>a_{11}</m>, into a <m>1</m>. Which row operation do we use?
             </p>
         </statement>
@@ -675,9 +675,9 @@
         <statement>
             <p>
               Given the matrix
-              <me>
+              <md>
                 B=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 1 \amp -1 \amp -1 \amp -1 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-              </me>
+              </md>
               which entry do we focus on turning into a <m>1</m> or <m>0</m> next?
             </p>
         </statement>
@@ -690,9 +690,9 @@
                 </statement>
                 <feedback>
                     <p>
-                      <me>
+                      <md>
                         B=\begin{bmatrix} \fbox{1} \amp 2 \amp 3\amp -1 \\ 1 \amp -1 \amp -1 \amp -1 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-                      </me>
+                      </md>
                         This entry is already a <m>1</m> as required by the Gauss-Jordan method. 
                     </p>
                 </feedback>
@@ -705,9 +705,9 @@
                 </statement>
                 <feedback>
                     <p>
-                      <me>
+                      <md>
                         B=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ \fbox{1} \amp -1 \amp -1 \amp -1 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-                      </me>
+                      </md>
                         Correct! We need to turn the entries below the leading <m>1</m> in Row 1 into <m>0</m>'s.
                     </p>
                 </feedback>
@@ -720,9 +720,9 @@
               </statement>
               <feedback>
                   <p>
-                    <me>
+                    <md>
                       B=\begin{bmatrix} 1 \amp \fbox{2} \amp 3\amp -1 \\ 1 \amp -1 \amp -1 \amp -1 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-                    </me>
+                    </md>
                     No, we finish putting <m>0</m>'s below the leading <m>1</m> in the first column before moving to the right.  
                   </p>
               </feedback>
@@ -733,9 +733,9 @@
         <statement>
             <p>
                 To turn the boxed entry below into a <m>0</m>, which row operation do we perform?
-                <me>
+                <md>
                   B=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ \fbox{1} \amp -1 \amp -1 \amp -1 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-                </me>
+                </md>
             </p>
         </statement>
         <choices>
@@ -781,9 +781,9 @@
         <statement>
             <p>
                 To continue the Gauss-Jordan algorithm on the matrix below, which entry do we next try to turn into a <m>1</m> or <m>0</m>?
-                <me>
+                <md>
                   C=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 0 \amp -3 \amp -4 \amp 0 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix}
-                </me>
+                </md>
             </p>
         </statement>
         <choices>
@@ -796,9 +796,9 @@
                 <feedback>
                     <p>
                         No, entry <m>c_{12}</m> is the entry boxed below.  The Gauss-Jordan algorithm says that after finishing a column, we move down and to the right from the leading <m>1</m>.
-                        <me>
+                        <md>
                           C=\begin{bmatrix} 1 \amp \fbox{2} \amp 3\amp -1 \\ 0 \amp -3 \amp -4 \amp 0 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix}
-                        </me> 
+                        </md> 
                     </p>
                 </feedback>
             </choice>
@@ -811,9 +811,9 @@
               <feedback>
                   <p>
                       No, entry <m>c_{31}</m> is the entry boxed below.  It's already a <m>0</m> below a leading <m>1</m>. 
-                      <me>
+                      <md>
                         C=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 0 \amp -3 \amp -4 \amp 0 \\ \fbox{0} \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-                      </me> 
+                      </md> 
                   </p>
               </feedback>
           </choice>
@@ -826,9 +826,9 @@
                 <feedback>
                     <p>
                         Correct!  The next step in the Gauss-Jordan algorithm is to turn entry <m>c_{22}</m>, which is boxed below, into a <m>1</m>.
-                        <me>
+                        <md>
                           C=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 0 \amp \fbox{-3} \amp -4 \amp 0 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-                        </me>
+                        </md>
                     </p>
                 </feedback>
             </choice>
@@ -838,9 +838,9 @@
         <statement>
             <p>
               Given the matrix
-              <me>
+              <md>
                 C=\begin{bmatrix} 1 \amp 2 \amp 3\amp -1 \\ 0 \amp \fbox{-3} \amp -4 \amp 0 \\ 0 \amp 2\amp 3\amp 4 \\  \end{bmatrix},
-              </me>
+              </md>
               which row operation do we use next in the Gauss-Jordan algorithm?
             </p>
         </statement>
@@ -893,9 +893,9 @@
         <statement>
           <p>
             Use Gauss-Jordan elimination to put the matrix <m>A</m> into reduced row echelon form, where
-            <me>
+            <md>
               A = \left[\begin{array}{ccccc} -2\amp -4\amp -2\amp -10\amp 0\\2\amp 4\amp 1\amp 9\amp -2\\3\amp 6\amp 1\amp 13\amp -4 \end{array} \right]
-            </me>
+            </md>
           </p>
         </statement>
         <solution>
@@ -936,9 +936,9 @@
             Therefore, we shift our attention to the right one more column, to the <m>-1</m>.
           </p>
           <p>
-            <me>\left[\begin{array}{ccccc} 1\amp 2\amp 1\amp 5\amp 0\\0\amp 0\amp \fbox{-1}\amp -1\amp -2\\0\amp 0\amp -2\amp -2\amp -4
+            <md>\left[\begin{array}{ccccc} 1\amp 2\amp 1\amp 5\amp 0\\0\amp 0\amp \fbox{-1}\amp -1\amp -2\\0\amp 0\amp -2\amp -2\amp -4
               \end{array} \right]
-            </me>
+            </md>
           </p>
           <p>
             We want to create a leading <m>1</m> for this row, so we multiply by a nonzero number.
@@ -989,9 +989,9 @@
         <statement>
           <p>
             Put the matrix
-            <me>
+            <md>
               \left[\begin{array}{cccc}  1\amp 2\amp 1\amp 3\\2\amp 1\amp 1\amp 1\\3\amp 3\amp 2\amp 1 \end{array} \right]
-            </me>
+            </md>
             into reduced row echelon form.
           </p>
         </statement>
@@ -1092,67 +1092,67 @@
       <statement>
         <p>
           Perform Gauss-Jordan elimination on matrix <m>A</m>.
-          <me>
+          <md>
             A=\begin{bmatrix} -1 \amp -1 \amp -1 \amp -1 \\ 0 \amp 1 \amp 2\amp 3 \\ 1 \amp 2\amp 4\amp 4 \\  \end{bmatrix} 
-          </me>
+          </md>
         </p>
       </statement>
       <blocks>
       <block order="2" correct="no">
       <p>
-        <me>
+        <md>
           R_1+R_3 \rightarrow R_3
-        </me>
+        </md>
       </p>
       </block>
       <block order="5" correct="no">
         <p>
-          <me>
+          <md>
             R_1 \leftrightarrow R_3
-          </me>
+          </md>
         </p>
       </block>
       <block order="7">
         <p>
-          <me>
+          <md>
             -R_1 \rightarrow R_1
-          </me>
+          </md>
           
         </p>
       </block>
       <block order="4">
         <p>
-          <me>
+          <md>
             -R_1 +R_3 \rightarrow R_3
-          </me>
+          </md>
         </p>
       </block>
       <block order="1">
         <p>
-          <me>
+          <md>
             -R_2 + R_3 \rightarrow R_3
-          </me>
+          </md>
         </p>
       </block>
       <block order="3">
         <p>
-          <me>
+          <md>
             -2R_3+R_2 \rightarrow R_2
-          </me>
+          </md>
         </p>
       </block>
       <block order="6">
         <p>
-          <me>
+          <md>
             -R_3+R_1 \rightarrow R_1
-          </me>
+          </md>
         </p>
       </block>
       <block order="8">
         <p>
-          <me>
+          <md>
             -R_2+R_1 \rightarrow R_1
-          </me>
+          </md>
         </p>
       </block>
       </blocks>

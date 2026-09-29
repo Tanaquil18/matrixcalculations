@@ -41,17 +41,17 @@
         <p>
             Now we use the information given to create linear equations. We were told that hats go to guests 
             in Sections A and B and that we'll need <m>800</m> hats, which means that
-            <me>
+            <md>
             x_1+x_2 = 800.
-            </me>
+            </md>
             Guests in Sections B and C get shirts, which means that 
-            <me>
+            <md>
               x_2+x_3 = 608
-            </me>.
+            </md>.
             Lastly, guests in Sections A and C get hot dogs, which means that
-            <me>
+            <md>
               x_1+x_3 = 612
-            </me>.
+            </md>.
             Putting these three equations into a linear system results in
             <md>
             <mrow> \amp x_1\amp \amp +  \amp \amp x_2\amp \amp \amp \amp \amp \amp = 800 </mrow>
@@ -59,16 +59,16 @@
             <mrow> \amp x_1  \amp \amp +\amp  \amp \amp  \amp \amp  \amp x_3\amp \amp =612 </mrow>
             </md>,
             and the corresponding augmented matrix is
-            <me>
+            <md>
             \left[\begin{array}{cccc} 1\amp 1\amp 0\amp 800\\0\amp 1\amp 1\amp 608\\1\amp 0\amp 1\amp 612\\ \end{array} \right]
-            </me>.
+            </md>.
         </p>
         <p>
             To solve our system,
             we put the augmented matrix into reduced row echelon form and get
-            <me>
+            <md>
             \left[\begin{array}{cccc} 1\amp 1\amp 0\amp 800\\0\amp 1\amp 1\amp 608\\1\amp 0\amp 1\amp 612\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 402\\0\amp 1\amp 0\amp 398\\0\amp 0\amp 1\amp 210\\ \end{array} \right]
-            </me>.
+            </md>.
         </p>
         <p>
             Since <m>x_1=402</m>, this means that Section A has <m>402</m> seats.
@@ -211,23 +211,23 @@
           <li>
             <title>Form linear equations involving the variables</title>
             <p>
-              We are told that there were <m>7</m> scoring plays, so <me>t+x+c+f=7</me>. We were also told that the total
+              We are told that there were <m>7</m> scoring plays, so <md>t+x+c+f=7</md>. We were also told that the total
               number of points is <m>24</m>, and that each touchdown is worth <m>6</m> points, each field goal is worth <m>3</m>, each
               extra point is worth <m>1</m> and each 2-point conversion is worth <m>2</m> points. This means that 
-              <me>6t+x+2c+3f=24</me>.
+              <md>6t+x+2c+3f=24</md>.
             </p>
             <p>
               There is one more given piece of information: that every touchdown is followed by either an extra point or a 2-point conversion.  
-              This means that <m>t=x+c</m>, or <me>t-x-c=0</me>
+              This means that <m>t=x+c</m>, or <md>t-x-c=0</md>
             </p>
           </li>
           <li>
             <title>Form augmented matrix and row reduce</title>
             <p>
               Putting the three equations above into an augmented matrix and row reducing gives us
-              <me>
+              <md>
           \left[\begin{array}{ccccc} 1\amp 1\amp 1\amp 1\amp 7\\ 6\amp 1\amp 2\amp 3\amp 24\\1\amp -1\amp -1\amp 0\amp 0\\ \end{array} \right] \rrefarrow \left[\begin{array}{ccccc}  1\amp 0\amp 0\amp 0.5\amp 3.5\\0\amp 1\amp 0\amp 1\amp 4\\ 0\amp 0\amp 1\amp -0.5\amp -0.5\\ \end{array} \right]
-        </me>.
+        </md>.
             </p>
           </li>
           <li>
@@ -296,9 +296,9 @@
         <statement>
             <p>
               Consider a linear system whose augmented matrix and reduced row echelon form are shown below.  
-              <me>
+              <md>
                 \left[\begin{array}{cccc} 1\amp 1\amp 1\amp 32\\ 1\amp 5\amp 10\amp 100\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp -\frac54\amp 15\\0\amp 1\amp \frac94\amp 17\\ \end{array} \right]
-              </me>
+              </md>
               Note that this translates back to equations as
                <md>
                   <mrow>x \amp =15+\frac54z</mrow>
@@ -446,9 +446,9 @@
         When chemicals react, no elements are created or destroyed; instead they recombine into different substances.  
         For example, a blow torch works by burning acetylene <m>C_2H_2</m> in the presence of oxygen <m>O_2</m>.  The result is carbon
         dioxide <m>CO_2</m> and water <m>H_2 O</m>. 
-        <me>
+        <md>
           \text{acetylene } + \text{ oxygen } \longrightarrow \text{ carbon dioxide } + \text{ water}
-        </me>
+        </md>
         If there were <m>4</m> atoms of carbon (as part of the acetylene)
         before the reaction, then there have to be <m>4</m> atoms of carbon (in the form of carbon dioxide) after the reaction also.  
       </p>
@@ -459,17 +459,17 @@
       </p>
       <p>
         Let's balance the blow torch reaction, using our problem solving steps.
-        <me>
+        <md>
           <fillin characters="1"/>C_2H_2 + <fillin characters="1" />O_2 \longrightarrow <fillin characters="1" /> CO_2 + <fillin characters="1" />H_2O
-        </me>
+        </md>
       </p>
       <p>
         We need to find the coefficients of each of the molecules, so those are the unknowns we should give names to.  Let's say there are
         <m>x_1</m> many molecules of <m>C_2H_2</m>, and <m>x_2</m> many molecules of <m>O_2</m>, and
          <m>x_3</m> many molecules of <m>CO_2</m>, and <m>x_4</m> many molecules of <m>H_2O</m>.
-         <me>
+         <md>
           x_1 \, C_2H_2 + x_2 \, O_2 \longrightarrow x_3 \, CO_2 + x_4 \, H_2O
-        </me>
+        </md>
       </p>
       <p>
         Now we consider each element and the number of atoms there are before and after the reaction.  
@@ -482,18 +482,18 @@
         there are <m>x_3</m> many atoms of carbon after the reaction occurs.  
         Because the number of carbon atoms must be the same before and after the reaction, we get the equation <m>2x_1=x_3</m>, 
         or restated in the form which has the constant after the equal sign as
-        <me>
+        <md>
           2x_1-x_3=0
-        </me>.
+        </md>.
       </p>
       <p>
         Next, we examine hydrogen, which is denoted by <m>H</m>. Before the reaction there were <m>2</m> hydrogen atoms in each of
         the <m>x_1</m> molecules of <m>C_2H_2</m>, for a total of <m>2x_1</m> hydrogen atoms. 
         After the reaction, there are <m>2</m> hydrogen atoms in each of the <m>x_4</m> molecules of <m>H_2O</m>, for a total of <m>2x_4</m> 
         hydrogen atoms.  This gives the equation <m>2x_1=2x_4</m>, or moving the variables to the left side of the equal sign,
-        <me>
+        <md>
           2x_1-2x_4=0
-        </me>.
+        </md>.
       </p>
       <p>
         Finally, we look at oxygen, denoted by <m>O</m>.  Note that there is oxygen in both of the molecules that appear after the reaction.  
@@ -501,15 +501,15 @@
         <m>2</m> oxygen atoms in each of the <m>x_3</m> molecules of <m>CO_2</m> and <m>1</m> oxygen atom in each of
         the <m>x_4</m> molecules of <m>H_2O</m>, which means there is a total of
         <m>2x_3+x_4</m> oxygen atoms after the reaction.  This gives us the equation <m>2x_2=2x_3+x_4</m>, or
-        <me>
+        <md>
           2x_2-2x_3-x_4=0
-        </me>.
+        </md>.
       </p>
       <p>
         We put these equations into an augmented matrix and then find the reduced row echelon form
-        <me>
+        <md>
             \begin{bmatrix} 1\amp 0 \amp -1\amp 0\amp 0\\2\amp 0 \amp 0\amp -2\amp 0\\0\amp 2\amp -2\amp -1\amp 0\\ \end{bmatrix} \rrefarrow \begin{bmatrix} 1\amp 0\amp 0\amp -1 \amp 0\\0\amp 1\amp 0\amp \frac{-5}{2}\amp 0\\0\amp 0\amp 1\amp -2 \amp 0\\ \end{bmatrix}
-        </me>.
+        </md>.
       </p>
       <p>
         Note that the variable <m>x_4</m> is free, which means that mathematically, <m>x_4</m> can take on any value.  What happens if we let 
@@ -527,9 +527,9 @@
           <mrow>x_4 \amp =2 </mrow>
         </md>
         and the balanced equation is 
-        <me>
+        <md>
           2 C_2H_2 + 5 O_2 \longrightarrow 4 CO_2 + 2 H_2 O
-        </me>.
+        </md>.
         Note that it makes sense to have infinitely many solutions to the linear system, since multiplying the 
         whole thing by <m>2</m> or <m>5</m> or any whole positive number will keep the 
         reaction balanced with equal numbers of each element's atoms before and after the arrow.
@@ -561,9 +561,9 @@
               Going through the point (-1,6) means x=-1 and y=6, so 6=a(-1)^2+b(-1)+c
               Similarly for the two remaining points we get 2=a(1)^2+b(1)+c and 3=a(2)^2+b(2)+c
               equations are a-b+c=6, a+b+c=2 and 4a+2b+c=3
-              <me>
+              <md>
           \left[\begin{array}{cccc} 1\amp -1\amp 1\amp 6\\1\amp 1\amp 1\amp 2\\4\amp 2\amp 1\amp 3\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 1\\0\amp 1\amp 0\amp -2\\0\amp 0\amp 1\amp 3\\ \end{array} \right]
-        </me>
+        </md>
               Solution is a=1, b=-2 and c=3, so y=x^2-2x+3 -->
         <blocks>
           <block order="2">
@@ -606,9 +606,9 @@
         <block order="3">
           <p>
             Putting the equations into an augmented matrix and then row reducing gives
-            <me>
+            <md>
               \left[\begin{array}{cccc} 1\amp -1\amp 1\amp 6\\1\amp 1\amp 1\amp 2\\4\amp 2\amp 1\amp 3\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 1\\0\amp 1\amp 0\amp -2\\0\amp 0\amp 1\amp 3\\ \end{array} \right]
-            </me>.
+            </md>.
           </p>
         </block>
         <block order="6">
@@ -624,9 +624,9 @@
         <statement>
           <p>
             Select the steps to balance the chemical equation below.
-            <me>
+            <md>
               <fillin characters="1"/>Ca(OH)_2 + <fillin characters="1" />H_3PO_4 \longrightarrow <fillin characters="1" /> Ca_3(PO_4)_2 + <fillin characters="1" />H_2O
-            </me>
+            </md>
           </p>
         </statement>
         <!-- a quadratic function has equation y= ax^2+bx+c
@@ -635,51 +635,51 @@
               Going through the point (-1,6) means x=-1 and y=6, so 6=a(-1)^2+b(-1)+c
               Similarly for the two remaining points we get 2=a(1)^2+b(1)+c and 3=a(2)^2+b(2)+c
               equations are a-b+c=6, a+b+c=2 and 4a+2b+c=3
-              <me>
+              <md>
           \left[\begin{array}{cccc} 1\amp -1\amp 1\amp 6\\1\amp 1\amp 1\amp 2\\4\amp 2\amp 1\amp 3\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 0\amp 1\\0\amp 1\amp 0\amp -2\\0\amp 0\amp 1\amp 3\\ \end{array} \right]
-        </me>
+        </md>
               Solution is a=1, b=-2 and c=3, so y=x^2-2x+3 -->
         <blocks>
           <block order="2">
             <p>
               We are looking for the values of <m>x_1,x_2,x_3,x_4</m> such that
-              <me>
+              <md>
               {\small x_1 \, Ca(OH)_2 + x_2 \, H_3PO_4 \longrightarrow x_3 \,  Ca_3(PO_4)_2 + x_4 \, H_2O }
-            </me>
+            </md>
             </p>
           </block>
         <block order="1" >
           <p>
             Looking at the element calcium <m>Ca</m>, we have <m>x_1</m> atoms before the
              reaction and <m>3x_3</m> atoms of calcium after the reaction takes place, so 
-             <me>
+             <md>
               x_1-3x_3=0
-             </me>.
+             </md>.
           </p>
         </block>
         <block order="7">
           <p>
             Similarly, looking at the number of atoms of oxygen <m>O</m> before and after the reaction 
             gives us the equation 
-            <me>
+            <md>
               2x_1+4x_2-8x_3-x_4=0
-            </me>,
+            </md>,
             while examining hydrogen <m>H</m> gives the equation 
-            <me>
+            <md>
               2x_1+3x_2-2x_4=0
-            </me>,
+            </md>,
             and considering phosphorus <m>P</m> results in
-            <me>
+            <md>
               x_2-2x_3=0
-            </me>.
+            </md>.
           </p>
         </block>
         <block order="3">
           <p>
             Putting these equations into an augmented matrix and then row reducing gives
-            <me>
+            <md>
               \left[\begin{array}{ccccc} 1\amp 0\amp -3\amp 0 \amp 0\\2\amp 4\amp -8\amp -1\amp 0\\2\amp 3\amp 0\amp -2\amp 0 \\ 0\amp 1\amp -2\amp 0\amp 0\end{array} \right] \rrefarrow \left[\begin{array}{ccccc} 1\amp 0\amp 0\amp \frac{-1}{2} \amp 0\\0\amp 1\amp 0\amp \frac{-1}{3} \amp 0\\0\amp 0\amp 1\amp \frac{-1}{6}\amp 0\\ \end{array} \right]
-            </me>
+            </md>
           </p>
         </block>
         <block order="5">
@@ -695,17 +695,17 @@
         <block order="6" correct="no">
             <p>
               Letting <m>x_4=36</m> yields a final answer of 
-              <me>
+              <md>
               {\small 18 \, Ca(OH)_2 + 12 \, H_3PO_4 \longrightarrow 6 \,  Ca_3(PO_4)_2 + 36 \, H_2O }
-            </me>.
+            </md>.
             </p>
         </block>
         <block order="4">
             <p>
               Letting <m>x_4=6</m> yields a final answer of 
-              <me>
+              <md>
               3 \, Ca(OH)_2 + 2 \, H_3PO_4 \longrightarrow   Ca_3(PO_4)_2 +  6\, H_2O
-            </me>.
+            </md>.
             </p>
         </block>
         </blocks>

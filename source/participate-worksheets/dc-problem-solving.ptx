@@ -75,25 +75,25 @@
             <p>
               Pure elemental phosphorous and hypochlorous acid <m>HClO</m> react in water to make
               phosphoric acid <m>H_3PO_4</m> and hydrochloric acid <m>HCl</m>.  Balance the chemical equation
-              <me>
+              <md>
                 <fillin characters="1"/> P_4 + <fillin characters="1"/> HClO+<fillin characters="1" /> H_2 O \longrightarrow <fillin characters="1" />  H_3PO_4+<fillin characters="1"/> HCl
-              </me>.
+              </md>.
             </p>
           </statement>
           <answer>
             <p>
               The balanced equation is 
-              <me>
+              <md>
                  P_4 + 10 HClO+ 6 H_2 O \longrightarrow 4  H_3PO_4+ 10  HCl
-              </me>.
+              </md>.
             </p>
           </answer>
           <solution>
             <p>
               We are looking for 
-              <me>
+              <md>
                 x_1 \, P_4 + x_2 \, HClO+ x_3\, H_2 O \longrightarrow x_4 \,  H_3PO_4+ x_5 \, HCl
-              </me>.
+              </md>.
               Consider the number of atoms of each element before and after the reaction.
               <md>
                 <mrow>P\amp:  \amp 4x_1 \amp=x_4 </mrow>
@@ -102,13 +102,13 @@
                 <mrow>O\amp: \amp x_2+x_3 \amp =4x_4</mrow>
               </md>
               Turning this system into an augmented matrix and row reducing results in
-              <me>
+              <md>
                 \begin{bmatrix} 4 \amp 0 \amp 0 \amp -1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 2 \amp -3 \amp -1 \amp 0
                 \\ 0\amp 1\amp 0 \amp 0 \amp -1 \amp 0 \\ 0\amp 1 \amp 1 \amp -4 \amp 0 \amp 0 \end{bmatrix}
                 \rrefarrow 
                 \begin{bmatrix} 1 \amp 0 \amp 0 \amp 0 \amp \frac{-1}{10} \amp 0 \\ 0 \amp 1 \amp 0 \amp 0 \amp -1 \amp 0
                 \\ 1 \amp 0 \amp 0 \amp 0 \amp \frac{-3}{5} \amp 0 \\ 1 \amp 0 \amp 0 \amp 0 \amp \frac{-2}{5} \amp 0 \end{bmatrix}
-              </me>
+              </md>
 
               We want the smallest possible numbers such that no value is negative or fractional,
               so let <m>x_5=10</m>.  Then
@@ -120,9 +120,9 @@
                 <mrow>x_5 \amp=10 </mrow>
               </md>
               and the balanced equation is 
-              <me>
+              <md>
                  P_4 + 10 HClO+ 6 H_2 O \longrightarrow 4  H_3PO_4+ 10  HCl
-              </me>.
+              </md>.
             </p>
           </solution>
         </exercise>

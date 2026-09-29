@@ -36,13 +36,13 @@
       </md>
       Because numbers can be added in either order and the answer is the same, for example <m>2+3=3+2=5</m>, it follows that adding
       matrices in either order results in the same matrix also.  
-      <me>
+      <md>
         \begin{bmatrix} 1 \amp 0 \\ -2 \amp 3 \end{bmatrix} + 
         \begin{bmatrix} 1 \amp -1 \\ 2 \amp 5 \end{bmatrix} = 
         \begin{bmatrix} 1 \amp -1 \\ 2 \amp 5 \end{bmatrix} + 
         \begin{bmatrix} 1 \amp 0 \\ -2 \amp 3 \end{bmatrix} =
         \begin{bmatrix} 2 \amp -1 \\ 0 \amp 8 \end{bmatrix}
-      </me>
+      </md>
     </p>
     <p>
       Subtraction and multiplying by numbers can be related back to addition, for example 
@@ -75,9 +75,9 @@
         <statement>
           <p>
             Select all answers which are equal to
-            <me>
+            <md>
               A+B
-            </me>
+            </md>
           </p>
         </statement>
         <choices>
@@ -123,9 +123,9 @@
         <statement>
           <p>
             Select all answers which are equal to
-            <me>
+            <md>
               A-B
-            </me>
+            </md>
           </p>
         </statement>
         <choices>
@@ -171,9 +171,9 @@
         <statement>
           <p>
             Select all answers which are equal to
-            <me>
+            <md>
               2B
-            </me>
+            </md>
           </p>
         </statement>
         <choices>
@@ -231,9 +231,9 @@
         <statement>
           <p>
             Select all answers which are equal to
-            <me>
+            <md>
               \begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix}
-            </me>.
+            </md>.
           </p>
         </statement>
         <choices>
@@ -285,9 +285,9 @@
         <statement>
           <p>
             Select all answers which are equal to
-            <me>
+            <md>
               A+C
-            </me>
+            </md>
           </p>
         </statement>
         <choices>

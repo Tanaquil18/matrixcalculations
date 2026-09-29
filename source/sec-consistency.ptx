@@ -28,9 +28,9 @@
     <sidebyside widths="50% 45%" margins="0%">
       <p>
         First, consider the following linear system with one equation:
-        <me>
+        <md>
           x-y=0
-        </me>.
+        </md>.
         This equation is true whenever <m>x=y</m>.  We can picture 
         all of the possible solutions by thinking of the graph of the equation <m>y=x</m>.
       </p>
@@ -238,15 +238,15 @@
         <title>A system with no solutions</title>
         <p>
           Find the solution to the linear system
-          <me>
+          <md>
             \begin{array}{ccccccc} x_1\amp +\amp x_2\amp +\amp x_3\amp =\amp 1\\ x_1\amp +\amp 2x_2\amp +\amp x_3\amp =\amp 2\\ 2x_1\amp +\amp 3x_2\amp +\amp 2x_3\amp =\amp 0 \end{array}
-          </me>
+          </md>
         </p>
         <p>
           <em>Answer:</em> We put the corresponding augmented matrix into reduced row echelon form.
-          <me>
+          <md>
             \left[\begin{array}{cccc}  1\amp 1\amp 1\amp 1\\1\amp 2\amp 1\amp 2\\ 2\amp 3\amp 2\amp 0\\ \end{array} \right] \rrefarrow \left[\begin{array}{cccc}  1\amp 0\amp 1\amp 0\\ 0\amp 1\amp 0\amp 0\\ 0\amp 0\amp 0\amp 1\\ \end{array} \right]
-          </me>
+          </md>
         </p>
         <p>
           Now let us take the reduced matrix and write out the corresponding equations.
@@ -259,9 +259,9 @@
         <p>
           So far, so good.
           However the last row gives us the equation
-          <me>
+          <md>
             0x_1+0x_2+0x_3 = 1
-          </me>.
+          </md>.
           There are no values of <m>x_1, x_2</m> and <m>x_3</m> which can make <m>0=1</m>.
           Therefore, no solution exists, and 
           this system is inconsistent.
@@ -284,8 +284,8 @@
             <statement>
                 <p>
                   The linear system whose augmented matrix in reduced row echelon form is
-                    <me>\begin{bmatrix} 1\amp 0 \amp -2\\0\amp 1 \amp 1
-                        \end{bmatrix}</me>.
+                    <md>\begin{bmatrix} 1\amp 0 \amp -2\\0\amp 1 \amp 1
+                        \end{bmatrix}</md>.
                 </p>
             </statement>
             <choices>
@@ -320,8 +320,8 @@
             <statement>
                 <p>
                   The linear system whose augmented matrix in reduced row echelon form is
-                    <me>\begin{bmatrix} 1 \amp 1  \amp -3 \\ 0\amp 0\amp 0
-                        \end{bmatrix}</me>.
+                    <md>\begin{bmatrix} 1 \amp 1  \amp -3 \\ 0\amp 0\amp 0
+                        \end{bmatrix}</md>.
                 </p>
             </statement>
             <choices>
@@ -356,8 +356,8 @@
             <statement>
                 <p>
                   The linear system whose augmented matrix has been row reduced to
-                    <me>\begin{bmatrix} 1 \amp 0  \amp -3 \\ 0\amp 1\amp 1 \\0\amp 0\amp 1 \\ 0 \amp 0 \amp 0
-                        \end{bmatrix}</me>.
+                    <md>\begin{bmatrix} 1 \amp 0  \amp -3 \\ 0\amp 1\amp 1 \\0\amp 0\amp 1 \\ 0 \amp 0 \amp 0
+                        \end{bmatrix}</md>.
                 </p>
             </statement>
             <choices>
@@ -445,16 +445,16 @@
       <title>A system with infinitely many solutions</title>
       <p>
         Find the solution to the linear system
-        <me>
+        <md>
           \begin{array}{ccccccc} \amp  \amp x_2\amp -\amp x_3\amp =\amp 3\\ x_1\amp   \amp  \amp +\amp 2x_3\amp =\amp 2\\ \amp \amp -3x_2\amp +\amp 3x_3\amp =\amp -9 \end{array}
-        </me>
+        </md>
       </p>
       <p>
         <em>Answer:</em> To find the solution,
         put the corresponding matrix into reduced row echelon form.
-        <me>
+        <md>
           \left[\begin{array}{cccc}  0\amp 1\amp -1\amp 3\\ 1\amp 0\amp 2\amp 2\\ 0\amp -3\amp 3\amp -9 \end{array} \right] \rrefarrow \left[\begin{array}{cccc} 1\amp 0\amp 2\amp 2\\ 0\amp 1\amp -1\amp 3\\ 0\amp 0\amp 0\amp 0 \end{array} \right]
-        </me>
+        </md>
       </p>
       <p>
         Now convert this reduced matrix back into equations.
@@ -566,9 +566,9 @@
       <task label="properties-lin-sys-a">
         <statement>
           <p>
-            <me>
+            <md>
               \begin{bmatrix} 1 \amp 2  \amp 0 \amp 7 \amp 6 \\ 0\amp 0 \amp 1 \amp -5  \amp -23 \end{bmatrix}
-            </me>
+            </md>
           </p>
         </statement>
         <choices randomize="no">
@@ -638,9 +638,9 @@
       <task label="properties-lin-sys-b">
         <statement>
           <p>
-            <me>
+            <md>
               \begin{bmatrix} 1 \amp 2  \amp 0 \amp 7 \amp 6 \\ 0\amp 0 \amp 1 \amp -5  \amp -23 \end{bmatrix}
-            </me>
+            </md>
           </p>
         </statement>
         <choices randomize="yes">
@@ -685,9 +685,9 @@
       <task label="properties-lin-sys-c">
         <statement>
           <p>
-            <me>
+            <md>
               \begin{bmatrix} 1 \amp 0  \amp 2 \\ 0\amp 1 \amp -1\\ 0 \amp 0 \amp 0 \end{bmatrix}
-            </me>
+            </md>
           </p>
         </statement>
         <choices randomize="no">
@@ -745,9 +745,9 @@
       <task label="properties-lin-sys-d">
         <statement>
           <p>
-            <me>
+            <md>
               \begin{bmatrix} 1 \amp 0  \amp 2 \\ 0\amp 1 \amp -1\\ 0 \amp 0 \amp 0 \end{bmatrix}
-            </me>
+            </md>
           </p>
         </statement>
         <choices randomize="yes">
@@ -822,9 +822,9 @@
       <!-- <statement> -->
         <p>
           Give the solution to a linear system whose augmented matrix in reduced row echelon form is
-          <me>
+          <md>
             \left[\begin{array}{ccccc}  1\amp -1\amp 0\amp 2\amp 4\\ 0\amp 0\amp 1\amp -3\amp 7\\ 0\amp 0\amp 0\amp 0\amp 0\\ \end{array} \right]
-          </me>
+          </md>
           and give two particular solutions.
         </p>
       <!-- </statement>

@@ -79,9 +79,9 @@
             <statement>
                 <p workspace=".8in">
                     In an earlier example, we showed that 
-                    <me>
+                    <md>
                        \underbrace{\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 1 \amp 1 \amp -1 \\ -3 \amp -1 \amp -7 \end{array}\right]}_A = \underbrace{\left[\begin{array}{rrr} 1 \amp 0 \amp 0 \\ 1 \amp 1 \amp 0 \\ -3 \amp -1 \amp 1 \end{array}\right]}_L\underbrace{\left[\begin{array}{rrr} 1 \amp 0 \amp 2 \\ 0 \amp 1 \amp -3 \\ 0 \amp 0 \amp -4 \end{array}\right]}_U
-                    </me>.
+                    </md>.
                     Consider a diagonal matrix, <m>D=\left[\begin{array}{rrr} 2 \amp 0 \amp 0 \\ 0 \amp -1 \amp 0 \\ 0 \amp 0 \amp 1 \end{array}\right]</m>. Calculate <m>LD</m> and <m>D^{-1}U</m>.   
                 </p>
                 <p workspace=".2in">

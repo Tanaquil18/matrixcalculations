@@ -97,9 +97,9 @@
         <p>
           Let's return to the matrix in <xref ref="ex-rowops-matrixmult"/> and continue our row reducing process. 
           We already defined <m>E_1</m> and calculated 
-          <me>
+          <md>
             E_1A = \left[\begin{array}{rrr} 1 \amp 2 \\ 0 \amp -1 \end{array}\right]
-          </me> 
+          </md> 
           The next step in Gauss-Jordan elimination is <m>-R_2\rightarrow R_2</m>.
           Doing this operation to the <m>2 \times 2</m> identity matrix yields 
           <md>
@@ -133,9 +133,9 @@
       To recap what we just did: we row reduced the matrix <m>A</m> by multiplying on the left by 
       three matrices in turn.  In this case, the reduced row echelon form was the identity matrix, so
       we also found matrices whose product is the identity.  Associativity means that 
-      <me>
+      <md>
         (E_3E_2E_1)A=I
-      </me>,
+      </md>,
       which means that <m>A</m> is invertible and <m>A^{-1}=E_3E_2E_1</m>.
     </p>
     <p>
@@ -269,13 +269,13 @@
 
     <p>
       Let's return to our running example of this section.  We started with
-      <me>
+      <md>
         A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}
-      </me>
+      </md>
       and through row reducing by multiplying by elementary matrices we found that
-      <me>
+      <md>
         E_3E_2E_1A=I
-      </me>.
+      </md>.
       We've seen that elementary row operations can be undone by another elementary row operation, which means
       that every elementary matrix is invertible, and the inverse is another elementary matrix.  Thus we can multiply
       both sides of the above equation by <m>E_3^{-1}</m> and get that

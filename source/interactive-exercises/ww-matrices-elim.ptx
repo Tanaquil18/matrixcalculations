@@ -223,11 +223,11 @@
               <li>
                 <p>
                   Consider the matrix.
-              <me>A=
+              <md>A=
                 \begin{bmatrix} <var name="$a1" /> \amp <var name="$b1" /> \amp <var name="$c1" /> \amp <var name="$d1" /> \amp <var name="$e1" /> \\
                 <var name="$a2" /> \amp <var name="$b2" /> \amp <var name="$c2" /> \amp <var name="$d2" /> \amp <var name="$e2" />\\
                 <var name="$a3" /> \amp <var name="$b3" /> \amp <var name="$c3" /> \amp <var name="$d3" /> \amp <var name="$e3" /> \end{bmatrix}
-              </me>
+              </md>
               Which of the following correctly describes the matrix above? 
             </p>
             <p>
@@ -276,11 +276,11 @@
           <statement>
             <p>
               Convert the augmented matrix below to the associated linear system.  
-            <me>
+            <md>
               \begin{bmatrix} <var name="$a1" /> \amp <var name="$b1" /> \amp <var name="$c1" /> \amp <var name="$d1" /> \\
               <var name="$a2" /> \amp <var name="$b2" /> \amp <var name="$c2" /> \amp <var name="$d2" /> \\
               <var name="$a3" /> \amp <var name="$b3" /> \amp <var name="$c3" /> \amp <var name="$d3" /> \end{bmatrix}
-            </me>
+            </md>
             Use <m>x</m>, <m>y</m>, and <m>z</m> for the variables.  
           </p>
           <p>

@@ -28,9 +28,9 @@
             <introduction>
                 <p>
                     Consider a linear system whose augmented matrix in reduced row echelon form is
-                    <me>
+                    <md>
                         \begin{bmatrix}  1\amp 0\amp 0\amp 2\amp 3\\0\amp 0\amp 1\amp 4\amp 5\\ \end{bmatrix}
-                    </me>.
+                    </md>.
                 </p>
             </introduction>
 
@@ -86,9 +86,9 @@
             <introduction>
                 <p>
                     Consider a linear system whose augmented matrix in reduced row echelon form is
-                    <me>
+                    <md>
                         \begin{bmatrix}  1\amp 0\amp 1\amp 4\\0\amp 1\amp 0\amp 1\\ \end{bmatrix}
-                    </me>.
+                    </md>.
                 </p>
             </introduction>
 

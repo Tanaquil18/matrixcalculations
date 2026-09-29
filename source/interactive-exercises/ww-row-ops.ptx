@@ -35,9 +35,9 @@
         
           <statement>
             <p>Given the matrix
-            <me>
+            <md>
               A=<var name="$A"/>
-            </me>
+            </md>
             
             perform the row operation <m>R_2 \leftrightarrow R_3</m> on <m>A</m> and enter the result.</p>
 
@@ -106,7 +106,7 @@
 
           <statement>
             <p>
-              Given the matrix <me>A=<var name="$A"/></me>, perform the row operations below in the order given
+              Given the matrix <md>A=<var name="$A"/></md>, perform the row operations below in the order given
               and enter the final result.
             <md>
               <mrow><var name="$mdisplay"/> R_1 +R_2 \amp \rightarrow R_2</mrow>
@@ -172,7 +172,7 @@
 
           <statement>
             <p>The matrix on the right results after performing a single row operation on the matrix on the left.
-            <me><var name="$A"/> \rightarrow <var name="$B"/></me></p>
+            <md><var name="$A"/> \rightarrow <var name="$B"/></md></p>
             <p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1</m>, <m>R_2</m>, and <m>R_3</m>.</p>
             <p>Answer:  <var name="$lhs" width="2"/>   <var name="$pop" form="popup"/>   <var name="$rhs" width="2"/> </p>   
           </statement>
@@ -253,7 +253,7 @@
 
           <statement>
             <p>The matrix on the right results after performing a single row operation on the matrix on the left.
-            <me><var name="$A"/> \rightarrow <var name="$B"/></me></p>
+            <md><var name="$A"/> \rightarrow <var name="$B"/></md></p>
             <p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1</m>, <m>R_2</m>, and <m>R_3</m>.</p>
             <p>Answer:  <var name="$lhs" width="2"/>   <var name="$pop" form="popup"/>   <var name="$rhs" width="2"/> </p>   
           </statement>
@@ -342,7 +342,7 @@
 
           <statement>
             <p>The matrix on the right results after performing a single row operation on the matrix on the left.
-            <me><var name="$A"/> \rightarrow <var name="$B"/></me></p>
+            <md><var name="$A"/> \rightarrow <var name="$B"/></md></p>
             <p>Identify the row operation. Use <alert>R1</alert>, <alert>R2</alert>, and <alert>R3</alert> to represent the rows <m>R_1</m>, <m>R_2</m>, and <m>R_3</m>.</p>
             <p>Answer:  <var name="$lhs" evaluator="$multians" width="2"/>   <var name="$pop" form="popup"/>   <var name="$rhs" evaluator="$multians" width="2"/> </p>   
           </statement>

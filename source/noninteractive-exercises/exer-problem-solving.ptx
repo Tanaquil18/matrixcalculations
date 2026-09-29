@@ -287,13 +287,13 @@
             <p>
                 Plugging in the points for <m>x</m> and <m>y</m> in the equation <m>\ln y = \ln(a) + bx</m>,
                 we have equations
-                <me>
+                <md>
                 \begin{array}{ccccc} \ln a \amp  + \amp  b \amp  = \amp  \ln 2 \\ \ln a \amp  + \amp  2b \amp  = \amp  \ln 4 \end{array}
-                </me>.
+                </md>.
                 To solve,
-                <me>
+                <md>
                 \left[\begin{array}{ccc}  1 \amp 1\amp \ln 2 \\ 1 \amp  2 \amp \ln 4 \\ \end{array} \right] \rrefarrow \left[\begin{array}{ccc}  1\amp 0\amp 0\\0\amp 1\amp \ln 2\\ \end{array} \right]
-                </me>.
+                </md>.
                 Therefore <m>\ln(a) = 0</m> and <m>b = \ln(2)</m>.
             </p>
             </li>

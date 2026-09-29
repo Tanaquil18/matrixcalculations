@@ -19,9 +19,9 @@
     <title>Prepare</title>
     <p>
       Consider the matrix 
-        <me>
+        <md>
           A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}
-        </me>.
+        </md>.
       We know how to find the inverse of <m>A</m> using the formula in <xref ref="def_inverse"/>,
         <md>
           <mrow> A^{-1}\amp = \frac{1}{ad-bc}\left[\begin{array}{rr|rr} d\amp -b\\-c\amp a \end{array}\right]</mrow>
@@ -30,17 +30,17 @@
         </md>.
       Let's now find <m>A^{-1}</m> in another way, using a method that will also work on larger matrices.
       Let
-      <me>A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix}
-      </me>. 
+      <md>A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix}
+      </md>. 
       Calculating <m>A^{-1}</m> means we need to solve for the values of <m>x_1, y_1, x_2, y_2</m>.
       We know that <m>A A^{-1}=I</m>, which means that
-      <me>
+      <md>
         \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}
-      </me>,
+      </md>,
       and using matrix multiplication on the two matrices above means that
-      <me>
+      <md>
         \begin{bmatrix} 1x_1+2x_2 \amp 1y_1+2y_2 \\ 3x_1+5x_2 \amp 3y_1+5y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}
-      </me>.
+      </md>.
     </p>
     <p>
       Two matrices are equal only when each of their corresponding entries is equal, so this means that
@@ -95,9 +95,9 @@
     </p>
     <p>
     Putting those values we calculated together results in
-    <me>
+    <md>
       A^{-1}=\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \left[\begin{array}{rr|rr} -5 \amp 2 \\ 3 \amp -1 \end{array}\right]
-    </me>,
+    </md>,
     and this is indeed the same matrix we had calculated using the formula for <m>2\times 2</m>
     inverses.  
     </p>
@@ -105,9 +105,9 @@
       <statement>
         <p>
           We solved for the inverse of <m>A=\begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}</m> by setting up
-          <me>
+          <md>
             \begin{bmatrix} 1 \amp 2 \\ 3 \amp 5 \end{bmatrix}\begin{bmatrix} x_1 \amp y_1 \\ x_2 \amp y_2 \end{bmatrix} = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}
-          </me>,
+          </md>,
           and multiplying out and setting corresponding entries equal led to 2 systems of equations to solve:
           <md>
             <mrow>1x_1+2x_2 \amp =1 \amp \amp \amp 1y_1+2y_2 \amp =0 </mrow>
@@ -211,9 +211,9 @@
     </p>
     <p> 
       In math notation,
-      <me>
+      <md>
         \bigg[\begin{array}{c|c} A \amp I \end{array}\bigg] \rrefarrow \bigg[\begin{array}{c|c} I \amp A^{-1} \end{array}\bigg]
-      </me>.
+      </md>.
     </p>
     <p>
       Let's see if that happens again with another example, using Sage to help with the calculations.
@@ -225,13 +225,13 @@
       <p>
         We're trying to find an unknown matrix <m>A^{-1}</m> such that <m>AA^{-1}=I</m>. So we set up three
         augmented systems of equations to solve at the same time, resulting in
-        <me>
+        <md>
           \left[\begin{array}{rrr|rrr} 1\amp 1\amp -1\amp 1\amp 0\amp 0\\1\amp -1\amp 1\amp 0\amp 1\amp 0\\1\amp 2\amp 3\amp 0\amp 0\amp 1 \end{array} \right]
-        </me>.
+        </md>.
         Let's let Sage row reduce this for us.  
-        <!-- <me>
+        <!-- <md>
             \left[\begin{array}{cccccc} 1\amp 0\amp 0\amp 0.5\amp 0.5\amp 0\\0\amp 1\amp 0\amp 0.2\amp -0.4\amp 0.2\\0\amp 0\amp 1\amp -0.3\amp 0.1\amp 0.2 \end{array} \right]
-        </me> -->
+        </md> -->
         <sage>
           <input>
               A=matrix(QQ,3,3,[[1,1,-1],[1,-1,1],[1,2,3]])
@@ -269,13 +269,13 @@
       <p>
         We're trying to find an unknown matrix <m>A^{-1}</m> such that <m>AA^{-1}=I</m>. So we set up three
         augmented systems of equations to solve at the same time, resulting in
-        <me>
+        <md>
           \left[\begin{array}{ccc|ccc} 1\amp 1\amp -1\amp 1\amp 0\amp 0\\1\amp -1\amp 1\amp 0\amp 1\amp 0\\3\amp -1\amp 1\amp 0\amp 0\amp 1 \end{array} \right]
-        </me>.
+        </md>.
         Let's let Sage row reduce this for us.  
-        <!-- <me>
+        <!-- <md>
             \left[\begin{array}{cccccc} 1\amp 0\amp 0\amp 0.5\amp 0.5\amp 0\\0\amp 1\amp 0\amp 0.2\amp -0.4\amp 0.2\\0\amp 0\amp 1\amp -0.3\amp 0.1\amp 0.2 \end{array} \right]
-        </me> -->
+        </md> -->
         <sage>
           <input>
               A=matrix(QQ,3,3,[[1,1,-1],[1,-1,1],[3,-1,1]])
@@ -304,17 +304,17 @@
       </p>
       <p>
         In fact, there is no possible inverse of <m>A</m>.  We can see this is true by observing that 
-        <me>
+        <md>
           \left[\begin{array}{rrr} 1\amp 1\amp -1\\1\amp -1\amp 1\\3\amp -1\amp 1 \end{array} \right]\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]
-        </me>
+        </md>
         If <m>A^{-1}</m> exists, then we could multiply both sides on the left by <m>A^{-1}</m> and get
-        <me>
+        <md>
           A^{-1}A\left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=A^{-1}\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]
-        </me>
+        </md>
         and since <m>A^{-1}\mathbf{0}=\mathbf{0}</m>, this would mean that 
-        <me>
+        <md>
           \left[\begin{array}{r} 0 \\-1 \\ 1 \end{array}\right]=\left[\begin{array}{r} 0 \\0 \\ 0 \end{array}\right]
-        </me>,
+        </md>,
         which is not true.  Thus, there is <em>no possible</em> matrix which is the inverse of <m>A</m>.
       </p>
     </example>
@@ -329,17 +329,17 @@
       Let <m>A</m> be an <m>n \times n</m> matrix.
       To calculate <m>A^{-1}</m>, augment the matrix <m>A</m> by the <m>n\times n</m> identity
       matrix <m>I</m>
-      <me>
+      <md>
         \big[\begin{array}{c|c}   A \amp  I \end{array} \big]
-      </me>
+      </md>
        and put the resulting <m>n\times 2n</m> matrix into reduced row echelon form.
        <ul>
         <li>
           <p>
             If the reduced row echelon form is of the form
-            <me>
+            <md>
               \big[\begin{array}{c|c}  I \amp   X \end{array} \big]
-            </me>,
+            </md>,
             then <m>A^{-1} =  X</m>.
           </p>
         </li>
@@ -364,14 +364,14 @@
         <statement>
             <p>
               Suppose that 
-              <me>
+              <md>
                 A=\left[\begin{array}{rrr} 1\amp 2\amp -1\\2\amp 0\amp -1\\-2\amp -3\amp 2 \end{array} \right]
-              </me>
+              </md>
               and
-              <me>
+              <md>
                 \left[\begin{array}{rrr|rrr} 1\amp 2\amp -1\amp 1\amp 0\amp 0\\2\amp 0\amp -1\amp 0\amp 1\amp 0\\-2\amp -3\amp 2\amp 0\amp 0\amp 1 \end{array} \right]
                 \rrefarrow \left[\begin{array}{rrr|rrr} 1\amp 0\amp 0\amp 3\amp 1\amp 2\\0\amp 1\amp 0\amp 2\amp 0\amp 1\\0\amp 0\amp 1\amp 6\amp 1\amp 4 \end{array} \right]
-              </me>.
+              </md>.
               Which of the following is true?
             </p>
         </statement>
@@ -421,14 +421,14 @@
         <statement>
             <p>
               Suppose that 
-              <me>
+              <md>
                 A=\left[\begin{array}{rrrr} 1\amp 2\amp -1\amp 5\\2\amp 0\amp -1\amp 2\\-2\amp -3\amp 2 \amp 1 \\1\amp -1\amp 0 \amp 8\end{array} \right]
-              </me>
+              </md>
               and
-              <me>
+              <md>
                 \left[\begin{array}{rrrr|rrrr} 1\amp 2\amp -1\amp 5 \amp 1\amp 0\amp 0 \amp 0\\2\amp 0\amp -1 \amp 2 \amp 0\amp 1\amp 0 \amp 0\\-2\amp -3\amp 2 \amp 1 \amp 0\amp 0\amp 1 \amp 0 \\ 1\amp -1\amp 0 \amp 8 \amp 0 \amp 0 \amp 0 \amp 1\end{array} \right]
                 \rrefarrow \left[\begin{array}{rrrrrrrr} 1\amp 0\amp 0\amp 19\amp 0 \amp -2\amp -1\amp 3\\0\amp 1\amp 0 \amp 11 \amp 0\amp -2\amp -1 \amp 2\\0\amp 0\amp 1 \amp 36\amp 0 \amp -5\amp -2\amp 6 \\ 0\amp 0\amp 0 \amp 0\amp 1 \amp 1\amp 1\amp -1  \end{array} \right]
-              </me>.
+              </md>.
               Which of the following is true?
             </p>
         </statement>
@@ -475,9 +475,9 @@
         <statement>
             <p>
               Suppose that <m>A</m> is a matrix such that
-              <me>
+              <md>
                 A \rrefarrow \left[\begin{array}{rrrr} 1\amp 0\amp 0\amp 0\\0\amp 1\amp 0\amp 0\\0\amp 0\amp 1 \amp 0 \\0\amp 0\amp 0 \amp 1\end{array} \right]
-              </me>.
+              </md>.
               Which of the following is true?
             </p>
         </statement>

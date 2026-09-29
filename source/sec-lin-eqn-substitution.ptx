@@ -232,17 +232,17 @@
         an equation with just one variable that we can solve in our usual ways.
       </p>
       <p>  
-        Rearranging the first equation we get that <me>y=2-x</me>, and then plugging that in for <m>y</m>
-        in the second equation gives <me>15x+6(2-x)=15</me>.
+        Rearranging the first equation we get that <md>y=2-x</md>, and then plugging that in for <m>y</m>
+        in the second equation gives <md>15x+6(2-x)=15</md>.
       </p>
       <p>
-        Multiplying out gives <me>15x+12-6x=15</me>, and combining like terms results in <me>9x+12=15</me>.
-        Subtracting the 12 from both sides gives <me>9x=3</me>, and dividing both sides by 9 yields <me>x=\frac{1}{3}</me>.
+        Multiplying out gives <md>15x+12-6x=15</md>, and combining like terms results in <md>9x+12=15</md>.
+        Subtracting the 12 from both sides gives <md>9x=3</md>, and dividing both sides by 9 yields <md>x=\frac{1}{3}</md>.
       </p>
       <p>
         So one-third of a million, or roughly <m>333,333</m> transactions were sales.  To find the number of rentals,
-        we can substitute this value back into either equation, but <m>x+y=2</m> seems easier. Then <me>\frac{1}{3}+y=2</me>, 
-        which means that <me>y=2-\frac{1}{3}=\frac{5}{3}</me>, and <m>\frac{5}{3}</m> of a million is roughly <m>1,666,667</m> transactions.
+        we can substitute this value back into either equation, but <m>x+y=2</m> seems easier. Then <md>\frac{1}{3}+y=2</md>, 
+        which means that <md>y=2-\frac{1}{3}=\frac{5}{3}</md>, and <m>\frac{5}{3}</m> of a million is roughly <m>1,666,667</m> transactions.
       </p>
     </solution>
   </example>
@@ -267,31 +267,31 @@
       </p>
       <p>
         Since we know there are <m>30</m> marbles in the jar, we know that
-        <me>
+        <md>
           r+b+g=30
-        </me>.
+        </md>.
       </p>
       <p>
         Also, we are told that there are twice as many red marbles as green ones,
         so we know that
-        <me >
+        <md>
           r=2g
-        </me>.
+        </md>.
       </p>
       <p>
         Finally, we know that the number of blue marbles is the same as the sum of the red and green marbles,
         so we have
-        <me>
+        <md>
           b = r+g
-        </me>.
+        </md>.
       </p>
       <p>
         Collecting these equations together and giving them numbers to make it easier to refer to them, we have
-        <mdn>
+        <md number="yes">
           <mrow xml:id="eq_rbg30"> r+b+g  =30 </mrow>
           <mrow xml:id="eq_r2g"> r  =2g </mrow>
           <mrow xml:id="eq_brg"> b  = r+g </mrow>
-        </mdn>
+        </md>
       </p>
       <p>
         There are <em>many</em> ways to use this information to find the solution.
@@ -299,9 +299,9 @@
         and <xref ref="eq_brg"></xref>;
         in <xref ref="eq_brg"></xref> replace <m>r</m> with <m>2g</m>.
         This gives us
-        <men xml:id="eq_b3g">
+        <md xml:id="eq_b3g" number="yes">
           b = 2g+g = 3g
-        </men>.
+        </md>.
       </p>
       <p>
         We can then combine <xref ref="eq_rbg30">equations</xref>,
@@ -338,9 +338,9 @@
       <idx><h>constant</h></idx>
       <p>
         A <term>linear equation</term> is an equation that can be written in the form
-        <me>
+        <md>
           a_1x_1+a_2x_2+\cdots+a_nx_n = c
-        </me>
+        </md>
         where the <m>x_i</m> are variables (the unknowns), the <m>a_i</m> are <em>coefficients</em> (numbers), and <m>c</m> is a <em>constant</em> (also a number).
       </p>
     </statement>
@@ -362,7 +362,7 @@
     <task label="mc-lin-or-not-1">
     <statement>
       <p>
-        <me>x+y=2</me>
+        <md>x+y=2</md>
       </p>
     </statement>
     <choices>
@@ -396,7 +396,7 @@
   <task label="mc-lin-or-not-2">
     <statement>
       <p>
-        <me>xy+z=2</me>
+        <md>xy+z=2</md>
       </p>
     </statement>
     <choices>
@@ -429,7 +429,7 @@
   <task label="mc-lin-or-not-3">
     <statement>
       <p>
-        <me>x=2-y</me>
+        <md>x=2-y</md>
       </p>
     </statement>
     <choices>
@@ -463,7 +463,7 @@
   <task label="mc-lin-or-not-4">
     <statement>
       <p>
-        <me>x^2-5y=0</me>
+        <md>x^2-5y=0</md>
       </p>
     </statement>
     <choices>
@@ -496,7 +496,7 @@
   <task label="mc-lin-or-not-5">
     <statement>
       <p>
-        <me>\sin(x_1)+3x_2=2</me>
+        <md>\sin(x_1)+3x_2=2</md>
       </p>
     </statement>
     <choices>
@@ -529,7 +529,7 @@
   <task label="mc-lin-or-not-6">
     <statement>
       <p>
-        <me>\sqrt{5}y_1-\frac{y_3}{2}=-\pi</me>
+        <md>\sqrt{5}y_1-\frac{y_3}{2}=-\pi</md>
       </p>
     </statement>
     <choices>
@@ -622,7 +622,7 @@
     <ul>
       <li>
         <p>
-          <em>Linear equations</em> are equations which can be written in the form <me>a_1x_1+a_2x_2+\cdots+a_nx_n = c</me>, 
+          <em>Linear equations</em> are equations which can be written in the form <md>a_1x_1+a_2x_2+\cdots+a_nx_n = c</md>, 
           where the <m>x_i</m> are variables, the <m>a_i</m> are coefficients, and <m>c</m> is a constant.
         </p>
       </li>

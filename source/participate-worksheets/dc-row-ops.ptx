@@ -29,7 +29,7 @@
         <introduction>
           <p>
             For the matrix 
-            <me>A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]</me>, 
+            <md>A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]</md>, 
             give the matrix that results from performing each of the row operations below.
           </p>
         </introduction>
@@ -87,9 +87,9 @@
           </p>
 
           <p>
-            <me>
+            <md>
               \begin{bmatrix} 2 \amp 4 \amp -6 \\ 5 \amp -5 \amp 15 \\ \end{bmatrix}
-            </me>
+            </md>
           </p>
 
       </sidebyside>
@@ -107,15 +107,15 @@
         <introduction>
              <p>
                 Write down the row operation that transforms <m>A</m> into the matrix given in each exercise.
-       <me>
+       <md>
         A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]
-       </me>
+       </md>
              </p>
             </introduction>
       <exercise workspace=".2in">
        <statement>
          <p>
-           <me>\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ 2\amp -2\amp -2\\ \end{array} \right]</me>
+           <md>\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ 2\amp -2\amp -2\\ \end{array} \right]</md>
          </p>
        </statement>
        <answer>
@@ -127,7 +127,7 @@
      <exercise workspace=".2in">
        <statement>
          <p>
-           <me>\left[\begin{array}{ccc} 0\amp 1\amp 3\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]</me>
+           <md>\left[\begin{array}{ccc} 0\amp 1\amp 3\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]</md>
          </p>
        </statement>
        <answer>
@@ -139,7 +139,7 @@
      <exercise workspace=".2in">
        <statement>
          <p>
-           <me>\left[\begin{array}{ccc} 2\amp -1\amp 1\\  -1\amp 1\amp 1\\ 4\amp 0\amp 5\\ \end{array} \right]</me>
+           <md>\left[\begin{array}{ccc} 2\amp -1\amp 1\\  -1\amp 1\amp 1\\ 4\amp 0\amp 5\\ \end{array} \right]</md>
          </p>
        </statement>
        <answer>
@@ -154,16 +154,16 @@
       <introduction>
            <p>
               Write down the row operation that transforms <m>A</m> into the matrix given in each exercise.
-     <me>
+     <md>
       A=\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]
-     </me>
+     </md>
            </p>
           </introduction>
      
     <task workspace=".2in">
      <statement>
        <p>
-         <me>\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ 2\amp -2\amp -2\\ \end{array} \right]</me>
+         <md>\left[\begin{array}{ccc} 2\amp -1\amp 1\\ 4\amp 0\amp 5\\ 2\amp -2\amp -2\\ \end{array} \right]</md>
        </p>
      </statement>
      <answer>
@@ -175,7 +175,7 @@
    <task workspace=".2in">
      <statement>
        <p>
-         <me>\left[\begin{array}{ccc} 0\amp 1\amp 3\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]</me>
+         <md>\left[\begin{array}{ccc} 0\amp 1\amp 3\\ 4\amp 0\amp 5\\ -1\amp 1\amp 1\\ \end{array} \right]</md>
        </p>
      </statement>
      <answer>
@@ -187,7 +187,7 @@
    <task workspace=".2in">
      <statement>
        <p>
-         <me>\left[\begin{array}{ccc} 2\amp -1\amp 1\\  -1\amp 1\amp 1\\ 4\amp 0\amp 5\\ \end{array} \right]</me>
+         <md>\left[\begin{array}{ccc} 2\amp -1\amp 1\\  -1\amp 1\amp 1\\ 4\amp 0\amp 5\\ \end{array} \right]</md>
        </p>
      </statement>
      <answer>
