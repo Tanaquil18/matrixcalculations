@@ -26,6 +26,10 @@
     <!-- <watermark scale="0.5">DRAFT</watermark> -->
   </common>
 
+  <numbering>
+    <projects level="2" distinct="yes"/>
+  </numbering>
+
 
   <!-- Set where external assets and generated assets will be   -->
   <!-- stored or created.  Directories are relative to the main -->
@@ -110,7 +114,7 @@
     <css
         theme="salem" palette="ice-fire"
       />
-      
+
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
     <search variant="default" />
